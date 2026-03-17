@@ -33,10 +33,18 @@ if(WIN32)
     set(CUSTOM_PKGCONFIG_PATH "C:/msys64/mingw64/lib/pkgconfig")
     set(ENV{PKG_CONFIG_PATH} "${CUSTOM_PKGCONFIG_PATH};$ENV{PKG_CONFIG_PATH}")
 elseif(APPLE)
+    # Get Homebrew prefix
+    execute_process(
+        COMMAND brew --prefix
+        OUTPUT_VARIABLE HOMEBREW_PREFIX
+        OUTPUT_STRIP_TRAILING_WHITESPACE
+    )
     set(CUSTOM_LIB_PATH "/usr/local/lib")
     set(CUSTOM_INCLUDE_PATH "/usr/local/include")
     set(CUSTOM_PKGCONFIG_PATH "/usr/local/lib/pkgconfig")
     set(ENV{PKG_CONFIG_PATH} "${CUSTOM_PKGCONFIG_PATH}:$ENV{PKG_CONFIG_PATH}")
+    # Add Homebrew paths
+    include_directories(${HOMEBREW_PREFIX}/include)
 else ()
     set(CUSTOM_LIB_PATH "/usr/local/lib")
     set(CUSTOM_PKGCONFIG_PATH "/usr/local/lib/pkgconfig")
@@ -93,6 +101,16 @@ if(LINUX)
     # On Linux (AUR builds), let CMake search default system paths first.
     # The custom path /usr/local/lib will be checked if it's in the default search paths.
     set(CUSTOM_FIND_LIB_ARGS "")
+elseif(APPLE)
+    # On macOS, search both custom path and Homebrew paths
+    execute_process(
+        COMMAND brew --prefix
+        OUTPUT_VARIABLE HOMEBREW_PREFIX
+        OUTPUT_STRIP_TRAILING_WHITESPACE
+    )
+    set(CUSTOM_FIND_LIB_ARGS
+        PATHS ${CUSTOM_LIB_PATH} ${HOMEBREW_PREFIX}/lib
+    )
 else()
     # On other platforms, only search the custom path for our specific libraries.
     set(CUSTOM_FIND_LIB_ARGS

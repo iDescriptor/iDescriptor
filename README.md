@@ -291,6 +291,72 @@ Sun 6 Jul - 14:30  ~ 
 sudo udevadm trigger
 ```
 
+## Building from Source
+
+### macOS Build Instructions
+
+#### Prerequisites
+
+- macOS 14.0 or later (tested on 15.7.3)
+- [Homebrew](https://brew.sh/) package manager
+- Xcode Command Line Tools: `xcode-select --install`
+
+#### Install Dependencies
+
+```bash
+# Install Homebrew packages
+brew install cmake pkg-config autoconf automake libtool qt@6 \
+  libplist libtatsu libimobiledevice-glue libusbmuxd libimobiledevice \
+  pugixml libusb qrencode openssl libzip libheif libssh \
+  gstreamer gst-plugins-base gst-plugins-good gst-plugins-bad \
+  gst-plugins-ugly gst-libav create-dmg go
+
+# Build and install lxqt-build-tools
+cd /tmp
+git clone https://github.com/lxqt/lxqt-build-tools.git
+cd lxqt-build-tools
+mkdir build && cd build
+cmake ..
+sudo make install
+cd ../..
+
+# Build and install qtermwidget
+git clone https://github.com/lxqt/qtermwidget.git
+cd qtermwidget
+mkdir build && cd build
+cmake .. -DCMAKE_BUILD_TYPE=Release \
+  -DCMAKE_INSTALL_PREFIX=/usr/local \
+  -DBUILD_TESTS=OFF
+sudo make -j$(sysctl -n hw.ncpu) install
+```
+
+#### Build iDescriptor
+
+```bash
+# Clone the repository
+git clone https://github.com/robertpreshyl/iDescriptor.git
+cd iDescriptor
+
+# Initialize submodules
+git submodule update --init --recursive
+
+# Configure and build
+mkdir build && cd build
+cmake -B . -S .. \
+  -DCMAKE_BUILD_TYPE=Release \
+  -DCMAKE_PREFIX_PATH=$(brew --prefix qt@6)/lib/cmake
+cmake --build . --config Release -j$(sysctl -n hw.ncpu)
+
+# Run the application
+open iDescriptor.app
+```
+
+#### Notes
+
+- The build system automatically detects Homebrew paths
+- Recovery device support (libirecovery) is optional
+- First launch may require allowing the app in System Settings → Privacy & Security
+
 # Contributing
 
 Contributions are welcome!
