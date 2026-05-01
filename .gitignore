@@ -10,4 +10,10 @@ build-dir
 *.so
 *.exe
 *.dll
-devdiskimgs
+devdiskimgs*.sql
+*.dump
+.env
+*.pem
+*.key
+node_modules/
+__pycache__/
