@@ -20,6 +20,7 @@
 #include "iDescriptor.h"
 #include "mainwindow.h"
 #include "settingsmanager.h"
+#include "translationmanager.h"
 #include <QApplication>
 #include <QDebug>
 #include <QDir>
@@ -38,11 +39,15 @@ int main(int argc, char *argv[])
     QCoreApplication::setOrganizationName("iDescriptor");
     QCoreApplication::setApplicationName("iDescriptor");
     QCoreApplication::setApplicationVersion(APP_VERSION);
+    TranslationManager::sharedInstance()->initFromSettings();
     if (a.arguments().contains("--reset-settings")) {
         SettingsManager::sharedInstance()->clear();
-        QMessageBox::information(nullptr, "Settings Reset",
-                                 "All application settings have been reset to "
-                                 "their default values.");
+        QMessageBox::information(
+            nullptr,
+            QCoreApplication::translate("main", "Settings Reset"),
+            QCoreApplication::translate(
+                "main",
+                "All application settings have been reset to their default values."));
     }
 #ifdef WIN32
 
