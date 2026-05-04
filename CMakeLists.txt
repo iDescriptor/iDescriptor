@@ -384,11 +384,13 @@ set(TS_FILES
     translations/idescriptor_zh_CN.ts
 )
 
-qt_add_translations(iDescriptor
-    TS_FILES ${TS_FILES}
-    RESOURCE_PREFIX "/i18n"
-    LUPDATE_OPTIONS -no-obsolete -locations relative
-)
+if(QT_VERSION_MAJOR EQUAL 6)
+    qt_add_translations(iDescriptor
+        TS_FILES ${TS_FILES}
+        RESOURCE_PREFIX "/i18n"
+        LUPDATE_OPTIONS -no-obsolete -locations relative
+    )
+endif()
 
 set_target_properties(iDescriptor PROPERTIES
     ${BUNDLE_ID_OPTION}
