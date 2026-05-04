@@ -52,7 +52,7 @@ else ()
 endif()
 
 find_package(PkgConfig REQUIRED)
-find_package(Qt6 REQUIRED COMPONENTS Widgets Multimedia MultimediaWidgets Network QuickControls2 SerialPort Positioning Location QuickWidgets) 
+find_package(Qt6 REQUIRED COMPONENTS Widgets Multimedia MultimediaWidgets Network QuickControls2 SerialPort Positioning Location QuickWidgets LinguistTools)
 # DBUS
 if (UNIX AND NOT APPLE)
     find_package(Qt6 REQUIRED COMPONENTS DBus)
@@ -371,6 +371,23 @@ endif()
 
 target_compile_definitions(iDescriptor PRIVATE
     APP_VERSION="${PROJECT_VERSION}"
+)
+
+# Translations
+# Compiled .qm files are embedded as Qt resources under the "/i18n" prefix
+# so the application can load them via QTranslator without external files.
+# To add a new language, append a translations/idescriptor_<locale>.ts entry
+# to TS_FILES and run the lupdate target to populate it.
+set(TS_FILES
+    translations/idescriptor_en.ts
+    translations/idescriptor_ja.ts
+    translations/idescriptor_zh_CN.ts
+)
+
+qt_add_translations(iDescriptor
+    TS_FILES ${TS_FILES}
+    RESOURCE_PREFIX "/i18n"
+    LUPDATE_OPTIONS -no-obsolete -locations relative
 )
 
 set_target_properties(iDescriptor PROPERTIES
