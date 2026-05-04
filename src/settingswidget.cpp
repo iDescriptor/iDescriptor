@@ -20,9 +20,11 @@
 #include "settingswidget.h"
 #include "mainwindow.h"
 #include "settingsmanager.h"
+#include "translationmanager.h"
 #include <QCheckBox>
 #include <QComboBox>
 #include <QDialog>
+#include <QEvent>
 #include <QFileDialog>
 #include <QFrame>
 #include <QGroupBox>
@@ -42,13 +44,23 @@
 #include <QOperatingSystemVersion>
 #endif
 
+// Locale-independent identifiers used as combo userData. They survive
+// language changes and are also what gets persisted via SettingsManager,
+// so the saved value remains meaningful across locales.
+#define IDESC_THEME_SYSTEM_DEFAULT "System Default"
+#ifdef WIN32
+#define IDESC_BACKDROP_AUTO "Auto"
+#endif
+
 SettingsWidget::SettingsWidget(QWidget *parent) : QDialog{parent}
 {
 #ifdef WIN32
+    m_backDropTypeLabel = nullptr;
     m_backDropTypeCombo = nullptr;
     m_disableMicaCheckBox = nullptr;
 #endif
     setupUI();
+    retranslateUi();
     loadSettings();
     connectSignals();
     // due to scrollbar add 10px on windows
@@ -72,28 +84,27 @@ void SettingsWidget::setupUI()
     scrollLayout->setContentsMargins(10, 10, 10, 10);
 
     // === GENERAL SETTINGS ===
-    auto *generalGroup = new QGroupBox("General");
-    auto *generalLayout = new QVBoxLayout(generalGroup);
+    m_generalGroup = new QGroupBox();
+    auto *generalLayout = new QVBoxLayout(m_generalGroup);
 
     // Download path
     auto *downloadLayout = new QHBoxLayout();
-    downloadLayout->addWidget(new QLabel("Download Path:"));
+    m_downloadPathLabel = new QLabel();
+    downloadLayout->addWidget(m_downloadPathLabel);
     m_downloadPathEdit = new QLineEdit();
     m_downloadPathEdit->setReadOnly(true);
     m_downloadPathEdit->setMaximumWidth(300);
     downloadLayout->addWidget(m_downloadPathEdit);
-    auto *browseButton = new QPushButton("Browse...");
-    downloadLayout->addWidget(browseButton);
+    m_browseButton = new QPushButton();
+    downloadLayout->addWidget(m_browseButton);
     generalLayout->addLayout(downloadLayout);
 
     // Wireless file server port
     auto *portLayout = new QHBoxLayout();
-    portLayout->addWidget(new QLabel("Wireless File Server Port:"));
+    m_wirelessFileServerPortLabel = new QLabel();
+    portLayout->addWidget(m_wirelessFileServerPortLabel);
     m_wirelessFileServerPort = new QSpinBox();
     m_wirelessFileServerPort->setRange(1024, 65535);
-    m_wirelessFileServerPort->setToolTip(
-        "The starting port for the wireless file server. If this port is "
-        "unavailable, it will try the next 10 ports.");
     portLayout->addWidget(m_wirelessFileServerPort);
     portLayout->addStretch();
     generalLayout->addLayout(portLayout);
@@ -101,152 +112,158 @@ void SettingsWidget::setupUI()
     // Unmount iFuse drives on exit (not implemented on macOS)
     // TODO: Implement
 #ifndef __APPLE__
-    m_unmount_iFuseDrives = new QCheckBox("Unmount iFuse drives on exit");
+    m_unmount_iFuseDrives = new QCheckBox();
     generalLayout->addWidget(m_unmount_iFuseDrives);
 #endif
 
-    connect(browseButton, &QPushButton::clicked, this,
+    connect(m_browseButton, &QPushButton::clicked, this,
             &SettingsWidget::onBrowseButtonClicked);
 
     // Auto-check for updates
-    m_autoUpdateCheck = new QCheckBox("Automatically check for updates");
+    m_autoUpdateCheck = new QCheckBox();
     generalLayout->addWidget(m_autoUpdateCheck);
 
-    m_autoEnableWifiConnections =
-        new QCheckBox("Automatically enable Wi-Fi connections");
+    m_autoEnableWifiConnections = new QCheckBox();
     generalLayout->addWidget(m_autoEnableWifiConnections);
 
     // Theme selection
     auto *themeLayout = new QHBoxLayout();
-    themeLayout->addWidget(new QLabel("Theme:"));
+    m_themeLabel = new QLabel();
+    themeLayout->addWidget(m_themeLabel);
     m_themeCombo = new QComboBox();
 
     /* FIXME: Theme control needs to be implemented */
-    m_themeCombo->addItems({"System Default"});
-    // m_themeCombo->addItems({"System Default", "Light", "Dark"});
+    // userData carries the locale-independent identifier persisted by
+    // SettingsManager. Display text is localised in retranslateUi().
+    m_themeCombo->addItem(QString(), QStringLiteral(IDESC_THEME_SYSTEM_DEFAULT));
 
     themeLayout->addWidget(m_themeCombo);
     themeLayout->addStretch();
+    generalLayout->addLayout(themeLayout);
+
+    // Language selection
+    auto *languageLayout = new QHBoxLayout();
+    m_languageLabel = new QLabel();
+    languageLayout->addWidget(m_languageLabel);
+    m_languageCombo = new QComboBox();
+    for (const QString &code : TranslationManager::availableLocaleCodes()) {
+        // Display name is filled in retranslateUi(); userData is the locale
+        // code, which is what we persist and look up by.
+        m_languageCombo->addItem(QString(), code);
+    }
+    languageLayout->addWidget(m_languageCombo);
+    languageLayout->addStretch();
+    generalLayout->addLayout(languageLayout);
 
 #ifdef WIN32
     QOperatingSystemVersion osVersion = QOperatingSystemVersion::current();
     if (osVersion >= QOperatingSystemVersion::Windows11) {
         auto *backDropTypeLayout = new QHBoxLayout();
-        backDropTypeLayout->addWidget(new QLabel("Backdrop Type:"));
+        m_backDropTypeLabel = new QLabel();
+        backDropTypeLayout->addWidget(m_backDropTypeLabel);
         m_backDropTypeCombo = new QComboBox();
 
-        // "Auto" => no userData => means "no override"
-        m_backDropTypeCombo->addItem("Auto");
-        m_backDropTypeCombo->addItem("Mica", static_cast<int>(MICA));
-        m_backDropTypeCombo->addItem("Mica Alt", static_cast<int>(MICA_ALT));
-        m_backDropTypeCombo->addItem("Acrylic", static_cast<int>(ACRYLIC));
+        // "Auto" => no override; other entries carry the WIN_BACKDROP int.
+        m_backDropTypeCombo->addItem(QString(),
+                                     QStringLiteral(IDESC_BACKDROP_AUTO));
+        m_backDropTypeCombo->addItem(QString(), static_cast<int>(MICA));
+        m_backDropTypeCombo->addItem(QString(), static_cast<int>(MICA_ALT));
+        m_backDropTypeCombo->addItem(QString(), static_cast<int>(ACRYLIC));
 
         backDropTypeLayout->addWidget(m_backDropTypeCombo);
         backDropTypeLayout->addStretch();
 
         generalLayout->addLayout(backDropTypeLayout);
 
-        m_disableMicaCheckBox =
-            new QCheckBox("Disable Mica effects (also disables WinUI styles)");
+        m_disableMicaCheckBox = new QCheckBox();
         generalLayout->addWidget(m_disableMicaCheckBox);
     }
 #endif
 
-    scrollLayout->addWidget(generalGroup);
+    scrollLayout->addWidget(m_generalGroup);
 
     // === DEVICE CONNECTION SETTINGS ===
-    auto *deviceGroup = new QGroupBox("Device Connection");
-    auto *deviceLayout = new QVBoxLayout(deviceGroup);
+    m_deviceGroup = new QGroupBox();
+    auto *deviceLayout = new QVBoxLayout(m_deviceGroup);
 
-    m_autoRaiseWindow =
-        new QCheckBox("Auto-raise main window on device connection");
+    m_autoRaiseWindow = new QCheckBox();
     deviceLayout->addWidget(m_autoRaiseWindow);
 
-    m_switchToNewDevice = new QCheckBox("Switch to newly connected device");
+    m_switchToNewDevice = new QCheckBox();
     deviceLayout->addWidget(m_switchToNewDevice);
 
-    m_autoConnectWirelessDevices =
-        new QCheckBox("Automatically connect to wireless devices");
+    m_autoConnectWirelessDevices = new QCheckBox();
     deviceLayout->addWidget(m_autoConnectWirelessDevices);
 
     // Connection timeout
     auto *timeoutLayout = new QHBoxLayout();
-    timeoutLayout->addWidget(new QLabel("Connection Timeout:"));
+    m_connectionTimeoutLabel = new QLabel();
+    timeoutLayout->addWidget(m_connectionTimeoutLabel);
     m_connectionTimeout = new QSpinBox();
     m_connectionTimeout->setRange(5, 60);
-    m_connectionTimeout->setSuffix(" seconds");
     timeoutLayout->addWidget(m_connectionTimeout);
     timeoutLayout->addStretch();
     deviceLayout->addLayout(timeoutLayout);
 
-    scrollLayout->addWidget(deviceGroup);
+    scrollLayout->addWidget(m_deviceGroup);
 
     // === SECURITY SETTINGS ===
-    auto *securityGroup = new QGroupBox("Security");
-    auto *securityLayout = new QVBoxLayout(securityGroup);
+    m_securityGroup = new QGroupBox();
+    auto *securityLayout = new QVBoxLayout(m_securityGroup);
 
-    m_useUnsecureBackend =
-        new QCheckBox("Use unsecure backend for app store (ipatool)");
-    m_useUnsecureBackend->setToolTip(
-        "Enabling this may put your Apple account at risk but you don't have "
-        "to deal with Apple keychain.");
+    m_useUnsecureBackend = new QCheckBox();
     securityLayout->addWidget(m_useUnsecureBackend);
-    scrollLayout->addWidget(securityGroup);
+    scrollLayout->addWidget(m_securityGroup);
 
     // === JAILBROKEN SETTINGS ===
-    auto *jailbrokenGroup = new QGroupBox("Jailbroken");
-    auto *jailbrokenLayout = new QVBoxLayout(jailbrokenGroup);
+    m_jailbrokenGroup = new QGroupBox();
+    auto *jailbrokenLayout = new QVBoxLayout(m_jailbrokenGroup);
 
     // Default jailbroken root password
     auto *passwordLayout = new QHBoxLayout();
-    passwordLayout->addWidget(new QLabel("Default Jailbroken Root Password:"));
+    m_defaultJailbrokenRootPasswordLabel = new QLabel();
+    passwordLayout->addWidget(m_defaultJailbrokenRootPasswordLabel);
     m_defaultJailbrokenRootPassword = new QLineEdit();
     m_defaultJailbrokenRootPassword->setEchoMode(QLineEdit::PasswordEchoOnEdit);
     m_defaultJailbrokenRootPassword->setMaximumWidth(200);
-    m_defaultJailbrokenRootPassword->setToolTip(
-        "Default password used for SSH root authentication on jailbroken "
-        "devices: Default is 'alpine'.");
     passwordLayout->addWidget(m_defaultJailbrokenRootPassword);
     passwordLayout->addStretch();
     jailbrokenLayout->addLayout(passwordLayout);
 
-    scrollLayout->addWidget(jailbrokenGroup);
+    scrollLayout->addWidget(m_jailbrokenGroup);
 
     // === AirPlay SETTINGS ===
-    auto *airplayGroup = new QGroupBox("AirPlay");
-    auto *airplayLayout = new QVBoxLayout(airplayGroup);
+    m_airplayGroup = new QGroupBox();
+    auto *airplayLayout = new QVBoxLayout(m_airplayGroup);
 
     auto *fpsLayout = new QHBoxLayout();
 
-    auto *fpsLabel = new QLabel("Fps:");
+    m_fpsLabel = new QLabel();
     m_fpsComboBox = new QComboBox();
+    // The FPS values are numeric and locale-independent; no tr() needed.
     m_fpsComboBox->addItems({"24", "30", "60", "120"});
-    m_fpsComboBox->setToolTip(
-        "Set the fps for AirPlay. Go with 30 fps if have an older device.");
 
-    fpsLayout->addWidget(fpsLabel);
+    fpsLayout->addWidget(m_fpsLabel);
     fpsLayout->addWidget(m_fpsComboBox);
     fpsLayout->addStretch();
     airplayLayout->addLayout(fpsLayout);
 
-    m_noHoldCheckbox = new QCheckBox("Allow New Connections to Take Over");
+    m_noHoldCheckbox = new QCheckBox();
     airplayLayout->addWidget(m_noHoldCheckbox);
 
 #ifdef __linux__
-    m_useLegacyPortsCheckbox = new QCheckBox("Use legacy ports");
-    m_useLegacyPortsCheckbox->setToolTip(
-        "Use legacy ports, refer to AIRPLAY.md for more information.");
+    m_useLegacyPortsCheckbox = new QCheckBox();
     airplayLayout->addWidget(m_useLegacyPortsCheckbox);
 
-    m_showV4L2CheckBox = new QCheckBox("Show V4L2 Button on AirPlay Widget");
+    m_showV4L2CheckBox = new QCheckBox();
     airplayLayout->addWidget(m_showV4L2CheckBox);
 #endif
 
-    scrollLayout->addWidget(airplayGroup);
+    scrollLayout->addWidget(m_airplayGroup);
 
     // === MISCELLANEOUS SETTINGS ===
-    auto *miscGroup = new QGroupBox("Miscellaneous");
-    auto *miscLayout = new QVBoxLayout(miscGroup);
+    m_miscGroup = new QGroupBox();
+    auto *miscLayout = new QVBoxLayout(m_miscGroup);
 
     auto *iconSizeBaseMultiplierLayout = new QHBoxLayout();
     m_iconSizeBaseMultiplier = new QDoubleSpinBox();
@@ -254,31 +271,22 @@ void SettingsWidget::setupUI()
     m_iconSizeBaseMultiplier->setSingleStep(0.1);
     m_iconSizeBaseMultiplier->setDecimals(1);
     m_iconSizeBaseMultiplier->setSuffix("x");
-    m_iconSizeBaseMultiplier->setToolTip(
-        "Adjust the base multiplier for icon sizes. This affects how large "
-        "icons appear throughout the application. Requires restart to take "
-        "effect.");
 
-    iconSizeBaseMultiplierLayout->addWidget(
-        new QLabel("Icon Size Base Multiplier:"));
+    m_iconSizeBaseMultiplierLabel = new QLabel();
+    iconSizeBaseMultiplierLayout->addWidget(m_iconSizeBaseMultiplierLabel);
     iconSizeBaseMultiplierLayout->addWidget(m_iconSizeBaseMultiplier);
     iconSizeBaseMultiplierLayout->addStretch();
     miscLayout->addLayout(iconSizeBaseMultiplierLayout);
 
-    scrollLayout->addWidget(miscGroup);
+    scrollLayout->addWidget(m_miscGroup);
 
     scrollLayout->addSpacing(30);
 
     // Add a footer Author & Version & app info & app description
-    auto *footerLabel = new QLabel(
-        QString(
-            "iDescriptor v%1\n"
-            "A free, open-source, and cross-platform iDevice management tool.\n"
-            "© 2026 See AUTHORS for details. Licensed under AGPLv3.")
-            .arg(APP_VERSION));
-    footerLabel->setAlignment(Qt::AlignCenter);
-    footerLabel->setStyleSheet("color: gray; font-size: 8pt;");
-    scrollLayout->addWidget(footerLabel);
+    m_footerLabel = new QLabel();
+    m_footerLabel->setAlignment(Qt::AlignCenter);
+    m_footerLabel->setStyleSheet("color: gray; font-size: 8pt;");
+    scrollLayout->addWidget(m_footerLabel);
 
     // Add stretch to push everything to the top
     scrollLayout->addStretch();
@@ -291,9 +299,9 @@ void SettingsWidget::setupUI()
     // == BUTTONS ===
     auto *buttonLayout = new QHBoxLayout();
 
-    m_checkUpdatesButton = new QPushButton("Check for Updates");
-    m_resetButton = new QPushButton("Reset Settings");
-    m_applyButton = new QPushButton("Apply");
+    m_checkUpdatesButton = new QPushButton();
+    m_resetButton = new QPushButton();
+    m_applyButton = new QPushButton();
 
     buttonLayout->addWidget(m_checkUpdatesButton);
     buttonLayout->addWidget(m_resetButton);
@@ -312,6 +320,142 @@ void SettingsWidget::setupUI()
             &SettingsWidget::onApplyClicked);
 }
 
+void SettingsWidget::retranslateUi()
+{
+    setWindowTitle(tr("Settings"));
+
+    // === GENERAL ===
+    m_generalGroup->setTitle(tr("General"));
+    m_downloadPathLabel->setText(tr("Download Path:"));
+    m_browseButton->setText(tr("Browse..."));
+    m_wirelessFileServerPortLabel->setText(tr("Wireless File Server Port:"));
+    m_wirelessFileServerPort->setToolTip(
+        tr("The starting port for the wireless file server. If this port is "
+           "unavailable, it will try the next 10 ports."));
+
+#ifndef __APPLE__
+    m_unmount_iFuseDrives->setText(tr("Unmount iFuse drives on exit"));
+#endif
+
+    m_autoUpdateCheck->setText(tr("Automatically check for updates"));
+    m_autoEnableWifiConnections->setText(
+        tr("Automatically enable Wi-Fi connections"));
+
+    m_themeLabel->setText(tr("Theme:"));
+    for (int i = 0; i < m_themeCombo->count(); ++i) {
+        const QString id = m_themeCombo->itemData(i).toString();
+        if (id == QLatin1String(IDESC_THEME_SYSTEM_DEFAULT)) {
+            m_themeCombo->setItemText(i, tr("System Default"));
+        } else {
+            // Future-proof fallback: display the identifier itself.
+            m_themeCombo->setItemText(i, id);
+        }
+    }
+
+    m_languageLabel->setText(tr("Language:"));
+    for (int i = 0; i < m_languageCombo->count(); ++i) {
+        const QString code = m_languageCombo->itemData(i).toString();
+        m_languageCombo->setItemText(i, TranslationManager::displayName(code));
+    }
+
+#ifdef WIN32
+    if (m_backDropTypeLabel) {
+        m_backDropTypeLabel->setText(tr("Backdrop Type:"));
+    }
+    if (m_backDropTypeCombo) {
+        for (int i = 0; i < m_backDropTypeCombo->count(); ++i) {
+            const QVariant data = m_backDropTypeCombo->itemData(i);
+            if (data.typeId() == QMetaType::QString
+                && data.toString() == QLatin1String(IDESC_BACKDROP_AUTO)) {
+                //: Backdrop type that defers to the platform default.
+                m_backDropTypeCombo->setItemText(i, tr("Auto", "Backdrop type"));
+            } else {
+                const int value = data.toInt();
+                if (value == static_cast<int>(MICA)) {
+                    m_backDropTypeCombo->setItemText(i, tr("Mica"));
+                } else if (value == static_cast<int>(MICA_ALT)) {
+                    m_backDropTypeCombo->setItemText(i, tr("Mica Alt"));
+                } else if (value == static_cast<int>(ACRYLIC)) {
+                    m_backDropTypeCombo->setItemText(i, tr("Acrylic"));
+                }
+            }
+        }
+    }
+    if (m_disableMicaCheckBox) {
+        m_disableMicaCheckBox->setText(
+            tr("Disable Mica effects (also disables WinUI styles)"));
+    }
+#endif
+
+    // === DEVICE CONNECTION ===
+    m_deviceGroup->setTitle(tr("Device Connection"));
+    m_autoRaiseWindow->setText(
+        tr("Auto-raise main window on device connection"));
+    m_switchToNewDevice->setText(tr("Switch to newly connected device"));
+    m_autoConnectWirelessDevices->setText(
+        tr("Automatically connect to wireless devices"));
+    m_connectionTimeoutLabel->setText(tr("Connection Timeout:"));
+    m_connectionTimeout->setSuffix(tr(" seconds"));
+
+    // === SECURITY ===
+    m_securityGroup->setTitle(tr("Security"));
+    m_useUnsecureBackend->setText(
+        tr("Use unsecure backend for app store (ipatool)"));
+    m_useUnsecureBackend->setToolTip(
+        tr("Enabling this may put your Apple account at risk but you don't "
+           "have to deal with Apple keychain."));
+
+    // === JAILBROKEN ===
+    m_jailbrokenGroup->setTitle(tr("Jailbroken"));
+    m_defaultJailbrokenRootPasswordLabel->setText(
+        tr("Default Jailbroken Root Password:"));
+    m_defaultJailbrokenRootPassword->setToolTip(
+        tr("Default password used for SSH root authentication on jailbroken "
+           "devices: Default is 'alpine'."));
+
+    // === AIRPLAY ===
+    m_airplayGroup->setTitle(tr("AirPlay"));
+    m_fpsLabel->setText(tr("Fps:"));
+    m_fpsComboBox->setToolTip(
+        tr("Set the fps for AirPlay. Go with 30 fps if have an older device."));
+    m_noHoldCheckbox->setText(tr("Allow New Connections to Take Over"));
+
+#ifdef __linux__
+    m_useLegacyPortsCheckbox->setText(tr("Use legacy ports"));
+    m_useLegacyPortsCheckbox->setToolTip(
+        tr("Use legacy ports, refer to AIRPLAY.md for more information."));
+    m_showV4L2CheckBox->setText(tr("Show V4L2 Button on AirPlay Widget"));
+#endif
+
+    // === MISCELLANEOUS ===
+    m_miscGroup->setTitle(tr("Miscellaneous"));
+    m_iconSizeBaseMultiplierLabel->setText(tr("Icon Size Base Multiplier:"));
+    m_iconSizeBaseMultiplier->setToolTip(
+        tr("Adjust the base multiplier for icon sizes. This affects how large "
+           "icons appear throughout the application. Requires restart to take "
+           "effect."));
+
+    // === FOOTER ===
+    m_footerLabel->setText(
+        tr("iDescriptor v%1\n"
+           "A free, open-source, and cross-platform iDevice management tool.\n"
+           "\xC2\xA9 2026 See AUTHORS for details. Licensed under AGPLv3.")
+            .arg(QStringLiteral(APP_VERSION)));
+
+    // === BUTTONS ===
+    m_checkUpdatesButton->setText(tr("Check for Updates"));
+    m_resetButton->setText(tr("Reset Settings"));
+    m_applyButton->setText(tr("Apply"));
+}
+
+void SettingsWidget::changeEvent(QEvent *event)
+{
+    if (event->type() == QEvent::LanguageChange) {
+        retranslateUi();
+    }
+    QDialog::changeEvent(event);
+}
+
 void SettingsWidget::loadSettings()
 {
     SettingsManager *sm = SettingsManager::sharedInstance();
@@ -328,12 +472,24 @@ void SettingsWidget::loadSettings()
     m_unmount_iFuseDrives->setChecked(sm->unmountiFuseOnExit());
 #endif
 
-    // Set theme combo box
-    QString currentTheme = sm->theme();
-    int themeIndex = m_themeCombo->findText(currentTheme);
+    // Theme combo: match by locale-independent userData identifier so the
+    // saved value keeps resolving correctly across language changes.
+    const QString currentTheme = sm->theme();
+    int themeIndex = m_themeCombo->findData(currentTheme);
+    if (themeIndex == -1) {
+        // Backwards-compatible fallback for values stored before the
+        // identifier scheme landed (which used the displayed text).
+        themeIndex = m_themeCombo->findText(currentTheme);
+    }
     if (themeIndex != -1) {
         m_themeCombo->setCurrentIndex(themeIndex);
     }
+
+    // Language combo: select the persisted locale code.
+    const QString currentLocale =
+        TranslationManager::sharedInstance()->currentLocaleCode();
+    const int languageIndex = m_languageCombo->findData(currentLocale);
+    m_languageCombo->setCurrentIndex(languageIndex >= 0 ? languageIndex : 0);
 
     m_connectionTimeout->setValue(sm->connectionTimeout());
     m_useUnsecureBackend->setChecked(sm->useUnsecureBackend());
@@ -386,6 +542,9 @@ void SettingsWidget::connectSignals()
 #endif
     connect(m_themeCombo, QOverload<int>::of(&QComboBox::currentIndexChanged),
             this, &SettingsWidget::onSettingChanged);
+    connect(m_languageCombo,
+            QOverload<int>::of(&QComboBox::currentIndexChanged), this,
+            &SettingsWidget::onSettingChanged);
     connect(m_connectionTimeout, QOverload<int>::of(&QSpinBox::valueChanged),
             this, &SettingsWidget::onSettingChanged);
     connect(m_wirelessFileServerPort,
@@ -403,10 +562,10 @@ void SettingsWidget::connectSignals()
         // since this is unsafe if its being enabled, show a warning
         if (m_useUnsecureBackend->isChecked()) {
             auto reply = QMessageBox::warning(
-                this, "Warning",
-                "Enabling this will not encrypt your Apple account which "
-                "is a "
-                "security risk. Are you sure you want to enable this?",
+                this, tr("Warning"),
+                tr("Enabling this will not encrypt your Apple account which "
+                   "is a "
+                   "security risk. Are you sure you want to enable this?"),
                 QMessageBox::Yes | QMessageBox::No, QMessageBox::No);
 
             if (reply == QMessageBox::Yes) {
@@ -454,7 +613,7 @@ void SettingsWidget::connectSignals()
 void SettingsWidget::onBrowseButtonClicked()
 {
     QString dir = QFileDialog::getExistingDirectory(
-        this, "Select Download Directory", m_downloadPathEdit->text(),
+        this, tr("Select Download Directory"), m_downloadPathEdit->text(),
         QFileDialog::ShowDirsOnly);
 
     if (!dir.isEmpty()) {
@@ -465,18 +624,18 @@ void SettingsWidget::onBrowseButtonClicked()
 
 void SettingsWidget::onCheckUpdatesClicked()
 {
-    m_checkUpdatesButton->setText("Checking...");
+    m_checkUpdatesButton->setText(tr("Checking..."));
     m_checkUpdatesButton->setEnabled(false);
 
     connect(
         MainWindow::sharedInstance()->m_updater, &ZUpdater::dataAvailable, this,
         [this](const QJsonDocument data, bool isUpdateAvailable) {
             if (!isUpdateAvailable) {
-                QMessageBox::information(this, "No Updates",
-                                         "You are using the latest version of "
-                                         "iDescriptor.");
+                QMessageBox::information(this, tr("No Updates"),
+                                         tr("You are using the latest version "
+                                            "of iDescriptor."));
             }
-            m_checkUpdatesButton->setText("Check for Updates");
+            m_checkUpdatesButton->setText(tr("Check for Updates"));
             m_checkUpdatesButton->setEnabled(true);
         },
         Qt::SingleShotConnection);
@@ -487,8 +646,9 @@ void SettingsWidget::onCheckUpdatesClicked()
 void SettingsWidget::onResetToDefaultsClicked()
 {
     auto reply = QMessageBox::question(
-        this, "Reset Settings",
-        "Are you sure you want to reset all settings to their default values?",
+        this, tr("Reset Settings"),
+        tr("Are you sure you want to reset all settings to their default "
+           "values?"),
         QMessageBox::Yes | QMessageBox::No, QMessageBox::No);
 
     if (reply == QMessageBox::Yes) {
@@ -499,12 +659,12 @@ void SettingsWidget::onResetToDefaultsClicked()
 void SettingsWidget::onApplyClicked()
 {
     saveSettings();
-    QMessageBox::information(this, "Settings",
+    QMessageBox::information(this, tr("Settings"),
                              m_restartRequired
-                                 ? "Settings applied. Please restart "
-                                   "the application for changes to "
-                                   "take effect."
-                                 : "Settings applied.");
+                                 ? tr("Settings applied. Please restart "
+                                      "the application for changes to "
+                                      "take effect.")
+                                 : tr("Settings applied."));
     m_restartRequired = false;
 }
 
@@ -532,7 +692,10 @@ void SettingsWidget::saveSettings()
 #endif
     sm->setUseUnsecureBackend(m_useUnsecureBackend->isChecked());
 
-    sm->setTheme(m_themeCombo->currentText());
+    // Persist the locale-independent identifier carried in userData so the
+    // stored value keeps resolving across language changes.
+    const QString themeId = m_themeCombo->currentData().toString();
+    sm->setTheme(themeId.isEmpty() ? m_themeCombo->currentText() : themeId);
     sm->setConnectionTimeout(m_connectionTimeout->value());
     sm->setDefaultJailbrokenRootPassword(
         m_defaultJailbrokenRootPassword->text());
@@ -545,13 +708,26 @@ void SettingsWidget::saveSettings()
     sm->setAirplayUseLegacyPorts(m_useLegacyPortsCheckbox->isChecked());
     sm->setShowV4L2(m_showV4L2CheckBox->isChecked());
 #endif
+
+    // Apply the selected locale. TranslationManager::setLocale persists the
+    // value via SettingsManager and broadcasts a LanguageChange event.
+    const QString newLocale = m_languageCombo->currentData().toString();
+    if (newLocale
+        != TranslationManager::sharedInstance()->currentLocaleCode()) {
+        TranslationManager::sharedInstance()->setLocale(newLocale);
+    }
+
     m_applyButton->setEnabled(false);
 
 #ifdef WIN32
     if (m_backDropTypeCombo) {
         const QVariant data = m_backDropTypeCombo->currentData();
-        if (!data.isValid()) {
+        // The "Auto" entry stores the literal string identifier; everything
+        // else stores the WIN_BACKDROP int.
+        if (data.typeId() == QMetaType::QString) {
             // AUTO = ACRYLIC
+            sm->setWinBackdropType(static_cast<WIN_BACKDROP>(ACRYLIC));
+        } else if (!data.isValid()) {
             sm->setWinBackdropType(static_cast<WIN_BACKDROP>(ACRYLIC));
         } else {
             sm->setWinBackdropType(static_cast<WIN_BACKDROP>(data.toInt()));
