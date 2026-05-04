@@ -30,6 +30,7 @@
 #include <QApplication>
 #include <QDateTime>
 #include <QDesktopServices>
+#include <QEvent>
 #include <QHBoxLayout>
 #include <QLabel>
 #include <QMainWindow>
@@ -65,7 +66,10 @@ private slots:
 
 private:
     void createMenus();
+    void retranslateUi();
     void retranslateMenus();
+    void retranslateTabs();
+    void retranslateStatusBar();
 
     ZTabWidget *m_ZTabWidget;
     DeviceManagerWidget *m_deviceManager;
@@ -82,7 +86,23 @@ private:
     QMenu *m_helpMenu = nullptr;
     QAction *m_aboutAction = nullptr;
 
+    ZTab *m_iDeviceTab = nullptr;
+    ZTab *m_appsTab = nullptr;
+    ZTab *m_toolboxTab = nullptr;
+    ZTab *m_jailbrokenTab = nullptr;
+
+    ZIconWidget *m_settingsButton = nullptr;
+    ZIconWidget *m_githubButton = nullptr;
+    ZIconWidget *m_welcomeMenuSwitch = nullptr;
+
+    int m_connectedDeviceCount = 0;
+    // Tracks the welcome-menu-switch tooltip phrasing. Initialized to
+    // false to mirror the historical initial tooltip value, which the
+    // click handler keeps in sync from there on.
+    bool m_welcomeTabActive = false;
+
 protected:
     void closeEvent(QCloseEvent *event) override;
+    void changeEvent(QEvent *event) override;
 };
 #endif // MAINWINDOW_H

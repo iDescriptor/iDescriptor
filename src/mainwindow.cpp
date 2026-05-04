@@ -151,34 +151,36 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
     connect(m_deviceManager, &DeviceManagerWidget::updateNoDevicesConnected,
             this, &MainWindow::updateNoDevicesConnected);
 
-    m_ZTabWidget->addTab(m_mainStackedWidget, "iDevice");
-    auto *appsWidgetTab =
-        m_ZTabWidget->addTab(AppsWidget::sharedInstance(), "Apps");
-    m_ZTabWidget->addTab(ToolboxWidget::sharedInstance(), "Toolbox");
+    m_iDeviceTab = m_ZTabWidget->addTab(m_mainStackedWidget, tr("iDevice"));
+    m_appsTab = m_ZTabWidget->addTab(AppsWidget::sharedInstance(), tr("Apps"));
+    m_toolboxTab =
+        m_ZTabWidget->addTab(ToolboxWidget::sharedInstance(), tr("Toolbox"));
     auto *jailbrokenWidget = new JailbrokenWidget(this);
-    m_ZTabWidget->addTab(jailbrokenWidget, "Jailbroken");
+    m_jailbrokenTab = m_ZTabWidget->addTab(jailbrokenWidget, tr("Jailbroken"));
     m_ZTabWidget->finalizeStyles();
 
     connect(
-        appsWidgetTab, &ZTab::clicked, this,
+        m_appsTab, &ZTab::clicked, this,
         [this](int index) { AppsWidget::sharedInstance()->init(); },
         Qt::SingleShotConnection);
 
     // settings button
-    ZIconWidget *settingsButton = new ZIconWidget(
-        QIcon(":/resources/icons/MingcuteSettings7Line.png"), "Settings");
-    settingsButton->setCursor(Qt::PointingHandCursor);
-    connect(settingsButton, &ZIconWidget::clicked, this, [this]() {
+    m_settingsButton = new ZIconWidget(
+        QIcon(":/resources/icons/MingcuteSettings7Line.png"), tr("Settings"));
+    m_settingsButton->setCursor(Qt::PointingHandCursor);
+    connect(m_settingsButton, &ZIconWidget::clicked, this, [this]() {
         SettingsManager::sharedInstance()->showSettingsDialog();
     });
 
-    ZIconWidget *githubButton = new ZIconWidget(
-        QIcon(":/resources/icons/MdiGithub.png"), "iDescriptor on GitHub");
-    githubButton->setCursor(Qt::PointingHandCursor);
-    connect(githubButton, &ZIconWidget::clicked, this,
+    m_githubButton =
+        new ZIconWidget(QIcon(":/resources/icons/MdiGithub.png"),
+                        tr("%1 on GitHub").arg(qApp->applicationName()));
+    m_githubButton->setCursor(Qt::PointingHandCursor);
+    connect(m_githubButton, &ZIconWidget::clicked, this,
             []() { QDesktopServices::openUrl(QUrl(REPO_URL)); });
 
-    m_connectedDeviceCountLabel = new QLabel("iDescriptor: no devices");
+    m_connectedDeviceCountLabel = new QLabel(
+        tr("%1: no devices").arg(qApp->applicationName()));
     m_connectedDeviceCountLabel->setContentsMargins(0, 0, 0, 0);
     m_connectedDeviceCountLabel->setStyleSheet(
         "QLabel:hover { background-color : #13131319; }");
@@ -196,30 +198,30 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
 
     statusLayout->addWidget(statusBalloon->getButton());
 
-    ZIconWidget *welcomeMenuSwitch = new ZIconWidget(
+    m_welcomeMenuSwitch = new ZIconWidget(
         QIcon(":/resources/icons/LetsIconsHorizontalDownLeftMainLight.png"),
-        "Switch to Welcome Menu");
-    connect(welcomeMenuSwitch, &ZIconWidget::clicked, this,
-            [this, welcomeMenuSwitch]() {
-                if (m_mainStackedWidget->currentIndex() != 0) {
-                    welcomeMenuSwitch->setToolTip(
-                        "Switch to Connected Devices");
-                    return showWelcomeTab();
-                }
-                welcomeMenuSwitch->setToolTip("Switch to Welcome Menu");
-                showConnectedDevicesTab();
-            });
+        tr("Switch to Welcome Menu"));
+    connect(m_welcomeMenuSwitch, &ZIconWidget::clicked, this, [this]() {
+        if (m_mainStackedWidget->currentIndex() != 0) {
+            m_welcomeTabActive = true;
+            m_welcomeMenuSwitch->setToolTip(tr("Switch to Connected Devices"));
+            return showWelcomeTab();
+        }
+        m_welcomeTabActive = false;
+        m_welcomeMenuSwitch->setToolTip(tr("Switch to Welcome Menu"));
+        showConnectedDevicesTab();
+    });
 
     connect(m_ZTabWidget, &ZTabWidget::currentChanged, this,
-            [welcomeMenuSwitch](int index) {
+            [this](int index) {
                 if (index != 0) {
-                    return welcomeMenuSwitch->hide();
+                    return m_welcomeMenuSwitch->hide();
                 }
 
-                welcomeMenuSwitch->show();
+                m_welcomeMenuSwitch->show();
             });
 
-    statusLayout->addWidget(welcomeMenuSwitch);
+    statusLayout->addWidget(m_welcomeMenuSwitch);
     statusLayout->addStretch(1);
 
     QLabel *appVersionLabel = new QLabel(QString("v%1").arg(APP_VERSION));
@@ -243,9 +245,11 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
                 [this, p, path, statusLayout]() {
                     bool ok = iFuseManager::linuxUnmount(path);
                     if (!ok) {
-                        QMessageBox::warning(nullptr, "Unmount Failed",
-                                             "Failed to unmount iFuse at " +
-                                                 path + ". Please try again.");
+                        QMessageBox::warning(
+                            nullptr, tr("Unmount Failed"),
+                            tr("Failed to unmount iFuse at %1. Please "
+                               "try again.")
+                                .arg(path));
                         return;
                     }
                     statusLayout->removeWidget(p);
@@ -292,11 +296,13 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
             !isPortable,
             isPortable,
             !isPortable,
-            isPortable ? "New portable version downloaded, app location will "
-                         "be shown after this message"
-                       : "The application will now quit to install the update.",
-            isPortable ? "New portable version downloaded"
-                       : "Do you want to install the downloaded update now?",
+            isPortable
+                ? tr("New portable version downloaded, app location will "
+                     "be shown after this message")
+                : tr("The application will now quit to install the update."),
+            isPortable
+                ? tr("New portable version downloaded")
+                : tr("Do you want to install the downloaded update now?"),
         };
         break;
         // todo: adjust for pkg managers
@@ -305,10 +311,11 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
             true,
             false,
             true,
-            "The application will now quit and open .dmg file downloaded to "
-            "\"Downloads\" from there you can drag it to Applications to "
-            "install.",
-            "Update downloaded would you like to quit and install the update?",
+            tr("The application will now quit and open .dmg file downloaded "
+               "to \"Downloads\" from there you can drag it to Applications "
+               "to install."),
+            tr("Update downloaded would you like to quit and install the "
+               "update?"),
         };
         break;
     case Platform::Linux:
@@ -320,13 +327,12 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
             true,
             false,
             true,
-            "AppImages we ship are not updateable. New version is downloaded "
-            "to "
-            "\"Downloads\". You can start using the new version by launching "
-            "it "
-            "from there. You can delete this AppImage version if you like.",
-            "Update downloaded would you like to quit and open the new "
-            "version?",
+            tr("AppImages we ship are not updateable. New version is "
+               "downloaded to \"Downloads\". You can start using the new "
+               "version by launching it from there. You can delete this "
+               "AppImage version if you like."),
+            tr("Update downloaded would you like to quit and open the new "
+               "version?"),
         };
         break;
     default:
@@ -340,10 +346,9 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
                              packageManagerManaged, skipPrerelease, this);
 #if defined(PACKAGE_MANAGER_MANAGED) && defined(__linux__)
     m_updater->setPackageManagerManagedMessage(
-        QString(
-            "You seem to have installed iDescriptor using a package manager. "
-            "Please use %1 to update it.")
-            .arg(PACKAGE_MANAGER_HINT));
+        tr("You seem to have installed %1 using a package manager. "
+           "Please use %2 to update it.")
+            .arg(qApp->applicationName(), PACKAGE_MANAGER_HINT));
 #endif
 
     QString lastAppVersion = SettingsManager::sharedInstance()->appVersion();
@@ -450,6 +455,68 @@ void MainWindow::retranslateMenus()
     }
 }
 
+void MainWindow::retranslateTabs()
+{
+    if (m_iDeviceTab) {
+        m_iDeviceTab->setText(tr("iDevice"));
+    }
+    if (m_appsTab) {
+        m_appsTab->setText(tr("Apps"));
+    }
+    if (m_toolboxTab) {
+        m_toolboxTab->setText(tr("Toolbox"));
+    }
+    if (m_jailbrokenTab) {
+        m_jailbrokenTab->setText(tr("Jailbroken"));
+    }
+}
+
+void MainWindow::retranslateStatusBar()
+{
+    if (m_settingsButton) {
+        m_settingsButton->setToolTip(tr("Settings"));
+    }
+    if (m_githubButton) {
+        m_githubButton->setToolTip(
+            tr("%1 on GitHub").arg(qApp->applicationName()));
+    }
+    if (m_welcomeMenuSwitch) {
+        // The tooltip describes the action the user can perform next:
+        // when the welcome page is visible, the next action is to jump
+        // to the connected-devices view, and vice versa.
+        m_welcomeMenuSwitch->setToolTip(
+            m_welcomeTabActive ? tr("Switch to Connected Devices")
+                               : tr("Switch to Welcome Menu"));
+    }
+    if (m_connectedDeviceCountLabel) {
+        if (m_connectedDeviceCount == 0) {
+            m_connectedDeviceCountLabel->setText(
+                tr("%1: no devices").arg(qApp->applicationName()));
+        } else {
+            // %n triggers Qt's plural handling so translators can provide
+            // singular/plural forms for "device(s) connected".
+            m_connectedDeviceCountLabel->setText(
+                tr("%1: %n device(s) connected", "", m_connectedDeviceCount)
+                    .arg(qApp->applicationName()));
+        }
+    }
+}
+
+void MainWindow::retranslateUi()
+{
+    retranslateMenus();
+    retranslateTabs();
+    retranslateStatusBar();
+}
+
+void MainWindow::changeEvent(QEvent *event)
+{
+    if (event->type() == QEvent::LanguageChange) {
+        retranslateUi();
+    }
+    QMainWindow::changeEvent(event);
+}
+
 void MainWindow::showAbout()
 {
     QMessageBox::about(this,
@@ -463,14 +530,13 @@ void MainWindow::updateNoDevicesConnected()
     qDebug() << "No devices connected? "
              << AppContext::sharedInstance()->noDevicesConnected();
     if (AppContext::sharedInstance()->noDevicesConnected()) {
-
-        m_connectedDeviceCountLabel->setText("iDescriptor: no devices");
+        m_connectedDeviceCount = 0;
+        retranslateStatusBar();
         return m_mainStackedWidget->setCurrentIndex(0); // Show Welcome page
     }
-    int deviceCount = AppContext::sharedInstance()->getConnectedDeviceCount();
-    m_connectedDeviceCountLabel->setText(
-        "iDescriptor: " + QString::number(deviceCount) +
-        (deviceCount == 1 ? " device" : " devices") + " connected");
+    m_connectedDeviceCount =
+        AppContext::sharedInstance()->getConnectedDeviceCount();
+    retranslateStatusBar();
     m_mainStackedWidget->setCurrentIndex(1); // Show device list page
 }
 
