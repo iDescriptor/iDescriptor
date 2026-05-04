@@ -426,17 +426,36 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
 
 void MainWindow::createMenus()
 {
-#ifdef Q_OS_MAC
-    QMenu *actionsMenu = menuBar()->addMenu("&Actions");
+    m_helpMenu = menuBar()->addMenu(QString());
 
-    QAction *aboutAct = new QAction("&About iDescriptor", this);
-    connect(aboutAct, &QAction::triggered, this, [this]() {
-        QMessageBox::about(this, "iDescriptor",
-                           "A free, open-source, and cross-platform "
-                           "iDevice management tool.");
-    });
-    actionsMenu->addAction(aboutAct);
-#endif
+    m_aboutAction = new QAction(this);
+    // setMenuRole(AboutRole) ensures macOS moves the action to the
+    // application menu automatically while other platforms keep it under
+    // the Help menu.
+    m_aboutAction->setMenuRole(QAction::AboutRole);
+    connect(m_aboutAction, &QAction::triggered, this, &MainWindow::showAbout);
+    m_helpMenu->addAction(m_aboutAction);
+
+    retranslateMenus();
+}
+
+void MainWindow::retranslateMenus()
+{
+    if (m_helpMenu) {
+        m_helpMenu->setTitle(tr("&Help"));
+    }
+    if (m_aboutAction) {
+        m_aboutAction->setText(
+            tr("&About %1").arg(qApp->applicationName()));
+    }
+}
+
+void MainWindow::showAbout()
+{
+    QMessageBox::about(this,
+                       tr("About %1").arg(qApp->applicationName()),
+                       tr("A free, open-source, and cross-platform "
+                          "iDevice management tool."));
 }
 
 void MainWindow::updateNoDevicesConnected()

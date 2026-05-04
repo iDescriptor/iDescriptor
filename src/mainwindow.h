@@ -26,6 +26,7 @@
 #include "iDescriptor.h"
 #include "iomanagerclient.h"
 #include "ztabwidget.h"
+#include <QAction>
 #include <QApplication>
 #include <QDateTime>
 #include <QDesktopServices>
@@ -59,8 +60,12 @@ public:
 public slots:
     void updateNoDevicesConnected();
 
+private slots:
+    void showAbout();
+
 private:
     void createMenus();
+    void retranslateMenus();
 
     ZTabWidget *m_ZTabWidget;
     DeviceManagerWidget *m_deviceManager;
@@ -73,6 +78,9 @@ private:
     QWidget *m_titleBar;
     QWidget *m_contentArea;
     QHBoxLayout *m_titleBarLayout;
+
+    QMenu *m_helpMenu = nullptr;
+    QAction *m_aboutAction = nullptr;
 
 protected:
     void closeEvent(QCloseEvent *event) override;
