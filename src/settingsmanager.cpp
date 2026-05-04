@@ -45,7 +45,7 @@ void SettingsManager::showSettingsDialog()
     }
 
     m_dialog = new SettingsWidget();
-    m_dialog->setWindowTitle("Settings - iDescriptor");
+    m_dialog->setWindowTitle(tr("Settings - iDescriptor"));
     m_dialog->setModal(true);
     m_dialog->setAttribute(Qt::WA_DeleteOnClose);
     connect(m_dialog, &QObject::destroyed, [this]() { m_dialog = nullptr; });
@@ -185,6 +185,21 @@ void SettingsManager::setTheme(const QString &theme)
     m_settings->sync();
 }
 
+QString SettingsManager::language() const
+{
+    return m_settings->value("language", QString()).toString();
+}
+
+void SettingsManager::setLanguage(const QString &code)
+{
+    if (language() == code) {
+        return;
+    }
+    m_settings->setValue("language", code);
+    m_settings->sync();
+    emit languageChanged(code);
+}
+
 int SettingsManager::connectionTimeout() const
 {
     return m_settings->value("connectionTimeout", 30).toInt();
@@ -290,6 +305,7 @@ void SettingsManager::resetToDefaults()
     setWinBackdropType(ACRYLIC);
     setDisableMica(false);
 #endif
+    setLanguage(QString());
 }
 
 void SettingsManager::saveFavoritePlace(const QString &path,

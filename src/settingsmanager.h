@@ -47,7 +47,8 @@ public:
         SwitchToNewDevice,
         UnmountiFuseOnExit,
         Theme,
-        ConnectionTimeout
+        ConnectionTimeout,
+        Language,
     };
     static QString homePath();
     QString devdiskimgpath() const;
@@ -92,6 +93,9 @@ public:
 
     QString theme() const;
     void setTheme(const QString &theme);
+
+    QString language() const;
+    void setLanguage(const QString &code);
 
     int connectionTimeout() const;
     void setConnectionTimeout(int seconds);
@@ -159,6 +163,7 @@ public:
 signals:
     void favoritePlacesChanged();
     void recentLocationsChanged();
+    void languageChanged(const QString &code);
 
 private:
     QDialog *m_dialog;
