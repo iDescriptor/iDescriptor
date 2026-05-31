@@ -349,7 +349,8 @@ void AfcExplorerWidget::onExportClicked()
 void AfcExplorerWidget::handleExport(QList<QListWidgetItem *> filesToExport)
 {
     QString dir =
-        QFileDialog::getExistingDirectory(this, "Select Export Directory");
+        QFileDialog::getExistingDirectory(this, "Select Export Directory", QString(),
+                                         QFileDialog::ShowDirsOnly | QFileDialog::DontResolveSymlinks | QFileDialog::DontUseNativeDialog);
     if (dir.isEmpty())
         return;
 
@@ -426,7 +427,8 @@ void AfcExplorerWidget::exportAndOpenSelectedFile(QListWidgetItem *item,
 
 void AfcExplorerWidget::onImportClicked()
 {
-    QStringList fileNames = QFileDialog::getOpenFileNames(this, "Import Files");
+    QStringList fileNames = QFileDialog::getOpenFileNames(this, "Import Files", QString(),
+                                                         "All Files (*)", nullptr, QFileDialog::DontUseNativeDialog);
     if (fileNames.isEmpty())
         return;
 
