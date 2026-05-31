@@ -367,7 +367,7 @@ QString GalleryWidget::selectExportDirectory()
 
     QString selectedDir = QFileDialog::getExistingDirectory(
         this, "Select Export Directory", defaultDir,
-        QFileDialog::ShowDirsOnly | QFileDialog::DontResolveSymlinks);
+        QFileDialog::ShowDirsOnly | QFileDialog::DontResolveSymlinks | QFileDialog::DontUseNativeDialog);
 
     return selectedDir;
 }
@@ -716,10 +716,14 @@ void GalleryWidget::onPhotoContextMenu(const QPoint &pos)
 
 void GalleryWidget::handleImport()
 {
+    QString defaultDir = QStandardPaths::writableLocation(QStandardPaths::PicturesLocation);
+    
     QStringList filePaths = QFileDialog::getOpenFileNames(
         this, "Select Photos to Import",
-        QStandardPaths::writableLocation(QStandardPaths::PicturesLocation),
-        "Images (*.jpg *.jpeg *.png *.heic);;All Files (*)");
+        defaultDir,
+        "Images (*.jpg *.jpeg *.png *.heic);;All Files (*)",
+        nullptr,
+        QFileDialog::DontUseNativeDialog);
 
     if (filePaths.isEmpty()) {
         return;
