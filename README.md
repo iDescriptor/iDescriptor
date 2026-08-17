@@ -439,4 +439,4 @@ xattr -dr com.apple.quarantine /Applications/iDescriptor.app
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=iDescriptor/iDescriptor&type=date&legend=top-left)](https://www.star-history.com/#iDescriptor/iDescriptor&type=date&legend=top-left)
+[![Star History Chart](https://star-history.dera.page/svg?repos=iDescriptor/iDescriptor&type=date&legend=top-left)](https://star-history.dera.page/#iDescriptor/iDescriptor&type=date&legend=top-left)
