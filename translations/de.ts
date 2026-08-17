@@ -4680,12 +4680,12 @@ Möchtest du trotzdem fortfahren?</translation>
     <message>
       <location filename="../src/ui/Settings.qml" line="457"/>
       <source>Light</source>
-      <translation type="unfinished">Light</translation>
+      <translation>Hell</translation>
     </message>
     <message>
       <location filename="../src/ui/Settings.qml" line="458"/>
       <source>Dark</source>
-      <translation type="unfinished">Dark</translation>
+      <translation>Dunkel</translation>
     </message>
     <message>
       <location filename="../src/ui/Settings.qml" line="473"/>
@@ -4815,16 +4815,16 @@ Möchtest du trotzdem fortfahren?</translation>
     <message>
       <location filename="../src/ui/Settings.qml" line="695"/>
       <source>Version %1 · %2</source>
-      <translation type="unfinished">Version %1 · %2</translation>
+      <translation>Version %1 · %2</translation>
     </message>
     <message>
       <location filename="../src/ui/Settings.qml" line="706"/>
       <source>A free, open-source, cross-platform iDevice management tool.
 
 © 2026 Uncore &lt;https://github.com/uncor3&gt; and iDescriptor contributors</source>
-      <translation type="unfinished">A free, open-source, cross-platform iDevice management tool.
+      <translation>Ein kostenloses, plattformübergreifendes Open-Source-iDevice-Verwaltungstool.
 
-© 2026 Uncore &lt;https://github.com/uncor3&gt; and iDescriptor contributors</translation>
+© 2026 Uncore &lt;https://github.com/uncor3&gt; und Mitwirkende an iDescriptor</translation>
     </message>
     <message>
       <location filename="../src/ui/Settings.qml" line="727"/>
