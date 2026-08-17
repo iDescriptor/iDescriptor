@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" sourcelanguage="en_US" language="pt-PT">
+<TS version="2.1" sourcelanguage="en_US" language="pt-BR">
   <context>
     <name>Airplay</name>
     <message>
