@@ -4509,17 +4509,17 @@ Möchtest du trotzdem fortfahren?</translation>
     <message>
       <location filename="../src/ui/tools/ScreenMirroring.qml" line="17"/>
       <source>Screen Mirroring - iDescriptor</source>
-      <translation type="unfinished">Screen Mirroring - iDescriptor</translation>
+      <translation>Screen Mirroring - iDescriptor</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/ScreenMirroring.qml" line="81"/>
       <source>Mirroring</source>
-      <translation type="unfinished">Mirroring</translation>
+      <translation>Mirroring</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/ScreenMirroring.qml" line="86"/>
       <source>%1 packets</source>
-      <translation type="unfinished">%1 packets</translation>
+      <translation>%1 packets</translation>
     </message>
   </context>
   <context>
