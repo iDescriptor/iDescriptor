@@ -12,42 +12,42 @@
       <location filename="../src/ui/tools/Airplay.qml" line="71"/>
       <location filename="../src/ui/tools/Airplay.qml" line="138"/>
       <source>Failed to start AirPlay.</source>
-      <translation>Failed to start AirPlay.</translation>
+      <translation>Kan AirPlay niet starten.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/Airplay.qml" line="163"/>
       <source>Waiting for device connection</source>
-      <translation>Waiting for device connection</translation>
+      <translation>Wachten op apparaatverbinding</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/Airplay.qml" line="164"/>
       <source>Starting AirPlay Server...</source>
-      <translation>Starting AirPlay Server...</translation>
+      <translation>AirPlay-server starten...</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/Airplay.qml" line="177"/>
       <source>Settings</source>
-      <translation>Settings</translation>
+      <translation>Instellingen</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/Airplay.qml" line="208"/>
       <source>Loading AirPlay tutorial...</source>
-      <translation>Loading AirPlay tutorial...</translation>
+      <translation>AirPlay-tutorial laden...</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/Airplay.qml" line="238"/>
       <source>Open Control Center on your device, choose Screen Mirroring, then select iDescriptor@UxPlay.</source>
-      <translation>Open Control Center on your device, choose Screen Mirroring, then select iDescriptor@UxPlay.</translation>
+      <translation>Open het Controlecentrum op uw apparaat, kies Screen Mirroring en selecteer vervolgens iDescriptor@UxPlay.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/Airplay.qml" line="342"/>
       <source>Rotate clockwise</source>
-      <translation>Rotate clockwise</translation>
+      <translation>Draai met de klok mee</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/Airplay.qml" line="349"/>
       <source>Zoom out</source>
-      <translation>Zoom out</translation>
+      <translation>Uitzoomen</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/Airplay.qml" line="356"/>
@@ -57,17 +57,17 @@
     <message>
       <location filename="../src/ui/tools/Airplay.qml" line="364"/>
       <source>Reset display</source>
-      <translation>Reset display</translation>
+      <translation>Weergave opnieuw instellen</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/Airplay.qml" line="378"/>
       <source>Unmute</source>
-      <translation>Unmute</translation>
+      <translation>Dempen opheffen</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/Airplay.qml" line="378"/>
       <source>Mute</source>
-      <translation>Mute</translation>
+      <translation>Dempen</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/Airplay.qml" line="427"/>
@@ -77,22 +77,22 @@
     <message>
       <location filename="../src/ui/tools/Airplay.qml" line="438"/>
       <source>Connection information</source>
-      <translation>Connection information</translation>
+      <translation>Verbindingsinformatie</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/Airplay.qml" line="455"/>
       <source>AirPlay Connection</source>
-      <translation>AirPlay Connection</translation>
+      <translation>AirPlay-verbinding</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/Airplay.qml" line="465"/>
       <source>Launch arguments</source>
-      <translation>Launch arguments</translation>
+      <translation>Lanceer argumenten</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/Airplay.qml" line="469"/>
       <source>Device name</source>
-      <translation>Device name</translation>
+      <translation>Apparaatnaam</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/Airplay.qml" line="473"/>
@@ -102,7 +102,7 @@
     <message>
       <location filename="../src/ui/tools/Airplay.qml" line="477"/>
       <source>Device ID</source>
-      <translation>Device ID</translation>
+      <translation>Apparaat-ID</translation>
     </message>
   </context>
   <context>
@@ -111,88 +111,88 @@
       <location filename="../src/ui/AlbumContents.qml" line="98"/>
       <location filename="../src/ui/AlbumContents.qml" line="227"/>
       <source>Exporting Files</source>
-      <translation>Exporting Files</translation>
+      <translation>Bestanden exporteren</translation>
     </message>
     <message>
       <location filename="../src/ui/AlbumContents.qml" line="115"/>
       <source>Failed to reload the gallery.</source>
-      <translation>Failed to reload the gallery.</translation>
+      <translation>Kan de galerij niet opnieuw laden.</translation>
     </message>
     <message>
       <location filename="../src/ui/AlbumContents.qml" line="141"/>
       <source>Failed to load the album contents.</source>
-      <translation>Failed to load the album contents.</translation>
+      <translation>Kan de albuminhoud niet laden.</translation>
     </message>
     <message>
       <location filename="../src/ui/AlbumContents.qml" line="169"/>
       <location filename="../src/ui/AlbumContents.qml" line="180"/>
       <source>Back</source>
-      <translation>Back</translation>
+      <translation>Terug</translation>
     </message>
     <message>
       <location filename="../src/ui/AlbumContents.qml" line="188"/>
       <source>Refreshing album contents</source>
-      <translation>Refreshing album contents</translation>
+      <translation>Verfrissende albuminhoud</translation>
     </message>
     <message>
       <location filename="../src/ui/AlbumContents.qml" line="189"/>
       <source>Refresh</source>
-      <translation>Refresh</translation>
+      <translation>Vernieuwen</translation>
     </message>
     <message>
       <location filename="../src/ui/AlbumContents.qml" line="199"/>
       <source>All</source>
-      <translation>All</translation>
+      <translation>Allemaal</translation>
     </message>
     <message>
       <location filename="../src/ui/AlbumContents.qml" line="200"/>
       <source>Images</source>
-      <translation>Images</translation>
+      <translation>Afbeeldingen</translation>
     </message>
     <message>
       <location filename="../src/ui/AlbumContents.qml" line="201"/>
       <source>Videos</source>
-      <translation>Videos</translation>
+      <translation>Video's</translation>
     </message>
     <message>
       <location filename="../src/ui/AlbumContents.qml" line="211"/>
       <source>Most Recent</source>
-      <translation>Most Recent</translation>
+      <translation>Meest recent</translation>
     </message>
     <message>
       <location filename="../src/ui/AlbumContents.qml" line="212"/>
       <source>Oldest First</source>
-      <translation>Oldest First</translation>
+      <translation>Oudste eerst</translation>
     </message>
     <message>
       <location filename="../src/ui/AlbumContents.qml" line="219"/>
       <source>Export Selected (%1)</source>
-      <translation>Export Selected (%1)</translation>
+      <translation>Geselecteerde export (%1)</translation>
     </message>
     <message>
       <location filename="../src/ui/AlbumContents.qml" line="221"/>
       <source>Exporting Selected Items</source>
-      <translation>Exporting Selected Items</translation>
+      <translation>Geselecteerde items exporteren</translation>
     </message>
     <message>
       <location filename="../src/ui/AlbumContents.qml" line="225"/>
       <source>Export All</source>
-      <translation>Export All</translation>
+      <translation>Alles exporteren</translation>
     </message>
     <message>
       <location filename="../src/ui/AlbumContents.qml" line="346"/>
       <source>No Photos or Videos</source>
-      <translation>No Photos or Videos</translation>
+      <translation>Geen foto's of video's</translation>
     </message>
     <message>
       <location filename="../src/ui/AlbumContents.qml" line="354"/>
       <source>This album is empty.</source>
-      <translation>This album is empty.</translation>
+      <translation>Dit album is leeg.</translation>
     </message>
     <message>
       <location filename="../src/ui/AlbumContents.qml" line="376"/>
       <source>Choose Export Folder</source>
-      <translation>Choose Export Folder</translation>
+      <translation>Kies Map exporteren</translation>
     </message>
   </context>
   <context>
@@ -200,118 +200,118 @@
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="25"/>
       <source>Free</source>
-      <translation>Free</translation>
+      <translation>Gratis</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="34"/>
       <source>Failed to fetch app details.</source>
-      <translation>Failed to fetch app details.</translation>
+      <translation>Kan app-gegevens niet ophalen.</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="80"/>
       <location filename="../src/ui/app-store/AppDetails.qml" line="94"/>
       <source>Back</source>
-      <translation>Back</translation>
+      <translation>Terug</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="199"/>
       <source>Install</source>
-      <translation>Install</translation>
+      <translation>Installeren</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="204"/>
       <source>Get IPA</source>
-      <translation>Get IPA</translation>
+      <translation>Verkrijg IPA</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="219"/>
       <source>Rating</source>
-      <translation>Rating</translation>
+      <translation>Beoordeling</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="219"/>
       <source>%1 ratings</source>
-      <translation>%1 ratings</translation>
+      <translation>%1-beoordelingen</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="220"/>
       <source>Age</source>
-      <translation>Age</translation>
+      <translation>Leeftijd</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="220"/>
       <source>Years</source>
-      <translation>Years</translation>
+      <translation>Jaren</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="221"/>
       <source>Version</source>
-      <translation>Version</translation>
+      <translation>Versie</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="221"/>
       <source>Latest</source>
-      <translation>Latest</translation>
+      <translation>Nieuwste</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="222"/>
       <source>Size</source>
-      <translation>Size</translation>
+      <translation>Grootte</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="222"/>
       <source>Download</source>
-      <translation>Download</translation>
+      <translation>Downloaden</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="271"/>
       <source>What&apos;s New</source>
-      <translation>What&apos;s New</translation>
+      <translation>Wat is er nieuw</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="278"/>
       <source>No release notes available.</source>
-      <translation>No release notes available.</translation>
+      <translation>Geen release-opmerkingen beschikbaar.</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="288"/>
       <source>Screenshots</source>
-      <translation>Screenshots</translation>
+      <translation>Schermafbeeldingen</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="320"/>
       <source>No screenshots available.</source>
-      <translation>No screenshots available.</translation>
+      <translation>Geen schermafbeeldingen beschikbaar.</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="331"/>
       <source>Description</source>
-      <translation>Description</translation>
+      <translation>Beschrijving</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="348"/>
       <source>Information</source>
-      <translation>Information</translation>
+      <translation>Informatie</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="359"/>
       <source>Seller</source>
-      <translation>Seller</translation>
+      <translation>Verkoper</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="361"/>
       <source>Bundle ID</source>
-      <translation>Bundle ID</translation>
+      <translation>Bundel-ID</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="363"/>
       <source>Minimum iOS</source>
-      <translation>Minimum iOS</translation>
+      <translation>Minimaal iOS</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="365"/>
       <source>Languages</source>
-      <translation>Languages</translation>
+      <translation>Talen</translation>
     </message>
   </context>
   <context>
@@ -319,7 +319,7 @@
     <message>
       <location filename="../src/ui/app-store/AppItem.qml" line="99"/>
       <source>Install</source>
-      <translation>Install</translation>
+      <translation>Installeren</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppItem.qml" line="121"/>
@@ -329,7 +329,7 @@
     <message>
       <location filename="../src/ui/app-store/AppItem.qml" line="121"/>
       <source>Get IPA</source>
-      <translation>Get IPA</translation>
+      <translation>Verkrijg IPA</translation>
     </message>
   </context>
   <context>
@@ -337,12 +337,12 @@
     <message>
       <location filename="../src/ui/AppSidebar.qml" line="83"/>
       <source>Explore</source>
-      <translation>Explore</translation>
+      <translation>Ontdek</translation>
     </message>
     <message>
       <location filename="../src/ui/AppSidebar.qml" line="92"/>
       <source>Welcome</source>
-      <translation>Welcome</translation>
+      <translation>Welkom</translation>
     </message>
     <message>
       <location filename="../src/ui/AppSidebar.qml" line="99"/>
@@ -352,32 +352,32 @@
     <message>
       <location filename="../src/ui/AppSidebar.qml" line="106"/>
       <source>Toolbox</source>
-      <translation>Toolbox</translation>
+      <translation>Gereedschapskist</translation>
     </message>
     <message>
       <location filename="../src/ui/AppSidebar.qml" line="113"/>
       <source>Jailbroken</source>
-      <translation>Jailbroken</translation>
+      <translation>Gejailbreakt</translation>
     </message>
     <message>
       <location filename="../src/ui/AppSidebar.qml" line="120"/>
       <source>Community</source>
-      <translation>Community</translation>
+      <translation>Gemeenschap</translation>
     </message>
     <message>
       <location filename="../src/ui/AppSidebar.qml" line="127"/>
       <source>Donate</source>
-      <translation>Donate</translation>
+      <translation>Doneer</translation>
     </message>
     <message>
       <location filename="../src/ui/AppSidebar.qml" line="136"/>
       <source>Devices</source>
-      <translation>Devices</translation>
+      <translation>Apparaten</translation>
     </message>
     <message>
       <location filename="../src/ui/AppSidebar.qml" line="150"/>
       <source>No connected devices</source>
-      <translation>No connected devices</translation>
+      <translation>Geen aangesloten apparaten</translation>
     </message>
   </context>
   <context>
@@ -385,127 +385,127 @@
     <message>
       <location filename="../src/ui/AppsTab.qml" line="84"/>
       <source>You must be signed in to install apps.</source>
-      <translation>You must be signed in to install apps.</translation>
+      <translation>U moet ingelogd zijn om apps te kunnen installeren.</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="103"/>
       <source>You must be signed in to download IPA files.</source>
-      <translation>You must be signed in to download IPA files.</translation>
+      <translation>U moet zijn aangemeld om IPA-bestanden te downloaden.</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="143"/>
       <source>Photo &amp; Video sharing social network</source>
-      <translation>Photo &amp; Video sharing social network</translation>
+      <translation>Sociaal netwerk voor het delen van foto's en video's</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="144"/>
       <source>Music streaming and podcast platform</source>
-      <translation>Music streaming and podcast platform</translation>
+      <translation>Muziekstreaming- en podcastplatform</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="145"/>
       <source>Video sharing and streaming platform</source>
-      <translation>Video sharing and streaming platform</translation>
+      <translation>Platform voor het delen en streamen van video's</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="146"/>
       <source>Social media and microblogging</source>
-      <translation>Social media and microblogging</translation>
+      <translation>Sociale media en microblogging</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="147"/>
       <source>Short-form video hosting service</source>
-      <translation>Short-form video hosting service</translation>
+      <translation>Korte video-hostingservice</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="148"/>
       <source>Live streaming platform</source>
-      <translation>Live streaming platform</translation>
+      <translation>Livestreamplatform</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="149"/>
       <source>Cloud-based instant messaging</source>
-      <translation>Cloud-based instant messaging</translation>
+      <translation>Cloudgebaseerde instant messaging</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="150"/>
       <source>Social news aggregation platform</source>
-      <translation>Social news aggregation platform</translation>
+      <translation>Sociaal nieuwsaggregatieplatform</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="170"/>
       <source>Platinum</source>
-      <translation>Platinum</translation>
+      <translation>Platina</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="171"/>
       <source>Gold</source>
-      <translation>Gold</translation>
+      <translation>Goud</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="172"/>
       <source>Silver</source>
-      <translation>Silver</translation>
+      <translation>Zilver</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="173"/>
       <source>Bronze</source>
-      <translation>Bronze</translation>
+      <translation>Brons</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="176"/>
       <source>Failed to parse sponsors JSON.</source>
-      <translation>Failed to parse sponsors JSON.</translation>
+      <translation>Kan sponsor-JSON niet parseren.</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="179"/>
       <source>Failed to fetch sponsors.</source>
-      <translation>Failed to fetch sponsors.</translation>
+      <translation>Het ophalen van sponsors is niet gelukt.</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="225"/>
       <source>Search failed.</source>
-      <translation>Search failed.</translation>
+      <translation>Zoeken mislukt.</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="234"/>
       <source>Search returned an invalid response.</source>
-      <translation>Search returned an invalid response.</translation>
+      <translation>Zoeken heeft een ongeldig antwoord geretourneerd.</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="253"/>
       <source>Failed to parse search results.</source>
-      <translation>Failed to parse search results.</translation>
+      <translation>Kan de zoekresultaten niet parseren.</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="331"/>
       <source>Search for apps...</source>
-      <translation>Search for apps...</translation>
+      <translation>Zoeken naar apps...</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="341"/>
       <source>Signed in as %1</source>
-      <translation>Signed in as %1</translation>
+      <translation>Aangemeld als %1</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="341"/>
       <source>Not signed in</source>
-      <translation>Not signed in</translation>
+      <translation>Niet aangemeld</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="346"/>
       <source>Sign Out</source>
-      <translation>Sign Out</translation>
+      <translation>Uitloggen</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="346"/>
       <source>Sign In</source>
-      <translation>Sign In</translation>
+      <translation>Inloggen</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="480"/>
       <source>No results</source>
-      <translation>No results</translation>
+      <translation>Geen resultaten</translation>
     </message>
   </context>
   <context>
@@ -513,238 +513,238 @@
     <message>
       <location filename="../src/ui/BackupAction.qml" line="37"/>
       <source>This Device</source>
-      <translation>This Device</translation>
+      <translation>Dit apparaat</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="57"/>
       <source>Back Up Over Wi-Fi?</source>
-      <translation>Back Up Over Wi-Fi?</translation>
+      <translation>Back-up maken via Wi-Fi?</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="58"/>
       <source>Wireless backups can take longer and may stop if the connection changes. Keep the device nearby, connected to power, and on the same Wi-Fi network until the backup finishes.</source>
-      <translation>Wireless backups can take longer and may stop if the connection changes. Keep the device nearby, connected to power, and on the same Wi-Fi network until the backup finishes.</translation>
+      <translation>Draadloze back-ups kunnen langer duren en kunnen stoppen als de verbinding verandert. Houd het apparaat in de buurt, aangesloten op de voeding en op hetzelfde Wi-Fi-netwerk totdat de back-up is voltooid.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="90"/>
       <location filename="../src/ui/BackupAction.qml" line="164"/>
       <source>Preparing the backup...</source>
-      <translation>Preparing the backup...</translation>
+      <translation>De back-up voorbereiden...</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="99"/>
       <source>Cancelling the backup...</source>
-      <translation>Cancelling the backup...</translation>
+      <translation>De back-up annuleren...</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="102"/>
       <source>The backup could not be cancelled.</source>
-      <translation>The backup could not be cancelled.</translation>
+      <translation>De back-up kon niet worden geannuleerd.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="108"/>
       <source>The backup was cancelled. Files already written may remain in the selected folder.</source>
-      <translation>The backup was cancelled. Files already written may remain in the selected folder.</translation>
+      <translation>De back-up is geannuleerd. Reeds geschreven bestanden kunnen in de geselecteerde map blijven staan.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="121"/>
       <source>Backing Up %1</source>
-      <translation>Backing Up %1</translation>
+      <translation>Back-up maken van %1</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="123"/>
       <source>Backup Complete</source>
-      <translation>Backup Complete</translation>
+      <translation>Back-up voltooid</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="125"/>
       <source>Backup Couldn&apos;t Be Completed</source>
-      <translation>Backup Couldn&apos;t Be Completed</translation>
+      <translation>Back-up kon niet worden voltooid</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="127"/>
       <source>Backup Cancelled</source>
-      <translation>Backup Cancelled</translation>
+      <translation>Back-up geannuleerd</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="128"/>
       <source>Back Up %1</source>
-      <translation>Back Up %1</translation>
+      <translation>Maak een back-up van %1</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="133"/>
       <source>Keep the device connected while iDescriptor securely copies its data.</source>
-      <translation>Keep the device connected while iDescriptor securely copies its data.</translation>
+      <translation>Houd het apparaat verbonden terwijl iDescriptor de gegevens veilig kopieert.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="135"/>
       <source>Your device was backed up successfully.</source>
-      <translation>Your device was backed up successfully.</translation>
+      <translation>Er is met succes een back-up van uw apparaat gemaakt.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="137"/>
       <source>iDescriptor was unable to finish this backup. Review the activity log and try again.</source>
-      <translation>iDescriptor was unable to finish this backup. Review the activity log and try again.</translation>
+      <translation>iDescriptor kan deze back-up niet voltooien. Bekijk het activiteitenlogboek en probeer het opnieuw.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="140"/>
       <source>Create a local backup of your device before making changes or transferring data.</source>
-      <translation>Create a local backup of your device before making changes or transferring data.</translation>
+      <translation>Maak een lokale back-up van uw apparaat voordat u wijzigingen aanbrengt of gegevens overdraagt.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="163"/>
       <source>Enter the device passcode on the device to continue.</source>
-      <translation>Enter the device passcode on the device to continue.</translation>
+      <translation>Voer de toegangscode van het apparaat in om door te gaan.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="171"/>
       <source>The device requested that this backup be cancelled.</source>
-      <translation>The device requested that this backup be cancelled.</translation>
+      <translation>Het apparaat heeft verzocht om annulering van deze back-up.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="181"/>
       <source>The device&apos;s backup encryption status could not be read.</source>
-      <translation>The device&apos;s backup encryption status could not be read.</translation>
+      <translation>De back-up-coderingsstatus van het apparaat kan niet worden gelezen.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="197"/>
       <source>Saved to %1</source>
-      <translation>Saved to %1</translation>
+      <translation>Opgeslagen in %1</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="202"/>
       <source>The backup was cancelled from the device.</source>
-      <translation>The backup was cancelled from the device.</translation>
+      <translation>De back-up van het apparaat is geannuleerd.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="206"/>
       <source>The backup operation ended before it could be completed.</source>
-      <translation>The backup operation ended before it could be completed.</translation>
+      <translation>De back-upbewerking is beëindigd voordat deze kon worden voltooid.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="213"/>
       <source>Select Backup Directory</source>
-      <translation>Select Backup Directory</translation>
+      <translation>Selecteer Back-upmap</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="229"/>
       <source>The encrypted backup password was updated.</source>
-      <translation>The encrypted backup password was updated.</translation>
+      <translation>Het gecodeerde back-upwachtwoord is bijgewerkt.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="255"/>
       <source>A backup operation is in progress</source>
-      <translation>A backup operation is in progress</translation>
+      <translation>Er wordt een back-upbewerking uitgevoerd</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="256"/>
       <source>Back</source>
-      <translation>Back</translation>
+      <translation>Terug</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="309"/>
       <source>Backup Location</source>
-      <translation>Backup Location</translation>
+      <translation>Back-uplocatie</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="324"/>
       <source>Checking backup encryption…</source>
-      <translation>Checking backup encryption…</translation>
+      <translation>Back-upversleuteling controleren...</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="326"/>
       <source>Encryption enabled</source>
-      <translation>Encryption enabled</translation>
+      <translation>Versleuteling ingeschakeld</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="327"/>
       <source>Backup encryption status unavailable</source>
-      <translation>Backup encryption status unavailable</translation>
+      <translation>Back-upversleutelingsstatus niet beschikbaar</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="346"/>
       <source>Use the Manage Encryption button to set up encrypted backups.</source>
-      <translation>Use the Manage Encryption button to set up encrypted backups.</translation>
+      <translation>Gebruik de knop Codering beheren om gecodeerde back-ups in te stellen.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="347"/>
       <source>Backups for this device are protected with a password.</source>
-      <translation>Backups for this device are protected with a password.</translation>
+      <translation>Back-ups voor dit apparaat zijn beveiligd met een wachtwoord.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="358"/>
       <source>Force full backup</source>
-      <translation>Force full backup</translation>
+      <translation>Forceer volledige back-up</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="367"/>
       <source>Only change this if you know what you are doing. If not, just leave it as it is.</source>
-      <translation>Only change this if you know what you are doing. If not, just leave it as it is.</translation>
+      <translation>Verander dit alleen als je weet wat je doet. Zo niet, laat het dan gewoon zoals het is.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="393"/>
       <source>Activity</source>
-      <translation>Activity</translation>
+      <translation>Activiteit</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="402"/>
       <source>1 item</source>
-      <translation>1 item</translation>
+      <translation>1 artikel</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="403"/>
       <source>%1 items</source>
-      <translation>%1 items</translation>
+      <translation>%1-artikelen</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="441"/>
       <source>Enter the device passcode on the device to continue the backup.</source>
-      <translation>Enter the device passcode on the device to continue the backup.</translation>
+      <translation>Voer de toegangscode van het apparaat in om door te gaan met de back-up.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="452"/>
       <source>Logs will appear here as files are received from the device.</source>
-      <translation>Logs will appear here as files are received from the device.</translation>
+      <translation>Logboeken verschijnen hier wanneer bestanden van het apparaat worden ontvangen.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="499"/>
       <source>Cancel</source>
-      <translation>Cancel</translation>
+      <translation>Annuleer</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="505"/>
       <source>Show Details</source>
-      <translation>Show Details</translation>
+      <translation>Details tonen</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="511"/>
       <source>Show in Finder</source>
-      <translation>Show in Finder</translation>
+      <translation>Toon in Finder</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="511"/>
       <source>Show in Folder</source>
-      <translation>Show in Folder</translation>
+      <translation>Weergeven in map</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="517"/>
       <source>Done</source>
-      <translation>Done</translation>
+      <translation>Klaar</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="526"/>
       <source>Manage Encryption…</source>
-      <translation>Manage Encryption…</translation>
+      <translation>Versleuteling beheren…</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="535"/>
       <source>Back Up Now</source>
-      <translation>Back Up Now</translation>
+      <translation>Maak nu een back-up</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="535"/>
       <source>Try Again</source>
-      <translation>Try Again</translation>
+      <translation>Probeer het opnieuw</translation>
     </message>
   </context>
   <context>
@@ -756,72 +756,72 @@
       <location filename="../src/ui/BackupDetails.qml" line="303"/>
       <location filename="../src/ui/BackupDetails.qml" line="304"/>
       <source>Unknown</source>
-      <translation>Unknown</translation>
+      <translation>Onbekend</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetails.qml" line="166"/>
       <source>New</source>
-      <translation>New</translation>
+      <translation>Nieuw</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetails.qml" line="168"/>
       <source>Full</source>
-      <translation>Full</translation>
+      <translation>Vol</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetails.qml" line="169"/>
       <source>Incremental</source>
-      <translation>Incremental</translation>
+      <translation>Incrementeel</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetails.qml" line="183"/>
       <source>Failed to load backup details.</source>
-      <translation>Failed to load backup details.</translation>
+      <translation>Kan back-upgegevens niet laden.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetails.qml" line="193"/>
       <source>Failed to parse backup details.</source>
-      <translation>Failed to parse backup details.</translation>
+      <translation>Kan back-upgegevens niet parseren.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetails.qml" line="223"/>
       <source>Back</source>
-      <translation>Back</translation>
+      <translation>Terug</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetails.qml" line="232"/>
       <source>Backup Summary</source>
-      <translation>Backup Summary</translation>
+      <translation>Back-upoverzicht</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetails.qml" line="255"/>
       <source>Encrypted</source>
-      <translation>Encrypted</translation>
+      <translation>Gecodeerd</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetails.qml" line="255"/>
       <source>Not Encrypted</source>
-      <translation>Not Encrypted</translation>
+      <translation>Niet gecodeerd</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetails.qml" line="270"/>
       <source>Passcode Was Set</source>
-      <translation>Passcode Was Set</translation>
+      <translation>Toegangscode is ingesteld</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetails.qml" line="270"/>
       <source>No Passcode</source>
-      <translation>No Passcode</translation>
+      <translation>Geen toegangscode</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetails.qml" line="302"/>
       <source>iOS %1 - Serial %2</source>
-      <translation>iOS %1 - Serial %2</translation>
+      <translation>iOS %1 - Serieel %2</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetails.qml" line="312"/>
       <source>Backup Date: %1</source>
-      <translation>Backup Date: %1</translation>
+      <translation>Back-updatum: %1</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetails.qml" line="352"/>
@@ -833,8 +833,8 @@
       <location filename="../src/ui/BackupDetails.qml" line="434"/>
       <source>%n file(s)</source>
       <translation>
-        <numerusform>%n file(s)</numerusform>
-        <numerusform>%n file(s)</numerusform>
+        <numerusform>%n bestand(en)</numerusform>
+        <numerusform>%n bestand(en)</numerusform>
       </translation>
     </message>
   </context>
@@ -845,126 +845,126 @@
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="87"/>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="380"/>
       <source>Unknown</source>
-      <translation>Unknown</translation>
+      <translation>Onbekend</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="99"/>
       <source>Applications</source>
-      <translation>Applications</translation>
+      <translation>Toepassingen</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="101"/>
       <source>App Extensions</source>
-      <translation>App Extensions</translation>
+      <translation>App-extensies</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="103"/>
       <source>Shared App Groups</source>
-      <translation>Shared App Groups</translation>
+      <translation>Gedeelde app-groepen</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="105"/>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="120"/>
       <source>Other</source>
-      <translation>Other</translation>
+      <translation>Anders</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="172"/>
       <source>Failed to load backup details.</source>
-      <translation>Failed to load backup details.</translation>
+      <translation>Kan back-upgegevens niet laden.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="182"/>
       <source>Failed to parse backup details.</source>
-      <translation>Failed to parse backup details.</translation>
+      <translation>Kan back-upgegevens niet parseren.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="212"/>
       <source>Back</source>
-      <translation>Back</translation>
+      <translation>Terug</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="221"/>
       <source>Tip: Connect the device that created this backup to view more details.</source>
-      <translation>Tip: Connect the device that created this backup to view more details.</translation>
+      <translation>Tip: Sluit het apparaat aan dat deze back-up heeft gemaakt om meer details te bekijken.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="221"/>
       <source>For now encrypted backup details are limited. Having the device connected will not provide more information.</source>
-      <translation>For now encrypted backup details are limited. Having the device connected will not provide more information.</translation>
+      <translation>Voorlopig zijn de gegevens over versleutelde back-ups beperkt. Als het apparaat is aangesloten, krijgt u niet meer informatie.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="227"/>
       <source>Backup Summary</source>
-      <translation>Backup Summary</translation>
+      <translation>Back-upoverzicht</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="235"/>
       <source>Offline Device Backup</source>
-      <translation>Offline Device Backup</translation>
+      <translation>Offline apparaatback-up</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="251"/>
       <source>Encrypted</source>
-      <translation>Encrypted</translation>
+      <translation>Gecodeerd</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="251"/>
       <source>Not Encrypted</source>
-      <translation>Not Encrypted</translation>
+      <translation>Niet gecodeerd</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="266"/>
       <source>Screen Passcode Set</source>
-      <translation>Screen Passcode Set</translation>
+      <translation>Schermtoegangscode ingesteld</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="266"/>
       <source>No Screen Passcode</source>
-      <translation>No Screen Passcode</translation>
+      <translation>Geen schermtoegangscode</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="293"/>
       <source>Total Size</source>
-      <translation>Total Size</translation>
+      <translation>Totale grootte</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="321"/>
       <source>Files</source>
-      <translation>Files</translation>
+      <translation>Bestanden</translation>
     </message>
     <message numerus="yes">
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="329"/>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="579"/>
       <source>%n file(s)</source>
       <translation>
-        <numerusform>%n file(s)</numerusform>
-        <numerusform>%n file(s)</numerusform>
+        <numerusform>%n bestand(en)</numerusform>
+        <numerusform>%n bestand(en)</numerusform>
       </translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="349"/>
       <source>Apps and Containers</source>
-      <translation>Apps and Containers</translation>
+      <translation>Apps en containers</translation>
     </message>
     <message numerus="yes">
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="357"/>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="543"/>
       <source>%n item(s)</source>
       <translation>
-        <numerusform>%n item(s)</numerusform>
-        <numerusform>%n item(s)</numerusform>
+        <numerusform>%n artikel(en)</numerusform>
+        <numerusform>%n artikel(en)</numerusform>
       </translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="373"/>
       <source>Device Model</source>
-      <translation>Device Model</translation>
+      <translation>Apparaatmodel</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="386"/>
       <source>iOS Version</source>
-      <translation>iOS Version</translation>
+      <translation>iOS-versie</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="393"/>
@@ -974,22 +974,22 @@
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="401"/>
       <source>Serial</source>
-      <translation>Serial</translation>
+      <translation>Serieel</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="414"/>
       <source>Backup Date</source>
-      <translation>Backup Date</translation>
+      <translation>Back-updatum</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="427"/>
       <source>Manifest</source>
-      <translation>Manifest</translation>
+      <translation>Duidelijk</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="434"/>
       <source>Version %1, domains %2</source>
-      <translation>Version %1, domains %2</translation>
+      <translation>Versie %1, domeinen %2</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="442"/>
@@ -999,14 +999,14 @@
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="458"/>
       <source>Application Containers</source>
-      <translation>Application Containers</translation>
+      <translation>Applicatiecontainers</translation>
     </message>
     <message numerus="yes">
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="494"/>
       <source>%1: %n item(s)</source>
       <translation>
-        <numerusform>%1: %n item(s)</numerusform>
-        <numerusform>%1: %n item(s)</numerusform>
+        <numerusform>%1: %n artikel(en)</numerusform>
+        <numerusform>%1: %n artikel(en)</numerusform>
       </translation>
     </message>
     <message>
@@ -1017,7 +1017,7 @@
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="573"/>
       <source>Backup folder</source>
-      <translation>Backup folder</translation>
+      <translation>Back-up map</translation>
     </message>
   </context>
   <context>
@@ -1025,102 +1025,102 @@
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="29"/>
       <source>Change Backup Password</source>
-      <translation>Change Backup Password</translation>
+      <translation>Wijzig het back-upwachtwoord</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="30"/>
       <source>Enable Encrypted Backups</source>
-      <translation>Enable Encrypted Backups</translation>
+      <translation>Schakel gecodeerde back-ups in</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="53"/>
       <source>Enter the current backup password.</source>
-      <translation>Enter the current backup password.</translation>
+      <translation>Voer het huidige back-upwachtwoord in.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="58"/>
       <source>Enter a new backup password.</source>
-      <translation>Enter a new backup password.</translation>
+      <translation>Voer een nieuw back-upwachtwoord in.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="63"/>
       <source>The new passwords do not match.</source>
-      <translation>The new passwords do not match.</translation>
+      <translation>De nieuwe wachtwoorden komen niet overeen.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="68"/>
       <source>Confirm that you have saved the password somewhere safe.</source>
-      <translation>Confirm that you have saved the password somewhere safe.</translation>
+      <translation>Bevestig dat u het wachtwoord ergens veilig heeft opgeslagen.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="107"/>
       <source>The device&apos;s backup encryption status could not be read.</source>
-      <translation>The device&apos;s backup encryption status could not be read.</translation>
+      <translation>De back-up-coderingsstatus van het apparaat kan niet worden gelezen.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="125"/>
       <source>Encrypted backups could not be enabled.</source>
-      <translation>Encrypted backups could not be enabled.</translation>
+      <translation>Gecodeerde back-ups kunnen niet worden ingeschakeld.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="149"/>
       <source>Try Again</source>
-      <translation>Try Again</translation>
+      <translation>Probeer het opnieuw</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="164"/>
       <source>Encrypted backups are enabled for %1. Enter the current password to replace it.</source>
-      <translation>Encrypted backups are enabled for %1. Enter the current password to replace it.</translation>
+      <translation>Gecodeerde back-ups zijn ingeschakeld voor %1. Voer het huidige wachtwoord in om het te vervangen.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="165"/>
       <source>Encrypted backups aren&apos;t enabled on this device. Choose a password to enable encryption on %1.</source>
-      <translation>Encrypted backups aren&apos;t enabled on this device. Choose a password to enable encryption on %1.</translation>
+      <translation>Versleutelde back-ups zijn niet ingeschakeld op dit apparaat. Kies een wachtwoord om codering op %1 in te schakelen.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="181"/>
       <source>iDescriptor never stores this password. If you lose it, this and future encrypted backups cannot be restored. Changing or resetting the device&apos;s backup password does not unlock older backups.</source>
-      <translation>iDescriptor never stores this password. If you lose it, this and future encrypted backups cannot be restored. Changing or resetting the device&apos;s backup password does not unlock older backups.</translation>
+      <translation>iDescriptor slaat dit wachtwoord nooit op. Als u deze verliest, kunnen deze en toekomstige gecodeerde back-ups niet worden hersteld. Als u het back-upwachtwoord van het apparaat wijzigt of opnieuw instelt, worden oudere back-ups niet ontgrendeld.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="190"/>
       <source>Enter the device passcode on the device to continue.</source>
-      <translation>Enter the device passcode on the device to continue.</translation>
+      <translation>Voer de toegangscode van het apparaat in om door te gaan.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="201"/>
       <source>Current backup password</source>
-      <translation>Current backup password</translation>
+      <translation>Huidig back-upwachtwoord</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="210"/>
       <source>New backup password</source>
-      <translation>New backup password</translation>
+      <translation>Nieuw back-upwachtwoord</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="219"/>
       <source>Confirm new backup password</source>
-      <translation>Confirm new backup password</translation>
+      <translation>Bevestig het nieuwe back-upwachtwoord</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="227"/>
       <source>I have saved this password somewhere safe</source>
-      <translation>I have saved this password somewhere safe</translation>
+      <translation>Ik heb dit wachtwoord ergens veilig opgeslagen</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="253"/>
       <source>Cancel</source>
-      <translation>Cancel</translation>
+      <translation>Annuleer</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="260"/>
       <source>Change Password</source>
-      <translation>Change Password</translation>
+      <translation>Wachtwoord wijzigen</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="261"/>
       <source>Enable Encryption</source>
-      <translation>Enable Encryption</translation>
+      <translation>Encryptie inschakelen</translation>
     </message>
   </context>
   <context>
@@ -1128,78 +1128,78 @@
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="18"/>
       <source>Backups - iDescriptor</source>
-      <translation>Backups - iDescriptor</translation>
+      <translation>Back-ups - iDescriptor</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="32"/>
       <location filename="../src/ui/tools/BackupManager.qml" line="40"/>
       <source>Unknown</source>
-      <translation>Unknown</translation>
+      <translation>Onbekend</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="64"/>
       <source>The backup metadata could not be read.</source>
-      <translation>The backup metadata could not be read.</translation>
+      <translation>De back-upmetagegevens konden niet worden gelezen.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="164"/>
       <source>Select Backup Directory</source>
-      <translation>Select Backup Directory</translation>
+      <translation>Selecteer Back-upmap</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="173"/>
       <source>Experimental Backup Feature</source>
-      <translation>Experimental Backup Feature</translation>
+      <translation>Experimentele back-upfunctie</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="205"/>
       <source>Backups and restores are experimental</source>
-      <translation>Backups and restores are experimental</translation>
+      <translation>Back-ups en herstelbewerkingen zijn experimenteel</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="215"/>
       <source>Proceed with care. Unexpected device, connection, or storage problems may cause an incomplete backup, a failed restore, or data loss. Keep another trusted backup and do not rely on iDescriptor as the only copy of important data.</source>
-      <translation>Proceed with care. Unexpected device, connection, or storage problems may cause an incomplete backup, a failed restore, or data loss. Keep another trusted backup and do not rely on iDescriptor as the only copy of important data.</translation>
+      <translation>Ga voorzichtig te werk. Onverwachte apparaat-, verbindings- of opslagproblemen kunnen een onvolledige back-up, een mislukt herstel of gegevensverlies veroorzaken. Bewaar nog een vertrouwde back-up en vertrouw niet op iDescriptor als de enige kopie van belangrijke gegevens.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="223"/>
       <source>This notice will only be shown once. Pressing OK confirms that you understand the risks.</source>
-      <translation>This notice will only be shown once. Pressing OK confirms that you understand the risks.</translation>
+      <translation>Deze melding wordt slechts één keer getoond. Als u op OK drukt, bevestigt u dat u de risico's begrijpt.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="237"/>
       <source>OK</source>
-      <translation>OK</translation>
+      <translation>Oké</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="337"/>
       <source>Backup exists</source>
-      <translation>Backup exists</translation>
+      <translation>Er bestaat een back-up</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="337"/>
       <source>No backup</source>
-      <translation>No backup</translation>
+      <translation>Geen back-up</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="344"/>
       <source>Restore</source>
-      <translation>Restore</translation>
+      <translation>Herstellen</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="354"/>
       <source>Back Up Now</source>
-      <translation>Back Up Now</translation>
+      <translation>Maak nu een back-up</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="354"/>
       <source>Update Backup</source>
-      <translation>Update Backup</translation>
+      <translation>Back-up bijwerken</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="368"/>
       <source>Erase</source>
-      <translation>Erase</translation>
+      <translation>Wissen</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="382"/>
@@ -1210,43 +1210,43 @@
       <location filename="../src/ui/tools/BackupManager.qml" line="399"/>
       <location filename="../src/ui/tools/BackupManager.qml" line="437"/>
       <source>Cancelling…</source>
-      <translation>Cancelling…</translation>
+      <translation>Annuleren…</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="401"/>
       <source>Restoring…</source>
-      <translation>Restoring…</translation>
+      <translation>Herstellen…</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="437"/>
       <source>Cancel</source>
-      <translation>Cancel</translation>
+      <translation>Annuleer</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="500"/>
       <location filename="../src/ui/tools/BackupManager.qml" line="530"/>
       <source>Backups</source>
-      <translation>Backups</translation>
+      <translation>Back-ups</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="509"/>
       <source>Manage local backups for devices. You can back up, restore, and erase devices from this interface.</source>
-      <translation>Manage local backups for devices. You can back up, restore, and erase devices from this interface.</translation>
+      <translation>Beheer lokale back-ups voor apparaten. Via deze interface kunt u een back-up van apparaten maken, deze herstellen en wissen.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="518"/>
       <source>Backup Location</source>
-      <translation>Backup Location</translation>
+      <translation>Back-uplocatie</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="536"/>
       <source>Refresh</source>
-      <translation>Refresh</translation>
+      <translation>Vernieuwen</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="564"/>
       <source>Backups and connected devices will appear here</source>
-      <translation>Backups and connected devices will appear here</translation>
+      <translation>Back-ups en aangesloten apparaten verschijnen hier</translation>
     </message>
   </context>
   <context>
@@ -1254,12 +1254,12 @@
     <message>
       <location filename="../src/ui/BatteryIndicator.qml" line="51"/>
       <source>Charging: %1%</source>
-      <translation>Charging: %1%</translation>
+      <translation>Opladen: %1%</translation>
     </message>
     <message>
       <location filename="../src/ui/BatteryIndicator.qml" line="51"/>
       <source>Battery: %1%</source>
-      <translation>Battery: %1%</translation>
+      <translation>Batterij: %1%</translation>
     </message>
   </context>
   <context>
@@ -1277,7 +1277,7 @@
       <location filename="../src/ui/tools/BatteryInfo.qml" line="370"/>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="443"/>
       <source>Unavailable</source>
-      <translation>Unavailable</translation>
+      <translation>Niet beschikbaar</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="42"/>
@@ -1292,57 +1292,57 @@
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="58"/>
       <source>Fully Charged</source>
-      <translation>Fully Charged</translation>
+      <translation>Volledig opgeladen</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="60"/>
       <source>Charging</source>
-      <translation>Charging</translation>
+      <translation>Opladen</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="60"/>
       <source>Not Charging</source>
-      <translation>Not Charging</translation>
+      <translation>Niet opladen</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="66"/>
       <source>The device model is unavailable, so battery information cannot be refreshed.</source>
-      <translation>The device model is unavailable, so battery information cannot be refreshed.</translation>
+      <translation>Het apparaatmodel is niet beschikbaar, dus batterij-informatie kan niet worden vernieuwd.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="75"/>
       <source>Battery - iDescriptor</source>
-      <translation>Battery - iDescriptor</translation>
+      <translation>Batterij - iDescriptor</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="90"/>
       <source>The device returned incomplete battery information.</source>
-      <translation>The device returned incomplete battery information.</translation>
+      <translation>Het apparaat heeft onvolledige batterij-informatie geretourneerd.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="102"/>
       <source>Battery information could not be refreshed. Make sure the device is connected and unlocked.</source>
-      <translation>Battery information could not be refreshed. Make sure the device is connected and unlocked.</translation>
+      <translation>Batterij-informatie kan niet worden vernieuwd. Zorg ervoor dat het apparaat is aangesloten en ontgrendeld.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="122"/>
       <source>Battery</source>
-      <translation>Battery</translation>
+      <translation>Batterij</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="129"/>
       <source>Live power and capacity information</source>
-      <translation>Live power and capacity information</translation>
+      <translation>Informatie over live vermogen en capaciteit</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="146"/>
       <source>Refresh battery information</source>
-      <translation>Refresh battery information</translation>
+      <translation>Ververs de batterij-informatie</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="165"/>
       <source>Battery information could not be loaded.</source>
-      <translation>Battery information could not be loaded.</translation>
+      <translation>Batterij-informatie kon niet worden geladen.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="243"/>
@@ -1352,32 +1352,32 @@
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="273"/>
       <source>Battery health is maximum charge capacity divided by design capacity, multiplied by 100 and capped at 100%.</source>
-      <translation>Battery health is maximum charge capacity divided by design capacity, multiplied by 100 and capped at 100%.</translation>
+      <translation>De batterijstatus is de maximale laadcapaciteit gedeeld door de ontwerpcapaciteit, vermenigvuldigd met 100 en beperkt tot 100%.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="279"/>
       <source>Battery Health</source>
-      <translation>Battery Health</translation>
+      <translation>Batterijstatus</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="360"/>
       <source>Cycle Count</source>
-      <translation>Cycle Count</translation>
+      <translation>Cyclustelling</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="363"/>
       <source>Maximum Capacity</source>
-      <translation>Maximum Capacity</translation>
+      <translation>Maximale capaciteit</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="366"/>
       <source>Design Capacity</source>
-      <translation>Design Capacity</translation>
+      <translation>Ontwerpcapaciteit</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="369"/>
       <source>Adapter Power</source>
-      <translation>Adapter Power</translation>
+      <translation>Adaptervoeding</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="370"/>
@@ -1387,17 +1387,17 @@
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="372"/>
       <source>Adapter Voltage</source>
-      <translation>Adapter Voltage</translation>
+      <translation>Adapterspanning</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="375"/>
       <source>Connection</source>
-      <translation>Connection</translation>
+      <translation>Verbinding</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="432"/>
       <source>Battery Serial Number</source>
-      <translation>Battery Serial Number</translation>
+      <translation>Serienummer van de batterij</translation>
     </message>
   </context>
   <context>
@@ -1405,85 +1405,85 @@
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="15"/>
       <source>Cable Information - iDescriptor</source>
-      <translation>Cable Information - iDescriptor</translation>
+      <translation>Kabelinformatie - iDescriptor</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="19"/>
       <location filename="../src/ui/tools/CableInfo.qml" line="41"/>
       <source>Analyzing cable...</source>
-      <translation>Analyzing cable...</translation>
+      <translation>Kabel analyseren...</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="21"/>
       <location filename="../src/ui/tools/CableInfo.qml" line="42"/>
       <source>Please wait while we analyze the connected cable.</source>
-      <translation>Please wait while we analyze the connected cable.</translation>
+      <translation>Een ogenblik geduld terwijl we de aangesloten kabel analyseren.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="30"/>
       <source>Error</source>
-      <translation>Error</translation>
+      <translation>Fout</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="35"/>
       <source>Something went wrong (no device ?)</source>
-      <translation>Something went wrong (no device ?)</translation>
+      <translation>Er is iets misgegaan (geen apparaat?)</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="50"/>
       <source>No cable information retrieved.</source>
-      <translation>No cable information retrieved.</translation>
+      <translation>Geen kabelinformatie opgehaald.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="57"/>
       <location filename="../src/ui/tools/CableInfo.qml" line="63"/>
       <source>Failed to parse cable information.</source>
-      <translation>Failed to parse cable information.</translation>
+      <translation>Kan kabelinformatie niet parseren.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="92"/>
       <source>Please note that this check may not be absolute guarantee of authenticity.</source>
-      <translation>Please note that this check may not be absolute guarantee of authenticity.</translation>
+      <translation>Houd er rekening mee dat deze cheque mogelijk geen absolute garantie voor authenticiteit biedt.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="94"/>
       <source>Genuine %1</source>
-      <translation>Genuine %1</translation>
+      <translation>Echte %1</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="95"/>
       <source>USB-C to Lightning Cable</source>
-      <translation>USB-C to Lightning Cable</translation>
+      <translation>USB-C naar Lightning-kabel</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="96"/>
       <source>Lightning Cable</source>
-      <translation>Lightning Cable</translation>
+      <translation>Bliksemkabel</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="99"/>
       <source>Third-party Cable</source>
-      <translation>Third-party Cable</translation>
+      <translation>Kabel van derden</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="102"/>
       <source>The cable reports false information. It is most likely a fake cable.</source>
-      <translation>The cable reports false information. It is most likely a fake cable.</translation>
+      <translation>De kabel meldt valse informatie. Het gaat hoogstwaarschijnlijk om een ​​nepkabel.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="113"/>
       <source>Device does not seem to be connected to any cable.</source>
-      <translation>Device does not seem to be connected to any cable.</translation>
+      <translation>Het apparaat lijkt op geen enkele kabel te zijn aangesloten.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="118"/>
       <source>Name:</source>
-      <translation>Name:</translation>
+      <translation>Naam:</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="119"/>
       <source>Manufacturer:</source>
-      <translation>Manufacturer:</translation>
+      <translation>Fabrikant:</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="120"/>
@@ -1493,32 +1493,32 @@
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="121"/>
       <source>Serial Number:</source>
-      <translation>Serial Number:</translation>
+      <translation>Serienummer:</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="122"/>
       <source>Interface Module:</source>
-      <translation>Interface Module:</translation>
+      <translation>Interfacemodule:</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="124"/>
       <source>Cable Type:</source>
-      <translation>Cable Type:</translation>
+      <translation>Kabeltype:</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="125"/>
       <source>USB-C to Lightning</source>
-      <translation>USB-C to Lightning</translation>
+      <translation>USB-C naar Lightning</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="126"/>
       <source>Lightning to USB-A</source>
-      <translation>Lightning to USB-A</translation>
+      <translation>Bliksem naar USB-A</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="130"/>
       <source>Current Limit:</source>
-      <translation>Current Limit:</translation>
+      <translation>Huidige limiet:</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="130"/>
@@ -1528,7 +1528,7 @@
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="131"/>
       <source>Charging Voltage:</source>
-      <translation>Charging Voltage:</translation>
+      <translation>Laadspanning:</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="131"/>
@@ -1538,37 +1538,37 @@
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="136"/>
       <source>Connection:</source>
-      <translation>Connection:</translation>
+      <translation>Aansluiting:</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="136"/>
       <source>%1 (Type %2)</source>
-      <translation>%1 (Type %2)</translation>
+      <translation>%1 (type %2)</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="139"/>
       <source>Controller:</source>
-      <translation>Controller:</translation>
+      <translation>Controleur:</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="143"/>
       <source>Active Transports:</source>
-      <translation>Active Transports:</translation>
+      <translation>Actieve transporten:</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="144"/>
       <source>Supported Transports:</source>
-      <translation>Supported Transports:</translation>
+      <translation>Ondersteunde transporten:</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="186"/>
       <source>Re-analyze</source>
-      <translation>Re-analyze</translation>
+      <translation>Opnieuw analyseren</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="199"/>
       <source>Cable Information</source>
-      <translation>Cable Information</translation>
+      <translation>Kabelinformatie</translation>
     </message>
   </context>
   <context>
@@ -1576,47 +1576,47 @@
     <message>
       <location filename="../src/ui/ClosingHandler.qml" line="128"/>
       <source>Backup Operations Are Running</source>
-      <translation>Backup Operations Are Running</translation>
+      <translation>Back-upbewerkingen worden uitgevoerd</translation>
     </message>
     <message>
       <location filename="../src/ui/ClosingHandler.qml" line="129"/>
       <source>File Transfers Are Running</source>
-      <translation>File Transfers Are Running</translation>
+      <translation>Bestandsoverdrachten worden uitgevoerd</translation>
     </message>
     <message>
       <location filename="../src/ui/ClosingHandler.qml" line="141"/>
       <source>A backup or restore is still in progress. Quitting now will cancel it. Do you want to cancel the active backup tasks and quit?</source>
-      <translation>A backup or restore is still in progress. Quitting now will cancel it. Do you want to cancel the active backup tasks and quit?</translation>
+      <translation>Er wordt nog steeds een back-up of herstel uitgevoerd. Als u nu stopt, wordt het geannuleerd. Wilt u de actieve back-uptaken annuleren en afsluiten?</translation>
     </message>
     <message>
       <location filename="../src/ui/ClosingHandler.qml" line="142"/>
       <source>A backup or restore is still in progress. Closing this window will cancel it. Do you want to cancel the active backup tasks and close?</source>
-      <translation>A backup or restore is still in progress. Closing this window will cancel it. Do you want to cancel the active backup tasks and close?</translation>
+      <translation>Er wordt nog steeds een back-up of herstel uitgevoerd. Als u dit venster sluit, wordt het geannuleerd. Wilt u de actieve back-uptaken annuleren en afsluiten?</translation>
     </message>
     <message>
       <location filename="../src/ui/ClosingHandler.qml" line="146"/>
       <source>One or more file transfers are still in progress. Quitting now will cancel them. Do you want to cancel the active transfers and quit?</source>
-      <translation>One or more file transfers are still in progress. Quitting now will cancel them. Do you want to cancel the active transfers and quit?</translation>
+      <translation>Er zijn nog een of meer bestandsoverdrachten gaande. Als u nu stopt, worden ze geannuleerd. Wilt u de actieve overboekingen annuleren en stoppen?</translation>
     </message>
     <message>
       <location filename="../src/ui/ClosingHandler.qml" line="147"/>
       <source>One or more file transfers are still in progress. Closing this window will cancel them. Do you want to cancel the active transfers and close?</source>
-      <translation>One or more file transfers are still in progress. Closing this window will cancel them. Do you want to cancel the active transfers and close?</translation>
+      <translation>Er zijn nog een of meer bestandsoverdrachten gaande. Als u dit venster sluit, worden ze geannuleerd. Wilt u de actieve overboekingen annuleren en afsluiten?</translation>
     </message>
     <message>
       <location filename="../src/ui/ClosingHandler.qml" line="167"/>
       <source>Keep Working</source>
-      <translation>Keep Working</translation>
+      <translation>Blijf werken</translation>
     </message>
     <message>
       <location filename="../src/ui/ClosingHandler.qml" line="173"/>
       <source>Cancel Tasks and Quit</source>
-      <translation>Cancel Tasks and Quit</translation>
+      <translation>Annuleer taken en sluit af</translation>
     </message>
     <message>
       <location filename="../src/ui/ClosingHandler.qml" line="174"/>
       <source>Cancel Tasks and Close</source>
-      <translation>Cancel Tasks and Close</translation>
+      <translation>Taken annuleren en sluiten</translation>
     </message>
   </context>
   <context>
@@ -1629,7 +1629,7 @@
     <message>
       <location filename="../src/ui/Community.qml" line="20"/>
       <source>View the source code, report issues, and contribute to iDescriptor.</source>
-      <translation>View the source code, report issues, and contribute to iDescriptor.</translation>
+      <translation>Bekijk de broncode, rapporteer problemen en draag bij aan iDescriptor.</translation>
     </message>
     <message>
       <location filename="../src/ui/Community.qml" line="21"/>
@@ -1644,12 +1644,12 @@
     <message>
       <location filename="../src/ui/Community.qml" line="29"/>
       <source>Follow iDescriptor project updates on LinkedIn.</source>
-      <translation>Follow iDescriptor project updates on LinkedIn.</translation>
+      <translation>Volg iDescriptor projectupdates op LinkedIn.</translation>
     </message>
     <message>
       <location filename="../src/ui/Community.qml" line="30"/>
       <source>Open LinkedIn</source>
-      <translation>Open LinkedIn</translation>
+      <translation>LinkedIn openen</translation>
     </message>
     <message>
       <location filename="../src/ui/Community.qml" line="37"/>
@@ -1659,22 +1659,22 @@
     <message>
       <location filename="../src/ui/Community.qml" line="38"/>
       <source>Join discussions with the iDescriptor community on Reddit.</source>
-      <translation>Join discussions with the iDescriptor community on Reddit.</translation>
+      <translation>Neem deel aan discussies met de iDescriptor-community op Reddit.</translation>
     </message>
     <message>
       <location filename="../src/ui/Community.qml" line="39"/>
       <source>Open Reddit</source>
-      <translation>Open Reddit</translation>
+      <translation>Reddit openen</translation>
     </message>
     <message>
       <location filename="../src/ui/Community.qml" line="63"/>
       <source>Join the iDescriptor Community</source>
-      <translation>Join the iDescriptor Community</translation>
+      <translation>Sluit u aan bij de iDescriptor-gemeenschap</translation>
     </message>
     <message>
       <location filename="../src/ui/Community.qml" line="73"/>
       <source>Follow development, connect with other users, and share feedback.</source>
-      <translation>Follow development, connect with other users, and share feedback.</translation>
+      <translation>Volg de ontwikkeling, maak contact met andere gebruikers en deel feedback.</translation>
     </message>
   </context>
   <context>
@@ -1682,12 +1682,12 @@
     <message>
       <location filename="../src/ui/base/CopyableText.qml" line="20"/>
       <source>Unknown</source>
-      <translation>Unknown</translation>
+      <translation>Onbekend</translation>
     </message>
     <message>
       <location filename="../src/ui/base/CopyableText.qml" line="43"/>
       <source>Copied!</source>
-      <translation>Copied!</translation>
+      <translation>Gekopieerd!</translation>
     </message>
   </context>
   <context>
@@ -1695,42 +1695,42 @@
     <message>
       <location filename="../src/ui/CustomPairingDialog.qml" line="35"/>
       <source>Choose pairing file</source>
-      <translation>Choose pairing file</translation>
+      <translation>Kies het koppelingsbestand</translation>
     </message>
     <message>
       <location filename="../src/ui/CustomPairingDialog.qml" line="37"/>
       <source>Property List files (*.plist)</source>
-      <translation>Property List files (*.plist)</translation>
+      <translation>Eigenschappenlijstbestanden (*.plist)</translation>
     </message>
     <message>
       <location filename="../src/ui/CustomPairingDialog.qml" line="76"/>
       <source>Connect with pairing file</source>
-      <translation>Connect with pairing file</translation>
+      <translation>Maak verbinding met het koppelingsbestand</translation>
     </message>
     <message>
       <location filename="../src/ui/CustomPairingDialog.qml" line="84"/>
       <source>Select a .plist pairing file and enter the device IP address.</source>
-      <translation>Select a .plist pairing file and enter the device IP address.</translation>
+      <translation>Selecteer een .plist-koppelingsbestand en voer het IP-adres van het apparaat in.</translation>
     </message>
     <message>
       <location filename="../src/ui/CustomPairingDialog.qml" line="115"/>
       <source>Pairing file</source>
-      <translation>Pairing file</translation>
+      <translation>Koppelingsbestand</translation>
     </message>
     <message>
       <location filename="../src/ui/CustomPairingDialog.qml" line="136"/>
       <source>Choose a .plist file</source>
-      <translation>Choose a .plist file</translation>
+      <translation>Kies een .plist-bestand</translation>
     </message>
     <message>
       <location filename="../src/ui/CustomPairingDialog.qml" line="144"/>
       <source>Choose</source>
-      <translation>Choose</translation>
+      <translation>Kies</translation>
     </message>
     <message>
       <location filename="../src/ui/CustomPairingDialog.qml" line="164"/>
       <source>IP address</source>
-      <translation>IP address</translation>
+      <translation>IP-adres</translation>
     </message>
     <message>
       <location filename="../src/ui/CustomPairingDialog.qml" line="174"/>
@@ -1740,17 +1740,17 @@
     <message>
       <location filename="../src/ui/CustomPairingDialog.qml" line="202"/>
       <source>Cancel</source>
-      <translation>Cancel</translation>
+      <translation>Annuleer</translation>
     </message>
     <message>
       <location filename="../src/ui/CustomPairingDialog.qml" line="214"/>
       <source>Connecting...</source>
-      <translation>Connecting...</translation>
+      <translation>Verbinden...</translation>
     </message>
     <message>
       <location filename="../src/ui/CustomPairingDialog.qml" line="214"/>
       <source>Connect</source>
-      <translation>Connect</translation>
+      <translation>Verbinden</translation>
     </message>
   </context>
   <context>
@@ -1758,37 +1758,37 @@
     <message>
       <location filename="../src/ui/DeleteConfirmationDialog.qml" line="23"/>
       <source>Confirm Deletion</source>
-      <translation>Confirm Deletion</translation>
+      <translation>Bevestig verwijdering</translation>
     </message>
     <message>
       <location filename="../src/ui/DeleteConfirmationDialog.qml" line="35"/>
       <source>Permanently delete %1 file(s) and %2 folder(s)? All contents inside the selected folders will also be deleted.</source>
-      <translation>Permanently delete %1 file(s) and %2 folder(s)? All contents inside the selected folders will also be deleted.</translation>
+      <translation>%1-bestand(en) en %2-map(pen) definitief verwijderen? Alle inhoud in de geselecteerde mappen wordt ook verwijderd.</translation>
     </message>
     <message>
       <location filename="../src/ui/DeleteConfirmationDialog.qml" line="37"/>
       <source>Permanently delete %1 file(s)?</source>
-      <translation>Permanently delete %1 file(s)?</translation>
+      <translation>%1-bestand(en) definitief verwijderen?</translation>
     </message>
     <message>
       <location filename="../src/ui/DeleteConfirmationDialog.qml" line="48"/>
       <source>I understand.</source>
-      <translation>I understand.</translation>
+      <translation>Ik begrijp het.</translation>
     </message>
     <message>
       <location filename="../src/ui/DeleteConfirmationDialog.qml" line="53"/>
       <source>This action cannot be undone.</source>
-      <translation>This action cannot be undone.</translation>
+      <translation>Deze actie kan niet ongedaan worden gemaakt.</translation>
     </message>
     <message>
       <location filename="../src/ui/DeleteConfirmationDialog.qml" line="66"/>
       <source>Cancel</source>
-      <translation>Cancel</translation>
+      <translation>Annuleer</translation>
     </message>
     <message>
       <location filename="../src/ui/DeleteConfirmationDialog.qml" line="71"/>
       <source>Delete</source>
-      <translation>Delete</translation>
+      <translation>Verwijderen</translation>
     </message>
   </context>
   <context>
@@ -1796,198 +1796,198 @@
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="14"/>
       <source>Developer Disk Images - iDescriptor</source>
-      <translation>Developer Disk Images - iDescriptor</translation>
+      <translation>Schijfimages voor ontwikkelaars - iDescriptor</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="90"/>
       <source>Mounted</source>
-      <translation>Mounted</translation>
+      <translation>Gemonteerd</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="92"/>
       <source>Maybe compatible</source>
-      <translation>Maybe compatible</translation>
+      <translation>Misschien compatibel</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="94"/>
       <source>Not compatible</source>
-      <translation>Not compatible</translation>
+      <translation>Niet compatibel</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="95"/>
       <source>Available</source>
-      <translation>Available</translation>
+      <translation>Beschikbaar</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="115"/>
       <source>Developer disk image %1 was downloaded successfully.</source>
-      <translation>Developer disk image %1 was downloaded successfully.</translation>
+      <translation>Ontwikkelaarsschijfimage %1 is succesvol gedownload.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="117"/>
       <source>Unknown download error.</source>
-      <translation>Unknown download error.</translation>
+      <translation>Onbekende downloadfout.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="118"/>
       <source>Could not download developer disk image %1: %2</source>
-      <translation>Could not download developer disk image %1: %2</translation>
+      <translation>Kan schijfimage %1 van ontwikkelaar niet downloaden: %2</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="124"/>
       <source>Download for developer disk image %1 was cancelled.</source>
-      <translation>Download for developer disk image %1 was cancelled.</translation>
+      <translation>Downloaden voor ontwikkelaar schijfimage %1 is geannuleerd.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="132"/>
       <source>Unknown refresh error.</source>
-      <translation>Unknown refresh error.</translation>
+      <translation>Onbekende vernieuwingsfout.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="133"/>
       <source>Could not refresh the developer disk image list: %1</source>
-      <translation>Could not refresh the developer disk image list: %1</translation>
+      <translation>Kan de lijst met ontwikkelaarsschijfimages niet vernieuwen: %1</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="135"/>
       <source>The developer disk image list was refreshed.</source>
-      <translation>The developer disk image list was refreshed.</translation>
+      <translation>De lijst met ontwikkelaarsschijfimages is vernieuwd.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="145"/>
       <source>Unknown device error.</source>
-      <translation>Unknown device error.</translation>
+      <translation>Onbekende apparaatfout.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="146"/>
       <source>Could not check the mounted developer disk image: %1</source>
-      <translation>Could not check the mounted developer disk image: %1</translation>
+      <translation>Kon de gekoppelde schijfimage van de ontwikkelaar niet controleren: %1</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="148"/>
       <source>The device is locked. Unlock it and check again.</source>
-      <translation>The device is locked. Unlock it and check again.</translation>
+      <translation>Het apparaat is vergrendeld. Ontgrendel het en controleer het opnieuw.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="150"/>
       <source>A developer disk image is mounted on the selected device.</source>
-      <translation>A developer disk image is mounted on the selected device.</translation>
+      <translation>Er wordt een ontwikkelaarsschijfkopie op het geselecteerde apparaat gemonteerd.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="152"/>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="450"/>
       <source>No developer disk image is mounted on the selected device.</source>
-      <translation>No developer disk image is mounted on the selected device.</translation>
+      <translation>Er is geen ontwikkelaarsschijfkopie op het geselecteerde apparaat gemonteerd.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="207"/>
       <source>Developer Disk Images</source>
-      <translation>Developer Disk Images</translation>
+      <translation>Schijfimages voor ontwikkelaars</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="218"/>
       <source>Developer images allow you to use additional services on your iDevice. To mount one, the device must be unlocked.</source>
-      <translation>Developer images allow you to use additional services on your iDevice. To mount one, the device must be unlocked.</translation>
+      <translation>Met ontwikkelaarsimages kunt u aanvullende services gebruiken op uw iDevice. Om er een te kunnen monteren, moet het apparaat ontgrendeld zijn.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="234"/>
       <source>Mount</source>
-      <translation>Mount</translation>
+      <translation>Monteren</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="266"/>
       <source>Select a developer disk image first.</source>
-      <translation>Select a developer disk image first.</translation>
+      <translation>Selecteer eerst een ontwikkelaarsschijfkopie.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="275"/>
       <source>The required files for developer disk image %1 are missing.</source>
-      <translation>The required files for developer disk image %1 are missing.</translation>
+      <translation>De vereiste bestanden voor de ontwikkelaarsschijfkopie %1 ontbreken.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="282"/>
       <source>The paths for developer disk image %1 are invalid.</source>
-      <translation>The paths for developer disk image %1 are invalid.</translation>
+      <translation>De paden voor de ontwikkelaarsschijfimage %1 zijn ongeldig.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="288"/>
       <source>The selected device is no longer available.</source>
-      <translation>The selected device is no longer available.</translation>
+      <translation>Het geselecteerde apparaat is niet langer beschikbaar.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="296"/>
       <source>Developer disk image %1 was mounted successfully.</source>
-      <translation>Developer disk image %1 was mounted successfully.</translation>
+      <translation>Ontwikkelaarsschijfimage %1 is succesvol aangekoppeld.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="300"/>
       <source>Could not mount developer disk image %1 because the device is locked.</source>
-      <translation>Could not mount developer disk image %1 because the device is locked.</translation>
+      <translation>Kan ontwikkelaarsschijfimage %1 niet koppelen omdat het apparaat is vergrendeld.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="302"/>
       <source>Could not mount developer disk image %1.</source>
-      <translation>Could not mount developer disk image %1.</translation>
+      <translation>Kan ontwikkelaarsschijfimage %1 niet koppelen.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="313"/>
       <source>Check Mounted</source>
-      <translation>Check Mounted</translation>
+      <translation>Controleer gemonteerd</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="343"/>
       <source>Refresh</source>
-      <translation>Refresh</translation>
+      <translation>Vernieuwen</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="384"/>
       <source>No device connected</source>
-      <translation>No device connected</translation>
+      <translation>Geen apparaat aangesloten</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="432"/>
       <source>No device connected. Please connect a device to check for developer disk images.</source>
-      <translation>No device connected. Please connect a device to check for developer disk images.</translation>
+      <translation>Geen apparaat aangesloten. Sluit een apparaat aan om te controleren op schijfimages van ontwikkelaars.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="445"/>
       <source>Use Check Mounted to inspect the selected device.</source>
-      <translation>Use Check Mounted to inspect the selected device.</translation>
+      <translation>Gebruik Check Mounted om het geselecteerde apparaat te inspecteren.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="447"/>
       <source>The selected device is locked.</source>
-      <translation>The selected device is locked.</translation>
+      <translation>Het geselecteerde apparaat is vergrendeld.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="449"/>
       <source>Selected device already has a developer disk image mounted.</source>
-      <translation>Selected device already has a developer disk image mounted.</translation>
+      <translation>Op het geselecteerde apparaat is al een ontwikkelaarsschijfimage geïnstalleerd.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="605"/>
       <source>Cancel</source>
-      <translation>Cancel</translation>
+      <translation>Annuleer</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="605"/>
       <source>Re-download</source>
-      <translation>Re-download</translation>
+      <translation>Opnieuw downloaden</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="605"/>
       <source>Download</source>
-      <translation>Download</translation>
+      <translation>Downloaden</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="636"/>
       <source>Could not cancel the download for developer disk image %1.</source>
-      <translation>Could not cancel the download for developer disk image %1.</translation>
+      <translation>Kan de download voor ontwikkelaarsschijfimage %1 niet annuleren.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="642"/>
       <source>Could not start the download for developer disk image %1.</source>
-      <translation>Could not start the download for developer disk image %1.</translation>
+      <translation>Kan de download voor ontwikkelaarsschijfimage %1 niet starten.</translation>
     </message>
   </context>
   <context>
@@ -1996,106 +1996,106 @@
       <location filename="../src/ui/DevModeHelper.qml" line="28"/>
       <location filename="../src/ui/DevModeHelper.qml" line="55"/>
       <source>Please wait...</source>
-      <translation>Please wait...</translation>
+      <translation>Even geduld a.u.b....</translation>
     </message>
     <message>
       <location filename="../src/ui/DevModeHelper.qml" line="74"/>
       <source>Checking Developer Mode...</source>
-      <translation>Checking Developer Mode...</translation>
+      <translation>Ontwikkelaarsmodus controleren...</translation>
     </message>
     <message>
       <location filename="../src/ui/DevModeHelper.qml" line="97"/>
       <source>Could not reveal Developer Mode automatically. You can still follow the steps below or try anyway.</source>
-      <translation>Could not reveal Developer Mode automatically. You can still follow the steps below or try anyway.</translation>
+      <translation>Kan de ontwikkelaarsmodus niet automatisch onthullen. Je kunt nog steeds onderstaande stappen volgen of het toch proberen.</translation>
     </message>
     <message>
       <location filename="../src/ui/DevModeHelper.qml" line="107"/>
       <source>Developer disk image is not available for this iOS version. Please use a device with iOS 6 or above.</source>
-      <translation>Developer disk image is not available for this iOS version. Please use a device with iOS 6 or above.</translation>
+      <translation>Ontwikkelaarsschijfkopie is niet beschikbaar voor deze iOS-versie. Gebruik een apparaat met iOS 6 of hoger.</translation>
     </message>
     <message>
       <location filename="../src/ui/DevModeHelper.qml" line="117"/>
       <source>The device appears to be locked. Please unlock the device and try again.</source>
-      <translation>The device appears to be locked. Please unlock the device and try again.</translation>
+      <translation>Het apparaat lijkt vergrendeld. Ontgrendel het apparaat en probeer het opnieuw.</translation>
     </message>
     <message>
       <location filename="../src/ui/DevModeHelper.qml" line="121"/>
       <source>Failed to retrieve mounted developer disk image info.</source>
-      <translation>Failed to retrieve mounted developer disk image info.</translation>
+      <translation>Kan de gekoppelde schijfkopiegegevens van de ontwikkelaarsschijf niet ophalen.</translation>
     </message>
     <message>
       <location filename="../src/ui/DevModeHelper.qml" line="143"/>
       <source>There is no compatible developer disk image available for this iOS version.</source>
-      <translation>There is no compatible developer disk image available for this iOS version.</translation>
+      <translation>Er is geen compatibele ontwikkelaarsschijfimage beschikbaar voor deze iOS-versie.</translation>
     </message>
     <message>
       <location filename="../src/ui/DevModeHelper.qml" line="152"/>
       <source>Downloading compatible developer disk image...</source>
-      <translation>Downloading compatible developer disk image...</translation>
+      <translation>Compatibele ontwikkelaarsschijfimage downloaden...</translation>
     </message>
     <message>
       <location filename="../src/ui/DevModeHelper.qml" line="163"/>
       <source>Failed to download compatible developer disk image.</source>
-      <translation>Failed to download compatible developer disk image.</translation>
+      <translation>Kan compatibele ontwikkelaarsschijfimage niet downloaden.</translation>
     </message>
     <message>
       <location filename="../src/ui/DevModeHelper.qml" line="171"/>
       <source>Failed to start developer disk image download.</source>
-      <translation>Failed to start developer disk image download.</translation>
+      <translation>Kan het downloaden van de schijfimage voor ontwikkelaars niet starten.</translation>
     </message>
     <message>
       <location filename="../src/ui/DevModeHelper.qml" line="177"/>
       <source>Mounting...</source>
-      <translation>Mounting...</translation>
+      <translation>Montage...</translation>
     </message>
     <message>
       <location filename="../src/ui/DevModeHelper.qml" line="181"/>
       <source>The developer disk image is missing. Please download it first.</source>
-      <translation>The developer disk image is missing. Please download it first.</translation>
+      <translation>De ontwikkelaarsschijfimage ontbreekt. Download het eerst.</translation>
     </message>
     <message>
       <location filename="../src/ui/DevModeHelper.qml" line="188"/>
       <source>Failed to mount developer disk image.
 The device appears to be locked. Please unlock the device and try again.</source>
-      <translation>Failed to mount developer disk image.
-The device appears to be locked. Please unlock the device and try again.</translation>
+      <translation>Kan de schijfimage van de ontwikkelaar niet koppelen.
+Het apparaat lijkt vergrendeld. Ontgrendel het apparaat en probeer het opnieuw.</translation>
     </message>
     <message>
       <location filename="../src/ui/DevModeHelper.qml" line="192"/>
       <source>Failed to mount developer disk image.
 Please ensure the device is unlocked and using a genuine cable.</source>
-      <translation>Failed to mount developer disk image.
-Please ensure the device is unlocked and using a genuine cable.</translation>
+      <translation>Kan de schijfimage van de ontwikkelaar niet koppelen.
+Zorg ervoor dat het apparaat ontgrendeld is en een originele kabel gebruikt.</translation>
     </message>
     <message>
       <location filename="../src/ui/DevModeHelper.qml" line="209"/>
       <source>Developer Mode handled.</source>
-      <translation>Developer Mode handled.</translation>
+      <translation>Ontwikkelaarsmodus afgehandeld.</translation>
     </message>
     <message>
       <location filename="../src/ui/DevModeHelper.qml" line="209"/>
       <source>Developer disk image mounted.</source>
-      <translation>Developer disk image mounted.</translation>
+      <translation>Ontwikkelaarsschijfimage gemonteerd.</translation>
     </message>
     <message>
       <location filename="../src/ui/DevModeHelper.qml" line="249"/>
       <source>Failed to prepare Developer Mode.</source>
-      <translation>Failed to prepare Developer Mode.</translation>
+      <translation>Kan de ontwikkelaarsmodus niet voorbereiden.</translation>
     </message>
     <message>
       <location filename="../src/ui/DevModeHelper.qml" line="286"/>
       <source>Enable Developer Mode</source>
-      <translation>Enable Developer Mode</translation>
+      <translation>Schakel ontwikkelaarsmodus in</translation>
     </message>
     <message>
       <location filename="../src/ui/DevModeHelper.qml" line="295"/>
       <source>Developer Mode is required before this feature can continue. Enable it in the Settings app on your device, then retry the action.</source>
-      <translation>Developer Mode is required before this feature can continue. Enable it in the Settings app on your device, then retry the action.</translation>
+      <translation>De ontwikkelaarsmodus is vereist voordat deze functie kan worden voortgezet. Schakel dit in in de app Instellingen op uw apparaat en probeer de actie opnieuw.</translation>
     </message>
     <message>
       <location filename="../src/ui/DevModeHelper.qml" line="333"/>
       <source>Try Anyway</source>
-      <translation>Try Anyway</translation>
+      <translation>Probeer het toch</translation>
     </message>
   </context>
   <context>
@@ -2103,32 +2103,32 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/DeviceContext.qml" line="238"/>
       <source>this device</source>
-      <translation>this device</translation>
+      <translation>dit apparaat</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceContext.qml" line="252"/>
       <source>Wi-Fi Connections Enabled</source>
-      <translation>Wi-Fi Connections Enabled</translation>
+      <translation>Wi-Fi-verbindingen ingeschakeld</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceContext.qml" line="253"/>
       <source>Wi-Fi connections are now enabled for %1. You can disconnect the cable and use this device wirelessly.</source>
-      <translation>Wi-Fi connections are now enabled for %1. You can disconnect the cable and use this device wirelessly.</translation>
+      <translation>Wi-Fi-verbindingen zijn nu ingeschakeld voor %1. Je kunt de kabel loskoppelen en dit apparaat draadloos gebruiken.</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceContext.qml" line="258"/>
       <source>Unable to Enable Wi-Fi Connections</source>
-      <translation>Unable to Enable Wi-Fi Connections</translation>
+      <translation>Kan Wi-Fi-verbindingen niet inschakelen</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceContext.qml" line="259"/>
       <source>Wi-Fi connections could not be enabled for %1. Keep the device connected, unlocked, and trusted, then try again.</source>
-      <translation>Wi-Fi connections could not be enabled for %1. Keep the device connected, unlocked, and trusted, then try again.</translation>
+      <translation>Wi-Fi-verbindingen kunnen niet worden ingeschakeld voor %1. Houd het apparaat verbonden, ontgrendeld en vertrouwd en probeer het opnieuw.</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceContext.qml" line="498"/>
       <source>Pairing…</source>
-      <translation>Pairing…</translation>
+      <translation>Koppelen…</translation>
     </message>
   </context>
   <context>
@@ -2141,38 +2141,38 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/DeviceGallery.qml" line="161"/>
       <source>Exporting %1</source>
-      <translation>Exporting %1</translation>
+      <translation>%1 exporteren</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceGallery.qml" line="263"/>
       <source>Import</source>
-      <translation>Import</translation>
+      <translation>Importeren</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceGallery.qml" line="271"/>
       <source>Refreshing gallery</source>
-      <translation>Refreshing gallery</translation>
+      <translation>Verfrissende galerij</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceGallery.qml" line="272"/>
       <source>Refresh</source>
-      <translation>Refresh</translation>
+      <translation>Vernieuwen</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceGallery.qml" line="279"/>
       <source>Export Selected</source>
-      <translation>Export Selected</translation>
+      <translation>Geselecteerd exporteren</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceGallery.qml" line="285"/>
       <location filename="../src/ui/DeviceGallery.qml" line="293"/>
       <source>Export All</source>
-      <translation>Export All</translation>
+      <translation>Alles exporteren</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceGallery.qml" line="294"/>
       <source>Are you sure you want to export all %1 items from %2 albums?</source>
-      <translation>Are you sure you want to export all %1 items from %2 albums?</translation>
+      <translation>Weet u zeker dat u alle %1-items uit %2-albums wilt exporteren?</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceGallery.qml" line="309"/>
@@ -2182,17 +2182,17 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/DeviceGallery.qml" line="444"/>
       <source>Choose Export Folder</source>
-      <translation>Choose Export Folder</translation>
+      <translation>Kies Map exporteren</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceGallery.qml" line="450"/>
       <source>Album unavailable</source>
-      <translation>Album unavailable</translation>
+      <translation>Album niet beschikbaar</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceGallery.qml" line="451"/>
       <source>This album is no longer available on the device.</source>
-      <translation>This album is no longer available on the device.</translation>
+      <translation>Dit album is niet langer beschikbaar op het apparaat.</translation>
     </message>
   </context>
   <context>
@@ -2201,32 +2201,32 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
       <location filename="../src/ui/DeviceInfo.qml" line="131"/>
       <location filename="../src/ui/DeviceInfo.qml" line="179"/>
       <source>Unknown Device</source>
-      <translation>Unknown Device</translation>
+      <translation>Onbekend apparaat</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="142"/>
       <source>Shut down device</source>
-      <translation>Shut down device</translation>
+      <translation>Schakel het apparaat uit</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="150"/>
       <source>Restart device</source>
-      <translation>Restart device</translation>
+      <translation>Start het apparaat opnieuw op</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="158"/>
       <source>Enter recovery mode</source>
-      <translation>Enter recovery mode</translation>
+      <translation>Ga naar de herstelmodus</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="239"/>
       <source>Wireless</source>
-      <translation>Wireless</translation>
+      <translation>Draadloos</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="264"/>
       <source>iOS Version:</source>
-      <translation>iOS Version:</translation>
+      <translation>iOS-versie:</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="265"/>
@@ -2245,92 +2245,92 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
       <location filename="../src/ui/DeviceInfo.qml" line="334"/>
       <location filename="../src/ui/DeviceInfo.qml" line="352"/>
       <source>Unknown</source>
-      <translation>Unknown</translation>
+      <translation>Onbekend</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="266"/>
       <source>Hardware Model:</source>
-      <translation>Hardware Model:</translation>
+      <translation>Hardwaremodel:</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="270"/>
       <source>Device Name:</source>
-      <translation>Device Name:</translation>
+      <translation>Apparaatnaam:</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="272"/>
       <source>Region:</source>
-      <translation>Region:</translation>
+      <translation>Regio:</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="276"/>
       <source>Activation State:</source>
-      <translation>Activation State:</translation>
+      <translation>Activeringsstatus:</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="283"/>
       <source>Hardware Platform:</source>
-      <translation>Hardware Platform:</translation>
+      <translation>Hardwareplatform:</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="287"/>
       <source>Device Class:</source>
-      <translation>Device Class:</translation>
+      <translation>Apparaatklasse:</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="289"/>
       <source>Firmware Version:</source>
-      <translation>Firmware Version:</translation>
+      <translation>Firmwareversie:</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="293"/>
       <source>Jailbroken:</source>
-      <translation>Jailbroken:</translation>
+      <translation>Gejailbreakt:</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="294"/>
       <source>Yes</source>
-      <translation>Yes</translation>
+      <translation>Ja</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="294"/>
       <source>No</source>
-      <translation>No</translation>
+      <translation>Nee</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="295"/>
       <source>Battery Health:</source>
-      <translation>Battery Health:</translation>
+      <translation>Batterijstatus:</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="306"/>
       <source>More</source>
-      <translation>More</translation>
+      <translation>Meer</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="319"/>
       <source>Model Number:</source>
-      <translation>Model Number:</translation>
+      <translation>Modelnummer:</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="321"/>
       <source>Production Device:</source>
-      <translation>Production Device:</translation>
+      <translation>Productieapparaat:</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="325"/>
       <source>CPU Architecture:</source>
-      <translation>CPU Architecture:</translation>
+      <translation>CPU-architectuur:</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="327"/>
       <source>Serial Number:</source>
-      <translation>Serial Number:</translation>
+      <translation>Serienummer:</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="331"/>
       <source>Build Version:</source>
-      <translation>Build Version:</translation>
+      <translation>Bouwversie:</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="333"/>
@@ -2358,12 +2358,12 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/DeviceSectionTabs.qml" line="34"/>
       <source>Gallery</source>
-      <translation>Gallery</translation>
+      <translation>Galerij</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceSectionTabs.qml" line="39"/>
       <source>Files</source>
-      <translation>Files</translation>
+      <translation>Bestanden</translation>
     </message>
   </context>
   <context>
@@ -2371,37 +2371,37 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/DeviceSidebarButton.qml" line="21"/>
       <source>Unknown device</source>
-      <translation>Unknown device</translation>
+      <translation>Onbekend apparaat</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceSidebarButton.qml" line="34"/>
       <source>Restart</source>
-      <translation>Restart</translation>
+      <translation>Opnieuw opstarten</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceSidebarButton.qml" line="40"/>
       <source>Shut Down</source>
-      <translation>Shut Down</translation>
+      <translation>Sluit af</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceSidebarButton.qml" line="46"/>
       <source>Recovery Mode</source>
-      <translation>Recovery Mode</translation>
+      <translation>Herstelmodus</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceSidebarButton.qml" line="54"/>
       <source>Unpair</source>
-      <translation>Unpair</translation>
+      <translation>Ontkoppelen</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceSidebarButton.qml" line="60"/>
       <source>Unpair and Remove</source>
-      <translation>Unpair and Remove</translation>
+      <translation>Ontkoppelen en verwijderen</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceSidebarButton.qml" line="68"/>
       <source>Remove</source>
-      <translation>Remove</translation>
+      <translation>Verwijderen</translation>
     </message>
   </context>
   <context>
@@ -2409,7 +2409,7 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/DeviceTab.qml" line="17"/>
       <source>Connected devices will appear here</source>
-      <translation>Connected devices will appear here</translation>
+      <translation>Hier verschijnen aangesloten apparaten</translation>
     </message>
   </context>
   <context>
@@ -2417,69 +2417,69 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/Diagnose.qml" line="30"/>
       <source>Installed</source>
-      <translation>Installed</translation>
+      <translation>Geïnstalleerd</translation>
     </message>
     <message>
       <location filename="../src/ui/Diagnose.qml" line="32"/>
       <source>Installed, not running</source>
-      <translation>Installed, not running</translation>
+      <translation>Geïnstalleerd, draait niet</translation>
     </message>
     <message>
       <location filename="../src/ui/Diagnose.qml" line="34"/>
       <source>Missing</source>
-      <translation>Missing</translation>
+      <translation>Ontbreekt</translation>
     </message>
     <message>
       <location filename="../src/ui/Diagnose.qml" line="35"/>
       <source>Unable to check</source>
-      <translation>Unable to check</translation>
+      <translation>Kan niet controleren</translation>
     </message>
     <message>
       <location filename="../src/ui/Diagnose.qml" line="40"/>
       <location filename="../src/ui/Diagnose.qml" line="42"/>
       <source>View Instructions</source>
-      <translation>View Instructions</translation>
+      <translation>Bekijk instructies</translation>
     </message>
     <message>
       <location filename="../src/ui/Diagnose.qml" line="44"/>
       <source>Start</source>
-      <translation>Start</translation>
+      <translation>Begin</translation>
     </message>
     <message>
       <location filename="../src/ui/Diagnose.qml" line="45"/>
       <source>Install</source>
-      <translation>Install</translation>
+      <translation>Installeren</translation>
     </message>
     <message>
       <location filename="../src/ui/Diagnose.qml" line="83"/>
       <location filename="../src/ui/Diagnose.qml" line="120"/>
       <source>Dependency Check</source>
-      <translation>Dependency Check</translation>
+      <translation>Afhankelijkheidscontrole</translation>
     </message>
     <message>
       <location filename="../src/ui/Diagnose.qml" line="103"/>
       <source>Diagnostics</source>
-      <translation>Diagnostics</translation>
+      <translation>Diagnostiek</translation>
     </message>
     <message>
       <location filename="../src/ui/Diagnose.qml" line="115"/>
       <source>Unable to check system dependencies.</source>
-      <translation>Unable to check system dependencies.</translation>
+      <translation>Kan systeemafhankelijkheden niet controleren.</translation>
     </message>
     <message>
       <location filename="../src/ui/Diagnose.qml" line="132"/>
       <source>Checking system dependencies...</source>
-      <translation>Checking system dependencies...</translation>
+      <translation>Systeemafhankelijkheden controleren...</translation>
     </message>
     <message>
       <location filename="../src/ui/Diagnose.qml" line="139"/>
       <source>Refresh</source>
-      <translation>Refresh</translation>
+      <translation>Vernieuwen</translation>
     </message>
     <message>
       <location filename="../src/ui/Diagnose.qml" line="186"/>
       <source>Optional</source>
-      <translation>Optional</translation>
+      <translation>Optioneel</translation>
     </message>
   </context>
   <context>
@@ -2487,22 +2487,22 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/DiskUsage.qml" line="83"/>
       <source>Failed to retrieve disk usage data.</source>
-      <translation>Failed to retrieve disk usage data.</translation>
+      <translation>Kan schijfgebruiksgegevens niet ophalen.</translation>
     </message>
     <message>
       <location filename="../src/ui/DiskUsage.qml" line="105"/>
       <source>Disk Usage</source>
-      <translation>Disk Usage</translation>
+      <translation>Schijfgebruik</translation>
     </message>
     <message>
       <location filename="../src/ui/DiskUsage.qml" line="123"/>
       <source>No disk information available.</source>
-      <translation>No disk information available.</translation>
+      <translation>Geen schijfinformatie beschikbaar.</translation>
     </message>
     <message>
       <location filename="../src/ui/DiskUsage.qml" line="172"/>
       <source>System: %1 (%2%)</source>
-      <translation>System: %1 (%2%)</translation>
+      <translation>Systeem: %1 (%2%)</translation>
     </message>
     <message>
       <location filename="../src/ui/DiskUsage.qml" line="187"/>
@@ -2517,22 +2517,22 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/DiskUsage.qml" line="217"/>
       <source>Gallery: %1 (%2%)</source>
-      <translation>Gallery: %1 (%2%)</translation>
+      <translation>Galerij: %1 (%2%)</translation>
     </message>
     <message>
       <location filename="../src/ui/DiskUsage.qml" line="232"/>
       <source>Others: %1 (%2%)</source>
-      <translation>Others: %1 (%2%)</translation>
+      <translation>Overige: %1 (%2%)</translation>
     </message>
     <message>
       <location filename="../src/ui/DiskUsage.qml" line="247"/>
       <source>Free: %1 (%2%)</source>
-      <translation>Free: %1 (%2%)</translation>
+      <translation>Gratis: %1 (%2%)</translation>
     </message>
     <message>
       <location filename="../src/ui/DiskUsage.qml" line="262"/>
       <source>System (%1)</source>
-      <translation>System (%1)</translation>
+      <translation>Systeem (%1)</translation>
     </message>
     <message>
       <location filename="../src/ui/DiskUsage.qml" line="272"/>
@@ -2547,17 +2547,17 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/DiskUsage.qml" line="292"/>
       <source>Gallery (%1)</source>
-      <translation>Gallery (%1)</translation>
+      <translation>Galerij (%1)</translation>
     </message>
     <message>
       <location filename="../src/ui/DiskUsage.qml" line="302"/>
       <source>Others (%1)</source>
-      <translation>Others (%1)</translation>
+      <translation>Overige (%1)</translation>
     </message>
     <message>
       <location filename="../src/ui/DiskUsage.qml" line="312"/>
       <source>Free (%1)</source>
-      <translation>Free (%1)</translation>
+      <translation>Gratis (%1)</translation>
     </message>
   </context>
   <context>
@@ -2565,17 +2565,17 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/Donate.qml" line="48"/>
       <source>Support iDescriptor</source>
-      <translation>Support iDescriptor</translation>
+      <translation>Ondersteuning iDescriptor</translation>
     </message>
     <message>
       <location filename="../src/ui/Donate.qml" line="58"/>
       <source>Your support helps fund ongoing development, testing, and the features the community cares about most.</source>
-      <translation>Your support helps fund ongoing development, testing, and the features the community cares about most.</translation>
+      <translation>Jouw steun helpt bij het financieren van voortdurende ontwikkeling, testen en de functies waar de gemeenschap het meest om geeft.</translation>
     </message>
     <message>
       <location filename="../src/ui/Donate.qml" line="74"/>
       <source>Choose how you would like to support the project.</source>
-      <translation>Choose how you would like to support the project.</translation>
+      <translation>Kies hoe u het project wilt steunen.</translation>
     </message>
   </context>
   <context>
@@ -2583,12 +2583,12 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/DonateActions.qml" line="28"/>
       <source>Sponsor with GitHub</source>
-      <translation>Sponsor with GitHub</translation>
+      <translation>Sponsor met GitHub</translation>
     </message>
     <message>
       <location filename="../src/ui/DonateActions.qml" line="39"/>
       <source>Support on Open Collective</source>
-      <translation>Support on Open Collective</translation>
+      <translation>Ondersteuning bij Open Collectief</translation>
     </message>
   </context>
   <context>
@@ -2596,68 +2596,68 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/EraseDialog.qml" line="40"/>
       <source>The device could not be erased. Keep it connected and try again.</source>
-      <translation>The device could not be erased. Keep it connected and try again.</translation>
+      <translation>Het apparaat kon niet worden gewist. Houd hem aangesloten en probeer het opnieuw.</translation>
     </message>
     <message>
       <location filename="../src/ui/EraseDialog.qml" line="79"/>
       <source>iDescriptor could not erase %1. Keep the device connected and try again.</source>
-      <translation>iDescriptor could not erase %1. Keep the device connected and try again.</translation>
+      <translation>iDescriptor kan %1 niet wissen. Houd het apparaat aangesloten en probeer het opnieuw.</translation>
     </message>
     <message>
       <location filename="../src/ui/EraseDialog.qml" line="96"/>
       <source>Erasing %1</source>
-      <translation>Erasing %1</translation>
+      <translation>%1 wissen</translation>
     </message>
     <message>
       <location filename="../src/ui/EraseDialog.qml" line="98"/>
       <source>Erase Command Accepted</source>
-      <translation>Erase Command Accepted</translation>
+      <translation>Wisopdracht geaccepteerd</translation>
     </message>
     <message>
       <location filename="../src/ui/EraseDialog.qml" line="99"/>
       <source>Erase %1?</source>
-      <translation>Erase %1?</translation>
+      <translation>%1 wissen?</translation>
     </message>
     <message>
       <location filename="../src/ui/EraseDialog.qml" line="115"/>
       <source>Try Again</source>
-      <translation>Try Again</translation>
+      <translation>Probeer het opnieuw</translation>
     </message>
     <message>
       <location filename="../src/ui/EraseDialog.qml" line="129"/>
       <source>This will erase all content and settings from %1. This action cannot be undone. Do you want to continue?</source>
-      <translation>This will erase all content and settings from %1. This action cannot be undone. Do you want to continue?</translation>
+      <translation>Hierdoor worden alle inhoud en instellingen van %1 gewist. Deze actie kan niet ongedaan worden gemaakt. Wil je doorgaan?</translation>
     </message>
     <message>
       <location filename="../src/ui/EraseDialog.qml" line="141"/>
       <location filename="../src/ui/EraseDialog.qml" line="175"/>
       <source>No</source>
-      <translation>No</translation>
+      <translation>Nee</translation>
     </message>
     <message>
       <location filename="../src/ui/EraseDialog.qml" line="146"/>
       <source>Yes</source>
-      <translation>Yes</translation>
+      <translation>Ja</translation>
     </message>
     <message>
       <location filename="../src/ui/EraseDialog.qml" line="162"/>
       <source>Are you absolutely sure you want to permanently erase %1?</source>
-      <translation>Are you absolutely sure you want to permanently erase %1?</translation>
+      <translation>Weet u absoluut zeker dat u %1 permanent wilt wissen?</translation>
     </message>
     <message>
       <location filename="../src/ui/EraseDialog.qml" line="180"/>
       <source>Yes, Erase Device</source>
-      <translation>Yes, Erase Device</translation>
+      <translation>Ja, Wis apparaat</translation>
     </message>
     <message>
       <location filename="../src/ui/EraseDialog.qml" line="196"/>
       <source>The erase command completed successfully. The device will restart and remove all content and settings.</source>
-      <translation>The erase command completed successfully. The device will restart and remove all content and settings.</translation>
+      <translation>De wisopdracht is succesvol voltooid. Het apparaat wordt opnieuw opgestart en alle inhoud en instellingen worden verwijderd.</translation>
     </message>
     <message>
       <location filename="../src/ui/EraseDialog.qml" line="204"/>
       <source>Close</source>
-      <translation>Close</translation>
+      <translation>Sluiten</translation>
     </message>
   </context>
   <context>
@@ -2666,43 +2666,43 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
       <location filename="../src/ui/FileExplorer.qml" line="61"/>
       <location filename="../src/ui/FileExplorer.qml" line="539"/>
       <source>AFC client is not available.</source>
-      <translation>AFC client is not available.</translation>
+      <translation>AFC-client is niet beschikbaar.</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="187"/>
       <source>Failed to open preview.</source>
-      <translation>Failed to open preview.</translation>
+      <translation>Kan voorbeeld niet openen.</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="199"/>
       <location filename="../src/ui/FileExplorer.qml" line="783"/>
       <source>Open Externally</source>
-      <translation>Open Externally</translation>
+      <translation>Extern openen</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="200"/>
       <source>Export %1 to a temporary folder and open it with the default application?</source>
-      <translation>Export %1 to a temporary folder and open it with the default application?</translation>
+      <translation>%1 exporteren naar een tijdelijke map en deze openen met de standaardapplicatie?</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="200"/>
       <source>This file type cannot be previewed would like to export to a temporary folder and open it with the default application?</source>
-      <translation>This file type cannot be previewed would like to export to a temporary folder and open it with the default application?</translation>
+      <translation>Er kan geen voorbeeld van dit bestandstype worden bekeken. Wilt u exporteren naar een tijdelijke map en deze openen met de standaardtoepassing?</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="218"/>
       <source>The system temporary folder could not be located.</source>
-      <translation>The system temporary folder could not be located.</translation>
+      <translation>De tijdelijke systeemmap kan niet worden gevonden.</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="240"/>
       <source>Exporting for External Open from %1</source>
-      <translation>Exporting for External Open from %1</translation>
+      <translation>Exporteren voor extern openen vanuit %1</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="240"/>
       <source>Exporting for External Open</source>
-      <translation>Exporting for External Open</translation>
+      <translation>Exporteren voor extern openen</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="241"/>
@@ -2710,160 +2710,160 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
       <location filename="../src/ui/FileExplorer.qml" line="619"/>
       <location filename="../src/ui/FileExplorer.qml" line="790"/>
       <source>Export</source>
-      <translation>Export</translation>
+      <translation>Exporteren</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="346"/>
       <source>Exporting File(s) from %1</source>
-      <translation>Exporting File(s) from %1</translation>
+      <translation>Bestand(en) exporteren uit %1</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="346"/>
       <source>Exporting File(s)</source>
-      <translation>Exporting File(s)</translation>
+      <translation>Bestand(en) exporteren</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="372"/>
       <source>Importing Files to %1</source>
-      <translation>Importing Files to %1</translation>
+      <translation>Bestanden importeren naar %1</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="372"/>
       <source>Importing Files</source>
-      <translation>Importing Files</translation>
+      <translation>Bestanden importeren</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="373"/>
       <location filename="../src/ui/FileExplorer.qml" line="611"/>
       <source>Import</source>
-      <translation>Import</translation>
+      <translation>Importeren</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="402"/>
       <source>%1 could not be exported.</source>
-      <translation>%1 could not be exported.</translation>
+      <translation>%1 kan niet worden geëxporteerd.</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="411"/>
       <source>%1 was exported, but no application could open it.</source>
-      <translation>%1 was exported, but no application could open it.</translation>
+      <translation>%1 is geëxporteerd, maar geen enkele toepassing kan het openen.</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="427"/>
       <source>Opening %1 was cancelled or could not be started.</source>
-      <translation>Opening %1 was cancelled or could not be started.</translation>
+      <translation>Het openen van %1 is geannuleerd of kon niet worden gestart.</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="428"/>
       <source>%1 could not be exported for opening.</source>
-      <translation>%1 could not be exported for opening.</translation>
+      <translation>%1 kan niet worden geëxporteerd om te openen.</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="458"/>
       <source>Failed to load directory.</source>
-      <translation>Failed to load directory.</translation>
+      <translation>Kan map niet laden.</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="509"/>
       <source>%1 item(s) were deleted successfully.</source>
-      <translation>%1 item(s) were deleted successfully.</translation>
+      <translation>%1 item(s) zijn succesvol verwijderd.</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="512"/>
       <source>%1 item(s) were deleted. %2 item(s) could not be deleted.</source>
-      <translation>%1 item(s) were deleted. %2 item(s) could not be deleted.</translation>
+      <translation>%1 artikel(en) zijn verwijderd. %2 artikel(en) konden niet worden verwijderd.</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="518"/>
       <source>The selected items could not be deleted.</source>
-      <translation>The selected items could not be deleted.</translation>
+      <translation>De geselecteerde items konden niet worden verwijderd.</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="562"/>
       <source>Go Back</source>
-      <translation>Go Back</translation>
+      <translation>Ga terug</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="570"/>
       <source>Go Forward</source>
-      <translation>Go Forward</translation>
+      <translation>Ga vooruit</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="577"/>
       <source>Go Home</source>
-      <translation>Go Home</translation>
+      <translation>Ga naar huis</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="585"/>
       <source>Go Up</source>
-      <translation>Go Up</translation>
+      <translation>Ga omhoog</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="591"/>
       <source>Refresh</source>
-      <translation>Refresh</translation>
+      <translation>Vernieuwen</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="601"/>
       <source>Enter path...</source>
-      <translation>Enter path...</translation>
+      <translation>Voer pad in...</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="627"/>
       <location filename="../src/ui/FileExplorer.qml" line="811"/>
       <source>Delete</source>
-      <translation>Delete</translation>
+      <translation>Verwijderen</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="636"/>
       <location filename="../src/ui/FileExplorer.qml" line="822"/>
       <source>Add to Favorites</source>
-      <translation>Add to Favorites</translation>
+      <translation>Toevoegen aan Favorieten</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="643"/>
       <source>Navigate to path</source>
-      <translation>Navigate to path</translation>
+      <translation>Navigeer naar pad</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="759"/>
       <source>This folder is empty</source>
-      <translation>This folder is empty</translation>
+      <translation>Deze map is leeg</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="772"/>
       <source>Open</source>
-      <translation>Open</translation>
+      <translation>Openen</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="799"/>
       <source>Get Info</source>
-      <translation>Get Info</translation>
+      <translation>Krijg informatie</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="829"/>
       <source>Enter alias for this location:</source>
-      <translation>Enter alias for this location:</translation>
+      <translation>Voer een alias in voor deze locatie:</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="830"/>
       <source>Alias here</source>
-      <translation>Alias here</translation>
+      <translation>Alias hier</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="831"/>
       <source>Path: </source>
-      <translation>Path: </translation>
+      <translation>Pad: </translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="845"/>
       <source>Choose Export Folder</source>
-      <translation>Choose Export Folder</translation>
+      <translation>Kies Map exporteren</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="851"/>
       <source>Choose Files to Import</source>
-      <translation>Choose Files to Import</translation>
+      <translation>Kies Bestanden om te importeren</translation>
     </message>
   </context>
   <context>
@@ -2871,32 +2871,32 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="23"/>
       <source>File Information</source>
-      <translation>File Information</translation>
+      <translation>Bestandsinformatie</translation>
     </message>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="30"/>
       <source>Regular File (%1)</source>
-      <translation>Regular File (%1)</translation>
+      <translation>Normaal bestand (%1)</translation>
     </message>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="32"/>
       <source>Directory (%1)</source>
-      <translation>Directory (%1)</translation>
+      <translation>Telefoonboek (%1)</translation>
     </message>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="34"/>
       <source>Symbolic Link (%1)</source>
-      <translation>Symbolic Link (%1)</translation>
+      <translation>Symbolische link (%1)</translation>
     </message>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="36"/>
       <source>Block Device (%1)</source>
-      <translation>Block Device (%1)</translation>
+      <translation>Apparaat blokkeren (%1)</translation>
     </message>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="38"/>
       <source>Character Device (%1)</source>
-      <translation>Character Device (%1)</translation>
+      <translation>Tekenapparaat (%1)</translation>
     </message>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="40"/>
@@ -2906,68 +2906,68 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="42"/>
       <source>Socket (%1)</source>
-      <translation>Socket (%1)</translation>
+      <translation>Stekkerdoos (%1)</translation>
     </message>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="44"/>
       <source>Unknown</source>
-      <translation>Unknown</translation>
+      <translation>Onbekend</translation>
     </message>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="57"/>
       <location filename="../src/ui/FileInfoDialog.qml" line="99"/>
       <source>Could not retrieve file information.</source>
-      <translation>Could not retrieve file information.</translation>
+      <translation>Kan bestandsinformatie niet ophalen.</translation>
     </message>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="64"/>
       <source>Name</source>
-      <translation>Name</translation>
+      <translation>Naam</translation>
     </message>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="65"/>
       <source>Path</source>
-      <translation>Path</translation>
+      <translation>Pad</translation>
     </message>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="66"/>
       <source>Type</source>
-      <translation>Type</translation>
+      <translation>Typ</translation>
     </message>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="68"/>
       <source>Size</source>
-      <translation>Size</translation>
+      <translation>Grootte</translation>
     </message>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="69"/>
       <source>%1 (%2 bytes)</source>
-      <translation>%1 (%2 bytes)</translation>
+      <translation>%1 (%2-bytes)</translation>
     </message>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="71"/>
       <source>Allocated Blocks</source>
-      <translation>Allocated Blocks</translation>
+      <translation>Toegewezen blokken</translation>
     </message>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="72"/>
       <source>Created</source>
-      <translation>Created</translation>
+      <translation>Gemaakt</translation>
     </message>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="73"/>
       <source>Modified</source>
-      <translation>Modified</translation>
+      <translation>Gewijzigd</translation>
     </message>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="74"/>
       <source>Hard Links</source>
-      <translation>Hard Links</translation>
+      <translation>Harde koppelingen</translation>
     </message>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="76"/>
       <source>Link Target</source>
-      <translation>Link Target</translation>
+      <translation>Doel koppelen</translation>
     </message>
   </context>
   <context>
@@ -2975,52 +2975,52 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/FilesSection.qml" line="60"/>
       <source>No device selected.</source>
-      <translation>No device selected.</translation>
+      <translation>Geen apparaat geselecteerd.</translation>
     </message>
     <message>
       <location filename="../src/ui/FilesSection.qml" line="68"/>
       <source>The default file service is unavailable.</source>
-      <translation>The default file service is unavailable.</translation>
+      <translation>De standaardbestandsservice is niet beschikbaar.</translation>
     </message>
     <message>
       <location filename="../src/ui/FilesSection.qml" line="159"/>
       <source>The file explorer could not be loaded.</source>
-      <translation>The file explorer could not be loaded.</translation>
+      <translation>De bestandsverkenner kan niet worden geladen.</translation>
     </message>
     <message>
       <location filename="../src/ui/FilesSection.qml" line="186"/>
       <source>Explorer</source>
-      <translation>Explorer</translation>
+      <translation>Ontdekkingsreiziger</translation>
     </message>
     <message>
       <location filename="../src/ui/FilesSection.qml" line="190"/>
       <source>Default</source>
-      <translation>Default</translation>
+      <translation>Standaard</translation>
     </message>
     <message>
       <location filename="../src/ui/FilesSection.qml" line="197"/>
       <source>Jailbroken (AFC2)</source>
-      <translation>Jailbroken (AFC2)</translation>
+      <translation>Gejailbreakt (AFC2)</translation>
     </message>
     <message>
       <location filename="../src/ui/FilesSection.qml" line="198"/>
       <source>Full filesystem</source>
-      <translation>Full filesystem</translation>
+      <translation>Volledig bestandssysteem</translation>
     </message>
     <message>
       <location filename="../src/ui/FilesSection.qml" line="198"/>
       <source>Unavailable</source>
-      <translation>Unavailable</translation>
+      <translation>Niet beschikbaar</translation>
     </message>
     <message>
       <location filename="../src/ui/FilesSection.qml" line="207"/>
       <source>Common Places</source>
-      <translation>Common Places</translation>
+      <translation>Gemeenschappelijke plaatsen</translation>
     </message>
     <message>
       <location filename="../src/ui/FilesSection.qml" line="211"/>
       <source>Pictures</source>
-      <translation>Pictures</translation>
+      <translation>Afbeeldingen</translation>
     </message>
     <message>
       <location filename="../src/ui/FilesSection.qml" line="212"/>
@@ -3030,12 +3030,12 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/FilesSection.qml" line="220"/>
       <source>Favorite Places</source>
-      <translation>Favorite Places</translation>
+      <translation>Favoriete plaatsen</translation>
     </message>
     <message>
       <location filename="../src/ui/FilesSection.qml" line="229"/>
       <source>No favorite locations yet</source>
-      <translation>No favorite locations yet</translation>
+      <translation>Nog geen favoriete locaties</translation>
     </message>
     <message>
       <location filename="../src/ui/FilesSection.qml" line="245"/>
@@ -3045,7 +3045,7 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/FilesSection.qml" line="307"/>
       <source>Remove from Favorites</source>
-      <translation>Remove from Favorites</translation>
+      <translation>Verwijderen uit Favorieten</translation>
     </message>
   </context>
   <context>
@@ -3054,72 +3054,72 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
       <location filename="../src/ui/app-store/GetIpaPopup.qml" line="27"/>
       <location filename="../src/ui/app-store/GetIpaPopup.qml" line="214"/>
       <source>Get IPA</source>
-      <translation>Get IPA</translation>
+      <translation>Verkrijg IPA</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/GetIpaPopup.qml" line="61"/>
       <source>Preparing download...</source>
-      <translation>Preparing download...</translation>
+      <translation>Downloaden voorbereiden...</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/GetIpaPopup.qml" line="66"/>
       <source>The App Store service is not initialized.</source>
-      <translation>The App Store service is not initialized.</translation>
+      <translation>De App Store-service is niet geïnitialiseerd.</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/GetIpaPopup.qml" line="94"/>
       <source>Choose download folder</source>
-      <translation>Choose download folder</translation>
+      <translation>Kies de downloadmap</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/GetIpaPopup.qml" line="100"/>
       <source>Cancel download?</source>
-      <translation>Cancel download?</translation>
+      <translation>Downloaden annuleren?</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/GetIpaPopup.qml" line="101"/>
       <source>The IPA download is still in progress. Do you want to cancel it and close this dialog?</source>
-      <translation>The IPA download is still in progress. Do you want to cancel it and close this dialog?</translation>
+      <translation>Het downloaden van de IPA is nog bezig. Wilt u het annuleren en dit dialoogvenster sluiten?</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/GetIpaPopup.qml" line="124"/>
       <source>Downloading IPA...</source>
-      <translation>Downloading IPA...</translation>
+      <translation>IPA downloaden...</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/GetIpaPopup.qml" line="135"/>
       <source>Download failed.</source>
-      <translation>Download failed.</translation>
+      <translation>Downloaden mislukt.</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/GetIpaPopup.qml" line="136"/>
       <source>Saved IPA</source>
-      <translation>Saved IPA</translation>
+      <translation>IPA opgeslagen</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/GetIpaPopup.qml" line="170"/>
       <source>Choose</source>
-      <translation>Choose</translation>
+      <translation>Kies</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/GetIpaPopup.qml" line="188"/>
       <source>Saved to %1</source>
-      <translation>Saved to %1</translation>
+      <translation>Opgeslagen in %1</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/GetIpaPopup.qml" line="198"/>
       <source>Open Folder</source>
-      <translation>Open Folder</translation>
+      <translation>Map openen</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/GetIpaPopup.qml" line="209"/>
       <source>Cancel</source>
-      <translation>Cancel</translation>
+      <translation>Annuleer</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/GetIpaPopup.qml" line="209"/>
       <source>Close</source>
-      <translation>Close</translation>
+      <translation>Sluiten</translation>
     </message>
   </context>
   <context>
@@ -3127,37 +3127,37 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/Helpers.qml" line="30"/>
       <source>Missing bundle ID.</source>
-      <translation>Missing bundle ID.</translation>
+      <translation>Ontbrekende bundel-ID.</translation>
     </message>
     <message>
       <location filename="../src/ui/Helpers.qml" line="40"/>
       <source>Failed to fetch app details.</source>
-      <translation>Failed to fetch app details.</translation>
+      <translation>Kan app-gegevens niet ophalen.</translation>
     </message>
     <message>
       <location filename="../src/ui/Helpers.qml" line="48"/>
       <source>No App Store details found for this bundle ID.</source>
-      <translation>No App Store details found for this bundle ID.</translation>
+      <translation>Er zijn geen App Store-gegevens gevonden voor deze bundel-ID.</translation>
     </message>
     <message>
       <location filename="../src/ui/Helpers.qml" line="53"/>
       <source>Failed to parse App Store details.</source>
-      <translation>Failed to parse App Store details.</translation>
+      <translation>Kan App Store-gegevens niet parseren.</translation>
     </message>
     <message>
       <location filename="../src/ui/Helpers.qml" line="191"/>
       <source>Error</source>
-      <translation>Error</translation>
+      <translation>Fout</translation>
     </message>
     <message>
       <location filename="../src/ui/Helpers.qml" line="195"/>
       <source>Warning</source>
-      <translation>Warning</translation>
+      <translation>Waarschuwing</translation>
     </message>
     <message>
       <location filename="../src/ui/Helpers.qml" line="199"/>
       <source>Information</source>
-      <translation>Information</translation>
+      <translation>Informatie</translation>
     </message>
   </context>
   <context>
@@ -3165,72 +3165,72 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/HowToConnect.qml" line="33"/>
       <source>You can now unplug the device. iDescriptor will connect to it automatically if Bonjour is enabled and running. (requires iOS 14 or later)</source>
-      <translation>You can now unplug the device. iDescriptor will connect to it automatically if Bonjour is enabled and running. (requires iOS 14 or later)</translation>
+      <translation>U kunt nu het apparaat loskoppelen. iDescriptor maakt er automatisch verbinding mee als Bonjour is ingeschakeld en actief is. (vereist iOS 14 of hoger)</translation>
     </message>
     <message>
       <location filename="../src/ui/HowToConnect.qml" line="35"/>
       <source>You can now unplug the device. iDescriptor will connect to it automatically if Avahi is enabled and running. (requires iOS 14 or later)</source>
-      <translation>You can now unplug the device. iDescriptor will connect to it automatically if Avahi is enabled and running. (requires iOS 14 or later)</translation>
+      <translation>U kunt nu het apparaat loskoppelen. iDescriptor maakt er automatisch verbinding mee als Avahi is ingeschakeld en actief is. (vereist iOS 14 of hoger)</translation>
     </message>
     <message>
       <location filename="../src/ui/HowToConnect.qml" line="36"/>
       <source>You can now unplug the device. iDescriptor will connect to it automatically. (requires iOS 14 or later)</source>
-      <translation>You can now unplug the device. iDescriptor will connect to it automatically. (requires iOS 14 or later)</translation>
+      <translation>U kunt nu het apparaat loskoppelen. iDescriptor maakt er automatisch verbinding mee. (vereist iOS 14 of hoger)</translation>
     </message>
     <message>
       <location filename="../src/ui/HowToConnect.qml" line="94"/>
       <source>Auto Setup</source>
-      <translation>Auto Setup</translation>
+      <translation>Automatische configuratie</translation>
     </message>
     <message>
       <location filename="../src/ui/HowToConnect.qml" line="94"/>
       <source>Custom</source>
-      <translation>Custom</translation>
+      <translation>Aangepast</translation>
     </message>
     <message>
       <location filename="../src/ui/HowToConnect.qml" line="177"/>
       <source>Connect your device</source>
-      <translation>Connect your device</translation>
+      <translation>Sluit uw apparaat aan</translation>
     </message>
     <message>
       <location filename="../src/ui/HowToConnect.qml" line="187"/>
       <source>Plug the device into this computer with a cable so iDescriptor can prepare wireless pairing.</source>
-      <translation>Plug the device into this computer with a cable so iDescriptor can prepare wireless pairing.</translation>
+      <translation>Sluit het apparaat met een kabel aan op deze computer, zodat de iDescriptor de draadloze koppeling kan voorbereiden.</translation>
     </message>
     <message>
       <location filename="../src/ui/HowToConnect.qml" line="228"/>
       <source>Accept the pairing dialog</source>
-      <translation>Accept the pairing dialog</translation>
+      <translation>Accepteer het koppelingsdialoogvenster</translation>
     </message>
     <message>
       <location filename="../src/ui/HowToConnect.qml" line="238"/>
       <source>Keep the device unlocked and tap Trust when iOS asks whether this computer is trusted.</source>
-      <translation>Keep the device unlocked and tap Trust when iOS asks whether this computer is trusted.</translation>
+      <translation>Houd het apparaat ontgrendeld en tik op Vertrouwen wanneer iOS vraagt of deze computer vertrouwd wordt.</translation>
     </message>
     <message>
       <location filename="../src/ui/HowToConnect.qml" line="279"/>
       <source>Finish over Wi-Fi</source>
-      <translation>Finish over Wi-Fi</translation>
+      <translation>Eindig over Wi-Fi</translation>
     </message>
     <message>
       <location filename="../src/ui/HowToConnect.qml" line="441"/>
       <source>Use a saved pairing file</source>
-      <translation>Use a saved pairing file</translation>
+      <translation>Gebruik een opgeslagen koppelingsbestand</translation>
     </message>
     <message>
       <location filename="../src/ui/HowToConnect.qml" line="451"/>
       <source>You can use the &apos;Connect with pairing file&apos; button to connect to a device. You have to have a valid pairing file and know the device IP address.</source>
-      <translation>You can use the &apos;Connect with pairing file&apos; button to connect to a device. You have to have a valid pairing file and know the device IP address.</translation>
+      <translation>Met de knop 'Verbinden met koppelbestand' kunt u verbinding maken met een apparaat. U moet over een geldig koppelingsbestand beschikken en het IP-adres van het apparaat kennen.</translation>
     </message>
     <message>
       <location filename="../src/ui/HowToConnect.qml" line="462"/>
       <source>Pairing files are usually stored here:</source>
-      <translation>Pairing files are usually stored here:</translation>
+      <translation>Koppelbestanden worden meestal hier opgeslagen:</translation>
     </message>
     <message>
       <location filename="../src/ui/HowToConnect.qml" line="499"/>
       <source>You can run `sudo ls /var/db/lockdown` to see the pairing files you have on your Mac.</source>
-      <translation>You can run `sudo ls /var/db/lockdown` to see the pairing files you have on your Mac.</translation>
+      <translation>U kunt `sudo ls /var/db/lockdown` uitvoeren om de koppelingsbestanden te bekijken die u op uw Mac heeft.</translation>
     </message>
   </context>
   <context>
@@ -3238,58 +3238,58 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/tools/IFuse.qml" line="17"/>
       <source>iFuse Mount - iDescriptor</source>
-      <translation>iFuse Mount - iDescriptor</translation>
+      <translation>iFuse-houder - iDescriptor</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/IFuse.qml" line="42"/>
       <source>Unknown Device</source>
-      <translation>Unknown Device</translation>
+      <translation>Onbekend apparaat</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/IFuse.qml" line="77"/>
       <location filename="../src/ui/tools/IFuse.qml" line="100"/>
       <source>Select Mount Directory</source>
-      <translation>Select Mount Directory</translation>
+      <translation>Selecteer Directory koppelen</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/IFuse.qml" line="92"/>
       <source>This folder cannot be used by the Flatpak build. Choose a subfolder inside %1.</source>
-      <translation>This folder cannot be used by the Flatpak build. Choose a subfolder inside %1.</translation>
+      <translation>Deze map kan niet worden gebruikt door de Flatpak-build. Kies een submap binnen %1.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/IFuse.qml" line="118"/>
       <source>Mount %1&apos;s media as a drive on your PC.</source>
-      <translation>Mount %1&apos;s media as a drive on your PC.</translation>
+      <translation>Monteer de media van de %1 als schijf op uw pc.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/IFuse.qml" line="158"/>
       <source>Mount directory will be shown here</source>
-      <translation>Mount directory will be shown here</translation>
+      <translation>De Mount-map wordt hier weergegeven</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/IFuse.qml" line="172"/>
       <source>Browse...</source>
-      <translation>Browse...</translation>
+      <translation>Blader...</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/IFuse.qml" line="188"/>
       <source>Unmounting...</source>
-      <translation>Unmounting...</translation>
+      <translation>Ontkoppelen...</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/IFuse.qml" line="188"/>
       <source>Mounting...</source>
-      <translation>Mounting...</translation>
+      <translation>Montage...</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/IFuse.qml" line="189"/>
       <source>Unmount Device</source>
-      <translation>Unmount Device</translation>
+      <translation>Apparaat ontkoppelen</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/IFuse.qml" line="189"/>
       <source>Mount Device</source>
-      <translation>Mount Device</translation>
+      <translation>Apparaat monteren</translation>
     </message>
   </context>
   <context>
@@ -3305,72 +3305,72 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/app-store/InstallAppPopup.qml" line="27"/>
       <source>Install IPA</source>
-      <translation>Install IPA</translation>
+      <translation>Installeer IPA</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/InstallAppPopup.qml" line="84"/>
       <source>Preparing IPA download...</source>
-      <translation>Preparing IPA download...</translation>
+      <translation>IPA-download voorbereiden...</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/InstallAppPopup.qml" line="89"/>
       <source>The App Store service is not initialized.</source>
-      <translation>The App Store service is not initialized.</translation>
+      <translation>De App Store-service is niet geïnitialiseerd.</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/InstallAppPopup.qml" line="120"/>
       <source>Cancel installation?</source>
-      <translation>Cancel installation?</translation>
+      <translation>Installatie annuleren?</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/InstallAppPopup.qml" line="121"/>
       <source>The IPA download or installation is still in progress. Do you want to cancel it and close this dialog?</source>
-      <translation>The IPA download or installation is still in progress. Do you want to cancel it and close this dialog?</translation>
+      <translation>Het downloaden of installeren van de IPA is nog bezig. Wilt u het annuleren en dit dialoogvenster sluiten?</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/InstallAppPopup.qml" line="146"/>
       <source>Installing IPA on device...</source>
-      <translation>Installing IPA on device...</translation>
+      <translation>IPA installeren op apparaat...</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/InstallAppPopup.qml" line="147"/>
       <source>Downloading IPA...</source>
-      <translation>Downloading IPA...</translation>
+      <translation>IPA downloaden...</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/InstallAppPopup.qml" line="157"/>
       <source>Installation failed.</source>
-      <translation>Installation failed.</translation>
+      <translation>Installatie mislukt.</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/InstallAppPopup.qml" line="158"/>
       <source>Installation finished</source>
-      <translation>Installation finished</translation>
+      <translation>Installatie voltooid</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/InstallAppPopup.qml" line="189"/>
       <source>Select a connected device</source>
-      <translation>Select a connected device</translation>
+      <translation>Selecteer een aangesloten apparaat</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/InstallAppPopup.qml" line="218"/>
       <source>No device connected.</source>
-      <translation>No device connected.</translation>
+      <translation>Geen apparaat aangesloten.</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/InstallAppPopup.qml" line="245"/>
       <source>Cancel</source>
-      <translation>Cancel</translation>
+      <translation>Annuleer</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/InstallAppPopup.qml" line="245"/>
       <source>Close</source>
-      <translation>Close</translation>
+      <translation>Sluiten</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/InstallAppPopup.qml" line="250"/>
       <source>Install</source>
-      <translation>Install</translation>
+      <translation>Installeren</translation>
     </message>
   </context>
   <context>
@@ -3379,37 +3379,37 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
       <location filename="../src/ui/installed-apps/InstalledApps.qml" line="49"/>
       <location filename="../src/ui/installed-apps/InstalledApps.qml" line="193"/>
       <source>Failed to retrieve installed apps.</source>
-      <translation>Failed to retrieve installed apps.</translation>
+      <translation>Kan geïnstalleerde apps niet ophalen.</translation>
     </message>
     <message>
       <location filename="../src/ui/installed-apps/InstalledApps.qml" line="72"/>
       <source> (System)</source>
-      <translation> (System)</translation>
+      <translation> (Systeem)</translation>
     </message>
     <message>
       <location filename="../src/ui/installed-apps/InstalledApps.qml" line="177"/>
       <source>Failed to open the document container for %1.</source>
-      <translation>Failed to open the document container for %1.</translation>
+      <translation>Kan de documentcontainer voor %1 niet openen.</translation>
     </message>
     <message>
       <location filename="../src/ui/installed-apps/InstalledApps.qml" line="201"/>
       <source>No apps found or failed to retrieve apps.</source>
-      <translation>No apps found or failed to retrieve apps.</translation>
+      <translation>Geen apps gevonden of apps kunnen niet worden opgehaald.</translation>
     </message>
     <message>
       <location filename="../src/ui/installed-apps/InstalledApps.qml" line="267"/>
       <source>Search apps...</source>
-      <translation>Search apps...</translation>
+      <translation>Apps zoeken...</translation>
     </message>
     <message>
       <location filename="../src/ui/installed-apps/InstalledApps.qml" line="279"/>
       <source>File Sharing</source>
-      <translation>File Sharing</translation>
+      <translation>Bestanden delen</translation>
     </message>
     <message>
       <location filename="../src/ui/installed-apps/InstalledApps.qml" line="365"/>
       <source>Select an app to browse its documents.</source>
-      <translation>Select an app to browse its documents.</translation>
+      <translation>Selecteer een app om door de documenten te bladeren.</translation>
     </message>
   </context>
   <context>
@@ -3417,22 +3417,22 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/Jailbroken.qml" line="52"/>
       <source>SSH Terminal</source>
-      <translation>SSH Terminal</translation>
+      <translation>SSH-terminal</translation>
     </message>
     <message>
       <location filename="../src/ui/Jailbroken.qml" line="53"/>
       <source>Connect to your device via SSH</source>
-      <translation>Connect to your device via SSH</translation>
+      <translation>Maak verbinding met uw apparaat via SSH</translation>
     </message>
     <message>
       <location filename="../src/ui/Jailbroken.qml" line="59"/>
       <source>More Tools Coming</source>
-      <translation>More Tools Coming</translation>
+      <translation>Er komen meer hulpmiddelen</translation>
     </message>
     <message>
       <location filename="../src/ui/Jailbroken.qml" line="60"/>
       <source>New features will be added soon</source>
-      <translation>New features will be added soon</translation>
+      <translation>Er zullen binnenkort nieuwe functies worden toegevoegd</translation>
     </message>
   </context>
   <context>
@@ -3440,32 +3440,32 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/KeychainDialog.qml" line="66"/>
       <source>Allow Keychain Access</source>
-      <translation>Allow Keychain Access</translation>
+      <translation>Sta sleutelhangertoegang toe</translation>
     </message>
     <message>
       <location filename="../src/ui/KeychainDialog.qml" line="76"/>
       <source>iDescriptor uses macOS Keychain to securely store and retrieve your Apple ID credentials. When macOS asks for access, choose &quot;Always Allow&quot; to avoid repeated prompts.</source>
-      <translation>iDescriptor uses macOS Keychain to securely store and retrieve your Apple ID credentials. When macOS asks for access, choose &quot;Always Allow&quot; to avoid repeated prompts.</translation>
+      <translation>iDescriptor gebruikt macOS-sleutelhanger om uw Apple ID-gegevens veilig op te slaan en op te halen. Wanneer macOS om toegang vraagt, kiest u 'Altijd toestaan' om herhaalde prompts te voorkomen.</translation>
     </message>
     <message>
       <location filename="../src/ui/KeychainDialog.qml" line="108"/>
       <source>Your credentials remain protected by macOS and are only used for App Store sign-in.</source>
-      <translation>Your credentials remain protected by macOS and are only used for App Store sign-in.</translation>
+      <translation>Uw inloggegevens blijven beschermd door macOS en worden alleen gebruikt voor aanmelding bij de App Store.</translation>
     </message>
     <message>
       <location filename="../src/ui/KeychainDialog.qml" line="127"/>
       <source>Do not show this message again</source>
-      <translation>Do not show this message again</translation>
+      <translation>Laat dit bericht niet meer zien</translation>
     </message>
     <message>
       <location filename="../src/ui/KeychainDialog.qml" line="133"/>
       <source>Skip for Now</source>
-      <translation>Skip for Now</translation>
+      <translation>Overslaan voor nu</translation>
     </message>
     <message>
       <location filename="../src/ui/KeychainDialog.qml" line="139"/>
       <source>Continue</source>
-      <translation>Continue</translation>
+      <translation>Ga door</translation>
     </message>
   </context>
   <context>
@@ -3473,63 +3473,63 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/tools/LiveScreen.qml" line="17"/>
       <source>Live Screen - iDescriptor</source>
-      <translation>Live Screen - iDescriptor</translation>
+      <translation>Live-scherm - iDescriptor</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/LiveScreen.qml" line="22"/>
       <location filename="../src/ui/tools/LiveScreen.qml" line="25"/>
       <source>Connecting to screenshot service...</source>
-      <translation>Connecting to screenshot service...</translation>
+      <translation>Verbinding maken met de screenshot-service...</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/LiveScreen.qml" line="41"/>
       <source>Failed to initialize screenshot capture. Mount a compatible developer disk image, then retry.</source>
-      <translation>Failed to initialize screenshot capture. Mount a compatible developer disk image, then retry.</translation>
+      <translation>Kan het vastleggen van screenshot niet initialiseren. Koppel een compatibele ontwikkelaarsschijfkopie en probeer het opnieuw.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/LiveScreen.qml" line="43"/>
       <source>Failed to initialize screenshot capture. Please ensure the device has developer mode enabled.</source>
-      <translation>Failed to initialize screenshot capture. Please ensure the device has developer mode enabled.</translation>
+      <translation>Kan het vastleggen van screenshot niet initialiseren. Zorg ervoor dat op het apparaat de ontwikkelaarsmodus is ingeschakeld.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/LiveScreen.qml" line="45"/>
       <source>Failed to initialize screenshot capture. Reason: %1</source>
-      <translation>Failed to initialize screenshot capture. Reason: %1</translation>
+      <translation>Kan het vastleggen van screenshot niet initialiseren. Reden: %1</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/LiveScreen.qml" line="64"/>
       <source>Developer Mode was not handled.</source>
-      <translation>Developer Mode was not handled.</translation>
+      <translation>De ontwikkelaarsmodus is niet afgehandeld.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/LiveScreen.qml" line="65"/>
       <source>Developer disk image was not mounted.</source>
-      <translation>Developer disk image was not mounted.</translation>
+      <translation>De schijfimage van de ontwikkelaar is niet aangekoppeld.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/LiveScreen.qml" line="80"/>
       <source>Capturing</source>
-      <translation>Capturing</translation>
+      <translation>Vastleggen</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/LiveScreen.qml" line="151"/>
       <source>Rotate CW</source>
-      <translation>Rotate CW</translation>
+      <translation>Draai rechtsom</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/LiveScreen.qml" line="156"/>
       <source>Rotate CCW</source>
-      <translation>Rotate CCW</translation>
+      <translation>Draai tegen de klok in</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/LiveScreen.qml" line="161"/>
       <source>Unmirror</source>
-      <translation>Unmirror</translation>
+      <translation>Ontspiegelen</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/LiveScreen.qml" line="161"/>
       <source>Mirror</source>
-      <translation>Mirror</translation>
+      <translation>Spiegel</translation>
     </message>
   </context>
   <context>
@@ -3537,17 +3537,17 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/LocalNetworkPermissionDialog.qml" line="32"/>
       <source>Allow for Local Network Discovery</source>
-      <translation>Allow for Local Network Discovery</translation>
+      <translation>Sta lokale netwerkdetectie toe</translation>
     </message>
     <message>
       <location filename="../src/ui/LocalNetworkPermissionDialog.qml" line="42"/>
       <source>macOS will ask for permission next. Choose Allow so iDescriptor can find and connect to Apple devices over Wi-Fi.</source>
-      <translation>macOS will ask for permission next. Choose Allow so iDescriptor can find and connect to Apple devices over Wi-Fi.</translation>
+      <translation>macOS zal vervolgens om toestemming vragen. Kies Toestaan ​​zodat iDescriptor Apple-apparaten kan vinden en er verbinding mee kan maken via Wi-Fi.</translation>
     </message>
     <message>
       <location filename="../src/ui/LocalNetworkPermissionDialog.qml" line="64"/>
       <source>Continue</source>
-      <translation>Continue</translation>
+      <translation>Ga door</translation>
     </message>
   </context>
   <context>
@@ -3555,12 +3555,12 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/base/LocationSelector.qml" line="12"/>
       <source>Location</source>
-      <translation>Location</translation>
+      <translation>Locatie</translation>
     </message>
     <message>
       <location filename="../src/ui/base/LocationSelector.qml" line="64"/>
       <source>Change…</source>
-      <translation>Change…</translation>
+      <translation>Verander…</translation>
     </message>
   </context>
   <context>
@@ -3568,62 +3568,62 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/LoginDialog.qml" line="216"/>
       <source>Sign in failed.</source>
-      <translation>Sign in failed.</translation>
+      <translation>Aanmelden mislukt.</translation>
     </message>
     <message>
       <location filename="../src/ui/LoginDialog.qml" line="265"/>
       <source>Sign in with your Apple Account</source>
-      <translation>Sign in with your Apple Account</translation>
+      <translation>Log in met uw Apple-account</translation>
     </message>
     <message>
       <location filename="../src/ui/LoginDialog.qml" line="275"/>
       <source>Use your account to search and install App Store apps.</source>
-      <translation>Use your account to search and install App Store apps.</translation>
+      <translation>Gebruik uw account om App Store-apps te zoeken en te installeren.</translation>
     </message>
     <message>
       <location filename="../src/ui/LoginDialog.qml" line="292"/>
       <source>Apple Account</source>
-      <translation>Apple Account</translation>
+      <translation>Apple-account</translation>
     </message>
     <message>
       <location filename="../src/ui/LoginDialog.qml" line="348"/>
       <source>Password</source>
-      <translation>Password</translation>
+      <translation>Wachtwoord</translation>
     </message>
     <message>
       <location filename="../src/ui/LoginDialog.qml" line="429"/>
       <source>Credentials are passed to Apple&apos;s sign-in service and stored by the local ipatool keyring.</source>
-      <translation>Credentials are passed to Apple&apos;s sign-in service and stored by the local ipatool keyring.</translation>
+      <translation>De inloggegevens worden doorgegeven aan de inlogservice van Apple en opgeslagen in de lokale ipatool-sleutelhanger.</translation>
     </message>
     <message>
       <location filename="../src/ui/LoginDialog.qml" line="444"/>
       <source>Continue</source>
-      <translation>Continue</translation>
+      <translation>Ga door</translation>
     </message>
     <message>
       <location filename="../src/ui/LoginDialog.qml" line="472"/>
       <source>Forgot password?</source>
-      <translation>Forgot password?</translation>
+      <translation>Wachtwoord vergeten?</translation>
     </message>
     <message>
       <location filename="../src/ui/LoginDialog.qml" line="538"/>
       <source>Enter the code from your other device</source>
-      <translation>Enter the code from your other device</translation>
+      <translation>Voer de code van uw andere apparaat in</translation>
     </message>
     <message>
       <location filename="../src/ui/LoginDialog.qml" line="548"/>
       <source>A verification code was requested for %1.</source>
-      <translation>A verification code was requested for %1.</translation>
+      <translation>Er is een verificatiecode aangevraagd voor %1.</translation>
     </message>
     <message>
       <location filename="../src/ui/LoginDialog.qml" line="645"/>
       <source>Resend code</source>
-      <translation>Resend code</translation>
+      <translation>Code opnieuw verzenden</translation>
     </message>
     <message>
       <location filename="../src/ui/LoginDialog.qml" line="658"/>
       <source>Verify</source>
-      <translation>Verify</translation>
+      <translation>Verifieer</translation>
     </message>
   </context>
   <context>
@@ -3640,7 +3640,7 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/MainWorkspace.qml" line="54"/>
       <source>Welcome</source>
-      <translation>Welcome</translation>
+      <translation>Welkom</translation>
     </message>
     <message>
       <location filename="../src/ui/MainWorkspace.qml" line="56"/>
@@ -3650,37 +3650,37 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/MainWorkspace.qml" line="58"/>
       <source>Toolbox</source>
-      <translation>Toolbox</translation>
+      <translation>Gereedschapskist</translation>
     </message>
     <message>
       <location filename="../src/ui/MainWorkspace.qml" line="60"/>
       <source>Jailbroken</source>
-      <translation>Jailbroken</translation>
+      <translation>Gejailbreakt</translation>
     </message>
     <message>
       <location filename="../src/ui/MainWorkspace.qml" line="62"/>
       <source>Community</source>
-      <translation>Community</translation>
+      <translation>Gemeenschap</translation>
     </message>
     <message>
       <location filename="../src/ui/MainWorkspace.qml" line="64"/>
       <source>Donate</source>
-      <translation>Donate</translation>
+      <translation>Doneer</translation>
     </message>
     <message>
       <location filename="../src/ui/MainWorkspace.qml" line="66"/>
       <source>Connecting…</source>
-      <translation>Connecting…</translation>
+      <translation>Verbinden…</translation>
     </message>
     <message>
       <location filename="../src/ui/MainWorkspace.qml" line="68"/>
       <source>Recovery Device</source>
-      <translation>Recovery Device</translation>
+      <translation>Herstelapparaat</translation>
     </message>
     <message>
       <location filename="../src/ui/MainWorkspace.qml" line="71"/>
       <source>Device</source>
-      <translation>Device</translation>
+      <translation>Apparaat</translation>
     </message>
   </context>
   <context>
@@ -3688,42 +3688,42 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/tools/NetworkDevices.qml" line="18"/>
       <source>Network Devices - iDescriptor</source>
-      <translation>Network Devices - iDescriptor</translation>
+      <translation>Netwerkapparaten - iDescriptor</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/NetworkDevices.qml" line="25"/>
       <source>Scanning for network devices...</source>
-      <translation>Scanning for network devices...</translation>
+      <translation>Scannen naar netwerkapparaten...</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/NetworkDevices.qml" line="30"/>
       <source>Unknown device</source>
-      <translation>Unknown device</translation>
+      <translation>Onbekend apparaat</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/NetworkDevices.qml" line="55"/>
       <source>No network devices found</source>
-      <translation>No network devices found</translation>
+      <translation>Geen netwerkapparaten gevonden</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/NetworkDevices.qml" line="57"/>
       <source>Found %1 network device(s)</source>
-      <translation>Found %1 network device(s)</translation>
+      <translation>%1-netwerkapparaat(en) gevonden</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/NetworkDevices.qml" line="127"/>
       <source>Network Devices</source>
-      <translation>Network Devices</translation>
+      <translation>Netwerkapparaten</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/NetworkDevices.qml" line="171"/>
       <source>IP: %1</source>
-      <translation>IP: %1</translation>
+      <translation>IP-adres: %1</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/NetworkDevices.qml" line="178"/>
       <source>Port: %1</source>
-      <translation>Port: %1</translation>
+      <translation>Poort: %1</translation>
     </message>
   </context>
   <context>
@@ -3731,83 +3731,83 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/NetworkDevicesToConnect.qml" line="22"/>
       <source>Network device provider is loading</source>
-      <translation>Network device provider is loading</translation>
+      <translation>Provider van netwerkapparaat wordt geladen</translation>
     </message>
     <message>
       <location filename="../src/ui/NetworkDevicesToConnect.qml" line="24"/>
       <source>Network device provider failed to start</source>
-      <translation>Network device provider failed to start</translation>
+      <translation>Provider van netwerkapparaat kan niet worden gestart</translation>
     </message>
     <message>
       <location filename="../src/ui/NetworkDevicesToConnect.qml" line="26"/>
       <source>No network devices found</source>
-      <translation>No network devices found</translation>
+      <translation>Geen netwerkapparaten gevonden</translation>
     </message>
     <message>
       <location filename="../src/ui/NetworkDevicesToConnect.qml" line="26"/>
       <source>Found %1 network device(s)</source>
-      <translation>Found %1 network device(s)</translation>
+      <translation>%1-netwerkapparaat(en) gevonden</translation>
     </message>
     <message>
       <location filename="../src/ui/NetworkDevicesToConnect.qml" line="32"/>
       <source>Unknown device</source>
-      <translation>Unknown device</translation>
+      <translation>Onbekend apparaat</translation>
     </message>
     <message>
       <location filename="../src/ui/NetworkDevicesToConnect.qml" line="40"/>
       <location filename="../src/ui/NetworkDevicesToConnect.qml" line="86"/>
       <source>Connect</source>
-      <translation>Connect</translation>
+      <translation>Verbinden</translation>
     </message>
     <message>
       <location filename="../src/ui/NetworkDevicesToConnect.qml" line="66"/>
       <source>Failed to connect</source>
-      <translation>Failed to connect</translation>
+      <translation>Kan geen verbinding maken</translation>
     </message>
     <message>
       <location filename="../src/ui/NetworkDevicesToConnect.qml" line="70"/>
       <source>No pairing file</source>
-      <translation>No pairing file</translation>
+      <translation>Geen koppelingsbestand</translation>
     </message>
     <message>
       <location filename="../src/ui/NetworkDevicesToConnect.qml" line="74"/>
       <source>Connecting...</source>
-      <translation>Connecting...</translation>
+      <translation>Verbinden...</translation>
     </message>
     <message>
       <location filename="../src/ui/NetworkDevicesToConnect.qml" line="78"/>
       <source>Connected</source>
-      <translation>Connected</translation>
+      <translation>Verbonden</translation>
     </message>
     <message>
       <location filename="../src/ui/NetworkDevicesToConnect.qml" line="82"/>
       <source>Already connected</source>
-      <translation>Already connected</translation>
+      <translation>Al verbonden</translation>
     </message>
     <message>
       <location filename="../src/ui/NetworkDevicesToConnect.qml" line="247"/>
       <source>Retry</source>
-      <translation>Retry</translation>
+      <translation>Opnieuw proberen</translation>
     </message>
     <message>
       <location filename="../src/ui/NetworkDevicesToConnect.qml" line="265"/>
       <source>Network Devices</source>
-      <translation>Network Devices</translation>
+      <translation>Netwerkapparaten</translation>
     </message>
     <message>
       <location filename="../src/ui/NetworkDevicesToConnect.qml" line="346"/>
       <source>Connect via custom pairing file</source>
-      <translation>Connect via custom pairing file</translation>
+      <translation>Maak verbinding via een aangepast koppelingsbestand</translation>
     </message>
     <message>
       <location filename="../src/ui/NetworkDevicesToConnect.qml" line="360"/>
       <source>IP: %1</source>
-      <translation>IP: %1</translation>
+      <translation>IP-adres: %1</translation>
     </message>
     <message>
       <location filename="../src/ui/NetworkDevicesToConnect.qml" line="387"/>
       <source>Choose pairing file</source>
-      <translation>Choose pairing file</translation>
+      <translation>Kies het koppelingsbestand</translation>
     </message>
   </context>
   <context>
@@ -3815,12 +3815,12 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/PendingDevice.qml" line="29"/>
       <source>Trust This Computer</source>
-      <translation>Trust This Computer</translation>
+      <translation>Vertrouw op deze computer</translation>
     </message>
     <message>
       <location filename="../src/ui/PendingDevice.qml" line="41"/>
       <source>Unlock your device and tap Trust when the prompt appears.</source>
-      <translation>Unlock your device and tap Trust when the prompt appears.</translation>
+      <translation>Ontgrendel uw apparaat en tik op Vertrouwen wanneer de prompt verschijnt.</translation>
     </message>
   </context>
   <context>
@@ -3828,7 +3828,7 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/PendingDeviceSidebar.qml" line="70"/>
       <source>Pairing…</source>
-      <translation>Pairing…</translation>
+      <translation>Koppelen…</translation>
     </message>
   </context>
   <context>
@@ -3841,47 +3841,47 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="83"/>
       <source>AFC client is not available.</source>
-      <translation>AFC client is not available.</translation>
+      <translation>AFC-client is niet beschikbaar.</translation>
     </message>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="89"/>
       <source>Failed to start the video stream.</source>
-      <translation>Failed to start the video stream.</translation>
+      <translation>Kan de videostream niet starten.</translation>
     </message>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="213"/>
       <source>Failed to load the image preview.</source>
-      <translation>Failed to load the image preview.</translation>
+      <translation>Kan het afbeeldingsvoorbeeld niet laden.</translation>
     </message>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="228"/>
       <source>Failed to play the video.</source>
-      <translation>Failed to play the video.</translation>
+      <translation>Kan de video niet afspelen.</translation>
     </message>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="274"/>
       <source>The image could not be displayed.</source>
-      <translation>The image could not be displayed.</translation>
+      <translation>De afbeelding kon niet worden weergegeven.</translation>
     </message>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="340"/>
       <source>Preview unavailable</source>
-      <translation>Preview unavailable</translation>
+      <translation>Voorbeeld niet beschikbaar</translation>
     </message>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="358"/>
       <source>Try Again</source>
-      <translation>Try Again</translation>
+      <translation>Probeer het opnieuw</translation>
     </message>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="372"/>
       <source>Previous</source>
-      <translation>Previous</translation>
+      <translation>Vorige</translation>
     </message>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="383"/>
       <source>Next</source>
-      <translation>Next</translation>
+      <translation>Volgende</translation>
     </message>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="416"/>
@@ -3891,17 +3891,17 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="416"/>
       <source>IMAGE</source>
-      <translation>IMAGE</translation>
+      <translation>BEELD</translation>
     </message>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="447"/>
       <source>Close Preview</source>
-      <translation>Close Preview</translation>
+      <translation>Voorbeeld sluiten</translation>
     </message>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="472"/>
       <source>Zoom Out</source>
-      <translation>Zoom Out</translation>
+      <translation>Uitzoomen</translation>
     </message>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="479"/>
@@ -3911,32 +3911,32 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="487"/>
       <source>Zoom In</source>
-      <translation>Zoom In</translation>
+      <translation>Inzoomen</translation>
     </message>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="500"/>
       <source>Fit</source>
-      <translation>Fit</translation>
+      <translation>Pasvorm</translation>
     </message>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="528"/>
       <source>Pause</source>
-      <translation>Pause</translation>
+      <translation>Pauze</translation>
     </message>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="528"/>
       <source>Play</source>
-      <translation>Play</translation>
+      <translation>Spelen</translation>
     </message>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="580"/>
       <source>Unmute</source>
-      <translation>Unmute</translation>
+      <translation>Dempen opheffen</translation>
     </message>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="580"/>
       <source>Mute</source>
-      <translation>Mute</translation>
+      <translation>Dempen</translation>
     </message>
   </context>
   <context>
@@ -3944,12 +3944,12 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/base/PrivateText.qml" line="23"/>
       <source>Unknown</source>
-      <translation>Unknown</translation>
+      <translation>Onbekend</translation>
     </message>
     <message>
       <location filename="../src/ui/base/PrivateText.qml" line="60"/>
       <source>Copied!</source>
-      <translation>Copied!</translation>
+      <translation>Gekopieerd!</translation>
     </message>
   </context>
   <context>
@@ -3962,49 +3962,49 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/tools/QueryMobileGestalt.qml" line="51"/>
       <source>This tool lets you query MobileGestalt keys, which provide various device information.</source>
-      <translation>This tool lets you query MobileGestalt keys, which provide various device information.</translation>
+      <translation>Met deze tool kunt u MobileGestalt-sleutels opvragen, die verschillende apparaatinformatie verschaffen.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/QueryMobileGestalt.qml" line="57"/>
       <source>Select MobileGestalt Keys</source>
-      <translation>Select MobileGestalt Keys</translation>
+      <translation>Selecteer MobileGestalt-sleutels</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/QueryMobileGestalt.qml" line="69"/>
       <source>Select All</source>
-      <translation>Select All</translation>
+      <translation>Selecteer Alles</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/QueryMobileGestalt.qml" line="77"/>
       <source>Clear All</source>
-      <translation>Clear All</translation>
+      <translation>Alles wissen</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/QueryMobileGestalt.qml" line="108"/>
       <source>Query MobileGestalt</source>
-      <translation>Query MobileGestalt</translation>
+      <translation>Vraag MobileGestalt</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/QueryMobileGestalt.qml" line="125"/>
       <source>Select keys and click Query to begin</source>
-      <translation>Select keys and click Query to begin</translation>
+      <translation>Selecteer sleutels en klik op Query om te beginnen</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/QueryMobileGestalt.qml" line="132"/>
       <source>Query Results</source>
-      <translation>Query Results</translation>
+      <translation>Queryresultaten</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/QueryMobileGestalt.qml" line="146"/>
       <source>results will appear here...</source>
-      <translation>results will appear here...</translation>
+      <translation>resultaten verschijnen hier...</translation>
     </message>
     <message numerus="yes">
       <location filename="../src/ui/tools/QueryMobileGestalt.qml" line="160"/>
       <source>Query completed. Found %n result(s).</source>
       <translation>
-        <numerusform>Query completed. Found %n result(s).</numerusform>
-        <numerusform>Query completed. Found %n result(s).</numerusform>
+        <numerusform>Zoekopdracht voltooid. %n-resultaat(en) gevonden.</numerusform>
+        <numerusform>Zoekopdracht voltooid. %n-resultaat(en) gevonden.</numerusform>
       </translation>
     </message>
   </context>
@@ -4013,32 +4013,32 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/RecoveryDeviceInfo.qml" line="48"/>
       <source>Recovery Device</source>
-      <translation>Recovery Device</translation>
+      <translation>Herstelapparaat</translation>
     </message>
     <message>
       <location filename="../src/ui/RecoveryDeviceInfo.qml" line="57"/>
       <source>%1 mode</source>
-      <translation>%1 mode</translation>
+      <translation>%1-modus</translation>
     </message>
     <message>
       <location filename="../src/ui/RecoveryDeviceInfo.qml" line="57"/>
       <source>Recovery</source>
-      <translation>Recovery</translation>
+      <translation>Herstel</translation>
     </message>
     <message>
       <location filename="../src/ui/RecoveryDeviceInfo.qml" line="64"/>
       <source>Exit Recovery Mode</source>
-      <translation>Exit Recovery Mode</translation>
+      <translation>Sluit de herstelmodus af</translation>
     </message>
     <message>
       <location filename="../src/ui/RecoveryDeviceInfo.qml" line="72"/>
       <source>The command to exit recovery mode was sent successfully. The device should restart shortly.</source>
-      <translation>The command to exit recovery mode was sent successfully. The device should restart shortly.</translation>
+      <translation>De opdracht om de herstelmodus af te sluiten is succesvol verzonden. Het apparaat zou binnenkort opnieuw moeten opstarten.</translation>
     </message>
     <message>
       <location filename="../src/ui/RecoveryDeviceInfo.qml" line="76"/>
       <source>Failed to exit recovery mode. This could be due to USB permissions.</source>
-      <translation>Failed to exit recovery mode. This could be due to USB permissions.</translation>
+      <translation>Kan de herstelmodus niet verlaten. Dit kan te wijten zijn aan de machtigingen USB.</translation>
     </message>
     <message>
       <location filename="../src/ui/RecoveryDeviceInfo.qml" line="93"/>
@@ -4055,22 +4055,22 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
       <location filename="../src/ui/RecoveryDeviceInfo.qml" line="109"/>
       <location filename="../src/ui/RecoveryDeviceInfo.qml" line="111"/>
       <source>Unknown</source>
-      <translation>Unknown</translation>
+      <translation>Onbekend</translation>
     </message>
     <message>
       <location filename="../src/ui/RecoveryDeviceInfo.qml" line="95"/>
       <source>Board:</source>
-      <translation>Board:</translation>
+      <translation>Bestuur:</translation>
     </message>
     <message>
       <location filename="../src/ui/RecoveryDeviceInfo.qml" line="98"/>
       <source>Marketing Name:</source>
-      <translation>Marketing Name:</translation>
+      <translation>Marketingnaam:</translation>
     </message>
     <message>
       <location filename="../src/ui/RecoveryDeviceInfo.qml" line="100"/>
       <source>Mode:</source>
-      <translation>Mode:</translation>
+      <translation>Modus:</translation>
     </message>
     <message>
       <location filename="../src/ui/RecoveryDeviceInfo.qml" line="103"/>
@@ -4080,7 +4080,7 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/RecoveryDeviceInfo.qml" line="105"/>
       <source>Serial Number:</source>
-      <translation>Serial Number:</translation>
+      <translation>Serienummer:</translation>
     </message>
     <message>
       <location filename="../src/ui/RecoveryDeviceInfo.qml" line="108"/>
@@ -4095,17 +4095,17 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/RecoveryDeviceInfo.qml" line="113"/>
       <source>Vendor ID:</source>
-      <translation>Vendor ID:</translation>
+      <translation>Leverancier-ID:</translation>
     </message>
     <message>
       <location filename="../src/ui/RecoveryDeviceInfo.qml" line="115"/>
       <source>Product ID:</source>
-      <translation>Product ID:</translation>
+      <translation>Product-ID:</translation>
     </message>
     <message>
       <location filename="../src/ui/RecoveryDeviceInfo.qml" line="130"/>
       <source>Recovery Descriptor</source>
-      <translation>Recovery Descriptor</translation>
+      <translation>Herstelbeschrijving</translation>
     </message>
   </context>
   <context>
@@ -4113,7 +4113,7 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/RecoveryDeviceSidebar.qml" line="19"/>
       <source>Recovery Device</source>
-      <translation>Recovery Device</translation>
+      <translation>Herstelapparaat</translation>
     </message>
   </context>
   <context>
@@ -4121,138 +4121,138 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="49"/>
       <source>The restore operation could not be completed.</source>
-      <translation>The restore operation could not be completed.</translation>
+      <translation>De herstelbewerking kan niet worden voltooid.</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="63"/>
       <source>Enter the backup password before restoring this encrypted backup.</source>
-      <translation>Enter the backup password before restoring this encrypted backup.</translation>
+      <translation>Voer het back-upwachtwoord in voordat u deze gecodeerde back-up herstelt.</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="70"/>
       <source>Confirm Restore</source>
-      <translation>Confirm Restore</translation>
+      <translation>Bevestig Herstellen</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="71"/>
       <source>Restore “%1” to its matching device? Existing device data may be replaced.</source>
-      <translation>Restore “%1” to its matching device? Existing device data may be replaced.</translation>
+      <translation>“%1” herstellen naar het bijbehorende apparaat? Bestaande apparaatgegevens kunnen worden vervangen.</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="125"/>
       <source>“%1” was restored successfully.</source>
-      <translation>“%1” was restored successfully.</translation>
+      <translation>“%1” is succesvol hersteld.</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="129"/>
       <source>Find My iPhone must be turned off before this backup can be restored. On the device, open Settings, tap your name, then choose Find My → Find My iPhone and turn it off.</source>
-      <translation>Find My iPhone must be turned off before this backup can be restored. On the device, open Settings, tap your name, then choose Find My → Find My iPhone and turn it off.</translation>
+      <translation>Zoek mijn iPhone moet worden uitgeschakeld voordat deze back-up kan worden hersteld. Open Instellingen op het apparaat, tik op uw naam en kies vervolgens Zoek mijn → Zoek mijn iPhone en schakel deze uit.</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="132"/>
       <source>Turn Off Find My iPhone</source>
-      <translation>Turn Off Find My iPhone</translation>
+      <translation>Schakel Zoek mijn iPhone uit</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="135"/>
       <source>iDescriptor could not restore “%1”. Keep the device connected and try again.</source>
-      <translation>iDescriptor could not restore “%1”. Keep the device connected and try again.</translation>
+      <translation>iDescriptor kan “%1” niet herstellen. Houd het apparaat aangesloten en probeer het opnieuw.</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="153"/>
       <source>Restoring %1</source>
-      <translation>Restoring %1</translation>
+      <translation>%1 herstellen</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="155"/>
       <source>Restore Complete</source>
-      <translation>Restore Complete</translation>
+      <translation>Herstel voltooid</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="156"/>
       <source>Restore Backup</source>
-      <translation>Restore Backup</translation>
+      <translation>Back-up herstellen</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="171"/>
       <source>Try Again</source>
-      <translation>Try Again</translation>
+      <translation>Probeer het opnieuw</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="172"/>
       <location filename="../src/ui/RestoreDialog.qml" line="309"/>
       <source>Close</source>
-      <translation>Close</translation>
+      <translation>Sluiten</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="190"/>
       <source>Restore “%1” to its matching device.</source>
-      <translation>Restore “%1” to its matching device.</translation>
+      <translation>Herstel “%1” naar het bijbehorende apparaat.</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="207"/>
       <source>Before restoring, turn off Find My iPhone on the device in Settings → [your name] → Find My → Find My iPhone.</source>
-      <translation>Before restoring, turn off Find My iPhone on the device in Settings → [your name] → Find My → Find My iPhone.</translation>
+      <translation>Voordat u gaat herstellen, schakelt u Zoek mijn iPhone uit op het apparaat in Instellingen → [uw naam] → Zoek mijn → Zoek mijn iPhone.</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="215"/>
       <source>Restore Settings</source>
-      <translation>Restore Settings</translation>
+      <translation>Instellingen herstellen</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="223"/>
       <source>Restart device after restore</source>
-      <translation>Restart device after restore</translation>
+      <translation>Start het apparaat opnieuw op na het herstellen</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="230"/>
       <source>Create a safety copy before restoring</source>
-      <translation>Create a safety copy before restoring</translation>
+      <translation>Maak een veiligheidskopie voordat u herstelt</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="237"/>
       <source>Restore device settings from backup</source>
-      <translation>Restore device settings from backup</translation>
+      <translation>Apparaatinstellingen herstellen vanaf een back-up</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="244"/>
       <source>Restore system files</source>
-      <translation>Restore system files</translation>
+      <translation>Herstel systeembestanden</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="251"/>
       <source>Remove items not restored</source>
-      <translation>Remove items not restored</translation>
+      <translation>Verwijder items die niet zijn hersteld</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="258"/>
       <source>Encrypted backup</source>
-      <translation>Encrypted backup</translation>
+      <translation>Gecodeerde back-up</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="268"/>
       <source>Backup password</source>
-      <translation>Backup password</translation>
+      <translation>Back-upwachtwoord</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="280"/>
       <source>Cancel</source>
-      <translation>Cancel</translation>
+      <translation>Annuleer</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="285"/>
       <source>Restore</source>
-      <translation>Restore</translation>
+      <translation>Herstellen</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="301"/>
       <source>The backup was restored successfully. The device may restart to finish applying the restored data.</source>
-      <translation>The backup was restored successfully. The device may restart to finish applying the restored data.</translation>
+      <translation>De back-up is succesvol hersteld. Het apparaat wordt mogelijk opnieuw opgestart om het toepassen van de herstelde gegevens te voltooien.</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="329"/>
       <source>Keep the device connected until the restore finishes.</source>
-      <translation>Keep the device connected until the restore finishes.</translation>
+      <translation>Houd het apparaat aangesloten totdat het herstel is voltooid.</translation>
     </message>
   </context>
   <context>
@@ -4260,37 +4260,37 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/tools/SSHProcessWindow.qml" line="16"/>
       <source>SSH Terminal / %1 - iDescriptor</source>
-      <translation>SSH Terminal / %1 - iDescriptor</translation>
+      <translation>SSH-terminal / %1 - iDescriptor</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHProcessWindow.qml" line="32"/>
       <source>Setting up SSH tunnel...</source>
-      <translation>Setting up SSH tunnel...</translation>
+      <translation>SSH-tunnel instellen...</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHProcessWindow.qml" line="33"/>
       <source>Connecting to network device...</source>
-      <translation>Connecting to network device...</translation>
+      <translation>Verbinding maken met netwerkapparaat...</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHProcessWindow.qml" line="529"/>
       <source>Copy</source>
-      <translation>Copy</translation>
+      <translation>Kopieer</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHProcessWindow.qml" line="535"/>
       <source>Copy All</source>
-      <translation>Copy All</translation>
+      <translation>Kopieer alles</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHProcessWindow.qml" line="547"/>
       <source>Clear</source>
-      <translation>Clear</translation>
+      <translation>Duidelijk</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHProcessWindow.qml" line="591"/>
       <source>Send</source>
-      <translation>Send</translation>
+      <translation>Verzenden</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHProcessWindow.qml" line="601"/>
@@ -4303,13 +4303,13 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="18"/>
       <source>SSH Terminal - iDescriptor</source>
-      <translation>SSH Terminal - iDescriptor</translation>
+      <translation>SSH-terminal - iDescriptor</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="28"/>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="152"/>
       <source>Select a device to connect</source>
-      <translation>Select a device to connect</translation>
+      <translation>Selecteer een apparaat om verbinding mee te maken</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="36"/>
@@ -4317,24 +4317,24 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="439"/>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="577"/>
       <source>Unknown Device</source>
-      <translation>Unknown Device</translation>
+      <translation>Onbekend apparaat</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="71"/>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="72"/>
       <source>Unknown device</source>
-      <translation>Unknown device</translation>
+      <translation>Onbekend apparaat</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="103"/>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="685"/>
       <source>Ready to connect</source>
-      <translation>Ready to connect</translation>
+      <translation>Klaar om verbinding te maken</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="120"/>
       <source>Unknown</source>
-      <translation>Unknown</translation>
+      <translation>Onbekend</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="122"/>
@@ -4344,57 +4344,57 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="123"/>
       <source>Network</source>
-      <translation>Network</translation>
+      <translation>Netwerk</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="136"/>
       <source>Jailbreak status unknown</source>
-      <translation>Jailbreak status unknown</translation>
+      <translation>Jailbreakstatus onbekend</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="137"/>
       <source>Jailbroken</source>
-      <translation>Jailbroken</translation>
+      <translation>Gejailbreakt</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="137"/>
       <source>Not detected as jailbroken</source>
-      <translation>Not detected as jailbroken</translation>
+      <translation>Niet gedetecteerd als gejailbreakt</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="159"/>
       <source>Please select a device first</source>
-      <translation>Please select a device first</translation>
+      <translation>Selecteer eerst een apparaat</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="165"/>
       <source>Selected network device is missing IP address. Please try again.</source>
-      <translation>Selected network device is missing IP address. Please try again.</translation>
+      <translation>Het geselecteerde netwerkapparaat heeft geen IP-adres. Probeer het opnieuw.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="256"/>
       <source>No Device Selected</source>
-      <translation>No Device Selected</translation>
+      <translation>Geen apparaat geselecteerd</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="257"/>
       <source>Please select a device before trying to connect.</source>
-      <translation>Please select a device before trying to connect.</translation>
+      <translation>Selecteer een apparaat voordat u probeert verbinding te maken.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="262"/>
       <source>Missing IP Address</source>
-      <translation>Missing IP Address</translation>
+      <translation>Ontbrekend IP-adres</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="263"/>
       <source>The selected network device is missing an IP address. Please try again.</source>
-      <translation>The selected network device is missing an IP address. Please try again.</translation>
+      <translation>Het geselecteerde netwerkapparaat heeft geen IP-adres. Probeer het opnieuw.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="268"/>
       <source>Device Not Jailbroken</source>
-      <translation>Device Not Jailbroken</translation>
+      <translation>Apparaat niet gejailbreakt</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="269"/>
@@ -4402,45 +4402,45 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
 SSH access may not be available.
 
 Do you want to continue anyway?</source>
-      <translation>The selected device is not detected as jailbroken.
-SSH access may not be available.
+      <translation>Het geselecteerde apparaat wordt niet gedetecteerd als gejailbreakt.
+Toegang tot SSH is mogelijk niet beschikbaar.
 
-Do you want to continue anyway?</translation>
+Wil je toch doorgaan?</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="275"/>
       <source>Connection cancelled (device not jailbroken)</source>
-      <translation>Connection cancelled (device not jailbroken)</translation>
+      <translation>Verbinding verbroken (apparaat niet gejailbreakt)</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="283"/>
       <source>SSH Root Password</source>
-      <translation>SSH Root Password</translation>
+      <translation>SSH Root-wachtwoord</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="297"/>
       <source>Enter the root password. Leave it empty to use the default password.</source>
-      <translation>Enter the root password. Leave it empty to use the default password.</translation>
+      <translation>Voer het rootwachtwoord in. Laat het leeg als u het standaardwachtwoord wilt gebruiken.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="305"/>
       <source>Default password</source>
-      <translation>Default password</translation>
+      <translation>Standaardwachtwoord</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="322"/>
       <source>Choose an SSH target</source>
-      <translation>Choose an SSH target</translation>
+      <translation>Kies een SSH-doel</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="331"/>
       <source>Select a jailbroken device, or connect directly by IP address.</source>
-      <translation>Select a jailbroken device, or connect directly by IP address.</translation>
+      <translation>Selecteer een gejailbreakt apparaat of maak rechtstreeks verbinding via IP-adres.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="366"/>
       <source>Connected Devices</source>
-      <translation>Connected Devices</translation>
+      <translation>Verbonden apparaten</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="373"/>
@@ -4451,27 +4451,27 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="477"/>
       <source>No connected devices</source>
-      <translation>No connected devices</translation>
+      <translation>Geen aangesloten apparaten</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="504"/>
       <source>Network Devices</source>
-      <translation>Network Devices</translation>
+      <translation>Netwerkapparaten</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="615"/>
       <source>No network devices</source>
-      <translation>No network devices</translation>
+      <translation>Geen netwerkapparaten</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="642"/>
       <source>Manual IP Connection</source>
-      <translation>Manual IP Connection</translation>
+      <translation>Handmatige IP-verbinding</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="650"/>
       <source>Use this when the device is reachable but not listed above.</source>
-      <translation>Use this when the device is reachable but not listed above.</translation>
+      <translation>Gebruik dit wanneer het apparaat bereikbaar is, maar hierboven niet wordt vermeld.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="662"/>
@@ -4481,45 +4481,27 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="666"/>
       <source>Connect by IP</source>
-      <translation>Connect by IP</translation>
+      <translation>Verbinding maken via IP</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="671"/>
       <source>Please enter an IP address</source>
-      <translation>Please enter an IP address</translation>
+      <translation>Voer een IP-adres in</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="703"/>
       <source>%1 selected</source>
-      <translation>%1 selected</translation>
+      <translation>%1 geselecteerd</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="710"/>
       <source>Connect</source>
-      <translation>Connect</translation>
+      <translation>Verbinden</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="710"/>
       <source>Choose a device</source>
-      <translation>Choose a device</translation>
-    </message>
-  </context>
-  <context>
-    <name>ScreenMirroring</name>
-    <message>
-      <location filename="../src/ui/tools/ScreenMirroring.qml" line="17"/>
-      <source>Screen Mirroring - iDescriptor</source>
-      <translation>Screen Mirroring - iDescriptor</translation>
-    </message>
-    <message>
-      <location filename="../src/ui/tools/ScreenMirroring.qml" line="81"/>
-      <source>Mirroring</source>
-      <translation>Mirroring</translation>
-    </message>
-    <message>
-      <location filename="../src/ui/tools/ScreenMirroring.qml" line="86"/>
-      <source>%1 packets</source>
-      <translation>%1 packets</translation>
+      <translation>Kies een apparaat</translation>
     </message>
   </context>
   <context>
@@ -4527,319 +4509,444 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/Settings.qml" line="20"/>
       <source>Settings - iDescriptor</source>
-      <translation>Settings - iDescriptor</translation>
+      <translation>Instellingen - iDescriptor</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="175"/>
+      <location filename="../src/ui/Settings.qml" line="190"/>
       <source>Settings applied. Please restart the application for changes to take effect.</source>
-      <translation>Settings applied. Please restart the application for changes to take effect.</translation>
+      <translation>Instellingen toegepast. Start de applicatie opnieuw op om de wijzigingen door te voeren.</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="176"/>
+      <location filename="../src/ui/Settings.qml" line="191"/>
       <source>Settings applied.</source>
-      <translation>Settings applied.</translation>
+      <translation>Instellingen toegepast.</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="200"/>
+      <location filename="../src/ui/Settings.qml" line="215"/>
       <source>Select Download Directory</source>
-      <translation>Select Download Directory</translation>
+      <translation>Selecteer Directory downloaden</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="209"/>
+      <location filename="../src/ui/Settings.qml" line="224"/>
       <source>Select Backup Directory</source>
-      <translation>Select Backup Directory</translation>
-    </message>
-    <message>
-      <location filename="../src/ui/Settings.qml" line="218"/>
-      <source>Select IPA Download Directory</source>
-      <translation>Select IPA Download Directory</translation>
-    </message>
-    <message>
-      <location filename="../src/ui/Settings.qml" line="227"/>
-      <source>Settings</source>
-      <translation>Settings</translation>
-    </message>
-    <message>
-      <location filename="../src/ui/Settings.qml" line="232"/>
-      <location filename="../src/ui/Settings.qml" line="732"/>
-      <source>Reset Settings</source>
-      <translation>Reset Settings</translation>
+      <translation>Selecteer Back-upmap</translation>
     </message>
     <message>
       <location filename="../src/ui/Settings.qml" line="233"/>
+      <source>Select IPA Download Directory</source>
+      <translation>Selecteer IPA Downloadmap</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="242"/>
+      <source>Settings</source>
+      <translation>Instellingen</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="247"/>
+      <location filename="../src/ui/Settings.qml" line="773"/>
+      <source>Reset Settings</source>
+      <translation>Instellingen resetten</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="248"/>
       <source>Are you sure you want to reset all settings to their default values?</source>
-      <translation>Are you sure you want to reset all settings to their default values?</translation>
+      <translation>Weet u zeker dat u alle instellingen wilt terugzetten naar de standaardwaarden?</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="261"/>
+      <location filename="../src/ui/Settings.qml" line="276"/>
       <source>General</source>
-      <translation>General</translation>
+      <translation>Algemeen</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="268"/>
+      <location filename="../src/ui/Settings.qml" line="283"/>
       <source>Developer Disk Image Path</source>
-      <translation>Developer Disk Image Path</translation>
+      <translation>Ontwikkelaar schijfkopiepad</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="280"/>
-      <location filename="../src/ui/Settings.qml" line="302"/>
-      <location filename="../src/ui/Settings.qml" line="324"/>
+      <location filename="../src/ui/Settings.qml" line="295"/>
+      <location filename="../src/ui/Settings.qml" line="317"/>
+      <location filename="../src/ui/Settings.qml" line="339"/>
       <source>Browse</source>
-      <translation>Browse</translation>
+      <translation>Blader</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="290"/>
+      <location filename="../src/ui/Settings.qml" line="305"/>
       <source>IPA Download Path</source>
-      <translation>IPA Download Path</translation>
+      <translation>IPA Downloadpad</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="312"/>
+      <location filename="../src/ui/Settings.qml" line="327"/>
       <source>Backup Path</source>
-      <translation>Backup Path</translation>
+      <translation>Back-uppad</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="334"/>
+      <location filename="../src/ui/Settings.qml" line="349"/>
       <source>Wireless File Server Port</source>
-      <translation>Wireless File Server Port</translation>
+      <translation>Draadloze bestandsserverpoort</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="348"/>
+      <location filename="../src/ui/Settings.qml" line="363"/>
       <source>The starting port for the wireless file server. If this port is unavailable, it will try the next 10 ports.</source>
-      <translation>The starting port for the wireless file server. If this port is unavailable, it will try the next 10 ports.</translation>
+      <translation>De startpoort voor de draadloze bestandsserver. Als deze poort niet beschikbaar is, worden de volgende 10 poorten geprobeerd.</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="368"/>
+      <location filename="../src/ui/Settings.qml" line="383"/>
       <source>Unmount iFuse drives on exit</source>
-      <translation>Unmount iFuse drives on exit</translation>
+      <translation>Ontkoppel de iFuse-schijven bij het afsluiten</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="378"/>
+      <location filename="../src/ui/Settings.qml" line="393"/>
       <source>Automatically check for updates</source>
-      <translation>Automatically check for updates</translation>
+      <translation>Automatisch controleren op updates</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="391"/>
+      <location filename="../src/ui/Settings.qml" line="406"/>
       <source>Gallery backend</source>
-      <translation>Gallery backend</translation>
+      <translation>Galerij-backend</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="398"/>
+      <location filename="../src/ui/Settings.qml" line="413"/>
       <source>Filesystem (AFC)</source>
-      <translation>Filesystem (AFC)</translation>
+      <translation>Bestandssysteem (AFC)</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="399"/>
+      <location filename="../src/ui/Settings.qml" line="414"/>
       <source>SQLite</source>
       <translation>SQLite</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="400"/>
+      <location filename="../src/ui/Settings.qml" line="415"/>
       <source>SQLite through VFS</source>
-      <translation>SQLite through VFS</translation>
+      <translation>SQLite via VFS</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="404"/>
+      <location filename="../src/ui/Settings.qml" line="419"/>
       <source>Choose how gallery albums are loaded from the device.</source>
-      <translation>Choose how gallery albums are loaded from the device.</translation>
+      <translation>Kies hoe galerijalbums vanaf het apparaat worden geladen.</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="417"/>
+      <location filename="../src/ui/Settings.qml" line="432"/>
       <source>Language</source>
-      <translation>Language</translation>
+      <translation>Taal</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="425"/>
+      <location filename="../src/ui/Settings.qml" line="440"/>
       <source>English</source>
-      <translation>English</translation>
+      <translation>Engels</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="426"/>
+      <location filename="../src/ui/Settings.qml" line="451"/>
       <source>German</source>
-      <translation>German</translation>
+      <translation>Duits</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="427"/>
+      <location filename="../src/ui/Settings.qml" line="444"/>
       <source>Chinese (Simplified)</source>
-      <translation>Chinese (Simplified)</translation>
-    </message>
-    <message>
-      <location filename="../src/ui/Settings.qml" line="435"/>
-      <source>Chinese (Traditional)</source>
-      <translation>Chinese (Traditional)</translation>
+      <translation>Chinees (vereenvoudigd)</translation>
     </message>
     <message>
       <location filename="../src/ui/Settings.qml" line="441"/>
-      <source>Appearance</source>
-      <translation>Appearance</translation>
+      <source>Afrikaans</source>
+      <translation>Afrikaans</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="442"/>
+      <source>Arabic</source>
+      <translation>Arabisch</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="443"/>
+      <source>Catalan</source>
+      <translation>Catalaans</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="445"/>
+      <source>Chinese (Traditional)</source>
+      <translation>Chinees (traditioneel)</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="446"/>
+      <source>Czech</source>
+      <translation>Tsjechisch</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="447"/>
+      <source>Danish</source>
+      <translation>Deens</translation>
     </message>
     <message>
       <location filename="../src/ui/Settings.qml" line="448"/>
-      <source>Theme</source>
-      <translation>Theme</translation>
+      <source>Dutch</source>
+      <translation>Nederlands</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="449"/>
+      <source>Finnish</source>
+      <translation>Fins</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="450"/>
+      <source>French</source>
+      <translation>Frans</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="452"/>
+      <source>Greek</source>
+      <translation>Grieks</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="453"/>
+      <source>Hebrew</source>
+      <translation>Hebreeuws</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="454"/>
+      <source>Hungarian</source>
+      <translation>Hongaars</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="455"/>
+      <source>Italian</source>
+      <translation>Italiaans</translation>
     </message>
     <message>
       <location filename="../src/ui/Settings.qml" line="456"/>
-      <source>System Default</source>
-      <translation>System Default</translation>
+      <source>Japanese</source>
+      <translation>Japans</translation>
     </message>
     <message>
       <location filename="../src/ui/Settings.qml" line="457"/>
-      <source>Light</source>
-      <translation>Light</translation>
+      <source>Korean</source>
+      <translation>Koreaans</translation>
     </message>
     <message>
       <location filename="../src/ui/Settings.qml" line="458"/>
-      <source>Dark</source>
-      <translation>Dark</translation>
+      <source>Norwegian</source>
+      <translation>Noors</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="473"/>
-      <source>Use custom window frame</source>
-      <translation>Use custom window frame</translation>
+      <location filename="../src/ui/Settings.qml" line="459"/>
+      <source>Polish</source>
+      <translation>Pools</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="476"/>
-      <source>Use a custom Linux window frame instead of default.</source>
-      <translation>Use a custom Linux window frame instead of default.</translation>
+      <location filename="../src/ui/Settings.qml" line="460"/>
+      <source>Portuguese (Brazil)</source>
+      <translation>Portugees (Brazilië)</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="461"/>
+      <source>Romanian</source>
+      <translation>Roemeens</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="462"/>
+      <source>Russian</source>
+      <translation>Russisch</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="463"/>
+      <source>Serbian</source>
+      <translation>Servisch</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="464"/>
+      <source>Spanish</source>
+      <translation>Spaans</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="465"/>
+      <source>Swedish</source>
+      <translation>Zweeds</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="466"/>
+      <source>Turkish</source>
+      <translation>Turks</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="467"/>
+      <source>Ukrainian</source>
+      <translation>Oekraïens</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="468"/>
+      <source>Vietnamese</source>
+      <translation>Vietnamees</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="482"/>
+      <source>Appearance</source>
+      <translation>Uiterlijk</translation>
     </message>
     <message>
       <location filename="../src/ui/Settings.qml" line="489"/>
-      <source>Window Effect</source>
-      <translation>Window Effect</translation>
+      <source>Theme</source>
+      <translation>Thema</translation>
     </message>
     <message>
       <location filename="../src/ui/Settings.qml" line="497"/>
-      <source>Normal</source>
-      <translation>Normal</translation>
+      <source>System Default</source>
+      <translation>Systeemstandaard</translation>
     </message>
     <message>
       <location filename="../src/ui/Settings.qml" line="498"/>
-      <source>Acrylic</source>
-      <translation>Acrylic</translation>
+      <source>Light</source>
+      <translation>Licht</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="513"/>
-      <source>Device Connection</source>
-      <translation>Device Connection</translation>
+      <location filename="../src/ui/Settings.qml" line="499"/>
+      <source>Dark</source>
+      <translation>Donker</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="514"/>
+      <source>Use custom window frame</source>
+      <translation>Gebruik een aangepast raamkozijn</translation>
     </message>
     <message>
       <location filename="../src/ui/Settings.qml" line="517"/>
+      <source>Use a custom Linux window frame instead of default.</source>
+      <translation>Gebruik een aangepast Linux-vensterframe in plaats van het standaardvenster.</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="530"/>
+      <source>Window Effect</source>
+      <translation>Venstereffect</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="538"/>
+      <source>Normal</source>
+      <translation>Normaal</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="539"/>
+      <source>Acrylic</source>
+      <translation>Acryl</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="554"/>
+      <source>Device Connection</source>
+      <translation>Apparaatverbinding</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="558"/>
       <source>Auto-raise main window on device connection</source>
-      <translation>Auto-raise main window on device connection</translation>
+      <translation>Hoofdvenster automatisch verhogen bij apparaatverbinding</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="527"/>
+      <location filename="../src/ui/Settings.qml" line="568"/>
       <source>Switch to newly connected device</source>
-      <translation>Switch to newly connected device</translation>
+      <translation>Schakel over naar een nieuw verbonden apparaat</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="537"/>
+      <location filename="../src/ui/Settings.qml" line="578"/>
       <source>Automatically enable Wi-Fi connections</source>
-      <translation>Automatically enable Wi-Fi connections</translation>
+      <translation>Schakel automatisch Wi-Fi-verbindingen in</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="547"/>
+      <location filename="../src/ui/Settings.qml" line="588"/>
       <source>Automatically connect to wireless devices</source>
-      <translation>Automatically connect to wireless devices</translation>
+      <translation>Maak automatisch verbinding met draadloze apparaten</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="557"/>
+      <location filename="../src/ui/Settings.qml" line="598"/>
       <source>Upgrade to wireless on disconnect</source>
-      <translation>Upgrade to wireless on disconnect</translation>
+      <translation>Upgrade naar draadloos wanneer de verbinding wordt verbroken</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="560"/>
+      <location filename="../src/ui/Settings.qml" line="601"/>
       <source>When a USB-connected device disconnects, reconnect to it over Wi-Fi when it is available.</source>
-      <translation>When a USB-connected device disconnects, reconnect to it over Wi-Fi when it is available.</translation>
+      <translation>Wanneer de verbinding met een op USB aangesloten apparaat wordt verbroken, kunt u er opnieuw verbinding mee maken via Wi-Fi zodra het beschikbaar is.</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="572"/>
+      <location filename="../src/ui/Settings.qml" line="613"/>
       <source>Connection Timeout</source>
-      <translation>Connection Timeout</translation>
-    </message>
-    <message>
-      <location filename="../src/ui/Settings.qml" line="580"/>
-      <source> seconds</source>
-      <translation> seconds</translation>
-    </message>
-    <message>
-      <location filename="../src/ui/Settings.qml" line="593"/>
-      <source>Jailbroken</source>
-      <translation>Jailbroken</translation>
-    </message>
-    <message>
-      <location filename="../src/ui/Settings.qml" line="600"/>
-      <source>Default Root Password</source>
-      <translation>Default Root Password</translation>
-    </message>
-    <message>
-      <location filename="../src/ui/Settings.qml" line="609"/>
-      <source>Default password used for SSH root authentication on jailbroken devices. Default is &apos;alpine&apos;.</source>
-      <translation>Default password used for SSH root authentication on jailbroken devices. Default is &apos;alpine&apos;.</translation>
+      <translation>Time-out voor verbinding</translation>
     </message>
     <message>
       <location filename="../src/ui/Settings.qml" line="621"/>
+      <source> seconds</source>
+      <translation> seconden</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="634"/>
+      <source>Jailbroken</source>
+      <translation>Gejailbreakt</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="641"/>
+      <source>Default Root Password</source>
+      <translation>Standaard rootwachtwoord</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="650"/>
+      <source>Default password used for SSH root authentication on jailbroken devices. Default is &apos;alpine&apos;.</source>
+      <translation>Standaardwachtwoord gebruikt voor SSH root-authenticatie op gejailbreakte apparaten. Standaard is 'alpine'.</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="662"/>
       <source>AirPlay</source>
       <translation>AirPlay</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="628"/>
+      <location filename="../src/ui/Settings.qml" line="669"/>
       <source>Fps</source>
       <translation>Fps</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="636"/>
+      <location filename="../src/ui/Settings.qml" line="677"/>
       <source>Set the fps for AirPlay. Go with 30 fps if you have an older device.</source>
-      <translation>Set the fps for AirPlay. Go with 30 fps if you have an older device.</translation>
+      <translation>Stel de fps in voor AirPlay. Ga met 30 fps als je een ouder apparaat hebt.</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="648"/>
+      <location filename="../src/ui/Settings.qml" line="689"/>
       <source>Allow New Connections to Take Over</source>
-      <translation>Allow New Connections to Take Over</translation>
+      <translation>Laat nieuwe verbindingen het overnemen</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="659"/>
+      <location filename="../src/ui/Settings.qml" line="700"/>
       <source>Use legacy ports</source>
-      <translation>Use legacy ports</translation>
+      <translation>Gebruik oudere poorten</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="662"/>
+      <location filename="../src/ui/Settings.qml" line="703"/>
       <source>Use legacy ports, refer to AIRPLAY.md for more information.</source>
-      <translation>Use legacy ports, refer to AIRPLAY.md for more information.</translation>
+      <translation>Gebruik oudere poorten, raadpleeg AIRPLAY.md voor meer informatie.</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="672"/>
+      <location filename="../src/ui/Settings.qml" line="713"/>
       <source>Show V4L2 Button on AirPlay Widget</source>
-      <translation>Show V4L2 Button on AirPlay Widget</translation>
+      <translation>Toon V4L2-knop op AirPlay-widget</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="688"/>
+      <location filename="../src/ui/Settings.qml" line="729"/>
       <source>iDescriptor</source>
       <translation>iDescriptor</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="695"/>
+      <location filename="../src/ui/Settings.qml" line="736"/>
       <source>Version %1 · %2</source>
-      <translation>Version %1 · %2</translation>
+      <translation>Versie %1 · %2</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="706"/>
+      <location filename="../src/ui/Settings.qml" line="747"/>
       <source>A free, open-source, cross-platform iDevice management tool.
 
 © 2026 Uncore &lt;https://github.com/uncor3&gt; and iDescriptor contributors</source>
-      <translation>A free, open-source, cross-platform iDevice management tool.
+      <translation>Een gratis, open source, platformonafhankelijke iDevice-beheertool.
 
-© 2026 Uncore &lt;https://github.com/uncor3&gt; and iDescriptor contributors</translation>
+© 2026 Uncore &lt;https://github.com/uncor3&gt; en iDescriptor bijdragers</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="727"/>
+      <location filename="../src/ui/Settings.qml" line="768"/>
       <source>Check for Updates</source>
-      <translation>Check for Updates</translation>
+      <translation>Controleer op updates</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="739"/>
+      <location filename="../src/ui/Settings.qml" line="780"/>
       <source>Apply</source>
-      <translation>Apply</translation>
+      <translation>Toepassen</translation>
     </message>
   </context>
   <context>
@@ -4852,37 +4959,37 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/SidebarFooter.qml" line="86"/>
       <source>Unmount Failed</source>
-      <translation>Unmount Failed</translation>
+      <translation>Ontkoppelen mislukt</translation>
     </message>
     <message>
       <location filename="../src/ui/SidebarFooter.qml" line="87"/>
       <source>Failed to unmount iFuse at %1. Please try again. %2</source>
-      <translation>Failed to unmount iFuse at %1. Please try again. %2</translation>
+      <translation>Kan iFuse op %1 niet ontkoppelen. Probeer het opnieuw. %2</translation>
     </message>
     <message>
       <location filename="../src/ui/SidebarFooter.qml" line="106"/>
       <source>Unmounting iFuse at %1…</source>
-      <translation>Unmounting iFuse at %1…</translation>
+      <translation>iFuse demonteren bij %1…</translation>
     </message>
     <message>
       <location filename="../src/ui/SidebarFooter.qml" line="107"/>
       <source>Unmount iFuse at %1</source>
-      <translation>Unmount iFuse at %1</translation>
+      <translation>Ontkoppel de iFuse bij %1</translation>
     </message>
     <message>
       <location filename="../src/ui/SidebarFooter.qml" line="122"/>
       <source>Activity</source>
-      <translation>Activity</translation>
+      <translation>Activiteit</translation>
     </message>
     <message>
       <location filename="../src/ui/SidebarFooter.qml" line="135"/>
       <source>Open project on GitHub</source>
-      <translation>Open project on GitHub</translation>
+      <translation>Open een project op GitHub</translation>
     </message>
     <message>
       <location filename="../src/ui/SidebarFooter.qml" line="144"/>
       <source>Settings</source>
-      <translation>Settings</translation>
+      <translation>Instellingen</translation>
     </message>
   </context>
   <context>
@@ -4890,7 +4997,7 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/SidebarToggleButton.qml" line="21"/>
       <source>Toggle sidebar</source>
-      <translation>Toggle sidebar</translation>
+      <translation>Zijbalk schakelen</translation>
     </message>
   </context>
   <context>
@@ -4898,112 +5005,112 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="18"/>
       <source>Simulate Location - iDescriptor</source>
-      <translation>Simulate Location - iDescriptor</translation>
+      <translation>Locatie simuleren - iDescriptor</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="37"/>
       <source>Developer Mode preparation did not complete. Location simulation was not changed.</source>
-      <translation>Developer Mode preparation did not complete. Location simulation was not changed.</translation>
+      <translation>De voorbereiding voor de ontwikkelaarsmodus is niet voltooid. Locatiesimulatie is niet gewijzigd.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="73"/>
       <source>Please enter a latitude between −90 and 90 and a longitude between −180 and 180.</source>
-      <translation>Please enter a latitude between −90 and 90 and a longitude between −180 and 180.</translation>
+      <translation>Voer een breedtegraad in tussen −90 en 90 en een lengtegraad tussen −180 en 180.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="106"/>
       <source>Reset Simulated Location?</source>
-      <translation>Reset Simulated Location?</translation>
+      <translation>Gesimuleerde locatie opnieuw instellen?</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="107"/>
       <source>This will clear the simulated location and return the device to the location it determines normally. Do you want to continue?</source>
-      <translation>This will clear the simulated location and return the device to the location it determines normally. Do you want to continue?</translation>
+      <translation>Hierdoor wordt de gesimuleerde locatie gewist en keert het apparaat terug naar de locatie die het normaal bepaalt. Wil je doorgaan?</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="147"/>
       <source>The simulated location was applied successfully.</source>
-      <translation>The simulated location was applied successfully.</translation>
+      <translation>De gesimuleerde locatie is succesvol toegepast.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="149"/>
       <source>Location simulation was reset successfully.</source>
-      <translation>Location simulation was reset successfully.</translation>
+      <translation>Locatiesimulatie is succesvol gereset.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="156"/>
       <source>Developer Mode is still not available. Error code: %1</source>
-      <translation>Developer Mode is still not available. Error code: %1</translation>
+      <translation>Ontwikkelaarsmodus is nog steeds niet beschikbaar. Foutcode: %1</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="167"/>
       <source>The location request timed out. Please verify the device connection and try again.</source>
-      <translation>The location request timed out. Please verify the device connection and try again.</translation>
+      <translation>Er is een time-out opgetreden bij het locatieverzoek. Controleer de apparaatverbinding en probeer het opnieuw.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="171"/>
       <source>Failed to update location simulation. Error code: %1</source>
-      <translation>Failed to update location simulation. Error code: %1</translation>
+      <translation>Kan locatiesimulatie niet updaten. Foutcode: %1</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="320"/>
       <source>The map could not be loaded: %1</source>
-      <translation>The map could not be loaded: %1</translation>
+      <translation>De kaart kon niet worden geladen: %1</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="360"/>
       <source>Simulated Location</source>
-      <translation>Simulated Location</translation>
+      <translation>Gesimuleerde locatie</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="369"/>
       <source>Choose a point on the map or enter precise coordinates.</source>
-      <translation>Choose a point on the map or enter precise coordinates.</translation>
+      <translation>Kies een punt op de kaart of voer precieze coördinaten in.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="376"/>
       <source>Coordinates</source>
-      <translation>Coordinates</translation>
+      <translation>Coördinaten</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="395"/>
       <source>Latitude</source>
-      <translation>Latitude</translation>
+      <translation>Breedtegraad</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="424"/>
       <source>Longitude</source>
-      <translation>Longitude</translation>
+      <translation>Lengtegraad</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="462"/>
       <source>Applying…</source>
-      <translation>Applying…</translation>
+      <translation>Toepassen…</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="462"/>
       <source>Apply</source>
-      <translation>Apply</translation>
+      <translation>Toepassen</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="487"/>
       <source>Resetting…</source>
-      <translation>Resetting…</translation>
+      <translation>Resetten…</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="487"/>
       <source>Reset</source>
-      <translation>Reset</translation>
+      <translation>Opnieuw instellen</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="493"/>
       <source>Clear the simulated location and return the device to its original location.</source>
-      <translation>Clear the simulated location and return the device to its original location.</translation>
+      <translation>Wis de gesimuleerde locatie en plaats het apparaat terug op de oorspronkelijke locatie.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="534"/>
       <source>Recent Locations</source>
-      <translation>Recent Locations</translation>
+      <translation>Recente locaties</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="564"/>
@@ -5014,7 +5121,7 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="618"/>
       <source>Locations you use will appear here.</source>
-      <translation>Locations you use will appear here.</translation>
+      <translation>Locaties die u gebruikt, worden hier weergegeven.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="634"/>
@@ -5027,12 +5134,12 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/app-store/SponsorItem.qml" line="105"/>
       <source>Install App</source>
-      <translation>Install App</translation>
+      <translation>Installeer app</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/SponsorItem.qml" line="113"/>
       <source>Visit website →</source>
-      <translation>Visit website →</translation>
+      <translation>Bezoek website →</translation>
     </message>
   </context>
   <context>
@@ -5040,17 +5147,17 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/app-store/SponsorUs.qml" line="31"/>
       <source>Sponsor Us!</source>
-      <translation>Sponsor Us!</translation>
+      <translation>Sponsor ons!</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/SponsorUs.qml" line="40"/>
       <source>Support development and feature requests while becoming our first featured sponsor.</source>
-      <translation>Support development and feature requests while becoming our first featured sponsor.</translation>
+      <translation>Ondersteun ontwikkeling en functieverzoeken en word onze eerste aanbevolen sponsor.</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/SponsorUs.qml" line="52"/>
       <source>Sponsor us</source>
-      <translation>Sponsor us</translation>
+      <translation>Sponsor ons</translation>
     </message>
   </context>
   <context>
@@ -5063,12 +5170,12 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/SponsorUsDialog.qml" line="61"/>
       <source>Your support helps fund ongoing development, testing, and the features the community cares about most.</source>
-      <translation>Your support helps fund ongoing development, testing, and the features the community cares about most.</translation>
+      <translation>Jouw steun helpt bij het financieren van voortdurende ontwikkeling, testen en de functies waar de gemeenschap het meest om geeft.</translation>
     </message>
     <message>
       <location filename="../src/ui/SponsorUsDialog.qml" line="81"/>
       <source>Maybe later</source>
-      <translation>Maybe later</translation>
+      <translation>Misschien later</translation>
     </message>
   </context>
   <context>
@@ -5076,17 +5183,17 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/base/StateView.qml" line="20"/>
       <source>Something went wrong.</source>
-      <translation>Something went wrong.</translation>
+      <translation>Er is iets misgegaan.</translation>
     </message>
     <message>
       <location filename="../src/ui/base/StateView.qml" line="23"/>
       <source>Retry</source>
-      <translation>Retry</translation>
+      <translation>Opnieuw proberen</translation>
     </message>
     <message>
       <location filename="../src/ui/base/StateView.qml" line="24"/>
       <source>Cancel</source>
-      <translation>Cancel</translation>
+      <translation>Annuleer</translation>
     </message>
   </context>
   <context>
@@ -5094,7 +5201,7 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/StatusWindow.qml" line="134"/>
       <source>Export &amp; Import processes will appear here</source>
-      <translation>Export &amp; Import processes will appear here</translation>
+      <translation>Export- en importprocessen verschijnen hier</translation>
     </message>
   </context>
   <context>
@@ -5102,52 +5209,52 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/StatusWindowProcess.qml" line="96"/>
       <source>Starting...</source>
-      <translation>Starting...</translation>
+      <translation>Beginnen...</translation>
     </message>
     <message>
       <location filename="../src/ui/StatusWindowProcess.qml" line="96"/>
       <source>Running</source>
-      <translation>Running</translation>
+      <translation>Rennen</translation>
     </message>
     <message>
       <location filename="../src/ui/StatusWindowProcess.qml" line="97"/>
       <source>Completed successfully</source>
-      <translation>Completed successfully</translation>
+      <translation>Succesvol afgerond</translation>
     </message>
     <message>
       <location filename="../src/ui/StatusWindowProcess.qml" line="98"/>
       <source>Failed</source>
-      <translation>Failed</translation>
+      <translation>Mislukt</translation>
     </message>
     <message>
       <location filename="../src/ui/StatusWindowProcess.qml" line="99"/>
       <source>Cancelled</source>
-      <translation>Cancelled</translation>
+      <translation>Geannuleerd</translation>
     </message>
     <message>
       <location filename="../src/ui/StatusWindowProcess.qml" line="149"/>
       <source>Open Folder</source>
-      <translation>Open Folder</translation>
+      <translation>Map openen</translation>
     </message>
     <message>
       <location filename="../src/ui/StatusWindowProcess.qml" line="179"/>
       <source>Cancelling...</source>
-      <translation>Cancelling...</translation>
+      <translation>Annuleren...</translation>
     </message>
     <message>
       <location filename="../src/ui/StatusWindowProcess.qml" line="180"/>
       <source>Cancel</source>
-      <translation>Cancel</translation>
+      <translation>Annuleer</translation>
     </message>
     <message>
       <location filename="../src/ui/StatusWindowProcess.qml" line="219"/>
       <source>%1 of %2 items</source>
-      <translation>%1 of %2 items</translation>
+      <translation>%1 van %2-artikelen</translation>
     </message>
     <message>
       <location filename="../src/ui/StatusWindowProcess.qml" line="222"/>
       <source>%1 failed</source>
-      <translation>%1 failed</translation>
+      <translation>%1 is mislukt</translation>
     </message>
   </context>
   <context>
@@ -5155,377 +5262,377 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="19"/>
       <source>Error</source>
-      <translation>Error</translation>
+      <translation>Fout</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="25"/>
       <source>Information</source>
-      <translation>Information</translation>
+      <translation>Informatie</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="66"/>
       <location filename="../src/ui/Toolbox.qml" line="150"/>
       <source>The selected device is no longer connected.</source>
-      <translation>The selected device is no longer connected.</translation>
+      <translation>Het geselecteerde apparaat is niet langer verbonden.</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="74"/>
       <source>Restart Device</source>
-      <translation>Restart Device</translation>
+      <translation>Start het apparaat opnieuw op</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="75"/>
       <source>Are you sure you want to restart this device?</source>
-      <translation>Are you sure you want to restart this device?</translation>
+      <translation>Weet u zeker dat u dit apparaat opnieuw wilt opstarten?</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="82"/>
       <source>Shut Down Device</source>
-      <translation>Shut Down Device</translation>
+      <translation>Apparaat afsluiten</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="83"/>
       <source>Are you sure you want to shut down this device?</source>
-      <translation>Are you sure you want to shut down this device?</translation>
+      <translation>Weet u zeker dat u dit apparaat wilt uitschakelen?</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="90"/>
       <source>Enter Recovery Mode</source>
-      <translation>Enter Recovery Mode</translation>
+      <translation>Ga naar de herstelmodus</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="91"/>
       <source>Are you sure you want to put this device into recovery mode?</source>
-      <translation>Are you sure you want to put this device into recovery mode?</translation>
+      <translation>Weet u zeker dat u dit apparaat in de herstelmodus wilt zetten?</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="98"/>
       <location filename="../src/ui/Toolbox.qml" line="627"/>
       <source>Unpair iDevice</source>
-      <translation>Unpair iDevice</translation>
+      <translation>Ontkoppel iDevice</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="99"/>
       <source>Are you sure you want to unpair this device? You will need to trust and pair it again before reconnecting.</source>
-      <translation>Are you sure you want to unpair this device? You will need to trust and pair it again before reconnecting.</translation>
+      <translation>Weet u zeker dat u dit apparaat wilt ontkoppelen? U moet hem opnieuw vertrouwen en koppelen voordat u opnieuw verbinding maakt.</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="106"/>
       <location filename="../src/ui/Toolbox.qml" line="635"/>
       <source>Unpair and Remove iDevice</source>
-      <translation>Unpair and Remove iDevice</translation>
+      <translation>Ontkoppel en verwijder iDevice</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="107"/>
       <source>Are you sure you want to unpair this device and remove it from iDescriptor? You will need to trust and pair it again before reconnecting.</source>
-      <translation>Are you sure you want to unpair this device and remove it from iDescriptor? You will need to trust and pair it again before reconnecting.</translation>
+      <translation>Weet u zeker dat u dit apparaat wilt ontkoppelen en wilt verwijderen uit iDescriptor? U moet hem opnieuw vertrouwen en koppelen voordat u opnieuw verbinding maakt.</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="112"/>
       <location filename="../src/ui/Toolbox.qml" line="169"/>
       <source>Unknown device action.</source>
-      <translation>Unknown device action.</translation>
+      <translation>Onbekende apparaatactie.</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="118"/>
       <source>An unpair operation is already in progress for this device.</source>
-      <translation>An unpair operation is already in progress for this device.</translation>
+      <translation>Er wordt al een ontkoppelingsbewerking uitgevoerd voor dit apparaat.</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="129"/>
       <source>Failed to unpair the device: %1</source>
-      <translation>Failed to unpair the device: %1</translation>
+      <translation>Kan het apparaat niet ontkoppelen: %1</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="130"/>
       <source>Failed to unpair the device.</source>
-      <translation>Failed to unpair the device.</translation>
+      <translation>Kan het apparaat niet ontkoppelen.</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="134"/>
       <source>The device was unpaired successfully.</source>
-      <translation>The device was unpaired successfully.</translation>
+      <translation>Het apparaat is succesvol ontkoppeld.</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="174"/>
       <source>Failed to send the command to the device. Make sure it is connected and unlocked.</source>
-      <translation>Failed to send the command to the device. Make sure it is connected and unlocked.</translation>
+      <translation>Kan de opdracht niet naar het apparaat verzenden. Zorg ervoor dat deze is aangesloten en ontgrendeld.</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="176"/>
       <source>Action &apos;%1&apos; sent successfully.</source>
-      <translation>Action &apos;%1&apos; sent successfully.</translation>
+      <translation>Actie '%1' succesvol verzonden.</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="242"/>
       <source>This tool is not available for wireless devices. Please connect your device via USB.</source>
-      <translation>This tool is not available for wireless devices. Please connect your device via USB.</translation>
+      <translation>Deze tool is niet beschikbaar voor draadloze apparaten. Sluit uw apparaat aan via USB.</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="299"/>
       <source>Failed to load gst gl plugin, make sure you have QT_QPA_PLATFORM=xcb env var set</source>
-      <translation>Failed to load gst gl plugin, make sure you have QT_QPA_PLATFORM=xcb env var set</translation>
+      <translation>Kan gst gl-plug-in niet laden. Zorg ervoor dat QT_QPA_PLATFORM=xcb env var is ingesteld</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="302"/>
       <location filename="../src/ui/Toolbox.qml" line="305"/>
       <source>Failed to load gst gl plugin, make sure you can use OpenGL</source>
-      <translation>Failed to load gst gl plugin, make sure you can use OpenGL</translation>
+      <translation>Kan de gst gl-plug-in niet laden. Zorg ervoor dat u OpenGL kunt gebruiken</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="308"/>
       <source>Failed to load gst gl plugin</source>
-      <translation>Failed to load gst gl plugin</translation>
+      <translation>Kan gst gl-plug-in niet laden</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="348"/>
       <source>Failed to load Developer Mode helper: %1</source>
-      <translation>Failed to load Developer Mode helper: %1</translation>
+      <translation>Kan helper voor ontwikkelaarsmodus niet laden: %1</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="357"/>
       <source>Failed to create Developer Mode helper: %1</source>
-      <translation>Failed to create Developer Mode helper: %1</translation>
+      <translation>Kan helper voor ontwikkelaarsmodus niet maken: %1</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="369"/>
       <source>Developer Mode is enabled on the selected device.</source>
-      <translation>Developer Mode is enabled on the selected device.</translation>
+      <translation>Ontwikkelaarsmodus is ingeschakeld op het geselecteerde apparaat.</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="370"/>
       <source>A developer disk image is mounted on the selected device.</source>
-      <translation>A developer disk image is mounted on the selected device.</translation>
+      <translation>Er wordt een ontwikkelaarsschijfkopie op het geselecteerde apparaat gemonteerd.</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="373"/>
       <source>Developer Mode was not enabled. Complete the steps on the device and try again.</source>
-      <translation>Developer Mode was not enabled. Complete the steps on the device and try again.</translation>
+      <translation>Ontwikkelaarsmodus is niet ingeschakeld. Voltooi de stappen op het apparaat en probeer het opnieuw.</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="374"/>
       <source>A developer disk image could not be mounted.</source>
-      <translation>A developer disk image could not be mounted.</translation>
+      <translation>Een ontwikkelaarsschijfkopie kon niet worden aangekoppeld.</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="385"/>
       <source>Mount Developer Disk Image?</source>
-      <translation>Mount Developer Disk Image?</translation>
+      <translation>Ontwikkelaarsschijfkopie koppelen?</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="386"/>
       <source>Check Developer Mode?</source>
-      <translation>Check Developer Mode?</translation>
+      <translation>Ontwikkelaarsmodus controleren?</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="388"/>
       <source>This tool will mount a developer disk image for you. Developer disk images are required to enable extra features on the device. Do you want to continue?</source>
-      <translation>This tool will mount a developer disk image for you. Developer disk images are required to enable extra features on the device. Do you want to continue?</translation>
+      <translation>Deze tool zal een ontwikkelaarsschijfkopie voor u aankoppelen. Er zijn schijfkopieën van ontwikkelaars vereist om extra functies op het apparaat in te schakelen. Wil je doorgaan?</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="389"/>
       <source>This tool will check if Developer Mode is enabled on your device. Developer Mode is required to enable extra features on the device. Do you want to continue?</source>
-      <translation>This tool will check if Developer Mode is enabled on your device. Developer Mode is required to enable extra features on the device. Do you want to continue?</translation>
+      <translation>Deze tool controleert of de ontwikkelaarsmodus is ingeschakeld op uw apparaat. De ontwikkelaarsmodus is vereist om extra functies op het apparaat in te schakelen. Wil je doorgaan?</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="486"/>
       <source>Airplayer</source>
-      <translation>Airplayer</translation>
+      <translation>Luchtspeler</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="487"/>
       <source>Cast your device screen</source>
-      <translation>Cast your device screen</translation>
+      <translation>Cast het scherm van uw apparaat</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="494"/>
       <source>Simulate Location</source>
-      <translation>Simulate Location</translation>
+      <translation>Locatie simuleren</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="495"/>
       <source>Simulate GPS location on your device</source>
-      <translation>Simulate GPS location on your device</translation>
+      <translation>Simuleer de GPS-locatie op uw apparaat</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="502"/>
       <source>Live Screen</source>
-      <translation>Live Screen</translation>
+      <translation>Live-scherm</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="503"/>
       <source>View device screen in real-time</source>
-      <translation>View device screen in real-time</translation>
+      <translation>Bekijk het apparaatscherm in realtime</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="510"/>
       <source>Query Mobile Gestalt</source>
-      <translation>Query Mobile Gestalt</translation>
+      <translation>Vraag Mobiele Gestalt</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="511"/>
       <source>Query device hardware information</source>
-      <translation>Query device hardware information</translation>
+      <translation>Hardware-informatie van apparaat opvragen</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="518"/>
       <source>Dev Disk Images</source>
-      <translation>Dev Disk Images</translation>
+      <translation>Dev-schijfimages</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="519"/>
       <source>Manage developer disk images</source>
-      <translation>Manage developer disk images</translation>
+      <translation>Beheer schijfimages voor ontwikkelaars</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="526"/>
       <source>Wireless Gallery Import</source>
-      <translation>Wireless Gallery Import</translation>
+      <translation>Draadloos galerij importeren</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="527"/>
       <source>Import photos wirelessly to your iDevice (requires Shortcuts app)</source>
-      <translation>Import photos wirelessly to your iDevice (requires Shortcuts app)</translation>
+      <translation>Foto's draadloos importeren naar uw iDevice (vereist de Shortcuts-app)</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="534"/>
       <source>iFuse Mount</source>
-      <translation>iFuse Mount</translation>
+      <translation>iFuse Montage</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="535"/>
       <source>Mount your iDevice&apos;s filesystem on your PC</source>
-      <translation>Mount your iDevice&apos;s filesystem on your PC</translation>
+      <translation>Monteer het bestandssysteem van uw iDevice op uw pc</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="543"/>
       <source>Cable Info</source>
-      <translation>Cable Info</translation>
+      <translation>Kabelinformatie</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="544"/>
       <source>View detailed cable and connection info</source>
-      <translation>View detailed cable and connection info</translation>
+      <translation>Bekijk gedetailleerde kabel- en verbindingsinformatie</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="551"/>
       <source>Detailed Battery Info</source>
-      <translation>Detailed Battery Info</translation>
+      <translation>Gedetailleerde batterij-informatie</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="552"/>
       <source>View detailed battery health and capacity information</source>
-      <translation>View detailed battery health and capacity information</translation>
+      <translation>Bekijk gedetailleerde informatie over de batterijstatus en -capaciteit</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="559"/>
       <source>Network Devices</source>
-      <translation>Network Devices</translation>
+      <translation>Netwerkapparaten</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="560"/>
       <source>Discover and monitor devices on your network</source>
-      <translation>Discover and monitor devices on your network</translation>
+      <translation>Ontdek en monitor apparaten in uw netwerk</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="567"/>
       <source>Backups</source>
-      <translation>Backups</translation>
+      <translation>Back-ups</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="568"/>
       <source>Back up and restore this device</source>
-      <translation>Back up and restore this device</translation>
+      <translation>Maak een back-up van dit apparaat en herstel het</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="575"/>
       <source>Transfer Speed Test</source>
-      <translation>Transfer Speed Test</translation>
+      <translation>Overdrachtsnelheidstest</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="576"/>
       <source>Measure upload and download speed to this device</source>
-      <translation>Measure upload and download speed to this device</translation>
+      <translation>Meet de upload- en downloadsnelheid naar dit apparaat</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="586"/>
       <source>Enable Dev Mode</source>
-      <translation>Enable Dev Mode</translation>
+      <translation>Schakel de ontwikkelaarsmodus in</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="587"/>
       <source>Check or enable Developer Mode on this device</source>
-      <translation>Check or enable Developer Mode on this device</translation>
+      <translation>Controleer of schakel de ontwikkelaarsmodus in op dit apparaat</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="594"/>
       <source>Restart</source>
-      <translation>Restart</translation>
+      <translation>Opnieuw opstarten</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="595"/>
       <source>Restart device services</source>
-      <translation>Restart device services</translation>
+      <translation>Start de apparaatservices opnieuw</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="602"/>
       <source>Shutdown</source>
-      <translation>Shutdown</translation>
+      <translation>Afsluiten</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="603"/>
       <source>Shut down the device</source>
-      <translation>Shut down the device</translation>
+      <translation>Schakel het apparaat uit</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="610"/>
       <source>Recovery Mode</source>
-      <translation>Recovery Mode</translation>
+      <translation>Herstelmodus</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="611"/>
       <source>Enter device recovery mode</source>
-      <translation>Enter device recovery mode</translation>
+      <translation>Ga naar de apparaatherstelmodus</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="618"/>
       <source>Enable Wi-Fi Connections</source>
-      <translation>Enable Wi-Fi Connections</translation>
+      <translation>Schakel Wi-Fi-verbindingen in</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="619"/>
       <source>Make device connectable via Wi-Fi</source>
-      <translation>Make device connectable via Wi-Fi</translation>
+      <translation>Maak apparaat koppelbaar via Wi-Fi</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="628"/>
       <source>Remove this computer&apos;s trust relationship with the device</source>
-      <translation>Remove this computer&apos;s trust relationship with the device</translation>
+      <translation>Verwijder de vertrouwensrelatie van deze computer met het apparaat</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="636"/>
       <source>Unpair the device and remove it from iDescriptor</source>
-      <translation>Unpair the device and remove it from iDescriptor</translation>
+      <translation>Ontkoppel het apparaat en verwijder het uit iDescriptor</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="654"/>
       <source>Device:</source>
-      <translation>Device:</translation>
+      <translation>Apparaat:</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="664"/>
       <source>No device connected</source>
-      <translation>No device connected</translation>
+      <translation>Geen apparaat aangesloten</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="696"/>
       <source>Tools</source>
-      <translation>Tools</translation>
+      <translation>Gereedschap</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="733"/>
       <source>More Tools</source>
-      <translation>More Tools</translation>
+      <translation>Meer hulpmiddelen</translation>
     </message>
   </context>
   <context>
@@ -5533,7 +5640,7 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="18"/>
       <source>Transfer Speed Test - iDescriptor</source>
-      <translation>Transfer Speed Test - iDescriptor</translation>
+      <translation>Overdrachtsnelheidstest - iDescriptor</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="42"/>
@@ -5553,42 +5660,42 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="62"/>
       <source>Select a supported payload size.</source>
-      <translation>Select a supported payload size.</translation>
+      <translation>Selecteer een ondersteunde payloadgrootte.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="64"/>
       <source>The device does not have enough free storage for this test.</source>
-      <translation>The device does not have enough free storage for this test.</translation>
+      <translation>Het apparaat beschikt niet over voldoende vrije opslagruimte voor deze test.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="66"/>
       <source>The test finished, but its temporary file could not be removed.</source>
-      <translation>The test finished, but its temporary file could not be removed.</translation>
+      <translation>De test is voltooid, maar het tijdelijke bestand kan niet worden verwijderd.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="68"/>
       <source>The transfer failed. Make sure the device is connected and unlocked.</source>
-      <translation>The transfer failed. Make sure the device is connected and unlocked.</translation>
+      <translation>De overdracht is mislukt. Zorg ervoor dat het apparaat is aangesloten en ontgrendeld.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="70"/>
       <source>The transfer service is unavailable for this device.</source>
-      <translation>The transfer service is unavailable for this device.</translation>
+      <translation>De overdrachtsservice is niet beschikbaar voor dit apparaat.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="100"/>
       <source>Device Transfer Speed</source>
-      <translation>Device Transfer Speed</translation>
+      <translation>Overdrachtsnelheid apparaat</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="109"/>
       <source>Measure upload and download speed over the current device connection.</source>
-      <translation>Measure upload and download speed over the current device connection.</translation>
+      <translation>Meet de upload- en downloadsnelheid via de huidige apparaatverbinding.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="117"/>
       <source>Payload size</source>
-      <translation>Payload size</translation>
+      <translation>Grootte van de lading</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="161"/>
@@ -5608,24 +5715,24 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="231"/>
       <source>Uploading…</source>
-      <translation>Uploading…</translation>
+      <translation>Uploaden…</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="232"/>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="355"/>
       <source>Upload</source>
-      <translation>Upload</translation>
+      <translation>Uploaden</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="265"/>
       <source>Downloading…</source>
-      <translation>Downloading…</translation>
+      <translation>Downloaden…</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="266"/>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="394"/>
       <source>Download</source>
-      <translation>Download</translation>
+      <translation>Downloaden</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="329"/>
@@ -5637,12 +5744,12 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="432"/>
       <source>Cancel</source>
-      <translation>Cancel</translation>
+      <translation>Annuleer</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="432"/>
       <source>Start</source>
-      <translation>Start</translation>
+      <translation>Begin</translation>
     </message>
   </context>
   <context>
@@ -5655,12 +5762,12 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/Updater.qml" line="122"/>
       <source>The update check failed.</source>
-      <translation>The update check failed.</translation>
+      <translation>De updatecontrole is mislukt.</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="155"/>
       <source>Unknown size</source>
-      <translation>Unknown size</translation>
+      <translation>Onbekende maat</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="157"/>
@@ -5675,42 +5782,42 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/Updater.qml" line="170"/>
       <source>Update downloaded.</source>
-      <translation>Update downloaded.</translation>
+      <translation>Update gedownload.</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="179"/>
       <source>Please use your package manager to update iDescriptor.</source>
-      <translation>Please use your package manager to update iDescriptor.</translation>
+      <translation>Gebruik uw pakketbeheerder om iDescriptor bij te werken.</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="185"/>
       <source>A newer version is available. Update iDescriptor through Flatpak or your software center.</source>
-      <translation>A newer version is available. Update iDescriptor through Flatpak or your software center.</translation>
+      <translation>Er is een nieuwere versie beschikbaar. Update iDescriptor via Flatpak of uw softwarecentrum.</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="187"/>
       <source>A newer version is available. Update iDescriptor through Microsoft Store.</source>
-      <translation>A newer version is available. Update iDescriptor through Microsoft Store.</translation>
+      <translation>Er is een nieuwere versie beschikbaar. Update iDescriptor via de Microsoft Store.</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="191"/>
       <source>A newer version is available, but this build has no configured direct-update package.</source>
-      <translation>A newer version is available, but this build has no configured direct-update package.</translation>
+      <translation>Er is een nieuwere versie beschikbaar, maar deze build heeft geen geconfigureerd pakket voor directe updates.</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="195"/>
       <source>A newer version is available, but no matching download was found for this system.</source>
-      <translation>A newer version is available, but no matching download was found for this system.</translation>
+      <translation>Er is een nieuwere versie beschikbaar, maar er is geen overeenkomende download gevonden voor dit systeem.</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="196"/>
       <source>Download and install when you are ready. Your current settings and connected devices will not be changed.</source>
-      <translation>Download and install when you are ready. Your current settings and connected devices will not be changed.</translation>
+      <translation>Download en installeer wanneer u klaar bent. Uw huidige instellingen en aangesloten apparaten worden niet gewijzigd.</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="202"/>
       <source>Open Flatpak Page</source>
-      <translation>Open Flatpak Page</translation>
+      <translation>Open Flatpak-pagina</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="204"/>
@@ -5725,27 +5832,27 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/Updater.qml" line="257"/>
       <source>You are using the latest version of iDescriptor.</source>
-      <translation>You are using the latest version of iDescriptor.</translation>
+      <translation>U gebruikt de nieuwste versie van iDescriptor.</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="387"/>
       <source>A new version is available</source>
-      <translation>A new version is available</translation>
+      <translation>Er is een nieuwe versie beschikbaar</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="396"/>
       <source>Version %1</source>
-      <translation>Version %1</translation>
+      <translation>Versie %1</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="448"/>
       <source>What’s new</source>
-      <translation>What’s new</translation>
+      <translation>Wat is er nieuw</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="462"/>
       <source>No change log was provided for this release.</source>
-      <translation>No change log was provided for this release.</translation>
+      <translation>Er is geen wijzigingslogboek verstrekt voor deze release.</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="480"/>
@@ -5753,72 +5860,72 @@ Do you want to continue anyway?</translation>
       <location filename="../src/ui/Updater.qml" line="706"/>
       <location filename="../src/ui/Updater.qml" line="752"/>
       <source>Close</source>
-      <translation>Close</translation>
+      <translation>Sluiten</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="480"/>
       <source>Not now</source>
-      <translation>Not now</translation>
+      <translation>Niet nu</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="487"/>
       <source>Download Update</source>
-      <translation>Download Update</translation>
+      <translation>Update downloaden</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="522"/>
       <source>Checking for updates</source>
-      <translation>Checking for updates</translation>
+      <translation>Controleren op updates</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="531"/>
       <source>Looking for a newer release of iDescriptor…</source>
-      <translation>Looking for a newer release of iDescriptor…</translation>
+      <translation>Op zoek naar een nieuwere release van iDescriptor...</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="560"/>
       <source>Downloading update</source>
-      <translation>Downloading update</translation>
+      <translation>Update downloaden</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="569"/>
       <source>Please keep iDescriptor open while the update downloads.</source>
-      <translation>Please keep iDescriptor open while the update downloads.</translation>
+      <translation>Houd iDescriptor open terwijl de update wordt gedownload.</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="601"/>
       <source>%1% downloaded</source>
-      <translation>%1% downloaded</translation>
+      <translation>%1% gedownload</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="636"/>
       <source>Update downloaded</source>
-      <translation>Update downloaded</translation>
+      <translation>Update gedownload</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="644"/>
       <source>Version %1 is ready.</source>
-      <translation>Version %1 is ready.</translation>
+      <translation>Versie %1 is gereed.</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="676"/>
       <source>Downloaded to %1</source>
-      <translation>Downloaded to %1</translation>
+      <translation>Gedownload naar %1</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="693"/>
       <source>Reveal Download</source>
-      <translation>Reveal Download</translation>
+      <translation>Onthul downloaden</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="706"/>
       <source>Open Update</source>
-      <translation>Open Update</translation>
+      <translation>Open Bijwerken</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="733"/>
       <source>Update check failed</source>
-      <translation>Update check failed</translation>
+      <translation>Updatecontrole mislukt</translation>
     </message>
   </context>
   <context>
@@ -5826,43 +5933,43 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/Welcome.qml" line="33"/>
       <source>Welcome to iDescriptor</source>
-      <translation>Welcome to iDescriptor</translation>
+      <translation>Welkom bij iDescriptor</translation>
     </message>
     <message>
       <location filename="../src/ui/Welcome.qml" line="48"/>
       <source>Open-Source &amp; Free</source>
-      <translation>Open-Source &amp; Free</translation>
+      <translation>Open source en gratis</translation>
     </message>
     <message>
       <location filename="../src/ui/Welcome.qml" line="106"/>
       <source>Connect with pairing file</source>
-      <translation>Connect with pairing file</translation>
+      <translation>Maak verbinding met het koppelingsbestand</translation>
     </message>
     <message>
       <location filename="../src/ui/Welcome.qml" line="126"/>
       <source>How to connect a wireless device?</source>
-      <translation>How to connect a wireless device?</translation>
+      <translation>Hoe een draadloos apparaat verbinden?</translation>
     </message>
     <message>
       <location filename="../src/ui/Welcome.qml" line="159"/>
       <source>Connect an iDevice to get started</source>
-      <translation>Connect an iDevice to get started</translation>
+      <translation>Sluit een iDevice aan om aan de slag te gaan</translation>
     </message>
     <message>
       <location filename="../src/ui/Welcome.qml" line="183"/>
       <source>Found an issue? Report it on GitHub</source>
-      <translation>Found an issue? Report it on GitHub</translation>
+      <translation>Een probleem gevonden? Rapporteer het op GitHub</translation>
     </message>
     <message>
       <location filename="../src/ui/Welcome.qml" line="207"/>
       <location filename="../src/ui/Welcome.qml" line="208"/>
       <source>Checking required dependencies...</source>
-      <translation>Checking required dependencies...</translation>
+      <translation>Vereiste afhankelijkheden controleren...</translation>
     </message>
     <message>
       <location filename="../src/ui/Welcome.qml" line="220"/>
       <source>View Diagnostics</source>
-      <translation>View Diagnostics</translation>
+      <translation>Bekijk Diagnostiek</translation>
     </message>
   </context>
   <context>
@@ -5870,27 +5977,27 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/WhatsNew.qml" line="54"/>
       <source>Failed to load release notes.</source>
-      <translation>Failed to load release notes.</translation>
+      <translation>Kan release-opmerkingen niet laden.</translation>
     </message>
     <message>
       <location filename="../src/ui/WhatsNew.qml" line="77"/>
       <source>iDescriptor has been updated to v%1</source>
-      <translation>iDescriptor has been updated to v%1</translation>
+      <translation>iDescriptor is bijgewerkt naar v%1</translation>
     </message>
     <message>
       <location filename="../src/ui/WhatsNew.qml" line="113"/>
       <source>No release notes were provided for this version.</source>
-      <translation>No release notes were provided for this version.</translation>
+      <translation>Voor deze versie zijn geen release-opmerkingen verstrekt.</translation>
     </message>
     <message>
       <location filename="../src/ui/WhatsNew.qml" line="131"/>
       <source>Ok, Thanks!</source>
-      <translation>Ok, Thanks!</translation>
+      <translation>Oké, bedankt!</translation>
     </message>
     <message>
       <location filename="../src/ui/WhatsNew.qml" line="138"/>
       <source>Donate</source>
-      <translation>Donate</translation>
+      <translation>Doneer</translation>
     </message>
   </context>
   <context>
@@ -5898,42 +6005,42 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/platform/windows/WindowEffectPanel.qml" line="57"/>
       <source>Personalize iDescriptor</source>
-      <translation>Personalize iDescriptor</translation>
+      <translation>Personaliseer iDescriptor</translation>
     </message>
     <message>
       <location filename="../src/ui/platform/windows/WindowEffectPanel.qml" line="65"/>
       <source>Choose a window material. Your selection is applied immediately so you can preview it.</source>
-      <translation>Choose a window material. Your selection is applied immediately so you can preview it.</translation>
+      <translation>Kies een raammateriaal. Uw selectie wordt onmiddellijk toegepast, zodat u er een voorbeeld van kunt bekijken.</translation>
     </message>
     <message>
       <location filename="../src/ui/platform/windows/WindowEffectPanel.qml" line="80"/>
       <source>Acrylic</source>
-      <translation>Acrylic</translation>
+      <translation>Acryl</translation>
     </message>
     <message>
       <location filename="../src/ui/platform/windows/WindowEffectPanel.qml" line="81"/>
       <source>Translucent and layered</source>
-      <translation>Translucent and layered</translation>
+      <translation>Doorschijnend en gelaagd</translation>
     </message>
     <message>
       <location filename="../src/ui/platform/windows/WindowEffectPanel.qml" line="85"/>
       <source>Normal</source>
-      <translation>Normal</translation>
+      <translation>Normaal</translation>
     </message>
     <message>
       <location filename="../src/ui/platform/windows/WindowEffectPanel.qml" line="86"/>
       <source>Solid window background</source>
-      <translation>Solid window background</translation>
+      <translation>Effen vensterachtergrond</translation>
     </message>
     <message>
       <location filename="../src/ui/platform/windows/WindowEffectPanel.qml" line="258"/>
       <source>You can change this later in Settings.</source>
-      <translation>You can change this later in Settings.</translation>
+      <translation>Je kunt dit later wijzigen in Instellingen.</translation>
     </message>
     <message>
       <location filename="../src/ui/platform/windows/WindowEffectPanel.qml" line="265"/>
       <source>OK</source>
-      <translation>OK</translation>
+      <translation>Oké</translation>
     </message>
   </context>
   <context>
@@ -5941,72 +6048,72 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="20"/>
       <source>Wireless Gallery Import - iDescriptor</source>
-      <translation>Wireless Gallery Import - iDescriptor</translation>
+      <translation>Draadloze galerij importeren - iDescriptor</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="139"/>
       <source>Select Photos and Videos</source>
-      <translation>Select Photos and Videos</translation>
+      <translation>Selecteer Foto's en video's</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="142"/>
       <source>Media Files (*.jpg *.jpeg *.png *.gif *.bmp *.tiff *.tif *.webp *.heic *.heif *.mp4 *.mov *.avi *.mkv *.m4v *.3gp *.webm)</source>
-      <translation>Media Files (*.jpg *.jpeg *.png *.gif *.bmp *.tiff *.tif *.webp *.heic *.heif *.mp4 *.mov *.avi *.mkv *.m4v *.3gp *.webm)</translation>
+      <translation>Mediabestanden (*.jpg *.jpeg *.png *.gif *.bmp *.tiff *.tif *.webp *.heic *.heif *.mp4 *.mov *.avi *.mkv *.m4v *.3gp *.webm)</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="143"/>
       <source>All Files (*)</source>
-      <translation>All Files (*)</translation>
+      <translation>Alle bestanden (*)</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="155"/>
       <source>Import to Photos</source>
-      <translation>Import to Photos</translation>
+      <translation>Importeren naar Foto's</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="160"/>
       <source>Download progress will appear here</source>
-      <translation>Download progress will appear here</translation>
+      <translation>De downloadvoortgang wordt hier weergegeven</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="163"/>
       <source>Scan the QR code with your iPhone or iPad.</source>
-      <translation>Scan the QR code with your iPhone or iPad.</translation>
+      <translation>Scan de QR-code met uw iPhone of iPad.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="164"/>
       <source>On the web page, tap Copy Server Address.</source>
-      <translation>On the web page, tap Copy Server Address.</translation>
+      <translation>Tik op de webpagina op Serveradres kopiëren.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="165"/>
       <source>Install the shortcut once, then tap Run Shortcut.</source>
-      <translation>Install the shortcut once, then tap Run Shortcut.</translation>
+      <translation>Installeer de snelkoppeling één keer en tik vervolgens op Snelkoppeling uitvoeren.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="166"/>
       <source>Allow the shortcut to save the selected items to Photos.</source>
-      <translation>Allow the shortcut to save the selected items to Photos.</translation>
+      <translation>Sta toe dat de snelkoppeling de geselecteerde items in Foto's opslaat.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="202"/>
       <source>Ready to share %1 item(s)</source>
-      <translation>Ready to share %1 item(s)</translation>
+      <translation>Klaar om %1 artikel(en) te delen</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="210"/>
       <source>Keep this window open while the shortcut downloads your files.</source>
-      <translation>Keep this window open while the shortcut downloads your files.</translation>
+      <translation>Houd dit venster open terwijl de snelkoppeling uw bestanden downloadt.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="262"/>
       <source>Unable to create QR code</source>
-      <translation>Unable to create QR code</translation>
+      <translation>Kan QR-code niet aanmaken</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="263"/>
       <source>Preparing QR code…</source>
-      <translation>Preparing QR code…</translation>
+      <translation>QR-code voorbereiden…</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="276"/>
@@ -6016,97 +6123,97 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="277"/>
       <source>Starting local server…</source>
-      <translation>Starting local server…</translation>
+      <translation>Lokale server starten…</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="299"/>
       <source>Video Guide</source>
-      <translation>Video Guide</translation>
+      <translation>Videogids</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="299"/>
       <source>On your device</source>
-      <translation>On your device</translation>
+      <translation>Op uw apparaat</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="306"/>
       <source>Show Steps</source>
-      <translation>Show Steps</translation>
+      <translation>Toon stappen</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="306"/>
       <source>Watch Video</source>
-      <translation>Watch Video</translation>
+      <translation>Bekijk video</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="424"/>
       <source>Downloaded: %1 (%2 KB of %3 KB)</source>
-      <translation>Downloaded: %1 (%2 KB of %3 KB)</translation>
+      <translation>Gedownload: %1 (%2 KB of %3 KB)</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="461"/>
       <source>Import to Photos wirelessly</source>
-      <translation>Import to Photos wirelessly</translation>
+      <translation>Draadloos importeren naar Foto's</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="469"/>
       <source>Choose media, then scan a QR code to transfer it with the iDescriptor shortcut.</source>
-      <translation>Choose media, then scan a QR code to transfer it with the iDescriptor shortcut.</translation>
+      <translation>Kies media en scan vervolgens een QR-code om deze over te dragen met de snelkoppeling iDescriptor.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="476"/>
       <source>Choose Files…</source>
-      <translation>Choose Files…</translation>
+      <translation>Kies bestanden…</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="503"/>
       <source>Selected Media</source>
-      <translation>Selected Media</translation>
+      <translation>Geselecteerde media</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="532"/>
       <source>Clear</source>
-      <translation>Clear</translation>
+      <translation>Duidelijk</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="586"/>
       <source>Drop to add these files</source>
-      <translation>Drop to add these files</translation>
+      <translation>Zet neer om deze bestanden toe te voegen</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="587"/>
       <source>Drop photos and videos here</source>
-      <translation>Drop photos and videos here</translation>
+      <translation>Plaats hier foto's en video's</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="596"/>
       <source>JPEG, HEIC, PNG, MOV, MP4, and other common media formats</source>
-      <translation>JPEG, HEIC, PNG, MOV, MP4, and other common media formats</translation>
+      <translation>JPEG, HEIC, PNG, MOV, MP4 en andere veelgebruikte mediaformaten</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="683"/>
       <source>Remove</source>
-      <translation>Remove</translation>
+      <translation>Verwijderen</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="727"/>
       <source>Add at least one photo or video to continue.</source>
-      <translation>Add at least one photo or video to continue.</translation>
+      <translation>Voeg ten minste één foto of video toe om door te gaan.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="728"/>
       <source>%1 item(s) ready to share</source>
-      <translation>%1 item(s) ready to share</translation>
+      <translation>%1 artikel(en) klaar om te delen</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="734"/>
       <source>Continue</source>
-      <translation>Continue</translation>
+      <translation>Ga door</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="738"/>
       <source>Waiting for downloads…</source>
-      <translation>Waiting for downloads…</translation>
+      <translation>Wachten op downloads…</translation>
     </message>
   </context>
   <context>
@@ -6120,7 +6227,7 @@ Do you want to continue anyway?</translation>
       <location filename="../src/ui/ZLinuxWindow.qml" line="76"/>
       <location filename="../src/ui/ZLinuxWindow.qml" line="78"/>
       <source>Close</source>
-      <translation>Close</translation>
+      <translation>Sluiten</translation>
     </message>
   </context>
 </TS>
