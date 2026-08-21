@@ -12,97 +12,97 @@
       <location filename="../src/ui/tools/Airplay.qml" line="71"/>
       <location filename="../src/ui/tools/Airplay.qml" line="138"/>
       <source>Failed to start AirPlay.</source>
-      <translation>Failed to start AirPlay.</translation>
+      <translation>Det gick inte att starta AirPlay.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/Airplay.qml" line="163"/>
       <source>Waiting for device connection</source>
-      <translation>Waiting for device connection</translation>
+      <translation>Väntar på enhetsanslutning</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/Airplay.qml" line="164"/>
       <source>Starting AirPlay Server...</source>
-      <translation>Starting AirPlay Server...</translation>
+      <translation>Startar AirPlay Server...</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/Airplay.qml" line="177"/>
       <source>Settings</source>
-      <translation>Settings</translation>
+      <translation>Inställningar</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/Airplay.qml" line="208"/>
       <source>Loading AirPlay tutorial...</source>
-      <translation>Loading AirPlay tutorial...</translation>
+      <translation>Laddar AirPlay-handledning...</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/Airplay.qml" line="238"/>
       <source>Open Control Center on your device, choose Screen Mirroring, then select iDescriptor@UxPlay.</source>
-      <translation>Open Control Center on your device, choose Screen Mirroring, then select iDescriptor@UxPlay.</translation>
+      <translation>Öppna Kontrollcenter på din enhet, välj Skärmspegling och välj sedan iDescriptor@UxPlay.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/Airplay.qml" line="342"/>
       <source>Rotate clockwise</source>
-      <translation>Rotate clockwise</translation>
+      <translation>Vrid medurs</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/Airplay.qml" line="349"/>
       <source>Zoom out</source>
-      <translation>Zoom out</translation>
+      <translation>Zooma ut</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/Airplay.qml" line="356"/>
       <source>Zoom in</source>
-      <translation>Zoom in</translation>
+      <translation>Zooma in</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/Airplay.qml" line="364"/>
       <source>Reset display</source>
-      <translation>Reset display</translation>
+      <translation>Återställ display</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/Airplay.qml" line="378"/>
       <source>Unmute</source>
-      <translation>Unmute</translation>
+      <translation>Slå på ljudet</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/Airplay.qml" line="378"/>
       <source>Mute</source>
-      <translation>Mute</translation>
+      <translation>Ljud av</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/Airplay.qml" line="427"/>
       <source>Volume: %1%</source>
-      <translation>Volume: %1%</translation>
+      <translation>Volym: %1%</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/Airplay.qml" line="438"/>
       <source>Connection information</source>
-      <translation>Connection information</translation>
+      <translation>Anslutningsinformation</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/Airplay.qml" line="455"/>
       <source>AirPlay Connection</source>
-      <translation>AirPlay Connection</translation>
+      <translation>AirPlay-anslutning</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/Airplay.qml" line="465"/>
       <source>Launch arguments</source>
-      <translation>Launch arguments</translation>
+      <translation>Starta argument</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/Airplay.qml" line="469"/>
       <source>Device name</source>
-      <translation>Device name</translation>
+      <translation>Enhetens namn</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/Airplay.qml" line="473"/>
       <source>Model</source>
-      <translation>Model</translation>
+      <translation>Modell</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/Airplay.qml" line="477"/>
       <source>Device ID</source>
-      <translation>Device ID</translation>
+      <translation>Enhets-ID</translation>
     </message>
   </context>
   <context>
@@ -111,88 +111,88 @@
       <location filename="../src/ui/AlbumContents.qml" line="98"/>
       <location filename="../src/ui/AlbumContents.qml" line="227"/>
       <source>Exporting Files</source>
-      <translation>Exporting Files</translation>
+      <translation>Exportera filer</translation>
     </message>
     <message>
       <location filename="../src/ui/AlbumContents.qml" line="115"/>
       <source>Failed to reload the gallery.</source>
-      <translation>Failed to reload the gallery.</translation>
+      <translation>Det gick inte att ladda om galleriet.</translation>
     </message>
     <message>
       <location filename="../src/ui/AlbumContents.qml" line="141"/>
       <source>Failed to load the album contents.</source>
-      <translation>Failed to load the album contents.</translation>
+      <translation>Det gick inte att ladda albuminnehållet.</translation>
     </message>
     <message>
       <location filename="../src/ui/AlbumContents.qml" line="169"/>
       <location filename="../src/ui/AlbumContents.qml" line="180"/>
       <source>Back</source>
-      <translation>Back</translation>
+      <translation>Tillbaka</translation>
     </message>
     <message>
       <location filename="../src/ui/AlbumContents.qml" line="188"/>
       <source>Refreshing album contents</source>
-      <translation>Refreshing album contents</translation>
+      <translation>Uppdaterar albuminnehållet</translation>
     </message>
     <message>
       <location filename="../src/ui/AlbumContents.qml" line="189"/>
       <source>Refresh</source>
-      <translation>Refresh</translation>
+      <translation>Uppdatera</translation>
     </message>
     <message>
       <location filename="../src/ui/AlbumContents.qml" line="199"/>
       <source>All</source>
-      <translation>All</translation>
+      <translation>Alla</translation>
     </message>
     <message>
       <location filename="../src/ui/AlbumContents.qml" line="200"/>
       <source>Images</source>
-      <translation>Images</translation>
+      <translation>Bilder</translation>
     </message>
     <message>
       <location filename="../src/ui/AlbumContents.qml" line="201"/>
       <source>Videos</source>
-      <translation>Videos</translation>
+      <translation>Videor</translation>
     </message>
     <message>
       <location filename="../src/ui/AlbumContents.qml" line="211"/>
       <source>Most Recent</source>
-      <translation>Most Recent</translation>
+      <translation>Senaste</translation>
     </message>
     <message>
       <location filename="../src/ui/AlbumContents.qml" line="212"/>
       <source>Oldest First</source>
-      <translation>Oldest First</translation>
+      <translation>Äldst först</translation>
     </message>
     <message>
       <location filename="../src/ui/AlbumContents.qml" line="219"/>
       <source>Export Selected (%1)</source>
-      <translation>Export Selected (%1)</translation>
+      <translation>Exportera markerade (%1)</translation>
     </message>
     <message>
       <location filename="../src/ui/AlbumContents.qml" line="221"/>
       <source>Exporting Selected Items</source>
-      <translation>Exporting Selected Items</translation>
+      <translation>Exportera valda objekt</translation>
     </message>
     <message>
       <location filename="../src/ui/AlbumContents.qml" line="225"/>
       <source>Export All</source>
-      <translation>Export All</translation>
+      <translation>Exportera alla</translation>
     </message>
     <message>
       <location filename="../src/ui/AlbumContents.qml" line="346"/>
       <source>No Photos or Videos</source>
-      <translation>No Photos or Videos</translation>
+      <translation>Inga foton eller videor</translation>
     </message>
     <message>
       <location filename="../src/ui/AlbumContents.qml" line="354"/>
       <source>This album is empty.</source>
-      <translation>This album is empty.</translation>
+      <translation>Det här albumet är tomt.</translation>
     </message>
     <message>
       <location filename="../src/ui/AlbumContents.qml" line="376"/>
       <source>Choose Export Folder</source>
-      <translation>Choose Export Folder</translation>
+      <translation>Välj Exportera mapp</translation>
     </message>
   </context>
   <context>
@@ -200,48 +200,48 @@
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="25"/>
       <source>Free</source>
-      <translation>Free</translation>
+      <translation>Gratis</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="34"/>
       <source>Failed to fetch app details.</source>
-      <translation>Failed to fetch app details.</translation>
+      <translation>Det gick inte att hämta appinformation.</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="80"/>
       <location filename="../src/ui/app-store/AppDetails.qml" line="94"/>
       <source>Back</source>
-      <translation>Back</translation>
+      <translation>Tillbaka</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="199"/>
       <source>Install</source>
-      <translation>Install</translation>
+      <translation>Installera</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="204"/>
       <source>Get IPA</source>
-      <translation>Get IPA</translation>
+      <translation>Skaffa IPA</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="219"/>
       <source>Rating</source>
-      <translation>Rating</translation>
+      <translation>Betyg</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="219"/>
       <source>%1 ratings</source>
-      <translation>%1 ratings</translation>
+      <translation>%1 betyg</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="220"/>
       <source>Age</source>
-      <translation>Age</translation>
+      <translation>Ålder</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="220"/>
       <source>Years</source>
-      <translation>Years</translation>
+      <translation>år</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="221"/>
@@ -251,42 +251,42 @@
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="221"/>
       <source>Latest</source>
-      <translation>Latest</translation>
+      <translation>Senaste</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="222"/>
       <source>Size</source>
-      <translation>Size</translation>
+      <translation>Storlek</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="222"/>
       <source>Download</source>
-      <translation>Download</translation>
+      <translation>Ladda ner</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="271"/>
       <source>What&apos;s New</source>
-      <translation>What&apos;s New</translation>
+      <translation>Vad är nytt</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="278"/>
       <source>No release notes available.</source>
-      <translation>No release notes available.</translation>
+      <translation>Inga release notes tillgängliga.</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="288"/>
       <source>Screenshots</source>
-      <translation>Screenshots</translation>
+      <translation>Skärmdumpar</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="320"/>
       <source>No screenshots available.</source>
-      <translation>No screenshots available.</translation>
+      <translation>Inga skärmdumpar tillgängliga.</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="331"/>
       <source>Description</source>
-      <translation>Description</translation>
+      <translation>Beskrivning</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="348"/>
@@ -296,22 +296,22 @@
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="359"/>
       <source>Seller</source>
-      <translation>Seller</translation>
+      <translation>Säljare</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="361"/>
       <source>Bundle ID</source>
-      <translation>Bundle ID</translation>
+      <translation>Paket-ID</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="363"/>
       <source>Minimum iOS</source>
-      <translation>Minimum iOS</translation>
+      <translation>Minsta iOS</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="365"/>
       <source>Languages</source>
-      <translation>Languages</translation>
+      <translation>Språk</translation>
     </message>
   </context>
   <context>
@@ -319,17 +319,17 @@
     <message>
       <location filename="../src/ui/app-store/AppItem.qml" line="99"/>
       <source>Install</source>
-      <translation>Install</translation>
+      <translation>Installera</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppItem.qml" line="121"/>
       <source>Website</source>
-      <translation>Website</translation>
+      <translation>Webbplats</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppItem.qml" line="121"/>
       <source>Get IPA</source>
-      <translation>Get IPA</translation>
+      <translation>Skaffa IPA</translation>
     </message>
   </context>
   <context>
@@ -337,22 +337,22 @@
     <message>
       <location filename="../src/ui/AppSidebar.qml" line="83"/>
       <source>Explore</source>
-      <translation>Explore</translation>
+      <translation>Utforska</translation>
     </message>
     <message>
       <location filename="../src/ui/AppSidebar.qml" line="92"/>
       <source>Welcome</source>
-      <translation>Welcome</translation>
+      <translation>Välkommen</translation>
     </message>
     <message>
       <location filename="../src/ui/AppSidebar.qml" line="99"/>
       <source>Apps</source>
-      <translation>Apps</translation>
+      <translation>Appar</translation>
     </message>
     <message>
       <location filename="../src/ui/AppSidebar.qml" line="106"/>
       <source>Toolbox</source>
-      <translation>Toolbox</translation>
+      <translation>Verktygslåda</translation>
     </message>
     <message>
       <location filename="../src/ui/AppSidebar.qml" line="113"/>
@@ -362,22 +362,22 @@
     <message>
       <location filename="../src/ui/AppSidebar.qml" line="120"/>
       <source>Community</source>
-      <translation>Community</translation>
+      <translation>gemenskapen</translation>
     </message>
     <message>
       <location filename="../src/ui/AppSidebar.qml" line="127"/>
       <source>Donate</source>
-      <translation>Donate</translation>
+      <translation>Donera</translation>
     </message>
     <message>
       <location filename="../src/ui/AppSidebar.qml" line="136"/>
       <source>Devices</source>
-      <translation>Devices</translation>
+      <translation>Enheter</translation>
     </message>
     <message>
       <location filename="../src/ui/AppSidebar.qml" line="150"/>
       <source>No connected devices</source>
-      <translation>No connected devices</translation>
+      <translation>Inga anslutna enheter</translation>
     </message>
   </context>
   <context>
@@ -385,62 +385,62 @@
     <message>
       <location filename="../src/ui/AppsTab.qml" line="84"/>
       <source>You must be signed in to install apps.</source>
-      <translation>You must be signed in to install apps.</translation>
+      <translation>Du måste vara inloggad för att installera appar.</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="103"/>
       <source>You must be signed in to download IPA files.</source>
-      <translation>You must be signed in to download IPA files.</translation>
+      <translation>Du måste vara inloggad för att ladda ner IPA-filer.</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="143"/>
       <source>Photo &amp; Video sharing social network</source>
-      <translation>Photo &amp; Video sharing social network</translation>
+      <translation>Foto &amp; video delning socialt nätverk</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="144"/>
       <source>Music streaming and podcast platform</source>
-      <translation>Music streaming and podcast platform</translation>
+      <translation>Musikstreaming och podcastplattform</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="145"/>
       <source>Video sharing and streaming platform</source>
-      <translation>Video sharing and streaming platform</translation>
+      <translation>Videodelning och streamingplattform</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="146"/>
       <source>Social media and microblogging</source>
-      <translation>Social media and microblogging</translation>
+      <translation>Sociala medier och mikroblogg</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="147"/>
       <source>Short-form video hosting service</source>
-      <translation>Short-form video hosting service</translation>
+      <translation>Kortformad videovärdtjänst</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="148"/>
       <source>Live streaming platform</source>
-      <translation>Live streaming platform</translation>
+      <translation>Live streaming plattform</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="149"/>
       <source>Cloud-based instant messaging</source>
-      <translation>Cloud-based instant messaging</translation>
+      <translation>Molnbaserad snabbmeddelanden</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="150"/>
       <source>Social news aggregation platform</source>
-      <translation>Social news aggregation platform</translation>
+      <translation>Plattform för aggregering av sociala nyheter</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="170"/>
       <source>Platinum</source>
-      <translation>Platinum</translation>
+      <translation>Platina</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="171"/>
       <source>Gold</source>
-      <translation>Gold</translation>
+      <translation>Guld</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="172"/>
@@ -450,62 +450,62 @@
     <message>
       <location filename="../src/ui/AppsTab.qml" line="173"/>
       <source>Bronze</source>
-      <translation>Bronze</translation>
+      <translation>Brons</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="176"/>
       <source>Failed to parse sponsors JSON.</source>
-      <translation>Failed to parse sponsors JSON.</translation>
+      <translation>Det gick inte att analysera sponsor-JSON.</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="179"/>
       <source>Failed to fetch sponsors.</source>
-      <translation>Failed to fetch sponsors.</translation>
+      <translation>Det gick inte att hämta sponsorer.</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="225"/>
       <source>Search failed.</source>
-      <translation>Search failed.</translation>
+      <translation>Sökningen misslyckades.</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="234"/>
       <source>Search returned an invalid response.</source>
-      <translation>Search returned an invalid response.</translation>
+      <translation>Sökningen returnerade ett ogiltigt svar.</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="253"/>
       <source>Failed to parse search results.</source>
-      <translation>Failed to parse search results.</translation>
+      <translation>Det gick inte att analysera sökresultat.</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="331"/>
       <source>Search for apps...</source>
-      <translation>Search for apps...</translation>
+      <translation>Sök efter appar...</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="341"/>
       <source>Signed in as %1</source>
-      <translation>Signed in as %1</translation>
+      <translation>Inloggad som %1</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="341"/>
       <source>Not signed in</source>
-      <translation>Not signed in</translation>
+      <translation>Inte inloggad</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="346"/>
       <source>Sign Out</source>
-      <translation>Sign Out</translation>
+      <translation>Logga ut</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="346"/>
       <source>Sign In</source>
-      <translation>Sign In</translation>
+      <translation>Logga in</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="480"/>
       <source>No results</source>
-      <translation>No results</translation>
+      <translation>Inga resultat</translation>
     </message>
   </context>
   <context>
@@ -513,238 +513,238 @@
     <message>
       <location filename="../src/ui/BackupAction.qml" line="37"/>
       <source>This Device</source>
-      <translation>This Device</translation>
+      <translation>Denna enhet</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="57"/>
       <source>Back Up Over Wi-Fi?</source>
-      <translation>Back Up Over Wi-Fi?</translation>
+      <translation>Säkerhetskopiera över Wi-Fi?</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="58"/>
       <source>Wireless backups can take longer and may stop if the connection changes. Keep the device nearby, connected to power, and on the same Wi-Fi network until the backup finishes.</source>
-      <translation>Wireless backups can take longer and may stop if the connection changes. Keep the device nearby, connected to power, and on the same Wi-Fi network until the backup finishes.</translation>
+      <translation>Trådlösa säkerhetskopieringar kan ta längre tid och kan avbrytas om anslutningen ändras. Håll enheten i närheten, ansluten till strömmen och på samma Wi-Fi-nätverk tills säkerhetskopieringen är klar.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="90"/>
       <location filename="../src/ui/BackupAction.qml" line="164"/>
       <source>Preparing the backup...</source>
-      <translation>Preparing the backup...</translation>
+      <translation>Förbereder säkerhetskopian...</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="99"/>
       <source>Cancelling the backup...</source>
-      <translation>Cancelling the backup...</translation>
+      <translation>Avbryter säkerhetskopieringen...</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="102"/>
       <source>The backup could not be cancelled.</source>
-      <translation>The backup could not be cancelled.</translation>
+      <translation>Säkerhetskopieringen kunde inte avbrytas.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="108"/>
       <source>The backup was cancelled. Files already written may remain in the selected folder.</source>
-      <translation>The backup was cancelled. Files already written may remain in the selected folder.</translation>
+      <translation>Säkerhetskopieringen avbröts. Filer som redan skrivits kan finnas kvar i den valda mappen.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="121"/>
       <source>Backing Up %1</source>
-      <translation>Backing Up %1</translation>
+      <translation>Säkerhetskopierar %1</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="123"/>
       <source>Backup Complete</source>
-      <translation>Backup Complete</translation>
+      <translation>Säkerhetskopieringen är klar</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="125"/>
       <source>Backup Couldn&apos;t Be Completed</source>
-      <translation>Backup Couldn&apos;t Be Completed</translation>
+      <translation>Säkerhetskopieringen kunde inte slutföras</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="127"/>
       <source>Backup Cancelled</source>
-      <translation>Backup Cancelled</translation>
+      <translation>Säkerhetskopieringen avbröts</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="128"/>
       <source>Back Up %1</source>
-      <translation>Back Up %1</translation>
+      <translation>Säkerhetskopiera %1</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="133"/>
       <source>Keep the device connected while iDescriptor securely copies its data.</source>
-      <translation>Keep the device connected while iDescriptor securely copies its data.</translation>
+      <translation>Håll enheten ansluten medan iDescriptor säkert kopierar dess data.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="135"/>
       <source>Your device was backed up successfully.</source>
-      <translation>Your device was backed up successfully.</translation>
+      <translation>Din enhet säkerhetskopierades framgångsrikt.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="137"/>
       <source>iDescriptor was unable to finish this backup. Review the activity log and try again.</source>
-      <translation>iDescriptor was unable to finish this backup. Review the activity log and try again.</translation>
+      <translation>iDescriptor kunde inte slutföra denna säkerhetskopiering. Granska aktivitetsloggen och försök igen.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="140"/>
       <source>Create a local backup of your device before making changes or transferring data.</source>
-      <translation>Create a local backup of your device before making changes or transferring data.</translation>
+      <translation>Skapa en lokal säkerhetskopia av din enhet innan du gör ändringar eller överför data.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="163"/>
       <source>Enter the device passcode on the device to continue.</source>
-      <translation>Enter the device passcode on the device to continue.</translation>
+      <translation>Ange enhetens lösenord på enheten för att fortsätta.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="171"/>
       <source>The device requested that this backup be cancelled.</source>
-      <translation>The device requested that this backup be cancelled.</translation>
+      <translation>Enheten begärde att säkerhetskopieringen skulle avbrytas.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="181"/>
       <source>The device&apos;s backup encryption status could not be read.</source>
-      <translation>The device&apos;s backup encryption status could not be read.</translation>
+      <translation>Enhetens krypteringsstatus för säkerhetskopiering kunde inte läsas.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="197"/>
       <source>Saved to %1</source>
-      <translation>Saved to %1</translation>
+      <translation>Sparad till %1</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="202"/>
       <source>The backup was cancelled from the device.</source>
-      <translation>The backup was cancelled from the device.</translation>
+      <translation>Säkerhetskopieringen avbröts från enheten.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="206"/>
       <source>The backup operation ended before it could be completed.</source>
-      <translation>The backup operation ended before it could be completed.</translation>
+      <translation>Säkerhetskopieringen avslutades innan den kunde slutföras.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="213"/>
       <source>Select Backup Directory</source>
-      <translation>Select Backup Directory</translation>
+      <translation>Välj Backup Directory</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="229"/>
       <source>The encrypted backup password was updated.</source>
-      <translation>The encrypted backup password was updated.</translation>
+      <translation>Det krypterade säkerhetskopieringslösenordet uppdaterades.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="255"/>
       <source>A backup operation is in progress</source>
-      <translation>A backup operation is in progress</translation>
+      <translation>En säkerhetskopiering pågår</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="256"/>
       <source>Back</source>
-      <translation>Back</translation>
+      <translation>Tillbaka</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="309"/>
       <source>Backup Location</source>
-      <translation>Backup Location</translation>
+      <translation>Säkerhetskopieringsplats</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="324"/>
       <source>Checking backup encryption…</source>
-      <translation>Checking backup encryption…</translation>
+      <translation>Kontrollerar säkerhetskopieringskryptering...</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="326"/>
       <source>Encryption enabled</source>
-      <translation>Encryption enabled</translation>
+      <translation>Kryptering aktiverad</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="327"/>
       <source>Backup encryption status unavailable</source>
-      <translation>Backup encryption status unavailable</translation>
+      <translation>Krypteringsstatus för säkerhetskopiering är inte tillgänglig</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="346"/>
       <source>Use the Manage Encryption button to set up encrypted backups.</source>
-      <translation>Use the Manage Encryption button to set up encrypted backups.</translation>
+      <translation>Använd knappen Hantera kryptering för att ställa in krypterade säkerhetskopior.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="347"/>
       <source>Backups for this device are protected with a password.</source>
-      <translation>Backups for this device are protected with a password.</translation>
+      <translation>Säkerhetskopieringar för den här enheten är skyddade med ett lösenord.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="358"/>
       <source>Force full backup</source>
-      <translation>Force full backup</translation>
+      <translation>Framtvinga fullständig säkerhetskopiering</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="367"/>
       <source>Only change this if you know what you are doing. If not, just leave it as it is.</source>
-      <translation>Only change this if you know what you are doing. If not, just leave it as it is.</translation>
+      <translation>Ändra detta bara om du vet vad du gör. Om inte, låt det bara vara som det är.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="393"/>
       <source>Activity</source>
-      <translation>Activity</translation>
+      <translation>Aktivitet</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="402"/>
       <source>1 item</source>
-      <translation>1 item</translation>
+      <translation>1 föremål</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="403"/>
       <source>%1 items</source>
-      <translation>%1 items</translation>
+      <translation>%1 objekt</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="441"/>
       <source>Enter the device passcode on the device to continue the backup.</source>
-      <translation>Enter the device passcode on the device to continue the backup.</translation>
+      <translation>Ange enhetens lösenord på enheten för att fortsätta säkerhetskopieringen.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="452"/>
       <source>Logs will appear here as files are received from the device.</source>
-      <translation>Logs will appear here as files are received from the device.</translation>
+      <translation>Loggar kommer att visas här när filer tas emot från enheten.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="499"/>
       <source>Cancel</source>
-      <translation>Cancel</translation>
+      <translation>Avbryt</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="505"/>
       <source>Show Details</source>
-      <translation>Show Details</translation>
+      <translation>Visa detaljer</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="511"/>
       <source>Show in Finder</source>
-      <translation>Show in Finder</translation>
+      <translation>Visa i Finder</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="511"/>
       <source>Show in Folder</source>
-      <translation>Show in Folder</translation>
+      <translation>Visa i mapp</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="517"/>
       <source>Done</source>
-      <translation>Done</translation>
+      <translation>Klart</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="526"/>
       <source>Manage Encryption…</source>
-      <translation>Manage Encryption…</translation>
+      <translation>Hantera kryptering...</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="535"/>
       <source>Back Up Now</source>
-      <translation>Back Up Now</translation>
+      <translation>Säkerhetskopiera nu</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="535"/>
       <source>Try Again</source>
-      <translation>Try Again</translation>
+      <translation>Försök igen</translation>
     </message>
   </context>
   <context>
@@ -756,12 +756,12 @@
       <location filename="../src/ui/BackupDetails.qml" line="303"/>
       <location filename="../src/ui/BackupDetails.qml" line="304"/>
       <source>Unknown</source>
-      <translation>Unknown</translation>
+      <translation>Okänd</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetails.qml" line="166"/>
       <source>New</source>
-      <translation>New</translation>
+      <translation>Nytt</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetails.qml" line="168"/>
@@ -771,57 +771,57 @@
     <message>
       <location filename="../src/ui/BackupDetails.qml" line="169"/>
       <source>Incremental</source>
-      <translation>Incremental</translation>
+      <translation>Inkrementell</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetails.qml" line="183"/>
       <source>Failed to load backup details.</source>
-      <translation>Failed to load backup details.</translation>
+      <translation>Det gick inte att läsa in säkerhetskopieringsinformation.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetails.qml" line="193"/>
       <source>Failed to parse backup details.</source>
-      <translation>Failed to parse backup details.</translation>
+      <translation>Det gick inte att analysera säkerhetskopieringsinformation.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetails.qml" line="223"/>
       <source>Back</source>
-      <translation>Back</translation>
+      <translation>Tillbaka</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetails.qml" line="232"/>
       <source>Backup Summary</source>
-      <translation>Backup Summary</translation>
+      <translation>Sammanfattning av säkerhetskopiering</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetails.qml" line="255"/>
       <source>Encrypted</source>
-      <translation>Encrypted</translation>
+      <translation>Krypterad</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetails.qml" line="255"/>
       <source>Not Encrypted</source>
-      <translation>Not Encrypted</translation>
+      <translation>Inte krypterad</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetails.qml" line="270"/>
       <source>Passcode Was Set</source>
-      <translation>Passcode Was Set</translation>
+      <translation>Lösenordet har ställts in</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetails.qml" line="270"/>
       <source>No Passcode</source>
-      <translation>No Passcode</translation>
+      <translation>Inget lösenord</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetails.qml" line="302"/>
       <source>iOS %1 - Serial %2</source>
-      <translation>iOS %1 - Serial %2</translation>
+      <translation>iOS %1 - Seriell %2</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetails.qml" line="312"/>
       <source>Backup Date: %1</source>
-      <translation>Backup Date: %1</translation>
+      <translation>Säkerhetskopieringsdatum: %1</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetails.qml" line="352"/>
@@ -833,8 +833,8 @@
       <location filename="../src/ui/BackupDetails.qml" line="434"/>
       <source>%n file(s)</source>
       <translation>
-        <numerusform>%n file(s)</numerusform>
-        <numerusform>%n file(s)</numerusform>
+        <numerusform>%n fil(er)</numerusform>
+        <numerusform>%n fil(er)</numerusform>
       </translation>
     </message>
   </context>
@@ -845,126 +845,126 @@
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="87"/>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="380"/>
       <source>Unknown</source>
-      <translation>Unknown</translation>
+      <translation>Okänd</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="99"/>
       <source>Applications</source>
-      <translation>Applications</translation>
+      <translation>Ansökningar</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="101"/>
       <source>App Extensions</source>
-      <translation>App Extensions</translation>
+      <translation>Apptillägg</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="103"/>
       <source>Shared App Groups</source>
-      <translation>Shared App Groups</translation>
+      <translation>Delade appgrupper</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="105"/>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="120"/>
       <source>Other</source>
-      <translation>Other</translation>
+      <translation>Annat</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="172"/>
       <source>Failed to load backup details.</source>
-      <translation>Failed to load backup details.</translation>
+      <translation>Det gick inte att läsa in säkerhetskopieringsinformation.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="182"/>
       <source>Failed to parse backup details.</source>
-      <translation>Failed to parse backup details.</translation>
+      <translation>Det gick inte att analysera säkerhetskopieringsinformation.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="212"/>
       <source>Back</source>
-      <translation>Back</translation>
+      <translation>Tillbaka</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="221"/>
       <source>Tip: Connect the device that created this backup to view more details.</source>
-      <translation>Tip: Connect the device that created this backup to view more details.</translation>
+      <translation>Tips: Anslut enheten som skapade denna säkerhetskopia för att se mer information.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="221"/>
       <source>For now encrypted backup details are limited. Having the device connected will not provide more information.</source>
-      <translation>For now encrypted backup details are limited. Having the device connected will not provide more information.</translation>
+      <translation>För närvarande är krypterad säkerhetskopia begränsad. Att ha enheten ansluten ger inte mer information.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="227"/>
       <source>Backup Summary</source>
-      <translation>Backup Summary</translation>
+      <translation>Sammanfattning av säkerhetskopiering</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="235"/>
       <source>Offline Device Backup</source>
-      <translation>Offline Device Backup</translation>
+      <translation>Offline säkerhetskopiering av enhet</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="251"/>
       <source>Encrypted</source>
-      <translation>Encrypted</translation>
+      <translation>Krypterad</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="251"/>
       <source>Not Encrypted</source>
-      <translation>Not Encrypted</translation>
+      <translation>Inte krypterad</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="266"/>
       <source>Screen Passcode Set</source>
-      <translation>Screen Passcode Set</translation>
+      <translation>Skärmens lösenord inställd</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="266"/>
       <source>No Screen Passcode</source>
-      <translation>No Screen Passcode</translation>
+      <translation>Inget lösenord för skärm</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="293"/>
       <source>Total Size</source>
-      <translation>Total Size</translation>
+      <translation>Total storlek</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="321"/>
       <source>Files</source>
-      <translation>Files</translation>
+      <translation>Filer</translation>
     </message>
     <message numerus="yes">
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="329"/>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="579"/>
       <source>%n file(s)</source>
       <translation>
-        <numerusform>%n file(s)</numerusform>
-        <numerusform>%n file(s)</numerusform>
+        <numerusform>%n fil(er)</numerusform>
+        <numerusform>%n fil(er)</numerusform>
       </translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="349"/>
       <source>Apps and Containers</source>
-      <translation>Apps and Containers</translation>
+      <translation>Appar och behållare</translation>
     </message>
     <message numerus="yes">
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="357"/>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="543"/>
       <source>%n item(s)</source>
       <translation>
-        <numerusform>%n item(s)</numerusform>
-        <numerusform>%n item(s)</numerusform>
+        <numerusform>%n objekt</numerusform>
+        <numerusform>%n objekt</numerusform>
       </translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="373"/>
       <source>Device Model</source>
-      <translation>Device Model</translation>
+      <translation>Enhetsmodell</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="386"/>
       <source>iOS Version</source>
-      <translation>iOS Version</translation>
+      <translation>iOS-version</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="393"/>
@@ -974,12 +974,12 @@
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="401"/>
       <source>Serial</source>
-      <translation>Serial</translation>
+      <translation>Seriell</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="414"/>
       <source>Backup Date</source>
-      <translation>Backup Date</translation>
+      <translation>Säkerhetskopieringsdatum</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="427"/>
@@ -989,7 +989,7 @@
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="434"/>
       <source>Version %1, domains %2</source>
-      <translation>Version %1, domains %2</translation>
+      <translation>Version %1, domäner %2</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="442"/>
@@ -999,14 +999,14 @@
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="458"/>
       <source>Application Containers</source>
-      <translation>Application Containers</translation>
+      <translation>Applikationsbehållare</translation>
     </message>
     <message numerus="yes">
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="494"/>
       <source>%1: %n item(s)</source>
       <translation>
-        <numerusform>%1: %n item(s)</numerusform>
-        <numerusform>%1: %n item(s)</numerusform>
+        <numerusform>%1: %n objekt(er)</numerusform>
+        <numerusform>%1: %n objekt(er)</numerusform>
       </translation>
     </message>
     <message>
@@ -1017,7 +1017,7 @@
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="573"/>
       <source>Backup folder</source>
-      <translation>Backup folder</translation>
+      <translation>Säkerhetskopieringsmapp</translation>
     </message>
   </context>
   <context>
@@ -1025,102 +1025,102 @@
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="29"/>
       <source>Change Backup Password</source>
-      <translation>Change Backup Password</translation>
+      <translation>Byt lösenord för säkerhetskopiering</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="30"/>
       <source>Enable Encrypted Backups</source>
-      <translation>Enable Encrypted Backups</translation>
+      <translation>Aktivera krypterade säkerhetskopior</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="53"/>
       <source>Enter the current backup password.</source>
-      <translation>Enter the current backup password.</translation>
+      <translation>Ange det aktuella säkerhetskopieringslösenordet.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="58"/>
       <source>Enter a new backup password.</source>
-      <translation>Enter a new backup password.</translation>
+      <translation>Ange ett nytt säkerhetskopieringslösenord.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="63"/>
       <source>The new passwords do not match.</source>
-      <translation>The new passwords do not match.</translation>
+      <translation>De nya lösenorden stämmer inte överens.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="68"/>
       <source>Confirm that you have saved the password somewhere safe.</source>
-      <translation>Confirm that you have saved the password somewhere safe.</translation>
+      <translation>Bekräfta att du har sparat lösenordet på ett säkert ställe.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="107"/>
       <source>The device&apos;s backup encryption status could not be read.</source>
-      <translation>The device&apos;s backup encryption status could not be read.</translation>
+      <translation>Enhetens krypteringsstatus för säkerhetskopiering kunde inte läsas.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="125"/>
       <source>Encrypted backups could not be enabled.</source>
-      <translation>Encrypted backups could not be enabled.</translation>
+      <translation>Krypterade säkerhetskopior kunde inte aktiveras.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="149"/>
       <source>Try Again</source>
-      <translation>Try Again</translation>
+      <translation>Försök igen</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="164"/>
       <source>Encrypted backups are enabled for %1. Enter the current password to replace it.</source>
-      <translation>Encrypted backups are enabled for %1. Enter the current password to replace it.</translation>
+      <translation>Krypterade säkerhetskopior är aktiverade för %1. Ange det aktuella lösenordet för att ersätta det.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="165"/>
       <source>Encrypted backups aren&apos;t enabled on this device. Choose a password to enable encryption on %1.</source>
-      <translation>Encrypted backups aren&apos;t enabled on this device. Choose a password to enable encryption on %1.</translation>
+      <translation>Krypterade säkerhetskopior är inte aktiverade på den här enheten. Välj ett lösenord för att aktivera kryptering på %1.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="181"/>
       <source>iDescriptor never stores this password. If you lose it, this and future encrypted backups cannot be restored. Changing or resetting the device&apos;s backup password does not unlock older backups.</source>
-      <translation>iDescriptor never stores this password. If you lose it, this and future encrypted backups cannot be restored. Changing or resetting the device&apos;s backup password does not unlock older backups.</translation>
+      <translation>iDescriptor lagrar aldrig detta lösenord. Om du tappar bort den kan denna och framtida krypterade säkerhetskopior inte återställas. Ändra eller återställa enhetens säkerhetskopieringslösenord låser inte upp äldre säkerhetskopior.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="190"/>
       <source>Enter the device passcode on the device to continue.</source>
-      <translation>Enter the device passcode on the device to continue.</translation>
+      <translation>Ange enhetens lösenord på enheten för att fortsätta.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="201"/>
       <source>Current backup password</source>
-      <translation>Current backup password</translation>
+      <translation>Aktuellt säkerhetskopieringslösenord</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="210"/>
       <source>New backup password</source>
-      <translation>New backup password</translation>
+      <translation>Nytt lösenord för säkerhetskopiering</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="219"/>
       <source>Confirm new backup password</source>
-      <translation>Confirm new backup password</translation>
+      <translation>Bekräfta det nya säkerhetskopieringslösenordet</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="227"/>
       <source>I have saved this password somewhere safe</source>
-      <translation>I have saved this password somewhere safe</translation>
+      <translation>Jag har sparat detta lösenord någonstans säkert</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="253"/>
       <source>Cancel</source>
-      <translation>Cancel</translation>
+      <translation>Avbryt</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="260"/>
       <source>Change Password</source>
-      <translation>Change Password</translation>
+      <translation>Ändra lösenord</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="261"/>
       <source>Enable Encryption</source>
-      <translation>Enable Encryption</translation>
+      <translation>Aktivera kryptering</translation>
     </message>
   </context>
   <context>
@@ -1128,43 +1128,43 @@
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="18"/>
       <source>Backups - iDescriptor</source>
-      <translation>Backups - iDescriptor</translation>
+      <translation>Säkerhetskopiering - iDescriptor</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="32"/>
       <location filename="../src/ui/tools/BackupManager.qml" line="40"/>
       <source>Unknown</source>
-      <translation>Unknown</translation>
+      <translation>Okänd</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="64"/>
       <source>The backup metadata could not be read.</source>
-      <translation>The backup metadata could not be read.</translation>
+      <translation>Säkerhetskopieringsmetadata kunde inte läsas.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="164"/>
       <source>Select Backup Directory</source>
-      <translation>Select Backup Directory</translation>
+      <translation>Välj Backup Directory</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="173"/>
       <source>Experimental Backup Feature</source>
-      <translation>Experimental Backup Feature</translation>
+      <translation>Experimentell säkerhetskopieringsfunktion</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="205"/>
       <source>Backups and restores are experimental</source>
-      <translation>Backups and restores are experimental</translation>
+      <translation>Säkerhetskopiering och återställning är experimentella</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="215"/>
       <source>Proceed with care. Unexpected device, connection, or storage problems may cause an incomplete backup, a failed restore, or data loss. Keep another trusted backup and do not rely on iDescriptor as the only copy of important data.</source>
-      <translation>Proceed with care. Unexpected device, connection, or storage problems may cause an incomplete backup, a failed restore, or data loss. Keep another trusted backup and do not rely on iDescriptor as the only copy of important data.</translation>
+      <translation>Fortsätt försiktigt. Oväntade problem med enhet, anslutning eller lagring kan orsaka ofullständig säkerhetskopiering, misslyckad återställning eller dataförlust. Behåll en annan pålitlig säkerhetskopia och lita inte på iDescriptor som den enda kopian av viktig data.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="223"/>
       <source>This notice will only be shown once. Pressing OK confirms that you understand the risks.</source>
-      <translation>This notice will only be shown once. Pressing OK confirms that you understand the risks.</translation>
+      <translation>Detta meddelande kommer endast att visas en gång. Genom att trycka på OK bekräftar du att du förstår riskerna.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="237"/>
@@ -1174,79 +1174,79 @@
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="337"/>
       <source>Backup exists</source>
-      <translation>Backup exists</translation>
+      <translation>Säkerhetskopiering finns</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="337"/>
       <source>No backup</source>
-      <translation>No backup</translation>
+      <translation>Ingen backup</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="344"/>
       <source>Restore</source>
-      <translation>Restore</translation>
+      <translation>Återställ</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="354"/>
       <source>Back Up Now</source>
-      <translation>Back Up Now</translation>
+      <translation>Säkerhetskopiera nu</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="354"/>
       <source>Update Backup</source>
-      <translation>Update Backup</translation>
+      <translation>Uppdatera säkerhetskopiering</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="368"/>
       <source>Erase</source>
-      <translation>Erase</translation>
+      <translation>Radera</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="382"/>
       <source>Details</source>
-      <translation>Details</translation>
+      <translation>Detaljer</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="399"/>
       <location filename="../src/ui/tools/BackupManager.qml" line="437"/>
       <source>Cancelling…</source>
-      <translation>Cancelling…</translation>
+      <translation>Avbryter...</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="401"/>
       <source>Restoring…</source>
-      <translation>Restoring…</translation>
+      <translation>Återställer...</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="437"/>
       <source>Cancel</source>
-      <translation>Cancel</translation>
+      <translation>Avbryt</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="500"/>
       <location filename="../src/ui/tools/BackupManager.qml" line="530"/>
       <source>Backups</source>
-      <translation>Backups</translation>
+      <translation>Säkerhetskopieringar</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="509"/>
       <source>Manage local backups for devices. You can back up, restore, and erase devices from this interface.</source>
-      <translation>Manage local backups for devices. You can back up, restore, and erase devices from this interface.</translation>
+      <translation>Hantera lokala säkerhetskopior för enheter. Du kan säkerhetskopiera, återställa och radera enheter från det här gränssnittet.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="518"/>
       <source>Backup Location</source>
-      <translation>Backup Location</translation>
+      <translation>Säkerhetskopieringsplats</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="536"/>
       <source>Refresh</source>
-      <translation>Refresh</translation>
+      <translation>Uppdatera</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="564"/>
       <source>Backups and connected devices will appear here</source>
-      <translation>Backups and connected devices will appear here</translation>
+      <translation>Säkerhetskopieringar och anslutna enheter visas här</translation>
     </message>
   </context>
   <context>
@@ -1254,12 +1254,12 @@
     <message>
       <location filename="../src/ui/BatteryIndicator.qml" line="51"/>
       <source>Charging: %1%</source>
-      <translation>Charging: %1%</translation>
+      <translation>Laddning: %1%</translation>
     </message>
     <message>
       <location filename="../src/ui/BatteryIndicator.qml" line="51"/>
       <source>Battery: %1%</source>
-      <translation>Battery: %1%</translation>
+      <translation>Batteri: %1%</translation>
     </message>
   </context>
   <context>
@@ -1277,7 +1277,7 @@
       <location filename="../src/ui/tools/BatteryInfo.qml" line="370"/>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="443"/>
       <source>Unavailable</source>
-      <translation>Unavailable</translation>
+      <translation>Ej tillgänglig</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="42"/>
@@ -1292,57 +1292,57 @@
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="58"/>
       <source>Fully Charged</source>
-      <translation>Fully Charged</translation>
+      <translation>Fulladdat</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="60"/>
       <source>Charging</source>
-      <translation>Charging</translation>
+      <translation>Laddar</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="60"/>
       <source>Not Charging</source>
-      <translation>Not Charging</translation>
+      <translation>Laddar inte</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="66"/>
       <source>The device model is unavailable, so battery information cannot be refreshed.</source>
-      <translation>The device model is unavailable, so battery information cannot be refreshed.</translation>
+      <translation>Enhetsmodellen är inte tillgänglig, så batteriinformation kan inte uppdateras.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="75"/>
       <source>Battery - iDescriptor</source>
-      <translation>Battery - iDescriptor</translation>
+      <translation>Batteri - iDescriptor</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="90"/>
       <source>The device returned incomplete battery information.</source>
-      <translation>The device returned incomplete battery information.</translation>
+      <translation>Enheten returnerade ofullständig batteriinformation.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="102"/>
       <source>Battery information could not be refreshed. Make sure the device is connected and unlocked.</source>
-      <translation>Battery information could not be refreshed. Make sure the device is connected and unlocked.</translation>
+      <translation>Batteriinformationen kunde inte uppdateras. Se till att enheten är ansluten och upplåst.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="122"/>
       <source>Battery</source>
-      <translation>Battery</translation>
+      <translation>Batteri</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="129"/>
       <source>Live power and capacity information</source>
-      <translation>Live power and capacity information</translation>
+      <translation>Live information om kraft och kapacitet</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="146"/>
       <source>Refresh battery information</source>
-      <translation>Refresh battery information</translation>
+      <translation>Uppdatera batteriinformation</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="165"/>
       <source>Battery information could not be loaded.</source>
-      <translation>Battery information could not be loaded.</translation>
+      <translation>Batteriinformation kunde inte laddas.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="243"/>
@@ -1352,32 +1352,32 @@
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="273"/>
       <source>Battery health is maximum charge capacity divided by design capacity, multiplied by 100 and capped at 100%.</source>
-      <translation>Battery health is maximum charge capacity divided by design capacity, multiplied by 100 and capped at 100%.</translation>
+      <translation>Batteriets hälsa är maximal laddningskapacitet dividerat med designkapacitet, multiplicerat med 100 och begränsat till 100 %.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="279"/>
       <source>Battery Health</source>
-      <translation>Battery Health</translation>
+      <translation>Batterihälsa</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="360"/>
       <source>Cycle Count</source>
-      <translation>Cycle Count</translation>
+      <translation>Cykelräkning</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="363"/>
       <source>Maximum Capacity</source>
-      <translation>Maximum Capacity</translation>
+      <translation>Maximal kapacitet</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="366"/>
       <source>Design Capacity</source>
-      <translation>Design Capacity</translation>
+      <translation>Designkapacitet</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="369"/>
       <source>Adapter Power</source>
-      <translation>Adapter Power</translation>
+      <translation>Adapterström</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="370"/>
@@ -1387,17 +1387,17 @@
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="372"/>
       <source>Adapter Voltage</source>
-      <translation>Adapter Voltage</translation>
+      <translation>Adapterspänning</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="375"/>
       <source>Connection</source>
-      <translation>Connection</translation>
+      <translation>Anslutning</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="432"/>
       <source>Battery Serial Number</source>
-      <translation>Battery Serial Number</translation>
+      <translation>Batteriets serienummer</translation>
     </message>
   </context>
   <context>
@@ -1405,120 +1405,120 @@
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="15"/>
       <source>Cable Information - iDescriptor</source>
-      <translation>Cable Information - iDescriptor</translation>
+      <translation>Kabelinformation - iDescriptor</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="19"/>
       <location filename="../src/ui/tools/CableInfo.qml" line="41"/>
       <source>Analyzing cable...</source>
-      <translation>Analyzing cable...</translation>
+      <translation>Analyserar kabel...</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="21"/>
       <location filename="../src/ui/tools/CableInfo.qml" line="42"/>
       <source>Please wait while we analyze the connected cable.</source>
-      <translation>Please wait while we analyze the connected cable.</translation>
+      <translation>Vänta medan vi analyserar den anslutna kabeln.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="30"/>
       <source>Error</source>
-      <translation>Error</translation>
+      <translation>Fel</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="35"/>
       <source>Something went wrong (no device ?)</source>
-      <translation>Something went wrong (no device ?)</translation>
+      <translation>Något gick fel (ingen enhet?)</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="50"/>
       <source>No cable information retrieved.</source>
-      <translation>No cable information retrieved.</translation>
+      <translation>Ingen kabelinformation hämtad.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="57"/>
       <location filename="../src/ui/tools/CableInfo.qml" line="63"/>
       <source>Failed to parse cable information.</source>
-      <translation>Failed to parse cable information.</translation>
+      <translation>Det gick inte att analysera kabelinformation.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="92"/>
       <source>Please note that this check may not be absolute guarantee of authenticity.</source>
-      <translation>Please note that this check may not be absolute guarantee of authenticity.</translation>
+      <translation>Observera att denna kontroll kanske inte är en absolut garanti för äkthet.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="94"/>
       <source>Genuine %1</source>
-      <translation>Genuine %1</translation>
+      <translation>Äkta %1</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="95"/>
       <source>USB-C to Lightning Cable</source>
-      <translation>USB-C to Lightning Cable</translation>
+      <translation>USB-C till Lightning-kabel</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="96"/>
       <source>Lightning Cable</source>
-      <translation>Lightning Cable</translation>
+      <translation>Lightning kabel</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="99"/>
       <source>Third-party Cable</source>
-      <translation>Third-party Cable</translation>
+      <translation>Tredjepartskabel</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="102"/>
       <source>The cable reports false information. It is most likely a fake cable.</source>
-      <translation>The cable reports false information. It is most likely a fake cable.</translation>
+      <translation>Kabeln rapporterar falsk information. Det är med största sannolikhet en falsk kabel.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="113"/>
       <source>Device does not seem to be connected to any cable.</source>
-      <translation>Device does not seem to be connected to any cable.</translation>
+      <translation>Enheten verkar inte vara ansluten till någon kabel.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="118"/>
       <source>Name:</source>
-      <translation>Name:</translation>
+      <translation>Namn:</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="119"/>
       <source>Manufacturer:</source>
-      <translation>Manufacturer:</translation>
+      <translation>Tillverkare:</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="120"/>
       <source>Model:</source>
-      <translation>Model:</translation>
+      <translation>Modell:</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="121"/>
       <source>Serial Number:</source>
-      <translation>Serial Number:</translation>
+      <translation>Serienummer:</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="122"/>
       <source>Interface Module:</source>
-      <translation>Interface Module:</translation>
+      <translation>Gränssnittsmodul:</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="124"/>
       <source>Cable Type:</source>
-      <translation>Cable Type:</translation>
+      <translation>Kabeltyp:</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="125"/>
       <source>USB-C to Lightning</source>
-      <translation>USB-C to Lightning</translation>
+      <translation>USB-C till Lightning</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="126"/>
       <source>Lightning to USB-A</source>
-      <translation>Lightning to USB-A</translation>
+      <translation>Blixt till USB-A</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="130"/>
       <source>Current Limit:</source>
-      <translation>Current Limit:</translation>
+      <translation>Nuvarande gräns:</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="130"/>
@@ -1528,7 +1528,7 @@
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="131"/>
       <source>Charging Voltage:</source>
-      <translation>Charging Voltage:</translation>
+      <translation>Laddningsspänning:</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="131"/>
@@ -1538,37 +1538,37 @@
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="136"/>
       <source>Connection:</source>
-      <translation>Connection:</translation>
+      <translation>Anslutning:</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="136"/>
       <source>%1 (Type %2)</source>
-      <translation>%1 (Type %2)</translation>
+      <translation>%1 (typ %2)</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="139"/>
       <source>Controller:</source>
-      <translation>Controller:</translation>
+      <translation>Styrenhet:</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="143"/>
       <source>Active Transports:</source>
-      <translation>Active Transports:</translation>
+      <translation>Aktiva transporter:</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="144"/>
       <source>Supported Transports:</source>
-      <translation>Supported Transports:</translation>
+      <translation>Transporter som stöds:</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="186"/>
       <source>Re-analyze</source>
-      <translation>Re-analyze</translation>
+      <translation>Analysera om</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="199"/>
       <source>Cable Information</source>
-      <translation>Cable Information</translation>
+      <translation>Kabelinformation</translation>
     </message>
   </context>
   <context>
@@ -1576,47 +1576,47 @@
     <message>
       <location filename="../src/ui/ClosingHandler.qml" line="128"/>
       <source>Backup Operations Are Running</source>
-      <translation>Backup Operations Are Running</translation>
+      <translation>Säkerhetskopiering körs</translation>
     </message>
     <message>
       <location filename="../src/ui/ClosingHandler.qml" line="129"/>
       <source>File Transfers Are Running</source>
-      <translation>File Transfers Are Running</translation>
+      <translation>Filöverföringar körs</translation>
     </message>
     <message>
       <location filename="../src/ui/ClosingHandler.qml" line="141"/>
       <source>A backup or restore is still in progress. Quitting now will cancel it. Do you want to cancel the active backup tasks and quit?</source>
-      <translation>A backup or restore is still in progress. Quitting now will cancel it. Do you want to cancel the active backup tasks and quit?</translation>
+      <translation>En säkerhetskopiering eller återställning pågår fortfarande. Om du avslutar nu avbryts det. Vill du avbryta de aktiva säkerhetskopieringsuppgifterna och avsluta?</translation>
     </message>
     <message>
       <location filename="../src/ui/ClosingHandler.qml" line="142"/>
       <source>A backup or restore is still in progress. Closing this window will cancel it. Do you want to cancel the active backup tasks and close?</source>
-      <translation>A backup or restore is still in progress. Closing this window will cancel it. Do you want to cancel the active backup tasks and close?</translation>
+      <translation>En säkerhetskopiering eller återställning pågår fortfarande. Om du stänger det här fönstret avbryts det. Vill du avbryta de aktiva säkerhetskopieringsuppgifterna och stänga?</translation>
     </message>
     <message>
       <location filename="../src/ui/ClosingHandler.qml" line="146"/>
       <source>One or more file transfers are still in progress. Quitting now will cancel them. Do you want to cancel the active transfers and quit?</source>
-      <translation>One or more file transfers are still in progress. Quitting now will cancel them. Do you want to cancel the active transfers and quit?</translation>
+      <translation>En eller flera filöverföringar pågår fortfarande. Om du slutar nu avbryts dem. Vill du avbryta de aktiva överföringarna och avsluta?</translation>
     </message>
     <message>
       <location filename="../src/ui/ClosingHandler.qml" line="147"/>
       <source>One or more file transfers are still in progress. Closing this window will cancel them. Do you want to cancel the active transfers and close?</source>
-      <translation>One or more file transfers are still in progress. Closing this window will cancel them. Do you want to cancel the active transfers and close?</translation>
+      <translation>En eller flera filöverföringar pågår fortfarande. Om du stänger det här fönstret avbryts dem. Vill du avbryta de aktiva överföringarna och stänga?</translation>
     </message>
     <message>
       <location filename="../src/ui/ClosingHandler.qml" line="167"/>
       <source>Keep Working</source>
-      <translation>Keep Working</translation>
+      <translation>Fortsätt arbeta</translation>
     </message>
     <message>
       <location filename="../src/ui/ClosingHandler.qml" line="173"/>
       <source>Cancel Tasks and Quit</source>
-      <translation>Cancel Tasks and Quit</translation>
+      <translation>Avbryt uppgifter och avsluta</translation>
     </message>
     <message>
       <location filename="../src/ui/ClosingHandler.qml" line="174"/>
       <source>Cancel Tasks and Close</source>
-      <translation>Cancel Tasks and Close</translation>
+      <translation>Avbryt uppgifter och stäng</translation>
     </message>
   </context>
   <context>
@@ -1629,12 +1629,12 @@
     <message>
       <location filename="../src/ui/Community.qml" line="20"/>
       <source>View the source code, report issues, and contribute to iDescriptor.</source>
-      <translation>View the source code, report issues, and contribute to iDescriptor.</translation>
+      <translation>Visa källkoden, rapportera problem och bidra till iDescriptor.</translation>
     </message>
     <message>
       <location filename="../src/ui/Community.qml" line="21"/>
       <source>Open GitHub</source>
-      <translation>Open GitHub</translation>
+      <translation>Öppna GitHub</translation>
     </message>
     <message>
       <location filename="../src/ui/Community.qml" line="28"/>
@@ -1644,12 +1644,12 @@
     <message>
       <location filename="../src/ui/Community.qml" line="29"/>
       <source>Follow iDescriptor project updates on LinkedIn.</source>
-      <translation>Follow iDescriptor project updates on LinkedIn.</translation>
+      <translation>Följ iDescriptor-projektuppdateringar på LinkedIn.</translation>
     </message>
     <message>
       <location filename="../src/ui/Community.qml" line="30"/>
       <source>Open LinkedIn</source>
-      <translation>Open LinkedIn</translation>
+      <translation>Öppna LinkedIn</translation>
     </message>
     <message>
       <location filename="../src/ui/Community.qml" line="37"/>
@@ -1659,22 +1659,22 @@
     <message>
       <location filename="../src/ui/Community.qml" line="38"/>
       <source>Join discussions with the iDescriptor community on Reddit.</source>
-      <translation>Join discussions with the iDescriptor community on Reddit.</translation>
+      <translation>Gå med i diskussioner med iDescriptor-communityt på Reddit.</translation>
     </message>
     <message>
       <location filename="../src/ui/Community.qml" line="39"/>
       <source>Open Reddit</source>
-      <translation>Open Reddit</translation>
+      <translation>Öppna Reddit</translation>
     </message>
     <message>
       <location filename="../src/ui/Community.qml" line="63"/>
       <source>Join the iDescriptor Community</source>
-      <translation>Join the iDescriptor Community</translation>
+      <translation>Gå med i iDescriptor Community</translation>
     </message>
     <message>
       <location filename="../src/ui/Community.qml" line="73"/>
       <source>Follow development, connect with other users, and share feedback.</source>
-      <translation>Follow development, connect with other users, and share feedback.</translation>
+      <translation>Följ utvecklingen, ta kontakt med andra användare och dela feedback.</translation>
     </message>
   </context>
   <context>
@@ -1682,12 +1682,12 @@
     <message>
       <location filename="../src/ui/base/CopyableText.qml" line="20"/>
       <source>Unknown</source>
-      <translation>Unknown</translation>
+      <translation>Okänd</translation>
     </message>
     <message>
       <location filename="../src/ui/base/CopyableText.qml" line="43"/>
       <source>Copied!</source>
-      <translation>Copied!</translation>
+      <translation>Kopierade!</translation>
     </message>
   </context>
   <context>
@@ -1695,42 +1695,42 @@
     <message>
       <location filename="../src/ui/CustomPairingDialog.qml" line="35"/>
       <source>Choose pairing file</source>
-      <translation>Choose pairing file</translation>
+      <translation>Välj parningsfil</translation>
     </message>
     <message>
       <location filename="../src/ui/CustomPairingDialog.qml" line="37"/>
       <source>Property List files (*.plist)</source>
-      <translation>Property List files (*.plist)</translation>
+      <translation>Egenskapslistfiler (*.plist)</translation>
     </message>
     <message>
       <location filename="../src/ui/CustomPairingDialog.qml" line="76"/>
       <source>Connect with pairing file</source>
-      <translation>Connect with pairing file</translation>
+      <translation>Anslut med parningsfil</translation>
     </message>
     <message>
       <location filename="../src/ui/CustomPairingDialog.qml" line="84"/>
       <source>Select a .plist pairing file and enter the device IP address.</source>
-      <translation>Select a .plist pairing file and enter the device IP address.</translation>
+      <translation>Välj en .plist-parningsfil och ange enhetens IP-adress.</translation>
     </message>
     <message>
       <location filename="../src/ui/CustomPairingDialog.qml" line="115"/>
       <source>Pairing file</source>
-      <translation>Pairing file</translation>
+      <translation>Kopplingsfil</translation>
     </message>
     <message>
       <location filename="../src/ui/CustomPairingDialog.qml" line="136"/>
       <source>Choose a .plist file</source>
-      <translation>Choose a .plist file</translation>
+      <translation>Välj en .plist-fil</translation>
     </message>
     <message>
       <location filename="../src/ui/CustomPairingDialog.qml" line="144"/>
       <source>Choose</source>
-      <translation>Choose</translation>
+      <translation>Välj</translation>
     </message>
     <message>
       <location filename="../src/ui/CustomPairingDialog.qml" line="164"/>
       <source>IP address</source>
-      <translation>IP address</translation>
+      <translation>IP-adress</translation>
     </message>
     <message>
       <location filename="../src/ui/CustomPairingDialog.qml" line="174"/>
@@ -1740,17 +1740,17 @@
     <message>
       <location filename="../src/ui/CustomPairingDialog.qml" line="202"/>
       <source>Cancel</source>
-      <translation>Cancel</translation>
+      <translation>Avbryt</translation>
     </message>
     <message>
       <location filename="../src/ui/CustomPairingDialog.qml" line="214"/>
       <source>Connecting...</source>
-      <translation>Connecting...</translation>
+      <translation>Ansluter...</translation>
     </message>
     <message>
       <location filename="../src/ui/CustomPairingDialog.qml" line="214"/>
       <source>Connect</source>
-      <translation>Connect</translation>
+      <translation>Anslut</translation>
     </message>
   </context>
   <context>
@@ -1758,37 +1758,37 @@
     <message>
       <location filename="../src/ui/DeleteConfirmationDialog.qml" line="23"/>
       <source>Confirm Deletion</source>
-      <translation>Confirm Deletion</translation>
+      <translation>Bekräfta borttagning</translation>
     </message>
     <message>
       <location filename="../src/ui/DeleteConfirmationDialog.qml" line="35"/>
       <source>Permanently delete %1 file(s) and %2 folder(s)? All contents inside the selected folders will also be deleted.</source>
-      <translation>Permanently delete %1 file(s) and %2 folder(s)? All contents inside the selected folders will also be deleted.</translation>
+      <translation>Vill du ta bort %1 fil(er) och %2 mapp(ar) permanent? Allt innehåll i de valda mapparna kommer också att raderas.</translation>
     </message>
     <message>
       <location filename="../src/ui/DeleteConfirmationDialog.qml" line="37"/>
       <source>Permanently delete %1 file(s)?</source>
-      <translation>Permanently delete %1 file(s)?</translation>
+      <translation>Vill du ta bort %1 fil(er) permanent?</translation>
     </message>
     <message>
       <location filename="../src/ui/DeleteConfirmationDialog.qml" line="48"/>
       <source>I understand.</source>
-      <translation>I understand.</translation>
+      <translation>Jag förstår.</translation>
     </message>
     <message>
       <location filename="../src/ui/DeleteConfirmationDialog.qml" line="53"/>
       <source>This action cannot be undone.</source>
-      <translation>This action cannot be undone.</translation>
+      <translation>Denna åtgärd kan inte ångras.</translation>
     </message>
     <message>
       <location filename="../src/ui/DeleteConfirmationDialog.qml" line="66"/>
       <source>Cancel</source>
-      <translation>Cancel</translation>
+      <translation>Avbryt</translation>
     </message>
     <message>
       <location filename="../src/ui/DeleteConfirmationDialog.qml" line="71"/>
       <source>Delete</source>
-      <translation>Delete</translation>
+      <translation>Ta bort</translation>
     </message>
   </context>
   <context>
@@ -1796,198 +1796,198 @@
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="14"/>
       <source>Developer Disk Images - iDescriptor</source>
-      <translation>Developer Disk Images - iDescriptor</translation>
+      <translation>Utvecklardiskbilder - iDescriptor</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="90"/>
       <source>Mounted</source>
-      <translation>Mounted</translation>
+      <translation>Monterad</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="92"/>
       <source>Maybe compatible</source>
-      <translation>Maybe compatible</translation>
+      <translation>Kanske kompatibel</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="94"/>
       <source>Not compatible</source>
-      <translation>Not compatible</translation>
+      <translation>Inte kompatibel</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="95"/>
       <source>Available</source>
-      <translation>Available</translation>
+      <translation>Tillgänglig</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="115"/>
       <source>Developer disk image %1 was downloaded successfully.</source>
-      <translation>Developer disk image %1 was downloaded successfully.</translation>
+      <translation>Utvecklardiskavbildning %1 har laddats ned.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="117"/>
       <source>Unknown download error.</source>
-      <translation>Unknown download error.</translation>
+      <translation>Okänt nedladdningsfel.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="118"/>
       <source>Could not download developer disk image %1: %2</source>
-      <translation>Could not download developer disk image %1: %2</translation>
+      <translation>Det gick inte att ladda ned utvecklardiskbilden %1: %2</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="124"/>
       <source>Download for developer disk image %1 was cancelled.</source>
-      <translation>Download for developer disk image %1 was cancelled.</translation>
+      <translation>Nedladdning för utvecklardiskbild %1 avbröts.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="132"/>
       <source>Unknown refresh error.</source>
-      <translation>Unknown refresh error.</translation>
+      <translation>Okänt uppdateringsfel.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="133"/>
       <source>Could not refresh the developer disk image list: %1</source>
-      <translation>Could not refresh the developer disk image list: %1</translation>
+      <translation>Det gick inte att uppdatera utvecklardiskavbildningslistan: %1</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="135"/>
       <source>The developer disk image list was refreshed.</source>
-      <translation>The developer disk image list was refreshed.</translation>
+      <translation>Utvecklarens diskavbildningslista har uppdaterats.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="145"/>
       <source>Unknown device error.</source>
-      <translation>Unknown device error.</translation>
+      <translation>Okänt enhetsfel.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="146"/>
       <source>Could not check the mounted developer disk image: %1</source>
-      <translation>Could not check the mounted developer disk image: %1</translation>
+      <translation>Kunde inte kontrollera den monterade utvecklardiskavbildningen: %1</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="148"/>
       <source>The device is locked. Unlock it and check again.</source>
-      <translation>The device is locked. Unlock it and check again.</translation>
+      <translation>Enheten är låst. Lås upp den och kolla igen.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="150"/>
       <source>A developer disk image is mounted on the selected device.</source>
-      <translation>A developer disk image is mounted on the selected device.</translation>
+      <translation>En utvecklardiskavbildning är monterad på den valda enheten.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="152"/>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="450"/>
       <source>No developer disk image is mounted on the selected device.</source>
-      <translation>No developer disk image is mounted on the selected device.</translation>
+      <translation>Ingen utvecklardiskavbildning är monterad på den valda enheten.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="207"/>
       <source>Developer Disk Images</source>
-      <translation>Developer Disk Images</translation>
+      <translation>Diskbilder för utvecklare</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="218"/>
       <source>Developer images allow you to use additional services on your iDevice. To mount one, the device must be unlocked.</source>
-      <translation>Developer images allow you to use additional services on your iDevice. To mount one, the device must be unlocked.</translation>
+      <translation>Utvecklarbilder låter dig använda ytterligare tjänster på din iDevice. För att montera en sådan måste enheten vara upplåst.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="234"/>
       <source>Mount</source>
-      <translation>Mount</translation>
+      <translation>Montera</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="266"/>
       <source>Select a developer disk image first.</source>
-      <translation>Select a developer disk image first.</translation>
+      <translation>Välj först en utvecklardiskavbildning.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="275"/>
       <source>The required files for developer disk image %1 are missing.</source>
-      <translation>The required files for developer disk image %1 are missing.</translation>
+      <translation>De nödvändiga filerna för utvecklardiskbilden %1 saknas.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="282"/>
       <source>The paths for developer disk image %1 are invalid.</source>
-      <translation>The paths for developer disk image %1 are invalid.</translation>
+      <translation>Sökvägarna för utvecklardiskbilden %1 är ogiltiga.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="288"/>
       <source>The selected device is no longer available.</source>
-      <translation>The selected device is no longer available.</translation>
+      <translation>Den valda enheten är inte längre tillgänglig.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="296"/>
       <source>Developer disk image %1 was mounted successfully.</source>
-      <translation>Developer disk image %1 was mounted successfully.</translation>
+      <translation>Utvecklardiskbilden %1 har monterats.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="300"/>
       <source>Could not mount developer disk image %1 because the device is locked.</source>
-      <translation>Could not mount developer disk image %1 because the device is locked.</translation>
+      <translation>Det gick inte att montera utvecklardiskbilden %1 eftersom enheten är låst.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="302"/>
       <source>Could not mount developer disk image %1.</source>
-      <translation>Could not mount developer disk image %1.</translation>
+      <translation>Det gick inte att montera utvecklardiskbilden %1.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="313"/>
       <source>Check Mounted</source>
-      <translation>Check Mounted</translation>
+      <translation>Kontrollera monterad</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="343"/>
       <source>Refresh</source>
-      <translation>Refresh</translation>
+      <translation>Uppdatera</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="384"/>
       <source>No device connected</source>
-      <translation>No device connected</translation>
+      <translation>Ingen enhet ansluten</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="432"/>
       <source>No device connected. Please connect a device to check for developer disk images.</source>
-      <translation>No device connected. Please connect a device to check for developer disk images.</translation>
+      <translation>Ingen enhet ansluten. Anslut en enhet för att söka efter utvecklardiskbilder.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="445"/>
       <source>Use Check Mounted to inspect the selected device.</source>
-      <translation>Use Check Mounted to inspect the selected device.</translation>
+      <translation>Använd Check Monterad för att inspektera den valda enheten.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="447"/>
       <source>The selected device is locked.</source>
-      <translation>The selected device is locked.</translation>
+      <translation>Den valda enheten är låst.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="449"/>
       <source>Selected device already has a developer disk image mounted.</source>
-      <translation>Selected device already has a developer disk image mounted.</translation>
+      <translation>Den valda enheten har redan en utvecklardiskavbildning monterad.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="605"/>
       <source>Cancel</source>
-      <translation>Cancel</translation>
+      <translation>Avbryt</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="605"/>
       <source>Re-download</source>
-      <translation>Re-download</translation>
+      <translation>Ladda ner igen</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="605"/>
       <source>Download</source>
-      <translation>Download</translation>
+      <translation>Ladda ner</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="636"/>
       <source>Could not cancel the download for developer disk image %1.</source>
-      <translation>Could not cancel the download for developer disk image %1.</translation>
+      <translation>Det gick inte att avbryta nedladdningen för utvecklardiskavbildningen %1.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="642"/>
       <source>Could not start the download for developer disk image %1.</source>
-      <translation>Could not start the download for developer disk image %1.</translation>
+      <translation>Det gick inte att starta nedladdningen för utvecklardiskavbildningen %1.</translation>
     </message>
   </context>
   <context>
@@ -1996,106 +1996,106 @@
       <location filename="../src/ui/DevModeHelper.qml" line="28"/>
       <location filename="../src/ui/DevModeHelper.qml" line="55"/>
       <source>Please wait...</source>
-      <translation>Please wait...</translation>
+      <translation>Vänligen vänta...</translation>
     </message>
     <message>
       <location filename="../src/ui/DevModeHelper.qml" line="74"/>
       <source>Checking Developer Mode...</source>
-      <translation>Checking Developer Mode...</translation>
+      <translation>Kontrollerar utvecklarläge...</translation>
     </message>
     <message>
       <location filename="../src/ui/DevModeHelper.qml" line="97"/>
       <source>Could not reveal Developer Mode automatically. You can still follow the steps below or try anyway.</source>
-      <translation>Could not reveal Developer Mode automatically. You can still follow the steps below or try anyway.</translation>
+      <translation>Det gick inte att avslöja utvecklarläget automatiskt. Du kan fortfarande följa stegen nedan eller prova ändå.</translation>
     </message>
     <message>
       <location filename="../src/ui/DevModeHelper.qml" line="107"/>
       <source>Developer disk image is not available for this iOS version. Please use a device with iOS 6 or above.</source>
-      <translation>Developer disk image is not available for this iOS version. Please use a device with iOS 6 or above.</translation>
+      <translation>Utvecklardiskavbildning är inte tillgänglig för denna iOS-version. Använd en enhet med iOS 6 eller senare.</translation>
     </message>
     <message>
       <location filename="../src/ui/DevModeHelper.qml" line="117"/>
       <source>The device appears to be locked. Please unlock the device and try again.</source>
-      <translation>The device appears to be locked. Please unlock the device and try again.</translation>
+      <translation>Enheten verkar vara låst. Lås upp enheten och försök igen.</translation>
     </message>
     <message>
       <location filename="../src/ui/DevModeHelper.qml" line="121"/>
       <source>Failed to retrieve mounted developer disk image info.</source>
-      <translation>Failed to retrieve mounted developer disk image info.</translation>
+      <translation>Det gick inte att hämta information om monterad utvecklardiskavbildning.</translation>
     </message>
     <message>
       <location filename="../src/ui/DevModeHelper.qml" line="143"/>
       <source>There is no compatible developer disk image available for this iOS version.</source>
-      <translation>There is no compatible developer disk image available for this iOS version.</translation>
+      <translation>Det finns ingen kompatibel utvecklardiskavbildning tillgänglig för denna iOS-version.</translation>
     </message>
     <message>
       <location filename="../src/ui/DevModeHelper.qml" line="152"/>
       <source>Downloading compatible developer disk image...</source>
-      <translation>Downloading compatible developer disk image...</translation>
+      <translation>Laddar ned kompatibel utvecklardiskavbildning...</translation>
     </message>
     <message>
       <location filename="../src/ui/DevModeHelper.qml" line="163"/>
       <source>Failed to download compatible developer disk image.</source>
-      <translation>Failed to download compatible developer disk image.</translation>
+      <translation>Det gick inte att ladda ner kompatibel utvecklardiskavbildning.</translation>
     </message>
     <message>
       <location filename="../src/ui/DevModeHelper.qml" line="171"/>
       <source>Failed to start developer disk image download.</source>
-      <translation>Failed to start developer disk image download.</translation>
+      <translation>Det gick inte att starta nedladdning av utvecklardiskavbildning.</translation>
     </message>
     <message>
       <location filename="../src/ui/DevModeHelper.qml" line="177"/>
       <source>Mounting...</source>
-      <translation>Mounting...</translation>
+      <translation>Montering...</translation>
     </message>
     <message>
       <location filename="../src/ui/DevModeHelper.qml" line="181"/>
       <source>The developer disk image is missing. Please download it first.</source>
-      <translation>The developer disk image is missing. Please download it first.</translation>
+      <translation>Utvecklarens diskavbildning saknas. Ladda ner den först.</translation>
     </message>
     <message>
       <location filename="../src/ui/DevModeHelper.qml" line="188"/>
       <source>Failed to mount developer disk image.
 The device appears to be locked. Please unlock the device and try again.</source>
-      <translation>Failed to mount developer disk image.
-The device appears to be locked. Please unlock the device and try again.</translation>
+      <translation>Det gick inte att montera utvecklardiskavbildningen.
+Enheten verkar vara låst. Lås upp enheten och försök igen.</translation>
     </message>
     <message>
       <location filename="../src/ui/DevModeHelper.qml" line="192"/>
       <source>Failed to mount developer disk image.
 Please ensure the device is unlocked and using a genuine cable.</source>
-      <translation>Failed to mount developer disk image.
-Please ensure the device is unlocked and using a genuine cable.</translation>
+      <translation>Det gick inte att montera utvecklardiskavbildningen.
+Se till att enheten är upplåst och använder en äkta kabel.</translation>
     </message>
     <message>
       <location filename="../src/ui/DevModeHelper.qml" line="209"/>
       <source>Developer Mode handled.</source>
-      <translation>Developer Mode handled.</translation>
+      <translation>Utvecklarläge hanteras.</translation>
     </message>
     <message>
       <location filename="../src/ui/DevModeHelper.qml" line="209"/>
       <source>Developer disk image mounted.</source>
-      <translation>Developer disk image mounted.</translation>
+      <translation>Utvecklardiskavbildning monterad.</translation>
     </message>
     <message>
       <location filename="../src/ui/DevModeHelper.qml" line="249"/>
       <source>Failed to prepare Developer Mode.</source>
-      <translation>Failed to prepare Developer Mode.</translation>
+      <translation>Det gick inte att förbereda utvecklarläget.</translation>
     </message>
     <message>
       <location filename="../src/ui/DevModeHelper.qml" line="286"/>
       <source>Enable Developer Mode</source>
-      <translation>Enable Developer Mode</translation>
+      <translation>Aktivera utvecklarläge</translation>
     </message>
     <message>
       <location filename="../src/ui/DevModeHelper.qml" line="295"/>
       <source>Developer Mode is required before this feature can continue. Enable it in the Settings app on your device, then retry the action.</source>
-      <translation>Developer Mode is required before this feature can continue. Enable it in the Settings app on your device, then retry the action.</translation>
+      <translation>Utvecklarläge krävs innan den här funktionen kan fortsätta. Aktivera det i appen Inställningar på din enhet och försök sedan igen.</translation>
     </message>
     <message>
       <location filename="../src/ui/DevModeHelper.qml" line="333"/>
       <source>Try Anyway</source>
-      <translation>Try Anyway</translation>
+      <translation>Försök i alla fall</translation>
     </message>
   </context>
   <context>
@@ -2103,32 +2103,32 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/DeviceContext.qml" line="238"/>
       <source>this device</source>
-      <translation>this device</translation>
+      <translation>denna enhet</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceContext.qml" line="252"/>
       <source>Wi-Fi Connections Enabled</source>
-      <translation>Wi-Fi Connections Enabled</translation>
+      <translation>Wi-Fi-anslutningar aktiverade</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceContext.qml" line="253"/>
       <source>Wi-Fi connections are now enabled for %1. You can disconnect the cable and use this device wirelessly.</source>
-      <translation>Wi-Fi connections are now enabled for %1. You can disconnect the cable and use this device wirelessly.</translation>
+      <translation>Wi-Fi-anslutningar är nu aktiverade för %1. Du kan koppla bort kabeln och använda den här enheten trådlöst.</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceContext.qml" line="258"/>
       <source>Unable to Enable Wi-Fi Connections</source>
-      <translation>Unable to Enable Wi-Fi Connections</translation>
+      <translation>Det går inte att aktivera Wi-Fi-anslutningar</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceContext.qml" line="259"/>
       <source>Wi-Fi connections could not be enabled for %1. Keep the device connected, unlocked, and trusted, then try again.</source>
-      <translation>Wi-Fi connections could not be enabled for %1. Keep the device connected, unlocked, and trusted, then try again.</translation>
+      <translation>Wi-Fi-anslutningar kunde inte aktiveras för %1. Håll enheten ansluten, olåst och betrodd och försök sedan igen.</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceContext.qml" line="498"/>
       <source>Pairing…</source>
-      <translation>Pairing…</translation>
+      <translation>Kopplar...</translation>
     </message>
   </context>
   <context>
@@ -2141,58 +2141,58 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/DeviceGallery.qml" line="161"/>
       <source>Exporting %1</source>
-      <translation>Exporting %1</translation>
+      <translation>Exporterar %1</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceGallery.qml" line="263"/>
       <source>Import</source>
-      <translation>Import</translation>
+      <translation>Importera</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceGallery.qml" line="271"/>
       <source>Refreshing gallery</source>
-      <translation>Refreshing gallery</translation>
+      <translation>Uppfriskande galleri</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceGallery.qml" line="272"/>
       <source>Refresh</source>
-      <translation>Refresh</translation>
+      <translation>Uppdatera</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceGallery.qml" line="279"/>
       <source>Export Selected</source>
-      <translation>Export Selected</translation>
+      <translation>Exportera vald</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceGallery.qml" line="285"/>
       <location filename="../src/ui/DeviceGallery.qml" line="293"/>
       <source>Export All</source>
-      <translation>Export All</translation>
+      <translation>Exportera alla</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceGallery.qml" line="294"/>
       <source>Are you sure you want to export all %1 items from %2 albums?</source>
-      <translation>Are you sure you want to export all %1 items from %2 albums?</translation>
+      <translation>Är du säker på att du vill exportera alla %1 objekt från %2 album?</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceGallery.qml" line="309"/>
       <source>Albums</source>
-      <translation>Albums</translation>
+      <translation>Album</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceGallery.qml" line="444"/>
       <source>Choose Export Folder</source>
-      <translation>Choose Export Folder</translation>
+      <translation>Välj Exportera mapp</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceGallery.qml" line="450"/>
       <source>Album unavailable</source>
-      <translation>Album unavailable</translation>
+      <translation>Albumet är inte tillgängligt</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceGallery.qml" line="451"/>
       <source>This album is no longer available on the device.</source>
-      <translation>This album is no longer available on the device.</translation>
+      <translation>Det här albumet är inte längre tillgängligt på enheten.</translation>
     </message>
   </context>
   <context>
@@ -2201,32 +2201,32 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
       <location filename="../src/ui/DeviceInfo.qml" line="131"/>
       <location filename="../src/ui/DeviceInfo.qml" line="179"/>
       <source>Unknown Device</source>
-      <translation>Unknown Device</translation>
+      <translation>Okänd enhet</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="142"/>
       <source>Shut down device</source>
-      <translation>Shut down device</translation>
+      <translation>Stäng av enheten</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="150"/>
       <source>Restart device</source>
-      <translation>Restart device</translation>
+      <translation>Starta om enheten</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="158"/>
       <source>Enter recovery mode</source>
-      <translation>Enter recovery mode</translation>
+      <translation>Gå in i återställningsläge</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="239"/>
       <source>Wireless</source>
-      <translation>Wireless</translation>
+      <translation>Trådlös</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="264"/>
       <source>iOS Version:</source>
-      <translation>iOS Version:</translation>
+      <translation>iOS-version:</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="265"/>
@@ -2245,17 +2245,17 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
       <location filename="../src/ui/DeviceInfo.qml" line="334"/>
       <location filename="../src/ui/DeviceInfo.qml" line="352"/>
       <source>Unknown</source>
-      <translation>Unknown</translation>
+      <translation>Okänd</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="266"/>
       <source>Hardware Model:</source>
-      <translation>Hardware Model:</translation>
+      <translation>Hårdvarumodell:</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="270"/>
       <source>Device Name:</source>
-      <translation>Device Name:</translation>
+      <translation>Enhetens namn:</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="272"/>
@@ -2265,72 +2265,72 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="276"/>
       <source>Activation State:</source>
-      <translation>Activation State:</translation>
+      <translation>Aktiveringstillstånd:</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="283"/>
       <source>Hardware Platform:</source>
-      <translation>Hardware Platform:</translation>
+      <translation>Hårdvaruplattform:</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="287"/>
       <source>Device Class:</source>
-      <translation>Device Class:</translation>
+      <translation>Enhetsklass:</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="289"/>
       <source>Firmware Version:</source>
-      <translation>Firmware Version:</translation>
+      <translation>Firmwareversion:</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="293"/>
       <source>Jailbroken:</source>
-      <translation>Jailbroken:</translation>
+      <translation>Jailbreakad:</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="294"/>
       <source>Yes</source>
-      <translation>Yes</translation>
+      <translation>Ja</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="294"/>
       <source>No</source>
-      <translation>No</translation>
+      <translation>Nej</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="295"/>
       <source>Battery Health:</source>
-      <translation>Battery Health:</translation>
+      <translation>Batterihälsa:</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="306"/>
       <source>More</source>
-      <translation>More</translation>
+      <translation>Mer</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="319"/>
       <source>Model Number:</source>
-      <translation>Model Number:</translation>
+      <translation>Modellnummer:</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="321"/>
       <source>Production Device:</source>
-      <translation>Production Device:</translation>
+      <translation>Produktionsenhet:</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="325"/>
       <source>CPU Architecture:</source>
-      <translation>CPU Architecture:</translation>
+      <translation>CPU-arkitektur:</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="327"/>
       <source>Serial Number:</source>
-      <translation>Serial Number:</translation>
+      <translation>Serienummer:</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="331"/>
       <source>Build Version:</source>
-      <translation>Build Version:</translation>
+      <translation>Byggversion:</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="333"/>
@@ -2353,17 +2353,17 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/DeviceSectionTabs.qml" line="29"/>
       <source>Apps</source>
-      <translation>Apps</translation>
+      <translation>Appar</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceSectionTabs.qml" line="34"/>
       <source>Gallery</source>
-      <translation>Gallery</translation>
+      <translation>Galleri</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceSectionTabs.qml" line="39"/>
       <source>Files</source>
-      <translation>Files</translation>
+      <translation>Filer</translation>
     </message>
   </context>
   <context>
@@ -2371,37 +2371,37 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/DeviceSidebarButton.qml" line="21"/>
       <source>Unknown device</source>
-      <translation>Unknown device</translation>
+      <translation>Okänd enhet</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceSidebarButton.qml" line="34"/>
       <source>Restart</source>
-      <translation>Restart</translation>
+      <translation>Starta om</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceSidebarButton.qml" line="40"/>
       <source>Shut Down</source>
-      <translation>Shut Down</translation>
+      <translation>Stäng av</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceSidebarButton.qml" line="46"/>
       <source>Recovery Mode</source>
-      <translation>Recovery Mode</translation>
+      <translation>Återställningsläge</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceSidebarButton.qml" line="54"/>
       <source>Unpair</source>
-      <translation>Unpair</translation>
+      <translation>Ta bort paret</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceSidebarButton.qml" line="60"/>
       <source>Unpair and Remove</source>
-      <translation>Unpair and Remove</translation>
+      <translation>Koppla bort och ta bort</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceSidebarButton.qml" line="68"/>
       <source>Remove</source>
-      <translation>Remove</translation>
+      <translation>Ta bort</translation>
     </message>
   </context>
   <context>
@@ -2409,7 +2409,7 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/DeviceTab.qml" line="17"/>
       <source>Connected devices will appear here</source>
-      <translation>Connected devices will appear here</translation>
+      <translation>Anslutna enheter visas här</translation>
     </message>
   </context>
   <context>
@@ -2417,69 +2417,69 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/Diagnose.qml" line="30"/>
       <source>Installed</source>
-      <translation>Installed</translation>
+      <translation>Installerad</translation>
     </message>
     <message>
       <location filename="../src/ui/Diagnose.qml" line="32"/>
       <source>Installed, not running</source>
-      <translation>Installed, not running</translation>
+      <translation>Installerad, körs inte</translation>
     </message>
     <message>
       <location filename="../src/ui/Diagnose.qml" line="34"/>
       <source>Missing</source>
-      <translation>Missing</translation>
+      <translation>Saknas</translation>
     </message>
     <message>
       <location filename="../src/ui/Diagnose.qml" line="35"/>
       <source>Unable to check</source>
-      <translation>Unable to check</translation>
+      <translation>Kan inte kontrollera</translation>
     </message>
     <message>
       <location filename="../src/ui/Diagnose.qml" line="40"/>
       <location filename="../src/ui/Diagnose.qml" line="42"/>
       <source>View Instructions</source>
-      <translation>View Instructions</translation>
+      <translation>Visa instruktioner</translation>
     </message>
     <message>
       <location filename="../src/ui/Diagnose.qml" line="44"/>
       <source>Start</source>
-      <translation>Start</translation>
+      <translation>Starta</translation>
     </message>
     <message>
       <location filename="../src/ui/Diagnose.qml" line="45"/>
       <source>Install</source>
-      <translation>Install</translation>
+      <translation>Installera</translation>
     </message>
     <message>
       <location filename="../src/ui/Diagnose.qml" line="83"/>
       <location filename="../src/ui/Diagnose.qml" line="120"/>
       <source>Dependency Check</source>
-      <translation>Dependency Check</translation>
+      <translation>Beroendekontroll</translation>
     </message>
     <message>
       <location filename="../src/ui/Diagnose.qml" line="103"/>
       <source>Diagnostics</source>
-      <translation>Diagnostics</translation>
+      <translation>Diagnostik</translation>
     </message>
     <message>
       <location filename="../src/ui/Diagnose.qml" line="115"/>
       <source>Unable to check system dependencies.</source>
-      <translation>Unable to check system dependencies.</translation>
+      <translation>Det går inte att kontrollera systemberoenden.</translation>
     </message>
     <message>
       <location filename="../src/ui/Diagnose.qml" line="132"/>
       <source>Checking system dependencies...</source>
-      <translation>Checking system dependencies...</translation>
+      <translation>Kontrollerar systemberoenden...</translation>
     </message>
     <message>
       <location filename="../src/ui/Diagnose.qml" line="139"/>
       <source>Refresh</source>
-      <translation>Refresh</translation>
+      <translation>Uppdatera</translation>
     </message>
     <message>
       <location filename="../src/ui/Diagnose.qml" line="186"/>
       <source>Optional</source>
-      <translation>Optional</translation>
+      <translation>Valfritt</translation>
     </message>
   </context>
   <context>
@@ -2487,17 +2487,17 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/DiskUsage.qml" line="83"/>
       <source>Failed to retrieve disk usage data.</source>
-      <translation>Failed to retrieve disk usage data.</translation>
+      <translation>Det gick inte att hämta data om diskanvändning.</translation>
     </message>
     <message>
       <location filename="../src/ui/DiskUsage.qml" line="105"/>
       <source>Disk Usage</source>
-      <translation>Disk Usage</translation>
+      <translation>Diskanvändning</translation>
     </message>
     <message>
       <location filename="../src/ui/DiskUsage.qml" line="123"/>
       <source>No disk information available.</source>
-      <translation>No disk information available.</translation>
+      <translation>Ingen diskinformation tillgänglig.</translation>
     </message>
     <message>
       <location filename="../src/ui/DiskUsage.qml" line="172"/>
@@ -2507,7 +2507,7 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/DiskUsage.qml" line="187"/>
       <source>Apps: %1 (%2%)</source>
-      <translation>Apps: %1 (%2%)</translation>
+      <translation>Appar: %1 (%2%)</translation>
     </message>
     <message>
       <location filename="../src/ui/DiskUsage.qml" line="202"/>
@@ -2517,17 +2517,17 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/DiskUsage.qml" line="217"/>
       <source>Gallery: %1 (%2%)</source>
-      <translation>Gallery: %1 (%2%)</translation>
+      <translation>Galleri: %1 (%2%)</translation>
     </message>
     <message>
       <location filename="../src/ui/DiskUsage.qml" line="232"/>
       <source>Others: %1 (%2%)</source>
-      <translation>Others: %1 (%2%)</translation>
+      <translation>Övrigt: %1 (%2%)</translation>
     </message>
     <message>
       <location filename="../src/ui/DiskUsage.qml" line="247"/>
       <source>Free: %1 (%2%)</source>
-      <translation>Free: %1 (%2%)</translation>
+      <translation>Gratis: %1 (%2%)</translation>
     </message>
     <message>
       <location filename="../src/ui/DiskUsage.qml" line="262"/>
@@ -2537,7 +2537,7 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/DiskUsage.qml" line="272"/>
       <source>Apps (%1)</source>
-      <translation>Apps (%1)</translation>
+      <translation>Appar (%1)</translation>
     </message>
     <message>
       <location filename="../src/ui/DiskUsage.qml" line="282"/>
@@ -2547,17 +2547,17 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/DiskUsage.qml" line="292"/>
       <source>Gallery (%1)</source>
-      <translation>Gallery (%1)</translation>
+      <translation>Galleri (%1)</translation>
     </message>
     <message>
       <location filename="../src/ui/DiskUsage.qml" line="302"/>
       <source>Others (%1)</source>
-      <translation>Others (%1)</translation>
+      <translation>Andra (%1)</translation>
     </message>
     <message>
       <location filename="../src/ui/DiskUsage.qml" line="312"/>
       <source>Free (%1)</source>
-      <translation>Free (%1)</translation>
+      <translation>Gratis (%1)</translation>
     </message>
   </context>
   <context>
@@ -2565,17 +2565,17 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/Donate.qml" line="48"/>
       <source>Support iDescriptor</source>
-      <translation>Support iDescriptor</translation>
+      <translation>Stöd iDescriptor</translation>
     </message>
     <message>
       <location filename="../src/ui/Donate.qml" line="58"/>
       <source>Your support helps fund ongoing development, testing, and the features the community cares about most.</source>
-      <translation>Your support helps fund ongoing development, testing, and the features the community cares about most.</translation>
+      <translation>Ditt stöd hjälper till att finansiera pågående utveckling, testning och de funktioner som communityn bryr sig mest om.</translation>
     </message>
     <message>
       <location filename="../src/ui/Donate.qml" line="74"/>
       <source>Choose how you would like to support the project.</source>
-      <translation>Choose how you would like to support the project.</translation>
+      <translation>Välj hur du vill stödja projektet.</translation>
     </message>
   </context>
   <context>
@@ -2583,12 +2583,12 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/DonateActions.qml" line="28"/>
       <source>Sponsor with GitHub</source>
-      <translation>Sponsor with GitHub</translation>
+      <translation>Sponsra med GitHub</translation>
     </message>
     <message>
       <location filename="../src/ui/DonateActions.qml" line="39"/>
       <source>Support on Open Collective</source>
-      <translation>Support on Open Collective</translation>
+      <translation>Support på Open Collective</translation>
     </message>
   </context>
   <context>
@@ -2596,68 +2596,68 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/EraseDialog.qml" line="40"/>
       <source>The device could not be erased. Keep it connected and try again.</source>
-      <translation>The device could not be erased. Keep it connected and try again.</translation>
+      <translation>Enheten kunde inte raderas. Håll den ansluten och försök igen.</translation>
     </message>
     <message>
       <location filename="../src/ui/EraseDialog.qml" line="79"/>
       <source>iDescriptor could not erase %1. Keep the device connected and try again.</source>
-      <translation>iDescriptor could not erase %1. Keep the device connected and try again.</translation>
+      <translation>iDescriptor kunde inte radera %1. Håll enheten ansluten och försök igen.</translation>
     </message>
     <message>
       <location filename="../src/ui/EraseDialog.qml" line="96"/>
       <source>Erasing %1</source>
-      <translation>Erasing %1</translation>
+      <translation>Raderar %1</translation>
     </message>
     <message>
       <location filename="../src/ui/EraseDialog.qml" line="98"/>
       <source>Erase Command Accepted</source>
-      <translation>Erase Command Accepted</translation>
+      <translation>Radera kommandot accepterat</translation>
     </message>
     <message>
       <location filename="../src/ui/EraseDialog.qml" line="99"/>
       <source>Erase %1?</source>
-      <translation>Erase %1?</translation>
+      <translation>Vill du radera %1?</translation>
     </message>
     <message>
       <location filename="../src/ui/EraseDialog.qml" line="115"/>
       <source>Try Again</source>
-      <translation>Try Again</translation>
+      <translation>Försök igen</translation>
     </message>
     <message>
       <location filename="../src/ui/EraseDialog.qml" line="129"/>
       <source>This will erase all content and settings from %1. This action cannot be undone. Do you want to continue?</source>
-      <translation>This will erase all content and settings from %1. This action cannot be undone. Do you want to continue?</translation>
+      <translation>Detta kommer att radera allt innehåll och inställningar från %1. Denna åtgärd kan inte ångras. Vill du fortsätta?</translation>
     </message>
     <message>
       <location filename="../src/ui/EraseDialog.qml" line="141"/>
       <location filename="../src/ui/EraseDialog.qml" line="175"/>
       <source>No</source>
-      <translation>No</translation>
+      <translation>Nej</translation>
     </message>
     <message>
       <location filename="../src/ui/EraseDialog.qml" line="146"/>
       <source>Yes</source>
-      <translation>Yes</translation>
+      <translation>Ja</translation>
     </message>
     <message>
       <location filename="../src/ui/EraseDialog.qml" line="162"/>
       <source>Are you absolutely sure you want to permanently erase %1?</source>
-      <translation>Are you absolutely sure you want to permanently erase %1?</translation>
+      <translation>Är du helt säker på att du vill radera %1 permanent?</translation>
     </message>
     <message>
       <location filename="../src/ui/EraseDialog.qml" line="180"/>
       <source>Yes, Erase Device</source>
-      <translation>Yes, Erase Device</translation>
+      <translation>Ja, radera enhet</translation>
     </message>
     <message>
       <location filename="../src/ui/EraseDialog.qml" line="196"/>
       <source>The erase command completed successfully. The device will restart and remove all content and settings.</source>
-      <translation>The erase command completed successfully. The device will restart and remove all content and settings.</translation>
+      <translation>Raderingskommandot slutfördes framgångsrikt. Enheten startar om och tar bort allt innehåll och inställningar.</translation>
     </message>
     <message>
       <location filename="../src/ui/EraseDialog.qml" line="204"/>
       <source>Close</source>
-      <translation>Close</translation>
+      <translation>Stäng</translation>
     </message>
   </context>
   <context>
@@ -2666,43 +2666,43 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
       <location filename="../src/ui/FileExplorer.qml" line="61"/>
       <location filename="../src/ui/FileExplorer.qml" line="539"/>
       <source>AFC client is not available.</source>
-      <translation>AFC client is not available.</translation>
+      <translation>AFC-klienten är inte tillgänglig.</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="187"/>
       <source>Failed to open preview.</source>
-      <translation>Failed to open preview.</translation>
+      <translation>Det gick inte att öppna förhandsgranskningen.</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="199"/>
       <location filename="../src/ui/FileExplorer.qml" line="783"/>
       <source>Open Externally</source>
-      <translation>Open Externally</translation>
+      <translation>Öppna Externt</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="200"/>
       <source>Export %1 to a temporary folder and open it with the default application?</source>
-      <translation>Export %1 to a temporary folder and open it with the default application?</translation>
+      <translation>Exportera %1 till en tillfällig mapp och öppna den med standardprogrammet?</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="200"/>
       <source>This file type cannot be previewed would like to export to a temporary folder and open it with the default application?</source>
-      <translation>This file type cannot be previewed would like to export to a temporary folder and open it with the default application?</translation>
+      <translation>Den här filtypen kan inte förhandsgranskas. Vill du exportera till en tillfällig mapp och öppna den med standardprogrammet?</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="218"/>
       <source>The system temporary folder could not be located.</source>
-      <translation>The system temporary folder could not be located.</translation>
+      <translation>Systemets tillfälliga mapp kunde inte hittas.</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="240"/>
       <source>Exporting for External Open from %1</source>
-      <translation>Exporting for External Open from %1</translation>
+      <translation>Exporterar för extern öppen från %1</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="240"/>
       <source>Exporting for External Open</source>
-      <translation>Exporting for External Open</translation>
+      <translation>Exporterar för extern öppen</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="241"/>
@@ -2710,160 +2710,160 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
       <location filename="../src/ui/FileExplorer.qml" line="619"/>
       <location filename="../src/ui/FileExplorer.qml" line="790"/>
       <source>Export</source>
-      <translation>Export</translation>
+      <translation>Exportera</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="346"/>
       <source>Exporting File(s) from %1</source>
-      <translation>Exporting File(s) from %1</translation>
+      <translation>Exporterar fil(er) från %1</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="346"/>
       <source>Exporting File(s)</source>
-      <translation>Exporting File(s)</translation>
+      <translation>Exporterar fil(er)</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="372"/>
       <source>Importing Files to %1</source>
-      <translation>Importing Files to %1</translation>
+      <translation>Importerar filer till %1</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="372"/>
       <source>Importing Files</source>
-      <translation>Importing Files</translation>
+      <translation>Importera filer</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="373"/>
       <location filename="../src/ui/FileExplorer.qml" line="611"/>
       <source>Import</source>
-      <translation>Import</translation>
+      <translation>Importera</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="402"/>
       <source>%1 could not be exported.</source>
-      <translation>%1 could not be exported.</translation>
+      <translation>%1 kunde inte exporteras.</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="411"/>
       <source>%1 was exported, but no application could open it.</source>
-      <translation>%1 was exported, but no application could open it.</translation>
+      <translation>%1 exporterades, men inget program kunde öppna det.</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="427"/>
       <source>Opening %1 was cancelled or could not be started.</source>
-      <translation>Opening %1 was cancelled or could not be started.</translation>
+      <translation>Öppningen av %1 avbröts eller kunde inte startas.</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="428"/>
       <source>%1 could not be exported for opening.</source>
-      <translation>%1 could not be exported for opening.</translation>
+      <translation>%1 kunde inte exporteras för öppning.</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="458"/>
       <source>Failed to load directory.</source>
-      <translation>Failed to load directory.</translation>
+      <translation>Det gick inte att läsa in katalogen.</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="509"/>
       <source>%1 item(s) were deleted successfully.</source>
-      <translation>%1 item(s) were deleted successfully.</translation>
+      <translation>%1 objekt har tagits bort.</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="512"/>
       <source>%1 item(s) were deleted. %2 item(s) could not be deleted.</source>
-      <translation>%1 item(s) were deleted. %2 item(s) could not be deleted.</translation>
+      <translation>%1 objekt har tagits bort. %2 objekt kunde inte raderas.</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="518"/>
       <source>The selected items could not be deleted.</source>
-      <translation>The selected items could not be deleted.</translation>
+      <translation>De valda objekten kunde inte raderas.</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="562"/>
       <source>Go Back</source>
-      <translation>Go Back</translation>
+      <translation>Gå tillbaka</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="570"/>
       <source>Go Forward</source>
-      <translation>Go Forward</translation>
+      <translation>Gå framåt</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="577"/>
       <source>Go Home</source>
-      <translation>Go Home</translation>
+      <translation>Gå hem</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="585"/>
       <source>Go Up</source>
-      <translation>Go Up</translation>
+      <translation>Gå upp</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="591"/>
       <source>Refresh</source>
-      <translation>Refresh</translation>
+      <translation>Uppdatera</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="601"/>
       <source>Enter path...</source>
-      <translation>Enter path...</translation>
+      <translation>Ange sökväg...</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="627"/>
       <location filename="../src/ui/FileExplorer.qml" line="811"/>
       <source>Delete</source>
-      <translation>Delete</translation>
+      <translation>Ta bort</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="636"/>
       <location filename="../src/ui/FileExplorer.qml" line="822"/>
       <source>Add to Favorites</source>
-      <translation>Add to Favorites</translation>
+      <translation>Lägg till i Favoriter</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="643"/>
       <source>Navigate to path</source>
-      <translation>Navigate to path</translation>
+      <translation>Navigera till sökvägen</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="759"/>
       <source>This folder is empty</source>
-      <translation>This folder is empty</translation>
+      <translation>Den här mappen är tom</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="772"/>
       <source>Open</source>
-      <translation>Open</translation>
+      <translation>Öppna</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="799"/>
       <source>Get Info</source>
-      <translation>Get Info</translation>
+      <translation>Få info</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="829"/>
       <source>Enter alias for this location:</source>
-      <translation>Enter alias for this location:</translation>
+      <translation>Ange alias för denna plats:</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="830"/>
       <source>Alias here</source>
-      <translation>Alias here</translation>
+      <translation>Alias här</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="831"/>
       <source>Path: </source>
-      <translation>Path: </translation>
+      <translation>Sökväg: </translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="845"/>
       <source>Choose Export Folder</source>
-      <translation>Choose Export Folder</translation>
+      <translation>Välj Exportera mapp</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="851"/>
       <source>Choose Files to Import</source>
-      <translation>Choose Files to Import</translation>
+      <translation>Välj Filer att importera</translation>
     </message>
   </context>
   <context>
@@ -2871,32 +2871,32 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="23"/>
       <source>File Information</source>
-      <translation>File Information</translation>
+      <translation>Filinformation</translation>
     </message>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="30"/>
       <source>Regular File (%1)</source>
-      <translation>Regular File (%1)</translation>
+      <translation>Vanlig fil (%1)</translation>
     </message>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="32"/>
       <source>Directory (%1)</source>
-      <translation>Directory (%1)</translation>
+      <translation>Katalog (%1)</translation>
     </message>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="34"/>
       <source>Symbolic Link (%1)</source>
-      <translation>Symbolic Link (%1)</translation>
+      <translation>Symbolisk länk (%1)</translation>
     </message>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="36"/>
       <source>Block Device (%1)</source>
-      <translation>Block Device (%1)</translation>
+      <translation>Blockera enhet (%1)</translation>
     </message>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="38"/>
       <source>Character Device (%1)</source>
-      <translation>Character Device (%1)</translation>
+      <translation>Teckenenhet (%1)</translation>
     </message>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="40"/>
@@ -2911,63 +2911,63 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="44"/>
       <source>Unknown</source>
-      <translation>Unknown</translation>
+      <translation>Okänd</translation>
     </message>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="57"/>
       <location filename="../src/ui/FileInfoDialog.qml" line="99"/>
       <source>Could not retrieve file information.</source>
-      <translation>Could not retrieve file information.</translation>
+      <translation>Det gick inte att hämta filinformation.</translation>
     </message>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="64"/>
       <source>Name</source>
-      <translation>Name</translation>
+      <translation>Namn</translation>
     </message>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="65"/>
       <source>Path</source>
-      <translation>Path</translation>
+      <translation>Väg</translation>
     </message>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="66"/>
       <source>Type</source>
-      <translation>Type</translation>
+      <translation>Typ</translation>
     </message>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="68"/>
       <source>Size</source>
-      <translation>Size</translation>
+      <translation>Storlek</translation>
     </message>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="69"/>
       <source>%1 (%2 bytes)</source>
-      <translation>%1 (%2 bytes)</translation>
+      <translation>%1 (%2 byte)</translation>
     </message>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="71"/>
       <source>Allocated Blocks</source>
-      <translation>Allocated Blocks</translation>
+      <translation>Tilldelade block</translation>
     </message>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="72"/>
       <source>Created</source>
-      <translation>Created</translation>
+      <translation>Skapad</translation>
     </message>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="73"/>
       <source>Modified</source>
-      <translation>Modified</translation>
+      <translation>Modifierad</translation>
     </message>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="74"/>
       <source>Hard Links</source>
-      <translation>Hard Links</translation>
+      <translation>Hårda länkar</translation>
     </message>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="76"/>
       <source>Link Target</source>
-      <translation>Link Target</translation>
+      <translation>Länkmål</translation>
     </message>
   </context>
   <context>
@@ -2975,27 +2975,27 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/FilesSection.qml" line="60"/>
       <source>No device selected.</source>
-      <translation>No device selected.</translation>
+      <translation>Ingen enhet har valts.</translation>
     </message>
     <message>
       <location filename="../src/ui/FilesSection.qml" line="68"/>
       <source>The default file service is unavailable.</source>
-      <translation>The default file service is unavailable.</translation>
+      <translation>Standardfiltjänsten är inte tillgänglig.</translation>
     </message>
     <message>
       <location filename="../src/ui/FilesSection.qml" line="159"/>
       <source>The file explorer could not be loaded.</source>
-      <translation>The file explorer could not be loaded.</translation>
+      <translation>Filutforskaren kunde inte laddas.</translation>
     </message>
     <message>
       <location filename="../src/ui/FilesSection.qml" line="186"/>
       <source>Explorer</source>
-      <translation>Explorer</translation>
+      <translation>Utforskare</translation>
     </message>
     <message>
       <location filename="../src/ui/FilesSection.qml" line="190"/>
       <source>Default</source>
-      <translation>Default</translation>
+      <translation>Standard</translation>
     </message>
     <message>
       <location filename="../src/ui/FilesSection.qml" line="197"/>
@@ -3005,22 +3005,22 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/FilesSection.qml" line="198"/>
       <source>Full filesystem</source>
-      <translation>Full filesystem</translation>
+      <translation>Fullständigt filsystem</translation>
     </message>
     <message>
       <location filename="../src/ui/FilesSection.qml" line="198"/>
       <source>Unavailable</source>
-      <translation>Unavailable</translation>
+      <translation>Ej tillgänglig</translation>
     </message>
     <message>
       <location filename="../src/ui/FilesSection.qml" line="207"/>
       <source>Common Places</source>
-      <translation>Common Places</translation>
+      <translation>Vanliga platser</translation>
     </message>
     <message>
       <location filename="../src/ui/FilesSection.qml" line="211"/>
       <source>Pictures</source>
-      <translation>Pictures</translation>
+      <translation>Bilder</translation>
     </message>
     <message>
       <location filename="../src/ui/FilesSection.qml" line="212"/>
@@ -3030,12 +3030,12 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/FilesSection.qml" line="220"/>
       <source>Favorite Places</source>
-      <translation>Favorite Places</translation>
+      <translation>Favoritplatser</translation>
     </message>
     <message>
       <location filename="../src/ui/FilesSection.qml" line="229"/>
       <source>No favorite locations yet</source>
-      <translation>No favorite locations yet</translation>
+      <translation>Inga favoritplatser ännu</translation>
     </message>
     <message>
       <location filename="../src/ui/FilesSection.qml" line="245"/>
@@ -3045,7 +3045,7 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/FilesSection.qml" line="307"/>
       <source>Remove from Favorites</source>
-      <translation>Remove from Favorites</translation>
+      <translation>Ta bort från Favoriter</translation>
     </message>
   </context>
   <context>
@@ -3054,72 +3054,72 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
       <location filename="../src/ui/app-store/GetIpaPopup.qml" line="27"/>
       <location filename="../src/ui/app-store/GetIpaPopup.qml" line="214"/>
       <source>Get IPA</source>
-      <translation>Get IPA</translation>
+      <translation>Skaffa IPA</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/GetIpaPopup.qml" line="61"/>
       <source>Preparing download...</source>
-      <translation>Preparing download...</translation>
+      <translation>Förbereder nedladdning...</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/GetIpaPopup.qml" line="66"/>
       <source>The App Store service is not initialized.</source>
-      <translation>The App Store service is not initialized.</translation>
+      <translation>App Store-tjänsten är inte initierad.</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/GetIpaPopup.qml" line="94"/>
       <source>Choose download folder</source>
-      <translation>Choose download folder</translation>
+      <translation>Välj nedladdningsmapp</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/GetIpaPopup.qml" line="100"/>
       <source>Cancel download?</source>
-      <translation>Cancel download?</translation>
+      <translation>Vill du avbryta nedladdningen?</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/GetIpaPopup.qml" line="101"/>
       <source>The IPA download is still in progress. Do you want to cancel it and close this dialog?</source>
-      <translation>The IPA download is still in progress. Do you want to cancel it and close this dialog?</translation>
+      <translation>IPA-nedladdningen pågår fortfarande. Vill du avbryta den och stänga den här dialogrutan?</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/GetIpaPopup.qml" line="124"/>
       <source>Downloading IPA...</source>
-      <translation>Downloading IPA...</translation>
+      <translation>Laddar ner IPA...</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/GetIpaPopup.qml" line="135"/>
       <source>Download failed.</source>
-      <translation>Download failed.</translation>
+      <translation>Nedladdningen misslyckades.</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/GetIpaPopup.qml" line="136"/>
       <source>Saved IPA</source>
-      <translation>Saved IPA</translation>
+      <translation>Sparad IPA</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/GetIpaPopup.qml" line="170"/>
       <source>Choose</source>
-      <translation>Choose</translation>
+      <translation>Välj</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/GetIpaPopup.qml" line="188"/>
       <source>Saved to %1</source>
-      <translation>Saved to %1</translation>
+      <translation>Sparad till %1</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/GetIpaPopup.qml" line="198"/>
       <source>Open Folder</source>
-      <translation>Open Folder</translation>
+      <translation>Öppna mapp</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/GetIpaPopup.qml" line="209"/>
       <source>Cancel</source>
-      <translation>Cancel</translation>
+      <translation>Avbryt</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/GetIpaPopup.qml" line="209"/>
       <source>Close</source>
-      <translation>Close</translation>
+      <translation>Stäng</translation>
     </message>
   </context>
   <context>
@@ -3127,32 +3127,32 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/Helpers.qml" line="30"/>
       <source>Missing bundle ID.</source>
-      <translation>Missing bundle ID.</translation>
+      <translation>Paket-ID saknas.</translation>
     </message>
     <message>
       <location filename="../src/ui/Helpers.qml" line="40"/>
       <source>Failed to fetch app details.</source>
-      <translation>Failed to fetch app details.</translation>
+      <translation>Det gick inte att hämta appinformation.</translation>
     </message>
     <message>
       <location filename="../src/ui/Helpers.qml" line="48"/>
       <source>No App Store details found for this bundle ID.</source>
-      <translation>No App Store details found for this bundle ID.</translation>
+      <translation>Inga App Store-detaljer hittades för detta paket-ID.</translation>
     </message>
     <message>
       <location filename="../src/ui/Helpers.qml" line="53"/>
       <source>Failed to parse App Store details.</source>
-      <translation>Failed to parse App Store details.</translation>
+      <translation>Det gick inte att analysera App Store-detaljer.</translation>
     </message>
     <message>
       <location filename="../src/ui/Helpers.qml" line="191"/>
       <source>Error</source>
-      <translation>Error</translation>
+      <translation>Fel</translation>
     </message>
     <message>
       <location filename="../src/ui/Helpers.qml" line="195"/>
       <source>Warning</source>
-      <translation>Warning</translation>
+      <translation>Varning</translation>
     </message>
     <message>
       <location filename="../src/ui/Helpers.qml" line="199"/>
@@ -3165,72 +3165,72 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/HowToConnect.qml" line="33"/>
       <source>You can now unplug the device. iDescriptor will connect to it automatically if Bonjour is enabled and running. (requires iOS 14 or later)</source>
-      <translation>You can now unplug the device. iDescriptor will connect to it automatically if Bonjour is enabled and running. (requires iOS 14 or later)</translation>
+      <translation>Du kan nu koppla bort enheten. iDescriptor ansluter till den automatiskt om Bonjour är aktiverat och körs. (kräver iOS 14 eller senare)</translation>
     </message>
     <message>
       <location filename="../src/ui/HowToConnect.qml" line="35"/>
       <source>You can now unplug the device. iDescriptor will connect to it automatically if Avahi is enabled and running. (requires iOS 14 or later)</source>
-      <translation>You can now unplug the device. iDescriptor will connect to it automatically if Avahi is enabled and running. (requires iOS 14 or later)</translation>
+      <translation>Du kan nu koppla bort enheten. iDescriptor kommer att ansluta till den automatiskt om Avahi är aktiverat och körs. (kräver iOS 14 eller senare)</translation>
     </message>
     <message>
       <location filename="../src/ui/HowToConnect.qml" line="36"/>
       <source>You can now unplug the device. iDescriptor will connect to it automatically. (requires iOS 14 or later)</source>
-      <translation>You can now unplug the device. iDescriptor will connect to it automatically. (requires iOS 14 or later)</translation>
+      <translation>Du kan nu koppla bort enheten. iDescriptor kommer att ansluta till den automatiskt. (kräver iOS 14 eller senare)</translation>
     </message>
     <message>
       <location filename="../src/ui/HowToConnect.qml" line="94"/>
       <source>Auto Setup</source>
-      <translation>Auto Setup</translation>
+      <translation>Automatisk inställning</translation>
     </message>
     <message>
       <location filename="../src/ui/HowToConnect.qml" line="94"/>
       <source>Custom</source>
-      <translation>Custom</translation>
+      <translation>Anpassad</translation>
     </message>
     <message>
       <location filename="../src/ui/HowToConnect.qml" line="177"/>
       <source>Connect your device</source>
-      <translation>Connect your device</translation>
+      <translation>Anslut din enhet</translation>
     </message>
     <message>
       <location filename="../src/ui/HowToConnect.qml" line="187"/>
       <source>Plug the device into this computer with a cable so iDescriptor can prepare wireless pairing.</source>
-      <translation>Plug the device into this computer with a cable so iDescriptor can prepare wireless pairing.</translation>
+      <translation>Anslut enheten till den här datorn med en kabel så att iDescriptor kan förbereda trådlös sammankoppling.</translation>
     </message>
     <message>
       <location filename="../src/ui/HowToConnect.qml" line="228"/>
       <source>Accept the pairing dialog</source>
-      <translation>Accept the pairing dialog</translation>
+      <translation>Acceptera parningsdialogrutan</translation>
     </message>
     <message>
       <location filename="../src/ui/HowToConnect.qml" line="238"/>
       <source>Keep the device unlocked and tap Trust when iOS asks whether this computer is trusted.</source>
-      <translation>Keep the device unlocked and tap Trust when iOS asks whether this computer is trusted.</translation>
+      <translation>Håll enheten olåst och tryck på Lita på när iOS frågar om den här datorn är pålitlig.</translation>
     </message>
     <message>
       <location filename="../src/ui/HowToConnect.qml" line="279"/>
       <source>Finish over Wi-Fi</source>
-      <translation>Finish over Wi-Fi</translation>
+      <translation>Avsluta via Wi-Fi</translation>
     </message>
     <message>
       <location filename="../src/ui/HowToConnect.qml" line="441"/>
       <source>Use a saved pairing file</source>
-      <translation>Use a saved pairing file</translation>
+      <translation>Använd en sparad parningsfil</translation>
     </message>
     <message>
       <location filename="../src/ui/HowToConnect.qml" line="451"/>
       <source>You can use the &apos;Connect with pairing file&apos; button to connect to a device. You have to have a valid pairing file and know the device IP address.</source>
-      <translation>You can use the &apos;Connect with pairing file&apos; button to connect to a device. You have to have a valid pairing file and know the device IP address.</translation>
+      <translation>Du kan använda knappen 'Anslut med parningsfil' för att ansluta till en enhet. Du måste ha en giltig parningsfil och känna till enhetens IP-adress.</translation>
     </message>
     <message>
       <location filename="../src/ui/HowToConnect.qml" line="462"/>
       <source>Pairing files are usually stored here:</source>
-      <translation>Pairing files are usually stored here:</translation>
+      <translation>Parningsfiler lagras vanligtvis här:</translation>
     </message>
     <message>
       <location filename="../src/ui/HowToConnect.qml" line="499"/>
       <source>You can run `sudo ls /var/db/lockdown` to see the pairing files you have on your Mac.</source>
-      <translation>You can run `sudo ls /var/db/lockdown` to see the pairing files you have on your Mac.</translation>
+      <translation>Du kan köra `sudo ls /var/db/lockdown` för att se parningsfilerna du har på din Mac.</translation>
     </message>
   </context>
   <context>
@@ -3243,53 +3243,53 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/tools/IFuse.qml" line="42"/>
       <source>Unknown Device</source>
-      <translation>Unknown Device</translation>
+      <translation>Okänd enhet</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/IFuse.qml" line="77"/>
       <location filename="../src/ui/tools/IFuse.qml" line="100"/>
       <source>Select Mount Directory</source>
-      <translation>Select Mount Directory</translation>
+      <translation>Välj Montera katalog</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/IFuse.qml" line="92"/>
       <source>This folder cannot be used by the Flatpak build. Choose a subfolder inside %1.</source>
-      <translation>This folder cannot be used by the Flatpak build. Choose a subfolder inside %1.</translation>
+      <translation>Den här mappen kan inte användas av Flatpak-bygget. Välj en undermapp i %1.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/IFuse.qml" line="118"/>
       <source>Mount %1&apos;s media as a drive on your PC.</source>
-      <translation>Mount %1&apos;s media as a drive on your PC.</translation>
+      <translation>Montera %1s media som en enhet på din PC.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/IFuse.qml" line="158"/>
       <source>Mount directory will be shown here</source>
-      <translation>Mount directory will be shown here</translation>
+      <translation>Montera katalogen kommer att visas här</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/IFuse.qml" line="172"/>
       <source>Browse...</source>
-      <translation>Browse...</translation>
+      <translation>Bläddra...</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/IFuse.qml" line="188"/>
       <source>Unmounting...</source>
-      <translation>Unmounting...</translation>
+      <translation>Avmonterar...</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/IFuse.qml" line="188"/>
       <source>Mounting...</source>
-      <translation>Mounting...</translation>
+      <translation>Montering...</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/IFuse.qml" line="189"/>
       <source>Unmount Device</source>
-      <translation>Unmount Device</translation>
+      <translation>Avmontera enhet</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/IFuse.qml" line="189"/>
       <source>Mount Device</source>
-      <translation>Mount Device</translation>
+      <translation>Montera enhet</translation>
     </message>
   </context>
   <context>
@@ -3305,72 +3305,72 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/app-store/InstallAppPopup.qml" line="27"/>
       <source>Install IPA</source>
-      <translation>Install IPA</translation>
+      <translation>Installera IPA</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/InstallAppPopup.qml" line="84"/>
       <source>Preparing IPA download...</source>
-      <translation>Preparing IPA download...</translation>
+      <translation>Förbereder IPA-nedladdning...</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/InstallAppPopup.qml" line="89"/>
       <source>The App Store service is not initialized.</source>
-      <translation>The App Store service is not initialized.</translation>
+      <translation>App Store-tjänsten är inte initierad.</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/InstallAppPopup.qml" line="120"/>
       <source>Cancel installation?</source>
-      <translation>Cancel installation?</translation>
+      <translation>Avbryt installationen?</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/InstallAppPopup.qml" line="121"/>
       <source>The IPA download or installation is still in progress. Do you want to cancel it and close this dialog?</source>
-      <translation>The IPA download or installation is still in progress. Do you want to cancel it and close this dialog?</translation>
+      <translation>IPA-nedladdningen eller installationen pågår fortfarande. Vill du avbryta den och stänga den här dialogrutan?</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/InstallAppPopup.qml" line="146"/>
       <source>Installing IPA on device...</source>
-      <translation>Installing IPA on device...</translation>
+      <translation>Installerar IPA på enheten...</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/InstallAppPopup.qml" line="147"/>
       <source>Downloading IPA...</source>
-      <translation>Downloading IPA...</translation>
+      <translation>Laddar ner IPA...</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/InstallAppPopup.qml" line="157"/>
       <source>Installation failed.</source>
-      <translation>Installation failed.</translation>
+      <translation>Installationen misslyckades.</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/InstallAppPopup.qml" line="158"/>
       <source>Installation finished</source>
-      <translation>Installation finished</translation>
+      <translation>Installationen avslutad</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/InstallAppPopup.qml" line="189"/>
       <source>Select a connected device</source>
-      <translation>Select a connected device</translation>
+      <translation>Välj en ansluten enhet</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/InstallAppPopup.qml" line="218"/>
       <source>No device connected.</source>
-      <translation>No device connected.</translation>
+      <translation>Ingen enhet ansluten.</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/InstallAppPopup.qml" line="245"/>
       <source>Cancel</source>
-      <translation>Cancel</translation>
+      <translation>Avbryt</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/InstallAppPopup.qml" line="245"/>
       <source>Close</source>
-      <translation>Close</translation>
+      <translation>Stäng</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/InstallAppPopup.qml" line="250"/>
       <source>Install</source>
-      <translation>Install</translation>
+      <translation>Installera</translation>
     </message>
   </context>
   <context>
@@ -3379,7 +3379,7 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
       <location filename="../src/ui/installed-apps/InstalledApps.qml" line="49"/>
       <location filename="../src/ui/installed-apps/InstalledApps.qml" line="193"/>
       <source>Failed to retrieve installed apps.</source>
-      <translation>Failed to retrieve installed apps.</translation>
+      <translation>Det gick inte att hämta installerade appar.</translation>
     </message>
     <message>
       <location filename="../src/ui/installed-apps/InstalledApps.qml" line="72"/>
@@ -3389,27 +3389,27 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/installed-apps/InstalledApps.qml" line="177"/>
       <source>Failed to open the document container for %1.</source>
-      <translation>Failed to open the document container for %1.</translation>
+      <translation>Det gick inte att öppna dokumentbehållaren för %1.</translation>
     </message>
     <message>
       <location filename="../src/ui/installed-apps/InstalledApps.qml" line="201"/>
       <source>No apps found or failed to retrieve apps.</source>
-      <translation>No apps found or failed to retrieve apps.</translation>
+      <translation>Inga appar hittades eller kunde inte hämta appar.</translation>
     </message>
     <message>
       <location filename="../src/ui/installed-apps/InstalledApps.qml" line="267"/>
       <source>Search apps...</source>
-      <translation>Search apps...</translation>
+      <translation>Sök appar...</translation>
     </message>
     <message>
       <location filename="../src/ui/installed-apps/InstalledApps.qml" line="279"/>
       <source>File Sharing</source>
-      <translation>File Sharing</translation>
+      <translation>Fildelning</translation>
     </message>
     <message>
       <location filename="../src/ui/installed-apps/InstalledApps.qml" line="365"/>
       <source>Select an app to browse its documents.</source>
-      <translation>Select an app to browse its documents.</translation>
+      <translation>Välj en app för att bläddra i dess dokument.</translation>
     </message>
   </context>
   <context>
@@ -3417,22 +3417,22 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/Jailbroken.qml" line="52"/>
       <source>SSH Terminal</source>
-      <translation>SSH Terminal</translation>
+      <translation>SSH-terminal</translation>
     </message>
     <message>
       <location filename="../src/ui/Jailbroken.qml" line="53"/>
       <source>Connect to your device via SSH</source>
-      <translation>Connect to your device via SSH</translation>
+      <translation>Anslut till din enhet via SSH</translation>
     </message>
     <message>
       <location filename="../src/ui/Jailbroken.qml" line="59"/>
       <source>More Tools Coming</source>
-      <translation>More Tools Coming</translation>
+      <translation>Fler verktyg kommer</translation>
     </message>
     <message>
       <location filename="../src/ui/Jailbroken.qml" line="60"/>
       <source>New features will be added soon</source>
-      <translation>New features will be added soon</translation>
+      <translation>Nya funktioner kommer att läggas till snart</translation>
     </message>
   </context>
   <context>
@@ -3440,32 +3440,32 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/KeychainDialog.qml" line="66"/>
       <source>Allow Keychain Access</source>
-      <translation>Allow Keychain Access</translation>
+      <translation>Tillåt nyckelring åtkomst</translation>
     </message>
     <message>
       <location filename="../src/ui/KeychainDialog.qml" line="76"/>
       <source>iDescriptor uses macOS Keychain to securely store and retrieve your Apple ID credentials. When macOS asks for access, choose &quot;Always Allow&quot; to avoid repeated prompts.</source>
-      <translation>iDescriptor uses macOS Keychain to securely store and retrieve your Apple ID credentials. When macOS asks for access, choose &quot;Always Allow&quot; to avoid repeated prompts.</translation>
+      <translation>iDescriptor använder macOS-nyckelring för att säkert lagra och hämta dina Apple-ID-uppgifter. När macOS ber om åtkomst väljer du "Tillåt alltid" för att undvika upprepade uppmaningar.</translation>
     </message>
     <message>
       <location filename="../src/ui/KeychainDialog.qml" line="108"/>
       <source>Your credentials remain protected by macOS and are only used for App Store sign-in.</source>
-      <translation>Your credentials remain protected by macOS and are only used for App Store sign-in.</translation>
+      <translation>Dina referenser förblir skyddade av macOS och används endast för App Store-inloggning.</translation>
     </message>
     <message>
       <location filename="../src/ui/KeychainDialog.qml" line="127"/>
       <source>Do not show this message again</source>
-      <translation>Do not show this message again</translation>
+      <translation>Visa inte detta meddelande igen</translation>
     </message>
     <message>
       <location filename="../src/ui/KeychainDialog.qml" line="133"/>
       <source>Skip for Now</source>
-      <translation>Skip for Now</translation>
+      <translation>Hoppa över nu</translation>
     </message>
     <message>
       <location filename="../src/ui/KeychainDialog.qml" line="139"/>
       <source>Continue</source>
-      <translation>Continue</translation>
+      <translation>Fortsätt</translation>
     </message>
   </context>
   <context>
@@ -3473,63 +3473,63 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/tools/LiveScreen.qml" line="17"/>
       <source>Live Screen - iDescriptor</source>
-      <translation>Live Screen - iDescriptor</translation>
+      <translation>Live-skärm - iDescriptor</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/LiveScreen.qml" line="22"/>
       <location filename="../src/ui/tools/LiveScreen.qml" line="25"/>
       <source>Connecting to screenshot service...</source>
-      <translation>Connecting to screenshot service...</translation>
+      <translation>Ansluter till skärmdumptjänst...</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/LiveScreen.qml" line="41"/>
       <source>Failed to initialize screenshot capture. Mount a compatible developer disk image, then retry.</source>
-      <translation>Failed to initialize screenshot capture. Mount a compatible developer disk image, then retry.</translation>
+      <translation>Det gick inte att initiera skärmdumptagning. Montera en kompatibel utvecklardiskavbildning och försök sedan igen.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/LiveScreen.qml" line="43"/>
       <source>Failed to initialize screenshot capture. Please ensure the device has developer mode enabled.</source>
-      <translation>Failed to initialize screenshot capture. Please ensure the device has developer mode enabled.</translation>
+      <translation>Det gick inte att initiera skärmdumptagning. Se till att enheten har utvecklarläge aktiverat.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/LiveScreen.qml" line="45"/>
       <source>Failed to initialize screenshot capture. Reason: %1</source>
-      <translation>Failed to initialize screenshot capture. Reason: %1</translation>
+      <translation>Det gick inte att initiera skärmdumptagning. Orsak: %1</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/LiveScreen.qml" line="64"/>
       <source>Developer Mode was not handled.</source>
-      <translation>Developer Mode was not handled.</translation>
+      <translation>Utvecklarläget hanterades inte.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/LiveScreen.qml" line="65"/>
       <source>Developer disk image was not mounted.</source>
-      <translation>Developer disk image was not mounted.</translation>
+      <translation>Utvecklardiskavbildningen monterades inte.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/LiveScreen.qml" line="80"/>
       <source>Capturing</source>
-      <translation>Capturing</translation>
+      <translation>Fånga</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/LiveScreen.qml" line="151"/>
       <source>Rotate CW</source>
-      <translation>Rotate CW</translation>
+      <translation>Vrid medurs</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/LiveScreen.qml" line="156"/>
       <source>Rotate CCW</source>
-      <translation>Rotate CCW</translation>
+      <translation>Vrid moturs</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/LiveScreen.qml" line="161"/>
       <source>Unmirror</source>
-      <translation>Unmirror</translation>
+      <translation>Avspegla</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/LiveScreen.qml" line="161"/>
       <source>Mirror</source>
-      <translation>Mirror</translation>
+      <translation>Spegel</translation>
     </message>
   </context>
   <context>
@@ -3537,17 +3537,17 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/LocalNetworkPermissionDialog.qml" line="32"/>
       <source>Allow for Local Network Discovery</source>
-      <translation>Allow for Local Network Discovery</translation>
+      <translation>Tillåt lokal nätverksupptäckt</translation>
     </message>
     <message>
       <location filename="../src/ui/LocalNetworkPermissionDialog.qml" line="42"/>
       <source>macOS will ask for permission next. Choose Allow so iDescriptor can find and connect to Apple devices over Wi-Fi.</source>
-      <translation>macOS will ask for permission next. Choose Allow so iDescriptor can find and connect to Apple devices over Wi-Fi.</translation>
+      <translation>macOS kommer att be om tillstånd härnäst. Välj Tillåt så att iDescriptor kan hitta och ansluta till Apple-enheter via Wi-Fi.</translation>
     </message>
     <message>
       <location filename="../src/ui/LocalNetworkPermissionDialog.qml" line="64"/>
       <source>Continue</source>
-      <translation>Continue</translation>
+      <translation>Fortsätt</translation>
     </message>
   </context>
   <context>
@@ -3555,12 +3555,12 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/base/LocationSelector.qml" line="12"/>
       <source>Location</source>
-      <translation>Location</translation>
+      <translation>Plats</translation>
     </message>
     <message>
       <location filename="../src/ui/base/LocationSelector.qml" line="64"/>
       <source>Change…</source>
-      <translation>Change…</translation>
+      <translation>Ändra...</translation>
     </message>
   </context>
   <context>
@@ -3568,62 +3568,62 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/LoginDialog.qml" line="216"/>
       <source>Sign in failed.</source>
-      <translation>Sign in failed.</translation>
+      <translation>Inloggningen misslyckades.</translation>
     </message>
     <message>
       <location filename="../src/ui/LoginDialog.qml" line="265"/>
       <source>Sign in with your Apple Account</source>
-      <translation>Sign in with your Apple Account</translation>
+      <translation>Logga in med ditt Apple-konto</translation>
     </message>
     <message>
       <location filename="../src/ui/LoginDialog.qml" line="275"/>
       <source>Use your account to search and install App Store apps.</source>
-      <translation>Use your account to search and install App Store apps.</translation>
+      <translation>Använd ditt konto för att söka och installera App Store-appar.</translation>
     </message>
     <message>
       <location filename="../src/ui/LoginDialog.qml" line="292"/>
       <source>Apple Account</source>
-      <translation>Apple Account</translation>
+      <translation>Apple-konto</translation>
     </message>
     <message>
       <location filename="../src/ui/LoginDialog.qml" line="348"/>
       <source>Password</source>
-      <translation>Password</translation>
+      <translation>Lösenord</translation>
     </message>
     <message>
       <location filename="../src/ui/LoginDialog.qml" line="429"/>
       <source>Credentials are passed to Apple&apos;s sign-in service and stored by the local ipatool keyring.</source>
-      <translation>Credentials are passed to Apple&apos;s sign-in service and stored by the local ipatool keyring.</translation>
+      <translation>Inloggningsuppgifter skickas till Apples inloggningstjänst och lagras av den lokala ipatool-nyckelringen.</translation>
     </message>
     <message>
       <location filename="../src/ui/LoginDialog.qml" line="444"/>
       <source>Continue</source>
-      <translation>Continue</translation>
+      <translation>Fortsätt</translation>
     </message>
     <message>
       <location filename="../src/ui/LoginDialog.qml" line="472"/>
       <source>Forgot password?</source>
-      <translation>Forgot password?</translation>
+      <translation>Glömt lösenordet?</translation>
     </message>
     <message>
       <location filename="../src/ui/LoginDialog.qml" line="538"/>
       <source>Enter the code from your other device</source>
-      <translation>Enter the code from your other device</translation>
+      <translation>Ange koden från din andra enhet</translation>
     </message>
     <message>
       <location filename="../src/ui/LoginDialog.qml" line="548"/>
       <source>A verification code was requested for %1.</source>
-      <translation>A verification code was requested for %1.</translation>
+      <translation>En verifieringskod begärdes för %1.</translation>
     </message>
     <message>
       <location filename="../src/ui/LoginDialog.qml" line="645"/>
       <source>Resend code</source>
-      <translation>Resend code</translation>
+      <translation>Skicka koden igen</translation>
     </message>
     <message>
       <location filename="../src/ui/LoginDialog.qml" line="658"/>
       <source>Verify</source>
-      <translation>Verify</translation>
+      <translation>Verifiera</translation>
     </message>
   </context>
   <context>
@@ -3640,17 +3640,17 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/MainWorkspace.qml" line="54"/>
       <source>Welcome</source>
-      <translation>Welcome</translation>
+      <translation>Välkommen</translation>
     </message>
     <message>
       <location filename="../src/ui/MainWorkspace.qml" line="56"/>
       <source>Apps</source>
-      <translation>Apps</translation>
+      <translation>Appar</translation>
     </message>
     <message>
       <location filename="../src/ui/MainWorkspace.qml" line="58"/>
       <source>Toolbox</source>
-      <translation>Toolbox</translation>
+      <translation>Verktygslåda</translation>
     </message>
     <message>
       <location filename="../src/ui/MainWorkspace.qml" line="60"/>
@@ -3660,27 +3660,27 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/MainWorkspace.qml" line="62"/>
       <source>Community</source>
-      <translation>Community</translation>
+      <translation>gemenskapen</translation>
     </message>
     <message>
       <location filename="../src/ui/MainWorkspace.qml" line="64"/>
       <source>Donate</source>
-      <translation>Donate</translation>
+      <translation>Donera</translation>
     </message>
     <message>
       <location filename="../src/ui/MainWorkspace.qml" line="66"/>
       <source>Connecting…</source>
-      <translation>Connecting…</translation>
+      <translation>Ansluter...</translation>
     </message>
     <message>
       <location filename="../src/ui/MainWorkspace.qml" line="68"/>
       <source>Recovery Device</source>
-      <translation>Recovery Device</translation>
+      <translation>Återställningsenhet</translation>
     </message>
     <message>
       <location filename="../src/ui/MainWorkspace.qml" line="71"/>
       <source>Device</source>
-      <translation>Device</translation>
+      <translation>Enhet</translation>
     </message>
   </context>
   <context>
@@ -3688,32 +3688,32 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/tools/NetworkDevices.qml" line="18"/>
       <source>Network Devices - iDescriptor</source>
-      <translation>Network Devices - iDescriptor</translation>
+      <translation>Nätverksenheter - iDescriptor</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/NetworkDevices.qml" line="25"/>
       <source>Scanning for network devices...</source>
-      <translation>Scanning for network devices...</translation>
+      <translation>Söker efter nätverksenheter...</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/NetworkDevices.qml" line="30"/>
       <source>Unknown device</source>
-      <translation>Unknown device</translation>
+      <translation>Okänd enhet</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/NetworkDevices.qml" line="55"/>
       <source>No network devices found</source>
-      <translation>No network devices found</translation>
+      <translation>Inga nätverksenheter hittades</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/NetworkDevices.qml" line="57"/>
       <source>Found %1 network device(s)</source>
-      <translation>Found %1 network device(s)</translation>
+      <translation>Hittade %1 nätverksenhet(er)</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/NetworkDevices.qml" line="127"/>
       <source>Network Devices</source>
-      <translation>Network Devices</translation>
+      <translation>Nätverksenheter</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/NetworkDevices.qml" line="171"/>
@@ -3731,73 +3731,73 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/NetworkDevicesToConnect.qml" line="22"/>
       <source>Network device provider is loading</source>
-      <translation>Network device provider is loading</translation>
+      <translation>Nätverksenhetsleverantör laddar</translation>
     </message>
     <message>
       <location filename="../src/ui/NetworkDevicesToConnect.qml" line="24"/>
       <source>Network device provider failed to start</source>
-      <translation>Network device provider failed to start</translation>
+      <translation>Det gick inte att starta nätverksenhetsleverantören</translation>
     </message>
     <message>
       <location filename="../src/ui/NetworkDevicesToConnect.qml" line="26"/>
       <source>No network devices found</source>
-      <translation>No network devices found</translation>
+      <translation>Inga nätverksenheter hittades</translation>
     </message>
     <message>
       <location filename="../src/ui/NetworkDevicesToConnect.qml" line="26"/>
       <source>Found %1 network device(s)</source>
-      <translation>Found %1 network device(s)</translation>
+      <translation>Hittade %1 nätverksenhet(er)</translation>
     </message>
     <message>
       <location filename="../src/ui/NetworkDevicesToConnect.qml" line="32"/>
       <source>Unknown device</source>
-      <translation>Unknown device</translation>
+      <translation>Okänd enhet</translation>
     </message>
     <message>
       <location filename="../src/ui/NetworkDevicesToConnect.qml" line="40"/>
       <location filename="../src/ui/NetworkDevicesToConnect.qml" line="86"/>
       <source>Connect</source>
-      <translation>Connect</translation>
+      <translation>Anslut</translation>
     </message>
     <message>
       <location filename="../src/ui/NetworkDevicesToConnect.qml" line="66"/>
       <source>Failed to connect</source>
-      <translation>Failed to connect</translation>
+      <translation>Det gick inte att ansluta</translation>
     </message>
     <message>
       <location filename="../src/ui/NetworkDevicesToConnect.qml" line="70"/>
       <source>No pairing file</source>
-      <translation>No pairing file</translation>
+      <translation>Ingen parningsfil</translation>
     </message>
     <message>
       <location filename="../src/ui/NetworkDevicesToConnect.qml" line="74"/>
       <source>Connecting...</source>
-      <translation>Connecting...</translation>
+      <translation>Ansluter...</translation>
     </message>
     <message>
       <location filename="../src/ui/NetworkDevicesToConnect.qml" line="78"/>
       <source>Connected</source>
-      <translation>Connected</translation>
+      <translation>Ansluten</translation>
     </message>
     <message>
       <location filename="../src/ui/NetworkDevicesToConnect.qml" line="82"/>
       <source>Already connected</source>
-      <translation>Already connected</translation>
+      <translation>Redan ansluten</translation>
     </message>
     <message>
       <location filename="../src/ui/NetworkDevicesToConnect.qml" line="247"/>
       <source>Retry</source>
-      <translation>Retry</translation>
+      <translation>Försök igen</translation>
     </message>
     <message>
       <location filename="../src/ui/NetworkDevicesToConnect.qml" line="265"/>
       <source>Network Devices</source>
-      <translation>Network Devices</translation>
+      <translation>Nätverksenheter</translation>
     </message>
     <message>
       <location filename="../src/ui/NetworkDevicesToConnect.qml" line="346"/>
       <source>Connect via custom pairing file</source>
-      <translation>Connect via custom pairing file</translation>
+      <translation>Anslut via anpassad parningsfil</translation>
     </message>
     <message>
       <location filename="../src/ui/NetworkDevicesToConnect.qml" line="360"/>
@@ -3807,7 +3807,7 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/NetworkDevicesToConnect.qml" line="387"/>
       <source>Choose pairing file</source>
-      <translation>Choose pairing file</translation>
+      <translation>Välj parningsfil</translation>
     </message>
   </context>
   <context>
@@ -3815,12 +3815,12 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/PendingDevice.qml" line="29"/>
       <source>Trust This Computer</source>
-      <translation>Trust This Computer</translation>
+      <translation>Lita på den här datorn</translation>
     </message>
     <message>
       <location filename="../src/ui/PendingDevice.qml" line="41"/>
       <source>Unlock your device and tap Trust when the prompt appears.</source>
-      <translation>Unlock your device and tap Trust when the prompt appears.</translation>
+      <translation>Lås upp din enhet och tryck på Lita på när uppmaningen visas.</translation>
     </message>
   </context>
   <context>
@@ -3828,7 +3828,7 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/PendingDeviceSidebar.qml" line="70"/>
       <source>Pairing…</source>
-      <translation>Pairing…</translation>
+      <translation>Kopplar...</translation>
     </message>
   </context>
   <context>
@@ -3841,47 +3841,47 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="83"/>
       <source>AFC client is not available.</source>
-      <translation>AFC client is not available.</translation>
+      <translation>AFC-klienten är inte tillgänglig.</translation>
     </message>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="89"/>
       <source>Failed to start the video stream.</source>
-      <translation>Failed to start the video stream.</translation>
+      <translation>Det gick inte att starta videoströmmen.</translation>
     </message>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="213"/>
       <source>Failed to load the image preview.</source>
-      <translation>Failed to load the image preview.</translation>
+      <translation>Det gick inte att läsa in förhandsgranskningen av bilden.</translation>
     </message>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="228"/>
       <source>Failed to play the video.</source>
-      <translation>Failed to play the video.</translation>
+      <translation>Det gick inte att spela upp videon.</translation>
     </message>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="274"/>
       <source>The image could not be displayed.</source>
-      <translation>The image could not be displayed.</translation>
+      <translation>Bilden kunde inte visas.</translation>
     </message>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="340"/>
       <source>Preview unavailable</source>
-      <translation>Preview unavailable</translation>
+      <translation>Förhandsgranskning inte tillgänglig</translation>
     </message>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="358"/>
       <source>Try Again</source>
-      <translation>Try Again</translation>
+      <translation>Försök igen</translation>
     </message>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="372"/>
       <source>Previous</source>
-      <translation>Previous</translation>
+      <translation>Föregående</translation>
     </message>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="383"/>
       <source>Next</source>
-      <translation>Next</translation>
+      <translation>Nästa</translation>
     </message>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="416"/>
@@ -3891,17 +3891,17 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="416"/>
       <source>IMAGE</source>
-      <translation>IMAGE</translation>
+      <translation>BILD</translation>
     </message>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="447"/>
       <source>Close Preview</source>
-      <translation>Close Preview</translation>
+      <translation>Stäng förhandsgranskning</translation>
     </message>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="472"/>
       <source>Zoom Out</source>
-      <translation>Zoom Out</translation>
+      <translation>Zooma ut</translation>
     </message>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="479"/>
@@ -3911,7 +3911,7 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="487"/>
       <source>Zoom In</source>
-      <translation>Zoom In</translation>
+      <translation>Zooma in</translation>
     </message>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="500"/>
@@ -3921,22 +3921,22 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="528"/>
       <source>Pause</source>
-      <translation>Pause</translation>
+      <translation>Pausa</translation>
     </message>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="528"/>
       <source>Play</source>
-      <translation>Play</translation>
+      <translation>Spela</translation>
     </message>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="580"/>
       <source>Unmute</source>
-      <translation>Unmute</translation>
+      <translation>Slå på ljudet</translation>
     </message>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="580"/>
       <source>Mute</source>
-      <translation>Mute</translation>
+      <translation>Ljud av</translation>
     </message>
   </context>
   <context>
@@ -3944,12 +3944,12 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/base/PrivateText.qml" line="23"/>
       <source>Unknown</source>
-      <translation>Unknown</translation>
+      <translation>Okänd</translation>
     </message>
     <message>
       <location filename="../src/ui/base/PrivateText.qml" line="60"/>
       <source>Copied!</source>
-      <translation>Copied!</translation>
+      <translation>Kopierade!</translation>
     </message>
   </context>
   <context>
@@ -3957,54 +3957,54 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/tools/QueryMobileGestalt.qml" line="14"/>
       <source>Query MobileGestalt - iDescriptor</source>
-      <translation>Query MobileGestalt - iDescriptor</translation>
+      <translation>Fråga MobileGestalt - iDescriptor</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/QueryMobileGestalt.qml" line="51"/>
       <source>This tool lets you query MobileGestalt keys, which provide various device information.</source>
-      <translation>This tool lets you query MobileGestalt keys, which provide various device information.</translation>
+      <translation>Det här verktyget låter dig fråga MobileGestalt-nycklar, som tillhandahåller olika enhetsinformation.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/QueryMobileGestalt.qml" line="57"/>
       <source>Select MobileGestalt Keys</source>
-      <translation>Select MobileGestalt Keys</translation>
+      <translation>Välj MobileGestalt Keys</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/QueryMobileGestalt.qml" line="69"/>
       <source>Select All</source>
-      <translation>Select All</translation>
+      <translation>Välj Alla</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/QueryMobileGestalt.qml" line="77"/>
       <source>Clear All</source>
-      <translation>Clear All</translation>
+      <translation>Rensa alla</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/QueryMobileGestalt.qml" line="108"/>
       <source>Query MobileGestalt</source>
-      <translation>Query MobileGestalt</translation>
+      <translation>Fråga MobileGestalt</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/QueryMobileGestalt.qml" line="125"/>
       <source>Select keys and click Query to begin</source>
-      <translation>Select keys and click Query to begin</translation>
+      <translation>Välj nycklar och klicka på Fråga för att börja</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/QueryMobileGestalt.qml" line="132"/>
       <source>Query Results</source>
-      <translation>Query Results</translation>
+      <translation>Frågeresultat</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/QueryMobileGestalt.qml" line="146"/>
       <source>results will appear here...</source>
-      <translation>results will appear here...</translation>
+      <translation>resultat kommer att visas här...</translation>
     </message>
     <message numerus="yes">
       <location filename="../src/ui/tools/QueryMobileGestalt.qml" line="160"/>
       <source>Query completed. Found %n result(s).</source>
       <translation>
-        <numerusform>Query completed. Found %n result(s).</numerusform>
-        <numerusform>Query completed. Found %n result(s).</numerusform>
+        <numerusform>Frågan slutförd. Hittade %n resultat.</numerusform>
+        <numerusform>Frågan slutförd. Hittade %n resultat.</numerusform>
       </translation>
     </message>
   </context>
@@ -4013,37 +4013,37 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/RecoveryDeviceInfo.qml" line="48"/>
       <source>Recovery Device</source>
-      <translation>Recovery Device</translation>
+      <translation>Återställningsenhet</translation>
     </message>
     <message>
       <location filename="../src/ui/RecoveryDeviceInfo.qml" line="57"/>
       <source>%1 mode</source>
-      <translation>%1 mode</translation>
+      <translation>%1 läge</translation>
     </message>
     <message>
       <location filename="../src/ui/RecoveryDeviceInfo.qml" line="57"/>
       <source>Recovery</source>
-      <translation>Recovery</translation>
+      <translation>Återhämtning</translation>
     </message>
     <message>
       <location filename="../src/ui/RecoveryDeviceInfo.qml" line="64"/>
       <source>Exit Recovery Mode</source>
-      <translation>Exit Recovery Mode</translation>
+      <translation>Avsluta återställningsläge</translation>
     </message>
     <message>
       <location filename="../src/ui/RecoveryDeviceInfo.qml" line="72"/>
       <source>The command to exit recovery mode was sent successfully. The device should restart shortly.</source>
-      <translation>The command to exit recovery mode was sent successfully. The device should restart shortly.</translation>
+      <translation>Kommandot för att avsluta återställningsläget skickades. Enheten bör starta om inom kort.</translation>
     </message>
     <message>
       <location filename="../src/ui/RecoveryDeviceInfo.qml" line="76"/>
       <source>Failed to exit recovery mode. This could be due to USB permissions.</source>
-      <translation>Failed to exit recovery mode. This could be due to USB permissions.</translation>
+      <translation>Det gick inte att avsluta återställningsläget. Detta kan bero på USB-behörigheter.</translation>
     </message>
     <message>
       <location filename="../src/ui/RecoveryDeviceInfo.qml" line="93"/>
       <source>Model:</source>
-      <translation>Model:</translation>
+      <translation>Modell:</translation>
     </message>
     <message>
       <location filename="../src/ui/RecoveryDeviceInfo.qml" line="94"/>
@@ -4055,22 +4055,22 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
       <location filename="../src/ui/RecoveryDeviceInfo.qml" line="109"/>
       <location filename="../src/ui/RecoveryDeviceInfo.qml" line="111"/>
       <source>Unknown</source>
-      <translation>Unknown</translation>
+      <translation>Okänd</translation>
     </message>
     <message>
       <location filename="../src/ui/RecoveryDeviceInfo.qml" line="95"/>
       <source>Board:</source>
-      <translation>Board:</translation>
+      <translation>Styrelse:</translation>
     </message>
     <message>
       <location filename="../src/ui/RecoveryDeviceInfo.qml" line="98"/>
       <source>Marketing Name:</source>
-      <translation>Marketing Name:</translation>
+      <translation>Marknadsföringsnamn:</translation>
     </message>
     <message>
       <location filename="../src/ui/RecoveryDeviceInfo.qml" line="100"/>
       <source>Mode:</source>
-      <translation>Mode:</translation>
+      <translation>Läge:</translation>
     </message>
     <message>
       <location filename="../src/ui/RecoveryDeviceInfo.qml" line="103"/>
@@ -4080,7 +4080,7 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/RecoveryDeviceInfo.qml" line="105"/>
       <source>Serial Number:</source>
-      <translation>Serial Number:</translation>
+      <translation>Serienummer:</translation>
     </message>
     <message>
       <location filename="../src/ui/RecoveryDeviceInfo.qml" line="108"/>
@@ -4095,17 +4095,17 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/RecoveryDeviceInfo.qml" line="113"/>
       <source>Vendor ID:</source>
-      <translation>Vendor ID:</translation>
+      <translation>Leverantörs-ID:</translation>
     </message>
     <message>
       <location filename="../src/ui/RecoveryDeviceInfo.qml" line="115"/>
       <source>Product ID:</source>
-      <translation>Product ID:</translation>
+      <translation>Produkt-ID:</translation>
     </message>
     <message>
       <location filename="../src/ui/RecoveryDeviceInfo.qml" line="130"/>
       <source>Recovery Descriptor</source>
-      <translation>Recovery Descriptor</translation>
+      <translation>Återställningsbeskrivning</translation>
     </message>
   </context>
   <context>
@@ -4113,7 +4113,7 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/RecoveryDeviceSidebar.qml" line="19"/>
       <source>Recovery Device</source>
-      <translation>Recovery Device</translation>
+      <translation>Återställningsenhet</translation>
     </message>
   </context>
   <context>
@@ -4121,138 +4121,138 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="49"/>
       <source>The restore operation could not be completed.</source>
-      <translation>The restore operation could not be completed.</translation>
+      <translation>Återställningen kunde inte slutföras.</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="63"/>
       <source>Enter the backup password before restoring this encrypted backup.</source>
-      <translation>Enter the backup password before restoring this encrypted backup.</translation>
+      <translation>Ange säkerhetskopieringslösenordet innan du återställer denna krypterade säkerhetskopia.</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="70"/>
       <source>Confirm Restore</source>
-      <translation>Confirm Restore</translation>
+      <translation>Bekräfta återställning</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="71"/>
       <source>Restore “%1” to its matching device? Existing device data may be replaced.</source>
-      <translation>Restore “%1” to its matching device? Existing device data may be replaced.</translation>
+      <translation>Återställa "%1" till dess matchande enhet? Befintlig enhetsdata kan ersättas.</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="125"/>
       <source>“%1” was restored successfully.</source>
-      <translation>“%1” was restored successfully.</translation>
+      <translation>"%1" återställdes framgångsrikt.</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="129"/>
       <source>Find My iPhone must be turned off before this backup can be restored. On the device, open Settings, tap your name, then choose Find My → Find My iPhone and turn it off.</source>
-      <translation>Find My iPhone must be turned off before this backup can be restored. On the device, open Settings, tap your name, then choose Find My → Find My iPhone and turn it off.</translation>
+      <translation>Hitta min iPhone måste vara avstängd innan den här säkerhetskopian kan återställas. Öppna Inställningar på enheten, tryck på ditt namn, välj sedan Hitta min → Hitta min iPhone och stäng av den.</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="132"/>
       <source>Turn Off Find My iPhone</source>
-      <translation>Turn Off Find My iPhone</translation>
+      <translation>Stäng av Hitta min iPhone</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="135"/>
       <source>iDescriptor could not restore “%1”. Keep the device connected and try again.</source>
-      <translation>iDescriptor could not restore “%1”. Keep the device connected and try again.</translation>
+      <translation>iDescriptor kunde inte återställa "%1". Håll enheten ansluten och försök igen.</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="153"/>
       <source>Restoring %1</source>
-      <translation>Restoring %1</translation>
+      <translation>Återställer %1</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="155"/>
       <source>Restore Complete</source>
-      <translation>Restore Complete</translation>
+      <translation>Återställningen är klar</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="156"/>
       <source>Restore Backup</source>
-      <translation>Restore Backup</translation>
+      <translation>Återställ säkerhetskopia</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="171"/>
       <source>Try Again</source>
-      <translation>Try Again</translation>
+      <translation>Försök igen</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="172"/>
       <location filename="../src/ui/RestoreDialog.qml" line="309"/>
       <source>Close</source>
-      <translation>Close</translation>
+      <translation>Stäng</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="190"/>
       <source>Restore “%1” to its matching device.</source>
-      <translation>Restore “%1” to its matching device.</translation>
+      <translation>Återställ "%1" till dess matchande enhet.</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="207"/>
       <source>Before restoring, turn off Find My iPhone on the device in Settings → [your name] → Find My → Find My iPhone.</source>
-      <translation>Before restoring, turn off Find My iPhone on the device in Settings → [your name] → Find My → Find My iPhone.</translation>
+      <translation>Innan du återställer, stäng av Hitta min iPhone på enheten i Inställningar → [ditt namn] → Hitta min → Hitta min iPhone.</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="215"/>
       <source>Restore Settings</source>
-      <translation>Restore Settings</translation>
+      <translation>Återställ inställningar</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="223"/>
       <source>Restart device after restore</source>
-      <translation>Restart device after restore</translation>
+      <translation>Starta om enheten efter återställning</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="230"/>
       <source>Create a safety copy before restoring</source>
-      <translation>Create a safety copy before restoring</translation>
+      <translation>Skapa en säkerhetskopia innan du återställer</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="237"/>
       <source>Restore device settings from backup</source>
-      <translation>Restore device settings from backup</translation>
+      <translation>Återställ enhetsinställningar från säkerhetskopiering</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="244"/>
       <source>Restore system files</source>
-      <translation>Restore system files</translation>
+      <translation>Återställ systemfiler</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="251"/>
       <source>Remove items not restored</source>
-      <translation>Remove items not restored</translation>
+      <translation>Ta bort objekt som inte har återställts</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="258"/>
       <source>Encrypted backup</source>
-      <translation>Encrypted backup</translation>
+      <translation>Krypterad backup</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="268"/>
       <source>Backup password</source>
-      <translation>Backup password</translation>
+      <translation>Säkerhetskopieringslösenord</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="280"/>
       <source>Cancel</source>
-      <translation>Cancel</translation>
+      <translation>Avbryt</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="285"/>
       <source>Restore</source>
-      <translation>Restore</translation>
+      <translation>Återställ</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="301"/>
       <source>The backup was restored successfully. The device may restart to finish applying the restored data.</source>
-      <translation>The backup was restored successfully. The device may restart to finish applying the restored data.</translation>
+      <translation>Säkerhetskopieringen återställdes framgångsrikt. Enheten kan starta om för att slutföra appliceringen av återställd data.</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="329"/>
       <source>Keep the device connected until the restore finishes.</source>
-      <translation>Keep the device connected until the restore finishes.</translation>
+      <translation>Håll enheten ansluten tills återställningen är klar.</translation>
     </message>
   </context>
   <context>
@@ -4260,37 +4260,37 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/tools/SSHProcessWindow.qml" line="16"/>
       <source>SSH Terminal / %1 - iDescriptor</source>
-      <translation>SSH Terminal / %1 - iDescriptor</translation>
+      <translation>SSH-terminal / %1 - iDescriptor</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHProcessWindow.qml" line="32"/>
       <source>Setting up SSH tunnel...</source>
-      <translation>Setting up SSH tunnel...</translation>
+      <translation>Konfigurerar SSH-tunnel...</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHProcessWindow.qml" line="33"/>
       <source>Connecting to network device...</source>
-      <translation>Connecting to network device...</translation>
+      <translation>Ansluter till nätverksenhet...</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHProcessWindow.qml" line="529"/>
       <source>Copy</source>
-      <translation>Copy</translation>
+      <translation>Kopiera</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHProcessWindow.qml" line="535"/>
       <source>Copy All</source>
-      <translation>Copy All</translation>
+      <translation>Kopiera alla</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHProcessWindow.qml" line="547"/>
       <source>Clear</source>
-      <translation>Clear</translation>
+      <translation>Rensa</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHProcessWindow.qml" line="591"/>
       <source>Send</source>
-      <translation>Send</translation>
+      <translation>Skicka</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHProcessWindow.qml" line="601"/>
@@ -4309,7 +4309,7 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="28"/>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="152"/>
       <source>Select a device to connect</source>
-      <translation>Select a device to connect</translation>
+      <translation>Välj en enhet att ansluta</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="36"/>
@@ -4317,24 +4317,24 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="439"/>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="577"/>
       <source>Unknown Device</source>
-      <translation>Unknown Device</translation>
+      <translation>Okänd enhet</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="71"/>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="72"/>
       <source>Unknown device</source>
-      <translation>Unknown device</translation>
+      <translation>Okänd enhet</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="103"/>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="685"/>
       <source>Ready to connect</source>
-      <translation>Ready to connect</translation>
+      <translation>Klar att ansluta</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="120"/>
       <source>Unknown</source>
-      <translation>Unknown</translation>
+      <translation>Okänd</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="122"/>
@@ -4344,12 +4344,12 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="123"/>
       <source>Network</source>
-      <translation>Network</translation>
+      <translation>Nätverk</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="136"/>
       <source>Jailbreak status unknown</source>
-      <translation>Jailbreak status unknown</translation>
+      <translation>Jailbreak-status okänd</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="137"/>
@@ -4359,42 +4359,42 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="137"/>
       <source>Not detected as jailbroken</source>
-      <translation>Not detected as jailbroken</translation>
+      <translation>Inte upptäckt som jailbroken</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="159"/>
       <source>Please select a device first</source>
-      <translation>Please select a device first</translation>
+      <translation>Välj en enhet först</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="165"/>
       <source>Selected network device is missing IP address. Please try again.</source>
-      <translation>Selected network device is missing IP address. Please try again.</translation>
+      <translation>Den valda nätverksenheten saknar IP-adress. Försök igen.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="256"/>
       <source>No Device Selected</source>
-      <translation>No Device Selected</translation>
+      <translation>Ingen enhet har valts</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="257"/>
       <source>Please select a device before trying to connect.</source>
-      <translation>Please select a device before trying to connect.</translation>
+      <translation>Välj en enhet innan du försöker ansluta.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="262"/>
       <source>Missing IP Address</source>
-      <translation>Missing IP Address</translation>
+      <translation>Saknar IP-adress</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="263"/>
       <source>The selected network device is missing an IP address. Please try again.</source>
-      <translation>The selected network device is missing an IP address. Please try again.</translation>
+      <translation>Den valda nätverksenheten saknar en IP-adress. Försök igen.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="268"/>
       <source>Device Not Jailbroken</source>
-      <translation>Device Not Jailbroken</translation>
+      <translation>Enheten inte jailbroken</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="269"/>
@@ -4402,45 +4402,45 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
 SSH access may not be available.
 
 Do you want to continue anyway?</source>
-      <translation>The selected device is not detected as jailbroken.
-SSH access may not be available.
+      <translation>Den valda enheten upptäcks inte som jailbroken.
+SSH-åtkomst kanske inte är tillgänglig.
 
-Do you want to continue anyway?</translation>
+Vill du fortsätta ändå?</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="275"/>
       <source>Connection cancelled (device not jailbroken)</source>
-      <translation>Connection cancelled (device not jailbroken)</translation>
+      <translation>Anslutningen avbröts (enheten inte jailbroken)</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="283"/>
       <source>SSH Root Password</source>
-      <translation>SSH Root Password</translation>
+      <translation>SSH root-lösenord</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="297"/>
       <source>Enter the root password. Leave it empty to use the default password.</source>
-      <translation>Enter the root password. Leave it empty to use the default password.</translation>
+      <translation>Ange root-lösenordet. Lämna det tomt för att använda standardlösenordet.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="305"/>
       <source>Default password</source>
-      <translation>Default password</translation>
+      <translation>Standardlösenord</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="322"/>
       <source>Choose an SSH target</source>
-      <translation>Choose an SSH target</translation>
+      <translation>Välj ett SSH-mål</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="331"/>
       <source>Select a jailbroken device, or connect directly by IP address.</source>
-      <translation>Select a jailbroken device, or connect directly by IP address.</translation>
+      <translation>Välj en jailbroken enhet eller anslut direkt med IP-adress.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="366"/>
       <source>Connected Devices</source>
-      <translation>Connected Devices</translation>
+      <translation>Anslutna enheter</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="373"/>
@@ -4451,27 +4451,27 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="477"/>
       <source>No connected devices</source>
-      <translation>No connected devices</translation>
+      <translation>Inga anslutna enheter</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="504"/>
       <source>Network Devices</source>
-      <translation>Network Devices</translation>
+      <translation>Nätverksenheter</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="615"/>
       <source>No network devices</source>
-      <translation>No network devices</translation>
+      <translation>Inga nätverksenheter</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="642"/>
       <source>Manual IP Connection</source>
-      <translation>Manual IP Connection</translation>
+      <translation>Manuell IP-anslutning</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="650"/>
       <source>Use this when the device is reachable but not listed above.</source>
-      <translation>Use this when the device is reachable but not listed above.</translation>
+      <translation>Använd detta när enheten är tillgänglig men inte listad ovan.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="662"/>
@@ -4481,45 +4481,27 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="666"/>
       <source>Connect by IP</source>
-      <translation>Connect by IP</translation>
+      <translation>Anslut via IP</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="671"/>
       <source>Please enter an IP address</source>
-      <translation>Please enter an IP address</translation>
+      <translation>Vänligen ange en IP-adress</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="703"/>
       <source>%1 selected</source>
-      <translation>%1 selected</translation>
+      <translation>%1 har valts</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="710"/>
       <source>Connect</source>
-      <translation>Connect</translation>
+      <translation>Anslut</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="710"/>
       <source>Choose a device</source>
-      <translation>Choose a device</translation>
-    </message>
-  </context>
-  <context>
-    <name>ScreenMirroring</name>
-    <message>
-      <location filename="../src/ui/tools/ScreenMirroring.qml" line="17"/>
-      <source>Screen Mirroring - iDescriptor</source>
-      <translation>Screen Mirroring - iDescriptor</translation>
-    </message>
-    <message>
-      <location filename="../src/ui/tools/ScreenMirroring.qml" line="81"/>
-      <source>Mirroring</source>
-      <translation>Mirroring</translation>
-    </message>
-    <message>
-      <location filename="../src/ui/tools/ScreenMirroring.qml" line="86"/>
-      <source>%1 packets</source>
-      <translation>%1 packets</translation>
+      <translation>Välj en enhet</translation>
     </message>
   </context>
   <context>
@@ -4527,319 +4509,444 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/Settings.qml" line="20"/>
       <source>Settings - iDescriptor</source>
-      <translation>Settings - iDescriptor</translation>
+      <translation>Inställningar - iDescriptor</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="175"/>
+      <location filename="../src/ui/Settings.qml" line="190"/>
       <source>Settings applied. Please restart the application for changes to take effect.</source>
-      <translation>Settings applied. Please restart the application for changes to take effect.</translation>
+      <translation>Inställningar tillämpade. Starta om applikationen för att ändringarna ska träda i kraft.</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="176"/>
+      <location filename="../src/ui/Settings.qml" line="191"/>
       <source>Settings applied.</source>
-      <translation>Settings applied.</translation>
+      <translation>Inställningar tillämpade.</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="200"/>
+      <location filename="../src/ui/Settings.qml" line="215"/>
       <source>Select Download Directory</source>
-      <translation>Select Download Directory</translation>
+      <translation>Välj Ladda ned katalog</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="209"/>
+      <location filename="../src/ui/Settings.qml" line="224"/>
       <source>Select Backup Directory</source>
-      <translation>Select Backup Directory</translation>
-    </message>
-    <message>
-      <location filename="../src/ui/Settings.qml" line="218"/>
-      <source>Select IPA Download Directory</source>
-      <translation>Select IPA Download Directory</translation>
-    </message>
-    <message>
-      <location filename="../src/ui/Settings.qml" line="227"/>
-      <source>Settings</source>
-      <translation>Settings</translation>
-    </message>
-    <message>
-      <location filename="../src/ui/Settings.qml" line="232"/>
-      <location filename="../src/ui/Settings.qml" line="732"/>
-      <source>Reset Settings</source>
-      <translation>Reset Settings</translation>
+      <translation>Välj Backup Directory</translation>
     </message>
     <message>
       <location filename="../src/ui/Settings.qml" line="233"/>
+      <source>Select IPA Download Directory</source>
+      <translation>Välj IPA Download Directory</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="242"/>
+      <source>Settings</source>
+      <translation>Inställningar</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="247"/>
+      <location filename="../src/ui/Settings.qml" line="773"/>
+      <source>Reset Settings</source>
+      <translation>Återställ inställningar</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="248"/>
       <source>Are you sure you want to reset all settings to their default values?</source>
-      <translation>Are you sure you want to reset all settings to their default values?</translation>
+      <translation>Är du säker på att du vill återställa alla inställningar till deras standardvärden?</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="261"/>
+      <location filename="../src/ui/Settings.qml" line="276"/>
       <source>General</source>
-      <translation>General</translation>
+      <translation>Allmänt</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="268"/>
+      <location filename="../src/ui/Settings.qml" line="283"/>
       <source>Developer Disk Image Path</source>
-      <translation>Developer Disk Image Path</translation>
+      <translation>Utvecklarens diskbildssökväg</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="280"/>
-      <location filename="../src/ui/Settings.qml" line="302"/>
-      <location filename="../src/ui/Settings.qml" line="324"/>
+      <location filename="../src/ui/Settings.qml" line="295"/>
+      <location filename="../src/ui/Settings.qml" line="317"/>
+      <location filename="../src/ui/Settings.qml" line="339"/>
       <source>Browse</source>
-      <translation>Browse</translation>
+      <translation>Bläddra</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="290"/>
+      <location filename="../src/ui/Settings.qml" line="305"/>
       <source>IPA Download Path</source>
-      <translation>IPA Download Path</translation>
+      <translation>IPA-nedladdningsväg</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="312"/>
+      <location filename="../src/ui/Settings.qml" line="327"/>
       <source>Backup Path</source>
-      <translation>Backup Path</translation>
+      <translation>Säkerhetskopieringsväg</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="334"/>
+      <location filename="../src/ui/Settings.qml" line="349"/>
       <source>Wireless File Server Port</source>
-      <translation>Wireless File Server Port</translation>
+      <translation>Trådlös filserverport</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="348"/>
+      <location filename="../src/ui/Settings.qml" line="363"/>
       <source>The starting port for the wireless file server. If this port is unavailable, it will try the next 10 ports.</source>
-      <translation>The starting port for the wireless file server. If this port is unavailable, it will try the next 10 ports.</translation>
+      <translation>Startporten för den trådlösa filservern. Om den här porten inte är tillgänglig kommer den att försöka med de kommande 10 portarna.</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="368"/>
+      <location filename="../src/ui/Settings.qml" line="383"/>
       <source>Unmount iFuse drives on exit</source>
-      <translation>Unmount iFuse drives on exit</translation>
+      <translation>Avmontera iFuse-enheter vid utgång</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="378"/>
+      <location filename="../src/ui/Settings.qml" line="393"/>
       <source>Automatically check for updates</source>
-      <translation>Automatically check for updates</translation>
+      <translation>Sök automatiskt efter uppdateringar</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="391"/>
+      <location filename="../src/ui/Settings.qml" line="406"/>
       <source>Gallery backend</source>
-      <translation>Gallery backend</translation>
+      <translation>Galleri backend</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="398"/>
+      <location filename="../src/ui/Settings.qml" line="413"/>
       <source>Filesystem (AFC)</source>
-      <translation>Filesystem (AFC)</translation>
+      <translation>Filsystem (AFC)</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="399"/>
+      <location filename="../src/ui/Settings.qml" line="414"/>
       <source>SQLite</source>
       <translation>SQLite</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="400"/>
+      <location filename="../src/ui/Settings.qml" line="415"/>
       <source>SQLite through VFS</source>
-      <translation>SQLite through VFS</translation>
+      <translation>SQLite genom VFS</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="404"/>
+      <location filename="../src/ui/Settings.qml" line="419"/>
       <source>Choose how gallery albums are loaded from the device.</source>
-      <translation>Choose how gallery albums are loaded from the device.</translation>
+      <translation>Välj hur gallerialbum ska laddas från enheten.</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="417"/>
+      <location filename="../src/ui/Settings.qml" line="432"/>
       <source>Language</source>
-      <translation>Language</translation>
+      <translation>Språk</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="425"/>
+      <location filename="../src/ui/Settings.qml" line="440"/>
       <source>English</source>
-      <translation>English</translation>
+      <translation>engelska</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="426"/>
+      <location filename="../src/ui/Settings.qml" line="451"/>
       <source>German</source>
-      <translation>German</translation>
+      <translation>tyska</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="427"/>
+      <location filename="../src/ui/Settings.qml" line="444"/>
       <source>Chinese (Simplified)</source>
-      <translation>Chinese (Simplified)</translation>
-    </message>
-    <message>
-      <location filename="../src/ui/Settings.qml" line="435"/>
-      <source>Chinese (Traditional)</source>
-      <translation>Chinese (Traditional)</translation>
+      <translation>kinesiska (förenklad)</translation>
     </message>
     <message>
       <location filename="../src/ui/Settings.qml" line="441"/>
-      <source>Appearance</source>
-      <translation>Appearance</translation>
+      <source>Afrikaans</source>
+      <translation>afrikaans</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="442"/>
+      <source>Arabic</source>
+      <translation>arabiska</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="443"/>
+      <source>Catalan</source>
+      <translation>katalanska</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="445"/>
+      <source>Chinese (Traditional)</source>
+      <translation>kinesiska (traditionell)</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="446"/>
+      <source>Czech</source>
+      <translation>tjeckiska</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="447"/>
+      <source>Danish</source>
+      <translation>danska</translation>
     </message>
     <message>
       <location filename="../src/ui/Settings.qml" line="448"/>
-      <source>Theme</source>
-      <translation>Theme</translation>
+      <source>Dutch</source>
+      <translation>holländska</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="449"/>
+      <source>Finnish</source>
+      <translation>finska</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="450"/>
+      <source>French</source>
+      <translation>franska</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="452"/>
+      <source>Greek</source>
+      <translation>grekiska</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="453"/>
+      <source>Hebrew</source>
+      <translation>hebreiska</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="454"/>
+      <source>Hungarian</source>
+      <translation>ungerska</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="455"/>
+      <source>Italian</source>
+      <translation>italienska</translation>
     </message>
     <message>
       <location filename="../src/ui/Settings.qml" line="456"/>
-      <source>System Default</source>
-      <translation>System Default</translation>
+      <source>Japanese</source>
+      <translation>japanska</translation>
     </message>
     <message>
       <location filename="../src/ui/Settings.qml" line="457"/>
-      <source>Light</source>
-      <translation>Light</translation>
+      <source>Korean</source>
+      <translation>koreanska</translation>
     </message>
     <message>
       <location filename="../src/ui/Settings.qml" line="458"/>
-      <source>Dark</source>
-      <translation>Dark</translation>
+      <source>Norwegian</source>
+      <translation>norska</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="473"/>
-      <source>Use custom window frame</source>
-      <translation>Use custom window frame</translation>
+      <location filename="../src/ui/Settings.qml" line="459"/>
+      <source>Polish</source>
+      <translation>polska</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="476"/>
-      <source>Use a custom Linux window frame instead of default.</source>
-      <translation>Use a custom Linux window frame instead of default.</translation>
+      <location filename="../src/ui/Settings.qml" line="460"/>
+      <source>Portuguese (Brazil)</source>
+      <translation>portugisiska (Brasilien)</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="461"/>
+      <source>Romanian</source>
+      <translation>rumänska</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="462"/>
+      <source>Russian</source>
+      <translation>ryska</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="463"/>
+      <source>Serbian</source>
+      <translation>serbiska</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="464"/>
+      <source>Spanish</source>
+      <translation>spanska</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="465"/>
+      <source>Swedish</source>
+      <translation>svenska</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="466"/>
+      <source>Turkish</source>
+      <translation>turkiska</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="467"/>
+      <source>Ukrainian</source>
+      <translation>ukrainska</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="468"/>
+      <source>Vietnamese</source>
+      <translation>vietnamesiska</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="482"/>
+      <source>Appearance</source>
+      <translation>Utseende</translation>
     </message>
     <message>
       <location filename="../src/ui/Settings.qml" line="489"/>
-      <source>Window Effect</source>
-      <translation>Window Effect</translation>
+      <source>Theme</source>
+      <translation>Tema</translation>
     </message>
     <message>
       <location filename="../src/ui/Settings.qml" line="497"/>
+      <source>System Default</source>
+      <translation>System Standard</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="498"/>
+      <source>Light</source>
+      <translation>Ljus</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="499"/>
+      <source>Dark</source>
+      <translation>Mörkt</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="514"/>
+      <source>Use custom window frame</source>
+      <translation>Använd anpassad fönsterram</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="517"/>
+      <source>Use a custom Linux window frame instead of default.</source>
+      <translation>Använd en anpassad Linux-fönsterram istället för standard.</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="530"/>
+      <source>Window Effect</source>
+      <translation>Fönstereffekt</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="538"/>
       <source>Normal</source>
       <translation>Normal</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="498"/>
+      <location filename="../src/ui/Settings.qml" line="539"/>
       <source>Acrylic</source>
-      <translation>Acrylic</translation>
+      <translation>Akryl</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="513"/>
+      <location filename="../src/ui/Settings.qml" line="554"/>
       <source>Device Connection</source>
-      <translation>Device Connection</translation>
+      <translation>Enhetsanslutning</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="517"/>
+      <location filename="../src/ui/Settings.qml" line="558"/>
       <source>Auto-raise main window on device connection</source>
-      <translation>Auto-raise main window on device connection</translation>
+      <translation>Höj huvudfönstret automatiskt vid enhetsanslutning</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="527"/>
+      <location filename="../src/ui/Settings.qml" line="568"/>
       <source>Switch to newly connected device</source>
-      <translation>Switch to newly connected device</translation>
+      <translation>Byt till nyansluten enhet</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="537"/>
+      <location filename="../src/ui/Settings.qml" line="578"/>
       <source>Automatically enable Wi-Fi connections</source>
-      <translation>Automatically enable Wi-Fi connections</translation>
+      <translation>Aktivera Wi-Fi-anslutningar automatiskt</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="547"/>
+      <location filename="../src/ui/Settings.qml" line="588"/>
       <source>Automatically connect to wireless devices</source>
-      <translation>Automatically connect to wireless devices</translation>
+      <translation>Anslut automatiskt till trådlösa enheter</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="557"/>
+      <location filename="../src/ui/Settings.qml" line="598"/>
       <source>Upgrade to wireless on disconnect</source>
-      <translation>Upgrade to wireless on disconnect</translation>
+      <translation>Uppgradera till trådlöst vid frånkoppling</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="560"/>
+      <location filename="../src/ui/Settings.qml" line="601"/>
       <source>When a USB-connected device disconnects, reconnect to it over Wi-Fi when it is available.</source>
-      <translation>When a USB-connected device disconnects, reconnect to it over Wi-Fi when it is available.</translation>
+      <translation>När en USB-ansluten enhet kopplas från, anslut till den igen via Wi-Fi när den är tillgänglig.</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="572"/>
+      <location filename="../src/ui/Settings.qml" line="613"/>
       <source>Connection Timeout</source>
-      <translation>Connection Timeout</translation>
+      <translation>Timeout för anslutning</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="580"/>
+      <location filename="../src/ui/Settings.qml" line="621"/>
       <source> seconds</source>
-      <translation> seconds</translation>
+      <translation> sekunder</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="593"/>
+      <location filename="../src/ui/Settings.qml" line="634"/>
       <source>Jailbroken</source>
       <translation>Jailbroken</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="600"/>
+      <location filename="../src/ui/Settings.qml" line="641"/>
       <source>Default Root Password</source>
-      <translation>Default Root Password</translation>
+      <translation>Standard rotlösenord</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="609"/>
+      <location filename="../src/ui/Settings.qml" line="650"/>
       <source>Default password used for SSH root authentication on jailbroken devices. Default is &apos;alpine&apos;.</source>
-      <translation>Default password used for SSH root authentication on jailbroken devices. Default is &apos;alpine&apos;.</translation>
+      <translation>Standardlösenord som används för SSH-rotautentisering på jailbroken enheter. Standard är "alpint".</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="621"/>
+      <location filename="../src/ui/Settings.qml" line="662"/>
       <source>AirPlay</source>
       <translation>AirPlay</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="628"/>
+      <location filename="../src/ui/Settings.qml" line="669"/>
       <source>Fps</source>
       <translation>Fps</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="636"/>
+      <location filename="../src/ui/Settings.qml" line="677"/>
       <source>Set the fps for AirPlay. Go with 30 fps if you have an older device.</source>
-      <translation>Set the fps for AirPlay. Go with 30 fps if you have an older device.</translation>
+      <translation>Ställ in fps för AirPlay. Gå med 30 fps om du har en äldre enhet.</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="648"/>
+      <location filename="../src/ui/Settings.qml" line="689"/>
       <source>Allow New Connections to Take Over</source>
-      <translation>Allow New Connections to Take Over</translation>
+      <translation>Låt nya anslutningar ta över</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="659"/>
+      <location filename="../src/ui/Settings.qml" line="700"/>
       <source>Use legacy ports</source>
-      <translation>Use legacy ports</translation>
+      <translation>Använd äldre portar</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="662"/>
+      <location filename="../src/ui/Settings.qml" line="703"/>
       <source>Use legacy ports, refer to AIRPLAY.md for more information.</source>
-      <translation>Use legacy ports, refer to AIRPLAY.md for more information.</translation>
+      <translation>Använd äldre portar, se AIRPLAY.md för mer information.</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="672"/>
+      <location filename="../src/ui/Settings.qml" line="713"/>
       <source>Show V4L2 Button on AirPlay Widget</source>
-      <translation>Show V4L2 Button on AirPlay Widget</translation>
+      <translation>Visa V4L2-knappen på AirPlay-widgeten</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="688"/>
+      <location filename="../src/ui/Settings.qml" line="729"/>
       <source>iDescriptor</source>
       <translation>iDescriptor</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="695"/>
+      <location filename="../src/ui/Settings.qml" line="736"/>
       <source>Version %1 · %2</source>
       <translation>Version %1 · %2</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="706"/>
+      <location filename="../src/ui/Settings.qml" line="747"/>
       <source>A free, open-source, cross-platform iDevice management tool.
 
 © 2026 Uncore &lt;https://github.com/uncor3&gt; and iDescriptor contributors</source>
-      <translation>A free, open-source, cross-platform iDevice management tool.
+      <translation>Ett gratis, öppen källkod, plattformsoberoende iDevice-hanteringsverktyg.
 
-© 2026 Uncore &lt;https://github.com/uncor3&gt; and iDescriptor contributors</translation>
+© 2026 Uncore &lt;https://github.com/uncor3&gt; och iDescriptor-bidragsgivare</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="727"/>
+      <location filename="../src/ui/Settings.qml" line="768"/>
       <source>Check for Updates</source>
-      <translation>Check for Updates</translation>
+      <translation>Sök efter uppdateringar</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="739"/>
+      <location filename="../src/ui/Settings.qml" line="780"/>
       <source>Apply</source>
-      <translation>Apply</translation>
+      <translation>Ansök</translation>
     </message>
   </context>
   <context>
@@ -4852,37 +4959,37 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/SidebarFooter.qml" line="86"/>
       <source>Unmount Failed</source>
-      <translation>Unmount Failed</translation>
+      <translation>Avmontering misslyckades</translation>
     </message>
     <message>
       <location filename="../src/ui/SidebarFooter.qml" line="87"/>
       <source>Failed to unmount iFuse at %1. Please try again. %2</source>
-      <translation>Failed to unmount iFuse at %1. Please try again. %2</translation>
+      <translation>Det gick inte att avmontera iFuse vid %1. Försök igen. %2</translation>
     </message>
     <message>
       <location filename="../src/ui/SidebarFooter.qml" line="106"/>
       <source>Unmounting iFuse at %1…</source>
-      <translation>Unmounting iFuse at %1…</translation>
+      <translation>Avmonterar iFuse vid %1...</translation>
     </message>
     <message>
       <location filename="../src/ui/SidebarFooter.qml" line="107"/>
       <source>Unmount iFuse at %1</source>
-      <translation>Unmount iFuse at %1</translation>
+      <translation>Avmontera iFuse vid %1</translation>
     </message>
     <message>
       <location filename="../src/ui/SidebarFooter.qml" line="122"/>
       <source>Activity</source>
-      <translation>Activity</translation>
+      <translation>Aktivitet</translation>
     </message>
     <message>
       <location filename="../src/ui/SidebarFooter.qml" line="135"/>
       <source>Open project on GitHub</source>
-      <translation>Open project on GitHub</translation>
+      <translation>Öppna projekt på GitHub</translation>
     </message>
     <message>
       <location filename="../src/ui/SidebarFooter.qml" line="144"/>
       <source>Settings</source>
-      <translation>Settings</translation>
+      <translation>Inställningar</translation>
     </message>
   </context>
   <context>
@@ -4890,7 +4997,7 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/SidebarToggleButton.qml" line="21"/>
       <source>Toggle sidebar</source>
-      <translation>Toggle sidebar</translation>
+      <translation>Växla sidofältet</translation>
     </message>
   </context>
   <context>
@@ -4898,112 +5005,112 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="18"/>
       <source>Simulate Location - iDescriptor</source>
-      <translation>Simulate Location - iDescriptor</translation>
+      <translation>Simulera plats - iDescriptor</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="37"/>
       <source>Developer Mode preparation did not complete. Location simulation was not changed.</source>
-      <translation>Developer Mode preparation did not complete. Location simulation was not changed.</translation>
+      <translation>Förberedelsen av utvecklarläget slutfördes inte. Platssimuleringen ändrades inte.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="73"/>
       <source>Please enter a latitude between −90 and 90 and a longitude between −180 and 180.</source>
-      <translation>Please enter a latitude between −90 and 90 and a longitude between −180 and 180.</translation>
+      <translation>Ange en latitud mellan −90 och 90 och en longitud mellan −180 och 180.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="106"/>
       <source>Reset Simulated Location?</source>
-      <translation>Reset Simulated Location?</translation>
+      <translation>Återställa simulerad plats?</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="107"/>
       <source>This will clear the simulated location and return the device to the location it determines normally. Do you want to continue?</source>
-      <translation>This will clear the simulated location and return the device to the location it determines normally. Do you want to continue?</translation>
+      <translation>Detta kommer att rensa den simulerade platsen och återföra enheten till den plats som den bestämmer normalt. Vill du fortsätta?</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="147"/>
       <source>The simulated location was applied successfully.</source>
-      <translation>The simulated location was applied successfully.</translation>
+      <translation>Den simulerade platsen användes framgångsrikt.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="149"/>
       <source>Location simulation was reset successfully.</source>
-      <translation>Location simulation was reset successfully.</translation>
+      <translation>Platssimuleringen har återställts.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="156"/>
       <source>Developer Mode is still not available. Error code: %1</source>
-      <translation>Developer Mode is still not available. Error code: %1</translation>
+      <translation>Utvecklarläget är fortfarande inte tillgängligt. Felkod: %1</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="167"/>
       <source>The location request timed out. Please verify the device connection and try again.</source>
-      <translation>The location request timed out. Please verify the device connection and try again.</translation>
+      <translation>Platsförfrågan tog timeout. Verifiera enhetens anslutning och försök igen.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="171"/>
       <source>Failed to update location simulation. Error code: %1</source>
-      <translation>Failed to update location simulation. Error code: %1</translation>
+      <translation>Det gick inte att uppdatera platssimuleringen. Felkod: %1</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="320"/>
       <source>The map could not be loaded: %1</source>
-      <translation>The map could not be loaded: %1</translation>
+      <translation>Kartan kunde inte laddas: %1</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="360"/>
       <source>Simulated Location</source>
-      <translation>Simulated Location</translation>
+      <translation>Simulerad plats</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="369"/>
       <source>Choose a point on the map or enter precise coordinates.</source>
-      <translation>Choose a point on the map or enter precise coordinates.</translation>
+      <translation>Välj en punkt på kartan eller ange exakta koordinater.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="376"/>
       <source>Coordinates</source>
-      <translation>Coordinates</translation>
+      <translation>Koordinater</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="395"/>
       <source>Latitude</source>
-      <translation>Latitude</translation>
+      <translation>Latitud</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="424"/>
       <source>Longitude</source>
-      <translation>Longitude</translation>
+      <translation>Longitud</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="462"/>
       <source>Applying…</source>
-      <translation>Applying…</translation>
+      <translation>Ansöker...</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="462"/>
       <source>Apply</source>
-      <translation>Apply</translation>
+      <translation>Ansök</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="487"/>
       <source>Resetting…</source>
-      <translation>Resetting…</translation>
+      <translation>Återställer...</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="487"/>
       <source>Reset</source>
-      <translation>Reset</translation>
+      <translation>Återställ</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="493"/>
       <source>Clear the simulated location and return the device to its original location.</source>
-      <translation>Clear the simulated location and return the device to its original location.</translation>
+      <translation>Rensa den simulerade platsen och återställ enheten till sin ursprungliga plats.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="534"/>
       <source>Recent Locations</source>
-      <translation>Recent Locations</translation>
+      <translation>Senaste platser</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="564"/>
@@ -5014,7 +5121,7 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="618"/>
       <source>Locations you use will appear here.</source>
-      <translation>Locations you use will appear here.</translation>
+      <translation>Platser du använder visas här.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="634"/>
@@ -5027,12 +5134,12 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/app-store/SponsorItem.qml" line="105"/>
       <source>Install App</source>
-      <translation>Install App</translation>
+      <translation>Installera appen</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/SponsorItem.qml" line="113"/>
       <source>Visit website →</source>
-      <translation>Visit website →</translation>
+      <translation>Besök hemsidan →</translation>
     </message>
   </context>
   <context>
@@ -5040,17 +5147,17 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/app-store/SponsorUs.qml" line="31"/>
       <source>Sponsor Us!</source>
-      <translation>Sponsor Us!</translation>
+      <translation>Sponsra oss!</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/SponsorUs.qml" line="40"/>
       <source>Support development and feature requests while becoming our first featured sponsor.</source>
-      <translation>Support development and feature requests while becoming our first featured sponsor.</translation>
+      <translation>Stöd utveckling och funktionsförfrågningar samtidigt som du blir vår första utvalda sponsor.</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/SponsorUs.qml" line="52"/>
       <source>Sponsor us</source>
-      <translation>Sponsor us</translation>
+      <translation>Sponsra oss</translation>
     </message>
   </context>
   <context>
@@ -5063,12 +5170,12 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/SponsorUsDialog.qml" line="61"/>
       <source>Your support helps fund ongoing development, testing, and the features the community cares about most.</source>
-      <translation>Your support helps fund ongoing development, testing, and the features the community cares about most.</translation>
+      <translation>Ditt stöd hjälper till att finansiera pågående utveckling, testning och de funktioner som communityn bryr sig mest om.</translation>
     </message>
     <message>
       <location filename="../src/ui/SponsorUsDialog.qml" line="81"/>
       <source>Maybe later</source>
-      <translation>Maybe later</translation>
+      <translation>Kanske senare</translation>
     </message>
   </context>
   <context>
@@ -5076,17 +5183,17 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/base/StateView.qml" line="20"/>
       <source>Something went wrong.</source>
-      <translation>Something went wrong.</translation>
+      <translation>Något gick fel.</translation>
     </message>
     <message>
       <location filename="../src/ui/base/StateView.qml" line="23"/>
       <source>Retry</source>
-      <translation>Retry</translation>
+      <translation>Försök igen</translation>
     </message>
     <message>
       <location filename="../src/ui/base/StateView.qml" line="24"/>
       <source>Cancel</source>
-      <translation>Cancel</translation>
+      <translation>Avbryt</translation>
     </message>
   </context>
   <context>
@@ -5094,7 +5201,7 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/StatusWindow.qml" line="134"/>
       <source>Export &amp; Import processes will appear here</source>
-      <translation>Export &amp; Import processes will appear here</translation>
+      <translation>Export- och importprocesser visas här</translation>
     </message>
   </context>
   <context>
@@ -5102,52 +5209,52 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/StatusWindowProcess.qml" line="96"/>
       <source>Starting...</source>
-      <translation>Starting...</translation>
+      <translation>Börjar...</translation>
     </message>
     <message>
       <location filename="../src/ui/StatusWindowProcess.qml" line="96"/>
       <source>Running</source>
-      <translation>Running</translation>
+      <translation>Löpning</translation>
     </message>
     <message>
       <location filename="../src/ui/StatusWindowProcess.qml" line="97"/>
       <source>Completed successfully</source>
-      <translation>Completed successfully</translation>
+      <translation>Slutfördes framgångsrikt</translation>
     </message>
     <message>
       <location filename="../src/ui/StatusWindowProcess.qml" line="98"/>
       <source>Failed</source>
-      <translation>Failed</translation>
+      <translation>Misslyckades</translation>
     </message>
     <message>
       <location filename="../src/ui/StatusWindowProcess.qml" line="99"/>
       <source>Cancelled</source>
-      <translation>Cancelled</translation>
+      <translation>Avbruten</translation>
     </message>
     <message>
       <location filename="../src/ui/StatusWindowProcess.qml" line="149"/>
       <source>Open Folder</source>
-      <translation>Open Folder</translation>
+      <translation>Öppna mapp</translation>
     </message>
     <message>
       <location filename="../src/ui/StatusWindowProcess.qml" line="179"/>
       <source>Cancelling...</source>
-      <translation>Cancelling...</translation>
+      <translation>Avbryter...</translation>
     </message>
     <message>
       <location filename="../src/ui/StatusWindowProcess.qml" line="180"/>
       <source>Cancel</source>
-      <translation>Cancel</translation>
+      <translation>Avbryt</translation>
     </message>
     <message>
       <location filename="../src/ui/StatusWindowProcess.qml" line="219"/>
       <source>%1 of %2 items</source>
-      <translation>%1 of %2 items</translation>
+      <translation>%1 av %2 objekt</translation>
     </message>
     <message>
       <location filename="../src/ui/StatusWindowProcess.qml" line="222"/>
       <source>%1 failed</source>
-      <translation>%1 failed</translation>
+      <translation>%1 misslyckades</translation>
     </message>
   </context>
   <context>
@@ -5155,7 +5262,7 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="19"/>
       <source>Error</source>
-      <translation>Error</translation>
+      <translation>Fel</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="25"/>
@@ -5166,75 +5273,75 @@ Do you want to continue anyway?</translation>
       <location filename="../src/ui/Toolbox.qml" line="66"/>
       <location filename="../src/ui/Toolbox.qml" line="150"/>
       <source>The selected device is no longer connected.</source>
-      <translation>The selected device is no longer connected.</translation>
+      <translation>Den valda enheten är inte längre ansluten.</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="74"/>
       <source>Restart Device</source>
-      <translation>Restart Device</translation>
+      <translation>Starta om enheten</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="75"/>
       <source>Are you sure you want to restart this device?</source>
-      <translation>Are you sure you want to restart this device?</translation>
+      <translation>Är du säker på att du vill starta om den här enheten?</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="82"/>
       <source>Shut Down Device</source>
-      <translation>Shut Down Device</translation>
+      <translation>Stäng av enheten</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="83"/>
       <source>Are you sure you want to shut down this device?</source>
-      <translation>Are you sure you want to shut down this device?</translation>
+      <translation>Är du säker på att du vill stänga av den här enheten?</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="90"/>
       <source>Enter Recovery Mode</source>
-      <translation>Enter Recovery Mode</translation>
+      <translation>Gå in i återställningsläge</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="91"/>
       <source>Are you sure you want to put this device into recovery mode?</source>
-      <translation>Are you sure you want to put this device into recovery mode?</translation>
+      <translation>Är du säker på att du vill sätta den här enheten i återställningsläge?</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="98"/>
       <location filename="../src/ui/Toolbox.qml" line="627"/>
       <source>Unpair iDevice</source>
-      <translation>Unpair iDevice</translation>
+      <translation>Koppla bort iDevice</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="99"/>
       <source>Are you sure you want to unpair this device? You will need to trust and pair it again before reconnecting.</source>
-      <translation>Are you sure you want to unpair this device? You will need to trust and pair it again before reconnecting.</translation>
+      <translation>Är du säker på att du vill koppla bort den här enheten? Du måste lita på och para ihop den igen innan du återansluter.</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="106"/>
       <location filename="../src/ui/Toolbox.qml" line="635"/>
       <source>Unpair and Remove iDevice</source>
-      <translation>Unpair and Remove iDevice</translation>
+      <translation>Koppla bort och ta bort iDevice</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="107"/>
       <source>Are you sure you want to unpair this device and remove it from iDescriptor? You will need to trust and pair it again before reconnecting.</source>
-      <translation>Are you sure you want to unpair this device and remove it from iDescriptor? You will need to trust and pair it again before reconnecting.</translation>
+      <translation>Är du säker på att du vill koppla bort den här enheten och ta bort den från iDescriptor? Du måste lita på och para ihop den igen innan du återansluter.</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="112"/>
       <location filename="../src/ui/Toolbox.qml" line="169"/>
       <source>Unknown device action.</source>
-      <translation>Unknown device action.</translation>
+      <translation>Okänd enhetsåtgärd.</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="118"/>
       <source>An unpair operation is already in progress for this device.</source>
-      <translation>An unpair operation is already in progress for this device.</translation>
+      <translation>En bortkopplingsåtgärd pågår redan för den här enheten.</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="129"/>
       <source>Failed to unpair the device: %1</source>
-      <translation>Failed to unpair the device: %1</translation>
+      <translation>Det gick inte att koppla bort enheten: %1</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="130"/>
@@ -5244,33 +5351,33 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="134"/>
       <source>The device was unpaired successfully.</source>
-      <translation>The device was unpaired successfully.</translation>
+      <translation>Enheten kopplades bort.</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="174"/>
       <source>Failed to send the command to the device. Make sure it is connected and unlocked.</source>
-      <translation>Failed to send the command to the device. Make sure it is connected and unlocked.</translation>
+      <translation>Det gick inte att skicka kommandot till enheten. Se till att den är ansluten och olåst.</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="176"/>
       <source>Action &apos;%1&apos; sent successfully.</source>
-      <translation>Action &apos;%1&apos; sent successfully.</translation>
+      <translation>Action '%1' sent successfully.</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="242"/>
       <source>This tool is not available for wireless devices. Please connect your device via USB.</source>
-      <translation>This tool is not available for wireless devices. Please connect your device via USB.</translation>
+      <translation>Det här verktyget är inte tillgängligt för trådlösa enheter. Anslut din enhet via USB.</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="299"/>
       <source>Failed to load gst gl plugin, make sure you have QT_QPA_PLATFORM=xcb env var set</source>
-      <translation>Failed to load gst gl plugin, make sure you have QT_QPA_PLATFORM=xcb env var set</translation>
+      <translation>Det gick inte att ladda gst gl plugin, se till att du har QT_QPA_PLATFORM=xcb env var inställd</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="302"/>
       <location filename="../src/ui/Toolbox.qml" line="305"/>
       <source>Failed to load gst gl plugin, make sure you can use OpenGL</source>
-      <translation>Failed to load gst gl plugin, make sure you can use OpenGL</translation>
+      <translation>Det gick inte att ladda gst gl-plugin, se till att du kan använda OpenGL</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="308"/>
@@ -5285,22 +5392,22 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="357"/>
       <source>Failed to create Developer Mode helper: %1</source>
-      <translation>Failed to create Developer Mode helper: %1</translation>
+      <translation>Det gick inte att skapa utvecklarlägeshjälp: %1</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="369"/>
       <source>Developer Mode is enabled on the selected device.</source>
-      <translation>Developer Mode is enabled on the selected device.</translation>
+      <translation>Utvecklarläget är aktiverat på den valda enheten.</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="370"/>
       <source>A developer disk image is mounted on the selected device.</source>
-      <translation>A developer disk image is mounted on the selected device.</translation>
+      <translation>En utvecklardiskavbildning är monterad på den valda enheten.</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="373"/>
       <source>Developer Mode was not enabled. Complete the steps on the device and try again.</source>
-      <translation>Developer Mode was not enabled. Complete the steps on the device and try again.</translation>
+      <translation>Utvecklarläget var inte aktiverat. Complete the steps on the device and try again.</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="374"/>
@@ -5315,17 +5422,17 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="386"/>
       <source>Check Developer Mode?</source>
-      <translation>Check Developer Mode?</translation>
+      <translation>Kontrollera utvecklarläget?</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="388"/>
       <source>This tool will mount a developer disk image for you. Developer disk images are required to enable extra features on the device. Do you want to continue?</source>
-      <translation>This tool will mount a developer disk image for you. Developer disk images are required to enable extra features on the device. Do you want to continue?</translation>
+      <translation>Detta verktyg kommer att montera en utvecklardiskavbildning åt dig. Utvecklardiskavbildningar krävs för att aktivera extra funktioner på enheten. Vill du fortsätta?</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="389"/>
       <source>This tool will check if Developer Mode is enabled on your device. Developer Mode is required to enable extra features on the device. Do you want to continue?</source>
-      <translation>This tool will check if Developer Mode is enabled on your device. Developer Mode is required to enable extra features on the device. Do you want to continue?</translation>
+      <translation>Det här verktyget kontrollerar om utvecklarläget är aktiverat på din enhet. Utvecklarläge krävs för att aktivera extra funktioner på enheten. Vill du fortsätta?</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="486"/>
@@ -5335,12 +5442,12 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="487"/>
       <source>Cast your device screen</source>
-      <translation>Cast your device screen</translation>
+      <translation>Casta enhetens skärm</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="494"/>
       <source>Simulate Location</source>
-      <translation>Simulate Location</translation>
+      <translation>Simulera plats</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="495"/>
@@ -5350,7 +5457,7 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="502"/>
       <source>Live Screen</source>
-      <translation>Live Screen</translation>
+      <translation>Liveskärm</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="503"/>
@@ -5360,12 +5467,12 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="510"/>
       <source>Query Mobile Gestalt</source>
-      <translation>Query Mobile Gestalt</translation>
+      <translation>Fråga Mobile Gestalt</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="511"/>
       <source>Query device hardware information</source>
-      <translation>Query device hardware information</translation>
+      <translation>Fråga enhetens hårdvaruinformation</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="518"/>
@@ -5380,27 +5487,27 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="526"/>
       <source>Wireless Gallery Import</source>
-      <translation>Wireless Gallery Import</translation>
+      <translation>Importera trådlöst galleri</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="527"/>
       <source>Import photos wirelessly to your iDevice (requires Shortcuts app)</source>
-      <translation>Import photos wirelessly to your iDevice (requires Shortcuts app)</translation>
+      <translation>Importera foton trådlöst till din iDevice (kräver appen Genvägar)</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="534"/>
       <source>iFuse Mount</source>
-      <translation>iFuse Mount</translation>
+      <translation>iFuse-fäste</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="535"/>
       <source>Mount your iDevice&apos;s filesystem on your PC</source>
-      <translation>Mount your iDevice&apos;s filesystem on your PC</translation>
+      <translation>Mount your iDevice's filesystem on your PC</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="543"/>
       <source>Cable Info</source>
-      <translation>Cable Info</translation>
+      <translation>Kabel info</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="544"/>
@@ -5410,17 +5517,17 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="551"/>
       <source>Detailed Battery Info</source>
-      <translation>Detailed Battery Info</translation>
+      <translation>Detaljerad batteriinformation</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="552"/>
       <source>View detailed battery health and capacity information</source>
-      <translation>View detailed battery health and capacity information</translation>
+      <translation>Visa detaljerad information om batteritillstånd och kapacitet</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="559"/>
       <source>Network Devices</source>
-      <translation>Network Devices</translation>
+      <translation>Nätverksenheter</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="560"/>
@@ -5430,7 +5537,7 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="567"/>
       <source>Backups</source>
-      <translation>Backups</translation>
+      <translation>Säkerhetskopieringar</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="568"/>
@@ -5440,7 +5547,7 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="575"/>
       <source>Transfer Speed Test</source>
-      <translation>Transfer Speed Test</translation>
+      <translation>Överföringshastighetstest</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="576"/>
@@ -5450,82 +5557,82 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="586"/>
       <source>Enable Dev Mode</source>
-      <translation>Enable Dev Mode</translation>
+      <translation>Aktivera Dev Mode</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="587"/>
       <source>Check or enable Developer Mode on this device</source>
-      <translation>Check or enable Developer Mode on this device</translation>
+      <translation>Kontrollera eller aktivera utvecklarläget på den här enheten</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="594"/>
       <source>Restart</source>
-      <translation>Restart</translation>
+      <translation>Starta om</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="595"/>
       <source>Restart device services</source>
-      <translation>Restart device services</translation>
+      <translation>Starta om enhetstjänster</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="602"/>
       <source>Shutdown</source>
-      <translation>Shutdown</translation>
+      <translation>Avstängning</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="603"/>
       <source>Shut down the device</source>
-      <translation>Shut down the device</translation>
+      <translation>Stäng av enheten</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="610"/>
       <source>Recovery Mode</source>
-      <translation>Recovery Mode</translation>
+      <translation>Återställningsläge</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="611"/>
       <source>Enter device recovery mode</source>
-      <translation>Enter device recovery mode</translation>
+      <translation>Gå till enhetsåterställningsläge</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="618"/>
       <source>Enable Wi-Fi Connections</source>
-      <translation>Enable Wi-Fi Connections</translation>
+      <translation>Aktivera Wi-Fi-anslutningar</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="619"/>
       <source>Make device connectable via Wi-Fi</source>
-      <translation>Make device connectable via Wi-Fi</translation>
+      <translation>Gör enheten anslutbar via Wi-Fi</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="628"/>
       <source>Remove this computer&apos;s trust relationship with the device</source>
-      <translation>Remove this computer&apos;s trust relationship with the device</translation>
+      <translation>Ta bort den här datorns förtroendeförhållande med enheten</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="636"/>
       <source>Unpair the device and remove it from iDescriptor</source>
-      <translation>Unpair the device and remove it from iDescriptor</translation>
+      <translation>Koppla bort enheten och ta bort den från iDescriptor</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="654"/>
       <source>Device:</source>
-      <translation>Device:</translation>
+      <translation>Enhet:</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="664"/>
       <source>No device connected</source>
-      <translation>No device connected</translation>
+      <translation>Ingen enhet ansluten</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="696"/>
       <source>Tools</source>
-      <translation>Tools</translation>
+      <translation>Verktyg</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="733"/>
       <source>More Tools</source>
-      <translation>More Tools</translation>
+      <translation>Fler verktyg</translation>
     </message>
   </context>
   <context>
@@ -5533,7 +5640,7 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="18"/>
       <source>Transfer Speed Test - iDescriptor</source>
-      <translation>Transfer Speed Test - iDescriptor</translation>
+      <translation>Överföringshastighetstest - iDescriptor</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="42"/>
@@ -5558,37 +5665,37 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="64"/>
       <source>The device does not have enough free storage for this test.</source>
-      <translation>The device does not have enough free storage for this test.</translation>
+      <translation>Enheten har inte tillräckligt med ledigt lagringsutrymme för detta test.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="66"/>
       <source>The test finished, but its temporary file could not be removed.</source>
-      <translation>The test finished, but its temporary file could not be removed.</translation>
+      <translation>Testet avslutades, men dess temporära fil kunde inte tas bort.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="68"/>
       <source>The transfer failed. Make sure the device is connected and unlocked.</source>
-      <translation>The transfer failed. Make sure the device is connected and unlocked.</translation>
+      <translation>Överföringen misslyckades. Se till att enheten är ansluten och upplåst.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="70"/>
       <source>The transfer service is unavailable for this device.</source>
-      <translation>The transfer service is unavailable for this device.</translation>
+      <translation>Överföringstjänsten är inte tillgänglig för den här enheten.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="100"/>
       <source>Device Transfer Speed</source>
-      <translation>Device Transfer Speed</translation>
+      <translation>Enhetsöverföringshastighet</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="109"/>
       <source>Measure upload and download speed over the current device connection.</source>
-      <translation>Measure upload and download speed over the current device connection.</translation>
+      <translation>Mät upp- och nedladdningshastigheten över den aktuella enhetens anslutning.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="117"/>
       <source>Payload size</source>
-      <translation>Payload size</translation>
+      <translation>Nyttolaststorlek</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="161"/>
@@ -5608,24 +5715,24 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="231"/>
       <source>Uploading…</source>
-      <translation>Uploading…</translation>
+      <translation>Laddar upp...</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="232"/>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="355"/>
       <source>Upload</source>
-      <translation>Upload</translation>
+      <translation>Ladda upp</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="265"/>
       <source>Downloading…</source>
-      <translation>Downloading…</translation>
+      <translation>Laddar ned...</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="266"/>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="394"/>
       <source>Download</source>
-      <translation>Download</translation>
+      <translation>Ladda ner</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="329"/>
@@ -5637,12 +5744,12 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="432"/>
       <source>Cancel</source>
-      <translation>Cancel</translation>
+      <translation>Avbryt</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="432"/>
       <source>Start</source>
-      <translation>Start</translation>
+      <translation>Starta</translation>
     </message>
   </context>
   <context>
@@ -5650,17 +5757,17 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/Updater.qml" line="20"/>
       <source>Updater - iDescriptor</source>
-      <translation>Updater - iDescriptor</translation>
+      <translation>Uppdaterare - iDescriptor</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="122"/>
       <source>The update check failed.</source>
-      <translation>The update check failed.</translation>
+      <translation>Uppdateringskontrollen misslyckades.</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="155"/>
       <source>Unknown size</source>
-      <translation>Unknown size</translation>
+      <translation>Okänd storlek</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="157"/>
@@ -5675,62 +5782,62 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/Updater.qml" line="170"/>
       <source>Update downloaded.</source>
-      <translation>Update downloaded.</translation>
+      <translation>Uppdatering nedladdad.</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="179"/>
       <source>Please use your package manager to update iDescriptor.</source>
-      <translation>Please use your package manager to update iDescriptor.</translation>
+      <translation>Använd din pakethanterare för att uppdatera iDescriptor.</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="185"/>
       <source>A newer version is available. Update iDescriptor through Flatpak or your software center.</source>
-      <translation>A newer version is available. Update iDescriptor through Flatpak or your software center.</translation>
+      <translation>En nyare version finns tillgänglig. Uppdatera iDescriptor via Flatpak eller ditt mjukvarucenter.</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="187"/>
       <source>A newer version is available. Update iDescriptor through Microsoft Store.</source>
-      <translation>A newer version is available. Update iDescriptor through Microsoft Store.</translation>
+      <translation>En nyare version finns tillgänglig. Uppdatera iDescriptor via Microsoft Store.</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="191"/>
       <source>A newer version is available, but this build has no configured direct-update package.</source>
-      <translation>A newer version is available, but this build has no configured direct-update package.</translation>
+      <translation>En nyare version är tillgänglig, men denna build har inget konfigurerat direktuppdateringspaket.</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="195"/>
       <source>A newer version is available, but no matching download was found for this system.</source>
-      <translation>A newer version is available, but no matching download was found for this system.</translation>
+      <translation>En nyare version finns tillgänglig, men ingen matchande nedladdning hittades för detta system.</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="196"/>
       <source>Download and install when you are ready. Your current settings and connected devices will not be changed.</source>
-      <translation>Download and install when you are ready. Your current settings and connected devices will not be changed.</translation>
+      <translation>Ladda ner och installera när du är redo. Dina nuvarande inställningar och anslutna enheter kommer inte att ändras.</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="202"/>
       <source>Open Flatpak Page</source>
-      <translation>Open Flatpak Page</translation>
+      <translation>Öppna Flatpak-sidan</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="204"/>
       <source>Open Microsoft Store</source>
-      <translation>Open Microsoft Store</translation>
+      <translation>Öppna Microsoft Store</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="256"/>
       <source>Updates</source>
-      <translation>Updates</translation>
+      <translation>Uppdateringar</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="257"/>
       <source>You are using the latest version of iDescriptor.</source>
-      <translation>You are using the latest version of iDescriptor.</translation>
+      <translation>Du använder den senaste versionen av iDescriptor.</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="387"/>
       <source>A new version is available</source>
-      <translation>A new version is available</translation>
+      <translation>En ny version finns tillgänglig</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="396"/>
@@ -5740,12 +5847,12 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/Updater.qml" line="448"/>
       <source>What’s new</source>
-      <translation>What’s new</translation>
+      <translation>Vad är nytt</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="462"/>
       <source>No change log was provided for this release.</source>
-      <translation>No change log was provided for this release.</translation>
+      <translation>Ingen ändringslogg tillhandahölls för den här versionen.</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="480"/>
@@ -5753,72 +5860,72 @@ Do you want to continue anyway?</translation>
       <location filename="../src/ui/Updater.qml" line="706"/>
       <location filename="../src/ui/Updater.qml" line="752"/>
       <source>Close</source>
-      <translation>Close</translation>
+      <translation>Stäng</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="480"/>
       <source>Not now</source>
-      <translation>Not now</translation>
+      <translation>Inte nu</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="487"/>
       <source>Download Update</source>
-      <translation>Download Update</translation>
+      <translation>Ladda ner uppdatering</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="522"/>
       <source>Checking for updates</source>
-      <translation>Checking for updates</translation>
+      <translation>Söker efter uppdateringar</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="531"/>
       <source>Looking for a newer release of iDescriptor…</source>
-      <translation>Looking for a newer release of iDescriptor…</translation>
+      <translation>Letar du efter en nyare version av iDescriptor...</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="560"/>
       <source>Downloading update</source>
-      <translation>Downloading update</translation>
+      <translation>Laddar ner uppdatering</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="569"/>
       <source>Please keep iDescriptor open while the update downloads.</source>
-      <translation>Please keep iDescriptor open while the update downloads.</translation>
+      <translation>Håll iDescriptor öppet medan uppdateringen laddas ned.</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="601"/>
       <source>%1% downloaded</source>
-      <translation>%1% downloaded</translation>
+      <translation>%1% har laddats ned</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="636"/>
       <source>Update downloaded</source>
-      <translation>Update downloaded</translation>
+      <translation>Uppdatering nedladdad</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="644"/>
       <source>Version %1 is ready.</source>
-      <translation>Version %1 is ready.</translation>
+      <translation>Version %1 är klar.</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="676"/>
       <source>Downloaded to %1</source>
-      <translation>Downloaded to %1</translation>
+      <translation>Nedladdat till %1</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="693"/>
       <source>Reveal Download</source>
-      <translation>Reveal Download</translation>
+      <translation>Avslöja Ladda ner</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="706"/>
       <source>Open Update</source>
-      <translation>Open Update</translation>
+      <translation>Öppna Uppdatering</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="733"/>
       <source>Update check failed</source>
-      <translation>Update check failed</translation>
+      <translation>Uppdateringskontrollen misslyckades</translation>
     </message>
   </context>
   <context>
@@ -5826,43 +5933,43 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/Welcome.qml" line="33"/>
       <source>Welcome to iDescriptor</source>
-      <translation>Welcome to iDescriptor</translation>
+      <translation>Välkommen till iDescriptor</translation>
     </message>
     <message>
       <location filename="../src/ui/Welcome.qml" line="48"/>
       <source>Open-Source &amp; Free</source>
-      <translation>Open-Source &amp; Free</translation>
+      <translation>Öppen källkod och gratis</translation>
     </message>
     <message>
       <location filename="../src/ui/Welcome.qml" line="106"/>
       <source>Connect with pairing file</source>
-      <translation>Connect with pairing file</translation>
+      <translation>Anslut med parningsfil</translation>
     </message>
     <message>
       <location filename="../src/ui/Welcome.qml" line="126"/>
       <source>How to connect a wireless device?</source>
-      <translation>How to connect a wireless device?</translation>
+      <translation>Hur ansluter man en trådlös enhet?</translation>
     </message>
     <message>
       <location filename="../src/ui/Welcome.qml" line="159"/>
       <source>Connect an iDevice to get started</source>
-      <translation>Connect an iDevice to get started</translation>
+      <translation>Anslut en iDevice för att komma igång</translation>
     </message>
     <message>
       <location filename="../src/ui/Welcome.qml" line="183"/>
       <source>Found an issue? Report it on GitHub</source>
-      <translation>Found an issue? Report it on GitHub</translation>
+      <translation>Hittade du ett problem? Rapportera det på GitHub</translation>
     </message>
     <message>
       <location filename="../src/ui/Welcome.qml" line="207"/>
       <location filename="../src/ui/Welcome.qml" line="208"/>
       <source>Checking required dependencies...</source>
-      <translation>Checking required dependencies...</translation>
+      <translation>Kontrollerar nödvändiga beroenden...</translation>
     </message>
     <message>
       <location filename="../src/ui/Welcome.qml" line="220"/>
       <source>View Diagnostics</source>
-      <translation>View Diagnostics</translation>
+      <translation>Visa Diagnostik</translation>
     </message>
   </context>
   <context>
@@ -5870,27 +5977,27 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/WhatsNew.qml" line="54"/>
       <source>Failed to load release notes.</source>
-      <translation>Failed to load release notes.</translation>
+      <translation>Det gick inte att läsa in release notes.</translation>
     </message>
     <message>
       <location filename="../src/ui/WhatsNew.qml" line="77"/>
       <source>iDescriptor has been updated to v%1</source>
-      <translation>iDescriptor has been updated to v%1</translation>
+      <translation>iDescriptor har uppdaterats till v%1</translation>
     </message>
     <message>
       <location filename="../src/ui/WhatsNew.qml" line="113"/>
       <source>No release notes were provided for this version.</source>
-      <translation>No release notes were provided for this version.</translation>
+      <translation>Inga versionskommentarer tillhandahölls för den här versionen.</translation>
     </message>
     <message>
       <location filename="../src/ui/WhatsNew.qml" line="131"/>
       <source>Ok, Thanks!</source>
-      <translation>Ok, Thanks!</translation>
+      <translation>Okej, tack!</translation>
     </message>
     <message>
       <location filename="../src/ui/WhatsNew.qml" line="138"/>
       <source>Donate</source>
-      <translation>Donate</translation>
+      <translation>Donera</translation>
     </message>
   </context>
   <context>
@@ -5898,22 +6005,22 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/platform/windows/WindowEffectPanel.qml" line="57"/>
       <source>Personalize iDescriptor</source>
-      <translation>Personalize iDescriptor</translation>
+      <translation>Anpassa iDescriptor</translation>
     </message>
     <message>
       <location filename="../src/ui/platform/windows/WindowEffectPanel.qml" line="65"/>
       <source>Choose a window material. Your selection is applied immediately so you can preview it.</source>
-      <translation>Choose a window material. Your selection is applied immediately so you can preview it.</translation>
+      <translation>Välj ett fönstermaterial. Ditt val tillämpas omedelbart så att du kan förhandsgranska det.</translation>
     </message>
     <message>
       <location filename="../src/ui/platform/windows/WindowEffectPanel.qml" line="80"/>
       <source>Acrylic</source>
-      <translation>Acrylic</translation>
+      <translation>Akryl</translation>
     </message>
     <message>
       <location filename="../src/ui/platform/windows/WindowEffectPanel.qml" line="81"/>
       <source>Translucent and layered</source>
-      <translation>Translucent and layered</translation>
+      <translation>Genomskinlig och skiktad</translation>
     </message>
     <message>
       <location filename="../src/ui/platform/windows/WindowEffectPanel.qml" line="85"/>
@@ -5923,12 +6030,12 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/platform/windows/WindowEffectPanel.qml" line="86"/>
       <source>Solid window background</source>
-      <translation>Solid window background</translation>
+      <translation>Solid fönsterbakgrund</translation>
     </message>
     <message>
       <location filename="../src/ui/platform/windows/WindowEffectPanel.qml" line="258"/>
       <source>You can change this later in Settings.</source>
-      <translation>You can change this later in Settings.</translation>
+      <translation>Du kan ändra detta senare i Inställningar.</translation>
     </message>
     <message>
       <location filename="../src/ui/platform/windows/WindowEffectPanel.qml" line="265"/>
@@ -5946,67 +6053,67 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="139"/>
       <source>Select Photos and Videos</source>
-      <translation>Select Photos and Videos</translation>
+      <translation>Välj Foton och videor</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="142"/>
       <source>Media Files (*.jpg *.jpeg *.png *.gif *.bmp *.tiff *.tif *.webp *.heic *.heif *.mp4 *.mov *.avi *.mkv *.m4v *.3gp *.webm)</source>
-      <translation>Media Files (*.jpg *.jpeg *.png *.gif *.bmp *.tiff *.tif *.webp *.heic *.heif *.mp4 *.mov *.avi *.mkv *.m4v *.3gp *.webm)</translation>
+      <translation>Mediafiler (*.jpg *.jpeg *.png *.gif *.bmp *.tiff *.tif *.webp *.heic *.heif *.mp4 *.mov *.avi *.mkv *.m4v *.3gp *.webm)</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="143"/>
       <source>All Files (*)</source>
-      <translation>All Files (*)</translation>
+      <translation>Alla filer (*)</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="155"/>
       <source>Import to Photos</source>
-      <translation>Import to Photos</translation>
+      <translation>Importera till foton</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="160"/>
       <source>Download progress will appear here</source>
-      <translation>Download progress will appear here</translation>
+      <translation>Nedladdningsförloppet visas här</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="163"/>
       <source>Scan the QR code with your iPhone or iPad.</source>
-      <translation>Scan the QR code with your iPhone or iPad.</translation>
+      <translation>Skanna QR-koden med din iPhone eller iPad.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="164"/>
       <source>On the web page, tap Copy Server Address.</source>
-      <translation>On the web page, tap Copy Server Address.</translation>
+      <translation>På webbsidan trycker du på Kopiera serveradress.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="165"/>
       <source>Install the shortcut once, then tap Run Shortcut.</source>
-      <translation>Install the shortcut once, then tap Run Shortcut.</translation>
+      <translation>Installera genvägen en gång och tryck sedan på Kör genväg.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="166"/>
       <source>Allow the shortcut to save the selected items to Photos.</source>
-      <translation>Allow the shortcut to save the selected items to Photos.</translation>
+      <translation>Tillåt genvägen för att spara de markerade objekten i Foton.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="202"/>
       <source>Ready to share %1 item(s)</source>
-      <translation>Ready to share %1 item(s)</translation>
+      <translation>Klar att dela %1 objekt(er)</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="210"/>
       <source>Keep this window open while the shortcut downloads your files.</source>
-      <translation>Keep this window open while the shortcut downloads your files.</translation>
+      <translation>Håll det här fönstret öppet medan genvägen laddar ner dina filer.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="262"/>
       <source>Unable to create QR code</source>
-      <translation>Unable to create QR code</translation>
+      <translation>Det gick inte att skapa QR-kod</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="263"/>
       <source>Preparing QR code…</source>
-      <translation>Preparing QR code…</translation>
+      <translation>Förbereder QR-kod...</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="276"/>
@@ -6016,97 +6123,97 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="277"/>
       <source>Starting local server…</source>
-      <translation>Starting local server…</translation>
+      <translation>Startar lokal server...</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="299"/>
       <source>Video Guide</source>
-      <translation>Video Guide</translation>
+      <translation>Videoguide</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="299"/>
       <source>On your device</source>
-      <translation>On your device</translation>
+      <translation>På din enhet</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="306"/>
       <source>Show Steps</source>
-      <translation>Show Steps</translation>
+      <translation>Visa steg</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="306"/>
       <source>Watch Video</source>
-      <translation>Watch Video</translation>
+      <translation>Titta på video</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="424"/>
       <source>Downloaded: %1 (%2 KB of %3 KB)</source>
-      <translation>Downloaded: %1 (%2 KB of %3 KB)</translation>
+      <translation>Nedladdat: %1 (%2 KB av %3 KB)</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="461"/>
       <source>Import to Photos wirelessly</source>
-      <translation>Import to Photos wirelessly</translation>
+      <translation>Importera till foton trådlöst</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="469"/>
       <source>Choose media, then scan a QR code to transfer it with the iDescriptor shortcut.</source>
-      <translation>Choose media, then scan a QR code to transfer it with the iDescriptor shortcut.</translation>
+      <translation>Välj media och skanna sedan en QR-kod för att överföra den med iDescriptor-genvägen.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="476"/>
       <source>Choose Files…</source>
-      <translation>Choose Files…</translation>
+      <translation>Välj filer...</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="503"/>
       <source>Selected Media</source>
-      <translation>Selected Media</translation>
+      <translation>Valt media</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="532"/>
       <source>Clear</source>
-      <translation>Clear</translation>
+      <translation>Rensa</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="586"/>
       <source>Drop to add these files</source>
-      <translation>Drop to add these files</translation>
+      <translation>Släpp för att lägga till dessa filer</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="587"/>
       <source>Drop photos and videos here</source>
-      <translation>Drop photos and videos here</translation>
+      <translation>Släpp foton och videor här</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="596"/>
       <source>JPEG, HEIC, PNG, MOV, MP4, and other common media formats</source>
-      <translation>JPEG, HEIC, PNG, MOV, MP4, and other common media formats</translation>
+      <translation>JPEG, HEIC, PNG, MOV, MP4 och andra vanliga medieformat</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="683"/>
       <source>Remove</source>
-      <translation>Remove</translation>
+      <translation>Ta bort</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="727"/>
       <source>Add at least one photo or video to continue.</source>
-      <translation>Add at least one photo or video to continue.</translation>
+      <translation>Lägg till minst ett foto eller en video för att fortsätta.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="728"/>
       <source>%1 item(s) ready to share</source>
-      <translation>%1 item(s) ready to share</translation>
+      <translation>%1 objekt redo att delas</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="734"/>
       <source>Continue</source>
-      <translation>Continue</translation>
+      <translation>Fortsätt</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="738"/>
       <source>Waiting for downloads…</source>
-      <translation>Waiting for downloads…</translation>
+      <translation>Väntar på nedladdningar...</translation>
     </message>
   </context>
   <context>
@@ -6120,7 +6227,7 @@ Do you want to continue anyway?</translation>
       <location filename="../src/ui/ZLinuxWindow.qml" line="76"/>
       <location filename="../src/ui/ZLinuxWindow.qml" line="78"/>
       <source>Close</source>
-      <translation>Close</translation>
+      <translation>Stäng</translation>
     </message>
   </context>
 </TS>
