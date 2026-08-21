@@ -4500,24 +4500,6 @@ SSH 訪問可能不可用。
     </message>
   </context>
   <context>
-    <name>ScreenMirroring</name>
-    <message>
-      <location filename="../src/ui/tools/ScreenMirroring.qml" line="17"/>
-      <source>Screen Mirroring - iDescriptor</source>
-      <translation>屏幕鏡像 - iDescriptor</translation>
-    </message>
-    <message>
-      <location filename="../src/ui/tools/ScreenMirroring.qml" line="81"/>
-      <source>Mirroring</source>
-      <translation>鏡像中</translation>
-    </message>
-    <message>
-      <location filename="../src/ui/tools/ScreenMirroring.qml" line="86"/>
-      <source>%1 packets</source>
-      <translation>%1 個數據包</translation>
-    </message>
-  </context>
-  <context>
     <name>Settings</name>
     <message>
       <location filename="../src/ui/Settings.qml" line="20"/>
@@ -4525,300 +4507,425 @@ SSH 訪問可能不可用。
       <translation>設置 - iDescriptor</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="175"/>
+      <location filename="../src/ui/Settings.qml" line="190"/>
       <source>Settings applied. Please restart the application for changes to take effect.</source>
       <translation>設置已應用。請重新啓動應用程序以使更改生效。</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="176"/>
+      <location filename="../src/ui/Settings.qml" line="191"/>
       <source>Settings applied.</source>
       <translation>設置已應用。</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="200"/>
+      <location filename="../src/ui/Settings.qml" line="215"/>
       <source>Select Download Directory</source>
       <translation>選擇下載目錄</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="209"/>
+      <location filename="../src/ui/Settings.qml" line="224"/>
       <source>Select Backup Directory</source>
       <translation>選擇備份目錄</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="218"/>
+      <location filename="../src/ui/Settings.qml" line="233"/>
       <source>Select IPA Download Directory</source>
       <translation>選擇IPA下載目錄</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="227"/>
+      <location filename="../src/ui/Settings.qml" line="242"/>
       <source>Settings</source>
       <translation>設置</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="232"/>
-      <location filename="../src/ui/Settings.qml" line="732"/>
+      <location filename="../src/ui/Settings.qml" line="247"/>
+      <location filename="../src/ui/Settings.qml" line="773"/>
       <source>Reset Settings</source>
       <translation>重置設置</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="233"/>
+      <location filename="../src/ui/Settings.qml" line="248"/>
       <source>Are you sure you want to reset all settings to their default values?</source>
       <translation>您確定要將所有設置重置為默認值嗎？</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="261"/>
+      <location filename="../src/ui/Settings.qml" line="276"/>
       <source>General</source>
       <translation>一般</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="268"/>
+      <location filename="../src/ui/Settings.qml" line="283"/>
       <source>Developer Disk Image Path</source>
       <translation>開發者磁盤鏡像路徑</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="280"/>
-      <location filename="../src/ui/Settings.qml" line="302"/>
-      <location filename="../src/ui/Settings.qml" line="324"/>
+      <location filename="../src/ui/Settings.qml" line="295"/>
+      <location filename="../src/ui/Settings.qml" line="317"/>
+      <location filename="../src/ui/Settings.qml" line="339"/>
       <source>Browse</source>
       <translation>瀏覽</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="290"/>
+      <location filename="../src/ui/Settings.qml" line="305"/>
       <source>IPA Download Path</source>
       <translation>IPA下載路徑</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="312"/>
+      <location filename="../src/ui/Settings.qml" line="327"/>
       <source>Backup Path</source>
       <translation>備份路徑</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="334"/>
+      <location filename="../src/ui/Settings.qml" line="349"/>
       <source>Wireless File Server Port</source>
       <translation>無線文件服務器端口</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="348"/>
+      <location filename="../src/ui/Settings.qml" line="363"/>
       <source>The starting port for the wireless file server. If this port is unavailable, it will try the next 10 ports.</source>
       <translation>無線文件服務器的起始端口。如果此端口不可用，它將嘗試接下來的 10 個端口。</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="368"/>
+      <location filename="../src/ui/Settings.qml" line="383"/>
       <source>Unmount iFuse drives on exit</source>
       <translation>退出時卸載 iFuse 驅動器</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="378"/>
+      <location filename="../src/ui/Settings.qml" line="393"/>
       <source>Automatically check for updates</source>
       <translation>自動檢查更新</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="391"/>
+      <location filename="../src/ui/Settings.qml" line="406"/>
       <source>Gallery backend</source>
       <translation>圖庫後台</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="398"/>
+      <location filename="../src/ui/Settings.qml" line="413"/>
       <source>Filesystem (AFC)</source>
       <translation>文件系統（AFC）</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="399"/>
+      <location filename="../src/ui/Settings.qml" line="414"/>
       <source>SQLite</source>
       <translation>SQLite</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="400"/>
+      <location filename="../src/ui/Settings.qml" line="415"/>
       <source>SQLite through VFS</source>
       <translation>SQLite 通過 VFS</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="404"/>
+      <location filename="../src/ui/Settings.qml" line="419"/>
       <source>Choose how gallery albums are loaded from the device.</source>
       <translation>選擇如何從設備加載圖庫相冊。</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="417"/>
+      <location filename="../src/ui/Settings.qml" line="432"/>
       <source>Language</source>
       <translation>語言</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="425"/>
+      <location filename="../src/ui/Settings.qml" line="440"/>
       <source>English</source>
       <translation>英語</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="426"/>
+      <location filename="../src/ui/Settings.qml" line="451"/>
       <source>German</source>
       <translation>德語</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="427"/>
+      <location filename="../src/ui/Settings.qml" line="444"/>
       <source>Chinese (Simplified)</source>
       <translation>簡體中文</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="435"/>
+      <location filename="../src/ui/Settings.qml" line="441"/>
+      <source>Afrikaans</source>
+      <translation>南非荷蘭語</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="442"/>
+      <source>Arabic</source>
+      <translation>阿拉伯語</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="443"/>
+      <source>Catalan</source>
+      <translation>加泰隆尼亞語</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="445"/>
       <source>Chinese (Traditional)</source>
       <translation>繁體中文</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="441"/>
+      <location filename="../src/ui/Settings.qml" line="446"/>
+      <source>Czech</source>
+      <translation>捷克語</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="447"/>
+      <source>Danish</source>
+      <translation>丹麥語</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="448"/>
+      <source>Dutch</source>
+      <translation>荷蘭語</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="449"/>
+      <source>Finnish</source>
+      <translation>芬蘭語</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="450"/>
+      <source>French</source>
+      <translation>法語</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="452"/>
+      <source>Greek</source>
+      <translation>希臘文</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="453"/>
+      <source>Hebrew</source>
+      <translation>希伯來文</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="454"/>
+      <source>Hungarian</source>
+      <translation>匈牙利語</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="455"/>
+      <source>Italian</source>
+      <translation>義大利語</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="456"/>
+      <source>Japanese</source>
+      <translation>日語</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="457"/>
+      <source>Korean</source>
+      <translation>韓語</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="458"/>
+      <source>Norwegian</source>
+      <translation>挪威語</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="459"/>
+      <source>Polish</source>
+      <translation>波蘭語</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="460"/>
+      <source>Portuguese (Brazil)</source>
+      <translation>葡萄牙語（巴西）</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="461"/>
+      <source>Romanian</source>
+      <translation>羅馬尼亞語</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="462"/>
+      <source>Russian</source>
+      <translation>俄文</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="463"/>
+      <source>Serbian</source>
+      <translation>塞爾維亞語</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="464"/>
+      <source>Spanish</source>
+      <translation>西班牙語</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="465"/>
+      <source>Swedish</source>
+      <translation>瑞典語</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="466"/>
+      <source>Turkish</source>
+      <translation>土耳其語</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="467"/>
+      <source>Ukrainian</source>
+      <translation>烏克蘭語</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="468"/>
+      <source>Vietnamese</source>
+      <translation>越南語</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="482"/>
       <source>Appearance</source>
       <translation>外觀</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="448"/>
+      <location filename="../src/ui/Settings.qml" line="489"/>
       <source>Theme</source>
       <translation>主題</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="456"/>
+      <location filename="../src/ui/Settings.qml" line="497"/>
       <source>System Default</source>
       <translation>系統默認值</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="457"/>
+      <location filename="../src/ui/Settings.qml" line="498"/>
       <source>Light</source>
       <translation>淺色</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="458"/>
+      <location filename="../src/ui/Settings.qml" line="499"/>
       <source>Dark</source>
       <translation>深色</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="473"/>
+      <location filename="../src/ui/Settings.qml" line="514"/>
       <source>Use custom window frame</source>
       <translation>使用自定義窗框</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="476"/>
+      <location filename="../src/ui/Settings.qml" line="517"/>
       <source>Use a custom Linux window frame instead of default.</source>
       <translation>使用自定義 Linux 窗口框架而不是默認窗口框架。</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="489"/>
+      <location filename="../src/ui/Settings.qml" line="530"/>
       <source>Window Effect</source>
       <translation>窗戶效應</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="497"/>
+      <location filename="../src/ui/Settings.qml" line="538"/>
       <source>Normal</source>
       <translation>正常</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="498"/>
+      <location filename="../src/ui/Settings.qml" line="539"/>
       <source>Acrylic</source>
       <translation>亞克力</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="513"/>
+      <location filename="../src/ui/Settings.qml" line="554"/>
       <source>Device Connection</source>
       <translation>設備連接</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="517"/>
+      <location filename="../src/ui/Settings.qml" line="558"/>
       <source>Auto-raise main window on device connection</source>
       <translation>設備連接時自動升起主窗口</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="527"/>
+      <location filename="../src/ui/Settings.qml" line="568"/>
       <source>Switch to newly connected device</source>
       <translation>切換到新連接的設備</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="537"/>
+      <location filename="../src/ui/Settings.qml" line="578"/>
       <source>Automatically enable Wi-Fi connections</source>
       <translation>自動啓用 Wi-Fi 連接</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="547"/>
+      <location filename="../src/ui/Settings.qml" line="588"/>
       <source>Automatically connect to wireless devices</source>
       <translation>自動連接到無線設備</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="557"/>
+      <location filename="../src/ui/Settings.qml" line="598"/>
       <source>Upgrade to wireless on disconnect</source>
       <translation>斷開連接時升級為無線</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="560"/>
+      <location filename="../src/ui/Settings.qml" line="601"/>
       <source>When a USB-connected device disconnects, reconnect to it over Wi-Fi when it is available.</source>
       <translation>當 USB 連接的設備斷開連接時，請在 Wi-Fi 可用時通過它重新連接。</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="572"/>
+      <location filename="../src/ui/Settings.qml" line="613"/>
       <source>Connection Timeout</source>
       <translation>連接超時</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="580"/>
+      <location filename="../src/ui/Settings.qml" line="621"/>
       <source> seconds</source>
       <translation>秒</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="593"/>
+      <location filename="../src/ui/Settings.qml" line="634"/>
       <source>Jailbroken</source>
       <translation>越獄</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="600"/>
+      <location filename="../src/ui/Settings.qml" line="641"/>
       <source>Default Root Password</source>
       <translation>默認根密碼</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="609"/>
+      <location filename="../src/ui/Settings.qml" line="650"/>
       <source>Default password used for SSH root authentication on jailbroken devices. Default is &apos;alpine&apos;.</source>
       <translation>用於越獄設備上的 SSH root 身份驗證的默認密碼。默認為“高山”。</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="621"/>
+      <location filename="../src/ui/Settings.qml" line="662"/>
       <source>AirPlay</source>
       <translation>隔空播放</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="628"/>
+      <location filename="../src/ui/Settings.qml" line="669"/>
       <source>Fps</source>
       <translation>幀率</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="636"/>
+      <location filename="../src/ui/Settings.qml" line="677"/>
       <source>Set the fps for AirPlay. Go with 30 fps if you have an older device.</source>
       <translation>設置 AirPlay 的 fps。如果您的設備較舊，請選擇 30 fps。</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="648"/>
+      <location filename="../src/ui/Settings.qml" line="689"/>
       <source>Allow New Connections to Take Over</source>
       <translation>允許新連接接管</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="659"/>
+      <location filename="../src/ui/Settings.qml" line="700"/>
       <source>Use legacy ports</source>
       <translation>使用舊端口</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="662"/>
+      <location filename="../src/ui/Settings.qml" line="703"/>
       <source>Use legacy ports, refer to AIRPLAY.md for more information.</source>
       <translation>使用舊版端口，請參閱 AIRPLAY.md 瞭解更多信息。</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="672"/>
+      <location filename="../src/ui/Settings.qml" line="713"/>
       <source>Show V4L2 Button on AirPlay Widget</source>
       <translation>在 AirPlay 小部件上顯示 V4L2 按鈕</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="688"/>
+      <location filename="../src/ui/Settings.qml" line="729"/>
       <source>iDescriptor</source>
       <translation>iDescriptor</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="695"/>
+      <location filename="../src/ui/Settings.qml" line="736"/>
       <source>Version %1 · %2</source>
       <translation>版本 %1 · %2</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="706"/>
+      <location filename="../src/ui/Settings.qml" line="747"/>
       <source>A free, open-source, cross-platform iDevice management tool.
 
 © 2026 Uncore &lt;https://github.com/uncor3&gt; and iDescriptor contributors</source>
@@ -4827,12 +4934,12 @@ SSH 訪問可能不可用。
 © 2026 Uncore &lt;https://github.com/uncor3&gt; 和 iDescriptor 貢獻者</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="727"/>
+      <location filename="../src/ui/Settings.qml" line="768"/>
       <source>Check for Updates</source>
       <translation>檢查更新</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="739"/>
+      <location filename="../src/ui/Settings.qml" line="780"/>
       <source>Apply</source>
       <translation>申請</translation>
     </message>
