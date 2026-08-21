@@ -12,97 +12,97 @@
       <location filename="../src/ui/tools/Airplay.qml" line="71"/>
       <location filename="../src/ui/tools/Airplay.qml" line="138"/>
       <source>Failed to start AirPlay.</source>
-      <translation>Failed to start AirPlay.</translation>
+      <translation>Није успело покретање AirPlay.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/Airplay.qml" line="163"/>
       <source>Waiting for device connection</source>
-      <translation>Waiting for device connection</translation>
+      <translation>Чека се повезивање уређаја</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/Airplay.qml" line="164"/>
       <source>Starting AirPlay Server...</source>
-      <translation>Starting AirPlay Server...</translation>
+      <translation>Почиње AirPlay Сервер...</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/Airplay.qml" line="177"/>
       <source>Settings</source>
-      <translation>Settings</translation>
+      <translation>Подешавања</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/Airplay.qml" line="208"/>
       <source>Loading AirPlay tutorial...</source>
-      <translation>Loading AirPlay tutorial...</translation>
+      <translation>Лоадинг AirPlay водич...</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/Airplay.qml" line="238"/>
       <source>Open Control Center on your device, choose Screen Mirroring, then select iDescriptor@UxPlay.</source>
-      <translation>Open Control Center on your device, choose Screen Mirroring, then select iDescriptor@UxPlay.</translation>
+      <translation>Отворите Цонтрол Центер на свом уређају, изаберите Сцреен Мирроринг, а затим изаберите iDescriptor@UxPlay.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/Airplay.qml" line="342"/>
       <source>Rotate clockwise</source>
-      <translation>Rotate clockwise</translation>
+      <translation>Ротирајте у смеру казаљке на сату</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/Airplay.qml" line="349"/>
       <source>Zoom out</source>
-      <translation>Zoom out</translation>
+      <translation>Умањите</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/Airplay.qml" line="356"/>
       <source>Zoom in</source>
-      <translation>Zoom in</translation>
+      <translation>Увећајте</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/Airplay.qml" line="364"/>
       <source>Reset display</source>
-      <translation>Reset display</translation>
+      <translation>Ресетујте екран</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/Airplay.qml" line="378"/>
       <source>Unmute</source>
-      <translation>Unmute</translation>
+      <translation>Укључи звук</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/Airplay.qml" line="378"/>
       <source>Mute</source>
-      <translation>Mute</translation>
+      <translation>Муте</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/Airplay.qml" line="427"/>
       <source>Volume: %1%</source>
-      <translation>Volume: %1%</translation>
+      <translation>Јачина: %1%</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/Airplay.qml" line="438"/>
       <source>Connection information</source>
-      <translation>Connection information</translation>
+      <translation>Информације о вези</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/Airplay.qml" line="455"/>
       <source>AirPlay Connection</source>
-      <translation>AirPlay Connection</translation>
+      <translation>AirPlay Веза</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/Airplay.qml" line="465"/>
       <source>Launch arguments</source>
-      <translation>Launch arguments</translation>
+      <translation>Покрени аргументе</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/Airplay.qml" line="469"/>
       <source>Device name</source>
-      <translation>Device name</translation>
+      <translation>Назив уређаја</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/Airplay.qml" line="473"/>
       <source>Model</source>
-      <translation>Model</translation>
+      <translation>Модел</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/Airplay.qml" line="477"/>
       <source>Device ID</source>
-      <translation>Device ID</translation>
+      <translation>ИД уређаја</translation>
     </message>
   </context>
   <context>
@@ -111,88 +111,88 @@
       <location filename="../src/ui/AlbumContents.qml" line="98"/>
       <location filename="../src/ui/AlbumContents.qml" line="227"/>
       <source>Exporting Files</source>
-      <translation>Exporting Files</translation>
+      <translation>Извоз датотека</translation>
     </message>
     <message>
       <location filename="../src/ui/AlbumContents.qml" line="115"/>
       <source>Failed to reload the gallery.</source>
-      <translation>Failed to reload the gallery.</translation>
+      <translation>Поново учитавање галерије није успело.</translation>
     </message>
     <message>
       <location filename="../src/ui/AlbumContents.qml" line="141"/>
       <source>Failed to load the album contents.</source>
-      <translation>Failed to load the album contents.</translation>
+      <translation>Учитавање садржаја албума није успело.</translation>
     </message>
     <message>
       <location filename="../src/ui/AlbumContents.qml" line="169"/>
       <location filename="../src/ui/AlbumContents.qml" line="180"/>
       <source>Back</source>
-      <translation>Back</translation>
+      <translation>Назад</translation>
     </message>
     <message>
       <location filename="../src/ui/AlbumContents.qml" line="188"/>
       <source>Refreshing album contents</source>
-      <translation>Refreshing album contents</translation>
+      <translation>Освежавање садржаја албума</translation>
     </message>
     <message>
       <location filename="../src/ui/AlbumContents.qml" line="189"/>
       <source>Refresh</source>
-      <translation>Refresh</translation>
+      <translation>Освежи</translation>
     </message>
     <message>
       <location filename="../src/ui/AlbumContents.qml" line="199"/>
       <source>All</source>
-      <translation>All</translation>
+      <translation>Све</translation>
     </message>
     <message>
       <location filename="../src/ui/AlbumContents.qml" line="200"/>
       <source>Images</source>
-      <translation>Images</translation>
+      <translation>Слике</translation>
     </message>
     <message>
       <location filename="../src/ui/AlbumContents.qml" line="201"/>
       <source>Videos</source>
-      <translation>Videos</translation>
+      <translation>Видеос</translation>
     </message>
     <message>
       <location filename="../src/ui/AlbumContents.qml" line="211"/>
       <source>Most Recent</source>
-      <translation>Most Recent</translation>
+      <translation>Најновије</translation>
     </message>
     <message>
       <location filename="../src/ui/AlbumContents.qml" line="212"/>
       <source>Oldest First</source>
-      <translation>Oldest First</translation>
+      <translation>Прво најстарији</translation>
     </message>
     <message>
       <location filename="../src/ui/AlbumContents.qml" line="219"/>
       <source>Export Selected (%1)</source>
-      <translation>Export Selected (%1)</translation>
+      <translation>Извези изабрано (%1)</translation>
     </message>
     <message>
       <location filename="../src/ui/AlbumContents.qml" line="221"/>
       <source>Exporting Selected Items</source>
-      <translation>Exporting Selected Items</translation>
+      <translation>Извоз изабраних ставки</translation>
     </message>
     <message>
       <location filename="../src/ui/AlbumContents.qml" line="225"/>
       <source>Export All</source>
-      <translation>Export All</translation>
+      <translation>Извези све</translation>
     </message>
     <message>
       <location filename="../src/ui/AlbumContents.qml" line="346"/>
       <source>No Photos or Videos</source>
-      <translation>No Photos or Videos</translation>
+      <translation>Нема фотографија или видео записа</translation>
     </message>
     <message>
       <location filename="../src/ui/AlbumContents.qml" line="354"/>
       <source>This album is empty.</source>
-      <translation>This album is empty.</translation>
+      <translation>Овај албум је празан.</translation>
     </message>
     <message>
       <location filename="../src/ui/AlbumContents.qml" line="376"/>
       <source>Choose Export Folder</source>
-      <translation>Choose Export Folder</translation>
+      <translation>Изаберите фасциклу за извоз</translation>
     </message>
   </context>
   <context>
@@ -200,118 +200,118 @@
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="25"/>
       <source>Free</source>
-      <translation>Free</translation>
+      <translation>Бесплатно</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="34"/>
       <source>Failed to fetch app details.</source>
-      <translation>Failed to fetch app details.</translation>
+      <translation>Преузимање детаља о апликацији није успело.</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="80"/>
       <location filename="../src/ui/app-store/AppDetails.qml" line="94"/>
       <source>Back</source>
-      <translation>Back</translation>
+      <translation>Назад</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="199"/>
       <source>Install</source>
-      <translation>Install</translation>
+      <translation>Инсталирај</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="204"/>
       <source>Get IPA</source>
-      <translation>Get IPA</translation>
+      <translation>Узми IPA</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="219"/>
       <source>Rating</source>
-      <translation>Rating</translation>
+      <translation>Оцена</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="219"/>
       <source>%1 ratings</source>
-      <translation>%1 ratings</translation>
+      <translation>%1 оцене</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="220"/>
       <source>Age</source>
-      <translation>Age</translation>
+      <translation>Старост</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="220"/>
       <source>Years</source>
-      <translation>Years</translation>
+      <translation>Године</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="221"/>
       <source>Version</source>
-      <translation>Version</translation>
+      <translation>Версион</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="221"/>
       <source>Latest</source>
-      <translation>Latest</translation>
+      <translation>Најновије</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="222"/>
       <source>Size</source>
-      <translation>Size</translation>
+      <translation>Величина</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="222"/>
       <source>Download</source>
-      <translation>Download</translation>
+      <translation>Преузми</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="271"/>
       <source>What&apos;s New</source>
-      <translation>What&apos;s New</translation>
+      <translation>Шта је ново</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="278"/>
       <source>No release notes available.</source>
-      <translation>No release notes available.</translation>
+      <translation>Нема доступних белешки о издању.</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="288"/>
       <source>Screenshots</source>
-      <translation>Screenshots</translation>
+      <translation>Снимци екрана</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="320"/>
       <source>No screenshots available.</source>
-      <translation>No screenshots available.</translation>
+      <translation>Нема доступних снимака екрана.</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="331"/>
       <source>Description</source>
-      <translation>Description</translation>
+      <translation>Опис</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="348"/>
       <source>Information</source>
-      <translation>Information</translation>
+      <translation>Информације</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="359"/>
       <source>Seller</source>
-      <translation>Seller</translation>
+      <translation>продавац</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="361"/>
       <source>Bundle ID</source>
-      <translation>Bundle ID</translation>
+      <translation>ИД пакета</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="363"/>
       <source>Minimum iOS</source>
-      <translation>Minimum iOS</translation>
+      <translation>Минимални иОС</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppDetails.qml" line="365"/>
       <source>Languages</source>
-      <translation>Languages</translation>
+      <translation>Језици</translation>
     </message>
   </context>
   <context>
@@ -319,17 +319,17 @@
     <message>
       <location filename="../src/ui/app-store/AppItem.qml" line="99"/>
       <source>Install</source>
-      <translation>Install</translation>
+      <translation>Инсталирај</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppItem.qml" line="121"/>
       <source>Website</source>
-      <translation>Website</translation>
+      <translation>Вебсите</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/AppItem.qml" line="121"/>
       <source>Get IPA</source>
-      <translation>Get IPA</translation>
+      <translation>Узми IPA</translation>
     </message>
   </context>
   <context>
@@ -337,47 +337,47 @@
     <message>
       <location filename="../src/ui/AppSidebar.qml" line="83"/>
       <source>Explore</source>
-      <translation>Explore</translation>
+      <translation>Истражите</translation>
     </message>
     <message>
       <location filename="../src/ui/AppSidebar.qml" line="92"/>
       <source>Welcome</source>
-      <translation>Welcome</translation>
+      <translation>Добродошли</translation>
     </message>
     <message>
       <location filename="../src/ui/AppSidebar.qml" line="99"/>
       <source>Apps</source>
-      <translation>Apps</translation>
+      <translation>Аппс</translation>
     </message>
     <message>
       <location filename="../src/ui/AppSidebar.qml" line="106"/>
       <source>Toolbox</source>
-      <translation>Toolbox</translation>
+      <translation>Тоолбок</translation>
     </message>
     <message>
       <location filename="../src/ui/AppSidebar.qml" line="113"/>
       <source>Jailbroken</source>
-      <translation>Jailbroken</translation>
+      <translation>Јаилброкен</translation>
     </message>
     <message>
       <location filename="../src/ui/AppSidebar.qml" line="120"/>
       <source>Community</source>
-      <translation>Community</translation>
+      <translation>Заједница</translation>
     </message>
     <message>
       <location filename="../src/ui/AppSidebar.qml" line="127"/>
       <source>Donate</source>
-      <translation>Donate</translation>
+      <translation>Донирајте</translation>
     </message>
     <message>
       <location filename="../src/ui/AppSidebar.qml" line="136"/>
       <source>Devices</source>
-      <translation>Devices</translation>
+      <translation>Уређаји</translation>
     </message>
     <message>
       <location filename="../src/ui/AppSidebar.qml" line="150"/>
       <source>No connected devices</source>
-      <translation>No connected devices</translation>
+      <translation>Нема повезаних уређаја</translation>
     </message>
   </context>
   <context>
@@ -385,127 +385,127 @@
     <message>
       <location filename="../src/ui/AppsTab.qml" line="84"/>
       <source>You must be signed in to install apps.</source>
-      <translation>You must be signed in to install apps.</translation>
+      <translation>Морате бити пријављени да бисте инсталирали апликације.</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="103"/>
       <source>You must be signed in to download IPA files.</source>
-      <translation>You must be signed in to download IPA files.</translation>
+      <translation>Морате бити пријављени да бисте преузели датотеке IPA.</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="143"/>
       <source>Photo &amp; Video sharing social network</source>
-      <translation>Photo &amp; Video sharing social network</translation>
+      <translation>Друштвена мрежа за дељење фотографија и видеа</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="144"/>
       <source>Music streaming and podcast platform</source>
-      <translation>Music streaming and podcast platform</translation>
+      <translation>Платформа за стримовање музике и подцаст</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="145"/>
       <source>Video sharing and streaming platform</source>
-      <translation>Video sharing and streaming platform</translation>
+      <translation>Платформа за дељење видеа и стриминг</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="146"/>
       <source>Social media and microblogging</source>
-      <translation>Social media and microblogging</translation>
+      <translation>Друштвени медији и микроблоговање</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="147"/>
       <source>Short-form video hosting service</source>
-      <translation>Short-form video hosting service</translation>
+      <translation>Кратки видео хостинг сервис</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="148"/>
       <source>Live streaming platform</source>
-      <translation>Live streaming platform</translation>
+      <translation>Платформа за стриминг уживо</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="149"/>
       <source>Cloud-based instant messaging</source>
-      <translation>Cloud-based instant messaging</translation>
+      <translation>Размена тренутних порука у облаку</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="150"/>
       <source>Social news aggregation platform</source>
-      <translation>Social news aggregation platform</translation>
+      <translation>Платформа за сакупљање друштвених вести</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="170"/>
       <source>Platinum</source>
-      <translation>Platinum</translation>
+      <translation>Платинум</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="171"/>
       <source>Gold</source>
-      <translation>Gold</translation>
+      <translation>Злато</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="172"/>
       <source>Silver</source>
-      <translation>Silver</translation>
+      <translation>Сребро</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="173"/>
       <source>Bronze</source>
-      <translation>Bronze</translation>
+      <translation>Бронза</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="176"/>
       <source>Failed to parse sponsors JSON.</source>
-      <translation>Failed to parse sponsors JSON.</translation>
+      <translation>Рашчлањивање ЈСОН-а спонзора није успело.</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="179"/>
       <source>Failed to fetch sponsors.</source>
-      <translation>Failed to fetch sponsors.</translation>
+      <translation>Преузимање спонзора није успело.</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="225"/>
       <source>Search failed.</source>
-      <translation>Search failed.</translation>
+      <translation>Претрага није успела.</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="234"/>
       <source>Search returned an invalid response.</source>
-      <translation>Search returned an invalid response.</translation>
+      <translation>Претрага је вратила неважећи одговор.</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="253"/>
       <source>Failed to parse search results.</source>
-      <translation>Failed to parse search results.</translation>
+      <translation>Рашчлањивање резултата претраге није успело.</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="331"/>
       <source>Search for apps...</source>
-      <translation>Search for apps...</translation>
+      <translation>Потражите апликације...</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="341"/>
       <source>Signed in as %1</source>
-      <translation>Signed in as %1</translation>
+      <translation>Пријављен као %1</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="341"/>
       <source>Not signed in</source>
-      <translation>Not signed in</translation>
+      <translation>Нисте пријављени</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="346"/>
       <source>Sign Out</source>
-      <translation>Sign Out</translation>
+      <translation>Одјави се</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="346"/>
       <source>Sign In</source>
-      <translation>Sign In</translation>
+      <translation>Пријавите се</translation>
     </message>
     <message>
       <location filename="../src/ui/AppsTab.qml" line="480"/>
       <source>No results</source>
-      <translation>No results</translation>
+      <translation>Нема резултата</translation>
     </message>
   </context>
   <context>
@@ -513,238 +513,238 @@
     <message>
       <location filename="../src/ui/BackupAction.qml" line="37"/>
       <source>This Device</source>
-      <translation>This Device</translation>
+      <translation>Овај уређај</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="57"/>
       <source>Back Up Over Wi-Fi?</source>
-      <translation>Back Up Over Wi-Fi?</translation>
+      <translation>Направите резервну копију преко Wi-Fi?</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="58"/>
       <source>Wireless backups can take longer and may stop if the connection changes. Keep the device nearby, connected to power, and on the same Wi-Fi network until the backup finishes.</source>
-      <translation>Wireless backups can take longer and may stop if the connection changes. Keep the device nearby, connected to power, and on the same Wi-Fi network until the backup finishes.</translation>
+      <translation>Бежичне резервне копије могу трајати дуже и могу престати ако се веза промени. Држите уређај у близини, повезан на напајање и на истој мрежи Wi-Fi док се прављење резервне копије не заврши.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="90"/>
       <location filename="../src/ui/BackupAction.qml" line="164"/>
       <source>Preparing the backup...</source>
-      <translation>Preparing the backup...</translation>
+      <translation>Припрема резервне копије...</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="99"/>
       <source>Cancelling the backup...</source>
-      <translation>Cancelling the backup...</translation>
+      <translation>Отказивање прављења резервне копије...</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="102"/>
       <source>The backup could not be cancelled.</source>
-      <translation>The backup could not be cancelled.</translation>
+      <translation>Није могуће отказати резервну копију.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="108"/>
       <source>The backup was cancelled. Files already written may remain in the selected folder.</source>
-      <translation>The backup was cancelled. Files already written may remain in the selected folder.</translation>
+      <translation>Резервна копија је отказана. Већ написане датотеке могу остати у изабраној фасцикли.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="121"/>
       <source>Backing Up %1</source>
-      <translation>Backing Up %1</translation>
+      <translation>Прављење резервне копије %1</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="123"/>
       <source>Backup Complete</source>
-      <translation>Backup Complete</translation>
+      <translation>Бацкуп Цомплете</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="125"/>
       <source>Backup Couldn&apos;t Be Completed</source>
-      <translation>Backup Couldn&apos;t Be Completed</translation>
+      <translation>Прављење резервне копије није могло бити довршено</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="127"/>
       <source>Backup Cancelled</source>
-      <translation>Backup Cancelled</translation>
+      <translation>Резервна копија је отказана</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="128"/>
       <source>Back Up %1</source>
-      <translation>Back Up %1</translation>
+      <translation>Направи резервну копију %1</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="133"/>
       <source>Keep the device connected while iDescriptor securely copies its data.</source>
-      <translation>Keep the device connected while iDescriptor securely copies its data.</translation>
+      <translation>Нека уређај буде повезан док iDescriptor безбедно копира своје податке.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="135"/>
       <source>Your device was backed up successfully.</source>
-      <translation>Your device was backed up successfully.</translation>
+      <translation>Направљена је резервна копија уређаја.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="137"/>
       <source>iDescriptor was unable to finish this backup. Review the activity log and try again.</source>
-      <translation>iDescriptor was unable to finish this backup. Review the activity log and try again.</translation>
+      <translation>iDescriptor није могао да заврши ову резервну копију. Прегледајте евиденцију активности и покушајте поново.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="140"/>
       <source>Create a local backup of your device before making changes or transferring data.</source>
-      <translation>Create a local backup of your device before making changes or transferring data.</translation>
+      <translation>Направите локалну резервну копију свог уређаја пре него што извршите измене или пренесете податке.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="163"/>
       <source>Enter the device passcode on the device to continue.</source>
-      <translation>Enter the device passcode on the device to continue.</translation>
+      <translation>Унесите шифру уређаја на уређају да бисте наставили.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="171"/>
       <source>The device requested that this backup be cancelled.</source>
-      <translation>The device requested that this backup be cancelled.</translation>
+      <translation>Уређај је захтевао да се ова резервна копија откаже.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="181"/>
       <source>The device&apos;s backup encryption status could not be read.</source>
-      <translation>The device&apos;s backup encryption status could not be read.</translation>
+      <translation>Није могуће прочитати статус шифровања резервне копије уређаја.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="197"/>
       <source>Saved to %1</source>
-      <translation>Saved to %1</translation>
+      <translation>Сачувано у %1</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="202"/>
       <source>The backup was cancelled from the device.</source>
-      <translation>The backup was cancelled from the device.</translation>
+      <translation>Резервна копија је отказана са уређаја.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="206"/>
       <source>The backup operation ended before it could be completed.</source>
-      <translation>The backup operation ended before it could be completed.</translation>
+      <translation>Операција резервне копије је завршена пре него што је могла да се заврши.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="213"/>
       <source>Select Backup Directory</source>
-      <translation>Select Backup Directory</translation>
+      <translation>Изаберите Директоријум резервне копије</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="229"/>
       <source>The encrypted backup password was updated.</source>
-      <translation>The encrypted backup password was updated.</translation>
+      <translation>Шифрована лозинка за резервну копију је ажурирана.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="255"/>
       <source>A backup operation is in progress</source>
-      <translation>A backup operation is in progress</translation>
+      <translation>У току је операција резервне копије</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="256"/>
       <source>Back</source>
-      <translation>Back</translation>
+      <translation>Назад</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="309"/>
       <source>Backup Location</source>
-      <translation>Backup Location</translation>
+      <translation>Резервна локација</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="324"/>
       <source>Checking backup encryption…</source>
-      <translation>Checking backup encryption…</translation>
+      <translation>Проверава се шифровање резервне копије…</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="326"/>
       <source>Encryption enabled</source>
-      <translation>Encryption enabled</translation>
+      <translation>Шифровање је омогућено</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="327"/>
       <source>Backup encryption status unavailable</source>
-      <translation>Backup encryption status unavailable</translation>
+      <translation>Статус шифровања резервне копије није доступан</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="346"/>
       <source>Use the Manage Encryption button to set up encrypted backups.</source>
-      <translation>Use the Manage Encryption button to set up encrypted backups.</translation>
+      <translation>Користите дугме Управљање шифровањем да бисте подесили шифроване резервне копије.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="347"/>
       <source>Backups for this device are protected with a password.</source>
-      <translation>Backups for this device are protected with a password.</translation>
+      <translation>Резервне копије за овај уређај су заштићене лозинком.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="358"/>
       <source>Force full backup</source>
-      <translation>Force full backup</translation>
+      <translation>Форсирајте пуну резервну копију</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="367"/>
       <source>Only change this if you know what you are doing. If not, just leave it as it is.</source>
-      <translation>Only change this if you know what you are doing. If not, just leave it as it is.</translation>
+      <translation>Промените ово само ако знате шта радите. Ако не, само оставите како јесте.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="393"/>
       <source>Activity</source>
-      <translation>Activity</translation>
+      <translation>Активност</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="402"/>
       <source>1 item</source>
-      <translation>1 item</translation>
+      <translation>1 ставка</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="403"/>
       <source>%1 items</source>
-      <translation>%1 items</translation>
+      <translation>%1 ставки</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="441"/>
       <source>Enter the device passcode on the device to continue the backup.</source>
-      <translation>Enter the device passcode on the device to continue the backup.</translation>
+      <translation>Унесите шифру уређаја на уређају да бисте наставили прављење резервне копије.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="452"/>
       <source>Logs will appear here as files are received from the device.</source>
-      <translation>Logs will appear here as files are received from the device.</translation>
+      <translation>Евиденције ће се појавити овде када се датотеке примају са уређаја.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="499"/>
       <source>Cancel</source>
-      <translation>Cancel</translation>
+      <translation>Откажи</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="505"/>
       <source>Show Details</source>
-      <translation>Show Details</translation>
+      <translation>Прикажи детаље</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="511"/>
       <source>Show in Finder</source>
-      <translation>Show in Finder</translation>
+      <translation>Прикажи у Финдер-у</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="511"/>
       <source>Show in Folder</source>
-      <translation>Show in Folder</translation>
+      <translation>Прикажи у фасцикли</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="517"/>
       <source>Done</source>
-      <translation>Done</translation>
+      <translation>Готово</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="526"/>
       <source>Manage Encryption…</source>
-      <translation>Manage Encryption…</translation>
+      <translation>Управљај шифровањем…</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="535"/>
       <source>Back Up Now</source>
-      <translation>Back Up Now</translation>
+      <translation>Направите резервну копију одмах</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupAction.qml" line="535"/>
       <source>Try Again</source>
-      <translation>Try Again</translation>
+      <translation>Покушајте поново</translation>
     </message>
   </context>
   <context>
@@ -756,72 +756,72 @@
       <location filename="../src/ui/BackupDetails.qml" line="303"/>
       <location filename="../src/ui/BackupDetails.qml" line="304"/>
       <source>Unknown</source>
-      <translation>Unknown</translation>
+      <translation>Непознато</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetails.qml" line="166"/>
       <source>New</source>
-      <translation>New</translation>
+      <translation>Ново</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetails.qml" line="168"/>
       <source>Full</source>
-      <translation>Full</translation>
+      <translation>Пун</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetails.qml" line="169"/>
       <source>Incremental</source>
-      <translation>Incremental</translation>
+      <translation>Инкрементално</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetails.qml" line="183"/>
       <source>Failed to load backup details.</source>
-      <translation>Failed to load backup details.</translation>
+      <translation>Учитавање детаља резервне копије није успело.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetails.qml" line="193"/>
       <source>Failed to parse backup details.</source>
-      <translation>Failed to parse backup details.</translation>
+      <translation>Рашчлањивање детаља резервне копије није успело.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetails.qml" line="223"/>
       <source>Back</source>
-      <translation>Back</translation>
+      <translation>Назад</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetails.qml" line="232"/>
       <source>Backup Summary</source>
-      <translation>Backup Summary</translation>
+      <translation>Резиме резервне копије</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetails.qml" line="255"/>
       <source>Encrypted</source>
-      <translation>Encrypted</translation>
+      <translation>Шифровано</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetails.qml" line="255"/>
       <source>Not Encrypted</source>
-      <translation>Not Encrypted</translation>
+      <translation>Није шифровано</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetails.qml" line="270"/>
       <source>Passcode Was Set</source>
-      <translation>Passcode Was Set</translation>
+      <translation>Шифра је постављена</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetails.qml" line="270"/>
       <source>No Passcode</source>
-      <translation>No Passcode</translation>
+      <translation>Без шифре</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetails.qml" line="302"/>
       <source>iOS %1 - Serial %2</source>
-      <translation>iOS %1 - Serial %2</translation>
+      <translation>иОС %1 – Серијски %2</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetails.qml" line="312"/>
       <source>Backup Date: %1</source>
-      <translation>Backup Date: %1</translation>
+      <translation>Датум резервне копије: %1</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetails.qml" line="352"/>
@@ -833,9 +833,9 @@
       <location filename="../src/ui/BackupDetails.qml" line="434"/>
       <source>%n file(s)</source>
       <translation>
-        <numerusform>%n file(s)</numerusform>
-        <numerusform>%n file(s)</numerusform>
-        <numerusform>%n file(s)</numerusform>
+        <numerusform>%n фајл(а)</numerusform>
+        <numerusform>%n фајл(а)</numerusform>
+        <numerusform>%n фајл(а)</numerusform>
       </translation>
     </message>
   </context>
@@ -846,128 +846,128 @@
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="87"/>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="380"/>
       <source>Unknown</source>
-      <translation>Unknown</translation>
+      <translation>Непознато</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="99"/>
       <source>Applications</source>
-      <translation>Applications</translation>
+      <translation>Апликације</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="101"/>
       <source>App Extensions</source>
-      <translation>App Extensions</translation>
+      <translation>Апп Ектенсионс</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="103"/>
       <source>Shared App Groups</source>
-      <translation>Shared App Groups</translation>
+      <translation>Дељене групе апликација</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="105"/>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="120"/>
       <source>Other</source>
-      <translation>Other</translation>
+      <translation>Остало</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="172"/>
       <source>Failed to load backup details.</source>
-      <translation>Failed to load backup details.</translation>
+      <translation>Учитавање детаља резервне копије није успело.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="182"/>
       <source>Failed to parse backup details.</source>
-      <translation>Failed to parse backup details.</translation>
+      <translation>Рашчлањивање детаља резервне копије није успело.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="212"/>
       <source>Back</source>
-      <translation>Back</translation>
+      <translation>Назад</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="221"/>
       <source>Tip: Connect the device that created this backup to view more details.</source>
-      <translation>Tip: Connect the device that created this backup to view more details.</translation>
+      <translation>Савет: Повежите уређај који је направио ову резервну копију да бисте видели више детаља.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="221"/>
       <source>For now encrypted backup details are limited. Having the device connected will not provide more information.</source>
-      <translation>For now encrypted backup details are limited. Having the device connected will not provide more information.</translation>
+      <translation>За сада су детаљи шифроване резервне копије ограничени. Повезивање уређаја неће пружити више информација.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="227"/>
       <source>Backup Summary</source>
-      <translation>Backup Summary</translation>
+      <translation>Резиме резервне копије</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="235"/>
       <source>Offline Device Backup</source>
-      <translation>Offline Device Backup</translation>
+      <translation>Резервна копија уређаја ван мреже</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="251"/>
       <source>Encrypted</source>
-      <translation>Encrypted</translation>
+      <translation>Шифровано</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="251"/>
       <source>Not Encrypted</source>
-      <translation>Not Encrypted</translation>
+      <translation>Није шифровано</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="266"/>
       <source>Screen Passcode Set</source>
-      <translation>Screen Passcode Set</translation>
+      <translation>Сет лозинке за екран</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="266"/>
       <source>No Screen Passcode</source>
-      <translation>No Screen Passcode</translation>
+      <translation>Нема лозинке за екран</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="293"/>
       <source>Total Size</source>
-      <translation>Total Size</translation>
+      <translation>Укупна величина</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="321"/>
       <source>Files</source>
-      <translation>Files</translation>
+      <translation>Фајлови</translation>
     </message>
     <message numerus="yes">
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="329"/>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="579"/>
       <source>%n file(s)</source>
       <translation>
-        <numerusform>%n file(s)</numerusform>
-        <numerusform>%n file(s)</numerusform>
-        <numerusform>%n file(s)</numerusform>
+        <numerusform>%n фајл(а)</numerusform>
+        <numerusform>%n фајл(а)</numerusform>
+        <numerusform>%n фајл(а)</numerusform>
       </translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="349"/>
       <source>Apps and Containers</source>
-      <translation>Apps and Containers</translation>
+      <translation>Апликације и контејнери</translation>
     </message>
     <message numerus="yes">
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="357"/>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="543"/>
       <source>%n item(s)</source>
       <translation>
-        <numerusform>%n item(s)</numerusform>
-        <numerusform>%n item(s)</numerusform>
-        <numerusform>%n item(s)</numerusform>
+        <numerusform>%n ставки</numerusform>
+        <numerusform>%n ставки</numerusform>
+        <numerusform>%n ставки</numerusform>
       </translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="373"/>
       <source>Device Model</source>
-      <translation>Device Model</translation>
+      <translation>Модел уређаја</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="386"/>
       <source>iOS Version</source>
-      <translation>iOS Version</translation>
+      <translation>иОС верзија</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="393"/>
@@ -977,40 +977,40 @@
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="401"/>
       <source>Serial</source>
-      <translation>Serial</translation>
+      <translation>Сериал</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="414"/>
       <source>Backup Date</source>
-      <translation>Backup Date</translation>
+      <translation>Датум резервне копије</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="427"/>
       <source>Manifest</source>
-      <translation>Manifest</translation>
+      <translation>Манифест</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="434"/>
       <source>Version %1, domains %2</source>
-      <translation>Version %1, domains %2</translation>
+      <translation>Верзија %1, домени %2</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="442"/>
       <source>UDID</source>
-      <translation>UDID</translation>
+      <translation>УДИД</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="458"/>
       <source>Application Containers</source>
-      <translation>Application Containers</translation>
+      <translation>Контејнери за апликације</translation>
     </message>
     <message numerus="yes">
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="494"/>
       <source>%1: %n item(s)</source>
       <translation>
-        <numerusform>%1: %n item(s)</numerusform>
-        <numerusform>%1: %n item(s)</numerusform>
-        <numerusform>%1: %n item(s)</numerusform>
+        <numerusform>%1: %n ставки</numerusform>
+        <numerusform>%1: %n ставки</numerusform>
+        <numerusform>%1: %n ставки</numerusform>
       </translation>
     </message>
     <message>
@@ -1021,7 +1021,7 @@
     <message>
       <location filename="../src/ui/BackupDetailsWithoutDevice.qml" line="573"/>
       <source>Backup folder</source>
-      <translation>Backup folder</translation>
+      <translation>Фасцикла резервне копије</translation>
     </message>
   </context>
   <context>
@@ -1029,102 +1029,102 @@
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="29"/>
       <source>Change Backup Password</source>
-      <translation>Change Backup Password</translation>
+      <translation>Промените лозинку за резервну копију</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="30"/>
       <source>Enable Encrypted Backups</source>
-      <translation>Enable Encrypted Backups</translation>
+      <translation>Омогући шифроване резервне копије</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="53"/>
       <source>Enter the current backup password.</source>
-      <translation>Enter the current backup password.</translation>
+      <translation>Унесите тренутну лозинку за резервну копију.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="58"/>
       <source>Enter a new backup password.</source>
-      <translation>Enter a new backup password.</translation>
+      <translation>Унесите нову лозинку за резервну копију.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="63"/>
       <source>The new passwords do not match.</source>
-      <translation>The new passwords do not match.</translation>
+      <translation>Нове лозинке се не поклапају.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="68"/>
       <source>Confirm that you have saved the password somewhere safe.</source>
-      <translation>Confirm that you have saved the password somewhere safe.</translation>
+      <translation>Потврдите да сте лозинку сачували негде на сигурном.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="107"/>
       <source>The device&apos;s backup encryption status could not be read.</source>
-      <translation>The device&apos;s backup encryption status could not be read.</translation>
+      <translation>Није могуће прочитати статус шифровања резервне копије уређаја.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="125"/>
       <source>Encrypted backups could not be enabled.</source>
-      <translation>Encrypted backups could not be enabled.</translation>
+      <translation>Није могуће омогућити шифроване резервне копије.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="149"/>
       <source>Try Again</source>
-      <translation>Try Again</translation>
+      <translation>Покушајте поново</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="164"/>
       <source>Encrypted backups are enabled for %1. Enter the current password to replace it.</source>
-      <translation>Encrypted backups are enabled for %1. Enter the current password to replace it.</translation>
+      <translation>Шифроване резервне копије су омогућене за %1. Унесите тренутну лозинку да бисте је заменили.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="165"/>
       <source>Encrypted backups aren&apos;t enabled on this device. Choose a password to enable encryption on %1.</source>
-      <translation>Encrypted backups aren&apos;t enabled on this device. Choose a password to enable encryption on %1.</translation>
+      <translation>Шифроване резервне копије нису омогућене на овом уређају. Изаберите лозинку да бисте омогућили шифровање на %1.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="181"/>
       <source>iDescriptor never stores this password. If you lose it, this and future encrypted backups cannot be restored. Changing or resetting the device&apos;s backup password does not unlock older backups.</source>
-      <translation>iDescriptor never stores this password. If you lose it, this and future encrypted backups cannot be restored. Changing or resetting the device&apos;s backup password does not unlock older backups.</translation>
+      <translation>iDescriptor никада не чува ову лозинку. Ако га изгубите, ова и будуће шифроване резервне копије се не могу вратити. Промена или ресетовање лозинке за резервну копију уређаја не откључава старије резервне копије.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="190"/>
       <source>Enter the device passcode on the device to continue.</source>
-      <translation>Enter the device passcode on the device to continue.</translation>
+      <translation>Унесите шифру уређаја на уређају да бисте наставили.</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="201"/>
       <source>Current backup password</source>
-      <translation>Current backup password</translation>
+      <translation>Тренутна лозинка за резервну копију</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="210"/>
       <source>New backup password</source>
-      <translation>New backup password</translation>
+      <translation>Нова лозинка за резервну копију</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="219"/>
       <source>Confirm new backup password</source>
-      <translation>Confirm new backup password</translation>
+      <translation>Потврдите нову лозинку за резервну копију</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="227"/>
       <source>I have saved this password somewhere safe</source>
-      <translation>I have saved this password somewhere safe</translation>
+      <translation>Сачувао сам ову лозинку негде на сигурном</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="253"/>
       <source>Cancel</source>
-      <translation>Cancel</translation>
+      <translation>Откажи</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="260"/>
       <source>Change Password</source>
-      <translation>Change Password</translation>
+      <translation>Промени лозинку</translation>
     </message>
     <message>
       <location filename="../src/ui/BackupEncryptionDialog.qml" line="261"/>
       <source>Enable Encryption</source>
-      <translation>Enable Encryption</translation>
+      <translation>Омогући шифровање</translation>
     </message>
   </context>
   <context>
@@ -1132,125 +1132,125 @@
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="18"/>
       <source>Backups - iDescriptor</source>
-      <translation>Backups - iDescriptor</translation>
+      <translation>Резервне копије - iDescriptor</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="32"/>
       <location filename="../src/ui/tools/BackupManager.qml" line="40"/>
       <source>Unknown</source>
-      <translation>Unknown</translation>
+      <translation>Непознато</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="64"/>
       <source>The backup metadata could not be read.</source>
-      <translation>The backup metadata could not be read.</translation>
+      <translation>Метаподаци резервне копије нису могли да се прочитају.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="164"/>
       <source>Select Backup Directory</source>
-      <translation>Select Backup Directory</translation>
+      <translation>Изаберите Директоријум резервне копије</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="173"/>
       <source>Experimental Backup Feature</source>
-      <translation>Experimental Backup Feature</translation>
+      <translation>Експериментална функција резервног копирања</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="205"/>
       <source>Backups and restores are experimental</source>
-      <translation>Backups and restores are experimental</translation>
+      <translation>Прављење резервних копија и враћања су експериментални</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="215"/>
       <source>Proceed with care. Unexpected device, connection, or storage problems may cause an incomplete backup, a failed restore, or data loss. Keep another trusted backup and do not rely on iDescriptor as the only copy of important data.</source>
-      <translation>Proceed with care. Unexpected device, connection, or storage problems may cause an incomplete backup, a failed restore, or data loss. Keep another trusted backup and do not rely on iDescriptor as the only copy of important data.</translation>
+      <translation>Пажљиво поступајте. Неочекивани проблеми са уређајем, везом или складиштењем могу изазвати непотпуну резервну копију, неуспело враћање или губитак података. Чувајте другу поуздану резервну копију и не ослањајте се на iDescriptor као једину копију важних података.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="223"/>
       <source>This notice will only be shown once. Pressing OK confirms that you understand the risks.</source>
-      <translation>This notice will only be shown once. Pressing OK confirms that you understand the risks.</translation>
+      <translation>Ово обавештење ће бити приказано само једном. Притиском на ОК потврђујете да разумете ризике.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="237"/>
       <source>OK</source>
-      <translation>OK</translation>
+      <translation>ОК</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="337"/>
       <source>Backup exists</source>
-      <translation>Backup exists</translation>
+      <translation>Резервна копија постоји</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="337"/>
       <source>No backup</source>
-      <translation>No backup</translation>
+      <translation>Нема резервне копије</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="344"/>
       <source>Restore</source>
-      <translation>Restore</translation>
+      <translation>Ресторе</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="354"/>
       <source>Back Up Now</source>
-      <translation>Back Up Now</translation>
+      <translation>Направите резервну копију одмах</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="354"/>
       <source>Update Backup</source>
-      <translation>Update Backup</translation>
+      <translation>Ажурирајте резервну копију</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="368"/>
       <source>Erase</source>
-      <translation>Erase</translation>
+      <translation>Обриши</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="382"/>
       <source>Details</source>
-      <translation>Details</translation>
+      <translation>Детаљи</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="399"/>
       <location filename="../src/ui/tools/BackupManager.qml" line="437"/>
       <source>Cancelling…</source>
-      <translation>Cancelling…</translation>
+      <translation>Отказивање…</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="401"/>
       <source>Restoring…</source>
-      <translation>Restoring…</translation>
+      <translation>Враћање…</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="437"/>
       <source>Cancel</source>
-      <translation>Cancel</translation>
+      <translation>Откажи</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="500"/>
       <location filename="../src/ui/tools/BackupManager.qml" line="530"/>
       <source>Backups</source>
-      <translation>Backups</translation>
+      <translation>Резервне копије</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="509"/>
       <source>Manage local backups for devices. You can back up, restore, and erase devices from this interface.</source>
-      <translation>Manage local backups for devices. You can back up, restore, and erase devices from this interface.</translation>
+      <translation>Управљајте локалним резервним копијама за уређаје. Можете направити резервну копију, вратити и избрисати уређаје са овог интерфејса.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="518"/>
       <source>Backup Location</source>
-      <translation>Backup Location</translation>
+      <translation>Резервна локација</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="536"/>
       <source>Refresh</source>
-      <translation>Refresh</translation>
+      <translation>Освежи</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BackupManager.qml" line="564"/>
       <source>Backups and connected devices will appear here</source>
-      <translation>Backups and connected devices will appear here</translation>
+      <translation>Овде ће се појавити резервне копије и повезани уређаји</translation>
     </message>
   </context>
   <context>
@@ -1258,12 +1258,12 @@
     <message>
       <location filename="../src/ui/BatteryIndicator.qml" line="51"/>
       <source>Charging: %1%</source>
-      <translation>Charging: %1%</translation>
+      <translation>Пуњење: %1%</translation>
     </message>
     <message>
       <location filename="../src/ui/BatteryIndicator.qml" line="51"/>
       <source>Battery: %1%</source>
-      <translation>Battery: %1%</translation>
+      <translation>Батерија: %1%</translation>
     </message>
   </context>
   <context>
@@ -1271,7 +1271,7 @@
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="37"/>
       <source>%1 mAh</source>
-      <translation>%1 mAh</translation>
+      <translation>%1 мАх</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="37"/>
@@ -1281,72 +1281,72 @@
       <location filename="../src/ui/tools/BatteryInfo.qml" line="370"/>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="443"/>
       <source>Unavailable</source>
-      <translation>Unavailable</translation>
+      <translation>Недоступно</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="42"/>
       <source>%1 V</source>
-      <translation>%1 V</translation>
+      <translation>%1 В</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="51"/>
       <source>USB-C</source>
-      <translation>USB-C</translation>
+      <translation>USB-Ц</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="58"/>
       <source>Fully Charged</source>
-      <translation>Fully Charged</translation>
+      <translation>Потпуно напуњен</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="60"/>
       <source>Charging</source>
-      <translation>Charging</translation>
+      <translation>Пуњење</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="60"/>
       <source>Not Charging</source>
-      <translation>Not Charging</translation>
+      <translation>Не пуни се</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="66"/>
       <source>The device model is unavailable, so battery information cannot be refreshed.</source>
-      <translation>The device model is unavailable, so battery information cannot be refreshed.</translation>
+      <translation>Модел уређаја је недоступан, тако да информације о батерији не могу да се освеже.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="75"/>
       <source>Battery - iDescriptor</source>
-      <translation>Battery - iDescriptor</translation>
+      <translation>Батерија - iDescriptor</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="90"/>
       <source>The device returned incomplete battery information.</source>
-      <translation>The device returned incomplete battery information.</translation>
+      <translation>Уређај је вратио непотпуне информације о батерији.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="102"/>
       <source>Battery information could not be refreshed. Make sure the device is connected and unlocked.</source>
-      <translation>Battery information could not be refreshed. Make sure the device is connected and unlocked.</translation>
+      <translation>Информације о батерији нису могле да се освеже. Проверите да ли је уређај повезан и откључан.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="122"/>
       <source>Battery</source>
-      <translation>Battery</translation>
+      <translation>Батерија</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="129"/>
       <source>Live power and capacity information</source>
-      <translation>Live power and capacity information</translation>
+      <translation>Информације о снази и капацитету уживо</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="146"/>
       <source>Refresh battery information</source>
-      <translation>Refresh battery information</translation>
+      <translation>Освежите информације о батерији</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="165"/>
       <source>Battery information could not be loaded.</source>
-      <translation>Battery information could not be loaded.</translation>
+      <translation>Није могуће учитати информације о батерији.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="243"/>
@@ -1356,52 +1356,52 @@
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="273"/>
       <source>Battery health is maximum charge capacity divided by design capacity, multiplied by 100 and capped at 100%.</source>
-      <translation>Battery health is maximum charge capacity divided by design capacity, multiplied by 100 and capped at 100%.</translation>
+      <translation>Здравље батерије је максимални капацитет пуњења подељен са пројектованим капацитетом, помножен са 100 и ограничен на 100%.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="279"/>
       <source>Battery Health</source>
-      <translation>Battery Health</translation>
+      <translation>Здравље батерије</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="360"/>
       <source>Cycle Count</source>
-      <translation>Cycle Count</translation>
+      <translation>Број циклуса</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="363"/>
       <source>Maximum Capacity</source>
-      <translation>Maximum Capacity</translation>
+      <translation>Максимални капацитет</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="366"/>
       <source>Design Capacity</source>
-      <translation>Design Capacity</translation>
+      <translation>Дизајн Капацитет</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="369"/>
       <source>Adapter Power</source>
-      <translation>Adapter Power</translation>
+      <translation>Адаптер Повер</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="370"/>
       <source>%1 W</source>
-      <translation>%1 W</translation>
+      <translation>%1 В</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="372"/>
       <source>Adapter Voltage</source>
-      <translation>Adapter Voltage</translation>
+      <translation>Адаптер Волтаге</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="375"/>
       <source>Connection</source>
-      <translation>Connection</translation>
+      <translation>Веза</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/BatteryInfo.qml" line="432"/>
       <source>Battery Serial Number</source>
-      <translation>Battery Serial Number</translation>
+      <translation>Серијски број батерије</translation>
     </message>
   </context>
   <context>
@@ -1409,170 +1409,170 @@
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="15"/>
       <source>Cable Information - iDescriptor</source>
-      <translation>Cable Information - iDescriptor</translation>
+      <translation>Информације о каблу - iDescriptor</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="19"/>
       <location filename="../src/ui/tools/CableInfo.qml" line="41"/>
       <source>Analyzing cable...</source>
-      <translation>Analyzing cable...</translation>
+      <translation>Анализирање кабла...</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="21"/>
       <location filename="../src/ui/tools/CableInfo.qml" line="42"/>
       <source>Please wait while we analyze the connected cable.</source>
-      <translation>Please wait while we analyze the connected cable.</translation>
+      <translation>Сачекајте док анализирамо повезани кабл.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="30"/>
       <source>Error</source>
-      <translation>Error</translation>
+      <translation>Грешка</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="35"/>
       <source>Something went wrong (no device ?)</source>
-      <translation>Something went wrong (no device ?)</translation>
+      <translation>Нешто није у реду (нема уређаја?)</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="50"/>
       <source>No cable information retrieved.</source>
-      <translation>No cable information retrieved.</translation>
+      <translation>Информације о каблу нису преузете.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="57"/>
       <location filename="../src/ui/tools/CableInfo.qml" line="63"/>
       <source>Failed to parse cable information.</source>
-      <translation>Failed to parse cable information.</translation>
+      <translation>Рашчлањивање информација о каблу није успело.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="92"/>
       <source>Please note that this check may not be absolute guarantee of authenticity.</source>
-      <translation>Please note that this check may not be absolute guarantee of authenticity.</translation>
+      <translation>Имајте на уму да ова провера можда није апсолутна гаранција аутентичности.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="94"/>
       <source>Genuine %1</source>
-      <translation>Genuine %1</translation>
+      <translation>Оригинал %1</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="95"/>
       <source>USB-C to Lightning Cable</source>
-      <translation>USB-C to Lightning Cable</translation>
+      <translation>USB-Ц на Лигхтнинг кабл</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="96"/>
       <source>Lightning Cable</source>
-      <translation>Lightning Cable</translation>
+      <translation>Лигхтнинг Цабле</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="99"/>
       <source>Third-party Cable</source>
-      <translation>Third-party Cable</translation>
+      <translation>Кабл треће стране</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="102"/>
       <source>The cable reports false information. It is most likely a fake cable.</source>
-      <translation>The cable reports false information. It is most likely a fake cable.</translation>
+      <translation>Кабл јавља лажне информације. Највероватније је у питању лажни кабл.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="113"/>
       <source>Device does not seem to be connected to any cable.</source>
-      <translation>Device does not seem to be connected to any cable.</translation>
+      <translation>Чини се да уређај није повезан ни на један кабл.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="118"/>
       <source>Name:</source>
-      <translation>Name:</translation>
+      <translation>име:</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="119"/>
       <source>Manufacturer:</source>
-      <translation>Manufacturer:</translation>
+      <translation>Произвођач:</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="120"/>
       <source>Model:</source>
-      <translation>Model:</translation>
+      <translation>Модел:</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="121"/>
       <source>Serial Number:</source>
-      <translation>Serial Number:</translation>
+      <translation>Серијски број:</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="122"/>
       <source>Interface Module:</source>
-      <translation>Interface Module:</translation>
+      <translation>Интерфејс модул:</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="124"/>
       <source>Cable Type:</source>
-      <translation>Cable Type:</translation>
+      <translation>Тип кабла:</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="125"/>
       <source>USB-C to Lightning</source>
-      <translation>USB-C to Lightning</translation>
+      <translation>USB-Ц на Лигхтнинг</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="126"/>
       <source>Lightning to USB-A</source>
-      <translation>Lightning to USB-A</translation>
+      <translation>Лигхтнинг на USB-А</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="130"/>
       <source>Current Limit:</source>
-      <translation>Current Limit:</translation>
+      <translation>Тренутни лимит:</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="130"/>
       <source>%1 mA</source>
-      <translation>%1 mA</translation>
+      <translation>%1 мА</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="131"/>
       <source>Charging Voltage:</source>
-      <translation>Charging Voltage:</translation>
+      <translation>Напон пуњења:</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="131"/>
       <source>%1 mV</source>
-      <translation>%1 mV</translation>
+      <translation>%1 мВ</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="136"/>
       <source>Connection:</source>
-      <translation>Connection:</translation>
+      <translation>веза:</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="136"/>
       <source>%1 (Type %2)</source>
-      <translation>%1 (Type %2)</translation>
+      <translation>%1 (тип %2)</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="139"/>
       <source>Controller:</source>
-      <translation>Controller:</translation>
+      <translation>Контролор:</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="143"/>
       <source>Active Transports:</source>
-      <translation>Active Transports:</translation>
+      <translation>Активни транспорти:</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="144"/>
       <source>Supported Transports:</source>
-      <translation>Supported Transports:</translation>
+      <translation>Подржани транспорти:</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="186"/>
       <source>Re-analyze</source>
-      <translation>Re-analyze</translation>
+      <translation>Поново анализирајте</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/CableInfo.qml" line="199"/>
       <source>Cable Information</source>
-      <translation>Cable Information</translation>
+      <translation>Информације о кабловима</translation>
     </message>
   </context>
   <context>
@@ -1580,47 +1580,47 @@
     <message>
       <location filename="../src/ui/ClosingHandler.qml" line="128"/>
       <source>Backup Operations Are Running</source>
-      <translation>Backup Operations Are Running</translation>
+      <translation>Радње резервних копија су у току</translation>
     </message>
     <message>
       <location filename="../src/ui/ClosingHandler.qml" line="129"/>
       <source>File Transfers Are Running</source>
-      <translation>File Transfers Are Running</translation>
+      <translation>Преноси датотека су у току</translation>
     </message>
     <message>
       <location filename="../src/ui/ClosingHandler.qml" line="141"/>
       <source>A backup or restore is still in progress. Quitting now will cancel it. Do you want to cancel the active backup tasks and quit?</source>
-      <translation>A backup or restore is still in progress. Quitting now will cancel it. Do you want to cancel the active backup tasks and quit?</translation>
+      <translation>Прављење резервне копије или враћање је још увек у току. Одустајање сада ће га отказати. Да ли желите да откажете активне задатке прављења резервних копија и одустанете?</translation>
     </message>
     <message>
       <location filename="../src/ui/ClosingHandler.qml" line="142"/>
       <source>A backup or restore is still in progress. Closing this window will cancel it. Do you want to cancel the active backup tasks and close?</source>
-      <translation>A backup or restore is still in progress. Closing this window will cancel it. Do you want to cancel the active backup tasks and close?</translation>
+      <translation>Прављење резервне копије или враћање је још увек у току. Затварање овог прозора ће га отказати. Да ли желите да откажете активне задатке резервне копије и затворите?</translation>
     </message>
     <message>
       <location filename="../src/ui/ClosingHandler.qml" line="146"/>
       <source>One or more file transfers are still in progress. Quitting now will cancel them. Do you want to cancel the active transfers and quit?</source>
-      <translation>One or more file transfers are still in progress. Quitting now will cancel them. Do you want to cancel the active transfers and quit?</translation>
+      <translation>Један или више преноса датотека су још увек у току. Одустајање сада ће их отказати. Да ли желите да откажете активне трансфере и одустанете?</translation>
     </message>
     <message>
       <location filename="../src/ui/ClosingHandler.qml" line="147"/>
       <source>One or more file transfers are still in progress. Closing this window will cancel them. Do you want to cancel the active transfers and close?</source>
-      <translation>One or more file transfers are still in progress. Closing this window will cancel them. Do you want to cancel the active transfers and close?</translation>
+      <translation>Један или више преноса датотека су још увек у току. Затварање овог прозора ће их поништити. Да ли желите да откажете активне трансфере и затворите?</translation>
     </message>
     <message>
       <location filename="../src/ui/ClosingHandler.qml" line="167"/>
       <source>Keep Working</source>
-      <translation>Keep Working</translation>
+      <translation>Настави са радом</translation>
     </message>
     <message>
       <location filename="../src/ui/ClosingHandler.qml" line="173"/>
       <source>Cancel Tasks and Quit</source>
-      <translation>Cancel Tasks and Quit</translation>
+      <translation>Откажите задатке и напустите</translation>
     </message>
     <message>
       <location filename="../src/ui/ClosingHandler.qml" line="174"/>
       <source>Cancel Tasks and Close</source>
-      <translation>Cancel Tasks and Close</translation>
+      <translation>Откажите задатке и затворите</translation>
     </message>
   </context>
   <context>
@@ -1628,57 +1628,57 @@
     <message>
       <location filename="../src/ui/Community.qml" line="19"/>
       <source>GitHub</source>
-      <translation>GitHub</translation>
+      <translation>ГитХуб</translation>
     </message>
     <message>
       <location filename="../src/ui/Community.qml" line="20"/>
       <source>View the source code, report issues, and contribute to iDescriptor.</source>
-      <translation>View the source code, report issues, and contribute to iDescriptor.</translation>
+      <translation>Погледајте изворни код, пријавите проблеме и доприносите iDescriptor-у.</translation>
     </message>
     <message>
       <location filename="../src/ui/Community.qml" line="21"/>
       <source>Open GitHub</source>
-      <translation>Open GitHub</translation>
+      <translation>Отворите ГитХуб</translation>
     </message>
     <message>
       <location filename="../src/ui/Community.qml" line="28"/>
       <source>LinkedIn</source>
-      <translation>LinkedIn</translation>
+      <translation>ЛинкедИн</translation>
     </message>
     <message>
       <location filename="../src/ui/Community.qml" line="29"/>
       <source>Follow iDescriptor project updates on LinkedIn.</source>
-      <translation>Follow iDescriptor project updates on LinkedIn.</translation>
+      <translation>Пратите ажурирања iDescriptor пројекта на ЛинкедИн-у.</translation>
     </message>
     <message>
       <location filename="../src/ui/Community.qml" line="30"/>
       <source>Open LinkedIn</source>
-      <translation>Open LinkedIn</translation>
+      <translation>Отворите ЛинкедИн</translation>
     </message>
     <message>
       <location filename="../src/ui/Community.qml" line="37"/>
       <source>Reddit</source>
-      <translation>Reddit</translation>
+      <translation>Реддит</translation>
     </message>
     <message>
       <location filename="../src/ui/Community.qml" line="38"/>
       <source>Join discussions with the iDescriptor community on Reddit.</source>
-      <translation>Join discussions with the iDescriptor community on Reddit.</translation>
+      <translation>Придружите се дискусијама са заједницом iDescriptor на Реддиту.</translation>
     </message>
     <message>
       <location filename="../src/ui/Community.qml" line="39"/>
       <source>Open Reddit</source>
-      <translation>Open Reddit</translation>
+      <translation>Отворите Реддит</translation>
     </message>
     <message>
       <location filename="../src/ui/Community.qml" line="63"/>
       <source>Join the iDescriptor Community</source>
-      <translation>Join the iDescriptor Community</translation>
+      <translation>Придружите се заједници iDescriptor</translation>
     </message>
     <message>
       <location filename="../src/ui/Community.qml" line="73"/>
       <source>Follow development, connect with other users, and share feedback.</source>
-      <translation>Follow development, connect with other users, and share feedback.</translation>
+      <translation>Пратите развој, повежите се са другим корисницима и делите повратне информације.</translation>
     </message>
   </context>
   <context>
@@ -1686,12 +1686,12 @@
     <message>
       <location filename="../src/ui/base/CopyableText.qml" line="20"/>
       <source>Unknown</source>
-      <translation>Unknown</translation>
+      <translation>Непознато</translation>
     </message>
     <message>
       <location filename="../src/ui/base/CopyableText.qml" line="43"/>
       <source>Copied!</source>
-      <translation>Copied!</translation>
+      <translation>Копирано!</translation>
     </message>
   </context>
   <context>
@@ -1699,42 +1699,42 @@
     <message>
       <location filename="../src/ui/CustomPairingDialog.qml" line="35"/>
       <source>Choose pairing file</source>
-      <translation>Choose pairing file</translation>
+      <translation>Изаберите датотеку за упаривање</translation>
     </message>
     <message>
       <location filename="../src/ui/CustomPairingDialog.qml" line="37"/>
       <source>Property List files (*.plist)</source>
-      <translation>Property List files (*.plist)</translation>
+      <translation>Датотеке листе својстава (*.плист)</translation>
     </message>
     <message>
       <location filename="../src/ui/CustomPairingDialog.qml" line="76"/>
       <source>Connect with pairing file</source>
-      <translation>Connect with pairing file</translation>
+      <translation>Повежите се са датотеком за упаривање</translation>
     </message>
     <message>
       <location filename="../src/ui/CustomPairingDialog.qml" line="84"/>
       <source>Select a .plist pairing file and enter the device IP address.</source>
-      <translation>Select a .plist pairing file and enter the device IP address.</translation>
+      <translation>Изаберите датотеку за упаривање .плист и унесите ИП адресу уређаја.</translation>
     </message>
     <message>
       <location filename="../src/ui/CustomPairingDialog.qml" line="115"/>
       <source>Pairing file</source>
-      <translation>Pairing file</translation>
+      <translation>Датотека за упаривање</translation>
     </message>
     <message>
       <location filename="../src/ui/CustomPairingDialog.qml" line="136"/>
       <source>Choose a .plist file</source>
-      <translation>Choose a .plist file</translation>
+      <translation>Изаберите .плист датотеку</translation>
     </message>
     <message>
       <location filename="../src/ui/CustomPairingDialog.qml" line="144"/>
       <source>Choose</source>
-      <translation>Choose</translation>
+      <translation>Изабери</translation>
     </message>
     <message>
       <location filename="../src/ui/CustomPairingDialog.qml" line="164"/>
       <source>IP address</source>
-      <translation>IP address</translation>
+      <translation>ИП адреса</translation>
     </message>
     <message>
       <location filename="../src/ui/CustomPairingDialog.qml" line="174"/>
@@ -1744,17 +1744,17 @@
     <message>
       <location filename="../src/ui/CustomPairingDialog.qml" line="202"/>
       <source>Cancel</source>
-      <translation>Cancel</translation>
+      <translation>Откажи</translation>
     </message>
     <message>
       <location filename="../src/ui/CustomPairingDialog.qml" line="214"/>
       <source>Connecting...</source>
-      <translation>Connecting...</translation>
+      <translation>Повезивање...</translation>
     </message>
     <message>
       <location filename="../src/ui/CustomPairingDialog.qml" line="214"/>
       <source>Connect</source>
-      <translation>Connect</translation>
+      <translation>Повежите се</translation>
     </message>
   </context>
   <context>
@@ -1762,37 +1762,37 @@
     <message>
       <location filename="../src/ui/DeleteConfirmationDialog.qml" line="23"/>
       <source>Confirm Deletion</source>
-      <translation>Confirm Deletion</translation>
+      <translation>Потврдите брисање</translation>
     </message>
     <message>
       <location filename="../src/ui/DeleteConfirmationDialog.qml" line="35"/>
       <source>Permanently delete %1 file(s) and %2 folder(s)? All contents inside the selected folders will also be deleted.</source>
-      <translation>Permanently delete %1 file(s) and %2 folder(s)? All contents inside the selected folders will also be deleted.</translation>
+      <translation>Трајно избрисати %1 фајл(е) и %2 фолдер(е)? Сав садржај унутар изабраних фасцикли ће такође бити обрисан.</translation>
     </message>
     <message>
       <location filename="../src/ui/DeleteConfirmationDialog.qml" line="37"/>
       <source>Permanently delete %1 file(s)?</source>
-      <translation>Permanently delete %1 file(s)?</translation>
+      <translation>Трајно избрисати %1 фајл(е)?</translation>
     </message>
     <message>
       <location filename="../src/ui/DeleteConfirmationDialog.qml" line="48"/>
       <source>I understand.</source>
-      <translation>I understand.</translation>
+      <translation>разумем.</translation>
     </message>
     <message>
       <location filename="../src/ui/DeleteConfirmationDialog.qml" line="53"/>
       <source>This action cannot be undone.</source>
-      <translation>This action cannot be undone.</translation>
+      <translation>Ова радња се не може опозвати.</translation>
     </message>
     <message>
       <location filename="../src/ui/DeleteConfirmationDialog.qml" line="66"/>
       <source>Cancel</source>
-      <translation>Cancel</translation>
+      <translation>Откажи</translation>
     </message>
     <message>
       <location filename="../src/ui/DeleteConfirmationDialog.qml" line="71"/>
       <source>Delete</source>
-      <translation>Delete</translation>
+      <translation>Избриши</translation>
     </message>
   </context>
   <context>
@@ -1800,198 +1800,198 @@
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="14"/>
       <source>Developer Disk Images - iDescriptor</source>
-      <translation>Developer Disk Images - iDescriptor</translation>
+      <translation>Слике диска програмера - iDescriptor</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="90"/>
       <source>Mounted</source>
-      <translation>Mounted</translation>
+      <translation>Моунтед</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="92"/>
       <source>Maybe compatible</source>
-      <translation>Maybe compatible</translation>
+      <translation>Можда компатибилан</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="94"/>
       <source>Not compatible</source>
-      <translation>Not compatible</translation>
+      <translation>Није компатибилно</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="95"/>
       <source>Available</source>
-      <translation>Available</translation>
+      <translation>Доступан</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="115"/>
       <source>Developer disk image %1 was downloaded successfully.</source>
-      <translation>Developer disk image %1 was downloaded successfully.</translation>
+      <translation>Слика диска програмера %1 је успешно преузета.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="117"/>
       <source>Unknown download error.</source>
-      <translation>Unknown download error.</translation>
+      <translation>Непозната грешка при преузимању.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="118"/>
       <source>Could not download developer disk image %1: %2</source>
-      <translation>Could not download developer disk image %1: %2</translation>
+      <translation>Није могуће преузети слику диска програмера %1: %2</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="124"/>
       <source>Download for developer disk image %1 was cancelled.</source>
-      <translation>Download for developer disk image %1 was cancelled.</translation>
+      <translation>Преузимање слике диска програмера %1 је отказано.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="132"/>
       <source>Unknown refresh error.</source>
-      <translation>Unknown refresh error.</translation>
+      <translation>Непозната грешка при освежавању.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="133"/>
       <source>Could not refresh the developer disk image list: %1</source>
-      <translation>Could not refresh the developer disk image list: %1</translation>
+      <translation>Није могуће освежити листу слика диска програмера: %1</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="135"/>
       <source>The developer disk image list was refreshed.</source>
-      <translation>The developer disk image list was refreshed.</translation>
+      <translation>Листа слика диска програмера је освежена.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="145"/>
       <source>Unknown device error.</source>
-      <translation>Unknown device error.</translation>
+      <translation>Непозната грешка уређаја.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="146"/>
       <source>Could not check the mounted developer disk image: %1</source>
-      <translation>Could not check the mounted developer disk image: %1</translation>
+      <translation>Није могуће проверити монтирану слику диска програмера: %1</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="148"/>
       <source>The device is locked. Unlock it and check again.</source>
-      <translation>The device is locked. Unlock it and check again.</translation>
+      <translation>Уређај је закључан. Откључајте га и проверите поново.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="150"/>
       <source>A developer disk image is mounted on the selected device.</source>
-      <translation>A developer disk image is mounted on the selected device.</translation>
+      <translation>Слика диска програмера се монтира на изабрани уређај.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="152"/>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="450"/>
       <source>No developer disk image is mounted on the selected device.</source>
-      <translation>No developer disk image is mounted on the selected device.</translation>
+      <translation>На изабраном уређају није монтирана слика диска програмера.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="207"/>
       <source>Developer Disk Images</source>
-      <translation>Developer Disk Images</translation>
+      <translation>Слике диска за програмере</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="218"/>
       <source>Developer images allow you to use additional services on your iDevice. To mount one, the device must be unlocked.</source>
-      <translation>Developer images allow you to use additional services on your iDevice. To mount one, the device must be unlocked.</translation>
+      <translation>Слике програмера вам омогућавају да користите додатне услуге на вашем iDevice-у. Да бисте га монтирали, уређај мора бити откључан.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="234"/>
       <source>Mount</source>
-      <translation>Mount</translation>
+      <translation>Моунт</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="266"/>
       <source>Select a developer disk image first.</source>
-      <translation>Select a developer disk image first.</translation>
+      <translation>Прво изаберите слику диска програмера.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="275"/>
       <source>The required files for developer disk image %1 are missing.</source>
-      <translation>The required files for developer disk image %1 are missing.</translation>
+      <translation>Недостају потребне датотеке за слику диска програмера %1.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="282"/>
       <source>The paths for developer disk image %1 are invalid.</source>
-      <translation>The paths for developer disk image %1 are invalid.</translation>
+      <translation>Путања за слику диска програмера %1 су неважеће.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="288"/>
       <source>The selected device is no longer available.</source>
-      <translation>The selected device is no longer available.</translation>
+      <translation>Изабрани уређај више није доступан.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="296"/>
       <source>Developer disk image %1 was mounted successfully.</source>
-      <translation>Developer disk image %1 was mounted successfully.</translation>
+      <translation>Слика диска програмера %1 је успешно монтирана.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="300"/>
       <source>Could not mount developer disk image %1 because the device is locked.</source>
-      <translation>Could not mount developer disk image %1 because the device is locked.</translation>
+      <translation>Није могуће монтирати слику диска програмера %1 јер је уређај закључан.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="302"/>
       <source>Could not mount developer disk image %1.</source>
-      <translation>Could not mount developer disk image %1.</translation>
+      <translation>Није могуће монтирати слику диска програмера %1.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="313"/>
       <source>Check Mounted</source>
-      <translation>Check Mounted</translation>
+      <translation>Цхецк Моунтед</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="343"/>
       <source>Refresh</source>
-      <translation>Refresh</translation>
+      <translation>Освежи</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="384"/>
       <source>No device connected</source>
-      <translation>No device connected</translation>
+      <translation>Ниједан уређај није повезан</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="432"/>
       <source>No device connected. Please connect a device to check for developer disk images.</source>
-      <translation>No device connected. Please connect a device to check for developer disk images.</translation>
+      <translation>Ниједан уређај није повезан. Повежите уређај да бисте проверили слике дискова програмера.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="445"/>
       <source>Use Check Mounted to inspect the selected device.</source>
-      <translation>Use Check Mounted to inspect the selected device.</translation>
+      <translation>Користите Цхецк Моунтед да проверите изабрани уређај.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="447"/>
       <source>The selected device is locked.</source>
-      <translation>The selected device is locked.</translation>
+      <translation>Изабрани уређај је закључан.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="449"/>
       <source>Selected device already has a developer disk image mounted.</source>
-      <translation>Selected device already has a developer disk image mounted.</translation>
+      <translation>Изабрани уређај већ има монтирану слику диска програмера.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="605"/>
       <source>Cancel</source>
-      <translation>Cancel</translation>
+      <translation>Откажи</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="605"/>
       <source>Re-download</source>
-      <translation>Re-download</translation>
+      <translation>Поново преузмите</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="605"/>
       <source>Download</source>
-      <translation>Download</translation>
+      <translation>Преузми</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="636"/>
       <source>Could not cancel the download for developer disk image %1.</source>
-      <translation>Could not cancel the download for developer disk image %1.</translation>
+      <translation>Није могуће отказати преузимање за слику диска програмера %1.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/DevDiskImages.qml" line="642"/>
       <source>Could not start the download for developer disk image %1.</source>
-      <translation>Could not start the download for developer disk image %1.</translation>
+      <translation>Није могуће покренути преузимање за слику диска програмера %1.</translation>
     </message>
   </context>
   <context>
@@ -2000,106 +2000,106 @@
       <location filename="../src/ui/DevModeHelper.qml" line="28"/>
       <location filename="../src/ui/DevModeHelper.qml" line="55"/>
       <source>Please wait...</source>
-      <translation>Please wait...</translation>
+      <translation>сачекајте...</translation>
     </message>
     <message>
       <location filename="../src/ui/DevModeHelper.qml" line="74"/>
       <source>Checking Developer Mode...</source>
-      <translation>Checking Developer Mode...</translation>
+      <translation>Проверавам режим програмера...</translation>
     </message>
     <message>
       <location filename="../src/ui/DevModeHelper.qml" line="97"/>
       <source>Could not reveal Developer Mode automatically. You can still follow the steps below or try anyway.</source>
-      <translation>Could not reveal Developer Mode automatically. You can still follow the steps below or try anyway.</translation>
+      <translation>Није могуће аутоматски открити режим програмера. И даље можете да пратите доленаведене кораке или да покушате.</translation>
     </message>
     <message>
       <location filename="../src/ui/DevModeHelper.qml" line="107"/>
       <source>Developer disk image is not available for this iOS version. Please use a device with iOS 6 or above.</source>
-      <translation>Developer disk image is not available for this iOS version. Please use a device with iOS 6 or above.</translation>
+      <translation>Слика диска програмера није доступна за ову верзију иОС-а. Користите уређај са иОС 6 или новијим.</translation>
     </message>
     <message>
       <location filename="../src/ui/DevModeHelper.qml" line="117"/>
       <source>The device appears to be locked. Please unlock the device and try again.</source>
-      <translation>The device appears to be locked. Please unlock the device and try again.</translation>
+      <translation>Чини се да је уређај закључан. Откључајте уређај и покушајте поново.</translation>
     </message>
     <message>
       <location filename="../src/ui/DevModeHelper.qml" line="121"/>
       <source>Failed to retrieve mounted developer disk image info.</source>
-      <translation>Failed to retrieve mounted developer disk image info.</translation>
+      <translation>Преузимање информација о монтираној слици диска програмера није успело.</translation>
     </message>
     <message>
       <location filename="../src/ui/DevModeHelper.qml" line="143"/>
       <source>There is no compatible developer disk image available for this iOS version.</source>
-      <translation>There is no compatible developer disk image available for this iOS version.</translation>
+      <translation>За ову верзију иОС-а не постоји компатибилна слика диска програмера.</translation>
     </message>
     <message>
       <location filename="../src/ui/DevModeHelper.qml" line="152"/>
       <source>Downloading compatible developer disk image...</source>
-      <translation>Downloading compatible developer disk image...</translation>
+      <translation>Преузимање компатибилне слике диска програмера...</translation>
     </message>
     <message>
       <location filename="../src/ui/DevModeHelper.qml" line="163"/>
       <source>Failed to download compatible developer disk image.</source>
-      <translation>Failed to download compatible developer disk image.</translation>
+      <translation>Преузимање компатибилне слике диска програмера није успело.</translation>
     </message>
     <message>
       <location filename="../src/ui/DevModeHelper.qml" line="171"/>
       <source>Failed to start developer disk image download.</source>
-      <translation>Failed to start developer disk image download.</translation>
+      <translation>Није успело покретање преузимања слике диска програмера.</translation>
     </message>
     <message>
       <location filename="../src/ui/DevModeHelper.qml" line="177"/>
       <source>Mounting...</source>
-      <translation>Mounting...</translation>
+      <translation>Монтажа...</translation>
     </message>
     <message>
       <location filename="../src/ui/DevModeHelper.qml" line="181"/>
       <source>The developer disk image is missing. Please download it first.</source>
-      <translation>The developer disk image is missing. Please download it first.</translation>
+      <translation>Недостаје слика диска програмера. Прво га преузмите.</translation>
     </message>
     <message>
       <location filename="../src/ui/DevModeHelper.qml" line="188"/>
       <source>Failed to mount developer disk image.
 The device appears to be locked. Please unlock the device and try again.</source>
-      <translation>Failed to mount developer disk image.
-The device appears to be locked. Please unlock the device and try again.</translation>
+      <translation>Монтирање слике диска програмера није успело.
+Чини се да је уређај закључан. Откључајте уређај и покушајте поново.</translation>
     </message>
     <message>
       <location filename="../src/ui/DevModeHelper.qml" line="192"/>
       <source>Failed to mount developer disk image.
 Please ensure the device is unlocked and using a genuine cable.</source>
-      <translation>Failed to mount developer disk image.
-Please ensure the device is unlocked and using a genuine cable.</translation>
+      <translation>Монтирање слике диска програмера није успело.
+Уверите се да је уређај откључан и да користите оригинални кабл.</translation>
     </message>
     <message>
       <location filename="../src/ui/DevModeHelper.qml" line="209"/>
       <source>Developer Mode handled.</source>
-      <translation>Developer Mode handled.</translation>
+      <translation>Режим програмера обрађен.</translation>
     </message>
     <message>
       <location filename="../src/ui/DevModeHelper.qml" line="209"/>
       <source>Developer disk image mounted.</source>
-      <translation>Developer disk image mounted.</translation>
+      <translation>Слика диска програмера је монтирана.</translation>
     </message>
     <message>
       <location filename="../src/ui/DevModeHelper.qml" line="249"/>
       <source>Failed to prepare Developer Mode.</source>
-      <translation>Failed to prepare Developer Mode.</translation>
+      <translation>Припрема режима програмера није успела.</translation>
     </message>
     <message>
       <location filename="../src/ui/DevModeHelper.qml" line="286"/>
       <source>Enable Developer Mode</source>
-      <translation>Enable Developer Mode</translation>
+      <translation>Омогућите режим програмера</translation>
     </message>
     <message>
       <location filename="../src/ui/DevModeHelper.qml" line="295"/>
       <source>Developer Mode is required before this feature can continue. Enable it in the Settings app on your device, then retry the action.</source>
-      <translation>Developer Mode is required before this feature can continue. Enable it in the Settings app on your device, then retry the action.</translation>
+      <translation>Режим програмера је неопходан да би ова функција могла да се настави. Омогућите га у апликацији Подешавања на свом уређају, а затим покушајте поново.</translation>
     </message>
     <message>
       <location filename="../src/ui/DevModeHelper.qml" line="333"/>
       <source>Try Anyway</source>
-      <translation>Try Anyway</translation>
+      <translation>Покушајте свеједно</translation>
     </message>
   </context>
   <context>
@@ -2107,32 +2107,32 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/DeviceContext.qml" line="238"/>
       <source>this device</source>
-      <translation>this device</translation>
+      <translation>овај уређај</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceContext.qml" line="252"/>
       <source>Wi-Fi Connections Enabled</source>
-      <translation>Wi-Fi Connections Enabled</translation>
+      <translation>Wi-Fi везе су омогућене</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceContext.qml" line="253"/>
       <source>Wi-Fi connections are now enabled for %1. You can disconnect the cable and use this device wirelessly.</source>
-      <translation>Wi-Fi connections are now enabled for %1. You can disconnect the cable and use this device wirelessly.</translation>
+      <translation>Wi-Fi везе су сада омогућене за %1. Можете да искључите кабл и користите овај уређај бежично.</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceContext.qml" line="258"/>
       <source>Unable to Enable Wi-Fi Connections</source>
-      <translation>Unable to Enable Wi-Fi Connections</translation>
+      <translation>Није могуће омогућити Wi-Fi везе</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceContext.qml" line="259"/>
       <source>Wi-Fi connections could not be enabled for %1. Keep the device connected, unlocked, and trusted, then try again.</source>
-      <translation>Wi-Fi connections could not be enabled for %1. Keep the device connected, unlocked, and trusted, then try again.</translation>
+      <translation>Wi-Fi везе нису могле бити омогућене за %1. Нека уређај буде повезан, откључан и поуздан, а затим покушајте поново.</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceContext.qml" line="498"/>
       <source>Pairing…</source>
-      <translation>Pairing…</translation>
+      <translation>Упаривање…</translation>
     </message>
   </context>
   <context>
@@ -2140,63 +2140,63 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/DeviceGallery.qml" line="93"/>
       <source>Album</source>
-      <translation>Album</translation>
+      <translation>Албум</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceGallery.qml" line="161"/>
       <source>Exporting %1</source>
-      <translation>Exporting %1</translation>
+      <translation>Извоз %1</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceGallery.qml" line="263"/>
       <source>Import</source>
-      <translation>Import</translation>
+      <translation>Увоз</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceGallery.qml" line="271"/>
       <source>Refreshing gallery</source>
-      <translation>Refreshing gallery</translation>
+      <translation>Освежавајућа галерија</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceGallery.qml" line="272"/>
       <source>Refresh</source>
-      <translation>Refresh</translation>
+      <translation>Освежи</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceGallery.qml" line="279"/>
       <source>Export Selected</source>
-      <translation>Export Selected</translation>
+      <translation>Извези изабрано</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceGallery.qml" line="285"/>
       <location filename="../src/ui/DeviceGallery.qml" line="293"/>
       <source>Export All</source>
-      <translation>Export All</translation>
+      <translation>Извези све</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceGallery.qml" line="294"/>
       <source>Are you sure you want to export all %1 items from %2 albums?</source>
-      <translation>Are you sure you want to export all %1 items from %2 albums?</translation>
+      <translation>Да ли сте сигурни да желите да извезете све %1 ставке из %2 албума?</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceGallery.qml" line="309"/>
       <source>Albums</source>
-      <translation>Albums</translation>
+      <translation>Албумс</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceGallery.qml" line="444"/>
       <source>Choose Export Folder</source>
-      <translation>Choose Export Folder</translation>
+      <translation>Изаберите фасциклу за извоз</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceGallery.qml" line="450"/>
       <source>Album unavailable</source>
-      <translation>Album unavailable</translation>
+      <translation>Албум није доступан</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceGallery.qml" line="451"/>
       <source>This album is no longer available on the device.</source>
-      <translation>This album is no longer available on the device.</translation>
+      <translation>Овај албум више није доступан на уређају.</translation>
     </message>
   </context>
   <context>
@@ -2205,32 +2205,32 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
       <location filename="../src/ui/DeviceInfo.qml" line="131"/>
       <location filename="../src/ui/DeviceInfo.qml" line="179"/>
       <source>Unknown Device</source>
-      <translation>Unknown Device</translation>
+      <translation>Непознати уређај</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="142"/>
       <source>Shut down device</source>
-      <translation>Shut down device</translation>
+      <translation>Искључите уређај</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="150"/>
       <source>Restart device</source>
-      <translation>Restart device</translation>
+      <translation>Поново покрените уређај</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="158"/>
       <source>Enter recovery mode</source>
-      <translation>Enter recovery mode</translation>
+      <translation>Уђите у режим опоравка</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="239"/>
       <source>Wireless</source>
-      <translation>Wireless</translation>
+      <translation>Бежични</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="264"/>
       <source>iOS Version:</source>
-      <translation>iOS Version:</translation>
+      <translation>иОС верзија:</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="265"/>
@@ -2249,102 +2249,102 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
       <location filename="../src/ui/DeviceInfo.qml" line="334"/>
       <location filename="../src/ui/DeviceInfo.qml" line="352"/>
       <source>Unknown</source>
-      <translation>Unknown</translation>
+      <translation>Непознато</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="266"/>
       <source>Hardware Model:</source>
-      <translation>Hardware Model:</translation>
+      <translation>Модел хардвера:</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="270"/>
       <source>Device Name:</source>
-      <translation>Device Name:</translation>
+      <translation>Назив уређаја:</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="272"/>
       <source>Region:</source>
-      <translation>Region:</translation>
+      <translation>Регион:</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="276"/>
       <source>Activation State:</source>
-      <translation>Activation State:</translation>
+      <translation>Стање активације:</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="283"/>
       <source>Hardware Platform:</source>
-      <translation>Hardware Platform:</translation>
+      <translation>Хардверска платформа:</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="287"/>
       <source>Device Class:</source>
-      <translation>Device Class:</translation>
+      <translation>Класа уређаја:</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="289"/>
       <source>Firmware Version:</source>
-      <translation>Firmware Version:</translation>
+      <translation>Верзија фирмвера:</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="293"/>
       <source>Jailbroken:</source>
-      <translation>Jailbroken:</translation>
+      <translation>Јаилброкен:</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="294"/>
       <source>Yes</source>
-      <translation>Yes</translation>
+      <translation>Да</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="294"/>
       <source>No</source>
-      <translation>No</translation>
+      <translation>бр</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="295"/>
       <source>Battery Health:</source>
-      <translation>Battery Health:</translation>
+      <translation>Здравље батерије:</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="306"/>
       <source>More</source>
-      <translation>More</translation>
+      <translation>Више</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="319"/>
       <source>Model Number:</source>
-      <translation>Model Number:</translation>
+      <translation>Број модела:</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="321"/>
       <source>Production Device:</source>
-      <translation>Production Device:</translation>
+      <translation>Производни уређај:</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="325"/>
       <source>CPU Architecture:</source>
-      <translation>CPU Architecture:</translation>
+      <translation>Архитектура процесора:</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="327"/>
       <source>Serial Number:</source>
-      <translation>Serial Number:</translation>
+      <translation>Серијски број:</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="331"/>
       <source>Build Version:</source>
-      <translation>Build Version:</translation>
+      <translation>Верзија верзије:</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="333"/>
       <source>IMEI:</source>
-      <translation>IMEI:</translation>
+      <translation>ИМЕИ:</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceInfo.qml" line="346"/>
       <source>UDID:</source>
-      <translation>UDID:</translation>
+      <translation>УДИД:</translation>
     </message>
   </context>
   <context>
@@ -2352,22 +2352,22 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/DeviceSectionTabs.qml" line="24"/>
       <source>Info</source>
-      <translation>Info</translation>
+      <translation>Инфо</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceSectionTabs.qml" line="29"/>
       <source>Apps</source>
-      <translation>Apps</translation>
+      <translation>Аппс</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceSectionTabs.qml" line="34"/>
       <source>Gallery</source>
-      <translation>Gallery</translation>
+      <translation>Галерија</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceSectionTabs.qml" line="39"/>
       <source>Files</source>
-      <translation>Files</translation>
+      <translation>Фајлови</translation>
     </message>
   </context>
   <context>
@@ -2375,37 +2375,37 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/DeviceSidebarButton.qml" line="21"/>
       <source>Unknown device</source>
-      <translation>Unknown device</translation>
+      <translation>Непознати уређај</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceSidebarButton.qml" line="34"/>
       <source>Restart</source>
-      <translation>Restart</translation>
+      <translation>Поново покрени</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceSidebarButton.qml" line="40"/>
       <source>Shut Down</source>
-      <translation>Shut Down</translation>
+      <translation>Схут Довн</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceSidebarButton.qml" line="46"/>
       <source>Recovery Mode</source>
-      <translation>Recovery Mode</translation>
+      <translation>Рецовери Моде</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceSidebarButton.qml" line="54"/>
       <source>Unpair</source>
-      <translation>Unpair</translation>
+      <translation>Унпаир</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceSidebarButton.qml" line="60"/>
       <source>Unpair and Remove</source>
-      <translation>Unpair and Remove</translation>
+      <translation>Раскините упаривање и уклоните</translation>
     </message>
     <message>
       <location filename="../src/ui/DeviceSidebarButton.qml" line="68"/>
       <source>Remove</source>
-      <translation>Remove</translation>
+      <translation>Уклони</translation>
     </message>
   </context>
   <context>
@@ -2413,7 +2413,7 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/DeviceTab.qml" line="17"/>
       <source>Connected devices will appear here</source>
-      <translation>Connected devices will appear here</translation>
+      <translation>Овде ће се појавити повезани уређаји</translation>
     </message>
   </context>
   <context>
@@ -2421,69 +2421,69 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/Diagnose.qml" line="30"/>
       <source>Installed</source>
-      <translation>Installed</translation>
+      <translation>Инсталиран</translation>
     </message>
     <message>
       <location filename="../src/ui/Diagnose.qml" line="32"/>
       <source>Installed, not running</source>
-      <translation>Installed, not running</translation>
+      <translation>Инсталиран, не ради</translation>
     </message>
     <message>
       <location filename="../src/ui/Diagnose.qml" line="34"/>
       <source>Missing</source>
-      <translation>Missing</translation>
+      <translation>Недостаје</translation>
     </message>
     <message>
       <location filename="../src/ui/Diagnose.qml" line="35"/>
       <source>Unable to check</source>
-      <translation>Unable to check</translation>
+      <translation>Није могуће проверити</translation>
     </message>
     <message>
       <location filename="../src/ui/Diagnose.qml" line="40"/>
       <location filename="../src/ui/Diagnose.qml" line="42"/>
       <source>View Instructions</source>
-      <translation>View Instructions</translation>
+      <translation>Погледајте упутства</translation>
     </message>
     <message>
       <location filename="../src/ui/Diagnose.qml" line="44"/>
       <source>Start</source>
-      <translation>Start</translation>
+      <translation>Почни</translation>
     </message>
     <message>
       <location filename="../src/ui/Diagnose.qml" line="45"/>
       <source>Install</source>
-      <translation>Install</translation>
+      <translation>Инсталирај</translation>
     </message>
     <message>
       <location filename="../src/ui/Diagnose.qml" line="83"/>
       <location filename="../src/ui/Diagnose.qml" line="120"/>
       <source>Dependency Check</source>
-      <translation>Dependency Check</translation>
+      <translation>Провера зависности</translation>
     </message>
     <message>
       <location filename="../src/ui/Diagnose.qml" line="103"/>
       <source>Diagnostics</source>
-      <translation>Diagnostics</translation>
+      <translation>Дијагностика</translation>
     </message>
     <message>
       <location filename="../src/ui/Diagnose.qml" line="115"/>
       <source>Unable to check system dependencies.</source>
-      <translation>Unable to check system dependencies.</translation>
+      <translation>Није могуће проверити системске зависности.</translation>
     </message>
     <message>
       <location filename="../src/ui/Diagnose.qml" line="132"/>
       <source>Checking system dependencies...</source>
-      <translation>Checking system dependencies...</translation>
+      <translation>Проверавам системске зависности...</translation>
     </message>
     <message>
       <location filename="../src/ui/Diagnose.qml" line="139"/>
       <source>Refresh</source>
-      <translation>Refresh</translation>
+      <translation>Освежи</translation>
     </message>
     <message>
       <location filename="../src/ui/Diagnose.qml" line="186"/>
       <source>Optional</source>
-      <translation>Optional</translation>
+      <translation>Опционо</translation>
     </message>
   </context>
   <context>
@@ -2491,77 +2491,77 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/DiskUsage.qml" line="83"/>
       <source>Failed to retrieve disk usage data.</source>
-      <translation>Failed to retrieve disk usage data.</translation>
+      <translation>Преузимање података о коришћењу диска није успело.</translation>
     </message>
     <message>
       <location filename="../src/ui/DiskUsage.qml" line="105"/>
       <source>Disk Usage</source>
-      <translation>Disk Usage</translation>
+      <translation>Употреба диска</translation>
     </message>
     <message>
       <location filename="../src/ui/DiskUsage.qml" line="123"/>
       <source>No disk information available.</source>
-      <translation>No disk information available.</translation>
+      <translation>Информације о диску нису доступне.</translation>
     </message>
     <message>
       <location filename="../src/ui/DiskUsage.qml" line="172"/>
       <source>System: %1 (%2%)</source>
-      <translation>System: %1 (%2%)</translation>
+      <translation>Систем: %1 (%2%)</translation>
     </message>
     <message>
       <location filename="../src/ui/DiskUsage.qml" line="187"/>
       <source>Apps: %1 (%2%)</source>
-      <translation>Apps: %1 (%2%)</translation>
+      <translation>Апликације: %1 (%2%)</translation>
     </message>
     <message>
       <location filename="../src/ui/DiskUsage.qml" line="202"/>
       <source>Media: %1 (%2%)</source>
-      <translation>Media: %1 (%2%)</translation>
+      <translation>Медији: %1 (%2%)</translation>
     </message>
     <message>
       <location filename="../src/ui/DiskUsage.qml" line="217"/>
       <source>Gallery: %1 (%2%)</source>
-      <translation>Gallery: %1 (%2%)</translation>
+      <translation>Галерија: %1 (%2%)</translation>
     </message>
     <message>
       <location filename="../src/ui/DiskUsage.qml" line="232"/>
       <source>Others: %1 (%2%)</source>
-      <translation>Others: %1 (%2%)</translation>
+      <translation>Остали: %1 (%2%)</translation>
     </message>
     <message>
       <location filename="../src/ui/DiskUsage.qml" line="247"/>
       <source>Free: %1 (%2%)</source>
-      <translation>Free: %1 (%2%)</translation>
+      <translation>Бесплатно: %1 (%2%)</translation>
     </message>
     <message>
       <location filename="../src/ui/DiskUsage.qml" line="262"/>
       <source>System (%1)</source>
-      <translation>System (%1)</translation>
+      <translation>Систем (%1)</translation>
     </message>
     <message>
       <location filename="../src/ui/DiskUsage.qml" line="272"/>
       <source>Apps (%1)</source>
-      <translation>Apps (%1)</translation>
+      <translation>Апликације (%1)</translation>
     </message>
     <message>
       <location filename="../src/ui/DiskUsage.qml" line="282"/>
       <source>Media (%1)</source>
-      <translation>Media (%1)</translation>
+      <translation>Медији (%1)</translation>
     </message>
     <message>
       <location filename="../src/ui/DiskUsage.qml" line="292"/>
       <source>Gallery (%1)</source>
-      <translation>Gallery (%1)</translation>
+      <translation>Галерија (%1)</translation>
     </message>
     <message>
       <location filename="../src/ui/DiskUsage.qml" line="302"/>
       <source>Others (%1)</source>
-      <translation>Others (%1)</translation>
+      <translation>Остали (%1)</translation>
     </message>
     <message>
       <location filename="../src/ui/DiskUsage.qml" line="312"/>
       <source>Free (%1)</source>
-      <translation>Free (%1)</translation>
+      <translation>Бесплатно (%1)</translation>
     </message>
   </context>
   <context>
@@ -2569,17 +2569,17 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/Donate.qml" line="48"/>
       <source>Support iDescriptor</source>
-      <translation>Support iDescriptor</translation>
+      <translation>Подршка iDescriptor</translation>
     </message>
     <message>
       <location filename="../src/ui/Donate.qml" line="58"/>
       <source>Your support helps fund ongoing development, testing, and the features the community cares about most.</source>
-      <translation>Your support helps fund ongoing development, testing, and the features the community cares about most.</translation>
+      <translation>Ваша подршка помаже у финансирању текућег развоја, тестирања и функција до којих је заједници највише стало.</translation>
     </message>
     <message>
       <location filename="../src/ui/Donate.qml" line="74"/>
       <source>Choose how you would like to support the project.</source>
-      <translation>Choose how you would like to support the project.</translation>
+      <translation>Изаберите како желите да подржите пројекат.</translation>
     </message>
   </context>
   <context>
@@ -2587,12 +2587,12 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/DonateActions.qml" line="28"/>
       <source>Sponsor with GitHub</source>
-      <translation>Sponsor with GitHub</translation>
+      <translation>Спонзор са ГитХуб-ом</translation>
     </message>
     <message>
       <location filename="../src/ui/DonateActions.qml" line="39"/>
       <source>Support on Open Collective</source>
-      <translation>Support on Open Collective</translation>
+      <translation>Подршка за Опен Цоллецтиве</translation>
     </message>
   </context>
   <context>
@@ -2600,68 +2600,68 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/EraseDialog.qml" line="40"/>
       <source>The device could not be erased. Keep it connected and try again.</source>
-      <translation>The device could not be erased. Keep it connected and try again.</translation>
+      <translation>Уређај није могао да се обрише. Одржавајте везу и покушајте поново.</translation>
     </message>
     <message>
       <location filename="../src/ui/EraseDialog.qml" line="79"/>
       <source>iDescriptor could not erase %1. Keep the device connected and try again.</source>
-      <translation>iDescriptor could not erase %1. Keep the device connected and try again.</translation>
+      <translation>iDescriptor није могао да обрише %1. Оставите уређај повезан и покушајте поново.</translation>
     </message>
     <message>
       <location filename="../src/ui/EraseDialog.qml" line="96"/>
       <source>Erasing %1</source>
-      <translation>Erasing %1</translation>
+      <translation>Брисање %1</translation>
     </message>
     <message>
       <location filename="../src/ui/EraseDialog.qml" line="98"/>
       <source>Erase Command Accepted</source>
-      <translation>Erase Command Accepted</translation>
+      <translation>Команда за брисање је прихваћена</translation>
     </message>
     <message>
       <location filename="../src/ui/EraseDialog.qml" line="99"/>
       <source>Erase %1?</source>
-      <translation>Erase %1?</translation>
+      <translation>Избрисати %1?</translation>
     </message>
     <message>
       <location filename="../src/ui/EraseDialog.qml" line="115"/>
       <source>Try Again</source>
-      <translation>Try Again</translation>
+      <translation>Покушајте поново</translation>
     </message>
     <message>
       <location filename="../src/ui/EraseDialog.qml" line="129"/>
       <source>This will erase all content and settings from %1. This action cannot be undone. Do you want to continue?</source>
-      <translation>This will erase all content and settings from %1. This action cannot be undone. Do you want to continue?</translation>
+      <translation>Ово ће избрисати сав садржај и подешавања са %1. Ова радња се не може опозвати. Да ли желите да наставите?</translation>
     </message>
     <message>
       <location filename="../src/ui/EraseDialog.qml" line="141"/>
       <location filename="../src/ui/EraseDialog.qml" line="175"/>
       <source>No</source>
-      <translation>No</translation>
+      <translation>бр</translation>
     </message>
     <message>
       <location filename="../src/ui/EraseDialog.qml" line="146"/>
       <source>Yes</source>
-      <translation>Yes</translation>
+      <translation>Да</translation>
     </message>
     <message>
       <location filename="../src/ui/EraseDialog.qml" line="162"/>
       <source>Are you absolutely sure you want to permanently erase %1?</source>
-      <translation>Are you absolutely sure you want to permanently erase %1?</translation>
+      <translation>Да ли сте потпуно сигурни да желите да трајно избришете %1?</translation>
     </message>
     <message>
       <location filename="../src/ui/EraseDialog.qml" line="180"/>
       <source>Yes, Erase Device</source>
-      <translation>Yes, Erase Device</translation>
+      <translation>Да, Обриши уређај</translation>
     </message>
     <message>
       <location filename="../src/ui/EraseDialog.qml" line="196"/>
       <source>The erase command completed successfully. The device will restart and remove all content and settings.</source>
-      <translation>The erase command completed successfully. The device will restart and remove all content and settings.</translation>
+      <translation>Команда за брисање је успешно завршена. Уређај ће се поново покренути и уклонити сав садржај и подешавања.</translation>
     </message>
     <message>
       <location filename="../src/ui/EraseDialog.qml" line="204"/>
       <source>Close</source>
-      <translation>Close</translation>
+      <translation>Затвори</translation>
     </message>
   </context>
   <context>
@@ -2670,43 +2670,43 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
       <location filename="../src/ui/FileExplorer.qml" line="61"/>
       <location filename="../src/ui/FileExplorer.qml" line="539"/>
       <source>AFC client is not available.</source>
-      <translation>AFC client is not available.</translation>
+      <translation>AFC клијент није доступан.</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="187"/>
       <source>Failed to open preview.</source>
-      <translation>Failed to open preview.</translation>
+      <translation>Отварање прегледа није успело.</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="199"/>
       <location filename="../src/ui/FileExplorer.qml" line="783"/>
       <source>Open Externally</source>
-      <translation>Open Externally</translation>
+      <translation>Отворите споља</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="200"/>
       <source>Export %1 to a temporary folder and open it with the default application?</source>
-      <translation>Export %1 to a temporary folder and open it with the default application?</translation>
+      <translation>Желите ли да извезете %1 у привремену фасциклу и отворите је помоћу подразумеване апликације?</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="200"/>
       <source>This file type cannot be previewed would like to export to a temporary folder and open it with the default application?</source>
-      <translation>This file type cannot be previewed would like to export to a temporary folder and open it with the default application?</translation>
+      <translation>Овај тип датотеке не може да се прегледа да ли желите да извезете у привремену фасциклу и отворите је помоћу подразумеване апликације?</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="218"/>
       <source>The system temporary folder could not be located.</source>
-      <translation>The system temporary folder could not be located.</translation>
+      <translation>Није могуће пронаћи системску привремену фасциклу.</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="240"/>
       <source>Exporting for External Open from %1</source>
-      <translation>Exporting for External Open from %1</translation>
+      <translation>Извоз за екстерно отворено из %1</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="240"/>
       <source>Exporting for External Open</source>
-      <translation>Exporting for External Open</translation>
+      <translation>Извоз за екстерно отворено</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="241"/>
@@ -2714,160 +2714,160 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
       <location filename="../src/ui/FileExplorer.qml" line="619"/>
       <location filename="../src/ui/FileExplorer.qml" line="790"/>
       <source>Export</source>
-      <translation>Export</translation>
+      <translation>Извоз</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="346"/>
       <source>Exporting File(s) from %1</source>
-      <translation>Exporting File(s) from %1</translation>
+      <translation>Извоз датотека(а) из %1</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="346"/>
       <source>Exporting File(s)</source>
-      <translation>Exporting File(s)</translation>
+      <translation>Извоз датотека(а)</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="372"/>
       <source>Importing Files to %1</source>
-      <translation>Importing Files to %1</translation>
+      <translation>Увоз датотека у %1</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="372"/>
       <source>Importing Files</source>
-      <translation>Importing Files</translation>
+      <translation>Увоз датотека</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="373"/>
       <location filename="../src/ui/FileExplorer.qml" line="611"/>
       <source>Import</source>
-      <translation>Import</translation>
+      <translation>Увоз</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="402"/>
       <source>%1 could not be exported.</source>
-      <translation>%1 could not be exported.</translation>
+      <translation>Није могуће извести %1.</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="411"/>
       <source>%1 was exported, but no application could open it.</source>
-      <translation>%1 was exported, but no application could open it.</translation>
+      <translation>%1 је извезено, али ниједна апликација није могла да га отвори.</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="427"/>
       <source>Opening %1 was cancelled or could not be started.</source>
-      <translation>Opening %1 was cancelled or could not be started.</translation>
+      <translation>Отварање %1 је отказано или није могло да се покрене.</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="428"/>
       <source>%1 could not be exported for opening.</source>
-      <translation>%1 could not be exported for opening.</translation>
+      <translation>%1 није било могуће извести за отварање.</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="458"/>
       <source>Failed to load directory.</source>
-      <translation>Failed to load directory.</translation>
+      <translation>Учитавање директоријума није успело.</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="509"/>
       <source>%1 item(s) were deleted successfully.</source>
-      <translation>%1 item(s) were deleted successfully.</translation>
+      <translation>%1 ставки су успешно избрисане.</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="512"/>
       <source>%1 item(s) were deleted. %2 item(s) could not be deleted.</source>
-      <translation>%1 item(s) were deleted. %2 item(s) could not be deleted.</translation>
+      <translation>%1 ставке су избрисане. Није могуће избрисати %2 ставке(е).</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="518"/>
       <source>The selected items could not be deleted.</source>
-      <translation>The selected items could not be deleted.</translation>
+      <translation>Изабране ставке се не могу избрисати.</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="562"/>
       <source>Go Back</source>
-      <translation>Go Back</translation>
+      <translation>Иди назад</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="570"/>
       <source>Go Forward</source>
-      <translation>Go Forward</translation>
+      <translation>Иди напред</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="577"/>
       <source>Go Home</source>
-      <translation>Go Home</translation>
+      <translation>Иди кући</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="585"/>
       <source>Go Up</source>
-      <translation>Go Up</translation>
+      <translation>Иди горе</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="591"/>
       <source>Refresh</source>
-      <translation>Refresh</translation>
+      <translation>Освежи</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="601"/>
       <source>Enter path...</source>
-      <translation>Enter path...</translation>
+      <translation>Унесите путању...</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="627"/>
       <location filename="../src/ui/FileExplorer.qml" line="811"/>
       <source>Delete</source>
-      <translation>Delete</translation>
+      <translation>Избриши</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="636"/>
       <location filename="../src/ui/FileExplorer.qml" line="822"/>
       <source>Add to Favorites</source>
-      <translation>Add to Favorites</translation>
+      <translation>Додај у фаворите</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="643"/>
       <source>Navigate to path</source>
-      <translation>Navigate to path</translation>
+      <translation>Идите на путању</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="759"/>
       <source>This folder is empty</source>
-      <translation>This folder is empty</translation>
+      <translation>Овај фолдер је празан</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="772"/>
       <source>Open</source>
-      <translation>Open</translation>
+      <translation>Отвори</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="799"/>
       <source>Get Info</source>
-      <translation>Get Info</translation>
+      <translation>Гет Инфо</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="829"/>
       <source>Enter alias for this location:</source>
-      <translation>Enter alias for this location:</translation>
+      <translation>Унесите псеудоним за ову локацију:</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="830"/>
       <source>Alias here</source>
-      <translation>Alias here</translation>
+      <translation>Алиас овде</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="831"/>
       <source>Path: </source>
-      <translation>Path: </translation>
+      <translation>Пут: </translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="845"/>
       <source>Choose Export Folder</source>
-      <translation>Choose Export Folder</translation>
+      <translation>Изаберите фасциклу за извоз</translation>
     </message>
     <message>
       <location filename="../src/ui/FileExplorer.qml" line="851"/>
       <source>Choose Files to Import</source>
-      <translation>Choose Files to Import</translation>
+      <translation>Изаберите Датотеке за увоз</translation>
     </message>
   </context>
   <context>
@@ -2875,103 +2875,103 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="23"/>
       <source>File Information</source>
-      <translation>File Information</translation>
+      <translation>Информације о фајлу</translation>
     </message>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="30"/>
       <source>Regular File (%1)</source>
-      <translation>Regular File (%1)</translation>
+      <translation>Обична датотека (%1)</translation>
     </message>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="32"/>
       <source>Directory (%1)</source>
-      <translation>Directory (%1)</translation>
+      <translation>Именик (%1)</translation>
     </message>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="34"/>
       <source>Symbolic Link (%1)</source>
-      <translation>Symbolic Link (%1)</translation>
+      <translation>Симболичка веза (%1)</translation>
     </message>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="36"/>
       <source>Block Device (%1)</source>
-      <translation>Block Device (%1)</translation>
+      <translation>Блокирај уређај (%1)</translation>
     </message>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="38"/>
       <source>Character Device (%1)</source>
-      <translation>Character Device (%1)</translation>
+      <translation>Карактерни уређај (%1)</translation>
     </message>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="40"/>
       <source>FIFO (%1)</source>
-      <translation>FIFO (%1)</translation>
+      <translation>ФИФО (%1)</translation>
     </message>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="42"/>
       <source>Socket (%1)</source>
-      <translation>Socket (%1)</translation>
+      <translation>Утичница (%1)</translation>
     </message>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="44"/>
       <source>Unknown</source>
-      <translation>Unknown</translation>
+      <translation>Непознато</translation>
     </message>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="57"/>
       <location filename="../src/ui/FileInfoDialog.qml" line="99"/>
       <source>Could not retrieve file information.</source>
-      <translation>Could not retrieve file information.</translation>
+      <translation>Није могуће преузети информације о датотеци.</translation>
     </message>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="64"/>
       <source>Name</source>
-      <translation>Name</translation>
+      <translation>Име</translation>
     </message>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="65"/>
       <source>Path</source>
-      <translation>Path</translation>
+      <translation>Пут</translation>
     </message>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="66"/>
       <source>Type</source>
-      <translation>Type</translation>
+      <translation>Тип</translation>
     </message>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="68"/>
       <source>Size</source>
-      <translation>Size</translation>
+      <translation>Величина</translation>
     </message>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="69"/>
       <source>%1 (%2 bytes)</source>
-      <translation>%1 (%2 bytes)</translation>
+      <translation>%1 (%2 бајтова)</translation>
     </message>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="71"/>
       <source>Allocated Blocks</source>
-      <translation>Allocated Blocks</translation>
+      <translation>Додељени блокови</translation>
     </message>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="72"/>
       <source>Created</source>
-      <translation>Created</translation>
+      <translation>Цреатед</translation>
     </message>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="73"/>
       <source>Modified</source>
-      <translation>Modified</translation>
+      <translation>Модификовано</translation>
     </message>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="74"/>
       <source>Hard Links</source>
-      <translation>Hard Links</translation>
+      <translation>Хард Линкс</translation>
     </message>
     <message>
       <location filename="../src/ui/FileInfoDialog.qml" line="76"/>
       <source>Link Target</source>
-      <translation>Link Target</translation>
+      <translation>Линк Таргет</translation>
     </message>
   </context>
   <context>
@@ -2979,67 +2979,67 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/FilesSection.qml" line="60"/>
       <source>No device selected.</source>
-      <translation>No device selected.</translation>
+      <translation>Није изабран ниједан уређај.</translation>
     </message>
     <message>
       <location filename="../src/ui/FilesSection.qml" line="68"/>
       <source>The default file service is unavailable.</source>
-      <translation>The default file service is unavailable.</translation>
+      <translation>Подразумевана услуга датотека није доступна.</translation>
     </message>
     <message>
       <location filename="../src/ui/FilesSection.qml" line="159"/>
       <source>The file explorer could not be loaded.</source>
-      <translation>The file explorer could not be loaded.</translation>
+      <translation>Истраживач датотека није могао да се учита.</translation>
     </message>
     <message>
       <location filename="../src/ui/FilesSection.qml" line="186"/>
       <source>Explorer</source>
-      <translation>Explorer</translation>
+      <translation>Екплорер</translation>
     </message>
     <message>
       <location filename="../src/ui/FilesSection.qml" line="190"/>
       <source>Default</source>
-      <translation>Default</translation>
+      <translation>Подразумевано</translation>
     </message>
     <message>
       <location filename="../src/ui/FilesSection.qml" line="197"/>
       <source>Jailbroken (AFC2)</source>
-      <translation>Jailbroken (AFC2)</translation>
+      <translation>Јаилброкен (AFC2)</translation>
     </message>
     <message>
       <location filename="../src/ui/FilesSection.qml" line="198"/>
       <source>Full filesystem</source>
-      <translation>Full filesystem</translation>
+      <translation>Потпуни систем датотека</translation>
     </message>
     <message>
       <location filename="../src/ui/FilesSection.qml" line="198"/>
       <source>Unavailable</source>
-      <translation>Unavailable</translation>
+      <translation>Недоступно</translation>
     </message>
     <message>
       <location filename="../src/ui/FilesSection.qml" line="207"/>
       <source>Common Places</source>
-      <translation>Common Places</translation>
+      <translation>Цоммон Плацес</translation>
     </message>
     <message>
       <location filename="../src/ui/FilesSection.qml" line="211"/>
       <source>Pictures</source>
-      <translation>Pictures</translation>
+      <translation>Слике</translation>
     </message>
     <message>
       <location filename="../src/ui/FilesSection.qml" line="212"/>
       <source>/DCIM</source>
-      <translation>/DCIM</translation>
+      <translation>/ДЦИМ</translation>
     </message>
     <message>
       <location filename="../src/ui/FilesSection.qml" line="220"/>
       <source>Favorite Places</source>
-      <translation>Favorite Places</translation>
+      <translation>Омиљена места</translation>
     </message>
     <message>
       <location filename="../src/ui/FilesSection.qml" line="229"/>
       <source>No favorite locations yet</source>
-      <translation>No favorite locations yet</translation>
+      <translation>Још увек нема омиљених локација</translation>
     </message>
     <message>
       <location filename="../src/ui/FilesSection.qml" line="245"/>
@@ -3049,7 +3049,7 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/FilesSection.qml" line="307"/>
       <source>Remove from Favorites</source>
-      <translation>Remove from Favorites</translation>
+      <translation>Уклони из омиљених</translation>
     </message>
   </context>
   <context>
@@ -3058,72 +3058,72 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
       <location filename="../src/ui/app-store/GetIpaPopup.qml" line="27"/>
       <location filename="../src/ui/app-store/GetIpaPopup.qml" line="214"/>
       <source>Get IPA</source>
-      <translation>Get IPA</translation>
+      <translation>Узми IPA</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/GetIpaPopup.qml" line="61"/>
       <source>Preparing download...</source>
-      <translation>Preparing download...</translation>
+      <translation>Припрема се преузимање...</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/GetIpaPopup.qml" line="66"/>
       <source>The App Store service is not initialized.</source>
-      <translation>The App Store service is not initialized.</translation>
+      <translation>Услуга Апп Сторе није иницијализована.</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/GetIpaPopup.qml" line="94"/>
       <source>Choose download folder</source>
-      <translation>Choose download folder</translation>
+      <translation>Изаберите фасциклу за преузимање</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/GetIpaPopup.qml" line="100"/>
       <source>Cancel download?</source>
-      <translation>Cancel download?</translation>
+      <translation>Отказати преузимање?</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/GetIpaPopup.qml" line="101"/>
       <source>The IPA download is still in progress. Do you want to cancel it and close this dialog?</source>
-      <translation>The IPA download is still in progress. Do you want to cancel it and close this dialog?</translation>
+      <translation>IPA преузимање је још увек у току. Да ли желите да га откажете и затворите овај дијалог?</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/GetIpaPopup.qml" line="124"/>
       <source>Downloading IPA...</source>
-      <translation>Downloading IPA...</translation>
+      <translation>Преузимање IPA...</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/GetIpaPopup.qml" line="135"/>
       <source>Download failed.</source>
-      <translation>Download failed.</translation>
+      <translation>Преузимање није успело.</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/GetIpaPopup.qml" line="136"/>
       <source>Saved IPA</source>
-      <translation>Saved IPA</translation>
+      <translation>Сачувана IPA</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/GetIpaPopup.qml" line="170"/>
       <source>Choose</source>
-      <translation>Choose</translation>
+      <translation>Изабери</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/GetIpaPopup.qml" line="188"/>
       <source>Saved to %1</source>
-      <translation>Saved to %1</translation>
+      <translation>Сачувано у %1</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/GetIpaPopup.qml" line="198"/>
       <source>Open Folder</source>
-      <translation>Open Folder</translation>
+      <translation>Отворите фасциклу</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/GetIpaPopup.qml" line="209"/>
       <source>Cancel</source>
-      <translation>Cancel</translation>
+      <translation>Откажи</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/GetIpaPopup.qml" line="209"/>
       <source>Close</source>
-      <translation>Close</translation>
+      <translation>Затвори</translation>
     </message>
   </context>
   <context>
@@ -3131,37 +3131,37 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/Helpers.qml" line="30"/>
       <source>Missing bundle ID.</source>
-      <translation>Missing bundle ID.</translation>
+      <translation>Недостаје ИД пакета.</translation>
     </message>
     <message>
       <location filename="../src/ui/Helpers.qml" line="40"/>
       <source>Failed to fetch app details.</source>
-      <translation>Failed to fetch app details.</translation>
+      <translation>Преузимање детаља о апликацији није успело.</translation>
     </message>
     <message>
       <location filename="../src/ui/Helpers.qml" line="48"/>
       <source>No App Store details found for this bundle ID.</source>
-      <translation>No App Store details found for this bundle ID.</translation>
+      <translation>Нису пронађени детаљи Апп Сторе за овај ИД пакета.</translation>
     </message>
     <message>
       <location filename="../src/ui/Helpers.qml" line="53"/>
       <source>Failed to parse App Store details.</source>
-      <translation>Failed to parse App Store details.</translation>
+      <translation>Рашчлањивање детаља Апп Сторе-а није успело.</translation>
     </message>
     <message>
       <location filename="../src/ui/Helpers.qml" line="191"/>
       <source>Error</source>
-      <translation>Error</translation>
+      <translation>Грешка</translation>
     </message>
     <message>
       <location filename="../src/ui/Helpers.qml" line="195"/>
       <source>Warning</source>
-      <translation>Warning</translation>
+      <translation>Упозорење</translation>
     </message>
     <message>
       <location filename="../src/ui/Helpers.qml" line="199"/>
       <source>Information</source>
-      <translation>Information</translation>
+      <translation>Информације</translation>
     </message>
   </context>
   <context>
@@ -3169,72 +3169,72 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/HowToConnect.qml" line="33"/>
       <source>You can now unplug the device. iDescriptor will connect to it automatically if Bonjour is enabled and running. (requires iOS 14 or later)</source>
-      <translation>You can now unplug the device. iDescriptor will connect to it automatically if Bonjour is enabled and running. (requires iOS 14 or later)</translation>
+      <translation>Сада можете да искључите уређај. iDescriptor ће се аутоматски повезати на њега ако је Bonjour омогућен и покренут. (захтева иОС 14 или новији)</translation>
     </message>
     <message>
       <location filename="../src/ui/HowToConnect.qml" line="35"/>
       <source>You can now unplug the device. iDescriptor will connect to it automatically if Avahi is enabled and running. (requires iOS 14 or later)</source>
-      <translation>You can now unplug the device. iDescriptor will connect to it automatically if Avahi is enabled and running. (requires iOS 14 or later)</translation>
+      <translation>Сада можете да искључите уређај. iDescriptor ће се аутоматски повезати на њега ако је Avahi омогућен и покренут. (захтева иОС 14 или новији)</translation>
     </message>
     <message>
       <location filename="../src/ui/HowToConnect.qml" line="36"/>
       <source>You can now unplug the device. iDescriptor will connect to it automatically. (requires iOS 14 or later)</source>
-      <translation>You can now unplug the device. iDescriptor will connect to it automatically. (requires iOS 14 or later)</translation>
+      <translation>Сада можете да искључите уређај. iDescriptor ће се аутоматски повезати на њега. (захтева иОС 14 или новији)</translation>
     </message>
     <message>
       <location filename="../src/ui/HowToConnect.qml" line="94"/>
       <source>Auto Setup</source>
-      <translation>Auto Setup</translation>
+      <translation>Ауто Сетуп</translation>
     </message>
     <message>
       <location filename="../src/ui/HowToConnect.qml" line="94"/>
       <source>Custom</source>
-      <translation>Custom</translation>
+      <translation>Цустом</translation>
     </message>
     <message>
       <location filename="../src/ui/HowToConnect.qml" line="177"/>
       <source>Connect your device</source>
-      <translation>Connect your device</translation>
+      <translation>Повежите свој уређај</translation>
     </message>
     <message>
       <location filename="../src/ui/HowToConnect.qml" line="187"/>
       <source>Plug the device into this computer with a cable so iDescriptor can prepare wireless pairing.</source>
-      <translation>Plug the device into this computer with a cable so iDescriptor can prepare wireless pairing.</translation>
+      <translation>Укључите уређај у овај рачунар помоћу кабла како би iDescriptor могао да припреми бежично упаривање.</translation>
     </message>
     <message>
       <location filename="../src/ui/HowToConnect.qml" line="228"/>
       <source>Accept the pairing dialog</source>
-      <translation>Accept the pairing dialog</translation>
+      <translation>Прихватите дијалог за упаривање</translation>
     </message>
     <message>
       <location filename="../src/ui/HowToConnect.qml" line="238"/>
       <source>Keep the device unlocked and tap Trust when iOS asks whether this computer is trusted.</source>
-      <translation>Keep the device unlocked and tap Trust when iOS asks whether this computer is trusted.</translation>
+      <translation>Нека уређај буде откључан и тапните на Труст када иОС пита да ли је овај рачунар поуздан.</translation>
     </message>
     <message>
       <location filename="../src/ui/HowToConnect.qml" line="279"/>
       <source>Finish over Wi-Fi</source>
-      <translation>Finish over Wi-Fi</translation>
+      <translation>Завршите преко Wi-Fi-ја</translation>
     </message>
     <message>
       <location filename="../src/ui/HowToConnect.qml" line="441"/>
       <source>Use a saved pairing file</source>
-      <translation>Use a saved pairing file</translation>
+      <translation>Користите сачувану датотеку за упаривање</translation>
     </message>
     <message>
       <location filename="../src/ui/HowToConnect.qml" line="451"/>
       <source>You can use the &apos;Connect with pairing file&apos; button to connect to a device. You have to have a valid pairing file and know the device IP address.</source>
-      <translation>You can use the &apos;Connect with pairing file&apos; button to connect to a device. You have to have a valid pairing file and know the device IP address.</translation>
+      <translation>Можете да користите дугме „Повежи се са датотеком за упаривање“ да бисте се повезали са уређајем. Морате имати важећу датотеку за упаривање и знати ИП адресу уређаја.</translation>
     </message>
     <message>
       <location filename="../src/ui/HowToConnect.qml" line="462"/>
       <source>Pairing files are usually stored here:</source>
-      <translation>Pairing files are usually stored here:</translation>
+      <translation>Датотеке за упаривање се обично чувају овде:</translation>
     </message>
     <message>
       <location filename="../src/ui/HowToConnect.qml" line="499"/>
       <source>You can run `sudo ls /var/db/lockdown` to see the pairing files you have on your Mac.</source>
-      <translation>You can run `sudo ls /var/db/lockdown` to see the pairing files you have on your Mac.</translation>
+      <translation>Можете покренути `судо лс /вар/дб/лоцкдовн` да бисте видели датотеке за упаривање које имате на свом Мац-у.</translation>
     </message>
   </context>
   <context>
@@ -3242,58 +3242,58 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/tools/IFuse.qml" line="17"/>
       <source>iFuse Mount - iDescriptor</source>
-      <translation>iFuse Mount - iDescriptor</translation>
+      <translation>iFuse Моунт - iDescriptor</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/IFuse.qml" line="42"/>
       <source>Unknown Device</source>
-      <translation>Unknown Device</translation>
+      <translation>Непознати уређај</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/IFuse.qml" line="77"/>
       <location filename="../src/ui/tools/IFuse.qml" line="100"/>
       <source>Select Mount Directory</source>
-      <translation>Select Mount Directory</translation>
+      <translation>Изаберите Моунт Дирецтори</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/IFuse.qml" line="92"/>
       <source>This folder cannot be used by the Flatpak build. Choose a subfolder inside %1.</source>
-      <translation>This folder cannot be used by the Flatpak build. Choose a subfolder inside %1.</translation>
+      <translation>Ову фасциклу не може користити Флатпак верзија. Изаберите поддиректоријум унутар %1.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/IFuse.qml" line="118"/>
       <source>Mount %1&apos;s media as a drive on your PC.</source>
-      <translation>Mount %1&apos;s media as a drive on your PC.</translation>
+      <translation>Монтирајте %1 медијум као диск на рачунару.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/IFuse.qml" line="158"/>
       <source>Mount directory will be shown here</source>
-      <translation>Mount directory will be shown here</translation>
+      <translation>Овде ће бити приказан директоријум за монтирање</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/IFuse.qml" line="172"/>
       <source>Browse...</source>
-      <translation>Browse...</translation>
+      <translation>Прегледај...</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/IFuse.qml" line="188"/>
       <source>Unmounting...</source>
-      <translation>Unmounting...</translation>
+      <translation>Демонтажа...</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/IFuse.qml" line="188"/>
       <source>Mounting...</source>
-      <translation>Mounting...</translation>
+      <translation>Монтажа...</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/IFuse.qml" line="189"/>
       <source>Unmount Device</source>
-      <translation>Unmount Device</translation>
+      <translation>Унмоунт Девице</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/IFuse.qml" line="189"/>
       <source>Mount Device</source>
-      <translation>Mount Device</translation>
+      <translation>Монтирајте уређај</translation>
     </message>
   </context>
   <context>
@@ -3309,72 +3309,72 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/app-store/InstallAppPopup.qml" line="27"/>
       <source>Install IPA</source>
-      <translation>Install IPA</translation>
+      <translation>Инсталирајте IPA</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/InstallAppPopup.qml" line="84"/>
       <source>Preparing IPA download...</source>
-      <translation>Preparing IPA download...</translation>
+      <translation>Припрема IPA преузимања...</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/InstallAppPopup.qml" line="89"/>
       <source>The App Store service is not initialized.</source>
-      <translation>The App Store service is not initialized.</translation>
+      <translation>Услуга Апп Сторе није иницијализована.</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/InstallAppPopup.qml" line="120"/>
       <source>Cancel installation?</source>
-      <translation>Cancel installation?</translation>
+      <translation>Отказати инсталацију?</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/InstallAppPopup.qml" line="121"/>
       <source>The IPA download or installation is still in progress. Do you want to cancel it and close this dialog?</source>
-      <translation>The IPA download or installation is still in progress. Do you want to cancel it and close this dialog?</translation>
+      <translation>Преузимање или инсталација IPA-е је још увек у току. Да ли желите да га откажете и затворите овај дијалог?</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/InstallAppPopup.qml" line="146"/>
       <source>Installing IPA on device...</source>
-      <translation>Installing IPA on device...</translation>
+      <translation>Инсталирање IPA на уређај...</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/InstallAppPopup.qml" line="147"/>
       <source>Downloading IPA...</source>
-      <translation>Downloading IPA...</translation>
+      <translation>Преузимање IPA...</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/InstallAppPopup.qml" line="157"/>
       <source>Installation failed.</source>
-      <translation>Installation failed.</translation>
+      <translation>Инсталација није успела.</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/InstallAppPopup.qml" line="158"/>
       <source>Installation finished</source>
-      <translation>Installation finished</translation>
+      <translation>Инсталација је завршена</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/InstallAppPopup.qml" line="189"/>
       <source>Select a connected device</source>
-      <translation>Select a connected device</translation>
+      <translation>Изаберите повезани уређај</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/InstallAppPopup.qml" line="218"/>
       <source>No device connected.</source>
-      <translation>No device connected.</translation>
+      <translation>Ниједан уређај није повезан.</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/InstallAppPopup.qml" line="245"/>
       <source>Cancel</source>
-      <translation>Cancel</translation>
+      <translation>Откажи</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/InstallAppPopup.qml" line="245"/>
       <source>Close</source>
-      <translation>Close</translation>
+      <translation>Затвори</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/InstallAppPopup.qml" line="250"/>
       <source>Install</source>
-      <translation>Install</translation>
+      <translation>Инсталирај</translation>
     </message>
   </context>
   <context>
@@ -3383,37 +3383,37 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
       <location filename="../src/ui/installed-apps/InstalledApps.qml" line="49"/>
       <location filename="../src/ui/installed-apps/InstalledApps.qml" line="193"/>
       <source>Failed to retrieve installed apps.</source>
-      <translation>Failed to retrieve installed apps.</translation>
+      <translation>Преузимање инсталираних апликација није успело.</translation>
     </message>
     <message>
       <location filename="../src/ui/installed-apps/InstalledApps.qml" line="72"/>
       <source> (System)</source>
-      <translation> (System)</translation>
+      <translation> (систем)</translation>
     </message>
     <message>
       <location filename="../src/ui/installed-apps/InstalledApps.qml" line="177"/>
       <source>Failed to open the document container for %1.</source>
-      <translation>Failed to open the document container for %1.</translation>
+      <translation>Отварање контејнера докумената за %1 није успело.</translation>
     </message>
     <message>
       <location filename="../src/ui/installed-apps/InstalledApps.qml" line="201"/>
       <source>No apps found or failed to retrieve apps.</source>
-      <translation>No apps found or failed to retrieve apps.</translation>
+      <translation>Није пронађена ниједна апликација или преузимање апликација није успело.</translation>
     </message>
     <message>
       <location filename="../src/ui/installed-apps/InstalledApps.qml" line="267"/>
       <source>Search apps...</source>
-      <translation>Search apps...</translation>
+      <translation>Претражи апликације...</translation>
     </message>
     <message>
       <location filename="../src/ui/installed-apps/InstalledApps.qml" line="279"/>
       <source>File Sharing</source>
-      <translation>File Sharing</translation>
+      <translation>Дељење датотека</translation>
     </message>
     <message>
       <location filename="../src/ui/installed-apps/InstalledApps.qml" line="365"/>
       <source>Select an app to browse its documents.</source>
-      <translation>Select an app to browse its documents.</translation>
+      <translation>Изаберите апликацију да бисте прегледали њене документе.</translation>
     </message>
   </context>
   <context>
@@ -3421,22 +3421,22 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/Jailbroken.qml" line="52"/>
       <source>SSH Terminal</source>
-      <translation>SSH Terminal</translation>
+      <translation>SSH терминал</translation>
     </message>
     <message>
       <location filename="../src/ui/Jailbroken.qml" line="53"/>
       <source>Connect to your device via SSH</source>
-      <translation>Connect to your device via SSH</translation>
+      <translation>Повежите се са својим уређајем преко SSH-а</translation>
     </message>
     <message>
       <location filename="../src/ui/Jailbroken.qml" line="59"/>
       <source>More Tools Coming</source>
-      <translation>More Tools Coming</translation>
+      <translation>Стиже још алата</translation>
     </message>
     <message>
       <location filename="../src/ui/Jailbroken.qml" line="60"/>
       <source>New features will be added soon</source>
-      <translation>New features will be added soon</translation>
+      <translation>Нове функције ће бити додане ускоро</translation>
     </message>
   </context>
   <context>
@@ -3444,32 +3444,32 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/KeychainDialog.qml" line="66"/>
       <source>Allow Keychain Access</source>
-      <translation>Allow Keychain Access</translation>
+      <translation>Дозволи приступ привеску за кључеве</translation>
     </message>
     <message>
       <location filename="../src/ui/KeychainDialog.qml" line="76"/>
       <source>iDescriptor uses macOS Keychain to securely store and retrieve your Apple ID credentials. When macOS asks for access, choose &quot;Always Allow&quot; to avoid repeated prompts.</source>
-      <translation>iDescriptor uses macOS Keychain to securely store and retrieve your Apple ID credentials. When macOS asks for access, choose &quot;Always Allow&quot; to avoid repeated prompts.</translation>
+      <translation>iDescriptor користи мацОС Кеицхаин за безбедно складиштење и преузимање ваших Аппле ИД акредитива. Када мацОС затражи приступ, изаберите „Увек дозволи“ да бисте избегли поновљене упите.</translation>
     </message>
     <message>
       <location filename="../src/ui/KeychainDialog.qml" line="108"/>
       <source>Your credentials remain protected by macOS and are only used for App Store sign-in.</source>
-      <translation>Your credentials remain protected by macOS and are only used for App Store sign-in.</translation>
+      <translation>Ваши акредитиви остају заштићени мацОС-ом и користе се само за пријављивање у Апп Сторе.</translation>
     </message>
     <message>
       <location filename="../src/ui/KeychainDialog.qml" line="127"/>
       <source>Do not show this message again</source>
-      <translation>Do not show this message again</translation>
+      <translation>Не приказуј поново ову поруку</translation>
     </message>
     <message>
       <location filename="../src/ui/KeychainDialog.qml" line="133"/>
       <source>Skip for Now</source>
-      <translation>Skip for Now</translation>
+      <translation>Прескочи за сада</translation>
     </message>
     <message>
       <location filename="../src/ui/KeychainDialog.qml" line="139"/>
       <source>Continue</source>
-      <translation>Continue</translation>
+      <translation>Настави</translation>
     </message>
   </context>
   <context>
@@ -3477,63 +3477,63 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/tools/LiveScreen.qml" line="17"/>
       <source>Live Screen - iDescriptor</source>
-      <translation>Live Screen - iDescriptor</translation>
+      <translation>Екран уживо - iDescriptor</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/LiveScreen.qml" line="22"/>
       <location filename="../src/ui/tools/LiveScreen.qml" line="25"/>
       <source>Connecting to screenshot service...</source>
-      <translation>Connecting to screenshot service...</translation>
+      <translation>Повезивање на услугу снимања екрана...</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/LiveScreen.qml" line="41"/>
       <source>Failed to initialize screenshot capture. Mount a compatible developer disk image, then retry.</source>
-      <translation>Failed to initialize screenshot capture. Mount a compatible developer disk image, then retry.</translation>
+      <translation>Иницијализација снимања снимка екрана није успела. Монтирајте компатибилну слику диска програмера, а затим покушајте поново.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/LiveScreen.qml" line="43"/>
       <source>Failed to initialize screenshot capture. Please ensure the device has developer mode enabled.</source>
-      <translation>Failed to initialize screenshot capture. Please ensure the device has developer mode enabled.</translation>
+      <translation>Иницијализација снимања снимка екрана није успела. Уверите се да је на уређају омогућен режим програмера.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/LiveScreen.qml" line="45"/>
       <source>Failed to initialize screenshot capture. Reason: %1</source>
-      <translation>Failed to initialize screenshot capture. Reason: %1</translation>
+      <translation>Иницијализација снимања снимка екрана није успела. Разлог: %1</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/LiveScreen.qml" line="64"/>
       <source>Developer Mode was not handled.</source>
-      <translation>Developer Mode was not handled.</translation>
+      <translation>Режим програмера није обрађен.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/LiveScreen.qml" line="65"/>
       <source>Developer disk image was not mounted.</source>
-      <translation>Developer disk image was not mounted.</translation>
+      <translation>Слика диска програмера није монтирана.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/LiveScreen.qml" line="80"/>
       <source>Capturing</source>
-      <translation>Capturing</translation>
+      <translation>Цаптуринг</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/LiveScreen.qml" line="151"/>
       <source>Rotate CW</source>
-      <translation>Rotate CW</translation>
+      <translation>Ротате ЦВ</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/LiveScreen.qml" line="156"/>
       <source>Rotate CCW</source>
-      <translation>Rotate CCW</translation>
+      <translation>Ротирајте лево</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/LiveScreen.qml" line="161"/>
       <source>Unmirror</source>
-      <translation>Unmirror</translation>
+      <translation>Унмиррор</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/LiveScreen.qml" line="161"/>
       <source>Mirror</source>
-      <translation>Mirror</translation>
+      <translation>Огледало</translation>
     </message>
   </context>
   <context>
@@ -3541,17 +3541,17 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/LocalNetworkPermissionDialog.qml" line="32"/>
       <source>Allow for Local Network Discovery</source>
-      <translation>Allow for Local Network Discovery</translation>
+      <translation>Дозволи откривање локалне мреже</translation>
     </message>
     <message>
       <location filename="../src/ui/LocalNetworkPermissionDialog.qml" line="42"/>
       <source>macOS will ask for permission next. Choose Allow so iDescriptor can find and connect to Apple devices over Wi-Fi.</source>
-      <translation>macOS will ask for permission next. Choose Allow so iDescriptor can find and connect to Apple devices over Wi-Fi.</translation>
+      <translation>мацОС ће следеће тражити дозволу. Изаберите Дозволи да би iDescriptor могао да пронађе и повеже се са Аппле уређајима преко Wi-Fi мреже.</translation>
     </message>
     <message>
       <location filename="../src/ui/LocalNetworkPermissionDialog.qml" line="64"/>
       <source>Continue</source>
-      <translation>Continue</translation>
+      <translation>Настави</translation>
     </message>
   </context>
   <context>
@@ -3559,12 +3559,12 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/base/LocationSelector.qml" line="12"/>
       <source>Location</source>
-      <translation>Location</translation>
+      <translation>Локација</translation>
     </message>
     <message>
       <location filename="../src/ui/base/LocationSelector.qml" line="64"/>
       <source>Change…</source>
-      <translation>Change…</translation>
+      <translation>Промени…</translation>
     </message>
   </context>
   <context>
@@ -3572,62 +3572,62 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/LoginDialog.qml" line="216"/>
       <source>Sign in failed.</source>
-      <translation>Sign in failed.</translation>
+      <translation>Пријављивање није успело.</translation>
     </message>
     <message>
       <location filename="../src/ui/LoginDialog.qml" line="265"/>
       <source>Sign in with your Apple Account</source>
-      <translation>Sign in with your Apple Account</translation>
+      <translation>Пријавите се са својим Аппле налогом</translation>
     </message>
     <message>
       <location filename="../src/ui/LoginDialog.qml" line="275"/>
       <source>Use your account to search and install App Store apps.</source>
-      <translation>Use your account to search and install App Store apps.</translation>
+      <translation>Користите свој налог за претраживање и инсталирање апликација из Апп Сторе-а.</translation>
     </message>
     <message>
       <location filename="../src/ui/LoginDialog.qml" line="292"/>
       <source>Apple Account</source>
-      <translation>Apple Account</translation>
+      <translation>Аппле налог</translation>
     </message>
     <message>
       <location filename="../src/ui/LoginDialog.qml" line="348"/>
       <source>Password</source>
-      <translation>Password</translation>
+      <translation>Лозинка</translation>
     </message>
     <message>
       <location filename="../src/ui/LoginDialog.qml" line="429"/>
       <source>Credentials are passed to Apple&apos;s sign-in service and stored by the local ipatool keyring.</source>
-      <translation>Credentials are passed to Apple&apos;s sign-in service and stored by the local ipatool keyring.</translation>
+      <translation>Акредитиви се прослеђују Аппле-овој услузи за пријаву и чувају их локални ипатоол привезак за кључеве.</translation>
     </message>
     <message>
       <location filename="../src/ui/LoginDialog.qml" line="444"/>
       <source>Continue</source>
-      <translation>Continue</translation>
+      <translation>Настави</translation>
     </message>
     <message>
       <location filename="../src/ui/LoginDialog.qml" line="472"/>
       <source>Forgot password?</source>
-      <translation>Forgot password?</translation>
+      <translation>Заборавили сте лозинку?</translation>
     </message>
     <message>
       <location filename="../src/ui/LoginDialog.qml" line="538"/>
       <source>Enter the code from your other device</source>
-      <translation>Enter the code from your other device</translation>
+      <translation>Унесите код са свог другог уређаја</translation>
     </message>
     <message>
       <location filename="../src/ui/LoginDialog.qml" line="548"/>
       <source>A verification code was requested for %1.</source>
-      <translation>A verification code was requested for %1.</translation>
+      <translation>Затражен је верификациони код за %1.</translation>
     </message>
     <message>
       <location filename="../src/ui/LoginDialog.qml" line="645"/>
       <source>Resend code</source>
-      <translation>Resend code</translation>
+      <translation>Поново пошаљи код</translation>
     </message>
     <message>
       <location filename="../src/ui/LoginDialog.qml" line="658"/>
       <source>Verify</source>
-      <translation>Verify</translation>
+      <translation>Верифи</translation>
     </message>
   </context>
   <context>
@@ -3644,47 +3644,47 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/MainWorkspace.qml" line="54"/>
       <source>Welcome</source>
-      <translation>Welcome</translation>
+      <translation>Добродошли</translation>
     </message>
     <message>
       <location filename="../src/ui/MainWorkspace.qml" line="56"/>
       <source>Apps</source>
-      <translation>Apps</translation>
+      <translation>Аппс</translation>
     </message>
     <message>
       <location filename="../src/ui/MainWorkspace.qml" line="58"/>
       <source>Toolbox</source>
-      <translation>Toolbox</translation>
+      <translation>Тоолбок</translation>
     </message>
     <message>
       <location filename="../src/ui/MainWorkspace.qml" line="60"/>
       <source>Jailbroken</source>
-      <translation>Jailbroken</translation>
+      <translation>Јаилброкен</translation>
     </message>
     <message>
       <location filename="../src/ui/MainWorkspace.qml" line="62"/>
       <source>Community</source>
-      <translation>Community</translation>
+      <translation>Заједница</translation>
     </message>
     <message>
       <location filename="../src/ui/MainWorkspace.qml" line="64"/>
       <source>Donate</source>
-      <translation>Donate</translation>
+      <translation>Донирајте</translation>
     </message>
     <message>
       <location filename="../src/ui/MainWorkspace.qml" line="66"/>
       <source>Connecting…</source>
-      <translation>Connecting…</translation>
+      <translation>Повезивање…</translation>
     </message>
     <message>
       <location filename="../src/ui/MainWorkspace.qml" line="68"/>
       <source>Recovery Device</source>
-      <translation>Recovery Device</translation>
+      <translation>Рецовери Девице</translation>
     </message>
     <message>
       <location filename="../src/ui/MainWorkspace.qml" line="71"/>
       <source>Device</source>
-      <translation>Device</translation>
+      <translation>Уређај</translation>
     </message>
   </context>
   <context>
@@ -3692,42 +3692,42 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/tools/NetworkDevices.qml" line="18"/>
       <source>Network Devices - iDescriptor</source>
-      <translation>Network Devices - iDescriptor</translation>
+      <translation>Мрежни уређаји - iDescriptor</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/NetworkDevices.qml" line="25"/>
       <source>Scanning for network devices...</source>
-      <translation>Scanning for network devices...</translation>
+      <translation>Скенирање мрежних уређаја...</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/NetworkDevices.qml" line="30"/>
       <source>Unknown device</source>
-      <translation>Unknown device</translation>
+      <translation>Непознати уређај</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/NetworkDevices.qml" line="55"/>
       <source>No network devices found</source>
-      <translation>No network devices found</translation>
+      <translation>Није пронађен ниједан мрежни уређај</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/NetworkDevices.qml" line="57"/>
       <source>Found %1 network device(s)</source>
-      <translation>Found %1 network device(s)</translation>
+      <translation>Пронађено %1 мрежних уређаја</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/NetworkDevices.qml" line="127"/>
       <source>Network Devices</source>
-      <translation>Network Devices</translation>
+      <translation>Мрежни уређаји</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/NetworkDevices.qml" line="171"/>
       <source>IP: %1</source>
-      <translation>IP: %1</translation>
+      <translation>ИП: %1</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/NetworkDevices.qml" line="178"/>
       <source>Port: %1</source>
-      <translation>Port: %1</translation>
+      <translation>Порт: %1</translation>
     </message>
   </context>
   <context>
@@ -3735,83 +3735,83 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/NetworkDevicesToConnect.qml" line="22"/>
       <source>Network device provider is loading</source>
-      <translation>Network device provider is loading</translation>
+      <translation>Провајдер мрежног уређаја се учитава</translation>
     </message>
     <message>
       <location filename="../src/ui/NetworkDevicesToConnect.qml" line="24"/>
       <source>Network device provider failed to start</source>
-      <translation>Network device provider failed to start</translation>
+      <translation>Провајдер мрежног уређаја није успео да се покрене</translation>
     </message>
     <message>
       <location filename="../src/ui/NetworkDevicesToConnect.qml" line="26"/>
       <source>No network devices found</source>
-      <translation>No network devices found</translation>
+      <translation>Није пронађен ниједан мрежни уређај</translation>
     </message>
     <message>
       <location filename="../src/ui/NetworkDevicesToConnect.qml" line="26"/>
       <source>Found %1 network device(s)</source>
-      <translation>Found %1 network device(s)</translation>
+      <translation>Пронађено %1 мрежних уређаја</translation>
     </message>
     <message>
       <location filename="../src/ui/NetworkDevicesToConnect.qml" line="32"/>
       <source>Unknown device</source>
-      <translation>Unknown device</translation>
+      <translation>Непознати уређај</translation>
     </message>
     <message>
       <location filename="../src/ui/NetworkDevicesToConnect.qml" line="40"/>
       <location filename="../src/ui/NetworkDevicesToConnect.qml" line="86"/>
       <source>Connect</source>
-      <translation>Connect</translation>
+      <translation>Повежите се</translation>
     </message>
     <message>
       <location filename="../src/ui/NetworkDevicesToConnect.qml" line="66"/>
       <source>Failed to connect</source>
-      <translation>Failed to connect</translation>
+      <translation>Повезивање није успело</translation>
     </message>
     <message>
       <location filename="../src/ui/NetworkDevicesToConnect.qml" line="70"/>
       <source>No pairing file</source>
-      <translation>No pairing file</translation>
+      <translation>Нема датотеке за упаривање</translation>
     </message>
     <message>
       <location filename="../src/ui/NetworkDevicesToConnect.qml" line="74"/>
       <source>Connecting...</source>
-      <translation>Connecting...</translation>
+      <translation>Повезивање...</translation>
     </message>
     <message>
       <location filename="../src/ui/NetworkDevicesToConnect.qml" line="78"/>
       <source>Connected</source>
-      <translation>Connected</translation>
+      <translation>Повезано</translation>
     </message>
     <message>
       <location filename="../src/ui/NetworkDevicesToConnect.qml" line="82"/>
       <source>Already connected</source>
-      <translation>Already connected</translation>
+      <translation>Већ повезан</translation>
     </message>
     <message>
       <location filename="../src/ui/NetworkDevicesToConnect.qml" line="247"/>
       <source>Retry</source>
-      <translation>Retry</translation>
+      <translation>Покушајте поново</translation>
     </message>
     <message>
       <location filename="../src/ui/NetworkDevicesToConnect.qml" line="265"/>
       <source>Network Devices</source>
-      <translation>Network Devices</translation>
+      <translation>Мрежни уређаји</translation>
     </message>
     <message>
       <location filename="../src/ui/NetworkDevicesToConnect.qml" line="346"/>
       <source>Connect via custom pairing file</source>
-      <translation>Connect via custom pairing file</translation>
+      <translation>Повежите се преко прилагођене датотеке за упаривање</translation>
     </message>
     <message>
       <location filename="../src/ui/NetworkDevicesToConnect.qml" line="360"/>
       <source>IP: %1</source>
-      <translation>IP: %1</translation>
+      <translation>ИП: %1</translation>
     </message>
     <message>
       <location filename="../src/ui/NetworkDevicesToConnect.qml" line="387"/>
       <source>Choose pairing file</source>
-      <translation>Choose pairing file</translation>
+      <translation>Изаберите датотеку за упаривање</translation>
     </message>
   </context>
   <context>
@@ -3819,12 +3819,12 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/PendingDevice.qml" line="29"/>
       <source>Trust This Computer</source>
-      <translation>Trust This Computer</translation>
+      <translation>Верујте овом рачунару</translation>
     </message>
     <message>
       <location filename="../src/ui/PendingDevice.qml" line="41"/>
       <source>Unlock your device and tap Trust when the prompt appears.</source>
-      <translation>Unlock your device and tap Trust when the prompt appears.</translation>
+      <translation>Откључајте свој уређај и додирните Веруј када се појави упит.</translation>
     </message>
   </context>
   <context>
@@ -3832,7 +3832,7 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/PendingDeviceSidebar.qml" line="70"/>
       <source>Pairing…</source>
-      <translation>Pairing…</translation>
+      <translation>Упаривање…</translation>
     </message>
   </context>
   <context>
@@ -3845,67 +3845,67 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="83"/>
       <source>AFC client is not available.</source>
-      <translation>AFC client is not available.</translation>
+      <translation>AFC клијент није доступан.</translation>
     </message>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="89"/>
       <source>Failed to start the video stream.</source>
-      <translation>Failed to start the video stream.</translation>
+      <translation>Покретање видео стрима није успело.</translation>
     </message>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="213"/>
       <source>Failed to load the image preview.</source>
-      <translation>Failed to load the image preview.</translation>
+      <translation>Учитавање прегледа слике није успело.</translation>
     </message>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="228"/>
       <source>Failed to play the video.</source>
-      <translation>Failed to play the video.</translation>
+      <translation>Репродукција видеа није успела.</translation>
     </message>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="274"/>
       <source>The image could not be displayed.</source>
-      <translation>The image could not be displayed.</translation>
+      <translation>Слика није могла да се прикаже.</translation>
     </message>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="340"/>
       <source>Preview unavailable</source>
-      <translation>Preview unavailable</translation>
+      <translation>Преглед није доступан</translation>
     </message>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="358"/>
       <source>Try Again</source>
-      <translation>Try Again</translation>
+      <translation>Покушајте поново</translation>
     </message>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="372"/>
       <source>Previous</source>
-      <translation>Previous</translation>
+      <translation>Претходно</translation>
     </message>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="383"/>
       <source>Next</source>
-      <translation>Next</translation>
+      <translation>Следеће</translation>
     </message>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="416"/>
       <source>VIDEO</source>
-      <translation>VIDEO</translation>
+      <translation>ВИДЕО</translation>
     </message>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="416"/>
       <source>IMAGE</source>
-      <translation>IMAGE</translation>
+      <translation>ИМАГЕ</translation>
     </message>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="447"/>
       <source>Close Preview</source>
-      <translation>Close Preview</translation>
+      <translation>Затвори преглед</translation>
     </message>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="472"/>
       <source>Zoom Out</source>
-      <translation>Zoom Out</translation>
+      <translation>Зоом Оут</translation>
     </message>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="479"/>
@@ -3915,32 +3915,32 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="487"/>
       <source>Zoom In</source>
-      <translation>Zoom In</translation>
+      <translation>Увећај</translation>
     </message>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="500"/>
       <source>Fit</source>
-      <translation>Fit</translation>
+      <translation>Фит</translation>
     </message>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="528"/>
       <source>Pause</source>
-      <translation>Pause</translation>
+      <translation>Пауза</translation>
     </message>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="528"/>
       <source>Play</source>
-      <translation>Play</translation>
+      <translation>Играј</translation>
     </message>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="580"/>
       <source>Unmute</source>
-      <translation>Unmute</translation>
+      <translation>Укључи звук</translation>
     </message>
     <message>
       <location filename="../src/ui/PreviewWindow.qml" line="580"/>
       <source>Mute</source>
-      <translation>Mute</translation>
+      <translation>Муте</translation>
     </message>
   </context>
   <context>
@@ -3948,12 +3948,12 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/base/PrivateText.qml" line="23"/>
       <source>Unknown</source>
-      <translation>Unknown</translation>
+      <translation>Непознато</translation>
     </message>
     <message>
       <location filename="../src/ui/base/PrivateText.qml" line="60"/>
       <source>Copied!</source>
-      <translation>Copied!</translation>
+      <translation>Копирано!</translation>
     </message>
   </context>
   <context>
@@ -3961,55 +3961,55 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/tools/QueryMobileGestalt.qml" line="14"/>
       <source>Query MobileGestalt - iDescriptor</source>
-      <translation>Query MobileGestalt - iDescriptor</translation>
+      <translation>Куери МобилеГесталт - iDescriptor</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/QueryMobileGestalt.qml" line="51"/>
       <source>This tool lets you query MobileGestalt keys, which provide various device information.</source>
-      <translation>This tool lets you query MobileGestalt keys, which provide various device information.</translation>
+      <translation>Овај алат вам омогућава да питате МобилеГесталт кључеве, који пружају различите информације о уређају.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/QueryMobileGestalt.qml" line="57"/>
       <source>Select MobileGestalt Keys</source>
-      <translation>Select MobileGestalt Keys</translation>
+      <translation>Изаберите МобилеГесталт Кеис</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/QueryMobileGestalt.qml" line="69"/>
       <source>Select All</source>
-      <translation>Select All</translation>
+      <translation>Изаберите Све</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/QueryMobileGestalt.qml" line="77"/>
       <source>Clear All</source>
-      <translation>Clear All</translation>
+      <translation>Обриши све</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/QueryMobileGestalt.qml" line="108"/>
       <source>Query MobileGestalt</source>
-      <translation>Query MobileGestalt</translation>
+      <translation>Куери МобилеГесталт</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/QueryMobileGestalt.qml" line="125"/>
       <source>Select keys and click Query to begin</source>
-      <translation>Select keys and click Query to begin</translation>
+      <translation>Изаберите кључеве и кликните на Упит да бисте започели</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/QueryMobileGestalt.qml" line="132"/>
       <source>Query Results</source>
-      <translation>Query Results</translation>
+      <translation>Куери Ресултс</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/QueryMobileGestalt.qml" line="146"/>
       <source>results will appear here...</source>
-      <translation>results will appear here...</translation>
+      <translation>резултати ће се појавити овде...</translation>
     </message>
     <message numerus="yes">
       <location filename="../src/ui/tools/QueryMobileGestalt.qml" line="160"/>
       <source>Query completed. Found %n result(s).</source>
       <translation>
-        <numerusform>Query completed. Found %n result(s).</numerusform>
-        <numerusform>Query completed. Found %n result(s).</numerusform>
-        <numerusform>Query completed. Found %n result(s).</numerusform>
+        <numerusform>Упит је завршен. Пронађено %n резултата.</numerusform>
+        <numerusform>Упит је завршен. Пронађено %n резултата.</numerusform>
+        <numerusform>Упит је завршен. Пронађено %n резултата.</numerusform>
       </translation>
     </message>
   </context>
@@ -4018,37 +4018,37 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/RecoveryDeviceInfo.qml" line="48"/>
       <source>Recovery Device</source>
-      <translation>Recovery Device</translation>
+      <translation>Рецовери Девице</translation>
     </message>
     <message>
       <location filename="../src/ui/RecoveryDeviceInfo.qml" line="57"/>
       <source>%1 mode</source>
-      <translation>%1 mode</translation>
+      <translation>%1 режим</translation>
     </message>
     <message>
       <location filename="../src/ui/RecoveryDeviceInfo.qml" line="57"/>
       <source>Recovery</source>
-      <translation>Recovery</translation>
+      <translation>Опоравак</translation>
     </message>
     <message>
       <location filename="../src/ui/RecoveryDeviceInfo.qml" line="64"/>
       <source>Exit Recovery Mode</source>
-      <translation>Exit Recovery Mode</translation>
+      <translation>Изађите из режима опоравка</translation>
     </message>
     <message>
       <location filename="../src/ui/RecoveryDeviceInfo.qml" line="72"/>
       <source>The command to exit recovery mode was sent successfully. The device should restart shortly.</source>
-      <translation>The command to exit recovery mode was sent successfully. The device should restart shortly.</translation>
+      <translation>Команда за излазак из режима опоравка је успешно послата. Уређај би се ускоро требао поново покренути.</translation>
     </message>
     <message>
       <location filename="../src/ui/RecoveryDeviceInfo.qml" line="76"/>
       <source>Failed to exit recovery mode. This could be due to USB permissions.</source>
-      <translation>Failed to exit recovery mode. This could be due to USB permissions.</translation>
+      <translation>Излазак из режима опоравка није успео. Ово може бити због USB дозвола.</translation>
     </message>
     <message>
       <location filename="../src/ui/RecoveryDeviceInfo.qml" line="93"/>
       <source>Model:</source>
-      <translation>Model:</translation>
+      <translation>Модел:</translation>
     </message>
     <message>
       <location filename="../src/ui/RecoveryDeviceInfo.qml" line="94"/>
@@ -4060,57 +4060,57 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
       <location filename="../src/ui/RecoveryDeviceInfo.qml" line="109"/>
       <location filename="../src/ui/RecoveryDeviceInfo.qml" line="111"/>
       <source>Unknown</source>
-      <translation>Unknown</translation>
+      <translation>Непознато</translation>
     </message>
     <message>
       <location filename="../src/ui/RecoveryDeviceInfo.qml" line="95"/>
       <source>Board:</source>
-      <translation>Board:</translation>
+      <translation>табла:</translation>
     </message>
     <message>
       <location filename="../src/ui/RecoveryDeviceInfo.qml" line="98"/>
       <source>Marketing Name:</source>
-      <translation>Marketing Name:</translation>
+      <translation>Маркетинг име:</translation>
     </message>
     <message>
       <location filename="../src/ui/RecoveryDeviceInfo.qml" line="100"/>
       <source>Mode:</source>
-      <translation>Mode:</translation>
+      <translation>Режим:</translation>
     </message>
     <message>
       <location filename="../src/ui/RecoveryDeviceInfo.qml" line="103"/>
       <source>ECID:</source>
-      <translation>ECID:</translation>
+      <translation>ЕЦИД:</translation>
     </message>
     <message>
       <location filename="../src/ui/RecoveryDeviceInfo.qml" line="105"/>
       <source>Serial Number:</source>
-      <translation>Serial Number:</translation>
+      <translation>Серијски број:</translation>
     </message>
     <message>
       <location filename="../src/ui/RecoveryDeviceInfo.qml" line="108"/>
       <source>CPID:</source>
-      <translation>CPID:</translation>
+      <translation>ЦПИД:</translation>
     </message>
     <message>
       <location filename="../src/ui/RecoveryDeviceInfo.qml" line="110"/>
       <source>BDID:</source>
-      <translation>BDID:</translation>
+      <translation>БДИД:</translation>
     </message>
     <message>
       <location filename="../src/ui/RecoveryDeviceInfo.qml" line="113"/>
       <source>Vendor ID:</source>
-      <translation>Vendor ID:</translation>
+      <translation>ИД добављача:</translation>
     </message>
     <message>
       <location filename="../src/ui/RecoveryDeviceInfo.qml" line="115"/>
       <source>Product ID:</source>
-      <translation>Product ID:</translation>
+      <translation>ИД производа:</translation>
     </message>
     <message>
       <location filename="../src/ui/RecoveryDeviceInfo.qml" line="130"/>
       <source>Recovery Descriptor</source>
-      <translation>Recovery Descriptor</translation>
+      <translation>Дескриптор опоравка</translation>
     </message>
   </context>
   <context>
@@ -4118,7 +4118,7 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/RecoveryDeviceSidebar.qml" line="19"/>
       <source>Recovery Device</source>
-      <translation>Recovery Device</translation>
+      <translation>Рецовери Девице</translation>
     </message>
   </context>
   <context>
@@ -4126,138 +4126,138 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="49"/>
       <source>The restore operation could not be completed.</source>
-      <translation>The restore operation could not be completed.</translation>
+      <translation>Операција враћања није могла да се заврши.</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="63"/>
       <source>Enter the backup password before restoring this encrypted backup.</source>
-      <translation>Enter the backup password before restoring this encrypted backup.</translation>
+      <translation>Унесите лозинку за резервну копију пре него што вратите ову шифровану резервну копију.</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="70"/>
       <source>Confirm Restore</source>
-      <translation>Confirm Restore</translation>
+      <translation>Потврдите враћање</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="71"/>
       <source>Restore “%1” to its matching device? Existing device data may be replaced.</source>
-      <translation>Restore “%1” to its matching device? Existing device data may be replaced.</translation>
+      <translation>Желите ли да вратите „%1“ на одговарајући уређај? Постојећи подаци уређаја могу бити замењени.</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="125"/>
       <source>“%1” was restored successfully.</source>
-      <translation>“%1” was restored successfully.</translation>
+      <translation>„%1“ је успешно враћено.</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="129"/>
       <source>Find My iPhone must be turned off before this backup can be restored. On the device, open Settings, tap your name, then choose Find My → Find My iPhone and turn it off.</source>
-      <translation>Find My iPhone must be turned off before this backup can be restored. On the device, open Settings, tap your name, then choose Find My → Find My iPhone and turn it off.</translation>
+      <translation>Финд Ми иПхоне мора бити искључен пре него што се ова резервна копија може вратити. На уређају отворите Подешавања, куцните на своје име, а затим изаберите Финд Ми → Финд Ми иПхоне и искључите га.</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="132"/>
       <source>Turn Off Find My iPhone</source>
-      <translation>Turn Off Find My iPhone</translation>
+      <translation>Искључите Финд Ми иПхоне</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="135"/>
       <source>iDescriptor could not restore “%1”. Keep the device connected and try again.</source>
-      <translation>iDescriptor could not restore “%1”. Keep the device connected and try again.</translation>
+      <translation>iDescriptor није могао да врати „%1“. Оставите уређај повезан и покушајте поново.</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="153"/>
       <source>Restoring %1</source>
-      <translation>Restoring %1</translation>
+      <translation>Враћање %1</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="155"/>
       <source>Restore Complete</source>
-      <translation>Restore Complete</translation>
+      <translation>Ресторе Цомплете</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="156"/>
       <source>Restore Backup</source>
-      <translation>Restore Backup</translation>
+      <translation>Врати резервну копију</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="171"/>
       <source>Try Again</source>
-      <translation>Try Again</translation>
+      <translation>Покушајте поново</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="172"/>
       <location filename="../src/ui/RestoreDialog.qml" line="309"/>
       <source>Close</source>
-      <translation>Close</translation>
+      <translation>Затвори</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="190"/>
       <source>Restore “%1” to its matching device.</source>
-      <translation>Restore “%1” to its matching device.</translation>
+      <translation>Вратите „%1“ на одговарајући уређај.</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="207"/>
       <source>Before restoring, turn off Find My iPhone on the device in Settings → [your name] → Find My → Find My iPhone.</source>
-      <translation>Before restoring, turn off Find My iPhone on the device in Settings → [your name] → Find My → Find My iPhone.</translation>
+      <translation>Пре враћања, искључите Финд Ми иПхоне на уређају у Подешавања → [ваше име] → Финд Ми → Финд Ми иПхоне.</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="215"/>
       <source>Restore Settings</source>
-      <translation>Restore Settings</translation>
+      <translation>Врати подешавања</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="223"/>
       <source>Restart device after restore</source>
-      <translation>Restart device after restore</translation>
+      <translation>Поново покрените уређај након враћања</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="230"/>
       <source>Create a safety copy before restoring</source>
-      <translation>Create a safety copy before restoring</translation>
+      <translation>Направите сигурносну копију пре враћања</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="237"/>
       <source>Restore device settings from backup</source>
-      <translation>Restore device settings from backup</translation>
+      <translation>Вратите подешавања уређаја из резервне копије</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="244"/>
       <source>Restore system files</source>
-      <translation>Restore system files</translation>
+      <translation>Вратите системске датотеке</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="251"/>
       <source>Remove items not restored</source>
-      <translation>Remove items not restored</translation>
+      <translation>Уклоните ставке које нису враћене</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="258"/>
       <source>Encrypted backup</source>
-      <translation>Encrypted backup</translation>
+      <translation>Шифрована резервна копија</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="268"/>
       <source>Backup password</source>
-      <translation>Backup password</translation>
+      <translation>Лозинка за резервну копију</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="280"/>
       <source>Cancel</source>
-      <translation>Cancel</translation>
+      <translation>Откажи</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="285"/>
       <source>Restore</source>
-      <translation>Restore</translation>
+      <translation>Ресторе</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="301"/>
       <source>The backup was restored successfully. The device may restart to finish applying the restored data.</source>
-      <translation>The backup was restored successfully. The device may restart to finish applying the restored data.</translation>
+      <translation>Резервна копија је успешно враћена. Уређај се може поново покренути да би завршио примену враћених података.</translation>
     </message>
     <message>
       <location filename="../src/ui/RestoreDialog.qml" line="329"/>
       <source>Keep the device connected until the restore finishes.</source>
-      <translation>Keep the device connected until the restore finishes.</translation>
+      <translation>Држите уређај повезан док се враћање не заврши.</translation>
     </message>
   </context>
   <context>
@@ -4265,42 +4265,42 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/tools/SSHProcessWindow.qml" line="16"/>
       <source>SSH Terminal / %1 - iDescriptor</source>
-      <translation>SSH Terminal / %1 - iDescriptor</translation>
+      <translation>SSH терминал / %1 - iDescriptor</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHProcessWindow.qml" line="32"/>
       <source>Setting up SSH tunnel...</source>
-      <translation>Setting up SSH tunnel...</translation>
+      <translation>Подешавање SSH тунела...</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHProcessWindow.qml" line="33"/>
       <source>Connecting to network device...</source>
-      <translation>Connecting to network device...</translation>
+      <translation>Повезивање са мрежним уређајем...</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHProcessWindow.qml" line="529"/>
       <source>Copy</source>
-      <translation>Copy</translation>
+      <translation>Копирај</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHProcessWindow.qml" line="535"/>
       <source>Copy All</source>
-      <translation>Copy All</translation>
+      <translation>Копирај све</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHProcessWindow.qml" line="547"/>
       <source>Clear</source>
-      <translation>Clear</translation>
+      <translation>Јасно</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHProcessWindow.qml" line="591"/>
       <source>Send</source>
-      <translation>Send</translation>
+      <translation>Пошаљи</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHProcessWindow.qml" line="601"/>
       <source>Ctrl-C</source>
-      <translation>Ctrl-C</translation>
+      <translation>Цтрл-Ц</translation>
     </message>
   </context>
   <context>
@@ -4308,13 +4308,13 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="18"/>
       <source>SSH Terminal - iDescriptor</source>
-      <translation>SSH Terminal - iDescriptor</translation>
+      <translation>SSH терминал - iDescriptor</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="28"/>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="152"/>
       <source>Select a device to connect</source>
-      <translation>Select a device to connect</translation>
+      <translation>Изаберите уређај за повезивање</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="36"/>
@@ -4322,24 +4322,24 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="439"/>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="577"/>
       <source>Unknown Device</source>
-      <translation>Unknown Device</translation>
+      <translation>Непознати уређај</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="71"/>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="72"/>
       <source>Unknown device</source>
-      <translation>Unknown device</translation>
+      <translation>Непознати уређај</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="103"/>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="685"/>
       <source>Ready to connect</source>
-      <translation>Ready to connect</translation>
+      <translation>Спремни за повезивање</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="120"/>
       <source>Unknown</source>
-      <translation>Unknown</translation>
+      <translation>Непознато</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="122"/>
@@ -4349,57 +4349,57 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="123"/>
       <source>Network</source>
-      <translation>Network</translation>
+      <translation>Мрежа</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="136"/>
       <source>Jailbreak status unknown</source>
-      <translation>Jailbreak status unknown</translation>
+      <translation>Статус бекства из затвора непознат</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="137"/>
       <source>Jailbroken</source>
-      <translation>Jailbroken</translation>
+      <translation>Јаилброкен</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="137"/>
       <source>Not detected as jailbroken</source>
-      <translation>Not detected as jailbroken</translation>
+      <translation>Није откривено као јаилбреак</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="159"/>
       <source>Please select a device first</source>
-      <translation>Please select a device first</translation>
+      <translation>Прво изаберите уређај</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="165"/>
       <source>Selected network device is missing IP address. Please try again.</source>
-      <translation>Selected network device is missing IP address. Please try again.</translation>
+      <translation>Изабраном мрежном уређају недостаје ИП адреса. Покушајте поново.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="256"/>
       <source>No Device Selected</source>
-      <translation>No Device Selected</translation>
+      <translation>Није изабран ниједан уређај</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="257"/>
       <source>Please select a device before trying to connect.</source>
-      <translation>Please select a device before trying to connect.</translation>
+      <translation>Изаберите уређај пре него што покушате да се повежете.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="262"/>
       <source>Missing IP Address</source>
-      <translation>Missing IP Address</translation>
+      <translation>Недостаје ИП адреса</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="263"/>
       <source>The selected network device is missing an IP address. Please try again.</source>
-      <translation>The selected network device is missing an IP address. Please try again.</translation>
+      <translation>Изабраном мрежном уређају недостаје ИП адреса. Покушајте поново.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="268"/>
       <source>Device Not Jailbroken</source>
-      <translation>Device Not Jailbroken</translation>
+      <translation>Уређај није јаилброкен</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="269"/>
@@ -4407,45 +4407,45 @@ Please ensure the device is unlocked and using a genuine cable.</translation>
 SSH access may not be available.
 
 Do you want to continue anyway?</source>
-      <translation>The selected device is not detected as jailbroken.
-SSH access may not be available.
+      <translation>Изабрани уређај није откривен као јаилбреак.
+SSH приступ можда неће бити доступан.
 
-Do you want to continue anyway?</translation>
+Желите ли ипак да наставите?</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="275"/>
       <source>Connection cancelled (device not jailbroken)</source>
-      <translation>Connection cancelled (device not jailbroken)</translation>
+      <translation>Веза је отказана (уређај није разбијен)</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="283"/>
       <source>SSH Root Password</source>
-      <translation>SSH Root Password</translation>
+      <translation>SSH роот лозинка</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="297"/>
       <source>Enter the root password. Leave it empty to use the default password.</source>
-      <translation>Enter the root password. Leave it empty to use the default password.</translation>
+      <translation>Унесите роот лозинку. Оставите празно да бисте користили подразумевану лозинку.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="305"/>
       <source>Default password</source>
-      <translation>Default password</translation>
+      <translation>Подразумевана лозинка</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="322"/>
       <source>Choose an SSH target</source>
-      <translation>Choose an SSH target</translation>
+      <translation>Изаберите SSH циљ</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="331"/>
       <source>Select a jailbroken device, or connect directly by IP address.</source>
-      <translation>Select a jailbroken device, or connect directly by IP address.</translation>
+      <translation>Изаберите јаилбреак уређај или се повежите директно преко ИП адресе.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="366"/>
       <source>Connected Devices</source>
-      <translation>Connected Devices</translation>
+      <translation>Повезани уређаји</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="373"/>
@@ -4456,27 +4456,27 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="477"/>
       <source>No connected devices</source>
-      <translation>No connected devices</translation>
+      <translation>Нема повезаних уређаја</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="504"/>
       <source>Network Devices</source>
-      <translation>Network Devices</translation>
+      <translation>Мрежни уређаји</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="615"/>
       <source>No network devices</source>
-      <translation>No network devices</translation>
+      <translation>Нема мрежних уређаја</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="642"/>
       <source>Manual IP Connection</source>
-      <translation>Manual IP Connection</translation>
+      <translation>Ручна ИП конекција</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="650"/>
       <source>Use this when the device is reachable but not listed above.</source>
-      <translation>Use this when the device is reachable but not listed above.</translation>
+      <translation>Користите ово када је уређај доступан, али није наведен изнад.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="662"/>
@@ -4486,45 +4486,27 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="666"/>
       <source>Connect by IP</source>
-      <translation>Connect by IP</translation>
+      <translation>Повежите се преко ИП-а</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="671"/>
       <source>Please enter an IP address</source>
-      <translation>Please enter an IP address</translation>
+      <translation>Унесите ИП адресу</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="703"/>
       <source>%1 selected</source>
-      <translation>%1 selected</translation>
+      <translation>Изабрано је %1</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="710"/>
       <source>Connect</source>
-      <translation>Connect</translation>
+      <translation>Повежите се</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SSHTerminalTool.qml" line="710"/>
       <source>Choose a device</source>
-      <translation>Choose a device</translation>
-    </message>
-  </context>
-  <context>
-    <name>ScreenMirroring</name>
-    <message>
-      <location filename="../src/ui/tools/ScreenMirroring.qml" line="17"/>
-      <source>Screen Mirroring - iDescriptor</source>
-      <translation>Screen Mirroring - iDescriptor</translation>
-    </message>
-    <message>
-      <location filename="../src/ui/tools/ScreenMirroring.qml" line="81"/>
-      <source>Mirroring</source>
-      <translation>Mirroring</translation>
-    </message>
-    <message>
-      <location filename="../src/ui/tools/ScreenMirroring.qml" line="86"/>
-      <source>%1 packets</source>
-      <translation>%1 packets</translation>
+      <translation>Изаберите уређај</translation>
     </message>
   </context>
   <context>
@@ -4532,319 +4514,444 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/Settings.qml" line="20"/>
       <source>Settings - iDescriptor</source>
-      <translation>Settings - iDescriptor</translation>
+      <translation>Подешавања - iDescriptor</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="175"/>
+      <location filename="../src/ui/Settings.qml" line="190"/>
       <source>Settings applied. Please restart the application for changes to take effect.</source>
-      <translation>Settings applied. Please restart the application for changes to take effect.</translation>
+      <translation>Подешавања су примењена. Поново покрените апликацију да би промене ступиле на снагу.</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="176"/>
+      <location filename="../src/ui/Settings.qml" line="191"/>
       <source>Settings applied.</source>
-      <translation>Settings applied.</translation>
+      <translation>Подешавања су примењена.</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="200"/>
+      <location filename="../src/ui/Settings.qml" line="215"/>
       <source>Select Download Directory</source>
-      <translation>Select Download Directory</translation>
+      <translation>Изаберите Довнлоад Дирецтори</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="209"/>
+      <location filename="../src/ui/Settings.qml" line="224"/>
       <source>Select Backup Directory</source>
-      <translation>Select Backup Directory</translation>
-    </message>
-    <message>
-      <location filename="../src/ui/Settings.qml" line="218"/>
-      <source>Select IPA Download Directory</source>
-      <translation>Select IPA Download Directory</translation>
-    </message>
-    <message>
-      <location filename="../src/ui/Settings.qml" line="227"/>
-      <source>Settings</source>
-      <translation>Settings</translation>
-    </message>
-    <message>
-      <location filename="../src/ui/Settings.qml" line="232"/>
-      <location filename="../src/ui/Settings.qml" line="732"/>
-      <source>Reset Settings</source>
-      <translation>Reset Settings</translation>
+      <translation>Изаберите Директоријум резервне копије</translation>
     </message>
     <message>
       <location filename="../src/ui/Settings.qml" line="233"/>
+      <source>Select IPA Download Directory</source>
+      <translation>Изаберите IPA директоријум за преузимање</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="242"/>
+      <source>Settings</source>
+      <translation>Подешавања</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="247"/>
+      <location filename="../src/ui/Settings.qml" line="773"/>
+      <source>Reset Settings</source>
+      <translation>Ресетујте подешавања</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="248"/>
       <source>Are you sure you want to reset all settings to their default values?</source>
-      <translation>Are you sure you want to reset all settings to their default values?</translation>
+      <translation>Да ли сте сигурни да желите да ресетујете сва подешавања на подразумеване вредности?</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="261"/>
+      <location filename="../src/ui/Settings.qml" line="276"/>
       <source>General</source>
-      <translation>General</translation>
+      <translation>генерал</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="268"/>
+      <location filename="../src/ui/Settings.qml" line="283"/>
       <source>Developer Disk Image Path</source>
-      <translation>Developer Disk Image Path</translation>
+      <translation>Путања до слике диска програмера</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="280"/>
-      <location filename="../src/ui/Settings.qml" line="302"/>
-      <location filename="../src/ui/Settings.qml" line="324"/>
+      <location filename="../src/ui/Settings.qml" line="295"/>
+      <location filename="../src/ui/Settings.qml" line="317"/>
+      <location filename="../src/ui/Settings.qml" line="339"/>
       <source>Browse</source>
-      <translation>Browse</translation>
+      <translation>Прегледај</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="290"/>
+      <location filename="../src/ui/Settings.qml" line="305"/>
       <source>IPA Download Path</source>
-      <translation>IPA Download Path</translation>
+      <translation>Путања за IPA преузимање</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="312"/>
+      <location filename="../src/ui/Settings.qml" line="327"/>
       <source>Backup Path</source>
-      <translation>Backup Path</translation>
+      <translation>Резервна путања</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="334"/>
+      <location filename="../src/ui/Settings.qml" line="349"/>
       <source>Wireless File Server Port</source>
-      <translation>Wireless File Server Port</translation>
+      <translation>Порт бежичног сервера датотека</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="348"/>
+      <location filename="../src/ui/Settings.qml" line="363"/>
       <source>The starting port for the wireless file server. If this port is unavailable, it will try the next 10 ports.</source>
-      <translation>The starting port for the wireless file server. If this port is unavailable, it will try the next 10 ports.</translation>
+      <translation>Почетни порт за бежични сервер датотека. Ако овај порт није доступан, покушаће са следећих 10 портова.</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="368"/>
+      <location filename="../src/ui/Settings.qml" line="383"/>
       <source>Unmount iFuse drives on exit</source>
-      <translation>Unmount iFuse drives on exit</translation>
+      <translation>Искључите iFuse дискове на излазу</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="378"/>
+      <location filename="../src/ui/Settings.qml" line="393"/>
       <source>Automatically check for updates</source>
-      <translation>Automatically check for updates</translation>
+      <translation>Аутоматски провери ажурирања</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="391"/>
+      <location filename="../src/ui/Settings.qml" line="406"/>
       <source>Gallery backend</source>
-      <translation>Gallery backend</translation>
+      <translation>Позадина галерије</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="398"/>
+      <location filename="../src/ui/Settings.qml" line="413"/>
       <source>Filesystem (AFC)</source>
-      <translation>Filesystem (AFC)</translation>
+      <translation>Систем датотека (AFC)</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="399"/>
+      <location filename="../src/ui/Settings.qml" line="414"/>
       <source>SQLite</source>
       <translation>SQLite</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="400"/>
+      <location filename="../src/ui/Settings.qml" line="415"/>
       <source>SQLite through VFS</source>
-      <translation>SQLite through VFS</translation>
+      <translation>SQLite преко ВФС</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="404"/>
+      <location filename="../src/ui/Settings.qml" line="419"/>
       <source>Choose how gallery albums are loaded from the device.</source>
-      <translation>Choose how gallery albums are loaded from the device.</translation>
+      <translation>Одаберите како се албуми галерије учитавају са уређаја.</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="417"/>
+      <location filename="../src/ui/Settings.qml" line="432"/>
       <source>Language</source>
-      <translation>Language</translation>
+      <translation>Језик</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="425"/>
+      <location filename="../src/ui/Settings.qml" line="440"/>
       <source>English</source>
-      <translation>English</translation>
+      <translation>енглески</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="426"/>
+      <location filename="../src/ui/Settings.qml" line="451"/>
       <source>German</source>
-      <translation>German</translation>
+      <translation>немачки</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="427"/>
+      <location filename="../src/ui/Settings.qml" line="444"/>
       <source>Chinese (Simplified)</source>
-      <translation>Chinese (Simplified)</translation>
-    </message>
-    <message>
-      <location filename="../src/ui/Settings.qml" line="435"/>
-      <source>Chinese (Traditional)</source>
-      <translation>Chinese (Traditional)</translation>
+      <translation>кинески (поједностављени)</translation>
     </message>
     <message>
       <location filename="../src/ui/Settings.qml" line="441"/>
-      <source>Appearance</source>
-      <translation>Appearance</translation>
+      <source>Afrikaans</source>
+      <translation>Африкаанс</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="442"/>
+      <source>Arabic</source>
+      <translation>арапски</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="443"/>
+      <source>Catalan</source>
+      <translation>каталонски</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="445"/>
+      <source>Chinese (Traditional)</source>
+      <translation>кинески (традиционални)</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="446"/>
+      <source>Czech</source>
+      <translation>чешки</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="447"/>
+      <source>Danish</source>
+      <translation>дански</translation>
     </message>
     <message>
       <location filename="../src/ui/Settings.qml" line="448"/>
-      <source>Theme</source>
-      <translation>Theme</translation>
+      <source>Dutch</source>
+      <translation>холандски</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="449"/>
+      <source>Finnish</source>
+      <translation>фински</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="450"/>
+      <source>French</source>
+      <translation>француски</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="452"/>
+      <source>Greek</source>
+      <translation>грчки</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="453"/>
+      <source>Hebrew</source>
+      <translation>хебрејски</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="454"/>
+      <source>Hungarian</source>
+      <translation>мађарски</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="455"/>
+      <source>Italian</source>
+      <translation>италијански</translation>
     </message>
     <message>
       <location filename="../src/ui/Settings.qml" line="456"/>
-      <source>System Default</source>
-      <translation>System Default</translation>
+      <source>Japanese</source>
+      <translation>јапански</translation>
     </message>
     <message>
       <location filename="../src/ui/Settings.qml" line="457"/>
-      <source>Light</source>
-      <translation>Light</translation>
+      <source>Korean</source>
+      <translation>Кореан</translation>
     </message>
     <message>
       <location filename="../src/ui/Settings.qml" line="458"/>
-      <source>Dark</source>
-      <translation>Dark</translation>
+      <source>Norwegian</source>
+      <translation>норвешки</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="473"/>
-      <source>Use custom window frame</source>
-      <translation>Use custom window frame</translation>
+      <location filename="../src/ui/Settings.qml" line="459"/>
+      <source>Polish</source>
+      <translation>пољски</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="476"/>
-      <source>Use a custom Linux window frame instead of default.</source>
-      <translation>Use a custom Linux window frame instead of default.</translation>
+      <location filename="../src/ui/Settings.qml" line="460"/>
+      <source>Portuguese (Brazil)</source>
+      <translation>португалски (Бразил)</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="461"/>
+      <source>Romanian</source>
+      <translation>румунски</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="462"/>
+      <source>Russian</source>
+      <translation>руски</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="463"/>
+      <source>Serbian</source>
+      <translation>српски</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="464"/>
+      <source>Spanish</source>
+      <translation>шпански</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="465"/>
+      <source>Swedish</source>
+      <translation>шведски</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="466"/>
+      <source>Turkish</source>
+      <translation>турски</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="467"/>
+      <source>Ukrainian</source>
+      <translation>украјински</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="468"/>
+      <source>Vietnamese</source>
+      <translation>вијетнамски</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="482"/>
+      <source>Appearance</source>
+      <translation>Изглед</translation>
     </message>
     <message>
       <location filename="../src/ui/Settings.qml" line="489"/>
-      <source>Window Effect</source>
-      <translation>Window Effect</translation>
+      <source>Theme</source>
+      <translation>Тема</translation>
     </message>
     <message>
       <location filename="../src/ui/Settings.qml" line="497"/>
-      <source>Normal</source>
-      <translation>Normal</translation>
+      <source>System Default</source>
+      <translation>Систем Дефаулт</translation>
     </message>
     <message>
       <location filename="../src/ui/Settings.qml" line="498"/>
-      <source>Acrylic</source>
-      <translation>Acrylic</translation>
+      <source>Light</source>
+      <translation>Светлост</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="513"/>
-      <source>Device Connection</source>
-      <translation>Device Connection</translation>
+      <location filename="../src/ui/Settings.qml" line="499"/>
+      <source>Dark</source>
+      <translation>Дарк</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="514"/>
+      <source>Use custom window frame</source>
+      <translation>Користите прилагођени оквир прозора</translation>
     </message>
     <message>
       <location filename="../src/ui/Settings.qml" line="517"/>
+      <source>Use a custom Linux window frame instead of default.</source>
+      <translation>Користите прилагођени оквир прозора за Линук уместо подразумеваног.</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="530"/>
+      <source>Window Effect</source>
+      <translation>Виндов Еффецт</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="538"/>
+      <source>Normal</source>
+      <translation>Нормално</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="539"/>
+      <source>Acrylic</source>
+      <translation>Акрил</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="554"/>
+      <source>Device Connection</source>
+      <translation>Повезивање уређаја</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="558"/>
       <source>Auto-raise main window on device connection</source>
-      <translation>Auto-raise main window on device connection</translation>
+      <translation>Аутоматско подизање главног прозора при повезивању уређаја</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="527"/>
+      <location filename="../src/ui/Settings.qml" line="568"/>
       <source>Switch to newly connected device</source>
-      <translation>Switch to newly connected device</translation>
+      <translation>Пребаците се на нови повезани уређај</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="537"/>
+      <location filename="../src/ui/Settings.qml" line="578"/>
       <source>Automatically enable Wi-Fi connections</source>
-      <translation>Automatically enable Wi-Fi connections</translation>
+      <translation>Аутоматски омогући Wi-Fi везе</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="547"/>
+      <location filename="../src/ui/Settings.qml" line="588"/>
       <source>Automatically connect to wireless devices</source>
-      <translation>Automatically connect to wireless devices</translation>
+      <translation>Аутоматски се повежите са бежичним уређајима</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="557"/>
+      <location filename="../src/ui/Settings.qml" line="598"/>
       <source>Upgrade to wireless on disconnect</source>
-      <translation>Upgrade to wireless on disconnect</translation>
+      <translation>Надоградите на бежичну везу након прекида везе</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="560"/>
+      <location filename="../src/ui/Settings.qml" line="601"/>
       <source>When a USB-connected device disconnects, reconnect to it over Wi-Fi when it is available.</source>
-      <translation>When a USB-connected device disconnects, reconnect to it over Wi-Fi when it is available.</translation>
+      <translation>Када се USB повезан уређај прекине, поново се повежите са њим преко Wi-Fi мреже када буде доступан.</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="572"/>
+      <location filename="../src/ui/Settings.qml" line="613"/>
       <source>Connection Timeout</source>
-      <translation>Connection Timeout</translation>
-    </message>
-    <message>
-      <location filename="../src/ui/Settings.qml" line="580"/>
-      <source> seconds</source>
-      <translation> seconds</translation>
-    </message>
-    <message>
-      <location filename="../src/ui/Settings.qml" line="593"/>
-      <source>Jailbroken</source>
-      <translation>Jailbroken</translation>
-    </message>
-    <message>
-      <location filename="../src/ui/Settings.qml" line="600"/>
-      <source>Default Root Password</source>
-      <translation>Default Root Password</translation>
-    </message>
-    <message>
-      <location filename="../src/ui/Settings.qml" line="609"/>
-      <source>Default password used for SSH root authentication on jailbroken devices. Default is &apos;alpine&apos;.</source>
-      <translation>Default password used for SSH root authentication on jailbroken devices. Default is &apos;alpine&apos;.</translation>
+      <translation>Временско ограничење везе</translation>
     </message>
     <message>
       <location filename="../src/ui/Settings.qml" line="621"/>
+      <source> seconds</source>
+      <translation> секунди</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="634"/>
+      <source>Jailbroken</source>
+      <translation>Јаилброкен</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="641"/>
+      <source>Default Root Password</source>
+      <translation>Подразумевана роот лозинка</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="650"/>
+      <source>Default password used for SSH root authentication on jailbroken devices. Default is &apos;alpine&apos;.</source>
+      <translation>Подразумевана лозинка која се користи за SSH роот аутентификацију на оштећеним уређајима. Подразумевано је 'алпски'.</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="662"/>
       <source>AirPlay</source>
       <translation>AirPlay</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="628"/>
+      <location filename="../src/ui/Settings.qml" line="669"/>
       <source>Fps</source>
-      <translation>Fps</translation>
+      <translation>Фпс</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="636"/>
+      <location filename="../src/ui/Settings.qml" line="677"/>
       <source>Set the fps for AirPlay. Go with 30 fps if you have an older device.</source>
-      <translation>Set the fps for AirPlay. Go with 30 fps if you have an older device.</translation>
+      <translation>Подесите фпс за AirPlay. Идите са 30 фпс ако имате старији уређај.</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="648"/>
+      <location filename="../src/ui/Settings.qml" line="689"/>
       <source>Allow New Connections to Take Over</source>
-      <translation>Allow New Connections to Take Over</translation>
+      <translation>Дозволите новим везама да преузму власт</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="659"/>
+      <location filename="../src/ui/Settings.qml" line="700"/>
       <source>Use legacy ports</source>
-      <translation>Use legacy ports</translation>
+      <translation>Користите старе портове</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="662"/>
+      <location filename="../src/ui/Settings.qml" line="703"/>
       <source>Use legacy ports, refer to AIRPLAY.md for more information.</source>
-      <translation>Use legacy ports, refer to AIRPLAY.md for more information.</translation>
+      <translation>Користите старе портове, погледајте АИРПЛАИ.мд за више информација.</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="672"/>
+      <location filename="../src/ui/Settings.qml" line="713"/>
       <source>Show V4L2 Button on AirPlay Widget</source>
-      <translation>Show V4L2 Button on AirPlay Widget</translation>
+      <translation>Прикажи V4L2 дугме на AirPlay виџету</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="688"/>
+      <location filename="../src/ui/Settings.qml" line="729"/>
       <source>iDescriptor</source>
       <translation>iDescriptor</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="695"/>
+      <location filename="../src/ui/Settings.qml" line="736"/>
       <source>Version %1 · %2</source>
-      <translation>Version %1 · %2</translation>
+      <translation>Верзија %1 · %2</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="706"/>
+      <location filename="../src/ui/Settings.qml" line="747"/>
       <source>A free, open-source, cross-platform iDevice management tool.
 
 © 2026 Uncore &lt;https://github.com/uncor3&gt; and iDescriptor contributors</source>
-      <translation>A free, open-source, cross-platform iDevice management tool.
+      <translation>Бесплатан алат за управљање iDevice-ом отвореног кода на више платформи.
 
-© 2026 Uncore &lt;https://github.com/uncor3&gt; and iDescriptor contributors</translation>
+© 2026 Унцоре &lt;https://github.com/uncor3&gt; и сарадници iDescriptor-а</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="727"/>
+      <location filename="../src/ui/Settings.qml" line="768"/>
       <source>Check for Updates</source>
-      <translation>Check for Updates</translation>
+      <translation>Проверите ажурирања</translation>
     </message>
     <message>
-      <location filename="../src/ui/Settings.qml" line="739"/>
+      <location filename="../src/ui/Settings.qml" line="780"/>
       <source>Apply</source>
-      <translation>Apply</translation>
+      <translation>Пријавите се</translation>
     </message>
   </context>
   <context>
@@ -4852,42 +4959,42 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/SidebarFooter.qml" line="53"/>
       <source>v%1</source>
-      <translation>v%1</translation>
+      <translation>в%1</translation>
     </message>
     <message>
       <location filename="../src/ui/SidebarFooter.qml" line="86"/>
       <source>Unmount Failed</source>
-      <translation>Unmount Failed</translation>
+      <translation>Унмоунт Фаилед</translation>
     </message>
     <message>
       <location filename="../src/ui/SidebarFooter.qml" line="87"/>
       <source>Failed to unmount iFuse at %1. Please try again. %2</source>
-      <translation>Failed to unmount iFuse at %1. Please try again. %2</translation>
+      <translation>Откључавање iFuse-а на %1 није успело. Покушајте поново. %2</translation>
     </message>
     <message>
       <location filename="../src/ui/SidebarFooter.qml" line="106"/>
       <source>Unmounting iFuse at %1…</source>
-      <translation>Unmounting iFuse at %1…</translation>
+      <translation>Демонтажа iFuse-а на %1…</translation>
     </message>
     <message>
       <location filename="../src/ui/SidebarFooter.qml" line="107"/>
       <source>Unmount iFuse at %1</source>
-      <translation>Unmount iFuse at %1</translation>
+      <translation>Искључите iFuse на %1</translation>
     </message>
     <message>
       <location filename="../src/ui/SidebarFooter.qml" line="122"/>
       <source>Activity</source>
-      <translation>Activity</translation>
+      <translation>Активност</translation>
     </message>
     <message>
       <location filename="../src/ui/SidebarFooter.qml" line="135"/>
       <source>Open project on GitHub</source>
-      <translation>Open project on GitHub</translation>
+      <translation>Отворите пројекат на ГитХуб-у</translation>
     </message>
     <message>
       <location filename="../src/ui/SidebarFooter.qml" line="144"/>
       <source>Settings</source>
-      <translation>Settings</translation>
+      <translation>Подешавања</translation>
     </message>
   </context>
   <context>
@@ -4895,7 +5002,7 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/SidebarToggleButton.qml" line="21"/>
       <source>Toggle sidebar</source>
-      <translation>Toggle sidebar</translation>
+      <translation>Укључите бочну траку</translation>
     </message>
   </context>
   <context>
@@ -4903,112 +5010,112 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="18"/>
       <source>Simulate Location - iDescriptor</source>
-      <translation>Simulate Location - iDescriptor</translation>
+      <translation>Симулација локације - iDescriptor</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="37"/>
       <source>Developer Mode preparation did not complete. Location simulation was not changed.</source>
-      <translation>Developer Mode preparation did not complete. Location simulation was not changed.</translation>
+      <translation>Припрема режима програмера није завршена. Симулација локације није промењена.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="73"/>
       <source>Please enter a latitude between −90 and 90 and a longitude between −180 and 180.</source>
-      <translation>Please enter a latitude between −90 and 90 and a longitude between −180 and 180.</translation>
+      <translation>Унесите географску ширину између −90 и 90 и географску дужину између −180 и 180.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="106"/>
       <source>Reset Simulated Location?</source>
-      <translation>Reset Simulated Location?</translation>
+      <translation>Ресетовати симулирану локацију?</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="107"/>
       <source>This will clear the simulated location and return the device to the location it determines normally. Do you want to continue?</source>
-      <translation>This will clear the simulated location and return the device to the location it determines normally. Do you want to continue?</translation>
+      <translation>Ово ће обрисати симулирану локацију и вратити уређај на локацију коју нормално одреди. Да ли желите да наставите?</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="147"/>
       <source>The simulated location was applied successfully.</source>
-      <translation>The simulated location was applied successfully.</translation>
+      <translation>Симулирана локација је успешно примењена.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="149"/>
       <source>Location simulation was reset successfully.</source>
-      <translation>Location simulation was reset successfully.</translation>
+      <translation>Симулација локације је успешно ресетована.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="156"/>
       <source>Developer Mode is still not available. Error code: %1</source>
-      <translation>Developer Mode is still not available. Error code: %1</translation>
+      <translation>Режим програмера још увек није доступан. Код грешке: %1</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="167"/>
       <source>The location request timed out. Please verify the device connection and try again.</source>
-      <translation>The location request timed out. Please verify the device connection and try again.</translation>
+      <translation>Захтев за локацију је истекао. Проверите везу са уређајем и покушајте поново.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="171"/>
       <source>Failed to update location simulation. Error code: %1</source>
-      <translation>Failed to update location simulation. Error code: %1</translation>
+      <translation>Ажурирање симулације локације није успело. Код грешке: %1</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="320"/>
       <source>The map could not be loaded: %1</source>
-      <translation>The map could not be loaded: %1</translation>
+      <translation>Није могуће учитати мапу: %1</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="360"/>
       <source>Simulated Location</source>
-      <translation>Simulated Location</translation>
+      <translation>Симулирана локација</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="369"/>
       <source>Choose a point on the map or enter precise coordinates.</source>
-      <translation>Choose a point on the map or enter precise coordinates.</translation>
+      <translation>Изаберите тачку на мапи или унесите прецизне координате.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="376"/>
       <source>Coordinates</source>
-      <translation>Coordinates</translation>
+      <translation>Координате</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="395"/>
       <source>Latitude</source>
-      <translation>Latitude</translation>
+      <translation>Латитуде</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="424"/>
       <source>Longitude</source>
-      <translation>Longitude</translation>
+      <translation>Географска дужина</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="462"/>
       <source>Applying…</source>
-      <translation>Applying…</translation>
+      <translation>Примењује се…</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="462"/>
       <source>Apply</source>
-      <translation>Apply</translation>
+      <translation>Пријавите се</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="487"/>
       <source>Resetting…</source>
-      <translation>Resetting…</translation>
+      <translation>Ресетовање…</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="487"/>
       <source>Reset</source>
-      <translation>Reset</translation>
+      <translation>Ресетуј</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="493"/>
       <source>Clear the simulated location and return the device to its original location.</source>
-      <translation>Clear the simulated location and return the device to its original location.</translation>
+      <translation>Обришите симулирану локацију и вратите уређај на првобитну локацију.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="534"/>
       <source>Recent Locations</source>
-      <translation>Recent Locations</translation>
+      <translation>Недавне локације</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="564"/>
@@ -5019,7 +5126,7 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="618"/>
       <source>Locations you use will appear here.</source>
-      <translation>Locations you use will appear here.</translation>
+      <translation>Локације које користите ће се појавити овде.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/SimulateLocation.qml" line="634"/>
@@ -5032,12 +5139,12 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/app-store/SponsorItem.qml" line="105"/>
       <source>Install App</source>
-      <translation>Install App</translation>
+      <translation>Инсталирајте апликацију</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/SponsorItem.qml" line="113"/>
       <source>Visit website →</source>
-      <translation>Visit website →</translation>
+      <translation>Посетите веб локацију →</translation>
     </message>
   </context>
   <context>
@@ -5045,17 +5152,17 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/app-store/SponsorUs.qml" line="31"/>
       <source>Sponsor Us!</source>
-      <translation>Sponsor Us!</translation>
+      <translation>Спонзорирајте нас!</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/SponsorUs.qml" line="40"/>
       <source>Support development and feature requests while becoming our first featured sponsor.</source>
-      <translation>Support development and feature requests while becoming our first featured sponsor.</translation>
+      <translation>Подржите захтеве за развој и функције док постанете наш први истакнути спонзор.</translation>
     </message>
     <message>
       <location filename="../src/ui/app-store/SponsorUs.qml" line="52"/>
       <source>Sponsor us</source>
-      <translation>Sponsor us</translation>
+      <translation>Спонзоришите нас</translation>
     </message>
   </context>
   <context>
@@ -5063,17 +5170,17 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/SponsorUsDialog.qml" line="52"/>
       <source>Sponsor iDescriptor</source>
-      <translation>Sponsor iDescriptor</translation>
+      <translation>Спонзор iDescriptor</translation>
     </message>
     <message>
       <location filename="../src/ui/SponsorUsDialog.qml" line="61"/>
       <source>Your support helps fund ongoing development, testing, and the features the community cares about most.</source>
-      <translation>Your support helps fund ongoing development, testing, and the features the community cares about most.</translation>
+      <translation>Ваша подршка помаже у финансирању текућег развоја, тестирања и функција до којих је заједници највише стало.</translation>
     </message>
     <message>
       <location filename="../src/ui/SponsorUsDialog.qml" line="81"/>
       <source>Maybe later</source>
-      <translation>Maybe later</translation>
+      <translation>Можда касније</translation>
     </message>
   </context>
   <context>
@@ -5081,17 +5188,17 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/base/StateView.qml" line="20"/>
       <source>Something went wrong.</source>
-      <translation>Something went wrong.</translation>
+      <translation>Нешто је пошло по злу.</translation>
     </message>
     <message>
       <location filename="../src/ui/base/StateView.qml" line="23"/>
       <source>Retry</source>
-      <translation>Retry</translation>
+      <translation>Покушајте поново</translation>
     </message>
     <message>
       <location filename="../src/ui/base/StateView.qml" line="24"/>
       <source>Cancel</source>
-      <translation>Cancel</translation>
+      <translation>Откажи</translation>
     </message>
   </context>
   <context>
@@ -5099,7 +5206,7 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/StatusWindow.qml" line="134"/>
       <source>Export &amp; Import processes will appear here</source>
-      <translation>Export &amp; Import processes will appear here</translation>
+      <translation>Овде ће се појавити процеси извоза и увоза</translation>
     </message>
   </context>
   <context>
@@ -5107,52 +5214,52 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/StatusWindowProcess.qml" line="96"/>
       <source>Starting...</source>
-      <translation>Starting...</translation>
+      <translation>Почиње...</translation>
     </message>
     <message>
       <location filename="../src/ui/StatusWindowProcess.qml" line="96"/>
       <source>Running</source>
-      <translation>Running</translation>
+      <translation>Трчање</translation>
     </message>
     <message>
       <location filename="../src/ui/StatusWindowProcess.qml" line="97"/>
       <source>Completed successfully</source>
-      <translation>Completed successfully</translation>
+      <translation>Успешно завршено</translation>
     </message>
     <message>
       <location filename="../src/ui/StatusWindowProcess.qml" line="98"/>
       <source>Failed</source>
-      <translation>Failed</translation>
+      <translation>Није успело</translation>
     </message>
     <message>
       <location filename="../src/ui/StatusWindowProcess.qml" line="99"/>
       <source>Cancelled</source>
-      <translation>Cancelled</translation>
+      <translation>Отказано</translation>
     </message>
     <message>
       <location filename="../src/ui/StatusWindowProcess.qml" line="149"/>
       <source>Open Folder</source>
-      <translation>Open Folder</translation>
+      <translation>Отворите фасциклу</translation>
     </message>
     <message>
       <location filename="../src/ui/StatusWindowProcess.qml" line="179"/>
       <source>Cancelling...</source>
-      <translation>Cancelling...</translation>
+      <translation>Отказивање...</translation>
     </message>
     <message>
       <location filename="../src/ui/StatusWindowProcess.qml" line="180"/>
       <source>Cancel</source>
-      <translation>Cancel</translation>
+      <translation>Откажи</translation>
     </message>
     <message>
       <location filename="../src/ui/StatusWindowProcess.qml" line="219"/>
       <source>%1 of %2 items</source>
-      <translation>%1 of %2 items</translation>
+      <translation>%1 од %2 ставки</translation>
     </message>
     <message>
       <location filename="../src/ui/StatusWindowProcess.qml" line="222"/>
       <source>%1 failed</source>
-      <translation>%1 failed</translation>
+      <translation>%1 није успело</translation>
     </message>
   </context>
   <context>
@@ -5160,377 +5267,377 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="19"/>
       <source>Error</source>
-      <translation>Error</translation>
+      <translation>Грешка</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="25"/>
       <source>Information</source>
-      <translation>Information</translation>
+      <translation>Информације</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="66"/>
       <location filename="../src/ui/Toolbox.qml" line="150"/>
       <source>The selected device is no longer connected.</source>
-      <translation>The selected device is no longer connected.</translation>
+      <translation>Изабрани уређај више није повезан.</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="74"/>
       <source>Restart Device</source>
-      <translation>Restart Device</translation>
+      <translation>Поново покрените уређај</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="75"/>
       <source>Are you sure you want to restart this device?</source>
-      <translation>Are you sure you want to restart this device?</translation>
+      <translation>Да ли сте сигурни да желите да поново покренете овај уређај?</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="82"/>
       <source>Shut Down Device</source>
-      <translation>Shut Down Device</translation>
+      <translation>Искључите уређај</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="83"/>
       <source>Are you sure you want to shut down this device?</source>
-      <translation>Are you sure you want to shut down this device?</translation>
+      <translation>Да ли сте сигурни да желите да искључите овај уређај?</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="90"/>
       <source>Enter Recovery Mode</source>
-      <translation>Enter Recovery Mode</translation>
+      <translation>Уђите у режим опоравка</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="91"/>
       <source>Are you sure you want to put this device into recovery mode?</source>
-      <translation>Are you sure you want to put this device into recovery mode?</translation>
+      <translation>Да ли сте сигурни да желите да ставите овај уређај у режим опоравка?</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="98"/>
       <location filename="../src/ui/Toolbox.qml" line="627"/>
       <source>Unpair iDevice</source>
-      <translation>Unpair iDevice</translation>
+      <translation>Прекини упаривање iDeviceа</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="99"/>
       <source>Are you sure you want to unpair this device? You will need to trust and pair it again before reconnecting.</source>
-      <translation>Are you sure you want to unpair this device? You will need to trust and pair it again before reconnecting.</translation>
+      <translation>Да ли сте сигурни да желите да поништите упаривање овог уређаја? Мораћете да верујете и поново га упарите пре поновног повезивања.</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="106"/>
       <location filename="../src/ui/Toolbox.qml" line="635"/>
       <source>Unpair and Remove iDevice</source>
-      <translation>Unpair and Remove iDevice</translation>
+      <translation>Раскините упаривање и уклоните iDevice</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="107"/>
       <source>Are you sure you want to unpair this device and remove it from iDescriptor? You will need to trust and pair it again before reconnecting.</source>
-      <translation>Are you sure you want to unpair this device and remove it from iDescriptor? You will need to trust and pair it again before reconnecting.</translation>
+      <translation>Да ли сте сигурни да желите да поништите упаривање овог уређаја и уклоните га из iDescriptor-а? Мораћете да верујете и поново га упарите пре поновног повезивања.</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="112"/>
       <location filename="../src/ui/Toolbox.qml" line="169"/>
       <source>Unknown device action.</source>
-      <translation>Unknown device action.</translation>
+      <translation>Непозната радња уређаја.</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="118"/>
       <source>An unpair operation is already in progress for this device.</source>
-      <translation>An unpair operation is already in progress for this device.</translation>
+      <translation>Операција распаривања је већ у току за овај уређај.</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="129"/>
       <source>Failed to unpair the device: %1</source>
-      <translation>Failed to unpair the device: %1</translation>
+      <translation>Упаривање уређаја није успело: %1</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="130"/>
       <source>Failed to unpair the device.</source>
-      <translation>Failed to unpair the device.</translation>
+      <translation>Упаривање уређаја није успело.</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="134"/>
       <source>The device was unpaired successfully.</source>
-      <translation>The device was unpaired successfully.</translation>
+      <translation>Упаривање уређаја је успешно прекинуто.</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="174"/>
       <source>Failed to send the command to the device. Make sure it is connected and unlocked.</source>
-      <translation>Failed to send the command to the device. Make sure it is connected and unlocked.</translation>
+      <translation>Слање команде уређају није успело. Проверите да ли је повезан и откључан.</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="176"/>
       <source>Action &apos;%1&apos; sent successfully.</source>
-      <translation>Action &apos;%1&apos; sent successfully.</translation>
+      <translation>Акција „%1“ је успешно послата.</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="242"/>
       <source>This tool is not available for wireless devices. Please connect your device via USB.</source>
-      <translation>This tool is not available for wireless devices. Please connect your device via USB.</translation>
+      <translation>Овај алат није доступан за бежичне уређаје. Повежите свој уређај преко USB-а.</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="299"/>
       <source>Failed to load gst gl plugin, make sure you have QT_QPA_PLATFORM=xcb env var set</source>
-      <translation>Failed to load gst gl plugin, make sure you have QT_QPA_PLATFORM=xcb env var set</translation>
+      <translation>Учитавање гст гл додатка није успело, проверите да ли имате КТ_КПА_ПЛАТФОРМ=кцб енв вар сет</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="302"/>
       <location filename="../src/ui/Toolbox.qml" line="305"/>
       <source>Failed to load gst gl plugin, make sure you can use OpenGL</source>
-      <translation>Failed to load gst gl plugin, make sure you can use OpenGL</translation>
+      <translation>Учитавање гст гл додатка није успело, проверите да ли можете да користите ОпенГЛ</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="308"/>
       <source>Failed to load gst gl plugin</source>
-      <translation>Failed to load gst gl plugin</translation>
+      <translation>Учитавање гст гл додатка није успело</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="348"/>
       <source>Failed to load Developer Mode helper: %1</source>
-      <translation>Failed to load Developer Mode helper: %1</translation>
+      <translation>Учитавање помоћника у режиму програмера није успело: %1</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="357"/>
       <source>Failed to create Developer Mode helper: %1</source>
-      <translation>Failed to create Developer Mode helper: %1</translation>
+      <translation>Креирање помоћника у режиму програмера није успело: %1</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="369"/>
       <source>Developer Mode is enabled on the selected device.</source>
-      <translation>Developer Mode is enabled on the selected device.</translation>
+      <translation>Режим програмера је омогућен на изабраном уређају.</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="370"/>
       <source>A developer disk image is mounted on the selected device.</source>
-      <translation>A developer disk image is mounted on the selected device.</translation>
+      <translation>Слика диска програмера се монтира на изабрани уређај.</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="373"/>
       <source>Developer Mode was not enabled. Complete the steps on the device and try again.</source>
-      <translation>Developer Mode was not enabled. Complete the steps on the device and try again.</translation>
+      <translation>Режим програмера није био омогућен. Довршите кораке на уређају и покушајте поново.</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="374"/>
       <source>A developer disk image could not be mounted.</source>
-      <translation>A developer disk image could not be mounted.</translation>
+      <translation>Слика диска програмера није могла да се монтира.</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="385"/>
       <source>Mount Developer Disk Image?</source>
-      <translation>Mount Developer Disk Image?</translation>
+      <translation>Монтирати слику диска програмера?</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="386"/>
       <source>Check Developer Mode?</source>
-      <translation>Check Developer Mode?</translation>
+      <translation>Проверите режим програмера?</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="388"/>
       <source>This tool will mount a developer disk image for you. Developer disk images are required to enable extra features on the device. Do you want to continue?</source>
-      <translation>This tool will mount a developer disk image for you. Developer disk images are required to enable extra features on the device. Do you want to continue?</translation>
+      <translation>Овај алат ће монтирати слику диска програмера уместо вас. Слике дискова програмера су потребне да би се омогућиле додатне функције на уређају. Да ли желите да наставите?</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="389"/>
       <source>This tool will check if Developer Mode is enabled on your device. Developer Mode is required to enable extra features on the device. Do you want to continue?</source>
-      <translation>This tool will check if Developer Mode is enabled on your device. Developer Mode is required to enable extra features on the device. Do you want to continue?</translation>
+      <translation>Овај алат ће проверити да ли је режим програмера омогућен на вашем уређају. Режим програмера је неопходан да бисте омогућили додатне функције на уређају. Да ли желите да наставите?</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="486"/>
       <source>Airplayer</source>
-      <translation>Airplayer</translation>
+      <translation>Аирплаиер</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="487"/>
       <source>Cast your device screen</source>
-      <translation>Cast your device screen</translation>
+      <translation>Пребаците екран уређаја</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="494"/>
       <source>Simulate Location</source>
-      <translation>Simulate Location</translation>
+      <translation>Симулирај локацију</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="495"/>
       <source>Simulate GPS location on your device</source>
-      <translation>Simulate GPS location on your device</translation>
+      <translation>Симулирајте ГПС локацију на свом уређају</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="502"/>
       <source>Live Screen</source>
-      <translation>Live Screen</translation>
+      <translation>Екран уживо</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="503"/>
       <source>View device screen in real-time</source>
-      <translation>View device screen in real-time</translation>
+      <translation>Погледајте екран уређаја у реалном времену</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="510"/>
       <source>Query Mobile Gestalt</source>
-      <translation>Query Mobile Gestalt</translation>
+      <translation>Куери Мобиле Гесталт</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="511"/>
       <source>Query device hardware information</source>
-      <translation>Query device hardware information</translation>
+      <translation>Затражите информације о хардверу уређаја</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="518"/>
       <source>Dev Disk Images</source>
-      <translation>Dev Disk Images</translation>
+      <translation>Дев Диск Имагес</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="519"/>
       <source>Manage developer disk images</source>
-      <translation>Manage developer disk images</translation>
+      <translation>Управљајте сликама дискова програмера</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="526"/>
       <source>Wireless Gallery Import</source>
-      <translation>Wireless Gallery Import</translation>
+      <translation>Бежични увоз галерије</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="527"/>
       <source>Import photos wirelessly to your iDevice (requires Shortcuts app)</source>
-      <translation>Import photos wirelessly to your iDevice (requires Shortcuts app)</translation>
+      <translation>Бежично увезите фотографије на свој iDevice (захтева апликацију Пречице)</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="534"/>
       <source>iFuse Mount</source>
-      <translation>iFuse Mount</translation>
+      <translation>iFuse Моунт</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="535"/>
       <source>Mount your iDevice&apos;s filesystem on your PC</source>
-      <translation>Mount your iDevice&apos;s filesystem on your PC</translation>
+      <translation>Монтирајте систем датотека вашег iDevice-а на рачунар</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="543"/>
       <source>Cable Info</source>
-      <translation>Cable Info</translation>
+      <translation>Информације о каблу</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="544"/>
       <source>View detailed cable and connection info</source>
-      <translation>View detailed cable and connection info</translation>
+      <translation>Погледајте детаљне информације о каблу и вези</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="551"/>
       <source>Detailed Battery Info</source>
-      <translation>Detailed Battery Info</translation>
+      <translation>Детаљне информације о батерији</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="552"/>
       <source>View detailed battery health and capacity information</source>
-      <translation>View detailed battery health and capacity information</translation>
+      <translation>Погледајте детаљне информације о стању батерије и капацитету</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="559"/>
       <source>Network Devices</source>
-      <translation>Network Devices</translation>
+      <translation>Мрежни уређаји</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="560"/>
       <source>Discover and monitor devices on your network</source>
-      <translation>Discover and monitor devices on your network</translation>
+      <translation>Откријте и надгледајте уређаје на вашој мрежи</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="567"/>
       <source>Backups</source>
-      <translation>Backups</translation>
+      <translation>Резервне копије</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="568"/>
       <source>Back up and restore this device</source>
-      <translation>Back up and restore this device</translation>
+      <translation>Направите резервну копију и вратите овај уређај</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="575"/>
       <source>Transfer Speed Test</source>
-      <translation>Transfer Speed Test</translation>
+      <translation>Тест брзине преноса</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="576"/>
       <source>Measure upload and download speed to this device</source>
-      <translation>Measure upload and download speed to this device</translation>
+      <translation>Измерите брзину отпремања и преузимања на овај уређај</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="586"/>
       <source>Enable Dev Mode</source>
-      <translation>Enable Dev Mode</translation>
+      <translation>Омогући Дев Моде</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="587"/>
       <source>Check or enable Developer Mode on this device</source>
-      <translation>Check or enable Developer Mode on this device</translation>
+      <translation>Проверите или омогућите режим програмера на овом уређају</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="594"/>
       <source>Restart</source>
-      <translation>Restart</translation>
+      <translation>Поново покрени</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="595"/>
       <source>Restart device services</source>
-      <translation>Restart device services</translation>
+      <translation>Поново покрените услуге уређаја</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="602"/>
       <source>Shutdown</source>
-      <translation>Shutdown</translation>
+      <translation>Искључивање</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="603"/>
       <source>Shut down the device</source>
-      <translation>Shut down the device</translation>
+      <translation>Искључите уређај</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="610"/>
       <source>Recovery Mode</source>
-      <translation>Recovery Mode</translation>
+      <translation>Рецовери Моде</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="611"/>
       <source>Enter device recovery mode</source>
-      <translation>Enter device recovery mode</translation>
+      <translation>Уђите у режим опоравка уређаја</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="618"/>
       <source>Enable Wi-Fi Connections</source>
-      <translation>Enable Wi-Fi Connections</translation>
+      <translation>Омогућите Wi-Fi везе</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="619"/>
       <source>Make device connectable via Wi-Fi</source>
-      <translation>Make device connectable via Wi-Fi</translation>
+      <translation>Омогућите повезивање уређаја преко Wi-Fi мреже</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="628"/>
       <source>Remove this computer&apos;s trust relationship with the device</source>
-      <translation>Remove this computer&apos;s trust relationship with the device</translation>
+      <translation>Уклоните однос поверења овог рачунара са уређајем</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="636"/>
       <source>Unpair the device and remove it from iDescriptor</source>
-      <translation>Unpair the device and remove it from iDescriptor</translation>
+      <translation>Прекините упаривање уређаја и уклоните га из iDescriptor-а</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="654"/>
       <source>Device:</source>
-      <translation>Device:</translation>
+      <translation>Уређај:</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="664"/>
       <source>No device connected</source>
-      <translation>No device connected</translation>
+      <translation>Ниједан уређај није повезан</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="696"/>
       <source>Tools</source>
-      <translation>Tools</translation>
+      <translation>Алати</translation>
     </message>
     <message>
       <location filename="../src/ui/Toolbox.qml" line="733"/>
       <source>More Tools</source>
-      <translation>More Tools</translation>
+      <translation>Више алата</translation>
     </message>
   </context>
   <context>
@@ -5538,12 +5645,12 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="18"/>
       <source>Transfer Speed Test - iDescriptor</source>
-      <translation>Transfer Speed Test - iDescriptor</translation>
+      <translation>Тест брзине преноса - iDescriptor</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="42"/>
       <source>%1 MiB</source>
-      <translation>%1 MiB</translation>
+      <translation>%1 МиБ</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="46"/>
@@ -5553,101 +5660,101 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="56"/>
       <source>%1 Mbit/s</source>
-      <translation>%1 Mbit/s</translation>
+      <translation>%1 Мбит/с</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="62"/>
       <source>Select a supported payload size.</source>
-      <translation>Select a supported payload size.</translation>
+      <translation>Изаберите подржану величину корисног оптерећења.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="64"/>
       <source>The device does not have enough free storage for this test.</source>
-      <translation>The device does not have enough free storage for this test.</translation>
+      <translation>Уређај нема довољно слободног простора за овај тест.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="66"/>
       <source>The test finished, but its temporary file could not be removed.</source>
-      <translation>The test finished, but its temporary file could not be removed.</translation>
+      <translation>Тест је завршен, али његова привремена датотека није могла да се уклони.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="68"/>
       <source>The transfer failed. Make sure the device is connected and unlocked.</source>
-      <translation>The transfer failed. Make sure the device is connected and unlocked.</translation>
+      <translation>Трансфер није успео. Проверите да ли је уређај повезан и откључан.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="70"/>
       <source>The transfer service is unavailable for this device.</source>
-      <translation>The transfer service is unavailable for this device.</translation>
+      <translation>Услуга преноса није доступна за овај уређај.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="100"/>
       <source>Device Transfer Speed</source>
-      <translation>Device Transfer Speed</translation>
+      <translation>Брзина преноса уређаја</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="109"/>
       <source>Measure upload and download speed over the current device connection.</source>
-      <translation>Measure upload and download speed over the current device connection.</translation>
+      <translation>Измерите брзину отпремања и преузимања преко тренутне везе уређаја.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="117"/>
       <source>Payload size</source>
-      <translation>Payload size</translation>
+      <translation>Величина носивости</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="161"/>
       <source>32 MiB</source>
-      <translation>32 MiB</translation>
+      <translation>32 МиБ</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="161"/>
       <source>128 MiB</source>
-      <translation>128 MiB</translation>
+      <translation>128 МиБ</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="161"/>
       <source>512 MiB</source>
-      <translation>512 MiB</translation>
+      <translation>512 МиБ</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="231"/>
       <source>Uploading…</source>
-      <translation>Uploading…</translation>
+      <translation>Отпремање…</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="232"/>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="355"/>
       <source>Upload</source>
-      <translation>Upload</translation>
+      <translation>Уплоад</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="265"/>
       <source>Downloading…</source>
-      <translation>Downloading…</translation>
+      <translation>Преузимање…</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="266"/>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="394"/>
       <source>Download</source>
-      <translation>Download</translation>
+      <translation>Преузми</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="329"/>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="374"/>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="413"/>
       <source>MiB/s</source>
-      <translation>MiB/s</translation>
+      <translation>МиБ/с</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="432"/>
       <source>Cancel</source>
-      <translation>Cancel</translation>
+      <translation>Откажи</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/TransferSpeedTest.qml" line="432"/>
       <source>Start</source>
-      <translation>Start</translation>
+      <translation>Почни</translation>
     </message>
   </context>
   <context>
@@ -5655,22 +5762,22 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/Updater.qml" line="20"/>
       <source>Updater - iDescriptor</source>
-      <translation>Updater - iDescriptor</translation>
+      <translation>Упдатер - iDescriptor</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="122"/>
       <source>The update check failed.</source>
-      <translation>The update check failed.</translation>
+      <translation>Провера ажурирања није успела.</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="155"/>
       <source>Unknown size</source>
-      <translation>Unknown size</translation>
+      <translation>Непозната величина</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="157"/>
       <source>%1 B</source>
-      <translation>%1 B</translation>
+      <translation>%1 Б</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="166"/>
@@ -5680,77 +5787,77 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/Updater.qml" line="170"/>
       <source>Update downloaded.</source>
-      <translation>Update downloaded.</translation>
+      <translation>Ажурирање је преузето.</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="179"/>
       <source>Please use your package manager to update iDescriptor.</source>
-      <translation>Please use your package manager to update iDescriptor.</translation>
+      <translation>Користите менаџер пакета да ажурирате iDescriptor.</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="185"/>
       <source>A newer version is available. Update iDescriptor through Flatpak or your software center.</source>
-      <translation>A newer version is available. Update iDescriptor through Flatpak or your software center.</translation>
+      <translation>Доступна је новија верзија. Ажурирајте iDescriptor преко Флатпак-а или вашег софтверског центра.</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="187"/>
       <source>A newer version is available. Update iDescriptor through Microsoft Store.</source>
-      <translation>A newer version is available. Update iDescriptor through Microsoft Store.</translation>
+      <translation>Доступна је новија верзија. Ажурирајте iDescriptor преко Мицрософт продавнице.</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="191"/>
       <source>A newer version is available, but this build has no configured direct-update package.</source>
-      <translation>A newer version is available, but this build has no configured direct-update package.</translation>
+      <translation>Доступна је новија верзија, али ова верзија нема конфигурисан пакет за директно ажурирање.</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="195"/>
       <source>A newer version is available, but no matching download was found for this system.</source>
-      <translation>A newer version is available, but no matching download was found for this system.</translation>
+      <translation>Доступна је новија верзија, али није пронађено одговарајуће преузимање за овај систем.</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="196"/>
       <source>Download and install when you are ready. Your current settings and connected devices will not be changed.</source>
-      <translation>Download and install when you are ready. Your current settings and connected devices will not be changed.</translation>
+      <translation>Преузмите и инсталирајте када будете спремни. Ваша тренутна подешавања и повезани уређаји неће бити промењени.</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="202"/>
       <source>Open Flatpak Page</source>
-      <translation>Open Flatpak Page</translation>
+      <translation>Отворите Флатпак страницу</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="204"/>
       <source>Open Microsoft Store</source>
-      <translation>Open Microsoft Store</translation>
+      <translation>Отворите Мицрософт Сторе</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="256"/>
       <source>Updates</source>
-      <translation>Updates</translation>
+      <translation>Ажурирања</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="257"/>
       <source>You are using the latest version of iDescriptor.</source>
-      <translation>You are using the latest version of iDescriptor.</translation>
+      <translation>Користите најновију верзију iDescriptor-а.</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="387"/>
       <source>A new version is available</source>
-      <translation>A new version is available</translation>
+      <translation>Доступна је нова верзија</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="396"/>
       <source>Version %1</source>
-      <translation>Version %1</translation>
+      <translation>Верзија %1</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="448"/>
       <source>What’s new</source>
-      <translation>What’s new</translation>
+      <translation>шта је ново</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="462"/>
       <source>No change log was provided for this release.</source>
-      <translation>No change log was provided for this release.</translation>
+      <translation>За ово издање није дата евиденција промена.</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="480"/>
@@ -5758,72 +5865,72 @@ Do you want to continue anyway?</translation>
       <location filename="../src/ui/Updater.qml" line="706"/>
       <location filename="../src/ui/Updater.qml" line="752"/>
       <source>Close</source>
-      <translation>Close</translation>
+      <translation>Затвори</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="480"/>
       <source>Not now</source>
-      <translation>Not now</translation>
+      <translation>Не сада</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="487"/>
       <source>Download Update</source>
-      <translation>Download Update</translation>
+      <translation>Преузмите ажурирање</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="522"/>
       <source>Checking for updates</source>
-      <translation>Checking for updates</translation>
+      <translation>Проверавам ажурирања</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="531"/>
       <source>Looking for a newer release of iDescriptor…</source>
-      <translation>Looking for a newer release of iDescriptor…</translation>
+      <translation>Тражи се новије издање iDescriptor-а…</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="560"/>
       <source>Downloading update</source>
-      <translation>Downloading update</translation>
+      <translation>Преузимање ажурирања</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="569"/>
       <source>Please keep iDescriptor open while the update downloads.</source>
-      <translation>Please keep iDescriptor open while the update downloads.</translation>
+      <translation>Оставите iDescriptor отвореним док се ажурирање преузима.</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="601"/>
       <source>%1% downloaded</source>
-      <translation>%1% downloaded</translation>
+      <translation>%1% преузето</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="636"/>
       <source>Update downloaded</source>
-      <translation>Update downloaded</translation>
+      <translation>Ажурирање је преузето</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="644"/>
       <source>Version %1 is ready.</source>
-      <translation>Version %1 is ready.</translation>
+      <translation>Верзија %1 је спремна.</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="676"/>
       <source>Downloaded to %1</source>
-      <translation>Downloaded to %1</translation>
+      <translation>Преузето на %1</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="693"/>
       <source>Reveal Download</source>
-      <translation>Reveal Download</translation>
+      <translation>Откриј преузимање</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="706"/>
       <source>Open Update</source>
-      <translation>Open Update</translation>
+      <translation>Отворите ажурирање</translation>
     </message>
     <message>
       <location filename="../src/ui/Updater.qml" line="733"/>
       <source>Update check failed</source>
-      <translation>Update check failed</translation>
+      <translation>Провера ажурирања није успела</translation>
     </message>
   </context>
   <context>
@@ -5831,43 +5938,43 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/Welcome.qml" line="33"/>
       <source>Welcome to iDescriptor</source>
-      <translation>Welcome to iDescriptor</translation>
+      <translation>Добродошли у iDescriptor</translation>
     </message>
     <message>
       <location filename="../src/ui/Welcome.qml" line="48"/>
       <source>Open-Source &amp; Free</source>
-      <translation>Open-Source &amp; Free</translation>
+      <translation>Отворени извор и бесплатан</translation>
     </message>
     <message>
       <location filename="../src/ui/Welcome.qml" line="106"/>
       <source>Connect with pairing file</source>
-      <translation>Connect with pairing file</translation>
+      <translation>Повежите се са датотеком за упаривање</translation>
     </message>
     <message>
       <location filename="../src/ui/Welcome.qml" line="126"/>
       <source>How to connect a wireless device?</source>
-      <translation>How to connect a wireless device?</translation>
+      <translation>Како повезати бежични уређај?</translation>
     </message>
     <message>
       <location filename="../src/ui/Welcome.qml" line="159"/>
       <source>Connect an iDevice to get started</source>
-      <translation>Connect an iDevice to get started</translation>
+      <translation>Повежите iDevice да бисте започели</translation>
     </message>
     <message>
       <location filename="../src/ui/Welcome.qml" line="183"/>
       <source>Found an issue? Report it on GitHub</source>
-      <translation>Found an issue? Report it on GitHub</translation>
+      <translation>Пронашли сте проблем? Пријавите то на ГитХуб-у</translation>
     </message>
     <message>
       <location filename="../src/ui/Welcome.qml" line="207"/>
       <location filename="../src/ui/Welcome.qml" line="208"/>
       <source>Checking required dependencies...</source>
-      <translation>Checking required dependencies...</translation>
+      <translation>Провера потребних зависности...</translation>
     </message>
     <message>
       <location filename="../src/ui/Welcome.qml" line="220"/>
       <source>View Diagnostics</source>
-      <translation>View Diagnostics</translation>
+      <translation>Прикажи дијагностику</translation>
     </message>
   </context>
   <context>
@@ -5875,27 +5982,27 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/WhatsNew.qml" line="54"/>
       <source>Failed to load release notes.</source>
-      <translation>Failed to load release notes.</translation>
+      <translation>Учитавање белешки о издању није успело.</translation>
     </message>
     <message>
       <location filename="../src/ui/WhatsNew.qml" line="77"/>
       <source>iDescriptor has been updated to v%1</source>
-      <translation>iDescriptor has been updated to v%1</translation>
+      <translation>iDescriptor је ажуриран на в%1</translation>
     </message>
     <message>
       <location filename="../src/ui/WhatsNew.qml" line="113"/>
       <source>No release notes were provided for this version.</source>
-      <translation>No release notes were provided for this version.</translation>
+      <translation>За ову верзију нису обезбеђене белешке о издању.</translation>
     </message>
     <message>
       <location filename="../src/ui/WhatsNew.qml" line="131"/>
       <source>Ok, Thanks!</source>
-      <translation>Ok, Thanks!</translation>
+      <translation>Ок, хвала!</translation>
     </message>
     <message>
       <location filename="../src/ui/WhatsNew.qml" line="138"/>
       <source>Donate</source>
-      <translation>Donate</translation>
+      <translation>Донирајте</translation>
     </message>
   </context>
   <context>
@@ -5903,42 +6010,42 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/platform/windows/WindowEffectPanel.qml" line="57"/>
       <source>Personalize iDescriptor</source>
-      <translation>Personalize iDescriptor</translation>
+      <translation>Персонализујте iDescriptor</translation>
     </message>
     <message>
       <location filename="../src/ui/platform/windows/WindowEffectPanel.qml" line="65"/>
       <source>Choose a window material. Your selection is applied immediately so you can preview it.</source>
-      <translation>Choose a window material. Your selection is applied immediately so you can preview it.</translation>
+      <translation>Изаберите материјал за прозоре. Ваш избор се одмах примењује тако да можете да га прегледате.</translation>
     </message>
     <message>
       <location filename="../src/ui/platform/windows/WindowEffectPanel.qml" line="80"/>
       <source>Acrylic</source>
-      <translation>Acrylic</translation>
+      <translation>Акрил</translation>
     </message>
     <message>
       <location filename="../src/ui/platform/windows/WindowEffectPanel.qml" line="81"/>
       <source>Translucent and layered</source>
-      <translation>Translucent and layered</translation>
+      <translation>Прозиран и слојевит</translation>
     </message>
     <message>
       <location filename="../src/ui/platform/windows/WindowEffectPanel.qml" line="85"/>
       <source>Normal</source>
-      <translation>Normal</translation>
+      <translation>Нормално</translation>
     </message>
     <message>
       <location filename="../src/ui/platform/windows/WindowEffectPanel.qml" line="86"/>
       <source>Solid window background</source>
-      <translation>Solid window background</translation>
+      <translation>Чврста позадина прозора</translation>
     </message>
     <message>
       <location filename="../src/ui/platform/windows/WindowEffectPanel.qml" line="258"/>
       <source>You can change this later in Settings.</source>
-      <translation>You can change this later in Settings.</translation>
+      <translation>Ово можете касније да промените у подешавањима.</translation>
     </message>
     <message>
       <location filename="../src/ui/platform/windows/WindowEffectPanel.qml" line="265"/>
       <source>OK</source>
-      <translation>OK</translation>
+      <translation>ОК</translation>
     </message>
   </context>
   <context>
@@ -5946,172 +6053,172 @@ Do you want to continue anyway?</translation>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="20"/>
       <source>Wireless Gallery Import - iDescriptor</source>
-      <translation>Wireless Gallery Import - iDescriptor</translation>
+      <translation>Бежични увоз галерије - iDescriptor</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="139"/>
       <source>Select Photos and Videos</source>
-      <translation>Select Photos and Videos</translation>
+      <translation>Изаберите Фотографије и видео записи</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="142"/>
       <source>Media Files (*.jpg *.jpeg *.png *.gif *.bmp *.tiff *.tif *.webp *.heic *.heif *.mp4 *.mov *.avi *.mkv *.m4v *.3gp *.webm)</source>
-      <translation>Media Files (*.jpg *.jpeg *.png *.gif *.bmp *.tiff *.tif *.webp *.heic *.heif *.mp4 *.mov *.avi *.mkv *.m4v *.3gp *.webm)</translation>
+      <translation>Медијске датотеке (*.јпг *.јпег *.пнг *.гиф *.бмп *.тифф *.тиф *.вебп *.хеиц *.хеиф *.мп4 *.мов *.ави *.мкв *.м4в *.3гп *.вебм)</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="143"/>
       <source>All Files (*)</source>
-      <translation>All Files (*)</translation>
+      <translation>Све датотеке (*)</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="155"/>
       <source>Import to Photos</source>
-      <translation>Import to Photos</translation>
+      <translation>Увези у фотографије</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="160"/>
       <source>Download progress will appear here</source>
-      <translation>Download progress will appear here</translation>
+      <translation>Овде ће се појавити напредак преузимања</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="163"/>
       <source>Scan the QR code with your iPhone or iPad.</source>
-      <translation>Scan the QR code with your iPhone or iPad.</translation>
+      <translation>Скенирајте КР код помоћу иПхоне-а или иПад-а.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="164"/>
       <source>On the web page, tap Copy Server Address.</source>
-      <translation>On the web page, tap Copy Server Address.</translation>
+      <translation>На веб страници додирните Копирај адресу сервера.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="165"/>
       <source>Install the shortcut once, then tap Run Shortcut.</source>
-      <translation>Install the shortcut once, then tap Run Shortcut.</translation>
+      <translation>Инсталирајте пречицу једном, а затим додирните Покрени пречицу.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="166"/>
       <source>Allow the shortcut to save the selected items to Photos.</source>
-      <translation>Allow the shortcut to save the selected items to Photos.</translation>
+      <translation>Дозволите пречици да сачува изабране ставке у Фотографије.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="202"/>
       <source>Ready to share %1 item(s)</source>
-      <translation>Ready to share %1 item(s)</translation>
+      <translation>Спремни за дељење %1 ставки</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="210"/>
       <source>Keep this window open while the shortcut downloads your files.</source>
-      <translation>Keep this window open while the shortcut downloads your files.</translation>
+      <translation>Нека овај прозор буде отворен док пречица преузима ваше датотеке.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="262"/>
       <source>Unable to create QR code</source>
-      <translation>Unable to create QR code</translation>
+      <translation>Није могуће направити КР код</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="263"/>
       <source>Preparing QR code…</source>
-      <translation>Preparing QR code…</translation>
+      <translation>Припрема КР кода…</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="276"/>
       <source>Server: %1</source>
-      <translation>Server: %1</translation>
+      <translation>Сервер: %1</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="277"/>
       <source>Starting local server…</source>
-      <translation>Starting local server…</translation>
+      <translation>Покретање локалног сервера…</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="299"/>
       <source>Video Guide</source>
-      <translation>Video Guide</translation>
+      <translation>Видео водич</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="299"/>
       <source>On your device</source>
-      <translation>On your device</translation>
+      <translation>На свом уређају</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="306"/>
       <source>Show Steps</source>
-      <translation>Show Steps</translation>
+      <translation>Прикажи кораке</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="306"/>
       <source>Watch Video</source>
-      <translation>Watch Video</translation>
+      <translation>Погледајте видео</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="424"/>
       <source>Downloaded: %1 (%2 KB of %3 KB)</source>
-      <translation>Downloaded: %1 (%2 KB of %3 KB)</translation>
+      <translation>Преузето: %1 (%2 КБ од %3 КБ)</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="461"/>
       <source>Import to Photos wirelessly</source>
-      <translation>Import to Photos wirelessly</translation>
+      <translation>Бежично увезите у фотографије</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="469"/>
       <source>Choose media, then scan a QR code to transfer it with the iDescriptor shortcut.</source>
-      <translation>Choose media, then scan a QR code to transfer it with the iDescriptor shortcut.</translation>
+      <translation>Изаберите медиј, а затим скенирајте КР код да бисте га пренели помоћу iDescriptor пречице.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="476"/>
       <source>Choose Files…</source>
-      <translation>Choose Files…</translation>
+      <translation>Изаберите датотеке…</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="503"/>
       <source>Selected Media</source>
-      <translation>Selected Media</translation>
+      <translation>Изабрани медији</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="532"/>
       <source>Clear</source>
-      <translation>Clear</translation>
+      <translation>Јасно</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="586"/>
       <source>Drop to add these files</source>
-      <translation>Drop to add these files</translation>
+      <translation>Испустите да бисте додали ове датотеке</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="587"/>
       <source>Drop photos and videos here</source>
-      <translation>Drop photos and videos here</translation>
+      <translation>Оставите фотографије и видео записе овде</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="596"/>
       <source>JPEG, HEIC, PNG, MOV, MP4, and other common media formats</source>
-      <translation>JPEG, HEIC, PNG, MOV, MP4, and other common media formats</translation>
+      <translation>ЈПЕГ, ХЕИЦ, ПНГ, МОВ, МП4 и други уобичајени медијски формати</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="683"/>
       <source>Remove</source>
-      <translation>Remove</translation>
+      <translation>Уклони</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="727"/>
       <source>Add at least one photo or video to continue.</source>
-      <translation>Add at least one photo or video to continue.</translation>
+      <translation>Додајте најмање једну фотографију или видео да бисте наставили.</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="728"/>
       <source>%1 item(s) ready to share</source>
-      <translation>%1 item(s) ready to share</translation>
+      <translation>%1 ставки спремне за дељење</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="734"/>
       <source>Continue</source>
-      <translation>Continue</translation>
+      <translation>Настави</translation>
     </message>
     <message>
       <location filename="../src/ui/tools/WirelessGalleryImport.qml" line="738"/>
       <source>Waiting for downloads…</source>
-      <translation>Waiting for downloads…</translation>
+      <translation>Чека се преузимања…</translation>
     </message>
   </context>
   <context>
@@ -6125,7 +6232,7 @@ Do you want to continue anyway?</translation>
       <location filename="../src/ui/ZLinuxWindow.qml" line="76"/>
       <location filename="../src/ui/ZLinuxWindow.qml" line="78"/>
       <source>Close</source>
-      <translation>Close</translation>
+      <translation>Затвори</translation>
     </message>
   </context>
 </TS>
