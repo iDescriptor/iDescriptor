@@ -836,7 +836,6 @@
         <numerusform>קבצי %n</numerusform>
         <numerusform>קבצי %n</numerusform>
         <numerusform>%n file(s)</numerusform>
-        <numerusform>%n file(s)</numerusform>
       </translation>
     </message>
   </context>
@@ -943,7 +942,6 @@
         <numerusform>קבצי %n</numerusform>
         <numerusform>קבצי %n</numerusform>
         <numerusform>%n file(s)</numerusform>
-        <numerusform>%n file(s)</numerusform>
       </translation>
     </message>
     <message>
@@ -958,7 +956,6 @@
       <translation>
         <numerusform>%n פריטים</numerusform>
         <numerusform>%n פריטים</numerusform>
-        <numerusform>%n item(s)</numerusform>
         <numerusform>%n item(s)</numerusform>
       </translation>
     </message>
@@ -1013,7 +1010,6 @@
       <translation>
         <numerusform>%1: פריט(ים) %n</numerusform>
         <numerusform>%1: פריט(ים) %n</numerusform>
-        <numerusform>%1: %n item(s)</numerusform>
         <numerusform>%1: %n item(s)</numerusform>
       </translation>
     </message>
@@ -4013,7 +4009,6 @@ Please ensure the device is unlocked and using a genuine cable.</source>
       <translation>
         <numerusform>השאילתה הושלמה. נמצאו תוצאות של %n.</numerusform>
         <numerusform>השאילתה הושלמה. נמצאו תוצאות של %n.</numerusform>
-        <numerusform>Query completed. Found %n result(s).</numerusform>
         <numerusform>Query completed. Found %n result(s).</numerusform>
       </translation>
     </message>
