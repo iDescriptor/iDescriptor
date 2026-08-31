@@ -15,6 +15,36 @@
       <translation>הפעלת AirPlay נכשלה.</translation>
     </message>
     <message>
+      <location filename="../src/ui/tools/Airplay.qml" line="144"/>
+      <source>Bonjour must be running before AirPlay can start.</source>
+      <translation>Bonjour חייב לפעול לפני שניתן להפעיל את AirPlay.</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/tools/Airplay.qml" line="145"/>
+      <source>Avahi must be running before AirPlay can start.</source>
+      <translation>Bonjour חייב לפעול לפני שניתן להפעיל את AirPlay.</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/tools/Airplay.qml" line="148"/>
+      <source>Bonjour must be installed before AirPlay can start.</source>
+      <translation>Bonjour חייב להיות מותקן לפני שניתן להפעיל את AirPlay.</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/tools/Airplay.qml" line="149"/>
+      <source>Avahi must be installed before AirPlay can start.</source>
+      <translation>Bonjour חייב להיות מותקן לפני שניתן להפעיל את AirPlay.</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/tools/Airplay.qml" line="151"/>
+      <source>Unable to check AirPlay requirements: %1</source>
+      <translation>לא ניתן לבדוק את דרישות AirPlay: %1</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/tools/Airplay.qml" line="162"/>
+      <source>Failed to start the AirPlay backend: %1</source>
+      <translation>הפעלת רכיב הקצה של AirPlay נכשלה: %1</translation>
+    </message>
+    <message>
       <location filename="../src/ui/tools/Airplay.qml" line="163"/>
       <source>Waiting for device connection</source>
       <translation>ממתין לחיבור המכשיר</translation>
@@ -4566,6 +4596,36 @@ Do you want to continue anyway?</source>
       <location filename="../src/ui/Settings.qml" line="283"/>
       <source>Developer Disk Image Path</source>
       <translation>נתיב תמונת דיסק למפתחים</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="308"/>
+      <source>Network discovery</source>
+      <translation>גילוי רשת</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="318"/>
+      <source>Automatic</source>
+      <translation>אוטומטי</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="319"/>
+      <source>Built-in</source>
+      <translation>מובנה</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="320"/>
+      <source>Avahi</source>
+      <translation>Avahi</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="321"/>
+      <source>Bonjour</source>
+      <translation>Bonjour</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="330"/>
+      <source>Choose how devices are discovered on the local network.</source>
+      <translation>בחר כיצד לגלות מכשירים ברשת המקומית.</translation>
     </message>
     <message>
       <location filename="../src/ui/Settings.qml" line="295"/>
