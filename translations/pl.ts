@@ -15,6 +15,36 @@
       <translation>Nie udało się uruchomić AirPlay.</translation>
     </message>
     <message>
+      <location filename="../src/ui/tools/Airplay.qml" line="144"/>
+      <source>Bonjour must be running before AirPlay can start.</source>
+      <translation>Usługa Bonjour musi działać przed uruchomieniem AirPlay.</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/tools/Airplay.qml" line="145"/>
+      <source>Avahi must be running before AirPlay can start.</source>
+      <translation>Usługa Avahi musi działać przed uruchomieniem AirPlay.</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/tools/Airplay.qml" line="148"/>
+      <source>Bonjour must be installed before AirPlay can start.</source>
+      <translation>Usługa Bonjour musi być zainstalowana przed uruchomieniem AirPlay.</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/tools/Airplay.qml" line="149"/>
+      <source>Avahi must be installed before AirPlay can start.</source>
+      <translation>Usługa Avahi musi być zainstalowana przed uruchomieniem AirPlay.</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/tools/Airplay.qml" line="151"/>
+      <source>Unable to check AirPlay requirements: %1</source>
+      <translation>Nie można sprawdzić wymagań AirPlay: %1</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/tools/Airplay.qml" line="162"/>
+      <source>Failed to start the AirPlay backend: %1</source>
+      <translation>Nie udało się uruchomić backendu AirPlay: %1</translation>
+    </message>
+    <message>
       <location filename="../src/ui/tools/Airplay.qml" line="163"/>
       <source>Waiting for device connection</source>
       <translation>Oczekiwanie na połączenie urządzenia</translation>
@@ -4571,6 +4601,36 @@ Czy mimo to chcesz kontynuować?</translation>
       <location filename="../src/ui/Settings.qml" line="283"/>
       <source>Developer Disk Image Path</source>
       <translation>Ścieżka obrazu dysku programisty</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="308"/>
+      <source>Network discovery</source>
+      <translation>Wykrywanie sieci</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="318"/>
+      <source>Automatic</source>
+      <translation>Automatycznie</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="319"/>
+      <source>Built-in</source>
+      <translation>Wbudowany</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="320"/>
+      <source>Avahi</source>
+      <translation>Avahi</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="321"/>
+      <source>Bonjour</source>
+      <translation>Bonjour</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="330"/>
+      <source>Choose how devices are discovered on the local network.</source>
+      <translation>Wybierz sposób wykrywania urządzeń w sieci lokalnej.</translation>
     </message>
     <message>
       <location filename="../src/ui/Settings.qml" line="295"/>
