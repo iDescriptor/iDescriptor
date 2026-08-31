@@ -15,6 +15,36 @@
       <translation>AirPlay를 시작하지 못했습니다.</translation>
     </message>
     <message>
+      <location filename="../src/ui/tools/Airplay.qml" line="144"/>
+      <source>Bonjour must be running before AirPlay can start.</source>
+      <translation>AirPlay를 시작하려면 Bonjour이(가) 실행 중이어야 합니다.</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/tools/Airplay.qml" line="145"/>
+      <source>Avahi must be running before AirPlay can start.</source>
+      <translation>AirPlay를 시작하려면 Avahi이(가) 실행 중이어야 합니다.</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/tools/Airplay.qml" line="148"/>
+      <source>Bonjour must be installed before AirPlay can start.</source>
+      <translation>AirPlay를 시작하려면 Bonjour이(가) 설치되어 있어야 합니다.</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/tools/Airplay.qml" line="149"/>
+      <source>Avahi must be installed before AirPlay can start.</source>
+      <translation>AirPlay를 시작하려면 Avahi이(가) 설치되어 있어야 합니다.</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/tools/Airplay.qml" line="151"/>
+      <source>Unable to check AirPlay requirements: %1</source>
+      <translation>AirPlay 요구 사항을 확인할 수 없습니다: %1</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/tools/Airplay.qml" line="162"/>
+      <source>Failed to start the AirPlay backend: %1</source>
+      <translation>AirPlay 백엔드를 시작하지 못했습니다: %1</translation>
+    </message>
+    <message>
       <location filename="../src/ui/tools/Airplay.qml" line="163"/>
       <source>Waiting for device connection</source>
       <translation>장치 연결을 기다리는 중</translation>
@@ -4556,6 +4586,36 @@ SSH 액세스가 불가능할 수 있습니다.
       <location filename="../src/ui/Settings.qml" line="283"/>
       <source>Developer Disk Image Path</source>
       <translation>개발자 디스크 이미지 경로</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="308"/>
+      <source>Network discovery</source>
+      <translation>네트워크 검색</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="318"/>
+      <source>Automatic</source>
+      <translation>자동</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="319"/>
+      <source>Built-in</source>
+      <translation>내장</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="320"/>
+      <source>Avahi</source>
+      <translation>Avahi</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="321"/>
+      <source>Bonjour</source>
+      <translation>Bonjour</translation>
+    </message>
+    <message>
+      <location filename="../src/ui/Settings.qml" line="330"/>
+      <source>Choose how devices are discovered on the local network.</source>
+      <translation>로컬 네트워크에서 장치를 검색하는 방법을 선택합니다.</translation>
     </message>
     <message>
       <location filename="../src/ui/Settings.qml" line="295"/>
