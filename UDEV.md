@@ -1,50 +1,54 @@
-# USB Device Permissions (UDEV rules) for Linux
+# USB device permissions (UDEV rules) for Linux
 
-This document provides instructions on how to manually configure UDEV rules to grant the necessary USB device permissions for iDescriptor to interact with recovery devices on Linux.
+This guide configures the USB permissions that iDescriptor needs to communicate with Apple devices in WTF, DFU, restore, recovery, and KIS modes on Linux.
 
-**Important Note:** iDescriptor will look for the UDEV rules specifically at the path `/etc/udev/rules.d/99-idevice.rules`. If you place them elsewhere, iDescriptor will not recognize the configuration. You don't have to define the rules in this path, it just won't be detected by iDescriptor but recovery devices should still work if the rules are correctly defined and applied.
+iDescriptor's dependency check looks specifically for `/etc/udev/rules.d/99-idevice.rules`. An equivalent rule installed elsewhere can still grant device access, but the app will not detect it.
 
-**iDescriptor doesn't check for UDEV rules on Linux Flatpak releases, but everything here still applies**.
+The Flatpak build skips this dependency check, but the host system still needs suitable UDEV permissions.
 
-## Manual Configuration Steps
+## Manual configuration
 
-You can run the following commands step by step to set up UDEV rules and permissions. Replace `<your_username>` with your Linux username (you can run `whoami` to see it).
+Run these commands from your normal user account.
 
-**1. Create the UDEV rules file**
+### 1. Create the `idevice` group
 
-This creates `/etc/udev/rules.d/99-idevice.rules` with the correct permissions for Apple USB devices so iDescriptor can detect it.
-
-```sh
-echo 'SUBSYSTEM=="usb", ATTR{idVendor}=="05ac", MODE="0666", GROUP="idevice"' | sudo tee /etc/udev/rules.d/99-idevice.rules > /dev/null
-```
-
-**2. Create the `idevice` group if it does not exist**
-
-This checks whether the `idevice` group exists and creates it if needed.
+Create the group if it does not already exist:
 
 ```sh
-getent group idevice || sudo groupadd idevice
+getent group idevice >/dev/null || sudo groupadd idevice
 ```
 
-**3. Add your user to the `idevice` group**
+### 2. Add your user to the group
 
-This gives your user access to devices owned by the `idevice` group.
+Add the current user without removing any existing supplementary groups:
 
 ```sh
-sudo usermod -aG idevice <your_username>
+sudo usermod --append --groups idevice "$USER"
 ```
 
-**4. Reload UDEV rules**
+### 3. Install the UDEV rule
 
-This reloads UDEV so the new rules take effect immediately.
+The rule grants read/write access to the `idevice` group only for the Apple USB product IDs supported by iDescriptor's recovery-device library:
+
+```sh
+printf '%s\n' 'SUBSYSTEM=="usb", ATTR{idVendor}=="05ac", ATTR{idProduct}=="1222|1227|1280|1281|1881", MODE="0660", GROUP="idevice"' | sudo tee /etc/udev/rules.d/99-idevice.rules >/dev/null
+```
+
+This uses group-scoped mode `0660`; it does not make every Apple USB device writable by every local user.
+
+### 4. Reload the rules
 
 ```sh
 sudo udevadm control --reload-rules
 sudo udevadm trigger
 ```
 
-### Log Out and Log Back In
+### 5. Refresh your login session
 
-For the group changes to take full effect, you **must** log out of your current session and log back in. This ensures that your user session correctly picks up the new group membership.
+Log out and back in so your session receives the new group membership, then reconnect the device. You can confirm membership with:
 
-After logging back in, you can re-run the dependency check in iDescriptor to verify that the UDEV rules are now should be detected as installed (if you installed at the path `/etc/udev/rules.d/99-idevice.rules`).
+```sh
+id --groups --name
+```
+
+The output should include `idevice`. Re-run iDescriptor's dependency check after reconnecting the device.

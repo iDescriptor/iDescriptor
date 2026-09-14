@@ -361,24 +361,7 @@ You might get this pop-up on any platform this is because this app uses secure b
 
 ## Linux Udev Rules
 
-iDescriptor will check for udev rules but in case it fails, you can manually add the udev rules by doing similar to the following:
-
-```bash
-@uncore  sudo cat /etc/udev/rules.d/99-idevice.rules
-SUBSYSTEM=="usb", ATTR{idVendor}=="05ac", MODE="0666"
-
-✘  Sun 6 Jul - 14:29  ~ 
-@uncore  sudo groupadd idevice
-
-Sun 6 Jul - 14:30  ~ 
-@uncore  sudo usermod -aG idevice $USER
-
-Sun 6 Jul - 14:30  ~ 
-@uncore  sudo udevadm control --reload-rules
-sudo udevadm trigger
-```
-
-For more info [UDEV.md](./UDEV.md)
+iDescriptor checks for the UDEV permissions required to communicate with Apple recovery devices. If the check fails, follow the group-scoped setup in [UDEV.md](./UDEV.md).
 
 # Contributing
 

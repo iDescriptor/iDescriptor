@@ -456,6 +456,14 @@ async fn check_avahi_status() -> Availability {
 }
 
 #[cfg(all(target_os = "linux", not(feature = "flatpak")))]
+fn udev_rules_are_supported(content: &str) -> bool {
+    content.contains("SUBSYSTEM==\"usb\"")
+        && content.contains("ATTR{idVendor}==\"05ac\"")
+        && content.contains("MODE=\"0660\"")
+        && content.contains("GROUP=\"idevice\"")
+}
+
+#[cfg(all(target_os = "linux", not(feature = "flatpak")))]
 async fn check_udev_rules_installed() -> Result<Availability> {
     use std::time::Duration;
 
@@ -467,11 +475,7 @@ async fn check_udev_rules_installed() -> Result<Availability> {
         }
     };
 
-    let has_usb_subsystem = content.contains("SUBSYSTEM==\"usb\"");
-    let has_apple_vendor = content.contains("ATTR{idVendor}==\"05ac\"");
-    let has_mode = content.contains("MODE=\"0666\"");
-
-    if !has_usb_subsystem || !has_apple_vendor || !has_mode {
+    if !udev_rules_are_supported(&content) {
         return Ok(Availability::Unavailable);
     }
 
@@ -667,6 +671,25 @@ mod tests {
                 assert_eq!(stopped, ("Start", "install", ""));
             }
         }
+    }
+}
+
+#[cfg(all(test, target_os = "linux", not(feature = "flatpak")))]
+mod linux_tests {
+    use super::*;
+
+    #[test]
+    fn accepts_group_scoped_udev_permissions() {
+        let rules = r#"SUBSYSTEM=="usb", ATTR{idVendor}=="05ac", ATTR{idProduct}=="1222|1227|1280|1281|1881", MODE="0660", GROUP="idevice""#;
+
+        assert!(udev_rules_are_supported(rules));
+    }
+
+    #[test]
+    fn rejects_world_writable_udev_permissions() {
+        let rules = r#"SUBSYSTEM=="usb", ATTR{idVendor}=="05ac", MODE="0666", GROUP="idevice""#;
+
+        assert!(!udev_rules_are_supported(rules));
     }
 }
 
