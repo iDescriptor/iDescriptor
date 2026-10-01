@@ -248,14 +248,19 @@ jobs:
           mkdir -p target/deploy
           cp target/release/idescriptor.exe target/deploy/
 
-          qt_root_dir="$(cygpath -au "${Qt6_DIR:?Qt6_DIR is not set}")"
+          if [ "${{ matrix.asset_arch }}" = "arm64" ]; then
+            qt_bin_dir="$(cygpath -au "${{ matrix.msys_prefix }}/bin")"
+          else
+            qt_root_dir="$(cygpath -au "${Qt6_DIR:?Qt6_DIR is not set}")"
+            qt_bin_dir="${qt_root_dir}/bin"
+          fi
           qml_source_dir="$(cygpath -au "$GITHUB_WORKSPACE")/src/ui"
 
           pushd target/deploy
           bash ../../packaging/windows/portable/deploy.sh \
             --executable="./idescriptor.exe" \
             --output-dir="./" \
-            --qt-bin-path="${qt_root_dir}/bin" \
+            --qt-bin-path="${qt_bin_dir}" \
             --msys2-bin-path="$(cygpath -au "${{ matrix.msys_prefix }}/bin")" \
             --architecture="${{ matrix.wix_arch }}" \
             --project-source-dir="../../" \
