@@ -3,15 +3,14 @@
 
 use crate::RUNTIME;
 use crate::device_ctx;
+use crate::media_decoder::{decode_heic_image, generate_thumbnail};
 use crate::qt_threading::{QtThread, QtThreading};
-use crate::utils::{
-    AfcReader, MediaFileType, create_image_from_buffer, generate_thumbnail, heic_to_qimage,
-    media_file_type, scale_image_to_fit,
-};
+use crate::utils::{MediaFileType, create_image_from_buffer, media_file_type, scale_image_to_fit};
 use ::log::{debug, error};
 use anyhow::Context;
 use idevice::afc::AfcClient;
 use idevice::afc::opcode::AfcFopenMode;
+use idevice::afc::shared_file::SharedFileDescriptor;
 use macros::QtThreading;
 use once_cell::sync::Lazy;
 use priority_queue::PriorityQueue;
@@ -25,8 +24,9 @@ use std::sync::{
 };
 use tokio::{
     io::AsyncReadExt,
-    sync::{Notify, Semaphore},
+    sync::{Mutex as AsyncMutex, Notify, Semaphore},
 };
+use tokio_util::io::SyncIoBridge;
 use tokio_util::sync::CancellationToken;
 
 #[allow(non_snake_case)]
@@ -211,6 +211,7 @@ impl Scheduler {
 
                     let device = device_ctx::get_device(key.udid.as_str()).await?;
                     let connection_id = device.connection_id;
+                    let media_type = media_file_type(&key.path);
                     let afc_arc = if key.afc2 {
                         device.afc2.ok_or_else(|| {
                             anyhow::anyhow!("AFC2 is unavailable for device {}", key.udid)
@@ -218,29 +219,29 @@ impl Scheduler {
                     } else {
                         device.afc
                     };
-
-                    let img = match media_file_type(&key.path) {
+                    let img = match media_type {
                         MediaFileType::Video => {
-                            // FIXME: can we do something better here ?
-                            let reader =
-                                AfcReader::new(key.udid.clone(), key.path.clone(), afc_arc);
-
-                            let f_size = reader.get_size().await?;
-                            if cancellation.is_cancelled() {
-                                return Ok(false);
-                            }
-                            if !(f_size > 0) {
-                                anyhow::bail!("File size is invalid for {}", key.path);
+                            let afc = if key.afc2 {
+                                // FIXME: afc2_secondary is maybe unnecessary
+                                // as the gallery images already load from afc
+                                // but we have a type mismatch here
+                                // that goes way deeper, all the way to core.rs
+                                device.afc2_secondary.ok_or_else(|| {
+                                    anyhow::anyhow!(
+                                        "Secondary AFC2 is unavailable for device {}",
+                                        key.udid
+                                    )
+                                })?
+                            } else {
+                                device.afc_secondary
                             };
-
-                            let Some(img) = decode_image(&cancellation, move || {
-                                generate_thumbnail(
-                                    &reader,
-                                    f_size,
-                                    key.width as i32,
-                                    key.height as i32,
-                                )
-                            })
+                            let Some(img) = decode_video(
+                                &cancellation,
+                                afc,
+                                key.path.clone(),
+                                key.width,
+                                key.height,
+                            )
                             .await?
                             else {
                                 return Ok(false);
@@ -264,7 +265,7 @@ impl Scheduler {
                             let width = key.width;
                             let height = key.height;
                             let Some(img) = decode_image(&cancellation, move || {
-                                scale_image_to_fit(heic_to_qimage(&buf), width, height)
+                                Ok(scale_image_to_fit(decode_heic_image(&buf)?, width, height))
                             })
                             .await?
                             else {
@@ -289,7 +290,7 @@ impl Scheduler {
                             let width = key.width;
                             let height = key.height;
                             let Some(img) = decode_image(&cancellation, move || {
-                                create_image_from_buffer(&buf, width, height)
+                                Ok(create_image_from_buffer(&buf, width, height))
                             })
                             .await?
                             else {
@@ -354,7 +355,7 @@ async fn decode_image<F>(
     decode: F,
 ) -> anyhow::Result<Option<QImage>>
 where
-    F: FnOnce() -> QImage + Send + 'static,
+    F: FnOnce() -> anyhow::Result<QImage> + Send + 'static,
 {
     let permit = tokio::select! {
         _ = cancellation.cancelled() => return Ok(None),
@@ -368,9 +369,42 @@ where
         decode()
     })
     .await
-    .context("image_loader: decoder task failed")?;
+    .context("image_loader: decoder task failed")??;
 
     Ok(Some(image))
+}
+
+async fn decode_video(
+    cancellation: &CancellationToken,
+    afc: Arc<AsyncMutex<AfcClient>>,
+    path: String,
+    width: u32,
+    height: u32,
+) -> anyhow::Result<Option<QImage>> {
+    let permit = tokio::select! {
+        _ = cancellation.cancelled() => return Ok(None),
+        permit = DECODE_SEM.clone().acquire_owned() => permit?,
+    };
+    let file = tokio::select! {
+        _ = cancellation.cancelled() => return Ok(None),
+        result = SharedFileDescriptor::open(afc, path, AfcFopenMode::RdOnly) => result?,
+    };
+    let (reader, closer) = file.split();
+    let reader = SyncIoBridge::new(reader);
+    let decode_cancellation = cancellation.clone();
+    let decode_result = tokio::task::spawn_blocking(move || {
+        generate_thumbnail(reader, width, height, decode_cancellation)
+    })
+    .await;
+
+    closer
+        .close()
+        .await
+        .context("Failed to close thumbnail file")?;
+    let decoded = decode_result.context("image_loader: video decoder task failed")?;
+    drop(permit);
+
+    decoded.map(Some)
 }
 
 async fn file_to_buffer(afc: &mut AfcClient, path: &str) -> anyhow::Result<Vec<u8>> {

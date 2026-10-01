@@ -1,16 +1,12 @@
 // SPDX-FileCopyrightText: 2025-2026 Uncore <https://github.com/uncor3>
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
-use crate::{POSSIBLE_ROOT, run_sync};
+use crate::POSSIBLE_ROOT;
 use ::log::{debug, error, info, warn};
-use anyhow::Context;
 use cpp::*;
 use idevice::{
-    IdeviceError, IdeviceService,
-    afc::{AfcClient, opcode::AfcFopenMode},
-    diagnostics_relay::DiagnosticsRelayClient,
-    house_arrest::HouseArrestClient,
-    installation_proxy::InstallationProxyClient,
+    IdeviceError, IdeviceService, afc::AfcClient, diagnostics_relay::DiagnosticsRelayClient,
+    house_arrest::HouseArrestClient, installation_proxy::InstallationProxyClient,
     provider::IdeviceProvider,
 };
 use plist::Dictionary;
@@ -20,11 +16,7 @@ use qmetaobject::*;
 use rusqlite::Connection;
 use serde_json::json;
 use std::ffi::c_void;
-use std::io::SeekFrom;
 use std::path::{Path, PathBuf};
-use std::sync::Arc;
-use tokio::io::{AsyncReadExt, AsyncSeekExt};
-use tokio::sync::Mutex;
 
 cpp! {{
     struct TraitObject2 { void *data; void *vtable; };
@@ -41,7 +33,6 @@ cpp! {{
     #include <QObject>
     #include <QClipboard>
     #include <QEvent>
-    #include "src/native/include/bridge.h"
     #include <gst/gst.h>
 
     QCoreApplication *globalApp = nullptr;
@@ -983,111 +974,6 @@ pub fn image_to_b64(img: QImage) -> QString {
     })
 }
 
-pub struct AfcReader {
-    #[allow(dead_code)]
-    udid: String,
-    path: String,
-    afc_arc: Arc<Mutex<AfcClient>>,
-}
-
-impl AfcReader {
-    pub fn new(udid: String, path: String, afc_arc: Arc<Mutex<AfcClient>>) -> Self {
-        Self {
-            udid,
-            path,
-            afc_arc,
-        }
-    }
-
-    pub async fn get_size(&self) -> anyhow::Result<i64> {
-        let mut afc = self.afc_arc.lock().await;
-        let info = afc
-            .get_file_info(self.path.clone())
-            .await
-            .with_context(|| format!("Failed to get file size for {}", self.path))?;
-        i64::try_from(info.size).context("Video file size exceeds FFmpeg's signed 64-bit limit")
-    }
-
-    pub fn read_at(&self, offset: i64, size: i32) -> Vec<u8> {
-        if size <= 0 || offset < 0 {
-            return Vec::new();
-        }
-
-        let path = self.path.clone();
-        let afc_arc = self.afc_arc.clone();
-        // FIXME: is run_sync safe in this context?
-        run_sync(async move {
-            let mut afc = afc_arc.lock().await;
-
-            let mut fd = match afc.open(path.clone(), AfcFopenMode::RdOnly).await {
-                Ok(f) => f,
-                Err(e) => {
-                    eprintln!("read_at: open({}) failed: {}", path, e);
-                    return Vec::new();
-                }
-            };
-
-            if offset > 0 {
-                if let Err(e) = fd.seek(SeekFrom::Start(offset as u64)).await {
-                    eprintln!("read_at: seek({}, {}) failed: {}", path, offset, e);
-                    let _ = fd.close().await;
-                    return Vec::new();
-                }
-            }
-
-            let mut buf = vec![0u8; size as usize];
-            let n = match fd.read(&mut buf).await {
-                Ok(n) => n,
-                Err(e) => {
-                    eprintln!("read_at: read({}, {}) failed: {}", path, offset, e);
-                    let _ = fd.close().await;
-                    return Vec::new();
-                }
-            };
-            buf.truncate(n);
-            let _ = fd.close().await;
-            buf
-        })
-    }
-}
-
-#[unsafe(no_mangle)]
-pub extern "C" fn afc_reader_read_at(
-    reader_ptr: *const c_void,
-    offset: i64,
-    size: i32,
-    out_buf: *mut u8,
-    out_len: *mut i32,
-) {
-    let reader = unsafe { &*(reader_ptr as *const AfcReader) };
-    let data = reader.read_at(offset, size);
-    let n = data.len().min(size as usize);
-    unsafe {
-        std::ptr::copy_nonoverlapping(data.as_ptr(), out_buf, n);
-        *out_len = n as i32;
-    }
-}
-
-pub fn generate_thumbnail(
-    reader: &AfcReader,
-    file_size: i64,
-    requested_w: i32,
-    requested_h: i32,
-) -> QImage {
-    let reader_ptr = reader as *const AfcReader as *const c_void;
-
-    cpp!(unsafe [
-        reader_ptr  as "const void*",
-        file_size   as "int64_t",
-        requested_w as "int32_t",
-        requested_h as "int32_t"
-    ] -> QImage as "QImage" {
-        return generate_thumbnail_with_reader_ffi(
-            reader_ptr, file_size, requested_w, requested_h
-        );
-    })
-}
-
 pub fn empty_qjsvalue() -> QJSValue {
     cpp!(unsafe [] -> QJSValue as "QJSValue" { return QJSValue(); })
 }
@@ -1100,18 +986,6 @@ pub fn engine_ptr_new_object(engine_ptr: *mut c_void, obj_ptr: *mut c_void) -> Q
         return engine_ptr->newQObject(obj_ptr);
     })
 }
-pub fn heic_to_qimage(buf: &[u8]) -> QImage {
-    let data = buf.as_ptr();
-    let len = buf.len();
-
-    cpp!(unsafe [
-        data as "const uint8_t *",
-        len as "size_t"
-    ] -> QImage as "QImage" {
-        return heic_to_image_ffi(data, len);
-    })
-}
-
 //FIXME: this may be called multiple times?
 pub fn force_load_gst_gl() -> bool {
     /*

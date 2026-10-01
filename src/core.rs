@@ -1070,6 +1070,10 @@ async fn init_idescriptor_device<
 
     debug!("init_idescriptor_device: Attempting to connect to AFC client.");
     let mut afc_client = AfcClient::connect(&provider).await?;
+    // useful for time taking stuff for example video thumbnail generation
+    // images get loaded with the main client
+    // and video thumbnails are handled by the secondary client
+    let afc_client_secondary = AfcClient::connect(&provider).await?;
 
     debug!("init_idescriptor_device: Connected to AfcClient.");
 
@@ -1084,6 +1088,17 @@ async fn init_idescriptor_device<
             warn!("AfcClient::new_afc2 failed: {e:?}");
             None
         }
+    };
+    let afc2_secondary = if afc2.is_some() {
+        match AfcClient::new_afc2(&provider).await {
+            Ok(c) => Some(Arc::new(Mutex::new(c))),
+            Err(e) => {
+                warn!("Secondary AfcClient::new_afc2 failed: {e:?}");
+                None
+            }
+        }
+    } else {
+        None
     };
 
     let mut info = collect_info(
@@ -1124,7 +1139,9 @@ async fn init_idescriptor_device<
         connection_id,
         is_wireless,
         afc: Arc::new(Mutex::new(afc_client)),
+        afc_secondary: Arc::new(Mutex::new(afc_client_secondary)),
         afc2,
+        afc2_secondary,
         diag: Arc::new(Mutex::new(diag_relay)),
         heartbeat_task,
         video_streams: Arc::new(Mutex::new(HashMap::new())),

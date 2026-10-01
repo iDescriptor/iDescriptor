@@ -10,31 +10,22 @@ fn main() {
     let target_os = env::var("CARGO_CFG_TARGET_OS").unwrap();
 
     println!("cargo:rerun-if-changed=src/native.rs");
+    println!("cargo:rerun-if-changed=src/media_decoder.rs");
     println!("cargo:rerun-if-changed=src/status_window_controller.rs");
+    println!("cargo:rerun-if-changed=src/system_appearance.rs");
     println!("cargo:rerun-if-env-changed=IDESCRIPTOR_PACKAGE_MANAGER_MESSAGE");
 
     println!("cargo:rerun-if-changed=src/live_reload.cpp");
 
-    println!("cargo:rerun-if-changed=src/native/bridge.cpp");
-    println!("cargo:rerun-if-changed=src/native/include/bridge.h");
-    println!("cargo:rerun-if-changed=src/native/systemappearance.cpp");
-    println!("cargo:rerun-if-changed=src/native/systemappearance.h");
-    println!("cargo:rerun-if-changed=src/native/CMakeLists.txt");
     println!("cargo:rerun-if-changed=packaging/shared/resources/app-icon/icon.ico");
     println!("cargo:rerun-if-changed=packaging/shared/resources/app-icon/icon.png");
     println!("cargo:rerun-if-changed=packaging/windows/idescriptor.rc");
-
-    if target_os == "macos" {
-        println!("cargo:rerun-if-changed=src/native/platform/macos/macos.h");
-        println!("cargo:rerun-if-changed=src/native/platform/macos/macos.mm");
-    }
 
     let qt_include_path = env::var("DEP_QT_INCLUDE_PATH").unwrap();
     let qt_library_path = env::var("DEP_QT_LIBRARY_PATH").unwrap();
 
     let qt_version = env::var("DEP_QT_VERSION").unwrap();
     let flatpak_build = env::var_os("CARGO_FEATURE_FLATPAK").is_some();
-    let appimage_build = target_os == "linux" && env::var_os("CARGO_FEATURE_APPIMAGE").is_some();
 
     //TODO
     // if target_os == "linux" {
@@ -47,24 +38,6 @@ fn main() {
     // }
 
     // compile_translations(&qt_library_path);
-
-    // ------------------------------------------------------------------
-    // Build cpp_bridge via CMake
-    // ------------------------------------------------------------------
-    let mut cmake_config = cmake::Config::new("src/native");
-    cmake_config
-        .build_target("cpp_bridge")
-        .define("CMAKE_PREFIX_PATH", &qt_library_path)
-        .define(
-            "IDESCRIPTOR_APPIMAGE_BUILD",
-            if appimage_build { "ON" } else { "OFF" },
-        );
-    let out = cmake_config.build();
-
-    let build_dir = out.join("build");
-
-    // cpp_bridge
-    println!("cargo:rustc-link-search=native={}", build_dir.display());
 
     // ------------------------------------------------------------------
     // cpp_build — scans the crate root and compiles its cpp! macro modules
@@ -93,11 +66,8 @@ fn main() {
     public_include("QtQml");
     public_include("QtQuickControls2");
     public_include("QtWidgets");
-    if target_os == "linux" {
-        public_include("QtDBus");
-        if flatpak_build {
-            config.define("IDESCRIPTOR_FLATPAK", None);
-        }
+    if target_os == "linux" && flatpak_build {
+        config.define("IDESCRIPTOR_FLATPAK", None);
     }
 
     let mut private_include = |name: &str| {
@@ -148,28 +118,6 @@ fn main() {
         );
     }
 
-    // Compile the ObjC++ bridge
-    if target_os == "macos" {
-        cc::Build::new()
-            .file("src/native/platform/macos/macos.mm")
-            // .flag("-fobjc-arc")
-            .flag("-std=c++17")
-            .include("src/native/platform/macos")
-            .cargo_metadata(false)
-            .compile("mac_window");
-
-        println!(
-            "cargo:rustc-link-search=native={}",
-            env::var("OUT_DIR").unwrap()
-        );
-        println!("cargo:rustc-link-lib=static=mac_window");
-
-        // Link required Apple frameworks
-        println!("cargo:rustc-link-lib=framework=AppKit");
-        println!("cargo:rustc-link-lib=framework=Foundation");
-        println!("cargo:rustc-link-lib=framework=QuartzCore");
-    }
-
     if target_os == "windows" {
         embed_resource::compile("packaging/windows/idescriptor.rc", embed_resource::NONE)
             .manifest_optional()
@@ -178,28 +126,8 @@ fn main() {
 
     config.include(&qt_include_path).build("src/main.rs");
 
-    println!("cargo:rustc-link-lib=static=cpp_bridge");
-
-    pkg_config::Config::new().probe("libheif").unwrap();
     pkg_config::Config::new().probe("glib-2.0").unwrap();
     pkg_config::Config::new().probe("gobject-2.0").unwrap();
-
-    if target_os == "linux" {
-        pkg_config::Config::new().probe("Qt6DBus").unwrap();
-    }
-
-    // FFmpeg
-    if let Ok(ffmpeg_dir) = env::var("FFMPEG_DIR") {
-        println!("cargo:rustc-link-search={}/lib", ffmpeg_dir);
-        for lib in &["avformat", "avcodec", "avutil", "swscale"] {
-            println!("cargo:rustc-link-lib={}", lib);
-        }
-    } else {
-        let _ = pkg_config::Config::new().probe("libavformat");
-        let _ = pkg_config::Config::new().probe("libavcodec");
-        let _ = pkg_config::Config::new().probe("libavutil");
-        let _ = pkg_config::Config::new().probe("libswscale");
-    }
 
     // GStreamer
     for pkg in &[

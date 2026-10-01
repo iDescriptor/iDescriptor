@@ -1,6 +1,6 @@
 # Building iDescriptor
 
-iDescriptor is a Rust and Qt 6 application built with Cargo. Cargo also invokes CMake to compile the remaining native C/C++ bridge and uxplay components.
+iDescriptor is a Rust and Qt 6 application built with Cargo. Qt integration is provided by qmetaobject-rs and the existing `cpp!` bridge, while FFmpeg and libheif are consumed through Rust bindings.
 
 ## Common requirements
 
@@ -446,7 +446,7 @@ Then ensure Qt's `bin` directory is on `PATH` and its prefix is in `CMAKE_PREFIX
 
 ### A native package is missing
 
-The Cargo build script uses `pkg-config` for OpenSSL, libplist, libheif, GLib/GObject, FFmpeg, GStreamer, and Linux Avahi/Qt DBus. Check a package directly, for example:
+The Cargo build and dependency scripts use `pkg-config` for native libraries such as OpenSSL, libplist, libheif, GLib/GObject, FFmpeg, GStreamer, and Qt DBus. Check a package directly, for example:
 
 ```bash
 pkg-config --modversion libplist-2.0
@@ -467,4 +467,4 @@ When a local release build differs from CI, compare against:
 - `.github/workflows/build-windows.yml`
 - `.github/workflows/build-macos.yml`
 - `build.rs`
-- `src/native/CMakeLists.txt`
+- `Cargo.toml`

@@ -10,7 +10,7 @@ QtObject {
 
     property string colorScheme: normalizeColorScheme(settingsManager.theme())
     readonly property bool darkMode: colorScheme === "dark"
-                                     || (colorScheme === "system" && SystemAppearance.darkMode)
+                                     || (colorScheme === "system" && SystemAppearance.dark_mode)
     property string windowEffect: settingsManager.window_effect()
 
     function normalizeColorScheme(value) {

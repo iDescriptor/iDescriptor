@@ -2,9 +2,10 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
 use crate::device_ctx;
+use crate::media_decoder::decode_heic_image;
 use crate::media_streamer::MediaStreamSession;
 use crate::qt_threading::QtThreading;
-use crate::utils::{heic_to_qimage, image_to_b64, is_heic_file};
+use crate::utils::{image_to_b64, is_heic_file};
 use crate::{RUNTIME, qvariantmap_insert, run_sync};
 use base64::{Engine as _, engine::general_purpose};
 use idevice::afc::opcode::AfcFopenMode;
@@ -102,11 +103,7 @@ impl AfcServices {
                 }
 
                 if is_heic_file(&path) {
-                    let image = heic_to_qimage(&data);
-                    let size = image.size();
-                    if size.width <= 0 || size.height <= 0 {
-                        anyhow::bail!("Failed to decode HEIC image");
-                    }
+                    let image = decode_heic_image(&data)?;
                     return Ok(image_to_b64(image));
                 }
 

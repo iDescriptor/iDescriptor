@@ -41,6 +41,7 @@ pub mod image_provider;
 pub mod io_manager;
 pub mod jailbroken;
 pub mod list_model;
+pub mod media_decoder;
 pub mod media_streamer;
 pub mod native;
 pub mod network_device_provider;
@@ -56,6 +57,7 @@ pub mod service_manager;
 pub mod settings_manager;
 pub mod springboard_services;
 pub mod status_window_controller;
+pub mod system_appearance;
 pub mod transfer_speed_tester;
 #[cfg(not(debug_assertions))]
 pub mod ui_qrc;
@@ -309,6 +311,10 @@ fn main() {
         "NetworkDeviceProvider".into(),
         network_device_provider.pinned(),
     );
+
+    let system_appearance = QObjectBox::new(system_appearance::SystemAppearance::default());
+    engine.set_object_property("SystemAppearance".into(), system_appearance.pinned());
+    system_appearance.pinned().borrow_mut().initialize();
 
     native::initialize_engine(&mut engine);
 

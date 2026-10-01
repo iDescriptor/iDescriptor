@@ -24,7 +24,6 @@ cpp! {{
     #include <QOperatingSystemVersion>
 
     #include "src/live_reload.cpp"
-    #include "src/native/systemappearance.h"
 }}
 
 pub fn configure_application(application_version: QString) {
@@ -128,13 +127,6 @@ pub fn initialize_engine(engine: &mut QmlEngine) {
         if (!s_fileSelector) {
             s_fileSelector = new QQmlFileSelector(engine_ptr, engine_ptr);
         }
-
-
-        static SystemAppearance* s_systemAppearance = nullptr;
-        if (!s_systemAppearance) {
-            s_systemAppearance = new SystemAppearance(QCoreApplication::instance());
-        }
-        engine_ptr->rootContext()->setContextProperty("SystemAppearance", s_systemAppearance);
     });
 
     let app_icon_path = QString::from(APP_ICON_PATH);
