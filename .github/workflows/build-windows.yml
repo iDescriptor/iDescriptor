@@ -130,6 +130,7 @@ jobs:
               "${{ matrix.package_prefix }}-qt6-serialport"
               "${{ matrix.package_prefix }}-qt6-5compat"
               "${{ matrix.package_prefix }}-qt6-shadertools"
+              "${{ matrix.package_prefix }}-qt6-translations"
             )
           fi
           pacman -S --needed --noconfirm \
@@ -161,28 +162,33 @@ jobs:
         run: |
           if [ "${{ matrix.install_qt_action }}" = "true" ]; then
             qt_root_dir="$(cygpath -au "${Qt6_DIR:?Qt6_DIR is not set}")"
+            qt_qml_dir="${qt_root_dir}/qml"
           else
             qt_root_dir="${{ matrix.msys_prefix }}"
+            qt_qml_dir="${qt_root_dir}/share/qt6/qml"
             echo "Qt6_DIR=$(cygpath -aw "${qt_root_dir}/lib/cmake/Qt6")" >> "$GITHUB_ENV"
           fi
+          echo "IDESCRIPTOR_QT_ROOT_DIR=${qt_root_dir}" >> "$GITHUB_ENV"
+          echo "IDESCRIPTOR_QT_QML_DIR=${qt_qml_dir}" >> "$GITHUB_ENV"
           echo "QMAKE=${qt_root_dir}/bin/${{ matrix.qmake_executable }}" >> "$GITHUB_ENV"
           echo "PKG_CONFIG_EXECUTABLE=$(cygpath -aw "${{ matrix.msys_prefix }}/bin/pkg-config.exe")" >> "$GITHUB_ENV"
 
       - name: Install FluentUI
         run: |
-          qt_root_dir="$(cygpath -au "${Qt6_DIR:?Qt6_DIR is not set}")"
+          qt_root_dir="${IDESCRIPTOR_QT_ROOT_DIR:?IDESCRIPTOR_QT_ROOT_DIR is not set}"
+          qt_qml_dir="${IDESCRIPTOR_QT_QML_DIR:?IDESCRIPTOR_QT_QML_DIR is not set}"
 
           git clone https://github.com/uncor3/FluentUI.git
           cd FluentUI
           cmake -B build -S . \
             -DCMAKE_BUILD_TYPE=Release \
             -DCMAKE_PREFIX_PATH="${qt_root_dir}" \
-            -DFLUENTUI_QML_PLUGIN_DIRECTORY="${qt_root_dir}/qml/FluentUI"
+            -DFLUENTUI_QML_PLUGIN_DIRECTORY="${qt_qml_dir}/FluentUI"
           cmake --build build
 
       - name: Build qml6glsink from gst-plugins-good
         run: |
-          qt_root_dir="$(cygpath -au "${Qt6_DIR:?Qt6_DIR is not set}")"
+          qt_root_dir="${IDESCRIPTOR_QT_ROOT_DIR:?IDESCRIPTOR_QT_ROOT_DIR is not set}"
 
           curl --retry 3 --retry-delay 5 -L \
             -o "gst-plugins-good-${GST_PLUGINS_GOOD_VERSION}.tar.xz" \
@@ -248,10 +254,18 @@ jobs:
           mkdir -p target/deploy
           cp target/release/idescriptor.exe target/deploy/
 
+          qt_root_dir="${IDESCRIPTOR_QT_ROOT_DIR:?IDESCRIPTOR_QT_ROOT_DIR is not set}"
           if [ "${{ matrix.asset_arch }}" = "arm64" ]; then
-            qt_bin_dir="$(cygpath -au "${{ matrix.msys_prefix }}/bin")"
+            qt_bin_dir="${qt_root_dir}/bin"
+            qt_tools_dir="${qt_root_dir}/share/qt6/bin"
+            if [ ! -x "${qt_tools_dir}/qmlimportscanner.exe" ]; then
+              echo "Error: Qt QML import scanner not found: ${qt_tools_dir}/qmlimportscanner.exe"
+              exit 1
+            fi
+            # The Qt version in the pinned MSYS2 archive starts
+            # qmlimportscanner by name even though MSYS2 installs it here.
+            export PATH="${qt_tools_dir}:${PATH}"
           else
-            qt_root_dir="$(cygpath -au "${Qt6_DIR:?Qt6_DIR is not set}")"
             qt_bin_dir="${qt_root_dir}/bin"
           fi
           qml_source_dir="$(cygpath -au "$GITHUB_WORKSPACE")/src/ui"
