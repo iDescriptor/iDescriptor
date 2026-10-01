@@ -1,49 +1,46 @@
-# This markdown contains issues with Flatpak release
+# Known Issues with the Flatpak Release
 
-## No iFuse
+## No iFuse Support
 
-Flatpak version will not support iFuse for now. It's technically possible however we need to escape the sandbox in order to call fusermount3 (see [fusermount3-wrapper](./packaging/linux/flatpak/idescriptor-fusermount3)). 
+The Flatpak version does not support iFuse for now. It's technically possible, but it requires escaping the sandbox to call `fusermount3` (see [fusermount3-wrapper](../packaging/linux/flatpak/idescriptor-fusermount3)).
 
-Our Flatpak submission was denied beceause we used the `flatpak-spawn --host` option to escape the sandbox.
+Our Flatpak submission was denied because we used the `flatpak-spawn --host` option to escape the sandbox.
 
-iFuse is just a feature that allows you to mount your device's filesystem. Without it, you can still use iDescriptor, but you won't be able to mount your device's filesystem.
+iFuse is a feature that lets you mount your device's filesystem. Without it, you can still use iDescriptor, but you won't be able to mount your device's filesystem.
 
-If you really need it you can either install iDescriptor from arch-aur or use the appimage build.
-
+If you need this feature, install iDescriptor from the AUR (Arch User Repository) or use the AppImage build instead.
 
 ## Device Is Not Detected or Hot Plug Not Working
 
-If your device is not detected or hot plug is not working, 
+If your device is not detected, or hot plug isn't working, follow these steps:
 
-First check if you have usbmuxd installed so that iDescriptor can listen for device events.
+1. **Check that `usbmuxd` is installed.** iDescriptor needs it to listen for device events.
 
-This will depend on your distribution. Most distributions have a package for usbmuxd, so you should be able to install it using your package manager.
+   This depends on your distribution — most have a package for `usbmuxd`, installable via your package manager. Some distributions (e.g. Arch Linux, Ubuntu, Debian) ship it by default.
 
-Or sometimes it's shipped with your distribution, for example Arch Linux, Ubuntu, Debian ships them by default.
+2. **If `usbmuxd` is installed**, the issue is most likely that its socket gets shut down after the last device disconnects.
 
-If usbmuxd is installed then it's most likely due to usbmuxd socket being shut down after the last device was disconnected.
+   You can patch the udev rule to prevent this (we plan to open a PR to fix this upstream in libimobiledevice).
 
-You can patch udev rules to prevent usbmuxd from being shut down (we will open a PR to fix this in libimobiledevice)
+   Locate your `39-usbmuxd.rules` file (usually in `/usr/lib/udev/rules.d/` or `/lib/udev/rules.d/`).
 
-You should locate your `39-usbmuxd.rules` file (usually in `/usr/lib/udev/rules.d/` or `/lib/udev/rules.d/`)
+   **Example for Arch Linux:**
+   ```bash
+   sudo cp /usr/lib/udev/rules.d/39-usbmuxd.rules /usr/lib/udev/rules.d/39-usbmuxd.rules.bak
+   sudo nano /usr/lib/udev/rules.d/39-usbmuxd.rules
+   ```
 
-For Arch Linux
-```bash
-sudo cp /usr/lib/udev/rules.d/39-usbmuxd.rules /usr/lib/udev/rules.d/39-usbmuxd.rules.bak
-sudo nano /usr/lib/udev/rules.d/39-usbmuxd.rules
-```
+   Comment out the last line:
+   ```
+   # Exit usbmuxd when the last device is removed
+   #SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ENV{PRODUCT}=="5ac/12[9a][0-9a-f]/*|5ac/190[1-5]/*|5ac/8600/*", ACTION=="remove", RUN+="/usr/bin/usbmuxd -x"
+   ```
 
-Comment out the last line
+   > Note: the shipped rule file may contain a literal `@sbindir@` placeholder instead of a real path if your package wasn't built correctly. Replace it with the actual path to your `usbmuxd` binary (commonly `/usr/bin/usbmuxd` or `/usr/lib/usbmuxd/usbmuxd`; check with `which usbmuxd` or `command -v usbmuxd`).
 
-```
-# Exit usbmuxd when the last device is removed
-#SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ENV{PRODUCT}=="5ac/12[9a][0-9a-f]/*|5ac/190[1-5]/*|5ac/8600/*", ACTION=="remove", RUN+="@sbindir@/usbmuxd -x"
-```
+   Reload your udev rules:
+   ```bash
+   sudo udevadm control --reload-rules
+   ```
 
-Done! Now reload your udev rules
-
-```bash
-sudo udevadm control --reload-rules
-```
-
-Hot plug should now work as expected.
+   Hot plug should now work as expected.
