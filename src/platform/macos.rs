@@ -6,7 +6,7 @@ mod appkit {
     use std::{cell::Cell, ffi::c_void};
 
     use objc2::{
-        AnyThread, ClassType, MainThreadMarker, MainThreadOnly, define_class,
+        AnyThread, DefinedClass, MainThreadMarker, define_class,
         ffi::{
             OBJC_ASSOCIATION_RETAIN_NONATOMIC, objc_getAssociatedObject, objc_setAssociatedObject,
         },
@@ -86,7 +86,7 @@ mod appkit {
         struct SidebarVisualEffectView;
 
         impl SidebarVisualEffectView {
-            #[unsafe(method(hitTest:))]
+            #[unsafe(method_id(hitTest:))]
             fn hit_test(&self, _point: NSPoint) -> Option<Retained<NSView>> {
                 None
             }
@@ -121,7 +121,9 @@ mod appkit {
         let Some(zoom_button) = window.standardWindowButton(NSWindowButton::ZoomButton) else {
             return;
         };
-        let Some(title_bar) = close_button.superview().and_then(|view| view.superview()) else {
+        let Some(title_bar) =
+            (unsafe { close_button.superview() }).and_then(|view| unsafe { view.superview() })
+        else {
             return;
         };
 
@@ -148,20 +150,22 @@ mod appkit {
         let existing =
             unsafe { objc_getAssociatedObject(window as *const NSWindow as *const AnyObject, key) };
         if !existing.is_null() {
-            unsafe { &*existing.cast::<TrafficLightInsetObserver>() }.set_position(position);
+            let _: () = unsafe {
+                msg_send![existing.cast::<TrafficLightInsetObserver>(), setPosition: position]
+            };
             return;
         }
 
-        let observer = TrafficLightInsetObserver::init_with_window(
-            TrafficLightInsetObserver::alloc(),
-            window,
-            position,
-        );
+        let observer: Retained<TrafficLightInsetObserver> = unsafe {
+            msg_send![TrafficLightInsetObserver::alloc(), initWithWindow: window, position: position]
+        };
         unsafe {
             objc_setAssociatedObject(
                 window as *const NSWindow as *mut AnyObject,
                 key,
-                Retained::as_ptr(&observer) as *mut AnyObject,
+                (&*observer as *const TrafficLightInsetObserver)
+                    .cast_mut()
+                    .cast::<AnyObject>(),
                 OBJC_ASSOCIATION_RETAIN_NONATOMIC,
             );
             set_traffic_light_inset(window, position);
@@ -180,7 +184,7 @@ mod appkit {
             return;
         }
 
-        let Some(container_view) = native_view.superview() else {
+        let Some(container_view) = (unsafe { native_view.superview() }) else {
             log::warn!("Failed to install sidebar material: native view has no superview");
             return;
         };
@@ -189,7 +193,7 @@ mod appkit {
         window.setBackgroundColor(Some(&NSColor::clearColor()));
 
         let effect_view: Retained<SidebarVisualEffectView> =
-            unsafe { msg_send![SidebarVisualEffectView::alloc(mtm), init] };
+            unsafe { msg_send![mtm.alloc::<SidebarVisualEffectView>(), init] };
         effect_view.setFrame(native_view.frame());
         effect_view.setMaterial(NSVisualEffectMaterial::Sidebar);
         effect_view.setBlendingMode(NSVisualEffectBlendingMode::BehindWindow);
@@ -210,12 +214,15 @@ mod appkit {
             objc_setAssociatedObject(
                 window as *const NSWindow as *mut AnyObject,
                 key,
-                Retained::as_ptr(&effect_view) as *mut AnyObject,
+                (&*effect_view as *const SidebarVisualEffectView)
+                    .cast_mut()
+                    .cast::<AnyObject>(),
                 OBJC_ASSOCIATION_RETAIN_NONATOMIC,
             );
         }
     }
 
+    #[allow(deprecated)]
     pub unsafe fn setup_tool_frame(view_ptr: *mut c_void, mtm: MainThreadMarker) {
         let Some(window) = (unsafe { window_from_view_ptr(view_ptr) }) else {
             log::warn!("Failed to set up the macOS tool window frame");
@@ -225,7 +232,7 @@ mod appkit {
         // TODO: remove the fullscreen button. Changing the style mask here
         // currently breaks other window styling behavior.
         let identifier = NSString::from_str("HiddenInsetToolbar");
-        let toolbar = NSToolbar::initWithIdentifier(NSToolbar::alloc(mtm), &identifier);
+        let toolbar = NSToolbar::initWithIdentifier(mtm.alloc::<NSToolbar>(), &identifier);
         toolbar.setShowsBaselineSeparator(false);
         window.setToolbar(Some(&toolbar));
 
