@@ -190,6 +190,11 @@ jobs:
           tar -xf "gst-plugins-good-${GST_PLUGINS_GOOD_VERSION}.tar.xz"
           cd "gst-plugins-good-${GST_PLUGINS_GOOD_VERSION}"
 
+          if [ "${{ matrix.asset_arch }}" = "arm64" ]; then
+            # The ARM64 Qt headers do not expose WGL declarations
+            patch --fuzz=0 -p1 < ../packaging/windows/patches/gst-plugins-good-1.26.2-wgl-header.patch
+          fi
+
           meson setup build-qml6 . \
             --prefix="${{ matrix.msys_prefix }}" \
             --libdir=lib \

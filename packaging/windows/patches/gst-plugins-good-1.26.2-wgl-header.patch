@@ -1,0 +1,14 @@
+diff --git a/ext/qt6/gstqt6glutility.cc b/ext/qt6/gstqt6glutility.cc
+index 6ab88b2..3ea01d9 100644
+--- a/ext/qt6/gstqt6glutility.cc
++++ b/ext/qt6/gstqt6glutility.cc
+@@ -41,5 +41,9 @@
+ #include <gst/gl/wayland/gstgldisplay_wayland.h>
+ #endif
++#if GST_GL_HAVE_WINDOW_WIN32 && GST_GL_HAVE_PLATFORM_WGL && defined (HAVE_QT_WIN32)
++#include <windows.h>
++#endif
++
+ #if 0
+ #if GST_GL_HAVE_WINDOW_VIV_FB
+ #include <gst/gl/viv-fb/gstgldisplay_viv_fb.h>
