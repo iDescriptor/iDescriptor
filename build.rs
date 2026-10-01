@@ -119,9 +119,21 @@ fn main() {
     }
 
     if target_os == "windows" {
-        embed_resource::compile("packaging/windows/idescriptor.rc", embed_resource::NONE)
-            .manifest_optional()
-            .expect("failed to compile Windows executable resources");
+        // llvm-rc compiles a preprocessed copy of the resource script from OUT_DIR,
+        // so relative payload paths do not resolve consistently with windres. Pass
+        // the icon as an absolute, forward-slash path that both compilers accept.
+        let icon_path = Path::new(&env::var("CARGO_MANIFEST_DIR").unwrap())
+            .join("packaging/shared/resources/app-icon/icon.ico")
+            .to_string_lossy()
+            .replace('\\', "/");
+        let icon_macro = format!("IDESCRIPTOR_ICON=\"{icon_path}\"");
+
+        embed_resource::compile(
+            "packaging/windows/idescriptor.rc",
+            embed_resource::ParamsMacros([icon_macro]),
+        )
+        .manifest_optional()
+        .expect("failed to compile Windows executable resources");
     }
 
     config.include(&qt_include_path).build("src/main.rs");
