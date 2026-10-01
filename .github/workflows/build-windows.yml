@@ -41,6 +41,8 @@ jobs:
             rust_toolchain: stable-x86_64-pc-windows-gnu
             wix_arch: x64
             install_qt_action: true
+            qt_method: qmake
+            qmake_executable: qmake.exe
           - runner: windows-11-arm
             asset_arch: arm64
             msystem: clangarm64
@@ -49,6 +51,8 @@ jobs:
             rust_toolchain: stable-aarch64-pc-windows-gnullvm
             wix_arch: arm64
             install_qt_action: false
+            qt_method: pkg-config
+            qmake_executable: qmake6.exe
     runs-on: ${{ matrix.runner }}
     defaults:
       run:
@@ -161,7 +165,7 @@ jobs:
             qt_root_dir="${{ matrix.msys_prefix }}"
             echo "Qt6_DIR=$(cygpath -aw "${qt_root_dir}/lib/cmake/Qt6")" >> "$GITHUB_ENV"
           fi
-          echo "QMAKE=${qt_root_dir}/bin/qmake.exe" >> "$GITHUB_ENV"
+          echo "QMAKE=${qt_root_dir}/bin/${{ matrix.qmake_executable }}" >> "$GITHUB_ENV"
           echo "PKG_CONFIG_EXECUTABLE=$(cygpath -aw "${{ matrix.msys_prefix }}/bin/pkg-config.exe")" >> "$GITHUB_ENV"
 
       - name: Install FluentUI
@@ -190,7 +194,7 @@ jobs:
             --prefix="${{ matrix.msys_prefix }}" \
             --libdir=lib \
             --auto-features=disabled \
-            -Dqt-method=qmake \
+            -Dqt-method=${{ matrix.qt_method }} \
             -Dqt6=enabled \
             -Dqt5=disabled \
             -Dtests=disabled \
