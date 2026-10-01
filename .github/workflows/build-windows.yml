@@ -261,15 +261,20 @@ jobs:
             qt_tools_dir="${qt_root_dir}/share/qt6/bin"
             for qt_tool in \
               "${qt_tools_dir}/qmlimportscanner.exe" \
-              "${qt_bin_dir}/lconvert.exe"; do
+              "${qt_bin_dir}/lconvert-qt6.exe"; do
               if [ ! -x "${qt_tool}" ]; then
                 echo "Error: Required Qt deployment tool not found: ${qt_tool}"
                 exit 1
               fi
             done
+            # This archived MSYS2 package names the tool lconvert-qt6.exe,
+            # while its windeployqt still launches it as lconvert.
+            qt_compat_bin="$(cygpath -au "${RUNNER_TEMP}")/idescriptor-qt-tools"
+            mkdir -p "${qt_compat_bin}"
+            cp "${qt_bin_dir}/lconvert-qt6.exe" "${qt_compat_bin}/lconvert.exe"
             # The Qt version in the pinned MSYS2 archive starts
             # qmlimportscanner by name even though MSYS2 installs it here.
-            export PATH="${qt_bin_dir}:${qt_tools_dir}:${PATH}"
+            export PATH="${qt_compat_bin}:${qt_bin_dir}:${qt_tools_dir}:${PATH}"
           else
             qt_bin_dir="${qt_root_dir}/bin"
           fi

@@ -212,16 +212,18 @@ fn compile_translations(qt_library_path: &str) {
 }
 
 fn find_lrelease(qt_library_path: &str) -> Option<PathBuf> {
-    let executable = if cfg!(windows) {
-        "lrelease.exe"
+    let executables: &[&str] = if cfg!(windows) {
+        &["lrelease.exe", "lrelease-qt6.exe"]
     } else {
-        "lrelease"
+        &["lrelease", "lrelease-qt6"]
     };
 
     for bin_dir in qt_bin_dirs(qt_library_path) {
-        let candidate = bin_dir.join(executable);
-        if candidate.exists() {
-            return Some(candidate);
+        for executable in executables {
+            let candidate = bin_dir.join(executable);
+            if candidate.exists() {
+                return Some(candidate);
+            }
         }
     }
 
@@ -256,7 +258,14 @@ fn qmake_query(var: &str) -> Option<PathBuf> {
         .filter(|path| !path.is_empty())
         .map(PathBuf::from)
         .map_or_else(
-            || vec!["qmake6".into(), "qmake".into(), "qmake-qt5".into()],
+            || {
+                vec![
+                    "qmake6".into(),
+                    "qmake-qt6".into(),
+                    "qmake".into(),
+                    "qmake-qt5".into(),
+                ]
+            },
             |qmake| vec![qmake],
         );
 
