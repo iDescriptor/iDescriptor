@@ -20,10 +20,36 @@ env:
 
 jobs:
   build-windows:
+    name: Windows ${{ matrix.asset_arch }}
     environment: release
+    permissions:
+      actions: read
+      contents: read
     env:
-      HAS_WINDOWS_SIGNING: ${{ secrets.WINDOWS_SIGNING_CERTIFICATE_BASE64 != '' }}
-    runs-on: windows-2022
+      # Manual runs validate the SignPath integration with its self-signed test
+      # certificate. Tag builds invoked by build.yml use the release policy.
+      SIGNPATH_SIGNING_POLICY_SLUG: ${{ github.event_name == 'workflow_dispatch' && 'test-signing' || vars.SIGNPATH_SIGNING_POLICY_SLUG }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - runner: windows-2022
+            asset_arch: x86_64
+            msystem: mingw64
+            msys_prefix: /mingw64
+            package_prefix: mingw-w64-x86_64
+            rust_toolchain: stable-x86_64-pc-windows-gnu
+            wix_arch: x64
+            install_qt_action: true
+          - runner: windows-11-arm
+            asset_arch: arm64
+            msystem: clangarm64
+            msys_prefix: /clangarm64
+            package_prefix: mingw-w64-clang-aarch64
+            rust_toolchain: stable-aarch64-pc-windows-gnullvm
+            wix_arch: arm64
+            install_qt_action: false
+    runs-on: ${{ matrix.runner }}
     defaults:
       run:
         shell: msys2 {0}
@@ -34,10 +60,29 @@ jobs:
         with:
           submodules: "recursive"
 
+      - name: Validate SignPath configuration
+        shell: pwsh
+        env:
+          SIGNPATH_API_TOKEN: ${{ secrets.SIGNPATH_API_TOKEN }}
+          SIGNPATH_ORGANIZATION_ID: ${{ secrets.SIGNPATH_ORGANIZATION_ID }}
+          SIGNPATH_PROJECT_SLUG: ${{ vars.SIGNPATH_PROJECT_SLUG }}
+          SIGNPATH_ARTIFACT_CONFIGURATION_SLUG: ${{ vars.SIGNPATH_ARTIFACT_CONFIGURATION_SLUG }}
+        run: |
+          $missing = @()
+          if (-not $env:SIGNPATH_API_TOKEN) { $missing += "SIGNPATH_API_TOKEN secret" }
+          if (-not $env:SIGNPATH_ORGANIZATION_ID) { $missing += "SIGNPATH_ORGANIZATION_ID secret" }
+          if (-not $env:SIGNPATH_PROJECT_SLUG) { $missing += "SIGNPATH_PROJECT_SLUG variable" }
+          if (-not $env:SIGNPATH_SIGNING_POLICY_SLUG) { $missing += "SIGNPATH_SIGNING_POLICY_SLUG variable" }
+          if (-not $env:SIGNPATH_ARTIFACT_CONFIGURATION_SLUG) { $missing += "SIGNPATH_ARTIFACT_CONFIGURATION_SLUG variable" }
+
+          if ($missing.Count -ne 0) {
+            throw "Missing required SignPath configuration: $($missing -join ', ')"
+          }
+
       - name: Setup MSYS2
         uses: msys2/setup-msys2@v2
         with:
-          msystem: mingw64
+          msystem: ${{ matrix.msystem }}
           release: false
           update: false
 
@@ -49,6 +94,40 @@ jobs:
 
       - name: Install deps using pacman
         run: |
+          target_packages=(
+            "${{ matrix.package_prefix }}-cmake"
+            "${{ matrix.package_prefix }}-meson"
+            "${{ matrix.package_prefix }}-ninja"
+            "${{ matrix.package_prefix }}-pkgconf"
+            "${{ matrix.package_prefix }}-curl"
+            "${{ matrix.package_prefix }}-openssl"
+            "${{ matrix.package_prefix }}-libzip"
+            "${{ matrix.package_prefix }}-gstreamer"
+            "${{ matrix.package_prefix }}-gst-plugins-base"
+            "${{ matrix.package_prefix }}-gst-plugins-good"
+            "${{ matrix.package_prefix }}-gst-plugins-bad"
+            "${{ matrix.package_prefix }}-gst-plugins-ugly"
+            "${{ matrix.package_prefix }}-gst-libav"
+            "${{ matrix.package_prefix }}-libheif"
+            "${{ matrix.package_prefix }}-libarchive"
+            "${{ matrix.package_prefix }}-rustup"
+            "${{ matrix.package_prefix }}-clang"
+            "${{ matrix.package_prefix }}-unicorn"
+          )
+          if [ "${{ matrix.asset_arch }}" = "x86_64" ]; then
+            target_packages+=("${{ matrix.package_prefix }}-gcc")
+          else
+            target_packages+=(
+              "${{ matrix.package_prefix }}-qt6-base"
+              "${{ matrix.package_prefix }}-qt6-declarative"
+              "${{ matrix.package_prefix }}-qt6-multimedia"
+              "${{ matrix.package_prefix }}-qt6-location"
+              "${{ matrix.package_prefix }}-qt6-positioning"
+              "${{ matrix.package_prefix }}-qt6-serialport"
+              "${{ matrix.package_prefix }}-qt6-5compat"
+              "${{ matrix.package_prefix }}-qt6-shadertools"
+            )
+          fi
           pacman -S --needed --noconfirm \
           coreutils \
           base-devel \
@@ -58,32 +137,16 @@ jobs:
           autoconf \
           automake-wrapper \
           p7zip \
-          mingw-w64-x86_64-gcc \
-          mingw-w64-x86_64-cmake \
-          mingw-w64-x86_64-meson \
-          mingw-w64-x86_64-ninja \
-          mingw-w64-x86_64-pkgconf \
-          mingw-w64-x86_64-curl \
-          mingw-w64-x86_64-openssl \
-          mingw-w64-x86_64-libzip \
-          mingw-w64-x86_64-gstreamer \
-          mingw-w64-x86_64-gst-plugins-base \
-          mingw-w64-x86_64-gst-plugins-good \
-          mingw-w64-x86_64-gst-plugins-bad \
-          mingw-w64-x86_64-gst-plugins-ugly \
-          mingw-w64-x86_64-gst-libav \
-          mingw-w64-x86_64-libheif \
-          mingw-w64-x86_64-libarchive \
-          mingw-w64-x86_64-rustup \
-          mingw-w64-x86_64-clang
+          "${target_packages[@]}"
 
       - name: Setup rust toolchain
         run: |
-          rustup toolchain install stable-x86_64-pc-windows-gnu
-          rustup default stable-x86_64-pc-windows-gnu
+          rustup toolchain install "${{ matrix.rust_toolchain }}"
+          rustup default "${{ matrix.rust_toolchain }}"
           rustup toolchain list
 
       - name: Install Qt
+        if: ${{ matrix.install_qt_action }}
         uses: jurplel/install-qt-action@v3
         with:
           version: ${{ env.QT_VERSION }}
@@ -92,9 +155,14 @@ jobs:
 
       - name: Set Environment Variables
         run: |
-          qt_root_dir="$(cygpath -au "${Qt6_DIR:?Qt6_DIR is not set}")"
+          if [ "${{ matrix.install_qt_action }}" = "true" ]; then
+            qt_root_dir="$(cygpath -au "${Qt6_DIR:?Qt6_DIR is not set}")"
+          else
+            qt_root_dir="${{ matrix.msys_prefix }}"
+            echo "Qt6_DIR=$(cygpath -aw "${qt_root_dir}/lib/cmake/Qt6")" >> "$GITHUB_ENV"
+          fi
           echo "QMAKE=${qt_root_dir}/bin/qmake.exe" >> "$GITHUB_ENV"
-          echo "PKG_CONFIG_EXECUTABLE=C:/msys64/mingw64/bin/pkg-config.exe" >> $GITHUB_ENV
+          echo "PKG_CONFIG_EXECUTABLE=$(cygpath -aw "${{ matrix.msys_prefix }}/bin/pkg-config.exe")" >> "$GITHUB_ENV"
 
       - name: Install FluentUI
         run: |
@@ -119,7 +187,7 @@ jobs:
           cd "gst-plugins-good-${GST_PLUGINS_GOOD_VERSION}"
 
           meson setup build-qml6 . \
-            --prefix=/mingw64 \
+            --prefix="${{ matrix.msys_prefix }}" \
             --libdir=lib \
             --auto-features=disabled \
             -Dqt-method=qmake \
@@ -130,7 +198,7 @@ jobs:
             -Dnls=disabled
 
           ninja -C build-qml6
-          cp build-qml6/ext/qt6/libgstqml6.dll /mingw64/lib/gstreamer-1.0/
+          cp build-qml6/ext/qt6/libgstqml6.dll "${{ matrix.msys_prefix }}/lib/gstreamer-1.0/"
 
       - name: Install WinFsp
         shell: pwsh
@@ -161,89 +229,6 @@ jobs:
               exit 1 # Explicitly fail the step if all retries fail
           }
 
-      - name: Download and Extract Bonjour SDK
-        run: |
-          curl --retry 3 --retry-delay 5 -L \
-            -o bonjour-sdk.exe \
-            "https://github.com/tempx-x/bonjour-sdk/raw/refs/heads/main/bonjoursdksetup.exe"
-
-          EXPECTED_HASH="4ff2aae8205aec31b06743782cfcadce"
-          ACTUAL_HASH=$(md5sum bonjour-sdk.exe | awk '{print $1}')
-
-          echo "Expected MD5: $EXPECTED_HASH"
-          echo "Actual MD5:   $ACTUAL_HASH"
-
-          if [ "$ACTUAL_HASH" != "$EXPECTED_HASH" ]; then
-            echo "::error::Checksum mismatch!"
-            exit 1
-          fi
-
-          echo "Checksum verified. Extracting installer..."
-          7z x bonjour-sdk.exe -oBonjourInstaller
-
-      - name: Install Bonjour Runtime
-        shell: powershell
-        run: |
-          $currentPath = Get-Location
-          $msiFilePath = Join-Path -Path $currentPath -ChildPath "BonjourInstaller\Bonjour64.msi"
-          $msiexecArguments = "/i `"$msiFilePath`" /qn"
-          Write-Host "Installing Bonjour Runtime..."
-          Start-Process msiexec -ArgumentList $msiexecArguments -NoNewWindow -Wait
-
-      - name: Install Bonjour SDK
-        shell: powershell
-        run: |
-          $currentPath = Get-Location
-          $msiFilePath = Join-Path -Path $currentPath -ChildPath "BonjourInstaller\BonjourSDK64.msi"
-          $msiexecArguments = "/i `"$msiFilePath`" /qn"
-          Write-Host "Installing Bonjour SDK..."
-          Start-Process msiexec -ArgumentList $msiexecArguments -NoNewWindow -Wait
-
-          "BONJOUR_SDK_HOME=C:/Program Files/Bonjour SDK" | Out-File -FilePath $env:GITHUB_ENV -Append
-
-
-      - name: Build libplist
-        run: |
-          workspace="$PWD"
-          tmp="$PWD/_tmp_libs"
-          mkdir -p "$tmp"
-          cd "$tmp"
-
-          base_url="https://github.com/libimobiledevice"
-
-          libs=( "libplist" )
-
-          for name in "${libs[@]}"; do
-            ver_var=$(echo "${name^^}_VER" | sed 's/-/_/g')
-            ver="${!ver_var:-}"
-            if [ -z "$ver" ]; then
-              echo "Version for $name not set (env var $ver_var)"
-              exit 1
-            fi
-
-            archive="${name}-${ver}.tar.bz2"
-            url="${base_url}/${name}/releases/download/${ver}/${archive}"
-            echo "=== Processing $name $ver ==="
-            echo "URL: $url"
-            curl --retry 3 --retry-delay 5 -L -o "$archive" "$url"
-
-            echo "Extracting $archive"
-            tar xjf "$archive"
-
-            srcdir="${name}-${ver}"
-            pushd "$srcdir"
-
-            ./configure --without-cython
-            make -j"$(nproc)"
-            make install
-            popd
-            echo "Installed $name $ver"
-          done
-
-          # cleanup
-          cd "$workspace"
-          rm -rf "$tmp"
-
       - name: Build
         run: |
           RUSTFLAGS="" cargo build --release
@@ -262,29 +247,26 @@ jobs:
             --executable="./idescriptor.exe" \
             --output-dir="./" \
             --qt-bin-path="${qt_root_dir}/bin" \
+            --msys2-bin-path="$(cygpath -au "${{ matrix.msys_prefix }}/bin")" \
+            --architecture="${{ matrix.wix_arch }}" \
             --project-source-dir="../../" \
             --qml-source-dir="${qml_source_dir}"
           popd
 
-      - name: Sign portable executable
-        if: ${{ env.HAS_WINDOWS_SIGNING == 'true' }}
-        shell: pwsh
-        env:
-          WINDOWS_SIGNING_CERTIFICATE_BASE64: ${{ secrets.WINDOWS_SIGNING_CERTIFICATE_BASE64 }}
-          WINDOWS_SIGNING_CERTIFICATE_PASSWORD: ${{ secrets.WINDOWS_SIGNING_CERTIFICATE_PASSWORD }}
-          WINDOWS_SIGNING_TIMESTAMP_URL: ${{ vars.WINDOWS_SIGNING_TIMESTAMP_URL }}
-        run: |
-          $certificate = Join-Path $env:RUNNER_TEMP "idescriptor-signing.pfx"
-          [IO.File]::WriteAllBytes($certificate, [Convert]::FromBase64String($env:WINDOWS_SIGNING_CERTIFICATE_BASE64))
-          $timestamp = if ($env:WINDOWS_SIGNING_TIMESTAMP_URL) { $env:WINDOWS_SIGNING_TIMESTAMP_URL } else { "http://timestamp.digicert.com" }
-          signtool sign /fd SHA256 /td SHA256 /tr $timestamp /f $certificate /p $env:WINDOWS_SIGNING_CERTIFICATE_PASSWORD target\deploy\idescriptor.exe
+      # - name: Patch Unicorn for Windows ARM64
+      #   if: ${{ matrix.asset_arch == 'arm64' }}
+      #   run: |
+      #     cargo run --release \
+      #       --manifest-path ../ipatool-rs/ipatool-core/Cargo.toml \
+      #       --bin patch-unicorn-windows-arm64 \
+      #       -- target/deploy/libunicorn.dll
 
       - name: Create portable ZIP
         id: portable_zip
         shell: pwsh
         run: |
           $version = "${{ inputs.version }}"
-          $zipName = "iDescriptor-$version-Windows_x86_64.portable.zip"
+          $zipName = "iDescriptor-$version-Windows_${{ matrix.asset_arch }}.portable.zip"
           if (Test-Path $zipName) {
               Remove-Item $zipName
           }
@@ -303,27 +285,100 @@ jobs:
         id: msi
         shell: pwsh
         run: |
-          $output = "iDescriptor-${{ inputs.version }}-Windows_x86_64.msi"
+          $output = "iDescriptor-${{ inputs.version }}-Windows_${{ matrix.asset_arch }}.msi"
           ./packaging/windows/msi/build.ps1 `
             -DeployDir "target/deploy" `
             -Version "${{ inputs.version }}" `
-            -OutputPath $output
+            -OutputPath $output `
+            -Architecture "${{ matrix.wix_arch }}"
           "msi_path=$((Resolve-Path $output).Path)" | Out-File -FilePath $env:GITHUB_OUTPUT -Append
 
-      - name: Sign MSI
-        if: ${{ env.HAS_WINDOWS_SIGNING == 'true' }}
+      - name: Upload unsigned Windows artifacts for SignPath
+        id: signpath_input
+        uses: actions/upload-artifact@v4
+        with:
+          name: signpath-unsigned-windows-${{ matrix.asset_arch }}
+          path: |
+            ${{ steps.msi.outputs.msi_path }}
+            ${{ steps.portable_zip.outputs.zip_path }}
+          if-no-files-found: error
+          retention-days: 1
+
+      - name: Sign Windows artifacts with SignPath
+        uses: signpath/github-action-submit-signing-request@v3
+        with:
+          api-token: ${{ secrets.SIGNPATH_API_TOKEN }}
+          organization-id: ${{ secrets.SIGNPATH_ORGANIZATION_ID }}
+          project-slug: ${{ vars.SIGNPATH_PROJECT_SLUG }}
+          signing-policy-slug: ${{ env.SIGNPATH_SIGNING_POLICY_SLUG }}
+          artifact-configuration-slug: ${{ vars.SIGNPATH_ARTIFACT_CONFIGURATION_SLUG }}
+          github-artifact-id: ${{ steps.signpath_input.outputs.artifact-id }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          wait-for-completion: true
+          wait-for-completion-timeout-in-seconds: 3600
+          output-artifact-directory: target/signpath-signed
+
+      - name: Validate signed Windows artifacts
+        id: signed_outputs
         shell: pwsh
-        env:
-          WINDOWS_SIGNING_CERTIFICATE_BASE64: ${{ secrets.WINDOWS_SIGNING_CERTIFICATE_BASE64 }}
-          WINDOWS_SIGNING_CERTIFICATE_PASSWORD: ${{ secrets.WINDOWS_SIGNING_CERTIFICATE_PASSWORD }}
-          WINDOWS_SIGNING_TIMESTAMP_URL: ${{ vars.WINDOWS_SIGNING_TIMESTAMP_URL }}
         run: |
-          $certificate = Join-Path $env:RUNNER_TEMP "idescriptor-signing.pfx"
-          if (-not (Test-Path $certificate)) {
-            [IO.File]::WriteAllBytes($certificate, [Convert]::FromBase64String($env:WINDOWS_SIGNING_CERTIFICATE_BASE64))
+          $signingPolicy = "${{ env.SIGNPATH_SIGNING_POLICY_SLUG }}"
+          $msiName = Split-Path -Leaf "${{ steps.msi.outputs.msi_path }}"
+          $zipName = Split-Path -Leaf "${{ steps.portable_zip.outputs.zip_path }}"
+          $signedDirectory = Join-Path $env:GITHUB_WORKSPACE "target\signpath-signed"
+          $signedMsi = Join-Path $signedDirectory $msiName
+          $signedZip = Join-Path $signedDirectory $zipName
+
+          function Assert-AuthenticodeSignature([string]$path) {
+            if ($signingPolicy -eq "test-signing") {
+              $signature = Get-AuthenticodeSignature -LiteralPath $path
+              $status = $signature.Status.ToString()
+
+              if (-not $signature.SignerCertificate) {
+                throw "The artifact returned by SignPath is not Authenticode signed: $path"
+              }
+
+              # The test certificate is intentionally self-signed and is not in
+              # the GitHub runner's trusted roots. Reject missing, damaged, or
+              # unsupported signatures while allowing that expected trust error.
+              if ($status -notin @("Valid", "NotTrusted", "UnknownError")) {
+                throw "The artifact returned by SignPath has an invalid Authenticode signature ($status): $path"
+              }
+
+              Write-Host "Test signature found: $path"
+              Write-Host "  Status: $status"
+              Write-Host "  Status message: $($signature.StatusMessage)"
+              Write-Host "  Signer: $($signature.SignerCertificate.Subject)"
+              Write-Host "  Thumbprint: $($signature.SignerCertificate.Thumbprint)"
+              return
+            }
+
+            signtool verify /pa /all /v $path
+            if ($LASTEXITCODE -ne 0) {
+              throw "The artifact returned by SignPath does not have a valid, trusted Authenticode signature: $path"
+            }
           }
-          $timestamp = if ($env:WINDOWS_SIGNING_TIMESTAMP_URL) { $env:WINDOWS_SIGNING_TIMESTAMP_URL } else { "http://timestamp.digicert.com" }
-          signtool sign /fd SHA256 /td SHA256 /tr $timestamp /f $certificate /p $env:WINDOWS_SIGNING_CERTIFICATE_PASSWORD "${{ steps.msi.outputs.msi_path }}"
+
+          if (-not (Test-Path -LiteralPath $signedMsi -PathType Leaf)) {
+            throw "SignPath did not return the expected MSI: $signedMsi"
+          }
+          if (-not (Test-Path -LiteralPath $signedZip -PathType Leaf)) {
+            throw "SignPath did not return the expected portable ZIP: $signedZip"
+          }
+
+          Assert-AuthenticodeSignature $signedMsi
+
+          $portableDirectory = Join-Path $env:RUNNER_TEMP "idescriptor-signed-portable"
+          Expand-Archive -LiteralPath $signedZip -DestinationPath $portableDirectory -Force
+          $signedExecutable = Join-Path $portableDirectory "idescriptor.exe"
+          if (-not (Test-Path -LiteralPath $signedExecutable -PathType Leaf)) {
+            throw "The portable ZIP returned by SignPath does not contain idescriptor.exe"
+          }
+
+          Assert-AuthenticodeSignature $signedExecutable
+
+          "msi_path=$signedMsi" | Out-File -FilePath $env:GITHUB_OUTPUT -Append
+          "zip_path=$signedZip" | Out-File -FilePath $env:GITHUB_OUTPUT -Append
 
       - name: Build Microsoft Store executable
         run: |
@@ -353,13 +408,14 @@ jobs:
           # TODO: Confirm both values against the final Partner Center product identity.
           $identity = if ($env:MS_STORE_IDENTITY_NAME) { $env:MS_STORE_IDENTITY_NAME } else { "com.idescriptor.idescriptor" }
           $publisher = if ($env:MS_STORE_PUBLISHER) { $env:MS_STORE_PUBLISHER } else { "CN=iDescriptor" }
-          $output = "iDescriptor-${{ inputs.version }}-Windows_x86_64.msix"
+          $output = "iDescriptor-${{ inputs.version }}-Windows_${{ matrix.asset_arch }}.msix"
           ./packaging/windows/msix/build.ps1 `
             -DeployDir "target/store-deploy" `
             -Version "${{ inputs.version }}" `
             -OutputPath $output `
             -IdentityName $identity `
-            -Publisher $publisher
+            -Publisher $publisher `
+            -Architecture "${{ matrix.wix_arch }}"
           "msix_path=$((Resolve-Path $output).Path)" | Out-File -FilePath $env:GITHUB_OUTPUT -Append
 
       # FIXME
@@ -381,21 +437,21 @@ jobs:
       - name: Upload Windows MSI artifact
         uses: actions/upload-artifact@v4
         with:
-          name: release-windows-x86_64
-          path: ${{ steps.msi.outputs.msi_path }}
+          name: release-windows-${{ matrix.asset_arch }}
+          path: ${{ steps.signed_outputs.outputs.msi_path }}
           if-no-files-found: error
 
       - name: Upload Windows portable ZIP artifact
         uses: actions/upload-artifact@v4
         with:
-          name: release-windows-x86_64-portable
-          path: ${{ steps.portable_zip.outputs.zip_path }}
+          name: release-windows-${{ matrix.asset_arch }}-portable
+          path: ${{ steps.signed_outputs.outputs.zip_path }}
           if-no-files-found: error
 
       - name: Upload Microsoft Store artifact
         uses: actions/upload-artifact@v4
         with:
-          name: store-windows-x86_64
+          name: store-windows-${{ matrix.asset_arch }}
           path: ${{ steps.msix.outputs.msix_path }}
           if-no-files-found: error
 
