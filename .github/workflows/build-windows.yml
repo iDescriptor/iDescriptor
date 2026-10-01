@@ -130,6 +130,7 @@ jobs:
               "${{ matrix.package_prefix }}-qt6-serialport"
               "${{ matrix.package_prefix }}-qt6-5compat"
               "${{ matrix.package_prefix }}-qt6-shadertools"
+              "${{ matrix.package_prefix }}-qt6-tools"
               "${{ matrix.package_prefix }}-qt6-translations"
             )
           fi
@@ -258,13 +259,17 @@ jobs:
           if [ "${{ matrix.asset_arch }}" = "arm64" ]; then
             qt_bin_dir="${qt_root_dir}/bin"
             qt_tools_dir="${qt_root_dir}/share/qt6/bin"
-            if [ ! -x "${qt_tools_dir}/qmlimportscanner.exe" ]; then
-              echo "Error: Qt QML import scanner not found: ${qt_tools_dir}/qmlimportscanner.exe"
-              exit 1
-            fi
+            for qt_tool in \
+              "${qt_tools_dir}/qmlimportscanner.exe" \
+              "${qt_bin_dir}/lconvert.exe"; do
+              if [ ! -x "${qt_tool}" ]; then
+                echo "Error: Required Qt deployment tool not found: ${qt_tool}"
+                exit 1
+              fi
+            done
             # The Qt version in the pinned MSYS2 archive starts
             # qmlimportscanner by name even though MSYS2 installs it here.
-            export PATH="${qt_tools_dir}:${PATH}"
+            export PATH="${qt_bin_dir}:${qt_tools_dir}:${PATH}"
           else
             qt_bin_dir="${qt_root_dir}/bin"
           fi
