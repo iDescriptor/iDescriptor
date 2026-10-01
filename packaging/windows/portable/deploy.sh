@@ -16,6 +16,7 @@ QT_BIN_PATH=""
 MSYS2_BIN_PATH="/c/msys64/mingw64/bin"  # default
 QML_SOURCE_DIR=""
 PROJECT_SOURCE_DIR=""
+ARCHITECTURE="x64"
 
 for arg in "$@"; do
     case $arg in
@@ -25,9 +26,15 @@ for arg in "$@"; do
         --msys2-bin-path=*) MSYS2_BIN_PATH="${arg#*=}" ;;
         --qml-source-dir=*) QML_SOURCE_DIR="${arg#*=}" ;;
         --project-source-dir=*) PROJECT_SOURCE_DIR="${arg#*=}" ;;
+        --architecture=*) ARCHITECTURE="${arg#*=}" ;;
         *) echo "Unknown argument: $arg"; exit 1 ;;
     esac
 done
+
+if [ "${ARCHITECTURE}" != "x64" ] && [ "${ARCHITECTURE}" != "arm64" ]; then
+    echo "Error: --architecture must be x64 or arm64"
+    exit 1
+fi
 
 # Validate required args
 for var_name in EXECUTABLE_PATH OUTPUT_DIR QT_BIN_PATH QML_SOURCE_DIR PROJECT_SOURCE_DIR; do
@@ -118,8 +125,8 @@ done
 echo "Successfully copied ${COPIED_PLUGIN_COUNT} requested GStreamer plugins"
 
 ADDITIONAL_DLLS=(
-    "libgcc_s_seh-1.dll"
-    "libstdc++-6.dll"
+    # TODO
+    # "libunicorn.dll"
     "libwinpthread-1.dll"
     "libgstreamer-1.0-0.dll"
     "libgstbase-1.0-0.dll"
@@ -161,7 +168,6 @@ ADDITIONAL_DLLS=(
     "libshaderc_shared.dll"
     "vulkan-1.dll"
     "libvidstab.dll"
-    "libgomp-1.dll"
     "postproc-58.dll"
     "libplacebo-351.dll"
     "libspirv-cross-c-shared.dll"
@@ -237,7 +243,6 @@ ADDITIONAL_DLLS=(
     "libheif.dll"
     "libopenh264-7.dll"
     "libopenjph-0.21.dll"
-    "libcrypto-3-x64.dll"
     "zlib1.dll"
     "libbrotlienc.dll"
     "libkvazaar-7.dll"
@@ -253,13 +258,29 @@ ADDITIONAL_DLLS=(
     # libplist for uxplay
     "libplist-2.0.dll"
     # libssl for openssl (idevice crate uses the system openssl)
-    "libssl-3-x64.dll"
     #gl plugins dependencies
     "libgstapp-1.0-0.dll"
     "libgstgl-1.0-0.dll"
     "libgstcontroller-1.0-0.dll"
     "libgraphene-1.0-0.dll"
 )
+
+if [ "${ARCHITECTURE}" = "arm64" ]; then
+    ADDITIONAL_DLLS+=(
+        "libc++.dll"
+        "libunwind.dll"
+        "libcrypto-3-arm64.dll"
+        "libssl-3-arm64.dll"
+    )
+else
+    ADDITIONAL_DLLS+=(
+        "libgcc_s_seh-1.dll"
+        "libstdc++-6.dll"
+        "libgomp-1.dll"
+        "libcrypto-3-x64.dll"
+        "libssl-3-x64.dll"
+    )
+fi
 
 echo "Copying additional MinGW runtime DLLs from MSYS2..."
 for DLL_NAME in "${ADDITIONAL_DLLS[@]}"; do
@@ -286,7 +307,12 @@ cp "${PROJECT_SOURCE_DIR}/install-bonjour.ps1" "${OUTPUT_DIR}/"
 cp "${PROJECT_SOURCE_DIR}/install-apple-drivers.ps1" "${OUTPUT_DIR}/"
 cp "${PROJECT_SOURCE_DIR}/install-win-fsp.silent.bat" "${OUTPUT_DIR}/"
 
-echo "Copying winfsp-x64.dll"
-cp "/c/Program Files (x86)/WinFsp/bin/winfsp-x64.dll" "${OUTPUT_DIR}/"
+if [ "${ARCHITECTURE}" = "arm64" ]; then
+    WINFSP_DLL="winfsp-a64.dll"
+else
+    WINFSP_DLL="winfsp-x64.dll"
+fi
+echo "Copying ${WINFSP_DLL}"
+cp "/c/Program Files (x86)/WinFsp/bin/${WINFSP_DLL}" "${OUTPUT_DIR}/"
 
 echo "=== Windows deployment completed ==="

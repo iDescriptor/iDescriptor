@@ -9,7 +9,7 @@
   <Identity Name="@IDENTITY_NAME@"
             Publisher="@PUBLISHER@"
             Version="@VERSION@"
-            ProcessorArchitecture="x64" />
+            ProcessorArchitecture="@ARCHITECTURE@" />
   <Properties>
     <DisplayName>iDescriptor</DisplayName>
     <PublisherDisplayName>iDescriptor</PublisherDisplayName>

@@ -3,7 +3,8 @@ param(
     [Parameter(Mandatory = $true)][string]$Version,
     [Parameter(Mandatory = $true)][string]$OutputPath,
     [Parameter(Mandatory = $true)][string]$IdentityName,
-    [Parameter(Mandatory = $true)][string]$Publisher
+    [Parameter(Mandatory = $true)][string]$Publisher,
+    [ValidateSet("x64", "arm64")][string]$Architecture = "x64"
 )
 
 $ErrorActionPreference = "Stop"
@@ -103,6 +104,7 @@ $manifest = Get-Content -LiteralPath (Join-Path $packageDir "AppxManifest.xml.in
 $manifest = $manifest.Replace('@IDENTITY_NAME@', $IdentityName)
 $manifest = $manifest.Replace('@PUBLISHER@', $Publisher)
 $manifest = $manifest.Replace('@VERSION@', $msixVersion)
+$manifest = $manifest.Replace('@ARCHITECTURE@', $Architecture)
 [IO.File]::WriteAllText((Join-Path $stagingDir "AppxManifest.xml"), $manifest, [Text.UTF8Encoding]::new($false))
 
 $assetDir = Join-Path $stagingDir "Assets"

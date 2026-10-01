@@ -74,7 +74,7 @@
     <WixVariable Id="WixUIDialogBmp" Value="$(var.MsiResources)\dialog.bmp" />
 
     <CustomAction Id="LaunchIDescriptor"
-                  BinaryRef="Wix4UtilCA_X64"
+                  BinaryRef="$(var.WixUtilBinary)"
                   DllEntry="WixUnelevatedShellExec"
                   Execute="immediate"
                   Return="check" />
