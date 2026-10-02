@@ -266,9 +266,9 @@ if [ "${ARCHITECTURE}" = "arm64" ]; then
     ADDITIONAL_DLLS+=(
         "libc++.dll"
         "libunwind.dll"
-        "libcrypto-3-arm64.dll"
+        "libcrypto-3.dll"
         # libssl for openssl (idevice crate uses the system openssl)
-        "libssl-3-arm64.dll"
+        "libssl-3.dll"
     )
 else
     ADDITIONAL_DLLS+=(
