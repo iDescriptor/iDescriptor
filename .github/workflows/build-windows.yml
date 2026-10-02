@@ -16,7 +16,6 @@ on:
 env:
   QT_VERSION: "6.9.3"
   GST_PLUGINS_GOOD_VERSION: "1.26.2"
-  LIBPLIST_VER: "2.7.0"
 
 jobs:
   build-windows:

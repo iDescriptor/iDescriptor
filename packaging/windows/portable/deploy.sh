@@ -255,9 +255,6 @@ ADDITIONAL_DLLS=(
     "libcryptopp.dll"
     "libde265-0.dll"
     "libbz2-1.dll"
-    # libplist for uxplay
-    "libplist-2.0.dll"
-    # libssl for openssl (idevice crate uses the system openssl)
     #gl plugins dependencies
     "libgstapp-1.0-0.dll"
     "libgstgl-1.0-0.dll"
@@ -270,6 +267,7 @@ if [ "${ARCHITECTURE}" = "arm64" ]; then
         "libc++.dll"
         "libunwind.dll"
         "libcrypto-3-arm64.dll"
+        # libssl for openssl (idevice crate uses the system openssl)
         "libssl-3-arm64.dll"
     )
 else
@@ -278,6 +276,7 @@ else
         "libstdc++-6.dll"
         "libgomp-1.dll"
         "libcrypto-3-x64.dll"
+        # libssl for openssl (idevice crate uses the system openssl)
         "libssl-3-x64.dll"
     )
 fi
@@ -299,10 +298,9 @@ GST_LIBEXEC_PATH="${MSYS2_BIN_PATH}/../libexec/gstreamer-1.0"
 mkdir -p "${OUTPUT_DIR}/gstreamer-1.0/libexec"
 cp "${GST_LIBEXEC_PATH}/gst-plugin-scanner.exe" "${OUTPUT_DIR}/gstreamer-1.0/libexec/"
 
-echo "Copying executables"
-# cp "${MSYS2_BIN_PATH}/iproxy.exe" "${OUTPUT_DIR}/"
 
 echo "Copying required scripts"
+# TODO: Bonjour is not required anymore, consider removing
 cp "${PROJECT_SOURCE_DIR}/install-bonjour.ps1" "${OUTPUT_DIR}/"
 cp "${PROJECT_SOURCE_DIR}/install-apple-drivers.ps1" "${OUTPUT_DIR}/"
 cp "${PROJECT_SOURCE_DIR}/install-win-fsp.silent.bat" "${OUTPUT_DIR}/"
