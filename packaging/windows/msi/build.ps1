@@ -139,7 +139,6 @@ if (-not $wixExecutable) {
 }
 
 Write-Host "Using WiX: $wixExecutable"
-$utilBinary = if ($Architecture -eq "arm64") { "Wix4UtilCA_ARM64" } else { "Wix4UtilCA_X64" }
 
 & $wixExecutable build `
     (Join-Path $packageDir "Product.wxs") `
@@ -150,7 +149,6 @@ $utilBinary = if ($Architecture -eq "arm64") { "Wix4UtilCA_ARM64" } else { "Wix4
     -d "Version=$normalizedVersion" `
     -d "MsiResources=$(Join-Path $packageDir 'resources')" `
     -d "SharedResources=$(Join-Path $repoRoot 'packaging\shared\resources\app-icon')" `
-    -d "WixUtilBinary=$utilBinary" `
     -o $resolvedOutputPath
 $wixExitCode = $LASTEXITCODE
 if ($null -eq $wixExitCode) {
