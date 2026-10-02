@@ -69,7 +69,7 @@ irecovery = { version = "0.2.1", features = ["tokio"] }
 lru = "0.18.0"
 zupdater = { path= "lib/zupdater"}
 # izeroconf = { path = "../izeroconf/zeroconf", default-features = false, features = ["pure-rust", "native-backend", "apple-mobile-device-metadata"] }
-izeroconf = { git = "https://github.com/uncor3/izeroconf", default-features = false, features = ["pure-rust", "native-backend", "apple-mobile-device-metadata"], rev = "e459d98a89dccd77e959cb45683e42150e46edd6" }
+izeroconf = { git = "https://github.com/uncor3/izeroconf", default-features = false, features = ["pure-rust", "native-backend", "apple-mobile-device-metadata"], rev = "5a29d3cb9ed46d3503867d9c444739283b8558f5" }
 # rsplay = { path = "../rsplay" }
 rsplay = { git = "https://github.com/iDescriptor/rsplay", rev = "44f559c8119b07ba9ca3fd274b9b6a29f3fe7c1d" }
 

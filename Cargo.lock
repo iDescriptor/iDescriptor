@@ -2484,7 +2484,7 @@ checksum = "8f42a60cbdf9a97f5d2305f08a87dc4e09308d1276d28c869c684d7777685682"
 [[package]]
 name = "izeroconf"
 version = "0.19.0"
-source = "git+https://github.com/uncor3/izeroconf?rev=e459d98a89dccd77e959cb45683e42150e46edd6#e459d98a89dccd77e959cb45683e42150e46edd6"
+source = "git+https://github.com/uncor3/izeroconf?rev=5a29d3cb9ed46d3503867d9c444739283b8558f5#5a29d3cb9ed46d3503867d9c444739283b8558f5"
 dependencies = [
  "avahi-sys",
  "bonjour-sys",
@@ -5963,7 +5963,7 @@ dependencies = [
 [[package]]
 name = "zeroconf-macros"
 version = "0.2.0"
-source = "git+https://github.com/uncor3/izeroconf?rev=e459d98a89dccd77e959cb45683e42150e46edd6#e459d98a89dccd77e959cb45683e42150e46edd6"
+source = "git+https://github.com/uncor3/izeroconf?rev=5a29d3cb9ed46d3503867d9c444739283b8558f5#5a29d3cb9ed46d3503867d9c444739283b8558f5"
 dependencies = [
  "quote",
  "syn 2.0.117",
