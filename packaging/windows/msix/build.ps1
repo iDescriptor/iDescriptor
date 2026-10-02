@@ -76,7 +76,6 @@ function Resolve-MakeAppx {
 }
 
 $packageDir = Split-Path -Parent $MyInvocation.MyCommand.Path
-$repoRoot = (Resolve-Path (Join-Path $packageDir "..\..\..")).Path
 $temporaryRoot = if ($env:RUNNER_TEMP) { $env:RUNNER_TEMP } else { [IO.Path]::GetTempPath() }
 $stagingDir = Join-Path $temporaryRoot "iDescriptor-msix"
 $normalizedVersion = $Version.TrimStart('v')
@@ -109,17 +108,20 @@ $manifest = $manifest.Replace('@ARCHITECTURE@', $Architecture)
 
 $assetDir = Join-Path $stagingDir "Assets"
 New-Item -ItemType Directory -Force -Path $assetDir | Out-Null
-$icon = Join-Path $repoRoot "packaging\shared\resources\app-icon\icon-512.png"
-$assets = @{
-    "StoreLogo.png" = "50x50"
-    "Square44x44Logo.png" = "44x44"
-    "Square150x150Logo.png" = "150x150"
-    "Square310x310Logo.png" = "310x310"
-    "Wide310x150Logo.png" = "310x150"
-}
-foreach ($asset in $assets.GetEnumerator()) {
-    & magick $icon -background none -gravity center -resize $asset.Value -extent $asset.Value (Join-Path $assetDir $asset.Key)
-    if ($LASTEXITCODE -ne 0) { throw "Failed to generate MSIX asset $($asset.Key)" }
+$assetSourceDir = Join-Path $packageDir "Assets"
+$requiredAssets = @(
+    "StoreLogo.png",
+    "Square44x44Logo.png",
+    "Square150x150Logo.png",
+    "Square310x310Logo.png",
+    "Wide310x150Logo.png"
+)
+foreach ($asset in $requiredAssets) {
+    $source = Join-Path $assetSourceDir $asset
+    if (-not (Test-Path -LiteralPath $source -PathType Leaf)) {
+        throw "Required MSIX asset was not found: $source"
+    }
+    Copy-Item -LiteralPath $source -Destination (Join-Path $assetDir $asset) -Force
 }
 
 $resolvedOutputPath = [IO.Path]::GetFullPath($OutputPath)

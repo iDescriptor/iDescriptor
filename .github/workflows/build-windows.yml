@@ -431,10 +431,6 @@ jobs:
           popd
           cp target/release/idescriptor.exe target/store-deploy/idescriptor.exe
 
-      - name: Install MSIX asset tooling
-        shell: pwsh
-        run: choco install imagemagick.app -y --no-progress
-
       - name: Build and validate MSIX
         id: msix
         shell: pwsh
