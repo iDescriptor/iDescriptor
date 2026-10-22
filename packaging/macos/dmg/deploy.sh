@@ -42,6 +42,15 @@ rm -rf "${APP_PATH}"
 mkdir -p "${APP_PATH}/Contents/MacOS" "${APP_PATH}/Contents/Resources" "${APP_PATH}/Contents/Frameworks"
 cp "${CARGO_EXECUTABLE}" "${APP_PATH}/Contents/MacOS/iDescriptor"
 chmod +x "${APP_PATH}/Contents/MacOS/iDescriptor"
+
+# ipatool loads Unicorn dynamically for SAP request signing.
+UNICORN_DYLIB="$(brew --prefix unicorn)/lib/libunicorn.2.dylib"
+if [ ! -f "${UNICORN_DYLIB}" ]; then
+  echo "Error: Unicorn library not found at ${UNICORN_DYLIB}"
+  exit 1
+fi
+cp -L "${UNICORN_DYLIB}" "${APP_PATH}/Contents/Frameworks/libunicorn.2.dylib"
+install_name_tool -id "@rpath/libunicorn.2.dylib" "${APP_PATH}/Contents/Frameworks/libunicorn.2.dylib"
 cp "packaging/macos/dmg/Info.plist" "${APP_PATH}/Contents/Info.plist"
 cp "packaging/shared/resources/app-icon/icon.icns" "${APP_PATH}/Contents/Resources/iDescriptor.icns"
 plutil -replace CFBundleShortVersionString -string "${VERSION#v}" "${APP_PATH}/Contents/Info.plist"
