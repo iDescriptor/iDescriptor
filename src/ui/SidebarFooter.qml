@@ -66,7 +66,7 @@ Item {
                 enabled: AirplayImp.mode !== 1
                          && AirplayImp.state !== 1
                          && AirplayImp.state !== 4
-                icon.source: "qrc:/resources/icons/material-symbols_airplay-outline-rounded.svg"
+                icon.source: "qrc:/resources/icons/airplay-alt.svg"
                 toolTipText: {
                     if (AirplayImp.mode === 1)
                         return qsTr("Close Screen Mirroring before starting the audio receiver")
