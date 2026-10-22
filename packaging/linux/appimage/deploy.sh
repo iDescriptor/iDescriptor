@@ -66,17 +66,31 @@ fi
 
 # Prepare AppDir structure
 mkdir -p "$APPDIR/usr/bin"
+mkdir -p "$APPDIR/usr/lib"
 mkdir -p "$APPDIR/usr/share/applications"
-for size in 16 32 256 512; do
-    mkdir -p "$APPDIR/usr/share/icons/hicolor/${size}x${size}/apps"
-done
+# Only copy 512x512
+# because of https://github.com/iDescriptor/iDescriptor/issues/123
+# not sure if there is a better way to fix this
+mkdir -p "$APPDIR/usr/share/icons/hicolor/512x512/apps"
 
-# Copy executable and icon
 cp target/release/idescriptor "$APPDIR/usr/bin/idescriptor"
-cp packaging/shared/resources/app-icon/icon-16.png "$APPDIR/usr/share/icons/hicolor/16x16/apps/io.github.idescriptor.iDescriptor.png"
-cp packaging/shared/resources/app-icon/icon-32.png "$APPDIR/usr/share/icons/hicolor/32x32/apps/io.github.idescriptor.iDescriptor.png"
-cp packaging/shared/resources/app-icon/icon-256.png "$APPDIR/usr/share/icons/hicolor/256x256/apps/io.github.idescriptor.iDescriptor.png"
 cp packaging/shared/resources/app-icon/icon-512.png "$APPDIR/usr/share/icons/hicolor/512x512/apps/io.github.idescriptor.iDescriptor.png"
+
+# ipatool's SAP signer loads Unicorn dynamically, so linuxdeploy cannot infer
+# this dependency from the executable. Bundle it explicitly.
+UNICORN_LIB="/usr/local/lib/libunicorn.so.2"
+if [ ! -f "$UNICORN_LIB" ]; then
+    UNICORN_LIB="$(ldconfig -p | awk '/libunicorn\.so\.2 / { print $NF; exit }')"
+fi
+if [ -z "$UNICORN_LIB" ] || [ ! -f "$UNICORN_LIB" ]; then
+    echo "Error: libunicorn.so.2 was not found"
+    exit 1
+fi
+cp -L "$UNICORN_LIB" "$APPDIR/usr/lib/libunicorn.so.2"
+if [ -f /usr/local/share/licenses/unicorn/COPYING ]; then
+    mkdir -p "$APPDIR/usr/share/licenses/unicorn"
+    cp /usr/local/share/licenses/unicorn/COPYING "$APPDIR/usr/share/licenses/unicorn/COPYING"
+fi
 
 
 # Bundle GStreamer plugins and helpers
@@ -235,6 +249,22 @@ if [ "${#APPIMAGE_FILES[@]}" -eq 1 ]; then
         echo "Generated AppImage architecture does not match $ASSET_ARCH"
         exit 1
     }
+
+    # best effort to make sure .DirIcon resolves to 512x512 icon
+    rm -rf squashfs-root
+    "./$OUTPUT" --appimage-extract .DirIcon >/dev/null
+    DIR_ICON_TARGET=$(readlink squashfs-root/.DirIcon)
+    rm -rf squashfs-root
+    "./$OUTPUT" --appimage-extract "$DIR_ICON_TARGET" >/dev/null
+    ROOT_ICON_TARGET=$(readlink "squashfs-root/$DIR_ICON_TARGET")
+    rm -rf squashfs-root
+
+    EXPECTED_ICON_TARGET="usr/share/icons/hicolor/512x512/apps/io.github.idescriptor.iDescriptor.png"
+    if [ "$ROOT_ICON_TARGET" != "$EXPECTED_ICON_TARGET" ]; then
+        echo "Generated AppImage root icon points to '$ROOT_ICON_TARGET', expected '$EXPECTED_ICON_TARGET'"
+        exit 1
+    fi
+
     echo "AppImage created: $OUTPUT"
 else
     echo "Error: Expected exactly one generated iDescriptor AppImage, found ${#APPIMAGE_FILES[@]}."
