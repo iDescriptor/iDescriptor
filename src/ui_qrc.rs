@@ -124,6 +124,7 @@ qrc!(pub qml,
 qrc!(pub linux_qml,
     "/" {
         "src/ui/ZLinuxWindow.qml",
+        "src/ui/KeyringPassphraseDialog.qml",
     }
 );
 
@@ -137,6 +138,7 @@ qrc!(pub windows_qml,
         "src/ui/base/+windows/DefaultWindow.qml",
         "src/ui/base/+windows/ToolWindow.qml",
         "src/ui/base/+windows/Spinner.qml",
+        "src/ui/KeyringPassphraseDialog.qml",
     }
 );
 
