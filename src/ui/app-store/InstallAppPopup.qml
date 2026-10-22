@@ -12,19 +12,24 @@ AnimatedDialog {
     id: root
     required property string bundleId
     required property string appName
+    property string iconSource: ""
+    property string appDescription: ""
+    property string resolvedDescription: ""
+    property string resolvedBundleId: ""
+    property int metadataRequestGeneration: 0
+    readonly property string descriptionPreview: Helpers.appDescriptionPreview(
+        (resolvedBundleId === bundleId ? resolvedDescription : "") || appDescription)
+    property string resolvedIconSource: ""
+    readonly property string effectiveIconSource: iconSource.length > 0
+                                                   ? iconSource
+                                                   : (resolvedBundleId === bundleId ? resolvedIconSource : "")
 
-    background: Rectangle {
-        radius: 10
-        color: palette.window
-        border.color: Qt.rgba(0, 0, 0, 0.12)
-        border.width: 1
-    }
-    padding: 20
+    padding: 24
 
     modal: true
     focus: true
-    width: 500
-    title: qsTr("Install IPA")
+    width: 540
+    title: qsTr("Install App")
     standardButtons: Dialog.NoButton
     closePolicy: root.installing ? Popup.NoAutoClose : Popup.CloseOnPressOutside
 
@@ -39,22 +44,41 @@ AnimatedDialog {
     property real progress: 0
     property string stateText: ""
     property string errorText: ""
+    property string phase: ""
     property string resolvedAppName: ""
     readonly property string effectiveAppName: root.appName.length > 0
                                                 ? root.appName
-                                                : root.resolvedAppName
+                                                : (root.resolvedBundleId === root.bundleId ? root.resolvedAppName : "")
+    readonly property bool completed: !installing && phase === "done" && !errorText.length
+    readonly property string progressText: progress >= 0
+                                                   ? qsTr("%1%").arg(Math.round(progress * 100))
+                                                   : ""
 
-    function resolveAppName() {
-        root.resolvedAppName = ""
+    function clearAppMetadata() {
+        // Invalidate pending requests, including an earlier request for the same app.
+        metadataRequestGeneration += 1
+        resolvedBundleId = ""
+        resolvedAppName = ""
+        resolvedIconSource = ""
+        resolvedDescription = ""
+    }
 
-        if (root.appName.length > 0 || root.bundleId.length === 0)
+    function resolveAppMetadata() {
+        clearAppMetadata()
+        if (bundleId.length === 0 || (appName.length > 0 && iconSource.length > 0 && appDescription.length > 0))
             return
 
-        const requestedBundleId = root.bundleId
-        Helpers.fetch_app_name(requestedBundleId, function(name) {
+        const requestedBundleId = bundleId
+        const requestGeneration = metadataRequestGeneration
+        Helpers.fetch_app(requestedBundleId, function(app, error) {
             // Ignore a response for an app that is no longer displayed.
-            if (root.bundleId === requestedBundleId && root.appName.length === 0)
-                root.resolvedAppName = name
+            if (root.metadataRequestGeneration !== requestGeneration
+                    || root.bundleId !== requestedBundleId || error || !app)
+                return
+            root.resolvedAppName = app.trackName || ""
+            root.resolvedIconSource = app.artworkUrl100 || app.artworkUrl512 || app.artworkUrl60 || ""
+            root.resolvedDescription = app.description || ""
+            root.resolvedBundleId = requestedBundleId
         })
     }
 
@@ -64,6 +88,7 @@ AnimatedDialog {
         progress = 0
         stateText = ""
         errorText = ""
+        phase = ""
         selectedDeviceIndex = hasDevice ? 0 : -1
     }
 
@@ -81,6 +106,7 @@ AnimatedDialog {
 
         errorText = ""
         progress = -1
+        phase = "download"
         stateText = qsTr("Preparing IPA download...")
 
         const id = apps.install_app(bundleId, selectedDevice.udid)
@@ -95,11 +121,19 @@ AnimatedDialog {
         installing = true
     }
 
-    onOpened: {
+    onBundleIdChanged: {
+        if (visible)
+            resolveAppMetadata()
+        else
+            clearAppMetadata()
+    }
+
+    onAboutToShow: {
         resetState()
-        resolveAppName()
+        resolveAppMetadata()
     }
     onClosed: {
+        clearAppMetadata()
         if (taskId.length)
             apps.cancel_task(taskId)
         taskId = ""
@@ -142,6 +176,7 @@ AnimatedDialog {
 
             root.installing = true
             root.progress = progress
+            root.phase = phase
             root.stateText = phase === "install"
                     ? qsTr("Installing IPA on device...")
                     : qsTr("Downloading IPA...")
@@ -155,6 +190,7 @@ AnimatedDialog {
             root.installing = false
             root.progress = success ? 1 : 0
             root.errorText = success ? "" : (error || qsTr("Installation failed."))
+            root.phase = success ? "done" : "error"
             root.stateText = success ? qsTr("Installation finished") : root.errorText
         }
     }
@@ -167,87 +203,225 @@ AnimatedDialog {
         contentItem: ColumnLayout {
             id: installContent
             anchors.fill: parent
-            spacing: 14
+            spacing: 18
 
-            Label {
+            RowLayout {
                 Layout.fillWidth: true
-                text: root.effectiveAppName
-                font.pixelSize: 18
-                font.bold: true
-                elide: Text.ElideRight
-            }
+                spacing: 16
 
-            Label {
-                Layout.fillWidth: true
-                text: root.bundleId
-                color: "#6e6e73"
-                elide: Text.ElideMiddle
-            }
-
-            Label {
-                Layout.fillWidth: true
-                text: qsTr("Select a connected device")
-                font.bold: true
-            }
-
-            ComboBox {
-                id: deviceCombo
-                Layout.minimumWidth: 220
-                Layout.preferredWidth: 220
-                enabled: root.hasDevice && !root.installing
-                model: DeviceContext.devices
-                textRole: "text"
-                valueRole: "udid"
-                currentIndex: root.selectedDeviceIndex
-
-                onActivated: function(index) {
-                    root.selectedDeviceIndex = index
+                IconLoader {
+                    Layout.preferredWidth: 64
+                    Layout.preferredHeight: 64
+                    radius: 15
+                    iconSource: root.effectiveIconSource
                 }
 
-                onCountChanged: {
-                    if (count === 0)
-                        root.selectedDeviceIndex = -1
-                    else if (root.selectedDeviceIndex < 0 || root.selectedDeviceIndex >= count)
-                        root.selectedDeviceIndex = 0
+                ColumnLayout {
+                    Layout.fillWidth: true
+                    spacing: 3
+
+                    Label {
+                        Layout.fillWidth: true
+                        text: root.effectiveAppName
+                        color: Theme.text
+                        font.pixelSize: 20
+                        font.weight: Font.DemiBold
+                        elide: Text.ElideRight
+                    }
+
+                    Label {
+                        Layout.fillWidth: true
+                        text: root.bundleId
+                        color: Theme.textMuted
+                        font.pixelSize: 12
+                        elide: Text.ElideMiddle
+                    }
+
+                    Label {
+                        Layout.fillWidth: true
+                        text: root.descriptionPreview
+                        visible: text.length > 0
+                        textFormat: Text.PlainText
+                        color: Theme.textMuted
+                        font.pixelSize: 13
+                        wrapMode: Text.WordWrap
+                        maximumLineCount: 2
+                        elide: Text.ElideRight
+                    }
                 }
             }
 
-            Label {
+            Rectangle {
                 Layout.fillWidth: true
-                visible: !root.hasDevice
-                text: qsTr("No device connected.")
-                color: "#6e6e73"
-                wrapMode: Text.WordWrap
+                implicitHeight: deviceColumn.implicitHeight + 28
+                radius: 14
+                color: Theme.groupedBackground
+                border.color: Theme.separator
+                border.width: 1
+
+                ColumnLayout {
+                    id: deviceColumn
+                    anchors.fill: parent
+                    anchors.margins: 14
+                    spacing: 9
+
+                    RowLayout {
+                        Layout.fillWidth: true
+
+                        Label {
+                            Layout.fillWidth: true
+                            text: qsTr("Install on")
+                            color: Theme.text
+                            font.weight: Font.DemiBold
+                        }
+                    }
+
+                    ComboBox {
+                        id: deviceCombo
+                        Layout.fillWidth: true
+                        enabled: root.hasDevice && !root.installing
+                        model: DeviceContext.devices
+                        textRole: "text"
+                        valueRole: "udid"
+                        currentIndex: root.selectedDeviceIndex
+
+                        onActivated: function(index) {
+                            root.selectedDeviceIndex = index
+                        }
+
+                        onCountChanged: {
+                            if (count === 0)
+                                root.selectedDeviceIndex = -1
+                            else if (root.selectedDeviceIndex < 0 || root.selectedDeviceIndex >= count)
+                                root.selectedDeviceIndex = 0
+                        }
+                    }
+
+                    Label {
+                        Layout.fillWidth: true
+                        visible: !root.hasDevice
+                        text: qsTr("Connect and trust an Apple device to continue.")
+                        color: Theme.textMuted
+                        font.pixelSize: 12
+                        wrapMode: Text.WordWrap
+                    }
+                }
             }
 
-            ProgressBar {
+            Rectangle {
                 Layout.fillWidth: true
-                visible: root.installing || root.progress > 0
-                indeterminate: root.installing && root.progress < 0
-                from: 0
-                to: 1
-                value: Math.max(0, root.progress)
+                implicitHeight: statusColumn.implicitHeight + 28
+                radius: 14
+                visible: root.installing || root.stateText.length > 0
+                color: root.errorText.length
+                       ? Qt.rgba(Theme.systemRed.r, Theme.systemRed.g, Theme.systemRed.b, Theme.darkMode ? 0.13 : 0.08)
+                       : root.completed
+                         ? Qt.rgba(Theme.systemGreen.r, Theme.systemGreen.g, Theme.systemGreen.b, Theme.darkMode ? 0.13 : 0.08)
+                         : Theme.softBg
+                border.color: root.errorText.length
+                              ? Qt.rgba(Theme.systemRed.r, Theme.systemRed.g, Theme.systemRed.b, 0.28)
+                              : root.completed
+                                ? Qt.rgba(Theme.systemGreen.r, Theme.systemGreen.g, Theme.systemGreen.b, 0.28)
+                                : Theme.separator
+                border.width: 1
+
+                ColumnLayout {
+                    id: statusColumn
+                    anchors.fill: parent
+                    anchors.margins: 14
+                    spacing: 10
+
+                    RowLayout {
+                        Layout.fillWidth: true
+
+                        Label {
+                            Layout.fillWidth: true
+                            text: root.stateText
+                            color: root.errorText.length ? Theme.dangerText : Theme.text
+                            font.weight: Font.DemiBold
+                            wrapMode: Text.WordWrap
+                        }
+
+                        Label {
+                            visible: root.installing && root.progress >= 0
+                            text: root.progressText
+                            color: Theme.textMuted
+                        }
+                    }
+
+                    ProgressBar {
+                        Layout.fillWidth: true
+                        visible: root.installing
+                        indeterminate: root.progress < 0
+                        from: 0
+                        to: 1
+                        value: Math.max(0, root.progress)
+                    }
+
+                    RowLayout {
+                        Layout.fillWidth: true
+                        visible: root.installing
+                        spacing: 8
+
+                        Rectangle {
+                            Layout.fillWidth: true
+                            Layout.preferredHeight: 3
+                            radius: 2
+                            color: root.phase === "download" || root.phase === "install"
+                                   ? Theme.systemBlue : Theme.separator
+                        }
+
+                        Rectangle {
+                            Layout.fillWidth: true
+                            Layout.preferredHeight: 3
+                            radius: 2
+                            color: root.phase === "install" ? Theme.systemBlue : Theme.separator
+                        }
+                    }
+
+                    RowLayout {
+                        Layout.fillWidth: true
+                        visible: root.installing
+
+                        Label {
+                            Layout.fillWidth: true
+                            text: qsTr("Download")
+                            color: root.phase === "download" ? Theme.text : Theme.textMuted
+                            font.pixelSize: 11
+                        }
+
+                        Label {
+                            Layout.fillWidth: true
+                            text: qsTr("Install")
+                            color: root.phase === "install" ? Theme.text : Theme.textMuted
+                            font.pixelSize: 11
+                            horizontalAlignment: Text.AlignRight
+                        }
+                    }
+                }
             }
 
-            Label {
+            Rectangle {
                 Layout.fillWidth: true
-                text: root.errorText.length ? root.errorText : root.stateText
-                color: root.errorText.length ? "#c00" : "#6e6e73"
-                wrapMode: Text.WordWrap
-                visible: text.length > 0
+                Layout.preferredHeight: 1
+                color: Theme.separator
             }
 
             RowLayout {
                 Layout.fillWidth: true
+                spacing: 10
+
                 Item { Layout.fillWidth: true }
 
                 Button {
                     text: root.installing ? qsTr("Cancel") : qsTr("Close")
+                    flat: true
                     onClicked: root.requestClose()
                 }
 
                 Button {
-                    text: qsTr("Install")
+                    text: root.completed ? qsTr("Install Again") : qsTr("Install")
+                    highlighted: true
                     enabled: !root.installing && root.bundleId.length > 0 && root.selectedDevice
                     onClicked: root.startInstall()
                 }

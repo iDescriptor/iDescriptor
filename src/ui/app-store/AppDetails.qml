@@ -61,6 +61,8 @@ Item {
         id: installPopup
         bundleId: root.bundleId
         appName: root.appName
+        iconSource: root.iconSource
+        appDescription: (root.details && root.details.description) || root.app.description || ""
         anchors.centerIn: parent
     }
 
@@ -68,6 +70,8 @@ Item {
         id: getIpaPopup
         bundleId: root.bundleId
         appName: root.appName
+        iconSource: root.iconSource
+        appDescription: (root.details && root.details.description) || root.app.description || ""
         anchors.centerIn: parent
     }
 

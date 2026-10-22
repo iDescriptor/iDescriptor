@@ -16,10 +16,14 @@ AnimatedDialog {
     closePolicy: Popup.CloseOnEscape | Popup.CloseOnPressOutside
     anchors.centerIn: Overlay.overlay
     width: 380
-    height: 460
+    height: Math.min(Overlay.overlay.height - 32, usesEncryptedAccountFile ? 650 : 460)
 
     property string email: ""
     property string password: ""
+    property string keyringPassphrase: ""
+    property string keyringPassphraseConfirmation: ""
+    property bool keyringPassphraseVisible: false
+    property bool rememberKeyringPassphrase: Qt.platform.os === "windows"
     property string activeRequestId: ""
     property string credentialError: ""
     property string codeError: ""
@@ -34,13 +38,23 @@ AnimatedDialog {
     property string queuedCode: ""
     property var codeDigits: ["", "", "", "", "", ""]
 
-    readonly property bool credentialsReady: email.trim().length > 0 && password.length > 0
+    readonly property bool usesEncryptedAccountFile: apps.state.usesEncryptedAccountFile || false
+    readonly property bool keyringPassphraseReady: !usesEncryptedAccountFile
+                                                   || (keyringPassphrase.length > 0
+                                                       && keyringPassphrase === keyringPassphraseConfirmation)
+    readonly property bool credentialsReady: email.trim().length > 0
+                                             && password.length > 0
+                                             && keyringPassphraseReady
     readonly property bool codeReady: codeDigits.join("").length === 6
     readonly property bool waitingForCode: activeRequestId.length > 0
 
     function resetFlow() {
         email = ""
         password = ""
+        keyringPassphrase = ""
+        keyringPassphraseConfirmation = ""
+        keyringPassphraseVisible = false
+        rememberKeyringPassphrase = Qt.platform.os === "windows"
         activeRequestId = ""
         credentialError = ""
         codeError = ""
@@ -62,7 +76,12 @@ AnimatedDialog {
         credentialError = ""
         systemError = ""
         credentialsLoading = true
-        apps.sign_in(email.trim(), password)
+        apps.sign_in(
+            email.trim(),
+            password,
+            keyringPassphrase,
+            rememberKeyringPassphrase
+        )
     }
 
     function submitCode() {
@@ -75,7 +94,12 @@ AnimatedDialog {
             apps.auth_code_received(activeRequestId, codeDigits.join(""))
         } else {
             queuedCode = codeDigits.join("")
-            apps.sign_in(email.trim(), password)
+            apps.sign_in(
+                email.trim(),
+                password,
+                keyringPassphrase,
+                rememberKeyringPassphrase
+            )
         }
     }
 
@@ -154,7 +178,7 @@ AnimatedDialog {
         focusCredentialField("password")
     }
 
-    onOpened: {
+    onAboutToShow: {
         resetFlow()
         Qt.callLater(function() { dialog.focusCredentialField("email") })
     }
@@ -162,6 +186,9 @@ AnimatedDialog {
     onClosed: {
         if (!closingAfterSuccess)
             cancelPendingCode()
+        password = ""
+        keyringPassphrase = ""
+        keyringPassphraseConfirmation = ""
         credentialsLoading = false
         codeLoading = false
     }
@@ -358,7 +385,12 @@ AnimatedDialog {
                             dialog.password = text
                             dialog.credentialError = ""
                         }
-                        onAccepted: dialog.startSignIn()
+                        onAccepted: {
+                            if (dialog.usesEncryptedAccountFile)
+                                keyringPassphraseField.forceActiveFocus()
+                            else
+                                dialog.startSignIn()
+                        }
 
                         Connections {
                             target: dialog
@@ -421,6 +453,115 @@ AnimatedDialog {
                         color: App.Theme.dangerText
                         font.pixelSize: 11
                         wrapMode: Text.WordWrap
+                    }
+                }
+
+                ColumnLayout {
+                    Layout.fillWidth: true
+                    visible: dialog.usesEncryptedAccountFile
+                    spacing: 6
+
+                    Text {
+                        Layout.fillWidth: true
+                        text: qsTr("Keyring passphrase")
+                        color: App.Theme.text
+                        font.pixelSize: 12
+                        font.weight: Font.DemiBold
+                    }
+
+                    Text {
+                        Layout.fillWidth: true
+                        text: qsTr("This separate passphrase encrypts the account file shared with ipatool.")
+                        color: App.Theme.textMuted
+                        font.pixelSize: 11
+                        wrapMode: Text.WordWrap
+                    }
+
+                    RowLayout {
+                        Layout.fillWidth: true
+                        spacing: 6
+
+                        TextField {
+                            id: keyringPassphraseField
+                            Layout.fillWidth: true
+                            Layout.preferredHeight: 36
+                            enabled: !dialog.credentialsLoading
+                            text: dialog.keyringPassphrase
+                            placeholderText: qsTr("Create a keyring passphrase")
+                            echoMode: dialog.keyringPassphraseVisible ? TextInput.Normal : TextInput.Password
+                            color: App.Theme.text
+                            placeholderTextColor: App.Theme.textMuted
+                            onTextChanged: {
+                                dialog.keyringPassphrase = text
+                                dialog.credentialError = ""
+                            }
+                            onAccepted: keyringPassphraseConfirmationField.forceActiveFocus()
+                        }
+
+                        Button {
+                            Layout.preferredHeight: 36
+                            text: qsTr("Generate")
+                            enabled: !dialog.credentialsLoading
+                            onClicked: {
+                                const generated = apps.generate_keyring_passphrase()
+                                if (!generated.length)
+                                    return
+                                dialog.keyringPassphrase = generated
+                                dialog.keyringPassphraseConfirmation = generated
+                                dialog.keyringPassphraseVisible = true
+                            }
+                        }
+                    }
+
+                    TextField {
+                        id: keyringPassphraseConfirmationField
+                        Layout.fillWidth: true
+                        Layout.preferredHeight: 36
+                        enabled: !dialog.credentialsLoading
+                        text: dialog.keyringPassphraseConfirmation
+                        placeholderText: qsTr("Confirm keyring passphrase")
+                        echoMode: dialog.keyringPassphraseVisible ? TextInput.Normal : TextInput.Password
+                        color: App.Theme.text
+                        placeholderTextColor: App.Theme.textMuted
+                        onTextChanged: {
+                            dialog.keyringPassphraseConfirmation = text
+                            dialog.credentialError = ""
+                        }
+                        onAccepted: dialog.startSignIn()
+                    }
+
+                    Text {
+                        Layout.fillWidth: true
+                        visible: dialog.keyringPassphraseConfirmation.length > 0
+                                 && dialog.keyringPassphrase !== dialog.keyringPassphraseConfirmation
+                        text: qsTr("The keyring passphrases do not match.")
+                        color: App.Theme.dangerText
+                        font.pixelSize: 11
+                    }
+
+                    RowLayout {
+                        Layout.fillWidth: true
+
+                        CheckBox {
+                            visible: Qt.platform.os === "windows"
+                            checked: dialog.rememberKeyringPassphrase
+                            text: qsTr("Remember on this computer")
+                            onToggled: dialog.rememberKeyringPassphrase = checked
+                        }
+
+                        Item { Layout.fillWidth: true }
+
+                        Button {
+                            text: qsTr("Copy")
+                            enabled: dialog.keyringPassphrase.length > 0
+                            onClicked: QmlUtils.copy_to_clipboard(dialog.keyringPassphrase)
+                        }
+
+                        Button {
+                            text: dialog.keyringPassphraseVisible ? qsTr("Hide") : qsTr("Show")
+                            enabled: dialog.keyringPassphrase.length > 0
+                            onClicked: dialog.keyringPassphraseVisible = !dialog.keyringPassphraseVisible
+                        }
                     }
                 }
 

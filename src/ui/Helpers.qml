@@ -9,6 +9,14 @@ QtObject {
     id: root
     property var size_units : ["B","KB","MB","GB","TB"]
 
+    function appDescriptionPreview(description) {
+        const text = String(description || "").replace(/\s+/g, " ").trim()
+        const characters = Array.from(text)
+        return characters.length > 160
+                ? characters.slice(0, 159).join("").trim() + "…"
+                : text
+    }
+
     function fetchAppIconFromApple(bundleId, cb) {
         if (!bundleId) { cb(""); return; }
         fetch_app(bundleId, function(app, error) {

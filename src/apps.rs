@@ -5,7 +5,7 @@ use crate::{RUNTIME, device_ctx::get_device, qt_threading::QtThreading, qvariant
 use anyhow::Context;
 use idevice::utils::installation::install_package_with_callback;
 use ipatool::error::IpaToolError;
-use ipatool::{DownloadArgs, IpaTool};
+use ipatool::{CredentialBackend, DownloadArgs, IpaTool};
 use log::{debug, error, info};
 use macros::QtThreading;
 use qmetaobject::prelude::*;
@@ -19,10 +19,60 @@ use std::{
     },
 };
 use tokio::task::JoinHandle;
+use zeroize::Zeroize;
 
 enum AuthCodeResponse {
     Code(String),
     Cancelled,
+}
+
+#[cfg(target_os = "windows")]
+const KEYRING_PASSPHRASE_SERVICE: &str = "iDescriptor:ipatool:keyring-passphrase:v1";
+#[cfg(target_os = "windows")]
+const KEYRING_PASSPHRASE_ACCOUNT: &str = "account";
+
+#[cfg(target_os = "windows")]
+fn load_remembered_keyring_passphrase() -> Option<String> {
+    let entry = keyring::Entry::new(KEYRING_PASSPHRASE_SERVICE, KEYRING_PASSPHRASE_ACCOUNT).ok()?;
+    match entry.get_password() {
+        Ok(passphrase) => Some(passphrase),
+        Err(keyring::Error::NoEntry) => None,
+        Err(err) => {
+            debug!("Could not read the remembered ipatool keyring passphrase: {err}");
+            None
+        }
+    }
+}
+
+#[cfg(not(target_os = "windows"))]
+fn load_remembered_keyring_passphrase() -> Option<String> {
+    None
+}
+
+#[cfg(target_os = "windows")]
+fn remember_keyring_passphrase(passphrase: &str) -> anyhow::Result<()> {
+    let entry = keyring::Entry::new(KEYRING_PASSPHRASE_SERVICE, KEYRING_PASSPHRASE_ACCOUNT)?;
+    entry.set_password(passphrase)?;
+    Ok(())
+}
+
+#[cfg(not(target_os = "windows"))]
+fn remember_keyring_passphrase(_passphrase: &str) -> anyhow::Result<()> {
+    Ok(())
+}
+
+#[cfg(target_os = "windows")]
+fn forget_keyring_passphrase() -> anyhow::Result<()> {
+    let entry = keyring::Entry::new(KEYRING_PASSPHRASE_SERVICE, KEYRING_PASSPHRASE_ACCOUNT)?;
+    match entry.delete_credential() {
+        Ok(()) | Err(keyring::Error::NoEntry) => Ok(()),
+        Err(err) => Err(err.into()),
+    }
+}
+
+#[cfg(not(target_os = "windows"))]
+fn forget_keyring_passphrase() -> anyhow::Result<()> {
+    Ok(())
 }
 
 struct TaskDirectory {
@@ -59,10 +109,22 @@ pub struct Apps {
     state_changed: qt_signal!(),
     ipa_tool: Option<Arc<IpaTool>>,
     sign_in_busy: bool,
+    uses_encrypted_account_file: bool,
     pending_auth_code: Option<(String, SyncSender<AuthCodeResponse>)>,
     tasks: HashMap<String, JoinHandle<()>>,
     init: qt_method!(fn(&mut self, load_saved_account: bool)),
-    sign_in: qt_method!(fn(&mut self, email: QString, password: QString)),
+    sign_in: qt_method!(
+        fn(
+            &mut self,
+            email: QString,
+            password: QString,
+            keyring_passphrase: QString,
+            remember_passphrase: bool,
+        )
+    ),
+    unlock_keyring: qt_method!(fn(&mut self, passphrase: QString, remember_passphrase: bool)),
+    keyring_passphrase_cancelled: qt_method!(fn(&mut self)),
+    generate_keyring_passphrase: qt_method!(fn(&self) -> QString),
     auth_code_received: qt_method!(fn(&mut self, request_id: QString, code: QString)),
     auth_code_cancelled: qt_method!(fn(&mut self, request_id: QString)),
     sign_out: qt_method!(fn(&mut self)),
@@ -72,6 +134,8 @@ pub struct Apps {
     cancel_task: qt_method!(fn(&mut self, task_id: QString)),
     authCodeRequested: qt_signal!(request_id: QString, email: QString),
     signInFinished: qt_signal!(success: bool, error: QString),
+    keyringPassphraseRequested: qt_signal!(),
+    keyringPassphraseFinished: qt_signal!(success: bool, error: QString),
     search_ready: qt_signal!(search_term : QString, success: bool, res: QString),
     downloadIpaProgress: qt_signal!(task_id: QString, progress: f64),
     downloadIpaFinished: qt_signal!(task_id: QString, success: bool, path: QString, error: QString),
@@ -95,6 +159,7 @@ impl Apps {
         qvariantmap_insert!(state, "email", QString::default());
         qvariantmap_insert!(state, "signInBusy", false);
         qvariantmap_insert!(state, "authCodePending", false);
+        qvariantmap_insert!(state, "usesEncryptedAccountFile", false);
 
         let mut def = Self::default();
         def.state = state;
@@ -108,42 +173,67 @@ impl Apps {
         qvariantmap_insert!(state, "email", email);
         qvariantmap_insert!(state, "signInBusy", self.sign_in_busy);
         qvariantmap_insert!(state, "authCodePending", self.pending_auth_code.is_some());
+        qvariantmap_insert!(
+            state,
+            "usesEncryptedAccountFile",
+            self.uses_encrypted_account_file
+        );
         self.state = state;
         self.state_changed();
     }
 
     fn init(&mut self, load_saved_account: bool) {
-        let tool = match IpaTool::new_default() {
-            Ok(tool) => tool,
-            Err(err) => {
-                error!("Error creating IpaTool: {err}");
-                self.set_state(true, QString::default(), QString::from(format!("{}", err)));
-                return;
-            }
-        };
+        let q_thread = self.qt_thread();
+        RUNTIME.spawn(async move {
+            let remembered = load_remembered_keyring_passphrase();
+            let result = IpaTool::new_default_with_passphrase(remembered).map(|tool| {
+                let uses_file = tool.credential_backend() == CredentialBackend::EncryptedFile;
+                let requires_passphrase = load_saved_account && tool.requires_keyring_passphrase();
+                let account = if load_saved_account && !requires_passphrase {
+                    tool.account_info()
+                } else {
+                    Ok(None)
+                };
+                (Arc::new(tool), uses_file, requires_passphrase, account)
+            });
 
-        if !load_saved_account {
-            self.ipa_tool = Some(Arc::new(tool));
-            self.set_state(true, QString::default(), QString::default());
-            return;
-        }
-
-        let account_info = tool.account_info();
-        self.ipa_tool = Some(Arc::new(tool));
-
-        match account_info {
-            Ok(maybe_acc) => {
-                let acc = maybe_acc.unwrap_or_default();
-
-                self.set_state(true, QString::from(acc.email), QString::default());
-            }
-            Err(err) => {
-                self.set_state(true, QString::default(), QString::from(format!("{}", err)));
-            }
-        };
+            q_thread.queue(move |apps| match result {
+                Ok((tool, uses_file, requires_passphrase, account)) => {
+                    apps.ipa_tool = Some(tool);
+                    apps.uses_encrypted_account_file = uses_file;
+                    match account {
+                        Ok(account) => {
+                            let email = account.map(|account| account.email).unwrap_or_default();
+                            apps.set_state(true, QString::from(email), QString::default());
+                            if requires_passphrase {
+                                apps.keyringPassphraseRequested();
+                            }
+                        }
+                        Err(err) => {
+                            error!("Could not load the saved ipatool account: {err}");
+                            apps.set_state(
+                                true,
+                                QString::default(),
+                                QString::from(err.to_string()),
+                            );
+                        }
+                    }
+                }
+                Err(err) => {
+                    error!("Could not initialize ipatool: {err}");
+                    apps.set_state(true, QString::default(), QString::from(err.to_string()));
+                }
+            });
+        });
     }
 
-    fn sign_in(&mut self, email: QString, password: QString) {
+    fn sign_in(
+        &mut self,
+        email: QString,
+        password: QString,
+        keyring_passphrase: QString,
+        remember_passphrase: bool,
+    ) {
         if self.sign_in_busy {
             self.signInFinished(false, QString::from("Sign in is already in progress."));
             return;
@@ -153,7 +243,8 @@ impl Apps {
         self.set_state(true, QString::default(), QString::default());
 
         let email_string = email.to_string();
-        let password_string = password.to_string();
+        let mut password_string = password.to_string();
+        let mut keyring_passphrase = keyring_passphrase.to_string();
         let Some(tool) = self.ipa_tool.clone() else {
             self.sign_in_busy = false;
             self.set_state(
@@ -200,6 +291,9 @@ impl Apps {
                 });
 
             let result: ipatool::Result<(Arc<IpaTool>, String)> = async {
+                if tool.credential_backend() == CredentialBackend::EncryptedFile {
+                    tool.set_keyring_passphrase(keyring_passphrase.clone())?;
+                }
                 tool.login(&email_string, &password_string, Some(auth_code_cb), None)
                     .await?;
 
@@ -211,6 +305,14 @@ impl Apps {
                 Ok((tool, account_email))
             }
             .await;
+
+            if result.is_ok() && remember_passphrase && !keyring_passphrase.is_empty() {
+                if let Err(err) = remember_keyring_passphrase(&keyring_passphrase) {
+                    error!("Could not remember the ipatool keyring passphrase: {err}");
+                }
+            }
+            password_string.zeroize();
+            keyring_passphrase.zeroize();
 
             q_thread.queue(move |apps| {
                 apps.sign_in_busy = false;
@@ -233,6 +335,61 @@ impl Apps {
                 }
             });
         });
+    }
+
+    fn unlock_keyring(&mut self, passphrase: QString, remember_passphrase: bool) {
+        let Some(tool) = self.ipa_tool.clone() else {
+            self.keyringPassphraseFinished(false, QString::from("IpaTool not initialized"));
+            return;
+        };
+        let mut passphrase = passphrase.to_string();
+        let q_thread = self.qt_thread();
+        RUNTIME.spawn(async move {
+            let result = tool
+                .set_keyring_passphrase(passphrase.clone())
+                .and_then(|()| tool.account_info());
+            if result.is_ok() && remember_passphrase {
+                if let Err(err) = remember_keyring_passphrase(&passphrase) {
+                    error!("Could not remember the ipatool keyring passphrase: {err}");
+                }
+            }
+            passphrase.zeroize();
+            q_thread.queue(move |apps| match result {
+                Ok(account) => {
+                    let email = account.map(|account| account.email).unwrap_or_default();
+                    apps.set_state(true, QString::from(email), QString::default());
+                    apps.keyringPassphraseFinished(true, QString::default());
+                }
+                Err(err) => {
+                    let message = QString::from(err.to_string());
+                    apps.keyringPassphraseFinished(false, message);
+                }
+            });
+        });
+    }
+
+    fn keyring_passphrase_cancelled(&mut self) {
+        self.set_state(true, QString::default(), QString::default());
+    }
+
+    fn generate_keyring_passphrase(&self) -> QString {
+        const ALPHABET: &[u8] = b"ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+        let mut random = [0_u8; 24];
+        if let Err(err) = getrandom::fill(&mut random) {
+            error!("Could not generate a keyring passphrase: {err}");
+            return QString::default();
+        }
+        let mut passphrase = String::with_capacity(29);
+        for (index, byte) in random.into_iter().enumerate() {
+            if index > 0 && index % 4 == 0 {
+                passphrase.push('-');
+            }
+            passphrase.push(ALPHABET[usize::from(byte) % ALPHABET.len()] as char);
+        }
+        random.zeroize();
+        let generated = QString::from(passphrase.clone());
+        passphrase.zeroize();
+        generated
     }
 
     fn auth_code_received(&mut self, request_id: QString, code: QString) {
@@ -286,7 +443,7 @@ impl Apps {
 
             match serialized {
                 Ok(serialized) => {
-                    println!(
+                    debug!(
                         "Search successful for term '{}', result: {}",
                         term, serialized
                     );
@@ -294,7 +451,7 @@ impl Apps {
                 }
                 // FIXME: also return the error
                 Err(err) => {
-                    println!("Error in ipatool search {}", err.to_string());
+                    error!("Error in ipatool search {}", err.to_string());
                     q_thread.queue(|s| s.search_ready(term, false, QString::default()));
                 }
             };
@@ -328,15 +485,16 @@ impl Apps {
                     })?;
 
                 let task_dir = TaskDirectory::create(&output_path, &task_id_for_task).await?;
+                let temporary_ipa_path = task_dir.path.join(format!("{bundle_id}.ipa"));
                 let progress_qt = q_thread.clone();
                 let progress_task_id = task_id_for_task.clone();
                 let downloaded_path = tool
                     .download_with_progress(
                         DownloadArgs {
                             bundle_id,
-                            output_path: Some(task_dir.path.to_string_lossy().into_owned()),
+                            output_path: Some(temporary_ipa_path.to_string_lossy().into_owned()),
                             external_version_id: None,
-                            acquire_license: false,
+                            acquire_license: true,
                         },
                         move |downloaded, total| {
                             let progress = total
@@ -421,13 +579,14 @@ impl Apps {
                 let device = get_device(&udid).await?;
                 let task_dir =
                     TaskDirectory::create(&std::env::temp_dir(), &task_id_for_task).await?;
+                let temporary_ipa_path = task_dir.path.join(format!("{bundle_id}.ipa"));
                 let progress_qt = q_thread.clone();
                 let progress_task_id = task_id_for_task.clone();
                 let ipa_path = tool
                     .download_with_progress(
                         DownloadArgs {
                             bundle_id,
-                            output_path: Some(task_dir.path.to_string_lossy().into_owned()),
+                            output_path: Some(temporary_ipa_path.to_string_lossy().into_owned()),
                             external_version_id: None,
                             acquire_license: true,
                         },
@@ -535,7 +694,12 @@ impl Apps {
         };
 
         match tool.revoke() {
-            Ok(()) => self.set_state(true, QString::default(), QString::default()),
+            Ok(()) => {
+                if let Err(err) = forget_keyring_passphrase() {
+                    error!("Could not forget the ipatool keyring passphrase: {err}");
+                }
+                self.set_state(true, QString::default(), QString::default())
+            }
             Err(err) => self.set_state(true, QString::default(), QString::from(format!("{}", err))),
         }
     }

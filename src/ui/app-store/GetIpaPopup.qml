@@ -12,14 +12,19 @@ AnimatedDialog {
     id: root
     required property string bundleId
     required property string appName
+    property string iconSource: ""
+    property string appDescription: ""
+    property string resolvedDescription: ""
+    property string resolvedBundleId: ""
+    property int metadataRequestGeneration: 0
+    readonly property string descriptionPreview: Helpers.appDescriptionPreview(
+        (resolvedBundleId === bundleId ? resolvedDescription : "") || appDescription)
+    property string resolvedIconSource: ""
+    readonly property string effectiveIconSource: iconSource.length > 0
+                                                   ? iconSource
+                                                   : (resolvedBundleId === bundleId ? resolvedIconSource : "")
 
-    background: Rectangle {
-        radius: 10
-        color: palette.window
-        border.color: Qt.rgba(0, 0, 0, 0.12)
-        border.width: 1
-    }
-    padding: 20
+    padding: 24
 
     modal: true
     focus: true
@@ -35,6 +40,10 @@ AnimatedDialog {
     property string outputPath: ""
     property string errorText: ""
     property string completedPath: ""
+    readonly property bool completed: completedPath.length > 0
+    readonly property string progressText: progress >= 0
+                                                   ? qsTr("%1%").arg(Math.round(progress * 100))
+                                                   : ""
 
     function resetState() {
         taskId = ""
@@ -44,6 +53,31 @@ AnimatedDialog {
         errorText = ""
         completedPath = ""
         outputPath = settingsManager.ipa_download_path()
+    }
+
+    function clearAppMetadata() {
+        // Invalidate pending requests, including an earlier request for the same app.
+        metadataRequestGeneration += 1
+        resolvedBundleId = ""
+        resolvedIconSource = ""
+        resolvedDescription = ""
+    }
+
+    function resolveAppMetadata() {
+        clearAppMetadata()
+        if (bundleId.length === 0 || (iconSource.length > 0 && appDescription.length > 0))
+            return
+
+        const requestedBundleId = bundleId
+        const requestGeneration = metadataRequestGeneration
+        Helpers.fetch_app(requestedBundleId, function(app, error) {
+            if (root.metadataRequestGeneration !== requestGeneration
+                    || root.bundleId !== requestedBundleId || error || !app)
+                return
+            root.resolvedIconSource = app.artworkUrl100 || app.artworkUrl512 || app.artworkUrl60 || ""
+            root.resolvedDescription = app.description || ""
+            root.resolvedBundleId = requestedBundleId
+        })
     }
 
     function requestClose() {
@@ -72,8 +106,19 @@ AnimatedDialog {
         downloading = true
     }
 
-    onOpened: resetState()
+    onBundleIdChanged: {
+        if (visible)
+            resolveAppMetadata()
+        else
+            clearAppMetadata()
+    }
+
+    onAboutToShow: {
+        resetState()
+        resolveAppMetadata()
+    }
     onClosed: {
+        clearAppMetadata()
         if (taskId.length)
             apps.cancel_task(taskId)
         taskId = ""
@@ -138,80 +183,191 @@ AnimatedDialog {
     }
 
     contentItem: ColumnLayout {
-        spacing: 14
+        spacing: 18
 
-        Label {
+        RowLayout {
             Layout.fillWidth: true
-            text: root.appName
-            font.pixelSize: 18
-            font.bold: true
-            elide: Text.ElideRight
+            spacing: 16
+
+            IconLoader {
+                Layout.preferredWidth: 64
+                Layout.preferredHeight: 64
+                radius: 15
+                iconSource: root.effectiveIconSource
+            }
+
+            ColumnLayout {
+                Layout.fillWidth: true
+                spacing: 3
+
+                Label {
+                    Layout.fillWidth: true
+                    text: root.appName
+                    color: Theme.text
+                    font.pixelSize: 20
+                    font.weight: Font.DemiBold
+                    elide: Text.ElideRight
+                }
+
+                Label {
+                    Layout.fillWidth: true
+                    text: root.bundleId
+                    color: Theme.textMuted
+                    font.pixelSize: 12
+                    elide: Text.ElideMiddle
+                }
+
+                Label {
+                    Layout.fillWidth: true
+                    text: root.descriptionPreview
+                    visible: text.length > 0
+                    textFormat: Text.PlainText
+                    color: Theme.textMuted
+                    font.pixelSize: 13
+                    wrapMode: Text.WordWrap
+                    maximumLineCount: 2
+                    elide: Text.ElideRight
+                }
+            }
         }
 
-        Label {
+        Rectangle {
             Layout.fillWidth: true
-            text: root.bundleId
-            color: "#6e6e73"
-            elide: Text.ElideMiddle
+            implicitHeight: destinationRow.implicitHeight + 28
+            radius: 14
+            color: Theme.groupedBackground
+            border.color: Theme.separator
+            border.width: 1
+
+            RowLayout {
+                id: destinationRow
+                anchors.fill: parent
+                anchors.margins: 14
+                spacing: 12
+
+
+                ColumnLayout {
+                    Layout.fillWidth: true
+                    spacing: 2
+
+                    Label {
+                        text: qsTr("Save to")
+                        color: Theme.text
+                        font.weight: Font.DemiBold
+                    }
+
+                    Label {
+                        Layout.fillWidth: true
+                        text: root.outputPath
+                        color: Theme.textMuted
+                        font.pixelSize: 12
+                        elide: Text.ElideMiddle
+                    }
+                }
+
+                Button {
+                    text: qsTr("Choose…")
+                    flat: true
+                    enabled: !root.downloading
+                    onClicked: outputDialog.open()
+                }
+            }
+        }
+
+        Rectangle {
+            Layout.fillWidth: true
+            implicitHeight: statusColumn.implicitHeight + 28
+            radius: 14
+            visible: root.downloading || root.stateText.length > 0
+            color: root.errorText.length
+                   ? Qt.rgba(Theme.systemRed.r, Theme.systemRed.g, Theme.systemRed.b, Theme.darkMode ? 0.13 : 0.08)
+                   : root.completed
+                     ? Qt.rgba(Theme.systemGreen.r, Theme.systemGreen.g, Theme.systemGreen.b, Theme.darkMode ? 0.13 : 0.08)
+                     : Theme.softBg
+            border.color: root.errorText.length
+                          ? Qt.rgba(Theme.systemRed.r, Theme.systemRed.g, Theme.systemRed.b, 0.28)
+                          : root.completed
+                            ? Qt.rgba(Theme.systemGreen.r, Theme.systemGreen.g, Theme.systemGreen.b, 0.28)
+                            : Theme.separator
+            border.width: 1
+
+            ColumnLayout {
+                id: statusColumn
+                anchors.fill: parent
+                anchors.margins: 14
+                spacing: 9
+
+                RowLayout {
+                    Layout.fillWidth: true
+
+                    Label {
+                        Layout.fillWidth: true
+                        text: root.completed
+                              ? qsTr("Download complete")
+                              : root.stateText
+                        color: root.errorText.length ? Theme.dangerText : Theme.text
+                        font.weight: Font.DemiBold
+                        wrapMode: Text.WordWrap
+                    }
+
+                    Label {
+                        visible: root.downloading && root.progress >= 0
+                        text: root.progressText
+                        color: Theme.textMuted
+                    }
+                }
+
+                ProgressBar {
+                    Layout.fillWidth: true
+                    visible: root.downloading
+                    indeterminate: root.progress < 0
+                    from: 0
+                    to: 1
+                    value: Math.max(0, root.progress)
+                }
+
+                Label {
+                    Layout.fillWidth: true
+                    visible: root.completed || root.errorText.length > 0
+                    text: root.completed
+                          ? qsTr("Saved to %1").arg(root.completedPath)
+                          : root.errorText
+                    color: root.errorText.length ? Theme.dangerText : Theme.textMuted
+                    font.pixelSize: 12
+                    wrapMode: Text.WrapAnywhere
+                }
+            }
+        }
+
+        Rectangle {
+            Layout.fillWidth: true
+            Layout.preferredHeight: 1
+            color: Theme.separator
         }
 
         RowLayout {
             Layout.fillWidth: true
             spacing: 10
 
-            Label {
-                Layout.fillWidth: true
-                text: root.outputPath
-                color: "#6e6e73"
-                elide: Text.ElideMiddle
-            }
-
             Button {
-                text: qsTr("Choose")
+                text: qsTr("Open Folder")
+                flat: true
+                visible: root.completed
                 enabled: !root.downloading
-                onClicked: outputDialog.open()
+                onClicked: Qt.openUrlExternally(Helpers.toFileUrl(root.outputPath))
             }
-        }
 
-        ProgressBar {
-            Layout.fillWidth: true
-            visible: root.downloading || root.progress > 0
-            indeterminate: root.downloading && root.progress < 0
-            from: 0
-            to: 1
-            value: Math.max(0, root.progress)
-        }
-
-        Label {
-            Layout.fillWidth: true
-            text: root.completedPath.length
-                  ? qsTr("Saved to %1").arg(root.completedPath)
-                  : root.stateText
-            color: root.errorText.length ? "#c00" : "#6e6e73"
-            wrapMode: Text.WordWrap
-            visible: text.length > 0
-        }
-
-        RowLayout {
-            Layout.fillWidth: true
-            Button {
-                text: !root.downloading && root.completedPath.length ? qsTr("Open Folder") : ""
-                visible: text.length > 0
-                enabled: !root.downloading
-                onClicked: {
-                    if (root.completedPath.length)
-                        Qt.openUrlExternally(Helpers.toFileUrl(root.outputPath))
-                }
-            }
             Item { Layout.fillWidth: true }
 
             Button {
                 text: root.downloading ? qsTr("Cancel") : qsTr("Close")
+                flat: true
                 onClicked: root.requestClose()
             }
 
             Button {
-                text: qsTr("Get IPA")
+                text: root.completed ? qsTr("Download Again") : qsTr("Download")
+                highlighted: true
                 enabled: !root.downloading && root.bundleId.length > 0
                 onClicked: root.startDownload()
             }

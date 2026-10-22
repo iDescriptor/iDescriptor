@@ -28,6 +28,7 @@ Item {
 
     property string bundleId: ""
     property string appName: ""
+    property string appDescription: ""
 
 
     ListModel { id: searchResultsModel }
@@ -43,6 +44,7 @@ Item {
         id: installPopup
         bundleId: root.bundleId
         appName: root.appName
+        appDescription: root.appDescription
         anchors.centerIn: parent
     }
 
@@ -50,6 +52,7 @@ Item {
         id: getIpaPopup
         bundleId: root.bundleId
         appName: root.appName
+        appDescription: root.appDescription
         anchors.centerIn: parent
     }
 
@@ -58,10 +61,25 @@ Item {
     }
 
     Loader {
+        id: keyringPassphraseDialogLoader
+        active: Qt.platform.os === "linux" || Qt.platform.os === "windows"
+        source: active ? "KeyringPassphraseDialog.qml" : ""
+    }
+
+    Loader {
         id: keychainDialogLoader
         anchors.fill: parent
         active: root.isMacOS
         source: active ? "KeychainDialog.qml" : ""
+    }
+
+    Connections {
+        target: apps
+
+        function onKeyringPassphraseRequested() {
+            if (keyringPassphraseDialogLoader.active)
+                keyringPassphraseDialogLoader.item.open()
+        }
     }
 
     Connections {
@@ -76,7 +94,7 @@ Item {
         }
     }
 
-    function openInstallPopup(bundleId, appName) {
+    function openInstallPopup(bundleId, appName, description) {
         const isLoggedIn = apps.state.email.length > 0
         if (!isLoggedIn) {
             if (Qt.platform.os === "windows") {
@@ -90,12 +108,13 @@ Item {
 
         root.bundleId = bundleId
         root.appName = appName
+        root.appDescription = description || ""
         Qt.callLater(() => {
           installPopup.open()
         })
     }
 
-    function openGetIpaPopup(bundleId, appName) {
+    function openGetIpaPopup(bundleId, appName, description) {
         const isLoggedIn = apps.state.email.length > 0
         if (!isLoggedIn) {
             if (Qt.platform.os === "windows") {
@@ -108,6 +127,7 @@ Item {
         }
         root.bundleId = bundleId
         root.appName = appName
+        root.appDescription = description || ""
         Qt.callLater(() => {
           getIpaPopup.open()
         })
@@ -228,7 +248,7 @@ Item {
 
             try {
                 const parsedRes = JSON.parse(res)
-                if (!parsedRes || !parsedRes.results || !Array.isArray(parsedRes.results)) {
+                if (!parsedRes || !Array.isArray(parsedRes)) {
                     console.error("Invalid search results format: 'results' array not found or not an array.", res)
                     searchError = true
                     searchErrorText = qsTr("Search returned an invalid response.")
@@ -238,14 +258,14 @@ Item {
                 searchError = false
                 searchErrorText = ""
 
-                for (var i = 0; i < parsedRes.results.length; ++i) {
-                    const item = parsedRes.results[i]
+                for (var i = 0; i < parsedRes.length; ++i) {
+                    const item = parsedRes[i]
                     searchResultsModel.append({
-                        id: item.id || 0,
-                        bundleId: item.bundle_id || "",
-                        name: item.name || "",
+                        id: item.trackId || 0,
+                        bundleId: item.bundleId || "",
+                        name: item.trackName || "",
                         price: item.price || 0,
-                        description: item.bundle_id || "",
+                        description: item.description || ""
                     })
                 }
             } catch (e) {
@@ -410,7 +430,7 @@ Item {
                             tierColor: model.tierColor
                             description: model.description
                             useBundleIdForIcon: model.useBundleIdForIcon
-                            onInstallRequested: function(bundleId, appName) { root.openInstallPopup(bundleId, appName) }
+                            onInstallRequested: function(bundleId, appName) { root.openInstallPopup(bundleId, appName, description) }
                         }
                     }
                 }
@@ -426,8 +446,8 @@ Item {
                             bundleId: model.bundleId
                             description: model.description
                             onSelected: function(app) { root.openDetails(app) }
-                            onInstallRequested: function(bundleId, appName) { root.openInstallPopup(bundleId, appName) }
-                            onGetIpaRequested: function(bundleId, appName) { root.openGetIpaPopup(bundleId, appName) }
+                            onInstallRequested: function(bundleId, appName) { root.openInstallPopup(bundleId, appName, description) }
+                            onGetIpaRequested: function(bundleId, appName) { root.openGetIpaPopup(bundleId, appName, description) }
                         }
                     }
                 }
