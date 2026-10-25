@@ -6,6 +6,79 @@ pub const FAVS_ALBUM_ID: i32 = -2;
 pub const RECENTLY_DELETED_ALBUM_ID: i32 = -3;
 pub const HIDDEN_ALBUM_ID: i32 = -4;
 
+// iOS 6 has no favorite/hidden/trash state columns. Wallpaper and other
+// system entities share ZGENERICASSET, so require the real Asset entity.
+pub static IOS_6_VISIBLE_ASSET_PREDICATE: &str = "
+    ZASSET.Z_ENT IN (SELECT Z_ENT FROM Z_PRIMARYKEY WHERE Z_NAME = 'Asset')
+    AND ZASSET.ZDIRECTORY IS NOT NULL AND ZASSET.ZDIRECTORY <> ''
+    AND ZASSET.ZFILENAME IS NOT NULL AND ZASSET.ZFILENAME <> ''
+";
+
+pub static IOS_6_RECENTS_QUERY: &str = "
+    SELECT ZASSET.ZFILENAME, ZASSET.ZDIRECTORY
+    FROM ZASSET WHERE {visible}
+    ORDER BY ZASSET.Z_PK DESC
+";
+
+pub static IOS_6_RECENTS_ALBUM_QUERY: &str = "
+    SELECT ZASSET.ZFILENAME, ZASSET.ZDIRECTORY,
+        (SELECT COUNT(*) FROM ZASSET WHERE {visible})
+    FROM ZASSET WHERE {visible}
+    ORDER BY ZASSET.Z_PK DESC LIMIT 1
+";
+
+pub static IOS_6_ALBUM_CONTENTS_QUERY_TEMPLATE: &str = "
+    SELECT ZASSET.ZDIRECTORY, ZASSET.ZFILENAME
+    FROM {table} JOIN ZASSET ON ZASSET.Z_PK = {table}.Z_3ASSETS
+    WHERE {table}.{album} = ? AND {visible}
+";
+
+pub static IOS_6_ALBUM_QUERY_STATEMENT: &str = "
+    SELECT ZGENERICALBUM.Z_PK, ZGENERICALBUM.ZTITLE,
+        (SELECT COUNT(*) FROM {table}
+         JOIN ZASSET ON ZASSET.Z_PK = {table}.Z_3ASSETS
+         WHERE {table}.{album} = ZGENERICALBUM.Z_PK AND {visible}),
+        COALESCE(ZASSET.ZDIRECTORY, ''), COALESCE(ZASSET.ZFILENAME, '')
+    FROM ZGENERICALBUM
+    LEFT JOIN ZASSET ON ZASSET.Z_PK = COALESCE(
+        (SELECT ZASSET.Z_PK FROM ZASSET
+         WHERE ZASSET.Z_PK = ZGENERICALBUM.ZKEYASSET AND {visible} LIMIT 1),
+        (SELECT {table}.Z_3ASSETS FROM {table}
+         JOIN ZASSET ON ZASSET.Z_PK = {table}.Z_3ASSETS
+         WHERE {table}.{album} = ZGENERICALBUM.Z_PK AND {visible}
+         ORDER BY {table}.Z_FOK_3ASSETS DESC LIMIT 1)
+    )
+    WHERE ZGENERICALBUM.ZTITLE IS NOT NULL AND TRIM(ZGENERICALBUM.ZTITLE) <> ''
+    AND ZGENERICALBUM.ZKIND <> 1000
+    AND EXISTS (SELECT 1 FROM {table}
+                JOIN ZASSET ON ZASSET.Z_PK = {table}.Z_3ASSETS
+                WHERE {table}.{album} = ZGENERICALBUM.Z_PK AND {visible})
+";
+
+pub static IOS_12_ALBUM_QUERY_STATEMENT: &str = "SELECT
+                ZGENERICALBUM.Z_PK,
+                ZGENERICALBUM.ZTITLE,
+                ZGENERICALBUM.ZCACHEDCOUNT,
+                COALESCE(ZGENERICASSET.ZDIRECTORY, ''),
+                COALESCE(ZGENERICASSET.ZFILENAME, '')
+            FROM ZGENERICALBUM
+            LEFT JOIN ZGENERICASSET ON ZGENERICASSET.Z_PK = COALESCE(
+                (SELECT cover.Z_PK FROM ZGENERICASSET AS cover
+                 WHERE cover.Z_PK = ZGENERICALBUM.ZKEYASSET
+                 AND cover.ZDIRECTORY IS NOT NULL AND cover.ZFILENAME IS NOT NULL
+                 LIMIT 1),
+                (SELECT {table}.Z_3ASSETS FROM {table}
+                 JOIN ZGENERICASSET AS member ON member.Z_PK = {table}.Z_3ASSETS
+                 WHERE {table}.{album} = ZGENERICALBUM.Z_PK
+                 AND member.ZTRASHEDSTATE = 0 AND member.ZVISIBILITYSTATE = 0 AND member.ZHIDDEN = 0
+                 AND member.ZDIRECTORY IS NOT NULL AND member.ZFILENAME IS NOT NULL
+                 ORDER BY {table}.Z_FOK_3ASSETS DESC LIMIT 1)
+            )
+            WHERE ZGENERICALBUM.ZTITLE IS NOT NULL
+            AND ZGENERICALBUM.ZCACHEDCOUNT > 0
+            AND ZGENERICALBUM.ZTRASHEDSTATE = 0
+        ";
+
 pub static IOS_15_ALBUM_QUERY_STATEMENT: &str = "SELECT
                 ZGENERICALBUM.Z_PK,
                 ZGENERICALBUM.ZTITLE,
