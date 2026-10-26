@@ -176,6 +176,8 @@ pub struct SettingsManager {
     ipa_download_path: qt_method!(fn(&self) -> QString),
     set_ipa_download_path: qt_method!(fn(&self, path: QString)),
     mk_ipa_download_path: qt_method!(fn(&self) -> QString),
+    last_gallery_export_folder: qt_method!(fn(&self) -> QString),
+    set_last_gallery_export_folder: qt_method!(fn(&self, folder: QString)),
     backup_root_path: qt_method!(fn(&self) -> QString),
     set_backup_root_path: qt_method!(fn(&self, path: QString)),
     mk_backup_root_path: qt_method!(fn(&self) -> QString),
@@ -392,6 +394,16 @@ impl SettingsManager {
             }
             return path;
         })
+    }
+
+    fn last_gallery_export_folder(&self) -> QString {
+        read_string("lastGalleryExportFolder", "")
+    }
+
+    fn set_last_gallery_export_folder(&self, folder: QString) {
+        // Keep the folder URL as supplied by FolderDialog, including URL escaping.
+        // Export callers separately normalize it to a local path via QmlUtils.
+        write_string("lastGalleryExportFolder", folder);
     }
 
     fn backup_root_path(&self) -> QString {
@@ -715,6 +727,7 @@ impl SettingsManager {
     }
 
     fn reset_to_defaults(&self) {
+        self.set_last_gallery_export_folder(QString::default());
         self.set_dev_disk_img_path(QString::from(format!(
             "{}/devdiskimages",
             self.home_path().to_string()

@@ -79,6 +79,9 @@ Item {
             return
 
         root.albumExportSelection = albums
+        const savedFolder = settingsManager.last_gallery_export_folder()
+        if (savedFolder.length > 0)
+            albumExportDialog.currentFolder = savedFolder
         albumExportDialog.open()
     }
 
@@ -163,7 +166,7 @@ Item {
                 items.length,
                 pending.destinationDir
             )
-            ioManager.start_export(root.udid, requestId, items, pending.destinationDir, false)
+            ioManager.start_gallery_export(root.udid, requestId, items, pending.destinationDir)
         }
     }
 
@@ -442,7 +445,11 @@ Item {
     FolderDialog {
         id: albumExportDialog
         title: qsTr("Choose Export Folder")
-        onAccepted: root.startAlbumExports(QmlUtils.url_to_path(selectedFolder))
+        onAccepted: {
+            const destinationRoot = QmlUtils.url_to_path(selectedFolder)
+            settingsManager.set_last_gallery_export_folder(selectedFolder.toString())
+            root.startAlbumExports(destinationRoot)
+        }
     }
 
     MessageDialog {

@@ -86,6 +86,9 @@ Item {
 
         root.pendingExportPaths = paths
         root.pendingExportTitle = title
+        const savedFolder = settingsManager.last_gallery_export_folder()
+        if (savedFolder.length > 0)
+            exportDialog.currentFolder = savedFolder
         exportDialog.open()
     }
 
@@ -97,7 +100,7 @@ Item {
         const jobId = QmlUtils.generate_uuid()
         const title = root.pendingExportTitle || qsTr("Exporting Files")
         App.StatusWindow.addProcess(jobId, title, "Export", paths.length, destinationDir)
-        ioManager.start_export(root.udid, jobId, paths, destinationDir, false)
+        ioManager.start_gallery_export(root.udid, jobId, paths, destinationDir)
         root.pendingExportPaths = []
         root.pendingExportTitle = ""
     }
@@ -374,6 +377,10 @@ Item {
     FolderDialog {
         id: exportDialog
         title: qsTr("Choose Export Folder")
-        onAccepted: root.startExport(QmlUtils.url_to_path(selectedFolder))
+        onAccepted: {
+            const destinationDir = QmlUtils.url_to_path(selectedFolder)
+            settingsManager.set_last_gallery_export_folder(selectedFolder.toString())
+            root.startExport(destinationDir)
+        }
     }
 }
