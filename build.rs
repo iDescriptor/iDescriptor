@@ -10,6 +10,7 @@ fn main() {
     let target_os = env::var("CARGO_CFG_TARGET_OS").unwrap();
 
     println!("cargo:rerun-if-changed=src/native.rs");
+    println!("cargo:rerun-if-changed=src/screen_mirroring/mod.rs");
     println!("cargo:rerun-if-changed=src/media_decoder.rs");
     println!("cargo:rerun-if-changed=src/status_window_controller.rs");
     println!("cargo:rerun-if-changed=src/system_appearance.rs");
@@ -43,6 +44,10 @@ fn main() {
     // cpp_build — scans the crate root and compiles its cpp! macro modules
     // ------------------------------------------------------------------
     let mut config = cpp_build::Config::new();
+    if target_os == "macos" {
+        config.flag("-fblocks");
+        println!("cargo:rerun-if-changed=src/developer_images/native.rs");
+    }
     // GCC 16 diagnoses a SFINAE pattern used by the Qt headers. This is
     // third-party compatibility noise, so suppress it only when supported.
     config.flag_if_supported("-Wno-sfinae-incomplete");

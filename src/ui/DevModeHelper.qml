@@ -75,7 +75,13 @@ AnimatedDialog {
 
         App.Helpers.connectOnce(root.device.service_manager.developerModeStatusChecked, function(enabled) {
             if (enabled) {
-                finishWithSuccess(false, false)
+                // TODO: not sure if we need to enable dev mode
+                // to mount personalized image or cryptex,
+                // most likely Cryptex does not need dev mode to be enabled
+                if (root.iosVersion >= 17)
+                    preparePersonalizedImage()
+                else
+                    checkDeveloperDiskImage()
                 return
             }
 
@@ -85,6 +91,44 @@ AnimatedDialog {
         })
 
         root.device.service_manager.check_developer_mode_status()
+    }
+
+    function preparePersonalizedImage() {
+        root.operationInProgress = true
+        stateView.viewState = StateView.State.Content
+        contentIndex = 0
+        statusText = qsTr("Preparing developer image…")
+        App.Helpers.connectOnce(root.device.service_manager.developerImagePrepared, function(success, error) {
+            if (!success) {
+                showError(error)
+                return
+            }
+            finishWithSuccess(true, false)
+        })
+        root.device.service_manager.prepare_developer_image("auto", settingsManager.dev_disk_img_path(), settingsManager.developer_image_revision())
+    }
+
+    Connections {
+        target: root.device.service_manager
+        function onDeveloperImageProgress(stage, progress) {
+            const labels = {
+                checking: qsTr("Checking developer support…"),
+                connecting: qsTr("Connecting to developer services…"),
+                downloading: qsTr("Downloading developer image…"),
+                personalizing: qsTr("Personalizing developer image…"),
+                identifiers: qsTr("Reading device personalization identifiers…"),
+                nonce: qsTr("Reading device Cryptex nonce…"),
+                signing: qsTr("Requesting personalization ticket from Apple…"),
+                installing: qsTr("Uploading and installing developer image…"),
+                install_reply: qsTr("Waiting for device installation…"),
+                uploading: qsTr("Uploading developer image…"),
+                mounting: qsTr("Mounting developer image…"),
+                verifying: qsTr("Verifying developer image…")
+            }
+            statusText = labels[stage] || qsTr("Preparing developer image…")
+            if (stage === "downloading" || stage === "uploading")
+                statusText += " " + Math.round(progress * 100) + "%"
+        }
     }
 
     function revealDeveloperModeOption() {
@@ -206,7 +250,7 @@ AnimatedDialog {
     */
     function finishWithSuccess(wait, forced) {
         root.operationInProgress = true
-        statusText = root.iosVersion >= 17 ? qsTr("Developer Mode handled.") : qsTr("Developer disk image mounted.")
+        statusText = qsTr("Developer disk image is ready.")
         stateView.viewState = StateView.State.Content
         contentIndex = 0
         App.Helpers.setTimeout(function() {

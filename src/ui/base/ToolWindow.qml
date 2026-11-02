@@ -12,9 +12,12 @@ DefaultWindow {
     required property string udid
     required property var device
     property bool auto_close: true
+    //TODO: we may remove this if we find out how
+    // macOS does that reveal animation used in iPhone Mirroring app
+    property bool customChrome: false
 
     Component.onCompleted : {
-        if (Qt.platform.os === "osx") {
+        if (Qt.platform.os === "osx" && !root.customChrome) {
             QmlUtils.setup_tool_window(root.contentItem.Window.window)
         }
     }

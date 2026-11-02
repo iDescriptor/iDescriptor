@@ -27,14 +27,7 @@ Item {
     }
 
     property string currentDeviceUdid: App.DeviceContext.currentDeviceUdid
-    property var airplayInstance: null
-    property var devDiskImagesInstance: null
-    property var wirelessGalleryImportInstance: null
-    property var wiredGalleryImportInstance: null
-    property var ifuseInstance: null
-    property var networkDevicesInstance: null
-    property var backupManagerInstance: null
-    property var batteryInfoInstance: null
+    property var toolWindows: ({})
     property var pendingUnpairs: ({})
     readonly property bool hasDevice: App.DeviceContext.devices && App.DeviceContext.devices.count > 0
 
@@ -226,6 +219,52 @@ Item {
     }
 
 
+
+    function forgetToolWindow(key, win) {
+        // An older closing window must not remove its replacement.
+        if (root.toolWindows[key] === win)
+            delete root.toolWindows[key]
+    }
+
+    // A lifetime observer is parented to the window so explicit destruction also
+    // clears the registry, without relying on QObject.destroyed in QML.
+    Component {
+        id: toolWindowLifetime
+        QtObject {
+            property string registryKey
+            property var trackedWindow
+            Component.onDestruction: root.forgetToolWindow(registryKey, trackedWindow)
+        }
+    }
+
+    function openToolWindow(loc, deviceBound, device, udid, extraArgs = {}) {
+        const key = JSON.stringify([loc, deviceBound ? udid : ""])
+        const existing = root.toolWindows[key]
+        if (existing) {
+            focusToolWindow(existing)
+            return
+        }
+
+        const args = Object.assign({}, extraArgs, {
+            device: device,
+            udid: udid,
+            auto_close: deviceBound
+        })
+        const win = createComp(loc, args)
+        if (!win)
+            return
+
+        root.toolWindows[key] = win
+        toolWindowLifetime.createObject(win, {
+            registryKey: key,
+            trackedWindow: win
+        })
+        win.visibleChanged.connect(function() {
+            if (!win.visible)
+                root.forgetToolWindow(key, win)
+        })
+    }
+
     // 0 Airplayer, 1 SimulateLocation, 2 LiveScreen, 3 QueryMobileGestalt, 4 DeveloperDiskImages,
     // 5 WirelessGalleryImport, 6 iFuse, 7 CableInfo, 8 NetworkDevices, 9 EnableDevMode,
     // 10 Restart, 11 Shutdown, 12 RecoveryMode, 13 EnableWifiConnections, 14 BackupManager,
@@ -246,54 +285,8 @@ Item {
             }
         }
 
-        const createCompWrapped = (loc, _args) => {
-            const args = {
-                device,
-                udid: currentDeviceUdid
-            }
-            Object.assign(args, _args || {})
-            return createComp(loc, args)
-        }
-
-        function createSingletonComp(loc, instanceName, deviceBound, _args = {}) {
-            const currentInstance = root[instanceName]
-            if (currentInstance) {
-                if (!deviceBound || currentInstance.udid === currentDeviceUdid) {
-                    focusToolWindow(currentInstance)
-                    return
-                }
-
-                currentInstance.close()
-                if (currentInstance.visible) {
-                    focusToolWindow(currentInstance)
-                    return
-                }
-            }
-
-            const args = {
-                device,
-                udid: currentDeviceUdid,
-                auto_close: deviceBound
-            }
-
-            Object.assign(args, _args || {})
-
-            const win = createComp(loc, args)
-            if (!win)
-                return
-
-            root[instanceName] = win
-            win.visibleChanged.connect(function() {
-                if (!win.visible && root[instanceName] === win)
-                    root[instanceName] = null
-            })
-        }
-
         switch (toolId) {
             case 0:
-                // if (focusToolWindow(airplayInstance))
-                    // return
-
                 const gl_plugin_loaded = AirplayImp.load_gst_gl()
                 if (!gl_plugin_loaded) {
                     switch (Qt.platform.os) {
@@ -314,32 +307,43 @@ Item {
                     return;
                 }
 
-                createSingletonComp("./tools/Airplay.qml", "airplayInstance", false)
+                root.openToolWindow("./tools/Airplay.qml", false, device, currentDeviceUdid)
+                break;
+            case 20:
+                if (device.info.ios_version_major < 27) {
+                    root.showInfo(qsTr("Screen Mirroring requires iOS 27 or later. Use AirPlay for this device."))
+                    return
+                }
+                if (!AirplayImp.load_gst_gl()) {
+                    root.showError(qsTr("Could not load the GStreamer Qt GL video plugin. Check your OpenGL and GStreamer installation."))
+                    return
+                }
+                root.openToolWindow("./tools/ScreenMirroring.qml", true, device, currentDeviceUdid)
                 break;
             case 1:
-                createCompWrapped("./tools/SimulateLocation.qml")
+                root.openToolWindow("./tools/SimulateLocation.qml", true, device, currentDeviceUdid)
                 break;
             case 2:
-                createCompWrapped("./tools/LiveScreen.qml")
+                root.openToolWindow("./tools/LiveScreen.qml", true, device, currentDeviceUdid)
                 break;
             case 3:
                 // FIXME: doesnt work iOS 17 and above
-                createCompWrapped("./tools/QueryMobileGestalt.qml")
+                root.openToolWindow("./tools/QueryMobileGestalt.qml", true, device, currentDeviceUdid)
                 break;
             case 4:
-                createSingletonComp("./tools/DevDiskImages.qml", "devDiskImagesInstance", false)
+                root.openToolWindow("./tools/DevDiskImages.qml", false, device, currentDeviceUdid)
                 break;
             case 5:
-                createSingletonComp("./tools/WirelessGalleryImport.qml", "wirelessGalleryImportInstance", false)
+                root.openToolWindow("./tools/WirelessGalleryImport.qml", false, device, currentDeviceUdid)
                 break;
             case 6:
-                createSingletonComp("./tools/IFuse.qml", "ifuseInstance", true)
+                root.openToolWindow("./tools/IFuse.qml", true, device, currentDeviceUdid)
                 break;
             case 7:
-                createCompWrapped("./tools/CableInfo.qml")
+                root.openToolWindow("./tools/CableInfo.qml", true, device, currentDeviceUdid)
                 break;
             case 8:
-                createSingletonComp("./tools/NetworkDevices.qml", "networkDevicesInstance", false)
+                root.openToolWindow("./tools/NetworkDevices.qml", false, device, currentDeviceUdid)
                 break;
             case 9: {
                 const major_version = device.info.ios_version_major
@@ -414,10 +418,12 @@ Item {
                 App.DeviceContext.enableWifiConnections(device, root)
                 break;
             case 14:
-                createSingletonComp("./tools/BackupManager.qml", "backupManagerInstance", true)
+            // FIXME: BackupManager is no longer device bound which means each backup process
+            // should listen for device connection changes
+                root.openToolWindow("./tools/BackupManager.qml", false, device, currentDeviceUdid)
                 break;
             case 15:
-                createCompWrapped("./tools/TransferSpeedTest.qml")
+                root.openToolWindow("./tools/TransferSpeedTest.qml", true, device, currentDeviceUdid)
                 break;
             case 16:
                 requestDeviceAction("unpair", currentDeviceUdid)
@@ -426,10 +432,10 @@ Item {
                 requestDeviceAction("unpairAndRemove", currentDeviceUdid)
                 break;
             case 18:
-                createSingletonComp("./tools/BatteryInfo.qml", "batteryInfoInstance", true, { info: device.info })
+                root.openToolWindow("./tools/BatteryInfo.qml", true, device, currentDeviceUdid, { info: device.info })
                 break;
             case 19:
-                createSingletonComp("./tools/WiredGalleryImport.qml", "wiredGalleryImportInstance", true)
+                root.openToolWindow("./tools/WiredGalleryImport.qml", true, device, currentDeviceUdid)
                 break;
             default:
             console.log(`No tool for id ${toolId}`)
@@ -500,6 +506,14 @@ Item {
             description: qsTr("Simulate GPS location on your device"),
             requiresDevice: true,
             iconSource: "qrc:/resources/icons/material-symbols_location-on-outline.svg",
+            visible: true
+        },
+        {
+            toolId: 20,
+            title: qsTr("Screen Mirroring"),
+            description: qsTr("Stream your iPhone screen directly to iDescriptor"),
+            requiresDevice: true,
+            iconSource: "qrc:/resources/icons/pepicons-print_cellphone-eye.svg",
             visible: true
         },
         {

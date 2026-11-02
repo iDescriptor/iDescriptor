@@ -36,6 +36,11 @@ pub struct ServiceManager {
     query_mobilegestalt: qt_method!(fn(&self, keys: QStringList)),
     mount_dev_image: qt_method!(fn(&self, version: QString, image_path: QString, sig: QString)),
     get_mounted_image: qt_method!(fn(&self)),
+    prepare_developer_image: qt_method!(fn(&self, selection: QString, directory: QString, revision: QString)),
+    developerImageProgress: qt_signal!(stage: QString, progress: f64),
+    developerImagePrepared: qt_signal!(success: bool, error: QString),
+    developerImageStatus: qt_signal!(success: bool, mounted: bool, error: QString),
+    check_developer_image: qt_method!(fn(&self)),
     fetch_installed_apps: qt_method!(fn(&self)),
     check_developer_mode_status: qt_method!(fn(&self)),
     set_location: qt_method!(fn(&self, latitude: QString, longitude: QString)),
@@ -264,6 +269,50 @@ impl ServiceManager {
                 }
             };
 
+        });
+    }
+
+    fn check_developer_image(&self) {
+        let udid = self.udid.clone();
+        let device = self.device.as_ref().unwrap().clone();
+        let major = device.ios_version.major;
+        let minor = device.ios_version.minor;
+        let qt_thread = self.qt_thread();
+        RUNTIME.spawn(async move {
+            let result = crate::developer_images::mounted(&device, &udid, major, minor).await;
+            let (success, mounted, error) = match result {
+                Ok(mounted) => (true, mounted, QString::default()),
+                Err(error) => (false, false, QString::from(format!("{error:#}"))),
+            };
+            qt_thread.queue(move |manager| manager.developerImageStatus(success, mounted, error));
+        });
+    }
+
+    fn prepare_developer_image(&self, selection: QString, directory: QString, revision: QString) {
+        let udid = self.udid.clone();
+        let qt_thread = self.qt_thread();
+        RUNTIME.spawn(async move {
+            let progress_thread = qt_thread.clone();
+            let result = crate::developer_images::prepare(
+                &udid,
+                &selection.to_string(),
+                std::path::Path::new(&directory.to_string()),
+                &revision.to_string(),
+                &move |stage, progress| {
+                    let stage = QString::from(stage);
+                    progress_thread
+                        .queue(move |manager| manager.developerImageProgress(stage, progress));
+                },
+            )
+            .await;
+            let (success, error) = match result {
+                Ok(()) => (true, QString::default()),
+                Err(error) => {
+                    log::error!("Developer image preparation failed: {error:#}");
+                    (false, QString::from(format!("{error:#}")))
+                }
+            };
+            qt_thread.queue(move |manager| manager.developerImagePrepared(success, error));
         });
     }
 

@@ -209,7 +209,8 @@ impl Core {
                                         /* DISCONNECTED */
                                         Ok(UsbmuxdListenEvent::Disconnected(device_id)) => {
                                             if let Some((udid, connection_id, init_task)) =
-                                                device_map.remove(&device_id)
+                                            //TODO: upstream changed device_id to u64, we might as well do it
+                                                u32::try_from(device_id).ok().and_then(|id| device_map.remove(&id))
                                             {
                                                 init_task.abort();
                                                 if clean_device_from_app_state_if_current(

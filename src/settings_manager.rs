@@ -170,6 +170,8 @@ pub struct SettingsManager {
 
     clear: qt_method!(fn(&self)),
     home_path: qt_method!(fn(&self) -> QString),
+    developer_image_revision: qt_method!(fn(&self) -> QString),
+    set_developer_image_revision: qt_method!(fn(&self, revision: QString)),
     dev_disk_img_path: qt_method!(fn(&self) -> QString),
     set_dev_disk_img_path: qt_method!(fn(&self, path: QString)),
     mk_dev_disk_img_path: qt_method!(fn(&self) -> QString),
@@ -328,6 +330,19 @@ impl SettingsManager {
         cpp!(unsafe [] -> QString as "QString" {
             return settings_manager_home_path();
         })
+    }
+
+    fn developer_image_revision(&self) -> QString {
+        read_string("developerImageRevision", crate::developer_images::bundle::DEFAULT_REVISION)
+    }
+
+    fn set_developer_image_revision(&self, revision: QString) {
+        let revision = revision.to_string().trim().to_ascii_lowercase();
+        if let Err(error) = crate::developer_images::bundle::validate_revision(&revision) {
+            log::warn!("Ignoring invalid developer image revision: {error}");
+            return;
+        }
+        write_string("developerImageRevision", QString::from(revision));
     }
 
     fn dev_disk_img_path(&self) -> QString {
@@ -727,6 +742,7 @@ impl SettingsManager {
     }
 
     fn reset_to_defaults(&self) {
+        self.set_developer_image_revision(QString::from(crate::developer_images::bundle::DEFAULT_REVISION));
         self.set_last_gallery_export_folder(QString::default());
         self.set_dev_disk_img_path(QString::from(format!(
             "{}/devdiskimages",

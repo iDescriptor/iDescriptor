@@ -360,6 +360,29 @@ impl DevImgsManager {
 
     async fn get_mounted_image(udid: QString) -> anyhow::Result<(bool, bool, Vec<u8>)> {
         let dev = crate::device_ctx::get_device(udid.clone()).await?;
+        // TODO: we need to move dev_imgs_manager.rs(which was only iOS 16 and below)
+        // into crate::developer_images (17 and up)
+        if dev.ios_version.major >= 17 {
+            return match crate::developer_images::mounted(
+                &dev,
+                &udid.to_string(),
+                dev.ios_version.major,
+                dev.ios_version.minor,
+            )
+            .await
+            {
+                Ok(mounted) => Ok((mounted, false, Vec::new())),
+                Err(error)
+                    if matches!(
+                        error.downcast_ref::<idevice::IdeviceError>(),
+                        Some(idevice::IdeviceError::DeviceLocked)
+                    ) =>
+                {
+                    Ok((false, true, Vec::new()))
+                }
+                Err(error) => Err(error),
+            };
+        }
         let provider_guard = dev.clone().provider;
 
         let mut mounter = async {

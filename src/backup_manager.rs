@@ -13,7 +13,7 @@ use idevice::{
     installation_proxy::InstallationProxyClient,
     lockdown::LockdownClient,
     mobilebackup2::{
-        BackupDelegate, BackupOptions, DirEntryInfo, FsBackupDelegate, MobileBackup2Client,
+        BackupDelegate, BackupOptions, BackupProgress, DirEntryInfo, FsBackupDelegate, MobileBackup2Client,
         RestoreOptions,
     },
     notification_proxy::{
@@ -733,7 +733,10 @@ impl BackupDelegate for iDescriptorBackupDelegate {
         });
     }
 
-    fn on_progress(&self, bytes_done: u64, bytes_total: u64, overall_progress: f64) {
+    fn on_progress(&self, snapshot: BackupProgress) {
+        let bytes_done = snapshot.session_bytes_done;
+        let bytes_total = snapshot.session_bytes_total;
+        let overall_progress = snapshot.overall_progress;
         // let _elapsed = {
         //     let mut start = self.start_time.lock().unwrap();
         //     let start = start.get_or_insert_with(Instant::now);

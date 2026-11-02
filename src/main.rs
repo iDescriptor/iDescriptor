@@ -15,6 +15,7 @@ use tracing_subscriber::{EnvFilter, filter::LevelFilter, prelude::*};
 
 pub mod afc_services;
 pub mod airplay;
+mod screen_mirroring;
 mod airplay_receiver;
 pub mod apps;
 pub mod backup_manager;
@@ -22,6 +23,7 @@ pub mod companion_protocol;
 pub mod constants;
 pub mod core;
 pub mod dev_imgs;
+mod developer_images;
 pub mod dev_imgs_manager;
 pub mod device_ctx;
 pub mod device_db;
@@ -198,6 +200,12 @@ fn main() {
         }
     }
 
+    qml_register_type::<screen_mirroring::ScreenMirroring>(
+        cstr::cstr!("iDescriptor"),
+        1,
+        0,
+        cstr::cstr!("ScreenMirroringBackend"),
+    );
     qml_register_type::<screenshot::ScreenshotBackend>(
         cstr::cstr!("iDescriptor"),
         1,

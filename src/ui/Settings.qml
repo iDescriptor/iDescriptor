@@ -31,6 +31,110 @@ DefaultWindow {
     property bool restartRequired: false
     readonly property var backend: typeof settingsManager !== "undefined" ? settingsManager : null
 
+    property string developerImageRevision: ""
+    property string pendingImageRevision: ""
+    property var imageCommits: []
+    property var imageRepositoryRequest: null
+    property int imageRepositoryRequestId: 0
+    property bool imageRepositoryBusy: false
+
+    function cancelImageRepositoryRequest() {
+        ++imageRepositoryRequestId
+        if (imageRepositoryRequest)
+            imageRepositoryRequest.abort()
+        imageRepositoryRequest = null
+        imageRepositoryBusy = false
+    }
+
+    function repositoryRequest(path, callback) {
+        cancelImageRepositoryRequest()
+        const requestId = imageRepositoryRequestId
+        const xhr = new XMLHttpRequest()
+        imageRepositoryRequest = xhr
+        imageRepositoryBusy = true
+        xhr.open("GET", "https://api.github.com/repos/doronz88/DeveloperDiskImage/" + path)
+        xhr.setRequestHeader("Accept", "application/vnd.github+json")
+        xhr.onreadystatechange = function() {
+            if (requestId !== root.imageRepositoryRequestId
+                    || xhr.readyState !== XMLHttpRequest.DONE)
+                return
+            root.imageRepositoryRequest = null
+            root.imageRepositoryBusy = false
+            if (xhr.status !== 200) {
+                let message
+                if (xhr.status === 403 || xhr.status === 429)
+                    message = qsTr("GitHub rejected the request. Its API rate limit may have been reached.")
+                else if (xhr.status === 404)
+                    message = qsTr("The commit was not found in the developer image repository.")
+                else if (xhr.status === 0)
+                    message = qsTr("Could not connect to GitHub. Check your network connection.")
+                else
+                    message = qsTr("Could not fetch repository information (HTTP %1).").arg(xhr.status)
+                callback(null, message)
+                return
+            }
+            let result
+            try {
+                result = JSON.parse(xhr.responseText)
+            } catch (error) {
+                callback(null, qsTr("GitHub returned an invalid response."))
+                return
+            }
+            callback(result, "")
+        }
+        xhr.send()
+    }
+
+    function fetchImageCommits(useLatest) {
+        repositoryRequest("commits?per_page=10", function(commits, error) {
+            if (error) {
+                App.Helpers.showError(root, error)
+                return
+            }
+            if (!Array.isArray(commits) || commits.length === 0) {
+                App.Helpers.showInfo(root, qsTr("No repository commits were found."))
+                return
+            }
+            if (!commits.every(function(entry) {
+                return /^[0-9a-f]{40}$/.test(entry.sha) && entry.commit
+                    && typeof entry.commit.message === "string"
+                    && entry.commit.committer
+                    && typeof entry.commit.committer.date === "string"
+            })) {
+                App.Helpers.showError(root, qsTr("GitHub returned an invalid commit list."))
+                return
+            }
+            root.imageCommits = commits
+            if (useLatest)
+                root.selectImageRevision(commits[0].sha)
+        })
+    }
+
+    function selectImageRevision(revision) {
+        pendingImageRevision = revision
+        if (pendingImageRevision !== developerImageRevision)
+            markDirty(false)
+    }
+
+    function selectCustomImageRevision(value) {
+        const revision = value.trim().toLowerCase()
+        if (!/^[0-9a-f]{40}$/.test(revision)) {
+            App.Helpers.showError(root, qsTr("Enter a full 40-character commit hash."))
+            return
+        }
+        repositoryRequest("commits/" + revision, function(commit, error) {
+            if (error) {
+                App.Helpers.showError(root, error)
+                return
+            }
+            if (!commit || commit.sha !== revision) {
+                App.Helpers.showError(root, qsTr("GitHub returned an invalid commit."))
+                return
+            }
+            root.selectImageRevision(commit.sha)
+        })
+    }
+
     property string downloadPath: ""
     property string ipaDownloadPath: ""
     property string backupRootPath: ""
@@ -70,6 +174,7 @@ DefaultWindow {
 
     function open() {
         loadSettings()
+        fetchImageCommits(false)
         show()
         raise()
         requestActivate()
@@ -138,6 +243,9 @@ DefaultWindow {
     }
 
     function loadSettings() {
+        cancelImageRepositoryRequest()
+        developerImageRevision = settingsManager.developer_image_revision()
+        pendingImageRevision = developerImageRevision
         downloadPath = backendValue("dev_disk_img_path", "")
         ipaDownloadPath = backendValue("ipa_download_path", "")
         backupRootPath = backendValue("backup_root_path", "")
@@ -174,6 +282,8 @@ DefaultWindow {
     }
 
     function applySettings() {
+        settingsManager.set_developer_image_revision(pendingImageRevision)
+        developerImageRevision = settingsManager.developer_image_revision()
         callBackend("set_dev_disk_img_path", downloadPath)
         callBackend("set_ipa_download_path", ipaDownloadPath)
         callBackend("set_backup_root_path", backupRootPath)
@@ -223,6 +333,7 @@ DefaultWindow {
     Component.onCompleted: loadSettings()
 
     onVisibleChanged: {
+        if (!visible) cancelImageRepositoryRequest()
         //restore the window effect when the settings window is closed, in case it was changed
         if (Qt.platform.os === "windows") {
             const effect = settingsManager.window_effect()
@@ -867,6 +978,80 @@ DefaultWindow {
                     }
                 }
 
+                SettingsSection {
+                    title: qsTr("Developer image repository")
+
+                    Label {
+                        Layout.fillWidth: true
+                        text: qsTr("Current commit: %1").arg(root.developerImageRevision)
+                        wrapMode: Text.WrapAnywhere
+                    }
+                    Label {
+                        Layout.fillWidth: true
+                        visible: root.pendingImageRevision !== root.developerImageRevision
+                        text: qsTr("Selected commit: %1 (apply to save)").arg(root.pendingImageRevision)
+                        wrapMode: Text.WrapAnywhere
+                    }
+                    ComboBox {
+                        id: imageCommitSelector
+                        Layout.fillWidth: true
+                        enabled: !root.imageRepositoryBusy && count > 0
+                        model: root.imageCommits.map(function(entry) {
+                            return entry.sha.slice(0, 12) + " — "
+                                + entry.commit.message.split("\n")[0]
+                                + " — " + entry.commit.committer.date.slice(0, 10)
+                        })
+                        ToolTip.visible: hovered && currentIndex >= 0
+                        ToolTip.text: currentIndex >= 0 ? root.imageCommits[currentIndex].sha : ""
+                    }
+                    RowLayout {
+                        Layout.fillWidth: true
+                        Button {
+                            text: qsTr("Refresh")
+                            enabled: !root.imageRepositoryBusy
+                            onClicked: root.fetchImageCommits(false)
+                        }
+                        Button {
+                            text: qsTr("Use latest")
+                            enabled: !root.imageRepositoryBusy
+                            onClicked: root.fetchImageCommits(true)
+                        }
+                        Button {
+                            text: qsTr("Use selected")
+                            enabled: !root.imageRepositoryBusy && imageCommitSelector.currentIndex >= 0
+                            onClicked: root.selectImageRevision(root.imageCommits[imageCommitSelector.currentIndex].sha)
+                        }
+                        BusyIndicator {
+                            Layout.preferredWidth: 24
+                            Layout.preferredHeight: 24
+                            running: root.imageRepositoryBusy
+                            visible: running
+                        }
+                    }
+                    RowLayout {
+                        Layout.fillWidth: true
+                        TextField {
+                            id: customImageCommit
+                            Layout.fillWidth: true
+                            placeholderText: qsTr("Full commit hash")
+                            selectByMouse: true
+                            enabled: !root.imageRepositoryBusy
+                            onAccepted: root.selectCustomImageRevision(text)
+                        }
+                        Button {
+                            text: qsTr("Use commit")
+                            enabled: !root.imageRepositoryBusy && customImageCommit.text.trim().length > 0
+                            onClicked: root.selectCustomImageRevision(customImageCommit.text)
+                        }
+                    }
+                    Label {
+                        Layout.fillWidth: true
+                        text: qsTr("Applies when preparing developer images. Existing mounted images are unchanged. Repository commits may not contain compatible images.")
+                        wrapMode: Text.WordWrap
+                        opacity: 0.65
+                    }
+                }
+
                 ColumnLayout {
                     Layout.fillWidth: true
                     spacing: 2
@@ -926,7 +1111,7 @@ DefaultWindow {
 
                 Button {
                     text: qsTr("Apply")
-                    enabled: root.dirty
+                    enabled: root.dirty && !root.imageRepositoryBusy
                     onClicked: root.applySettings()
                 }
             }

@@ -12,6 +12,9 @@ DefaultWindow {
     required property string udid
     required property var device
     property bool auto_close: true
+    //TODO: we may remove this if we find out how
+    // macOS does that reveal animation used in iPhone Mirroring app
+    property bool customChrome: false
 
     Connections {
         target: App.DeviceContext
