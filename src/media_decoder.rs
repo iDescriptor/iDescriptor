@@ -11,7 +11,7 @@ use ffmpeg::{
     util::{format::Pixel, frame::side_data::Type as FrameSideDataType},
 };
 use ffmpeg_next as ffmpeg;
-use libheif_rs::{ColorSpace, HeifContext, LibHeif, RgbChroma};
+use libheif_rs::{ColorSpace, HeifContext, RgbChroma};
 use qttypes::QImage;
 use std::io::{Read, Seek};
 use tokio_util::sync::CancellationToken;
@@ -145,8 +145,8 @@ pub fn decode_heic_image(data: &[u8]) -> Result<QImage> {
     let handle = context
         .primary_image_handle()
         .context("Failed to find the primary HEIC image")?;
-    let image = LibHeif::new()
-        .decode(&handle, ColorSpace::Rgb(RgbChroma::Rgba), None)
+    let image = handle
+        .decode(ColorSpace::Rgb(RgbChroma::Rgba), false)
         .context("Failed to decode the HEIC image")?;
     let plane = image
         .planes()

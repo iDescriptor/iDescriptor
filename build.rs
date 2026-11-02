@@ -145,6 +145,11 @@ fn main() {
 
     pkg_config::Config::new().probe("glib-2.0").unwrap();
     pkg_config::Config::new().probe("gobject-2.0").unwrap();
+    // libheif-sys 1.12 links by name; discover non-default library paths here.
+    pkg_config::Config::new()
+        .atleast_version("1.12")
+        .probe("libheif")
+        .unwrap();
 
     // GStreamer
     for pkg in &[
