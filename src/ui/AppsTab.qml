@@ -490,6 +490,8 @@ Item {
                                 bundleId: model.bundleId
                                 description: model.description
                                 onSelected: function(app) { root.openDetails(app) }
+                                onInstallRequested: function(bundleId, appName) { root.openInstallPopup(bundleId, appName, description) }
+                                onGetIpaRequested: function(bundleId, appName) { root.openGetIpaPopup(bundleId, appName, description) }
                             }
                         }
                     }
