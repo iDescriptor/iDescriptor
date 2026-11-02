@@ -108,11 +108,14 @@ pub struct BackupManager {
     get_backup_info: qt_method!(fn(&self, udid: QString, root: QString)),
     // refresh_backups: qt_method!(fn(&mut self, root: QString)),
     start_backup: qt_method!(fn(&mut self, root: QString, udid: QString, force_full: bool)),
+    // udid is the connected device to restore onto, source_udid is the backup
+    // folder to restore from (may belong to a different device)
     start_restore: qt_method!(
         fn(
             &mut self,
             root: QString,
             udid: QString,
+            source_udid: QString,
             password: QString,
             reboot: bool,
             copy: bool,
@@ -178,6 +181,13 @@ impl BackupManager {
                         let mut item = BackupListItem::default();
                         // file_name is actually dir name here
                         item.udid = QString::from(p.file_name().unwrap().display().to_string());
+                        if let Some((device_name, version, encrypted)) =
+                            read_backup_list_details(&p)
+                        {
+                            item.device_name = QString::from(device_name);
+                            item.version = QString::from(version);
+                            item.encrypted = encrypted;
+                        }
                         item
                     })
                     .collect();
@@ -420,6 +430,7 @@ impl BackupManager {
         &mut self,
         root: QString,
         udid: QString,
+        source_udid: QString,
         password: QString,
         reboot: bool,
         copy: bool,
@@ -429,11 +440,16 @@ impl BackupManager {
     ) {
         let udid = udid.to_string();
         let udid_for_task = udid.clone();
+        let source_udid = if source_udid.is_empty() {
+            udid.clone()
+        } else {
+            source_udid.to_string()
+        };
         let root = root.to_string();
         let password = password.to_string();
         let q_thread = self.qt_thread();
         debug!(
-            "Starting restore for backup: {udid} with password: {}",
+            "Starting restore of backup {source_udid} onto device {udid} with password: {}",
             if password.is_empty() {
                 "(none)"
             } else {
@@ -445,6 +461,7 @@ impl BackupManager {
             let result = run_restore(
                 q_thread.clone(),
                 udid,
+                source_udid,
                 root.clone(),
                 password,
                 reboot,
@@ -562,6 +579,31 @@ impl BackupManager {
 //         }
 //     }
 // }
+
+// (device name, iOS version, encrypted) from Manifest.plist, used to label backups
+fn read_backup_list_details(backup_dir: &Path) -> Option<(String, String, bool)> {
+    let manifest = plist::Value::from_file(backup_dir.join("Manifest.plist")).ok()?;
+    let manifest = manifest.as_dictionary()?;
+    let lockdown = manifest
+        .get("Lockdown")
+        .and_then(plist::Value::as_dictionary);
+    let lockdown_string = |key: &str| {
+        lockdown
+            .and_then(|dict| dict.get(key))
+            .and_then(plist::Value::as_string)
+            .unwrap_or_default()
+            .to_owned()
+    };
+    let encrypted = manifest
+        .get("IsEncrypted")
+        .and_then(plist::Value::as_boolean)
+        .unwrap_or(false);
+    Some((
+        lockdown_string("DeviceName"),
+        lockdown_string("ProductVersion"),
+        encrypted,
+    ))
+}
 
 fn read_backup_metadata(udid: QString, root: QString) -> anyhow::Result<(bool, bool)> {
     let path = PathBuf::from(root.to_string())
@@ -1278,6 +1320,41 @@ async fn validate_restore_backup(
     .await?
 }
 
+fn is_version_newer(
+    candidate: &crate::device_ctx::iOSVersion,
+    reference: &crate::device_ctx::iOSVersion,
+) -> bool {
+    (candidate.major, candidate.minor, candidate.patch)
+        > (reference.major, reference.minor, reference.patch)
+}
+
+// iOS refuses to restore a backup made on a newer iOS version than the one
+// installed on the target device, fail early with a clear message instead
+fn ensure_backup_compatible_with_device(
+    device: &crate::device_ctx::DeviceServices,
+    info: &plist::Value,
+) -> anyhow::Result<()> {
+    let Some(backup_version) = info
+        .as_dictionary()
+        .and_then(|dict| dict.get("Product Version"))
+        .and_then(plist::Value::as_string)
+    else {
+        warn!("backup Info.plist has no Product Version; skipping compatibility check");
+        return Ok(());
+    };
+
+    let backup_version = crate::device_ctx::iOSVersion::from_str(backup_version);
+    if is_version_newer(&backup_version, &device.ios_version) {
+        anyhow::bail!(
+            "This backup was made on iOS {} but the device is running iOS {}. Update the device to iOS {} or later before restoring this backup.",
+            backup_version.raw_version_str,
+            device.ios_version.raw_version_str,
+            backup_version.raw_version_str
+        );
+    }
+    Ok(())
+}
+
 async fn write_restore_applications(
     provider: &dyn IdeviceProvider,
     info: &plist::Value,
@@ -1447,6 +1524,7 @@ async fn run_backup(
 async fn run_restore(
     qt_thread: QtThread<BackupManager>,
     udid: String,
+    source_udid: String,
     root: String,
     password: String,
     reboot: bool,
@@ -1455,8 +1533,12 @@ async fn run_restore(
     system_files: bool,
     remove_items_not_restored: bool,
 ) -> anyhow::Result<()> {
-    let info_plist = validate_restore_backup(&root, &udid, &password).await?;
+    let info_plist = validate_restore_backup(&root, &source_udid, &password).await?;
     let device = crate::device_ctx::get_device(udid.clone()).await?;
+    if source_udid != udid {
+        info!("restoring backup from another device ({source_udid}) onto {udid}");
+        ensure_backup_compatible_with_device(&device, &info_plist)?;
+    }
     let provider_guard = device.provider.lock().await;
     let provider_ref: &dyn IdeviceProvider = provider_guard.as_ref();
     let mut client = MobileBackup2Client::connect(provider_ref).await?;
@@ -1486,7 +1568,12 @@ async fn run_restore(
     );
     let operation_result: anyhow::Result<()> = async {
         let response = client
-            .restore_from_path(Path::new(&root), None, Some(options), &delegate)
+            .restore_from_path(
+                Path::new(&root),
+                Some(source_udid.as_str()),
+                Some(options),
+                &delegate,
+            )
             .await?;
         check_response(response)
     }
@@ -1607,6 +1694,16 @@ mod tests {
             .expect("typed MobileBackup2 error");
         assert_eq!(response_error.code, -7);
         assert_eq!(response_error.description, "Incorrect password");
+    }
+
+    #[test]
+    fn detects_backup_from_newer_ios() {
+        use crate::device_ctx::iOSVersion;
+        let device = iOSVersion::from_str("17.4.1");
+        assert!(is_version_newer(&iOSVersion::from_str("18.0"), &device));
+        assert!(is_version_newer(&iOSVersion::from_str("17.5"), &device));
+        assert!(!is_version_newer(&iOSVersion::from_str("17.4.1"), &device));
+        assert!(!is_version_newer(&iOSVersion::from_str("16.7.2"), &device));
     }
 
     #[test]

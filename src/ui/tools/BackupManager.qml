@@ -21,9 +21,10 @@ ToolWindow {
     readonly property var state: backupManager.state
     readonly property bool busy: backupManager.busy
     readonly property bool loading: state.loading
-    property string selectedBackupUdid: ""
-    property string selectedBackupName: ""
-    property bool selectedBackupEncrypted: false
+    property string restoreTargetUdid: ""
+    property string restoreTargetName: ""
+    // any backup (including ones from other devices) can be restored onto a connected device
+    readonly property bool hasAnyBackup: backupManager.backup_model.rowCount() > 0
     property string eraseUdid: ""
     property string eraseName: ""
     property var deviceBackupSections: ({})
@@ -57,17 +58,10 @@ ToolWindow {
     }
 
 
+    // udid is the connected device to restore onto, the backup is picked in RestoreDialog
     function selectBackupForRestore(udid, title) {
-
-        const metadata = backupManager.get_backup_metadata(udid, root.backupRoot)
-        if (!metadata || !metadata.success) {
-            App.Helpers.showError(root.contentItem, qsTr("The backup metadata could not be read."))
-            return
-        }
-
-        root.selectedBackupUdid = udid
-        root.selectedBackupName = title || udid
-        root.selectedBackupEncrypted = metadata.IsEncrypted
+        root.restoreTargetUdid = udid
+        root.restoreTargetName = title || udid
         Qt.callLater(function() {
             restoreDialog.open()
         })
@@ -248,13 +242,11 @@ ToolWindow {
         id: restoreDialog
         anchors.centerIn: Overlay.overlay
         backupRoot: root.backupRoot
-        selectedBackupUdid: root.selectedBackupUdid
-        selectedBackupName: root.selectedBackupName
-        selectedBackupEncrypted: root.selectedBackupEncrypted
+        targetUdid: root.restoreTargetUdid
+        targetName: root.restoreTargetName
         onClosed: {
-            root.selectedBackupUdid = ""
-            root.selectedBackupName = ""
-            root.selectedBackupEncrypted = false
+            root.restoreTargetUdid = ""
+            root.restoreTargetName = ""
         }
     }
 
@@ -343,8 +335,8 @@ ToolWindow {
                         Button {
                             text: qsTr("Restore")
                             highlighted: sectionRoot.backupExists
-                            enabled: !root.busy && sectionRoot.backupExists
-                            visible: sectionRoot.backupExists
+                            enabled: !root.busy && root.hasAnyBackup
+                            visible: root.hasAnyBackup
                             onClicked: {
                                 root.selectBackupForRestore(sectionRoot.sectionUdid, sectionRoot.sectionTitle)
                             }

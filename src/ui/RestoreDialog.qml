@@ -12,9 +12,16 @@ AnimatedDialog {
     id: dialog
 
     required property string backupRoot
-    required property string selectedBackupUdid
-    required property string selectedBackupName
-    required property bool selectedBackupEncrypted
+    // the connected device the backup will be restored onto
+    required property string targetUdid
+    required property string targetName
+
+    // the backup to restore from, it can belong to a different device
+    property string selectedBackupUdid: ""
+    property string selectedBackupName: ""
+    property bool selectedBackupEncrypted: false
+    readonly property bool restoringFromOtherDevice: selectedBackupUdid !== ""
+        && selectedBackupUdid !== targetUdid
 
     readonly property int settingsPage: 0
     readonly property int resultPage: 1
@@ -48,6 +55,46 @@ AnimatedDialog {
         passwordField.text = ""
         stateView.errorText = qsTr("The restore operation could not be completed.")
         stateView.viewState = StateView.State.Content
+
+        // prefer the device's own backup, otherwise fall back to the first one
+        let index = backupCombo.indexOfValue(targetUdid)
+        if (index < 0 && backupCombo.count > 0)
+            index = 0
+        backupCombo.currentIndex = index
+        selectBackupAt(index)
+    }
+
+    function selectBackupAt(index) {
+        if (index < 0) {
+            selectedBackupUdid = ""
+            selectedBackupName = ""
+            selectedBackupEncrypted = false
+            return
+        }
+
+        const udid = backupCombo.valueAt(index)
+        const metadata = backupManager.get_backup_metadata(udid, backupRoot)
+        if (!metadata || !metadata.success) {
+            App.Helpers.showError(dialog, qsTr("The backup metadata could not be read."))
+            selectedBackupUdid = ""
+            selectedBackupName = ""
+            selectedBackupEncrypted = false
+            return
+        }
+
+        selectedBackupUdid = udid
+        selectedBackupName = backupCombo.textAt(index) || udid
+        selectedBackupEncrypted = metadata.IsEncrypted === true
+        passwordField.text = ""
+    }
+
+    function backupLabel(udid, deviceName, version) {
+        let label = deviceName || udid
+        if (udid === targetUdid)
+            label = qsTr("%1 (this device)").arg(label)
+        if (version)
+            label = qsTr("%1 · iOS %2").arg(label).arg(version)
+        return label
     }
 
     function requestClose() {
@@ -56,7 +103,7 @@ AnimatedDialog {
     }
 
     function requestRestore() {
-        if (!selectedBackupUdid || operationInProgress)
+        if (!selectedBackupUdid || !targetUdid || operationInProgress)
             return
 
         if (selectedBackupEncrypted && passwordField.text.length === 0) {
@@ -68,8 +115,12 @@ AnimatedDialog {
         App.Helpers.messageBox(
             dialog,
             qsTr("Confirm Restore"),
-            qsTr("Restore “%1” to its matching device? Existing device data may be replaced.")
-                .arg(selectedBackupName || selectedBackupUdid),
+            restoringFromOtherDevice
+                ? qsTr("Restore the backup of “%1” onto “%2”? This backup was made on a different device. Existing data on “%2” will be replaced.")
+                    .arg(selectedBackupName || selectedBackupUdid)
+                    .arg(targetName || targetUdid)
+                : qsTr("Restore “%1” to its matching device? Existing device data may be replaced.")
+                    .arg(selectedBackupName || selectedBackupUdid),
             MessageDialog.Yes | MessageDialog.No,
             function(button) {
                 if (button === MessageDialog.Yes)
@@ -78,7 +129,7 @@ AnimatedDialog {
     }
 
     function startRestore() {
-        if (!selectedBackupUdid || operationInProgress)
+        if (!selectedBackupUdid || !targetUdid || operationInProgress)
             return
 
         contentPage = resultPage
@@ -89,6 +140,7 @@ AnimatedDialog {
 
         backupManager.start_restore(
             backupRoot,
+            targetUdid,
             selectedBackupUdid,
             selectedBackupEncrypted ? passwordField.text : "",
             rebootToggle.checked,
@@ -110,7 +162,7 @@ AnimatedDialog {
 
         function onOperationFinished(operation, operationUdid, success, errorCode, errorString) {
             if (operation !== "restore"
-                    || operationUdid !== dialog.selectedBackupUdid
+                    || operationUdid !== dialog.targetUdid
                     || !dialog.operationInProgress)
                 return
 
@@ -187,9 +239,62 @@ AnimatedDialog {
 
                         Label {
                             Layout.fillWidth: true
-                            text: qsTr("Restore “%1” to its matching device.")
-                                .arg(dialog.selectedBackupName || dialog.selectedBackupUdid)
+                            text: qsTr("Choose a backup to restore onto “%1”.")
+                                .arg(dialog.targetName || dialog.targetUdid)
                             color: App.Theme.text
+                            wrapMode: Text.WordWrap
+                        }
+
+                        ComboBox {
+                            id: backupCombo
+                            Layout.fillWidth: true
+                            model: backupManager.backup_model
+                            valueRole: "udid"
+                            textRole: "device_name"
+                            // use the dialog's selection instead of currentText to avoid a binding loop
+                            displayText: dialog.selectedBackupUdid === ""
+                                ? qsTr("No backups available")
+                                : dialog.backupLabel(dialog.selectedBackupUdid, dialog.selectedBackupName, "")
+                            onActivated: function(index) {
+                                dialog.selectBackupAt(index)
+                            }
+
+                            delegate: ItemDelegate {
+                                required property int index
+                                required property string udid
+                                required property string device_name
+                                required property string version
+
+                                width: backupCombo.width
+                                highlighted: backupCombo.highlightedIndex === index
+                                contentItem: ColumnLayout {
+                                    spacing: 1
+
+                                    Label {
+                                        Layout.fillWidth: true
+                                        text: dialog.backupLabel(udid, device_name, version)
+                                        color: App.Theme.text
+                                        elide: Text.ElideRight
+                                    }
+
+                                    Label {
+                                        Layout.fillWidth: true
+                                        text: udid
+                                        color: App.Theme.textMuted
+                                        font.pixelSize: 11
+                                        elide: Text.ElideMiddle
+                                    }
+                                }
+                            }
+                        }
+
+                        Label {
+                            Layout.fillWidth: true
+                            visible: dialog.restoringFromOtherDevice
+                            text: qsTr("This backup was made on a different device. Its data, apps and settings will replace those on “%1”. The backup cannot be newer than the iOS version installed on this device.")
+                                .arg(dialog.targetName || dialog.targetUdid)
+                            color: App.Theme.textMuted
+                            font.pixelSize: 12
                             wrapMode: Text.WordWrap
                         }
 
@@ -284,7 +389,8 @@ AnimatedDialog {
                             Button {
                                 text: qsTr("Restore")
                                 highlighted: true
-                                enabled: !dialog.selectedBackupEncrypted || passwordField.text.length > 0
+                                enabled: dialog.selectedBackupUdid !== ""
+                                    && (!dialog.selectedBackupEncrypted || passwordField.text.length > 0)
                                 onClicked: dialog.requestRestore()
                             }
                         }
