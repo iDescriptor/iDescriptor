@@ -160,7 +160,7 @@ Item {
             deviceModel.append(root.normalizeDevice(mac, device))
         }
 
-        if (App.Settings.auto_connect_wireless_devices) {
+        if (settingsManager.auto_connect_wireless_devices()) {
             App.Helpers.setTimeout(()=>{
                 App.DeviceContext.tryToConnectToNetworkDevice(mac, device.address, false)
             }, index * 100)
