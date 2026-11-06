@@ -194,6 +194,7 @@ xattr -c ~/Applications/iDescriptor.app
 | [AirPlay](#airplay)                                    | ✅ Implemented | Cast your device screen to your computer.                             |
 | [Download & Install Apps From Apple Store](#app-store) | ✅ Implemented | Download and install apps directly from the Apple Store.              |
 | [Battery Information](#battery-information) | ✅ Implemented | Read detailed battery info from device.              |
+| Display Info                                           | ✅ Implemented | See the screen manufacturer (Samsung, LG, ...) and screen serial number, like 3uTools. |
 | [Virtual Location](#virtual-location)                  | ✅ Implemented | Simulate GPS location.                                                |
 | [Device Backups](#device-backups)                  | ✅ Implemented (Experimental) | Backup your data from device (iOS 13-26)                                                |
 | [iFuse Filesystem Mount](#ifuse-filesystem-mount)      | ✅ Implemented | Mount the device's filesystem. (Windows & Linux only)                 |

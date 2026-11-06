@@ -105,6 +105,7 @@ qrc!(pub qml,
         "src/ui/tools/SSHProcessWindow.qml",
         "src/ui/tools/BackupManager.qml",
         "src/ui/tools/BatteryInfo.qml",
+        "src/ui/tools/DisplayInfo.qml",
         "src/ui/tools/TransferSpeedTest.qml",
 
         // app-store/

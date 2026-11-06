@@ -19,7 +19,7 @@ use plist::Value;
 use qmetaobject::prelude::*;
 use qttypes::{QStringList, QVariantMap};
 
-use ::log::error;
+use ::log::{error, info};
 use plist_macro::plist;
 use serde_json;
 use std::sync::Arc;
@@ -53,6 +53,7 @@ pub struct ServiceManager {
     install_ipa: qt_method!(fn(&self, ipa_path: QString)),
     enable_wifi_connections: qt_method!(fn(&self)),
     get_battery_info: qt_method!(fn(&self, raw_product_type: QString, ios_major: u32)),
+    get_display_info: qt_method!(fn(&self)),
 
     // Signals
     cableInfoRetrieved: qt_signal!(info: QString),
@@ -69,6 +70,8 @@ pub struct ServiceManager {
     installedAppsRetrieved: qt_signal!(success : bool,apps: QVariantMap),
     batteryInfoUpdated: qt_signal!(info: QVariantMap),
     batteryInfoUpdateFailed: qt_signal!(error: QString),
+    displayInfoRetrieved: qt_signal!(info: QVariantMap),
+    displayInfoFailed: qt_signal!(error: QString),
     appsDiskUsageRetrieved: qt_signal!(success: bool, apps_usage: u64),
     installIpaInit: qt_signal!(started: bool, state: QString),
     installIpaProgress: qt_signal!(progress: f64, state: QString),
@@ -972,6 +975,37 @@ impl ServiceManager {
                     let error = QString::from(e.to_string());
                     qt_thread.queue(move |t| {
                         t.batteryInfoUpdateFailed(error);
+                    });
+                }
+            }
+        });
+    }
+
+    fn get_display_info(&self) {
+        let udid = self.udid.clone();
+        let qt_t = self.qt_thread();
+
+        let diag_guard = self.device.as_ref().unwrap().clone().diag;
+
+        RUNTIME.spawn(async move {
+            let qt_thread = qt_t.clone();
+            let mut diag = diag_guard.lock().await;
+            match crate::display_info::read_display_info(&mut diag).await {
+                Ok(info) => {
+                    info!(
+                        "get_display_info: panel serial for device {udid} read from {:?}",
+                        info.source
+                    );
+                    let info = info.to_qvariantmap();
+                    qt_thread.queue(move |t| {
+                        t.displayInfoRetrieved(info);
+                    });
+                }
+                Err(e) => {
+                    error!("get_display_info: Failed to get display info for device {udid}: {e}");
+                    let error = QString::from(e.to_string());
+                    qt_thread.queue(move |t| {
+                        t.displayInfoFailed(error);
                     });
                 }
             }

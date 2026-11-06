@@ -29,6 +29,7 @@ pub mod device_ctx;
 pub mod device_db;
 #[cfg(not(target_os = "macos"))]
 pub mod diagnose;
+pub mod display_info;
 pub mod gallery;
 pub mod gallery_fs_provider;
 pub mod gallery_sqlite_provider;
