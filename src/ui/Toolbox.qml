@@ -269,7 +269,7 @@ Item {
     // 5 WirelessGalleryImport, 6 iFuse, 7 CableInfo, 8 NetworkDevices, 9 EnableDevMode,
     // 10 Restart, 11 Shutdown, 12 RecoveryMode, 13 EnableWifiConnections, 14 BackupManager,
     // 15 TransferSpeedTest, 16 Unpair, 17 UnpairAndRemove, 18 DetailedBatteryInfo,
-    // 19 WiredGalleryImport
+    // 19 WiredGalleryImport, 20 ScreenMirroring, 21 DisplayInfo
     // signal toolClicked(int toolId, bool requiresDevice)
     function toolClicked(toolId, requiresDevice, wirelessNotAllowed) {
         const device = App.DeviceContext.getDevice(currentDeviceUdid)
@@ -437,6 +437,9 @@ Item {
             case 19:
                 root.openToolWindow("./tools/WiredGalleryImport.qml", true, device, currentDeviceUdid)
                 break;
+            case 21:
+                root.openToolWindow("./tools/DisplayInfo.qml", true, device, currentDeviceUdid)
+                break;
             default:
             console.log(`No tool for id ${toolId}`)
         }
@@ -580,6 +583,14 @@ Item {
             description: qsTr("View detailed battery health and capacity information"),
             requiresDevice: true,
             iconSource: "qrc:/resources/icons/idescriptor-battery-details.svg",
+            visible: true
+        },
+        {
+            toolId: 21,
+            title: qsTr("Display Info"),
+            description: qsTr("View the screen manufacturer and screen serial number"),
+            requiresDevice: true,
+            iconSource: "qrc:/resources/icons/material-symbols_smartphone-outline.svg",
             visible: true
         },
         {
