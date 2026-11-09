@@ -2,6 +2,14 @@ This project uses qmetaobject-rs to use Rust with QML.
 
 UI related files are in src/ui/ folder
 
+Inspect the existing implementation before proposing a new API. Read the relevant component, backend, shared base class, and similar features first. Reuse existing APIs and components such as ClosingHandler, QmlUtils.copy_to_clipboard, IconToolButton, and device services instead of introducing a parallel implementation without checking what already exists.
+
+For refresh actions, use src/ui/base/IconToolButton.qml with qrc:/resources/icons/ic_outline-refresh.svg and a translated Refresh tooltip and accessible name instead of a text button or a custom refresh control.
+
+For directory selection UI, reuse src/ui/base/LocationSelector.qml instead of creating a separate path label and Change button. Connect changeRequested to the appropriate FolderDialog, normalize selectedFolder with QmlUtils.url_to_path, and keep directory persistence in the relevant backend/settings API. LocationSelector displays the location; it does not open the picker itself.
+
+Centralize closing and cancellation through App.ClosingHandler.handler(...) for active-operation close prompts, including application exit. A cancellation request is not completion: wait for the worker to finish before closing or destroying its window. Extend the existing ClosingHandler when an operation needs a new close-handling category instead of adding a separate prompt flow.
+
 When transforming from C++ to QML, keep the comments, fixme or todo comments in the code, if you do not know how to transform some code add a fixme  and a explanatory comment about what it is supposed to do
 
 In addition to qmetaobject-rs we have a custom macro for QtThreading to safely manage threading and communication between the Qt event loop.
