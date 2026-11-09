@@ -16,6 +16,8 @@ Item {
     property string activeCategory: ""
     property var approvedCategories: []
     property bool retryCloseAfterDialog: false
+    property bool waitingForFlashStop: false
+    property bool flashCancelFailed: false
 
     function scopeIncludes(scope, category) {
         return scope === "*" || scope === category
@@ -36,6 +38,9 @@ Item {
                 && ioManager.has_active_tasks())
             return "io_manager"
 
+        if (root.scopeIncludes(scope, "flash") && FlashManager.busy)
+            return "flash"
+
         return ""
     }
 
@@ -45,6 +50,8 @@ Item {
         root.activeCategory = ""
         root.approvedCategories = []
         root.retryCloseAfterDialog = false
+        root.waitingForFlashStop = false
+        root.flashCancelFailed = false
     }
 
     function handler(scope, closeEvent, targetWindow) {
@@ -73,6 +80,8 @@ Item {
         root.pendingScope = scope
         root.activeCategory = category
         root.retryCloseAfterDialog = false
+        root.flashCancelFailed = false
+        root.waitingForFlashStop = category === "flash" && !!FlashManager.state.cancellationRequested
         closingDialog.parent = targetWindow.contentItem
         closingDialog.open()
         return true
@@ -84,6 +93,23 @@ Item {
     }
 
     function cancelCurrentCategory() {
+        if (root.waitingForFlashStop)
+            return
+        if (root.activeCategory === "flash") {
+            if (!FlashManager.busy) {
+                root.retryCloseAfterDialog = true
+                closingDialog.close()
+                return
+            }
+            root.waitingForFlashStop = true
+            if (!FlashManager.cancel_flash()) {
+                root.waitingForFlashStop = false
+                root.flashCancelFailed = true
+            }
+            // A cancellation request is not completion. Do not approve this
+            // category or retry closing until the worker actually finishes.
+            return
+        }
         if (root.activeCategory === "backup")
             backupManager.cancel_all_operations()
         else if (root.activeCategory === "io_manager")
@@ -96,6 +122,18 @@ Item {
         closingDialog.close()
     }
 
+    Connections {
+        target: FlashManager
+
+        function onFlashFinished(success, cancelled, error) {
+            if (root.activeCategory !== "flash" || !root.waitingForFlashStop)
+                return
+            root.waitingForFlashStop = false
+            root.retryCloseAfterDialog = true
+            closingDialog.close()
+        }
+    }
+
     AnimatedDialog {
         id: closingDialog
         modal: true
@@ -103,7 +141,7 @@ Item {
         anchors.centerIn: parent
         width: Math.min(460, parent ? parent.width - 48 : 460)
         standardButtons: Dialog.NoButton
-        closePolicy: Popup.CloseOnEscape
+        closePolicy: root.waitingForFlashStop ? Popup.NoAutoClose : Popup.CloseOnEscape
 
         onClosed: {
             if (!root.retryCloseAfterDialog) {
@@ -124,7 +162,9 @@ Item {
 
             Label {
                 Layout.fillWidth: true
-                text: root.activeCategory === "backup"
+                text: root.activeCategory === "flash"
+                    ? (root.waitingForFlashStop ? qsTr("Stopping Firmware Restore") : qsTr("Firmware Restore Is Running"))
+                    : root.activeCategory === "backup"
                     ? qsTr("Backup Operations Are Running")
                     : qsTr("File Transfers Are Running")
                 color: Theme.text
@@ -136,6 +176,17 @@ Item {
             Label {
                 Layout.fillWidth: true
                 text: {
+                    if (root.activeCategory === "flash") {
+                        if (root.waitingForFlashStop)
+                            return qsTr("Cancellation requested. Keep the device connected while the restore reaches a stopping point. This window will close when the restore has stopped.")
+                        if (root.flashCancelFailed)
+                            return qsTr("The cancellation request could not be sent. Keep this window open and try again.")
+                        if (!FlashManager.state.canCancel)
+                            return qsTr("The firmware restore cannot be cancelled at this stage. Keep the device connected and wait for it to finish.")
+                        return root.pendingScope === "*"
+                            ? qsTr("A firmware restore is in progress. Cancel it and quit after the restore has stopped?")
+                            : qsTr("A firmware restore is in progress. Cancel it and close this window after the restore has stopped?")
+                    }
                     if (root.activeCategory === "backup") {
                         return root.pendingScope === "*"
                             ? qsTr("A backup or restore is still in progress. Quitting now will cancel it. Do you want to cancel the active backup tasks and quit?")
@@ -165,11 +216,17 @@ Item {
 
                 Button {
                     text: qsTr("Keep Working")
+                    enabled: !root.waitingForFlashStop
                     onClicked: root.keepWorking()
                 }
 
                 Button {
-                    text: root.pendingScope === "*"
+                    enabled: !root.waitingForFlashStop
+                        && (root.activeCategory !== "flash" || !FlashManager.busy || !!FlashManager.state.canCancel)
+                    text: root.waitingForFlashStop ? qsTr("Cancelling…")
+                        : root.activeCategory === "flash"
+                        ? (root.pendingScope === "*" ? qsTr("Cancel Restore and Quit") : qsTr("Cancel Restore and Close"))
+                        : root.pendingScope === "*"
                         ? qsTr("Cancel Tasks and Quit")
                         : qsTr("Cancel Tasks and Close")
                     palette.buttonText: Theme.dangerText

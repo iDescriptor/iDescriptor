@@ -78,6 +78,7 @@ qrc!(pub qml,
         // base/
         "src/ui/base/AnimatedTab.qml",
         "src/ui/base/LocationSelector.qml",
+        "src/ui/base/SegmentedTabs.qml",
         "src/ui/base/Spinner.qml",
         "src/ui/base/StateView.qml",
         "src/ui/base/ThemedSplitView.qml",
@@ -90,6 +91,7 @@ qrc!(pub qml,
         "src/ui/base/AnimatedDialog.qml",
 
         // tools/
+        "src/ui/tools/FirmwareManager.qml",
         "src/ui/tools/Airplay.qml",
         "src/ui/tools/CableInfo.qml",
         "src/ui/tools/QueryMobileGestalt.qml",
@@ -106,6 +108,10 @@ qrc!(pub qml,
         "src/ui/tools/BackupManager.qml",
         "src/ui/tools/BatteryInfo.qml",
         "src/ui/tools/TransferSpeedTest.qml",
+
+        // actions
+        "src/ui/actions/FlashAction.qml",
+        "src/ui/base/FlashActionWindow.qml",
 
         // app-store/
         "src/ui/app-store/AppDetails.qml",

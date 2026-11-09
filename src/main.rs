@@ -15,7 +15,6 @@ use tracing_subscriber::{EnvFilter, filter::LevelFilter, prelude::*};
 
 pub mod afc_services;
 pub mod airplay;
-mod screen_mirroring;
 mod airplay_receiver;
 pub mod apps;
 pub mod backup_manager;
@@ -23,12 +22,13 @@ pub mod companion_protocol;
 pub mod constants;
 pub mod core;
 pub mod dev_imgs;
-mod developer_images;
 pub mod dev_imgs_manager;
+mod developer_images;
 pub mod device_ctx;
 pub mod device_db;
 #[cfg(not(target_os = "macos"))]
 pub mod diagnose;
+pub mod firmware;
 pub mod gallery;
 pub mod gallery_fs_provider;
 pub mod gallery_sqlite_provider;
@@ -53,6 +53,7 @@ pub mod qml_utils;
 pub mod qquickimageprovider_imp;
 pub mod qrc;
 pub mod qt_threading;
+mod screen_mirroring;
 pub mod screenshot;
 pub mod service_factory;
 pub mod service_manager;
@@ -288,6 +289,12 @@ fn main() {
 
     let backup_manager = QObjectBox::new(backup_manager::BackupManager::new_with_state());
     engine.set_object_property("backupManager".into(), backup_manager.pinned());
+
+    let firmware_manager = QObjectBox::new(firmware::FirmwareManager::default());
+    engine.set_object_property("firmwareManager".into(), firmware_manager.pinned());
+
+    let flash_manager = QObjectBox::new(firmware::FlashManager::new_with_state());
+    engine.set_object_property("FlashManager".into(), flash_manager.pinned());
 
     #[cfg(not(target_os = "macos"))]
     let ifuse = QObjectBox::new(ifuse::IFuse::new_with_state());

@@ -178,6 +178,8 @@ pub struct SettingsManager {
     ipa_download_path: qt_method!(fn(&self) -> QString),
     set_ipa_download_path: qt_method!(fn(&self, path: QString)),
     mk_ipa_download_path: qt_method!(fn(&self) -> QString),
+    firmware_download_path: qt_method!(fn(&self) -> QString),
+    set_firmware_download_path: qt_method!(fn(&self, path: QString)),
     last_gallery_export_folder: qt_method!(fn(&self) -> QString),
     set_last_gallery_export_folder: qt_method!(fn(&self, folder: QString)),
     backup_root_path: qt_method!(fn(&self) -> QString),
@@ -333,7 +335,10 @@ impl SettingsManager {
     }
 
     fn developer_image_revision(&self) -> QString {
-        read_string("developerImageRevision", crate::developer_images::bundle::DEFAULT_REVISION)
+        read_string(
+            "developerImageRevision",
+            crate::developer_images::bundle::DEFAULT_REVISION,
+        )
     }
 
     fn set_developer_image_revision(&self, revision: QString) {
@@ -409,6 +414,27 @@ impl SettingsManager {
             }
             return path;
         })
+    }
+
+    fn firmware_download_path(&self) -> QString {
+        let default_path = std::path::PathBuf::from(self.home_path().to_string()).join("ipsw");
+        let saved = read_string("ipswDownloadPath", &default_path.to_string_lossy()).to_string();
+        let path = if saved.is_empty() {
+            default_path
+        } else {
+            std::path::PathBuf::from(saved)
+        };
+        if let Err(error) = std::fs::create_dir_all(&path) {
+            log::error!(
+                "Failed to create IPSW download directory {}: {error}",
+                path.display()
+            );
+        }
+        QString::from(path.to_string_lossy().into_owned())
+    }
+
+    fn set_firmware_download_path(&self, path: QString) {
+        write_string("ipswDownloadPath", path);
     }
 
     fn last_gallery_export_folder(&self) -> QString {
@@ -742,7 +768,9 @@ impl SettingsManager {
     }
 
     fn reset_to_defaults(&self) {
-        self.set_developer_image_revision(QString::from(crate::developer_images::bundle::DEFAULT_REVISION));
+        self.set_developer_image_revision(QString::from(
+            crate::developer_images::bundle::DEFAULT_REVISION,
+        ));
         self.set_last_gallery_export_folder(QString::default());
         self.set_dev_disk_img_path(QString::from(format!(
             "{}/devdiskimages",

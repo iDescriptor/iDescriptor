@@ -23,8 +23,10 @@ axum = "0.8"
 http-range-header = "0.4"
 #idevice = { path = "lib/idevice-rs/idevice", features = ["full", "aws-lc"], default-features = false }
 idevice = { path = "lib/idevice-rs/idevice", features = ["full", "openssl"], default-features = false }
+nusb = { version = "0.2.4", features = ["tokio"] }
 uuid = { version = "1.22.0", features = ["v4"] }
 sha2 = "0.10"
+sha1 = "0.11"
 bytemuck = "1.24"
 directories = "6"
 gstreamer = "0.25.2"
