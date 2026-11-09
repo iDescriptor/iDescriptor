@@ -20,6 +20,13 @@ Window {
     color: Theme.windowBackground
     palette: Theme.palette
 
+    Shortcut {
+        sequences: [StandardKey.Close]
+        enabled: Qt.platform.os === "osx"
+        context: Qt.WindowShortcut
+        onActivated: window.close()
+    }
+
 
     Component.onCompleted : {
         if (Qt.platform.os === "osx" && window.setupMacOSWindowStyle) {
