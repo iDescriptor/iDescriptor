@@ -60,20 +60,31 @@ Item {
                     elide: Text.ElideRight
                 }
 
-                Button {
-                    text: qsTr("Exit Recovery Mode")
-                    highlighted: true
-                    enabled: v("ecid", "") !== ""
-                    onClicked: {
-                        const success = core.exit_recovery_mode(v("ecid", ""))
-                        if (success) {
-                            App.Helpers.showInfo(
-                                root,
-                                qsTr("The command to exit recovery mode was sent successfully. The device should restart shortly."))
-                        } else {
-                            App.Helpers.showError(
-                                root,
-                                qsTr("Failed to exit recovery mode. This could be due to USB permissions."))
+                RowLayout {
+                    Button {
+                        text: qsTr("Go Flash")
+                        enabled: root.v("ecid", "") !== ""
+                        onClicked: {
+                            //FIXME: we need enums and we need to pass ecid
+                            Toolbox.toolClicked(21, false, false)
+                        }
+                    }
+
+                    Button {
+                        text: qsTr("Exit Recovery Mode")
+                        highlighted: true
+                        enabled: v("ecid", "") !== ""
+                        onClicked: {
+                            const success = core.exit_recovery_mode(v("ecid", ""))
+                            if (success) {
+                                App.Helpers.showInfo(
+                                    root,
+                                    qsTr("The command to exit recovery mode was sent successfully. The device should restart shortly."))
+                            } else {
+                                App.Helpers.showError(
+                                    root,
+                                    qsTr("Failed to exit recovery mode. This could be due to USB permissions."))
+                            }
                         }
                     }
                 }
