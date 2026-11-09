@@ -17,6 +17,7 @@ Item {
 
     property bool loading: true
     property string error: ""
+    property bool keychainPromptPending: false
     property string email: ""
     property bool isLoggedIn: email.length > 0
     property bool sponsorsFetched: false
@@ -71,6 +72,24 @@ Item {
         anchors.fill: parent
         active: root.isMacOS
         source: active ? "KeychainDialog.qml" : ""
+        onLoaded: Qt.callLater(root.openKeychainDialogWhenReady)
+        onStatusChanged: {
+            if (status === Loader.Error)
+                Qt.callLater(root.openKeychainDialogWhenReady)
+        }
+    }
+
+    function openKeychainDialogWhenReady() {
+        if (!root.keychainPromptPending)
+            return
+        if (keychainDialogLoader.status === Loader.Ready && keychainDialogLoader.item) {
+            root.keychainPromptPending = false
+            keychainDialogLoader.item.open()
+        } else if (keychainDialogLoader.status === Loader.Error) {
+            root.keychainPromptPending = false
+            console.warn("Could not load the Keychain dialog; initializing without the saved account")
+            apps.init(false)
+        }
     }
 
     Connections {
@@ -212,7 +231,8 @@ Item {
 
     Component.onCompleted: {
         if (root.isMacOS && settingsManager.show_keychain_dialog()) {
-            keychainDialogLoader.item.open()
+            root.keychainPromptPending = true
+            root.openKeychainDialogWhenReady()
             return
         }
 
