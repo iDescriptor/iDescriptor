@@ -157,8 +157,10 @@ pub async fn prepare(
                 return Ok(());
             }
             progress("downloading", 0.0);
-            let bundle =
-                bundle::fetch(kind, root, revision, &|fraction| progress("downloading", fraction)).await?;
+            let bundle = bundle::fetch(kind, root, revision, &|fraction| {
+                progress("downloading", fraction)
+            })
+            .await?;
             return cryptex::install(&mut connection, &bundle, progress).await;
         }
         ensure!(automatic, "Device does not advertise the Cryptex service");

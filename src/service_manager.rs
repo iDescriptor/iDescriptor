@@ -36,7 +36,8 @@ pub struct ServiceManager {
     query_mobilegestalt: qt_method!(fn(&self, keys: QStringList)),
     mount_dev_image: qt_method!(fn(&self, version: QString, image_path: QString, sig: QString)),
     get_mounted_image: qt_method!(fn(&self)),
-    prepare_developer_image: qt_method!(fn(&self, selection: QString, directory: QString, revision: QString)),
+    prepare_developer_image:
+        qt_method!(fn(&self, selection: QString, directory: QString, revision: QString)),
     developerImageProgress: qt_signal!(stage: QString, progress: f64),
     developerImagePrepared: qt_signal!(success: bool, error: QString),
     developerImageStatus: qt_signal!(success: bool, mounted: bool, error: QString),

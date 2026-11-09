@@ -13,8 +13,8 @@ use idevice::{
     installation_proxy::InstallationProxyClient,
     lockdown::LockdownClient,
     mobilebackup2::{
-        BackupDelegate, BackupOptions, BackupProgress, DirEntryInfo, FsBackupDelegate, MobileBackup2Client,
-        RestoreOptions,
+        BackupDelegate, BackupOptions, BackupProgress, DirEntryInfo, FsBackupDelegate,
+        MobileBackup2Client, RestoreOptions,
     },
     notification_proxy::{
         MOBILEBACKUP2_NOTIFICATIONS, MobileBackup2Notification, NotificationProxyClient,

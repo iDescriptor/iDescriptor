@@ -48,13 +48,13 @@ impl Playback {
             )?
             .downcast::<gst::Pipeline>()
             .map_err(|_| anyhow!("Invalid mirroring pipeline"))?;
-//         capture.attach(
-//             &pipeline
-//                 .by_name("visible_crop")
-//                 .context("Missing decoded video queue")?
-//                 .static_pad("sink")
-//                 .context("Missing decoded video pad")?,
-//         );
+        //         capture.attach(
+        //             &pipeline
+        //                 .by_name("visible_crop")
+        //                 .context("Missing decoded video queue")?
+        //                 .static_pad("sink")
+        //                 .context("Missing decoded video pad")?,
+        //         );
         let picture = Arc::new(Mutex::new(None));
         let crop = pipeline
             .by_name("visible_crop")
@@ -145,9 +145,9 @@ impl Playback {
         }
         // self.capture.set_reply(name, value);
     }
-//     pub fn capture_frame(&self, geometry: String) {
-//         self.capture.request(geometry);
-//     }
+    //     pub fn capture_frame(&self, geometry: String) {
+    //         self.capture.request(geometry);
+    //     }
     pub fn has_frame(&self) -> bool {
         self.first_frame.load(Ordering::Relaxed)
     }
