@@ -74,6 +74,7 @@ PLUGINS=(
   "libgstplayback"
   "libgstvideobox"
   "libgstvideofilter"
+    "libgstvideocrop"
   "libgstvideoparsersbad"
   "libgstvolume"
   "libgstvideoconvertscale"

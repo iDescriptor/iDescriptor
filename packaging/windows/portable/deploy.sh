@@ -96,6 +96,7 @@ WANTED_PLUGINS=(
     "libgstfaad"
     "libgstvideoparsersbad"
     "libgstvideofilter"
+    "libgstvideocrop"
     "libgstvideoconvertscale"
     "libgstmultifile"
     "libgstjpeg"

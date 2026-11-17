@@ -138,6 +138,7 @@ plugins=(
     "libgstvideoconvert.so"
     "libgstvideoscale.so"
     "libgstvideofilter.so"
+    "libgstvideocrop.so"
     "libgstjpeg.so"
     "libgstimagefreeze.so"
     "libgstximagesink.so"
