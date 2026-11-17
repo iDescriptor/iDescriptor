@@ -96,7 +96,8 @@ jobs:
             meson \
             ninja \
             openssl \
-            sqlite
+            sqlite \
+            unicorn
 
       - name: Build qml6glsink
         shell: bash
