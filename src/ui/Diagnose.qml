@@ -1,6 +1,8 @@
 // SPDX-FileCopyrightText: 2025-2026 Uncore <https://github.com/uncor3>
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
+pragma ComponentBehavior: Bound
+
 import QtQuick
 import QtQuick.Controls
 import QtQuick.Layouts
@@ -58,14 +60,153 @@ Item {
         return qsTr("Unable to check")
     }
 
-    function actionText(modelData) {
-        if (modelData.actionMode === "instructions")
-            return qsTr("View Instructions")
-        if (modelData.id === "udev_rules")
-            return qsTr("View Instructions")
-        if (modelData.availability === 1)
-            return qsTr("Start")
-        return qsTr("Install")
+    function performDependencyAction(dependency) {
+        if (dependency.actionMode === "instructions")
+            Qt.openUrlExternally(dependency.documentationUrl)
+        else
+            DiagnoseImpl.install(dependency.id)
+    }
+
+    // Shared presentation only. Each dependency below owns its copy and action.
+    component DependencyRow: Rectangle {
+        id: row
+        property var dependency: ({})
+        property string dependencyName: ""
+        property string description: ""
+        property string actionLabel: ""
+        signal actionRequested()
+
+        implicitHeight: Math.max(78, rowContents.implicitHeight + 20)
+        radius: 7
+        color: "transparent"
+        border.color: dependency.id === root.focusedDependencyId
+                      ? diagnosticsDialog.palette.highlight : "transparent"
+        border.width: dependency.id === root.focusedDependencyId ? 2 : 1
+
+        RowLayout {
+            id: rowContents
+            anchors.fill: parent
+            anchors.margins: 10
+            spacing: 10
+
+            ColumnLayout {
+                Layout.fillWidth: true
+                spacing: 3
+
+                RowLayout {
+                    Layout.fillWidth: true
+                    spacing: 6
+                    Label {
+                        Layout.fillWidth: true
+                        text: row.dependencyName
+                        font.pixelSize: 13
+                        font.weight: Font.DemiBold
+                        elide: Text.ElideRight
+                    }
+                    Label {
+                        visible: !!row.dependency.optional
+                        text: qsTr("Optional")
+                        color: "#94a3b8"
+                        font.pixelSize: 11
+                    }
+                }
+                Label {
+                    Layout.fillWidth: true
+                    text: row.description
+                    color: "#94a3b8"
+                    font.pixelSize: 11
+                    wrapMode: Text.WordWrap
+                }
+                Label {
+                    Layout.fillWidth: true
+                    text: root.statusText(row.dependency)
+                    color: root.colorForKind(row.dependency.statusKind)
+                    font.pixelSize: 11
+                    font.weight: Font.DemiBold
+                }
+            }
+            BusyIndicator {
+                Layout.preferredWidth: 24
+                Layout.preferredHeight: 24
+                visible: root.diagnoseState.installingId === row.dependency.id
+                running: visible
+            }
+            Button {
+                visible: !!row.dependency.actionVisible
+                         && root.diagnoseState.installingId !== row.dependency.id
+                enabled: !root.diagnoseState.checking
+                         && !root.diagnoseState.installingId
+                text: row.actionLabel
+                onClicked: row.actionRequested()
+            }
+        }
+    }
+
+    component AvahiDependency: DependencyRow {
+        dependencyName: qsTr("Avahi Daemon")
+        description: qsTr("Required for AirPlay, optional backend for wireless device discovery.")
+        actionLabel: dependency.availability === 1 ? qsTr("Start") : qsTr("Install")
+        onActionRequested: DiagnoseImpl.install(dependency.id)
+    }
+
+    component UdevDependency: DependencyRow {
+        dependencyName: qsTr("UDEV rules")
+        description: qsTr("Optional USB permissions for devices in recovery mode.")
+        actionLabel: qsTr("View Instructions")
+        onActionRequested: udevInstructions.open()
+    }
+
+    // The backend retains the Windows Store instructions policy and URLs.
+    component WindowsDependency: DependencyRow {
+        actionLabel: dependency.actionMode === "instructions" ? qsTr("View Instructions")
+                     : dependency.availability === 1 ? qsTr("Start") : qsTr("Install")
+        onActionRequested: root.performDependencyAction(dependency)
+    }
+
+    component AppleMobileDependency: WindowsDependency {
+        dependencyName: qsTr("Apple Mobile Device Support")
+        description: qsTr("Required for iOS device communication.")
+    }
+
+    component BonjourDependency: WindowsDependency {
+        dependencyName: qsTr("Bonjour Service")
+        description: qsTr("Required for AirPlay, optional backend for wireless device discovery.")
+    }
+
+    component WinFspDependency: WindowsDependency {
+        dependencyName: qsTr("WinFsp")
+        description: qsTr("Optional. Required for mounting the device as a drive.")
+    }
+
+    Component { id: avahiComponent; AvahiDependency {} }
+    Component { id: udevComponent; UdevDependency {} }
+    Component { id: appleMobileComponent; AppleMobileDependency {} }
+    Component { id: bonjourComponent; BonjourDependency {} }
+    Component { id: winFspComponent; WinFspDependency {} }
+
+    Dialog {
+        id: udevInstructions
+        modal: true
+        anchors.centerIn: Overlay.overlay
+        width: 380
+        title: qsTr("UDEV Rules")
+        standardButtons: Dialog.Ok
+        contentItem: ColumnLayout {
+            spacing: 12
+            Label {
+                Layout.fillWidth: true
+                text: qsTr("You can read the UDEV.md guide for manual configuration.")
+                wrapMode: Text.WordWrap
+            }
+            Label {
+                Layout.fillWidth: true
+                textFormat: Text.RichText
+                text: '<a href="https://github.com/iDescriptor/iDescriptor/blob/main/UDEV.md">'
+                      + qsTr("Read the UDEV.md guide") + '</a>'
+                wrapMode: Text.WordWrap
+                onLinkActivated: function(link) { Qt.openUrlExternally(link) }
+            }
+        }
     }
 
     function updateStateView() {
@@ -120,6 +261,7 @@ Item {
             persistentSelection: true
             color: palette.text
             width: 300
+            textFormat: TextEdit.PlainText
             text: root.diagnoseState.notice || ""
             wrapMode: Text.WordWrap
         }
@@ -167,8 +309,10 @@ Item {
                             elide: Text.ElideRight
                         }
 
-                        Button {
-                            text: qsTr("Refresh")
+                        IconToolButton {
+                            icon.source: "qrc:/resources/icons/ic_outline-refresh.svg"
+                            toolTipText: qsTr("Refresh")
+                            Accessible.name: qsTr("Refresh")
                             enabled: !root.diagnoseState.checking
                             onClicked: root.scheduleCheck()
                         }
@@ -183,82 +327,28 @@ Item {
                         model: root.diagnoseState.items || []
                         spacing: 8
 
-                        delegate: Rectangle {
+                        // Rust supplies the platform-specific list and live status.
+                        // Dispatch only presentation here; do not duplicate OS filtering.
+                        delegate: Loader {
+                            id: dependencyLoader
+                            required property var modelData
                             width: ListView.view.width
-                            height: 78
-                            radius: 7
-                            color: "transparent"
-                            border.color: modelData.id === root.focusedDependencyId
-                                          ? diagnosticsDialog.palette.highlight
-                                          : "transparent"
-                            border.width: modelData.id === root.focusedDependencyId ? 2 : 1
-
-                            RowLayout {
-                                anchors.fill: parent
-                                anchors.margins: 10
-                                spacing: 10
-
-
-                                ColumnLayout {
-                                    Layout.fillWidth: true
-                                    spacing: 3
-
-                                    RowLayout {
-                                        Layout.fillWidth: true
-                                        spacing: 6
-
-                                        Text {
-                                            Layout.fillWidth: true
-                                            text: modelData.name
-                                            color: "white"
-                                            font.pixelSize: 13
-                                            font.weight: Font.DemiBold
-                                            elide: Text.ElideRight
-                                        }
-
-                                        Text {
-                                            visible: modelData.optional
-                                            text: qsTr("Optional")
-                                            color: "#94a3b8"
-                                            font.pixelSize: 11
-                                        }
-                                    }
-
-                                    Text {
-                                        Layout.fillWidth: true
-                                        text: modelData.description
-                                        color: "#94a3b8"
-                                        font.pixelSize: 11
-                                        elide: Text.ElideRight
-                                    }
-
-                                    Text {
-                                        Layout.fillWidth: true
-                                        text: root.statusText(modelData)
-                                        color: root.colorForKind(modelData.statusKind)
-                                        font.pixelSize: 11
-                                        font.weight: Font.DemiBold
-                                    }
+                            height: item ? (item as DependencyRow).implicitHeight : 0
+                            sourceComponent: {
+                                switch (modelData.id) {
+                                case "avahi": return avahiComponent
+                                case "udev_rules": return udevComponent
+                                case "apple_mobile_device_support": return appleMobileComponent
+                                case "bonjour": return bonjourComponent
+                                case "winfsp": return winFspComponent
+                                default: return null
                                 }
-
-                                BusyIndicator {
-                                    Layout.preferredWidth: 24
-                                    Layout.preferredHeight: 24
-                                    visible: root.diagnoseState.installingId === modelData.id
-                                    running: visible
-                                }
-
-                                Button {
-                                    visible: modelData.actionVisible && root.diagnoseState.installingId !== modelData.id
-                                    enabled: !root.diagnoseState.checking && root.diagnoseState.installingId.length === 0
-                                    text: root.actionText(modelData)
-                                    onClicked: {
-                                        if (modelData.actionMode === "instructions")
-                                            Qt.openUrlExternally(modelData.documentationUrl)
-                                        else
-                                            DiagnoseImpl.install(modelData.id)
-                                    }
-                                }
+                            }
+                            onLoaded: {
+                                const row = item as DependencyRow
+                                row.dependency = Qt.binding(function() {
+                                    return dependencyLoader.modelData
+                                })
                             }
                         }
                     }
