@@ -1,0 +1,78 @@
+{
+  "version": "10.3.4",
+  "build": "14G61",
+  "released": "2019-07-22",
+  "deviceMap": [
+    "iPad3,4",
+    "iPad3,5",
+    "iPad3,6",
+    "iPhone5,1",
+    "iPhone5,2",
+    "iPhone5,3",
+    "iPhone5,4"
+  ],
+  "signed": [
+    "iPad3,4",
+    "iPad3,5",
+    "iPad3,6",
+    "iPhone5,1",
+    "iPhone5,2",
+    "iPhone5,3",
+    "iPhone5,4"
+  ],
+  "sources": [
+    {
+      "type": "ipsw",
+      "deviceMap": [
+        "iPad3,4",
+        "iPad3,5",
+        "iPad3,6"
+      ],
+      "links": [
+        {
+          "url": "https://updates.cdn-apple.com/2019/ios/091-25014-20190722-0C1B95A6-992C-11E9-A2EE-E1C9A77C2E40/iPad_32bit_10.3.4_14G61_Restore.ipsw",
+          "preferred": true,
+          "active": true
+        },
+        {
+          "url": "http://updates-http.cdn-apple.com/2019/ios/091-25014-20190722-0C1B95A6-992C-11E9-A2EE-E1C9A77C2E40/iPad_32bit_10.3.4_14G61_Restore.ipsw",
+          "preferred": false,
+          "active": true
+        }
+      ],
+      "hashes": {
+        "md5": "0cadbeb281dc07a0c276926619f4f891",
+        "sha1": "65aad86d4868bdc26185a00e3fd1d3e2a85b5c57",
+        "sha2-256": "d442fe01f1450d3c978a996af50d9799f24381f38d3b2e1dea1cb5a37502d0ab"
+      },
+      "size": 1930083311
+    },
+    {
+      "type": "ipsw",
+      "deviceMap": [
+        "iPhone5,1",
+        "iPhone5,2",
+        "iPhone5,3",
+        "iPhone5,4"
+      ],
+      "links": [
+        {
+          "url": "https://updates.cdn-apple.com/2019/ios/091-25277-20190722-0C1B94DE-992C-11E9-A2EE-E2C9A77C2E40/iPhone_4.0_32bit_10.3.4_14G61_Restore.ipsw",
+          "preferred": true,
+          "active": true
+        },
+        {
+          "url": "http://updates-http.cdn-apple.com/2019/ios/091-25277-20190722-0C1B94DE-992C-11E9-A2EE-E2C9A77C2E40/iPhone_4.0_32bit_10.3.4_14G61_Restore.ipsw",
+          "preferred": false,
+          "active": true
+        }
+      ],
+      "hashes": {
+        "md5": "043e56050bf9406ba546176a63275087",
+        "sha1": "2f88a216491667ce33e768ab54752d9d0f53dc20",
+        "sha2-256": "31b4e67cdeae511bd27ff8a2a285753f7ac9608b8d848e1dec68efc980108695"
+      },
+      "size": 2000796302
+    }
+  ]
+}

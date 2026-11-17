@@ -1,6 +1,7 @@
 // SPDX-FileCopyrightText: 2026 Uncore <https://github.com/uncor3>
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
+mod catalog;
 mod flash;
 mod local;
 mod manager;

@@ -416,6 +416,18 @@ impl SettingsManager {
         })
     }
 
+    pub(crate) fn firmware_catalog_provider() -> QString {
+        let saved = read_string("firmwareCatalogProvider", "appledb");
+        match saved.to_string().as_str() {
+            "ipsw_me" => saved,
+            _ => QString::from("appledb"),
+        }
+    }
+
+    pub(crate) fn set_firmware_catalog_provider(provider: QString) {
+        write_string("firmwareCatalogProvider", provider);
+    }
+
     fn firmware_download_path(&self) -> QString {
         let default_path = std::path::PathBuf::from(self.home_path().to_string()).join("ipsw");
         let saved = read_string("ipswDownloadPath", &default_path.to_string_lossy()).to_string();

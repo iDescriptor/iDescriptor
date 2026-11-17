@@ -26,6 +26,7 @@ use idevice::{
         state_machine::DataPortConnector,
     },
     tss::{TSSRequest, extract_img4_ticket, select_build_identity},
+    usb::APPLE_VENDOR_ID,
     usbmuxd::{Connection, UsbmuxdAddr},
 };
 use log::{debug, error, info, warn};
@@ -50,7 +51,6 @@ use tokio::{
 };
 
 const MAX_LOG_ENTRIES: usize = 500;
-const APPLE_VENDOR_ID: u16 = 0x05AC;
 const STAGE_COUNT: i32 = 8;
 
 type IpswFile = BufReader<tokio::fs::File>;
@@ -79,8 +79,11 @@ pub struct FlashManager {
             ecid: QString,
             ipsw_path: QString,
             identifier: QString,
+            allow_unverified: bool,
         ) -> bool
     ),
+    check_usb_requirement: qt_method!(fn(&mut self)),
+    usbRequirementChecked: qt_signal!(ready: bool),
     cancel_flash: qt_method!(fn(&mut self) -> bool),
     reset: qt_method!(fn(&mut self)),
     logs_text: qt_method!(fn(&self) -> QString),
@@ -116,18 +119,27 @@ impl FlashManager {
         manager
     }
 
+    fn check_usb_requirement(&mut self) {
+        let qt_thread = self.qt_thread();
+        RUNTIME.spawn(async move {
+            let ready = crate::diagnose::check_flash_usb_requirement().await.is_ok();
+            qt_thread.queue(move |manager| manager.usbRequirementChecked(ready));
+        });
+    }
+
     fn start_flash(
         &mut self,
         udid: QString,
         ecid: QString,
         ipsw_path: QString,
         identifier: QString,
+        allow_unverified: bool,
     ) -> bool {
         if self.busy {
             return false;
         }
         let path = PathBuf::from(ipsw_path.to_string());
-        if !path.is_file() || !verification_sidecar(&path).is_file() {
+        if !path.is_file() || (!allow_unverified && !verification_sidecar(&path).is_file()) {
             return false;
         }
 
@@ -150,6 +162,12 @@ impl FlashManager {
         };
         let qt_thread = self.qt_thread();
         let reporter = FlashReporter::new(qt_thread.clone());
+        if allow_unverified {
+            reporter.log(
+                "warning",
+                "Firmware checksum verification was bypassed by the user; the file is unverified",
+            );
+        }
         let task = RUNTIME.spawn(async move {
             let result = run_flash(request, reporter.clone(), cancel).await;
             match &result {
@@ -496,6 +514,9 @@ async fn run_flash(
     reporter: FlashReporter,
     cancel: RestoreCancel,
 ) -> Result<(), IdeviceError> {
+    crate::diagnose::check_flash_usb_requirement()
+        .await
+        .map_err(|err| IdeviceError::Restore(RestoreError::Other(err.to_string())))?;
     reporter.log(
         "info",
         format!(
@@ -514,6 +535,18 @@ async fn run_flash(
     );
     let mut ipsw = open_ipsw(&request.ipsw_path).await?;
     let build_manifest = ipsw.build_manifest().await?;
+    let supported = build_manifest
+        .get("SupportedProductTypes")
+        .and_then(Value::as_array);
+    if !supported.is_some_and(|products| {
+        products
+            .iter()
+            .any(|product| product.as_string() == Some(request.identifier.as_str()))
+    }) {
+        return Err(IdeviceError::Restore(RestoreError::Other(
+            "firmware does not support the selected device model".into(),
+        )));
+    }
     if !manifest_supports_img4(&build_manifest) {
         return Err(IdeviceError::Restore(RestoreError::Unsupported(
             "IPSWs without IMG4 firmware components".into(),
@@ -648,7 +681,7 @@ async fn run_flash(
         &addr,
         ecid,
         "idescriptor-restore",
-        Duration::from_secs(90),
+        Duration::from_secs(60),
     )
     .await?;
     let device_id = restored.device_id;
@@ -770,7 +803,8 @@ async fn acquire_recovery_device(
             true,
         );
         let transport =
-            wait_for_stable_recovery(ecid, Duration::from_secs(90), cancel, events).await?;
+            wait_for_stable_recovery(ecid, Duration::from_secs(60), cancel, events, reporter)
+                .await?;
         let recovery = RecoveryDevice::new(transport).await?;
         return Ok(AcquiredDevice {
             recovery,
@@ -823,7 +857,8 @@ async fn acquire_recovery_device(
         "Waiting for the same ECID to remain connected for five seconds…",
         true,
     );
-    let transport = wait_for_stable_recovery(ecid, Duration::from_secs(90), cancel, events).await?;
+    let transport =
+        wait_for_stable_recovery(ecid, Duration::from_secs(60), cancel, events, reporter).await?;
     let recovery = RecoveryDevice::new(transport).await?;
     Ok(AcquiredDevice {
         recovery,
@@ -1417,6 +1452,7 @@ async fn wait_for_stable_recovery(
     timeout: Duration,
     cancel: &RestoreCancel,
     mut events: nusb::hotplug::HotplugWatch,
+    reporter: &FlashReporter,
 ) -> Result<Box<dyn RecoveryTransport>, IdeviceError> {
     ensure_not_cancelled(cancel)?;
     let wait = async {
@@ -1462,7 +1498,13 @@ async fn wait_for_stable_recovery(
                     }
                     let device = match device_info.open().await {
                         Ok(device) => device,
-                        Err(_) => {
+                        Err(err) => {
+                            reporter.log("error", format!("Failed to open recovery USB device: {err}"));
+                            if err.kind() == nusb::ErrorKind::PermissionDenied {
+                                return Err(IdeviceError::Restore(RestoreError::Other(format!(
+                                    "USB permission denied: {err}. iDescriptor cannot transfer firmware data without USB access. Check the UDEV rules in Diagnostics, reconnect the device, and retry."
+                                ))));
+                            }
                             // Retry access within the original deadline, with a fresh settling period.
                             presence.connection = None;
                             presence.observe((device_info.id(), device_info.product_id()), Instant::now());

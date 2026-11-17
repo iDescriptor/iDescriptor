@@ -7,7 +7,7 @@ use crate::{
     qt_threading::{QtThread, QtThreading},
     qvariantmap_insert,
 };
-use anyhow::{Context, Result, anyhow, bail};
+use anyhow::{Context, Result, bail};
 use chrono::{DateTime, NaiveDate, Utc};
 use futures::StreamExt;
 use log::{debug, error, info, warn};
@@ -15,9 +15,11 @@ use macros::QtThreading;
 use qmetaobject::{SimpleListItem, prelude::*};
 use qttypes::{QString, QStringList, QVariantList, QVariantMap};
 
-use super::local;
+use super::{
+    catalog::{CachePolicy, CatalogDevice, FirmwareCatalog, FirmwareInfo, Provider, firmware_key},
+    local,
+};
 use reqwest::{Client, StatusCode, header};
-use serde_json::Value;
 use sha1::{Digest as _, Sha1};
 use sha2::{Digest, Sha256};
 use std::{
@@ -25,51 +27,14 @@ use std::{
     collections::{HashMap, HashSet},
     fs,
     path::{Path, PathBuf},
-    sync::Mutex,
+    sync::{
+        Arc, Mutex,
+        atomic::{AtomicBool, Ordering},
+    },
     time::{Duration, Instant},
 };
 use tokio::{io::AsyncWriteExt, task::JoinHandle};
 use tokio_util::sync::CancellationToken;
-
-const API_BASE: &str = "https://api.ipsw.me/v4";
-
-#[derive(Debug, Default, Clone)]
-pub(super) struct FirmwareInfo {
-    pub(super) identifier: String,
-    pub(super) version: String,
-    pub(super) build_id: String,
-    pub(super) release_date: String,
-    pub(super) file_size: u64,
-    pub(super) url: String,
-    pub(super) signed: bool,
-    pub(super) sha1: String,
-    pub(super) sha256: String,
-}
-
-impl FirmwareInfo {
-    fn key(&self) -> String {
-        firmware_key(&self.identifier, &self.build_id)
-    }
-
-    pub(super) fn file_name(&self) -> String {
-        format!(
-            "{}_{}_{}_Restore.ipsw",
-            safe_file_segment(&self.identifier),
-            safe_file_segment(&self.version),
-            safe_file_segment(&self.build_id)
-        )
-    }
-
-    pub(super) fn expected_digest(&self) -> Option<(&'static str, &str)> {
-        if !self.sha256.is_empty() {
-            Some(("sha256", &self.sha256))
-        } else if !self.sha1.is_empty() {
-            Some(("sha1", &self.sha1))
-        } else {
-            None
-        }
-    }
-}
 
 #[derive(SimpleListItem, Default, Clone)]
 struct FirmwareItem {
@@ -87,6 +52,7 @@ struct FirmwareItem {
     pub is_downloaded: bool,
     pub is_downloading: bool,
     pub is_verifying: bool,
+    pub can_skip_verification: bool,
     pub has_partial: bool,
     pub progress: f64,
     pub downloaded_bytes: f64,
@@ -113,7 +79,12 @@ pub struct FirmwareManager {
     catalogs: Mutex<HashMap<String, Vec<FirmwareInfo>>>,
     stopping_downloads: HashSet<String>,
     download_cancellations: HashMap<String, CancellationToken>,
+    download_verifications: HashMap<String, DownloadVerification>,
     download_paths: HashMap<String, PathBuf>,
+    provider: qt_property!(QString; NOTIFY providerChanged),
+    provider_revision: u64,
+    set_provider: qt_method!(fn(&mut self, provider: QString)),
+    providerChanged: qt_signal!(),
     device_catalog_revision: u64,
     catalog_revision: u64,
 
@@ -123,6 +94,7 @@ pub struct FirmwareManager {
     download_firmware: qt_method!(
         fn(&mut self, identifier: QString, build_id: QString, dir: QString, force: bool) -> bool
     ),
+    skip_verification: qt_method!(fn(&mut self, identifier: QString, build_id: QString) -> bool),
     pause_download: qt_method!(fn(&mut self, identifier: QString, build_id: QString) -> bool),
     cancel_download: qt_method!(fn(&mut self, identifier: QString, build_id: QString) -> bool),
     verify_firmware:
@@ -143,14 +115,55 @@ pub struct FirmwareManager {
     deviceCatalogFinished: qt_signal!(refreshed: bool, success: bool, error: QString),
     firmwareListFinished: qt_signal!(identifier: QString, refreshed: bool, success: bool, error: QString),
     downloadProgress: qt_signal!(identifier: QString, build_id: QString, downloaded_bytes: f64, total_bytes: f64, progress: f64, download_speed: f64),
-    downloadFinished: qt_signal!(identifier: QString, build_id: QString, success: bool, path: QString, error: QString),
+    downloadFinished: qt_signal!(identifier: QString, build_id: QString, success: bool, path: QString, error: QString, verified: bool),
     downloadPaused: qt_signal!(identifier: QString, build_id: QString),
     downloadStopFailed: qt_signal!(identifier: QString, build_id: QString, error: QString),
     downloadCancelled: qt_signal!(identifier: QString, build_id: QString),
     verificationFinished: qt_signal!(identifier: QString, build_id: QString, success: bool, error: QString),
 }
 
+#[derive(Clone, Default)]
+struct DownloadVerification {
+    skip: CancellationToken,
+    active: Arc<AtomicBool>,
+}
+
 impl FirmwareManager {
+    pub fn new_with_settings() -> Self {
+        Self {
+            provider: crate::settings_manager::SettingsManager::firmware_catalog_provider(),
+            ..Self::default()
+        }
+    }
+
+    fn set_provider(&mut self, provider: QString) {
+        let Some(selected) = Provider::parse(&provider.to_string()) else {
+            return;
+        };
+        if Provider::parse(&self.provider.to_string()) == Some(selected) {
+            return;
+        }
+        self.provider = QString::from(selected.id());
+        crate::settings_manager::SettingsManager::set_firmware_catalog_provider(
+            self.provider.clone(),
+        );
+        self.provider_revision = self.provider_revision.wrapping_add(1);
+        self.device_catalog_revision = self.device_catalog_revision.wrapping_add(1);
+        self.catalog_revision = self.catalog_revision.wrapping_add(1);
+        if let Ok(mut catalogs) = self.catalogs.lock() {
+            catalogs.clear();
+        }
+        self.devices = QVariantList::default();
+        self.devicesChanged();
+        self.firmware_model.borrow_mut().reset_data(Vec::new());
+        self.refresh_local_files();
+        self.providerChanged();
+    }
+
+    fn selected_provider(&self) -> Provider {
+        Provider::parse(&self.provider.to_string()).unwrap_or_default()
+    }
+
     fn refresh_local_files(&mut self) {
         if !self.local_directory.as_os_str().is_empty() {
             self.scan_local_files(QString::from(
@@ -219,8 +232,20 @@ impl FirmwareManager {
                                 let stopping =
                                     active_here && manager.stopping_downloads.contains(&key);
                                 item.is_downloading = active_here && !stopping;
-                                item.is_verifying =
-                                    stopping || manager.local_jobs.contains(&file.path);
+                                let verifying_download = active_here
+                                    && manager.download_verifications.get(&key).is_some_and(
+                                        |control| control.active.load(Ordering::Acquire),
+                                    );
+                                item.can_skip_verification = verifying_download
+                                    && !stopping
+                                    && manager
+                                        .download_verifications
+                                        .get(&key)
+                                        .is_some_and(|control| !control.skip.is_cancelled());
+                                item.is_downloading = item.is_downloading && !verifying_download;
+                                item.is_verifying = stopping
+                                    || verifying_download
+                                    || manager.local_jobs.contains(&file.path);
                                 if stopping {
                                     item.status = QString::from("stopping");
                                 } else if item.is_downloading {
@@ -297,14 +322,16 @@ impl FirmwareManager {
         self.local_failures.remove(&path);
         self.refresh_local_files();
         let qt_thread = self.qt_thread();
+        let provider = self.selected_provider();
+        let provider_revision = self.provider_revision;
         RUNTIME.spawn(async move {
             let mut verification_attempted = false;
             let result: Result<_> = async {
                 let catalogs = futures::stream::iter(file.identifiers.clone())
                     .map(|identifier| async move {
                         let catalog = tokio::time::timeout(
-                            Duration::from_secs(30),
-                            fetch_catalog(&identifier),
+                            Duration::from_secs(90),
+                            provider.fetch_catalog(&identifier, CachePolicy::UseCache),
                         )
                         .await
                         .context("firmware catalog request timed out")??;
@@ -363,9 +390,11 @@ impl FirmwareManager {
                 let mut error = None;
                 match result {
                     Ok((catalogs, firmware)) => {
-                        if let Ok(mut cache) = manager.catalogs.lock() {
-                            for (identifier, catalog) in catalogs {
-                                cache.insert(identifier, catalog);
+                        if manager.provider_revision == provider_revision {
+                            if let Ok(mut cache) = manager.catalogs.lock() {
+                                for (identifier, catalog) in catalogs {
+                                    cache.insert(identifier, catalog);
+                                }
                             }
                         }
                         if resume {
@@ -459,8 +488,9 @@ impl FirmwareManager {
         self.device_catalog_revision = self.device_catalog_revision.wrapping_add(1);
         let revision = self.device_catalog_revision;
         let qt_thread = self.qt_thread();
+        let provider = self.selected_provider();
         RUNTIME.spawn(async move {
-            let result = fetch_devices().await;
+            let result = provider.fetch_devices().await;
             qt_thread.queue(move |manager| {
                 if manager.device_catalog_revision != revision {
                     debug!("Ignoring stale IPSW device catalog result");
@@ -516,11 +546,23 @@ impl FirmwareManager {
         };
         let qt_thread = self.qt_thread();
         let directory = PathBuf::from(dir.to_string());
+        let provider = self.selected_provider();
 
         RUNTIME.spawn(async move {
             let result = match cached {
                 Some(firmwares) => Ok(firmwares),
-                None => fetch_catalog(&identifier_string).await,
+                None => {
+                    provider
+                        .fetch_catalog(
+                            &identifier_string,
+                            if refresh {
+                                CachePolicy::Refresh
+                            } else {
+                                CachePolicy::UseCache
+                            },
+                        )
+                        .await
+                }
             };
 
             qt_thread.queue(move |manager| {
@@ -641,6 +683,8 @@ impl FirmwareManager {
         }
         self.download_paths.insert(key.clone(), local_path.clone());
         mutate_item(self, &key, |item| {
+            item.is_downloaded = false;
+            item.can_skip_verification = false;
             item.local_path = QString::from(local_path.to_string_lossy().into_owned());
             item.is_downloading = true;
             item.is_verifying = false;
@@ -653,6 +697,9 @@ impl FirmwareManager {
         let cancellation = CancellationToken::new();
         self.download_cancellations
             .insert(key.clone(), cancellation.clone());
+        let verification = DownloadVerification::default();
+        self.download_verifications
+            .insert(key.clone(), verification.clone());
         let handle = RUNTIME.spawn(async move {
             let result = download_ipsw(
                 &firmware,
@@ -660,6 +707,7 @@ impl FirmwareManager {
                 force,
                 qt_thread.clone(),
                 cancellation,
+                verification,
             )
             .await;
             let path = target_dir.join(firmware.file_name());
@@ -671,21 +719,24 @@ impl FirmwareManager {
                     return;
                 }
                 manager.download_cancellations.remove(&task_key);
+                manager.download_verifications.remove(&task_key);
                 manager.download_paths.remove(&task_key);
                 if let Ok(mut active) = manager.active_downloads.lock() {
                     active.remove(&task_key);
                 }
                 match result {
-                    Ok(()) => {
+                    Ok(verified) => {
                         mutate_item(manager, &task_key, |item| {
                             item.is_downloading = false;
                             item.is_verifying = false;
-                            item.is_downloaded = true;
+                            item.can_skip_verification = false;
+                            item.is_downloaded = verified;
                             item.has_partial = false;
                             item.progress = 100.0;
                             item.downloaded_bytes = item.file_size;
                             item.download_speed = 0.0;
-                            item.status = QString::from("downloaded");
+                            item.status =
+                                QString::from(if verified { "downloaded" } else { "unverified" });
                             item.local_path = QString::from(path.to_string_lossy().to_string());
                         });
                         manager.downloadFinished(
@@ -694,6 +745,7 @@ impl FirmwareManager {
                             true,
                             QString::from(path.to_string_lossy().to_string()),
                             QString::default(),
+                            verified,
                         );
                     }
                     Err(err) => {
@@ -701,6 +753,7 @@ impl FirmwareManager {
                         mutate_item(manager, &task_key, |item| {
                             item.is_downloading = false;
                             item.is_verifying = false;
+                            item.can_skip_verification = false;
                             item.download_speed = 0.0;
                             item.has_partial = path.with_extension("ipsw.part").exists();
                             item.status = QString::from("failed");
@@ -711,6 +764,7 @@ impl FirmwareManager {
                             false,
                             QString::default(),
                             QString::from(message),
+                            false,
                         );
                     }
                 }
@@ -731,6 +785,22 @@ impl FirmwareManager {
             self.refresh_local_files();
         }
         started
+    }
+
+    fn skip_verification(&mut self, identifier: QString, build_id: QString) -> bool {
+        let key = firmware_key(&identifier.to_string(), &build_id.to_string());
+        if self.stopping_downloads.contains(&key) {
+            return false;
+        }
+        let Some(verification) = self.download_verifications.get(&key) else {
+            return false;
+        };
+        if !verification.active.load(Ordering::Acquire) {
+            return false;
+        }
+        verification.skip.cancel();
+        mutate_item(self, &key, |item| item.can_skip_verification = false);
+        true
     }
 
     fn pause_download(&mut self, identifier: QString, build_id: QString) -> bool {
@@ -789,21 +859,27 @@ impl FirmwareManager {
             let result = finish_stopped_download(handle, &path, delete).await;
             let partial = path.with_extension("ipsw.part");
             let partial_bytes = tokio::fs::metadata(&partial).await.ok().map(|m| m.len());
-            let completed = !delete && path.is_file() && verification_sidecar(&path).is_file();
+            let final_bytes = if delete {
+                None
+            } else {
+                tokio::fs::metadata(&path)
+                    .await
+                    .ok()
+                    .map(|metadata| metadata.len())
+            };
+            let completed = final_bytes.is_some() && verification_sidecar(&path).is_file();
             qt_thread.queue(move |manager| {
                 manager.stopping_downloads.remove(&key);
                 manager.download_paths.remove(&key);
+                manager.download_verifications.remove(&key);
                 mutate_item(manager, &key, |item| {
                     item.is_downloading = false;
                     item.is_verifying = false;
+                    item.can_skip_verification = false;
                     item.download_speed = 0.0;
                     item.has_partial = partial_bytes.is_some();
                     item.is_downloaded = completed;
-                    item.downloaded_bytes = if completed {
-                        item.file_size
-                    } else {
-                        partial_bytes.unwrap_or(0) as f64
-                    };
+                    item.downloaded_bytes = final_bytes.or(partial_bytes).unwrap_or(0) as f64;
                     item.progress = if item.file_size > 0.0 {
                         item.downloaded_bytes * 100.0 / item.file_size
                     } else {
@@ -813,6 +889,8 @@ impl FirmwareManager {
                         "failed"
                     } else if completed {
                         "downloaded"
+                    } else if final_bytes.is_some() {
+                        "unverified"
                     } else if item.has_partial {
                         "partial"
                     } else {
@@ -890,6 +968,7 @@ impl FirmwareManager {
                 let message = result.err().map(|err| err.to_string()).unwrap_or_default();
                 mutate_item(manager, &task_key, |item| {
                     item.is_verifying = false;
+                    item.can_skip_verification = false;
                     item.is_downloaded = success;
                     item.status = QString::from(if success { "downloaded" } else { "invalid" });
                 });
@@ -912,23 +991,6 @@ impl FirmwareManager {
             }
         }
     }
-}
-
-fn firmware_key(identifier: &str, build_id: &str) -> String {
-    format!("{identifier}:{build_id}")
-}
-
-fn safe_file_segment(value: &str) -> String {
-    value
-        .chars()
-        .map(|ch| {
-            if ch.is_ascii_alphanumeric() || matches!(ch, '-' | '_' | '.') {
-                ch
-            } else {
-                '_'
-            }
-        })
-        .collect()
 }
 
 fn firmware_item(
@@ -967,7 +1029,11 @@ fn firmware_item(
         version: QString::from(firmware.version.clone()),
         build_id: QString::from(firmware.build_id.clone()),
         supported_identifiers: vec![QString::from(firmware.identifier.clone())].into(),
-        flash_identifiers: if firmware.signed {
+        flash_identifiers: if firmware.signed
+            && (!path.exists()
+                || firmware.file_size == 0
+                || fs::metadata(&path).is_ok_and(|metadata| metadata.len() == firmware.file_size))
+        {
             vec![QString::from(firmware.identifier.clone())].into()
         } else {
             QStringList::default()
@@ -981,6 +1047,7 @@ fn firmware_item(
         is_downloaded,
         is_downloading,
         is_verifying: false,
+        can_skip_verification: false,
         has_partial: partial.exists(),
         progress,
         downloaded_bytes: partial_bytes as f64,
@@ -1085,124 +1152,7 @@ fn mutate_item(manager: &mut FirmwareManager, key: &str, mutate: impl FnOnce(&mu
     }
 }
 
-async fn fetch_catalog(identifier: &str) -> Result<Vec<FirmwareInfo>> {
-    let url = format!("{API_BASE}/ipsw/device/{}", urlencoding::encode(identifier));
-    let response = Client::new()
-        .get(&url)
-        .send()
-        .await
-        .with_context(|| format!("failed to request firmware catalog for {identifier}"))?
-        .error_for_status()
-        .with_context(|| format!("firmware catalog rejected the request for {identifier}"))?;
-    let body: Value = response
-        .json()
-        .await
-        .context("invalid firmware catalog response")?;
-    let returned_identifier = body
-        .get("identifier")
-        .and_then(Value::as_str)
-        .unwrap_or(identifier);
-    let entries = body
-        .get("firmwares")
-        .and_then(Value::as_array)
-        .ok_or_else(|| anyhow!("firmware catalog response has no firmwares array"))?;
-
-    let mut firmwares: Vec<FirmwareInfo> = entries
-        .iter()
-        .filter_map(|entry| {
-            let version = entry.get("version")?.as_str()?.to_string();
-            let build_id = entry.get("buildid")?.as_str()?.to_string();
-            let url = entry.get("url")?.as_str()?.to_string();
-            Some(FirmwareInfo {
-                identifier: entry
-                    .get("identifier")
-                    .and_then(Value::as_str)
-                    .unwrap_or(returned_identifier)
-                    .to_string(),
-                version,
-                build_id,
-                release_date: entry
-                    .get("releasedate")
-                    .and_then(Value::as_str)
-                    .unwrap_or_default()
-                    .to_string(),
-                file_size: entry.get("filesize").and_then(Value::as_u64).unwrap_or(0),
-                url,
-                signed: entry
-                    .get("signed")
-                    .and_then(Value::as_bool)
-                    .unwrap_or(false),
-                sha1: entry
-                    .get("sha1sum")
-                    .and_then(Value::as_str)
-                    .unwrap_or_default()
-                    .to_string(),
-                sha256: entry
-                    .get("sha256sum")
-                    .and_then(Value::as_str)
-                    .unwrap_or_default()
-                    .to_string(),
-            })
-        })
-        .collect();
-    firmwares.sort_by(|a, b| {
-        b.signed
-            .cmp(&a.signed)
-            .then_with(|| b.release_date.cmp(&a.release_date))
-            .then_with(|| b.build_id.cmp(&a.build_id))
-    });
-    Ok(firmwares)
-}
-
-#[derive(Debug)]
-struct IpswDevice {
-    name: String,
-    identifier: String,
-}
-
-async fn fetch_devices() -> Result<Vec<IpswDevice>> {
-    let url = format!("{API_BASE}/devices");
-    let response = Client::new()
-        .get(&url)
-        .send()
-        .await
-        .context("failed to request the IPSW device catalog")?
-        .error_for_status()
-        .context("the IPSW device catalog request was rejected")?;
-    let entries: Vec<Value> = response
-        .json()
-        .await
-        .context("invalid IPSW device catalog response")?;
-    let mut identifiers = HashSet::new();
-    let mut devices: Vec<IpswDevice> = entries
-        .into_iter()
-        .filter_map(|entry| {
-            let identifier = entry.get("identifier")?.as_str()?.trim().to_string();
-            if identifier.is_empty() || !identifiers.insert(identifier.clone()) {
-                return None;
-            }
-            let name = entry
-                .get("name")
-                .and_then(Value::as_str)
-                .unwrap_or(&identifier)
-                .trim()
-                .to_string();
-            Some(IpswDevice { name, identifier })
-        })
-        .collect();
-    devices.sort_by(|a, b| {
-        a.name
-            .to_ascii_lowercase()
-            .cmp(&b.name.to_ascii_lowercase())
-            .then_with(|| a.identifier.cmp(&b.identifier))
-    });
-    if devices.is_empty() {
-        bail!("the IPSW device catalog is empty");
-    }
-    Ok(devices)
-}
-
-fn devices_to_variant_list(devices: Vec<IpswDevice>) -> QVariantList {
+fn devices_to_variant_list(devices: Vec<CatalogDevice>) -> QVariantList {
     let mut list = QVariantList::default();
     for device in devices {
         let mut map = QVariantMap::default();
@@ -1219,7 +1169,8 @@ async fn download_ipsw(
     force: bool,
     qt_thread: QtThread<FirmwareManager>,
     cancellation: CancellationToken,
-) -> Result<()> {
+    verification: DownloadVerification,
+) -> Result<bool> {
     let final_path = directory.join(firmware.file_name());
     let partial_path = final_path.with_extension("ipsw.part");
     let sidecar_path = verification_sidecar(&final_path);
@@ -1229,12 +1180,23 @@ async fn download_ipsw(
         let _ = tokio::fs::remove_file(&partial_path).await;
         let _ = tokio::fs::remove_file(&sidecar_path).await;
     } else if final_path.exists() {
-        match verify_file(&final_path, firmware).await {
-            Ok(()) => {
-                write_verification_sidecar(&final_path, firmware).await?;
-                return Ok(());
+        match verify_download_file(
+            &final_path,
+            firmware,
+            &qt_thread,
+            &cancellation,
+            &verification,
+        )
+        .await
+        {
+            Ok(verified) => {
+                finish_download_verification(&final_path, firmware, verified).await?;
+                return Ok(verified);
             }
             Err(err) => {
+                if cancellation.is_cancelled() {
+                    return Err(err);
+                }
                 warn!(
                     "Existing IPSW {} failed verification and will be replaced: {err}",
                     final_path.display()
@@ -1260,13 +1222,20 @@ async fn download_ipsw(
     if firmware.file_size > 0 && offset == firmware.file_size {
         // A pause during final verification can leave a complete partial file.
         // Verify it locally instead of asking the server for a range past EOF.
-        verify_file(&partial_path, firmware).await?;
+        let verified = verify_download_file(
+            &partial_path,
+            firmware,
+            &qt_thread,
+            &cancellation,
+            &verification,
+        )
+        .await?;
         if cancellation.is_cancelled() {
             bail!("download stopped");
         }
         tokio::fs::rename(&partial_path, &final_path).await?;
-        write_verification_sidecar(&final_path, firmware).await?;
-        return Ok(());
+        finish_download_verification(&final_path, firmware, verified).await?;
+        return Ok(verified);
     }
 
     let mut request = client.get(&firmware.url);
@@ -1353,20 +1322,14 @@ async fn download_ipsw(
         );
     }
 
-    let key = firmware.key();
-    qt_thread.queue(move |manager| {
-        if manager.stopping_downloads.contains(&key) {
-            return;
-        }
-        mutate_item(manager, &key, |item| {
-            item.is_downloading = false;
-            item.is_verifying = true;
-            item.download_speed = 0.0;
-            item.progress = 100.0;
-            item.status = QString::from("verifying");
-        });
-    });
-    verify_file(&partial_path, firmware).await?;
+    let verified = verify_download_file(
+        &partial_path,
+        firmware,
+        &qt_thread,
+        &cancellation,
+        &verification,
+    )
+    .await?;
     if cancellation.is_cancelled() {
         bail!("download stopped");
     }
@@ -1374,14 +1337,14 @@ async fn download_ipsw(
         tokio::fs::remove_file(&final_path).await?;
     }
     tokio::fs::rename(&partial_path, &final_path).await?;
-    write_verification_sidecar(&final_path, firmware).await?;
+    finish_download_verification(&final_path, firmware, verified).await?;
     info!(
-        "Downloaded verified IPSW {} {} to {}",
+        "Downloaded IPSW {} {} to {} (checksum verified: {verified})",
         firmware.identifier,
         firmware.build_id,
         final_path.display()
     );
-    Ok(())
+    Ok(verified)
 }
 
 fn emit_progress(
@@ -1420,6 +1383,93 @@ fn emit_progress(
     });
 }
 
+// Keep a skipped checksum distinct from a successfully verified download.
+async fn finish_download_verification(
+    path: &Path,
+    firmware: &FirmwareInfo,
+    verified: bool,
+) -> Result<()> {
+    if verified {
+        return write_verification_sidecar(path, firmware).await;
+    }
+    // Remove stale proof from an older copy. Errors must not leave false approval.
+    for marker in [
+        verification_sidecar(path),
+        PathBuf::from(format!("{}.json", verification_sidecar(path).display())),
+    ] {
+        match tokio::fs::remove_file(marker).await {
+            Ok(()) => {}
+            Err(err) if err.kind() == std::io::ErrorKind::NotFound => {}
+            Err(err) => return Err(err.into()),
+        }
+    }
+    Ok(())
+}
+
+async fn verify_download_file(
+    path: &Path,
+    firmware: &FirmwareInfo,
+    qt_thread: &QtThread<FirmwareManager>,
+    cancellation: &CancellationToken,
+    verification: &DownloadVerification,
+) -> Result<bool> {
+    let metadata = tokio::fs::metadata(path).await?;
+    if firmware.file_size > 0 && metadata.len() != firmware.file_size {
+        bail!("firmware file size does not match the catalog");
+    }
+    // Skipping a checksum never skips manifest identity checks.
+    let read_path = path.to_owned();
+    let (version, build, identifiers) =
+        tokio::task::spawn_blocking(move || local::read_manifest(&read_path)).await??;
+    if version != firmware.version
+        || build != firmware.build_id
+        || !identifiers.contains(&firmware.identifier)
+    {
+        bail!("firmware manifest does not match the selected catalog entry");
+    }
+    let before = metadata.modified()?;
+    let Some((algorithm, expected)) = firmware.expected_digest() else {
+        bail!("firmware catalog did not provide a checksum");
+    };
+    verification.active.store(true, Ordering::Release);
+    let key = firmware.key();
+    qt_thread.queue(move |manager| {
+        if manager.stopping_downloads.contains(&key) {
+            return;
+        }
+        mutate_item(manager, &key, |item| {
+            item.is_downloading = false;
+            item.is_verifying = true;
+            item.can_skip_verification = true;
+            item.download_speed = 0.0;
+            item.progress = 100.0;
+            item.status = QString::from("verifying");
+        });
+    });
+    let read_path = path.to_owned();
+    let stop = cancellation.clone();
+    let skip = verification.skip.clone();
+    let result = tokio::task::spawn_blocking(move || {
+        checksum_file_controlled(&read_path, algorithm, Some((&stop, &skip)))
+    })
+    .await;
+    verification.active.store(false, Ordering::Release);
+    let actual = result??;
+    if cancellation.is_cancelled() {
+        bail!("download stopped");
+    }
+    if tokio::fs::metadata(path).await?.modified()? != before {
+        bail!("firmware changed during verification");
+    }
+    match actual {
+        Some(actual) if actual != expected.to_ascii_lowercase() => {
+            bail!("{algorithm} checksum does not match the firmware catalog")
+        }
+        Some(_) => Ok(true),
+        None => Ok(false),
+    }
+}
+
 async fn verify_file(path: &Path, firmware: &FirmwareInfo) -> Result<()> {
     let metadata = tokio::fs::metadata(path)
         .await
@@ -1444,6 +1494,14 @@ async fn verify_file(path: &Path, firmware: &FirmwareInfo) -> Result<()> {
 }
 
 fn checksum_file(path: &Path, algorithm: &str) -> Result<String> {
+    checksum_file_controlled(path, algorithm, None)?.context("checksum unexpectedly skipped")
+}
+
+fn checksum_file_controlled(
+    path: &Path,
+    algorithm: &str,
+    control: Option<(&CancellationToken, &CancellationToken)>,
+) -> Result<Option<String>> {
     use std::io::Read;
     let mut file = fs::File::open(path)?;
     let mut buffer = vec![0u8; 1024 * 1024];
@@ -1451,24 +1509,40 @@ fn checksum_file(path: &Path, algorithm: &str) -> Result<String> {
         "sha256" => {
             let mut digest = Sha256::new();
             loop {
+                if let Some((stop, skip)) = control {
+                    if stop.is_cancelled() {
+                        bail!("download stopped");
+                    }
+                    if skip.is_cancelled() {
+                        return Ok(None);
+                    }
+                }
                 let read = file.read(&mut buffer)?;
                 if read == 0 {
                     break;
                 }
                 digest.update(&buffer[..read]);
             }
-            Ok(hex::encode(digest.finalize()))
+            Ok(Some(hex::encode(digest.finalize())))
         }
         "sha1" => {
             let mut digest = Sha1::new();
             loop {
+                if let Some((stop, skip)) = control {
+                    if stop.is_cancelled() {
+                        bail!("download stopped");
+                    }
+                    if skip.is_cancelled() {
+                        return Ok(None);
+                    }
+                }
                 let read = file.read(&mut buffer)?;
                 if read == 0 {
                     break;
                 }
                 digest.update(&buffer[..read]);
             }
-            Ok(hex::encode(digest.finalize()))
+            Ok(Some(hex::encode(digest.finalize())))
         }
         _ => bail!("unsupported checksum algorithm {algorithm}"),
     }
@@ -1577,5 +1651,79 @@ mod download_stop_tests {
     async fn cancel_deletes_download_after_pending_writer_and_keeps_other_downloads() -> Result<()>
     {
         check_stop(true).await
+    }
+}
+
+#[cfg(test)]
+mod checksum_control_tests {
+    use super::*;
+
+    fn temporary_directory(label: &str) -> PathBuf {
+        std::env::temp_dir().join(format!(
+            "idescriptor-checksum-{label}-{}-{}",
+            std::process::id(),
+            std::time::SystemTime::now()
+                .duration_since(std::time::UNIX_EPOCH)
+                .unwrap()
+                .as_nanos()
+        ))
+    }
+
+    #[tokio::test]
+    async fn streaming_hashes_match_and_skipped_files_have_no_approval() -> Result<()> {
+        let directory = temporary_directory("skip");
+        tokio::fs::create_dir_all(&directory).await?;
+        let path = directory.join("firmware.ipsw");
+        // Cross several read boundaries, including a final partial buffer.
+        let bytes = vec![0x5au8; 3 * 1024 * 1024 + 17];
+        tokio::fs::write(&path, &bytes).await?;
+        assert_eq!(
+            checksum_file(&path, "sha256")?,
+            hex::encode(Sha256::digest(&bytes))
+        );
+        assert_eq!(
+            checksum_file(&path, "sha1")?,
+            hex::encode(Sha1::digest(&bytes))
+        );
+        let firmware = FirmwareInfo {
+            sha256: hex::encode(Sha256::digest(&bytes)),
+            file_size: bytes.len() as u64,
+            ..FirmwareInfo::default()
+        };
+        verify_file(&path, &firmware).await?;
+        finish_download_verification(&path, &firmware, true).await?;
+        assert!(local::catalog_approves(&path, &firmware));
+        let stop = CancellationToken::new();
+        let skip = CancellationToken::new();
+        skip.cancel();
+        assert!(checksum_file_controlled(&path, "sha256", Some((&stop, &skip)))?.is_none());
+        finish_download_verification(&path, &firmware, false).await?;
+        assert!(!verification_sidecar(&path).exists());
+        assert!(!PathBuf::from(format!("{}.json", verification_sidecar(&path).display())).exists());
+        assert!(!local::catalog_approves(&path, &firmware));
+        assert_eq!(tokio::fs::metadata(&path).await?.len(), bytes.len() as u64);
+        // Explicit verification can still approve the skipped file afterward.
+        verify_file(&path, &firmware).await?;
+        finish_download_verification(&path, &firmware, true).await?;
+        assert!(local::catalog_approves(&path, &firmware));
+        tokio::fs::remove_dir_all(directory).await?;
+        Ok(())
+    }
+
+    #[test]
+    fn cancellation_wins_over_a_skip_request() -> Result<()> {
+        let directory = temporary_directory("cancel");
+        fs::create_dir_all(&directory)?;
+        let path = directory.join("firmware.ipsw");
+        fs::write(&path, b"test")?;
+        let stop = CancellationToken::new();
+        let skip = CancellationToken::new();
+        stop.cancel();
+        skip.cancel();
+        for algorithm in ["sha1", "sha256"] {
+            assert!(checksum_file_controlled(&path, algorithm, Some((&stop, &skip))).is_err());
+        }
+        fs::remove_dir_all(directory)?;
+        Ok(())
     }
 }

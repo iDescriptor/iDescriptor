@@ -16,11 +16,13 @@ FlashActionWindow {
     required property string firmwareIdentifier
     required property string firmwareVersion
     required property string firmwareBuild
+    property bool checksumVerified: true
     required property string firmwarePath
 
     // Keep display information after the normal-mode DeviceContext entry disappears.
     property string targetName: ""
     property string targetDetail: ""
+    property bool checkingUsb: false
     property bool ownsRestore: false
     property var restoreState: ({})
     readonly property string phase: restoreState.phase || "ready"
@@ -68,17 +70,25 @@ FlashActionWindow {
     function requestRestore() {
         if ((!root.udid.length && !root.ecid.length) || FlashManager.busy)
             return
+        if (root.checkingUsb)
+            return
+        root.checkingUsb = true
+        FlashManager.check_usb_requirement()
+    }
+
+    function confirmRestore() {
         App.Helpers.messageBox(
             root.contentItem,
             qsTr("Erase and Restore This Device?"),
             qsTr("This permanently erases all data on %1 and installs iOS %2 (%3). Keep the device connected until the restore finishes.")
-                .arg(root.targetName).arg(root.firmwareVersion).arg(root.firmwareBuild),
+                .arg(root.targetName).arg(root.firmwareVersion).arg(root.firmwareBuild)
+                + (root.checksumVerified ? "" : "\n\n" + qsTr("This firmware has not passed checksum verification. Continue without verifying its integrity?")),
             MessageDialog.Yes | MessageDialog.No,
             function(button) {
                 if (button !== MessageDialog.Yes)
                     return
                 if (!FlashManager.start_flash(root.udid, root.ecid,
-                                              root.firmwarePath, root.firmwareIdentifier)) {
+                                              root.firmwarePath, root.firmwareIdentifier, !root.checksumVerified)) {
                     App.Helpers.showError(root.contentItem, qsTr("The restore could not be started. Check that the firmware is still present and verified."))
                     return
                 }
@@ -101,6 +111,22 @@ FlashActionWindow {
 
     Connections {
         target: FlashManager
+        function onUsbRequirementChecked(ready) {
+            if (!root.checkingUsb)
+                return
+            root.checkingUsb = false
+            if (ready) {
+                root.confirmRestore()
+                return
+            }
+            App.Helpers.messageBox(root.contentItem,
+                qsTr("USB Permissions Required"),
+                qsTr("USB permissions must be configured before restoring. Without them, iDescriptor cannot transfer firmware data to the device. Open Diagnostics and follow the UDEV rules instructions, then reconnect the device and try again."),
+                MessageDialog.Ok,
+                function(button) {
+                    diagnostics.openDiagnosticsFor("udev_rules", qsTr("USB access is required to transfer firmware data during a restore."))
+                })
+        }
         function onStateChanged() {
             if (!root.ownsRestore)
                 return
@@ -117,6 +143,11 @@ FlashActionWindow {
                 root.ownsRestore = false
             }
         }
+    }
+
+    App.Diagnose {
+        id: diagnostics
+        autoCheck: false
     }
 
     ColumnLayout {
@@ -146,7 +177,7 @@ FlashActionWindow {
                     Layout.fillWidth: true
                     text: root.running
                           ? qsTr("Do not disconnect the cable. The device may restart several times.")
-                          : qsTr("Install a verified Apple firmware file using a wired USB connection.")
+                          : (root.checksumVerified ? qsTr("Install a verified Apple firmware file using a wired USB connection.") : qsTr("Install an unverified firmware file using a wired USB connection."))
                     color: App.Theme.textMuted
                     font.pixelSize: 13
                     wrapMode: Text.WordWrap
@@ -380,13 +411,13 @@ FlashActionWindow {
             }
             Button {
                 visible: !root.running && !root.finished
-                enabled: !FlashManager.busy && (root.udid.length > 0 || root.ecid.length > 0)
+                enabled: !root.checkingUsb && !FlashManager.busy && (root.udid.length > 0 || root.ecid.length > 0)
                 text: qsTr("Erase and Restore")
                 onClicked: root.requestRestore()
             }
             Button {
                 visible: root.finished && root.phase !== "completed"
-                enabled: !FlashManager.busy && (root.udid.length > 0 || root.ecid.length > 0)
+                enabled: !root.checkingUsb && !FlashManager.busy && (root.udid.length > 0 || root.ecid.length > 0)
                 text: qsTr("Try Again")
                 onClicked: root.requestRestore()
             }

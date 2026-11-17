@@ -1,7 +1,7 @@
 // SPDX-FileCopyrightText: 2026 Uncore <https://github.com/uncor3>
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
-use super::manager::{FirmwareInfo, verification_sidecar};
+use super::{catalog::FirmwareInfo, manager::verification_sidecar};
 use anyhow::{Context, Result, bail, ensure};
 use serde::{Deserialize, Serialize};
 use std::{

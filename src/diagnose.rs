@@ -340,6 +340,16 @@ async fn check_dependencies() -> Result<Vec<DependencyStatus>> {
     Ok(Vec::new())
 }
 
+pub(crate) async fn check_flash_usb_requirement() -> anyhow::Result<()> {
+    #[cfg(all(target_os = "linux", not(feature = "flatpak")))]
+    if check_udev_rules_installed().await? != Availability::Available {
+        return Err(anyhow!(
+            "USB permissions are not configured. Without recovery/DFU USB access, iDescriptor cannot transfer firmware data. Open Diagnostics and follow the UDEV rules instructions, then reconnect the device and retry."
+        ));
+    }
+    Ok(())
+}
+
 pub(crate) async fn check_airplay_requirement() -> AirPlayRequirement {
     #[cfg(target_os = "linux")]
     let (dependency_id, availability) = ("avahi", check_avahi_status().await);
@@ -457,7 +467,44 @@ async fn check_avahi_status() -> Availability {
 
 #[cfg(all(target_os = "linux", not(feature = "flatpak")))]
 async fn check_udev_rules_installed() -> Result<Availability> {
+    use idevice::usb::APPLE_VENDOR_ID;
+    use log::debug;
     use std::time::Duration;
+
+    // Actual recovery/DFU access takes precedence over the configuration check.
+    // Only open and release the handle; do not configure interfaces or send commands.
+    let devices = tokio::time::timeout(Duration::from_secs(3), nusb::list_devices())
+        .await
+        .context("Timed out enumerating recovery USB devices")?
+        .context("Failed to enumerate recovery USB devices")?;
+    let mut found_recovery_device = false;
+    let mut access_status = Availability::Unavailable;
+    for device in devices.filter(|device| {
+        device.vendor_id() == APPLE_VENDOR_ID
+            && idevice::restore::recovery::Mode::from_product_id(device.product_id()).is_some()
+    }) {
+        found_recovery_device = true;
+        match tokio::time::timeout(Duration::from_secs(3), device.open()).await {
+            Ok(Ok(handle)) => {
+                drop(handle);
+                debug!("Recovery/DFU USB access verified");
+                return Ok(Availability::Available);
+            }
+            Ok(Err(err)) => {
+                debug!("Unable to open recovery/DFU USB device: {err}");
+                if err.kind() != nusb::ErrorKind::PermissionDenied {
+                    access_status = Availability::UnableToCheck;
+                }
+            }
+            Err(_) => {
+                debug!("Timed out opening recovery/DFU USB device");
+                access_status = Availability::UnableToCheck;
+            }
+        }
+    }
+    if found_recovery_device {
+        return Ok(access_status);
+    }
 
     let content = match tokio::fs::read_to_string("/etc/udev/rules.d/99-idevice.rules").await {
         Ok(content) => content,

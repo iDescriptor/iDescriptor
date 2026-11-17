@@ -290,7 +290,7 @@ fn main() {
     let backup_manager = QObjectBox::new(backup_manager::BackupManager::new_with_state());
     engine.set_object_property("backupManager".into(), backup_manager.pinned());
 
-    let firmware_manager = QObjectBox::new(firmware::FirmwareManager::default());
+    let firmware_manager = QObjectBox::new(firmware::FirmwareManager::new_with_settings());
     engine.set_object_property("firmwareManager".into(), firmware_manager.pinned());
 
     let flash_manager = QObjectBox::new(firmware::FlashManager::new_with_state());

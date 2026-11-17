@@ -123,7 +123,7 @@ ToolWindow {
         });
     }
 
-    function openFlash(identifier, version, build, path, selectedTarget) {
+    function openFlash(identifier, version, build, path, selectedTarget, verified) {
         // Recheck the target: it may have disconnected or changed transport since the menu opened.
         root.rebuildTargets();
         const target = root.targetsForFirmware(identifier).find(function (candidate) {
@@ -150,10 +150,11 @@ ToolWindow {
             firmwareVersion: version,
             firmwareBuild: build,
             firmwarePath: path,
+            checksumVerified: verified,
             udid: target.udid,
             ecid: target.ecid,
             device: target.device,
-            auto_close: false,
+            auto_close: true,
             width: 980,
             height: 650,
             title: qsTr("Flash %1 - iDescriptor").arg(target.name)
@@ -688,6 +689,10 @@ ToolWindow {
     Connections {
         target: firmwareManager
 
+        function onProviderChanged() {
+            root.loadDeviceCatalog(true);
+        }
+
         function onLocalOperationFinished(operation, path, success, error) {
             if (!success)
                 App.Helpers.showError(root.contentItem, qsTr("Could not complete the firmware action: %1").arg(error));
@@ -722,10 +727,10 @@ ToolWindow {
             }
         }
 
-        function onDownloadFinished(identifier, buildId, success, path, error) {
+        function onDownloadFinished(identifier, buildId, success, path, error, verified) {
             firmwareManager.scan_local_files(root.downloadDirectory);
             if (success) {
-                App.Helpers.showInfo(root.contentItem, qsTr("Firmware build %1 was downloaded and verified.").arg(buildId));
+                App.Helpers.showInfo(root.contentItem, (verified ? qsTr("Firmware build %1 was downloaded and verified.") : qsTr("Firmware build %1 was downloaded. Checksum verification was skipped; the file is unverified.")).arg(buildId));
             } else {
                 App.Helpers.showError(root.contentItem, qsTr("Could not download firmware build %1: %2").arg(buildId).arg(error || qsTr("Unknown download error.")));
             }
@@ -948,6 +953,19 @@ ToolWindow {
                                     }
                                 }
 
+                                ComboBox {
+                                    id: catalogProvider
+                                    Accessible.name: qsTr("Firmware source")
+                                    textRole: "text"
+                                    valueRole: "value"
+                                    model: [
+                                        { text: qsTr("AppleDB"), value: "appledb" },
+                                        { text: qsTr("ipsw.me"), value: "ipsw_me" }
+                                    ]
+                                    currentIndex: firmwareManager.provider === "ipsw_me" ? 1 : 0
+                                    onActivated: firmwareManager.set_provider(currentValue)
+                                }
+
                                 CheckBox {
                                     text: qsTr("Signed only")
                                     checked: root.signedOnly
@@ -1101,6 +1119,17 @@ ToolWindow {
                                         elide: Text.ElideRight
                                     }
 
+                                    Label {
+                                        Layout.fillWidth: true
+                                        visible: model.is_downloading || model.has_partial
+                                        text: model.file_size > 0
+                                              ? qsTr("%1 of %2").arg(root.formatBytes(model.downloaded_bytes)).arg(root.formatBytes(model.file_size))
+                                              : qsTr("%1 downloaded").arg(root.formatBytes(model.downloaded_bytes))
+                                        color: App.Theme.textMuted
+                                        font.pixelSize: 11
+                                        wrapMode: Text.WordWrap
+                                    }
+
                                     ProgressBar {
                                         visible: model.is_downloading || model.has_partial
                                         from: 0
@@ -1135,8 +1164,8 @@ ToolWindow {
                                 Button {
                                     id: flashButton
                                     readonly property var targets: root.targetsForFirmware(rowItem.model.identifier)
-                                    visible: model.is_downloaded
-                                    enabled: !FlashManager.busy && model.signed && flashButton.targets.length > 0 && root.isFlashSupported(model.identifier)
+                                    visible: model.is_downloaded || model.status === "unverified"
+                                    enabled: !model.is_downloading && !model.is_verifying && !FlashManager.busy && model.signed && model.flash_identifiers.length > 0 && flashButton.targets.length > 0 && root.isFlashSupported(model.identifier)
                                     text: qsTr("Flash ▾")
                                     Layout.preferredWidth: 88
                                     Layout.preferredHeight: 34
@@ -1165,7 +1194,7 @@ ToolWindow {
                                                 required property var modelData
                                                 text: qsTr("%1 — %2").arg(modelData.name).arg(modelData.detail)
                                                 enabled: modelData.enabled
-                                                onTriggered: root.openFlash(rowItem.model.identifier, rowItem.model.version, rowItem.model.build_id, rowItem.model.local_path, modelData)
+                                                onTriggered: root.openFlash(rowItem.model.identifier, rowItem.model.version, rowItem.model.build_id, rowItem.model.local_path, modelData, rowItem.model.is_downloaded)
                                             }
                                             onObjectAdded: function (index, object) {
                                                 flashTargetMenu.insertItem(index, object);
@@ -1175,6 +1204,12 @@ ToolWindow {
                                             }
                                         }
                                     }
+                                }
+
+                                Button {
+                                    visible: model.can_skip_verification
+                                    text: qsTr("Skip Verification")
+                                    onClicked: firmwareManager.skip_verification(model.identifier, model.build_id)
                                 }
 
                                 Button {
@@ -1277,8 +1312,8 @@ ToolWindow {
                 onRevealRequested: function (path) {
                     root.showInFolder(path);
                 }
-                onFlashRequested: function (identifier, version, build, path, target) {
-                    root.openFlash(identifier, version, build, path, target);
+                onFlashRequested: function (identifier, version, build, path, target, verified) {
+                    root.openFlash(identifier, version, build, path, target, verified);
                 }
             }
         }
@@ -1299,7 +1334,7 @@ ToolWindow {
         signal changeDirectoryRequested
         signal browseRequested
         signal revealRequested(string path)
-        signal flashRequested(string identifier, string version, string build, string path, var target)
+        signal flashRequested(string identifier, string version, string build, string path, var target, bool verified)
 
         function refresh() {
             firmwareManager.scan_local_files(downloadedRoot.directory);
@@ -1488,6 +1523,11 @@ ToolWindow {
                                     }
                                 }
                                 Button {
+                                    visible: downloadedRow.model.can_skip_verification
+                                    text: qsTr("Skip Verification")
+                                    onClicked: firmwareManager.skip_verification(downloadedRow.model.identifier, downloadedRow.model.build_id)
+                                }
+                                Button {
                                     visible: downloadedRow.model.has_partial
                                     text: downloadedRow.model.is_downloading ? qsTr("Pause") : qsTr("Resume")
                                     enabled: !downloadedRow.model.is_verifying && downloadedRow.model.identifier.length > 0
@@ -1510,7 +1550,7 @@ ToolWindow {
                                     visible: !downloadedRow.model.has_partial
                                     text: qsTr("Flash ▾")
                                     readonly property var targets: downloadedRoot.matchingTargets(downloadedRow.model.flash_identifiers)
-                                    enabled: downloadedRow.model.is_downloaded && !downloadedRow.model.is_verifying && !FlashManager.busy && downloadedFlashButton.targets.length > 0
+                                    enabled: (downloadedRow.model.is_downloaded || downloadedRow.model.status === "unverified") && !downloadedRow.model.is_downloading && !downloadedRow.model.is_verifying && !FlashManager.busy && downloadedFlashButton.targets.length > 0
                                     contentItem: Label {
                                         text: downloadedFlashButton.text
                                         horizontalAlignment: Text.AlignHCenter
@@ -1534,7 +1574,7 @@ ToolWindow {
                                                 required property var modelData
                                                 text: qsTr("%1 — %2").arg(modelData.name).arg(modelData.detail)
                                                 enabled: modelData.enabled
-                                                onTriggered: downloadedRoot.flashRequested(modelData.product_identifier, downloadedRow.model.version, downloadedRow.model.build_id, downloadedRow.model.local_path, modelData)
+                                                onTriggered: downloadedRoot.flashRequested(modelData.product_identifier, downloadedRow.model.version, downloadedRow.model.build_id, downloadedRow.model.local_path, modelData, downloadedRow.model.is_downloaded)
                                             }
                                             onObjectAdded: function (index, object) {
                                                 downloadedTargetMenu.insertItem(index, object);

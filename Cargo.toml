@@ -16,6 +16,7 @@ windows_store = []
 debug = 0
 
 [dependencies]
+const_format = "0.2.37"
 tokio = { version = "1.50.0", features = ["full"] }
 tokio-util = { version = "0.7", features = ["rt", "io-util"] }
 futures = "0.3"
