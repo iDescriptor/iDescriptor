@@ -126,8 +126,7 @@ done
 echo "Successfully copied ${COPIED_PLUGIN_COUNT} requested GStreamer plugins"
 
 ADDITIONAL_DLLS=(
-    # TODO
-    # "libunicorn.dll"
+    "libunicorn.dll"
     "libwinpthread-1.dll"
     "libgstreamer-1.0-0.dll"
     "libgstbase-1.0-0.dll"
