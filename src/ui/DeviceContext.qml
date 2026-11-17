@@ -24,6 +24,7 @@ QtObject {
     property bool sidebarVisible: true
 
     signal deviceRemoved(string udid)
+    signal recoveryDeviceRemoved(string ecid)
     signal deviceAdded(string udid, string mac)
     signal deviceAlreadyExistsMAC(string mac)
     signal initStarted(string mac)
@@ -542,7 +543,9 @@ QtObject {
                     for (let i = 0; i < recoveryDevices.count; i++) {
                         const device = recoveryDevices.get(i)
                         if (device.id === id) {
+                            const removedEcid = device.info.ecid_decimal || ""
                             recoveryDevices.remove(i)
+                            root.recoveryDeviceRemoved(removedEcid)
                             break
                         }
                     }
