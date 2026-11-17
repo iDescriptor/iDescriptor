@@ -20,6 +20,9 @@ Item {
         return val
     }
 
+    property string mode: v("mode", qsTr("Recovery"))
+
+
     ColumnLayout {
         anchors.fill: parent
         anchors.margins: 24
@@ -54,7 +57,7 @@ Item {
 
                 Label {
                     Layout.fillWidth: true
-                    text: qsTr("%1 mode").arg(v("mode", qsTr("Recovery")))
+                    text: qsTr("%1 mode").arg(mode)
                     color: App.Theme.textMuted
                     font.pixelSize: 14
                     elide: Text.ElideRight
@@ -72,6 +75,10 @@ Item {
 
                     Button {
                         text: qsTr("Exit Recovery Mode")
+                        // cannot exit recovery in DFU mode
+                        // WTF and KIS modes are untested
+                        // FIXME: use enums in the future
+                        visible: mode != "DFU"
                         highlighted: true
                         enabled: v("ecid", "") !== ""
                         onClicked: {
