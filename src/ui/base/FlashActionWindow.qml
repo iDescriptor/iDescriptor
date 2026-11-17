@@ -22,4 +22,14 @@ DefaultWindow {
         if (Qt.platform.os === "osx")
             QmlUtils.setup_tool_window(root)
     }
+
+    Connections {
+        target: App.DeviceContext
+        enabled: root.auto_close
+
+        function onRecoveryDeviceRemoved(removedEcid) {
+            if (root.ecid.length > 0 && root.ecid === removedEcid && !root.hasActiveRestore)
+                root.close()
+        }
+    }
 }
