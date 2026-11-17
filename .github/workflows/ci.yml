@@ -201,6 +201,9 @@ jobs:
       - name: Update linker cache
         run: sudo ldconfig
 
+      - name: Install prebuilt Unicorn
+        run: bash packaging/linux/install-unicorn.sh
+
       - name: Build iDescriptor
         run: RUSTFLAGS="" cargo build --release --features appimage
 
